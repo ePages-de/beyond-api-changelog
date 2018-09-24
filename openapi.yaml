@@ -8,74 +8,6 @@ basePath: "/api"
 schemes:
 - "https"
 paths:
-  /products/{productId}/images:
-    get:
-      summary: "List Product Images"
-      description: ""
-      produces:
-      - "application/hal+json"
-      parameters:
-      - name: "productId"
-        in: "path"
-        description: ""
-        required: true
-        type: "string"
-      responses:
-        200:
-          description: ""
-          examples:
-            application/hal+json: "{\n  \"_embedded\" : {\n    \"images\" : [ {\n\
-              \      \"_id\" : \"b9fce9e2-3614-4fcc-af27-0cb7a2c67aee\",\n      \"\
-              _links\" : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/products/ed853b62-5a58-4160-84c5-3a10b921d748/images/b9fce9e2-3614-4fcc-af27-0cb7a2c67aee\"\
-              \n        },\n        \"data\" : {\n          \"href\" : \"https://yourshop.api.urn/api/core-storage/images/photostore-3.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225999{&width,height,upscale}\"\
-              ,\n          \"templated\" : true\n        },\n        \"metadata\"\
-              \ : {\n          \"href\" : \"https://yourshop.api.urn/api/core-storage/images/photostore-3.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225999&download=no\"\
-              \n        },\n        \"image\" : {\n          \"href\" : \"https://yourshop.api.urn/products/ed853b62-5a58-4160-84c5-3a10b921d748/images/b9fce9e2-3614-4fcc-af27-0cb7a2c67aee\"\
-              \n        }\n      }\n    }, {\n      \"_id\" : \"cfd8beaf-b84c-4dcb-9980-b349230e748f\"\
-              ,\n      \"_links\" : {\n        \"self\" : {\n          \"href\" :\
-              \ \"https://yourshop.api.urn/products/ed853b62-5a58-4160-84c5-3a10b921d748/images/cfd8beaf-b84c-4dcb-9980-b349230e748f\"\
-              \n        },\n        \"data\" : {\n          \"href\" : \"https://yourshop.api.urn/api/core-storage/images/photostore-2.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225998{&width,height,upscale}\"\
-              ,\n          \"templated\" : true\n        },\n        \"metadata\"\
-              \ : {\n          \"href\" : \"https://yourshop.api.urn/api/core-storage/images/photostore-2.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225998&download=no\"\
-              \n        },\n        \"image\" : {\n          \"href\" : \"https://yourshop.api.urn/products/ed853b62-5a58-4160-84c5-3a10b921d748/images/cfd8beaf-b84c-4dcb-9980-b349230e748f\"\
-              \n        }\n      }\n    } ]\n  },\n  \"_links\" : {\n    \"self\"\
-              \ : {\n      \"href\" : \"https://yourshop.api.urn/products/ed853b62-5a58-4160-84c5-3a10b921d748/images?page=0&size=20\"\
-              \n    }\n  },\n  \"page\" : {\n    \"size\" : 20,\n    \"totalElements\"\
-              \ : 2,\n    \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}"
-          schema:
-            $ref: "#/definitions/products_productId_attachments884805373"
-    post:
-      summary: "Create Product Image"
-      description: ""
-      consumes:
-      - "application/hal+json"
-      produces:
-      - "application/hal+json"
-      parameters:
-      - name: "productId"
-        in: "path"
-        description: ""
-        required: true
-        type: "string"
-      - in: "body"
-        name: ""
-        required: false
-        schema:
-          $ref: "#/definitions/products_productId_images9638201"
-        x-examples:
-          application/hal+json: "{\"dataUri\":\"photostore-2.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225998\"\
-            }"
-      responses:
-        201:
-          description: ""
-          examples:
-            application/hal+json: "{\n  \"_id\" : \"8dd72457-dcd3-48e4-b6c5-f27395a65ccf\"\
-              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/products/5fd8a39d-0b1e-40d5-aadf-dd4418fb31cd/images/8dd72457-dcd3-48e4-b6c5-f27395a65ccf\"\
-              \n    },\n    \"data\" : {\n      \"href\" : \"https://yourshop.api.urn/api/core-storage/images/photostore-2.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225998{&width,height,upscale}\"\
-              ,\n      \"templated\" : true\n    },\n    \"metadata\" : {\n      \"\
-              href\" : \"https://yourshop.api.urn/api/core-storage/images/photostore-2.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225998&download=no\"\
-              \n    },\n    \"image\" : {\n      \"href\" : \"https://yourshop.api.urn/products/5fd8a39d-0b1e-40d5-aadf-dd4418fb31cd/images/8dd72457-dcd3-48e4-b6c5-f27395a65ccf\"\
-              \n    }\n  }\n}"
   /shipping-zones/search/find-all-serviceable-countries:
     get:
       summary: "Find Shipping Zone by Serviceable Countries"
@@ -428,7 +360,7 @@ paths:
             application/json: "null"
   /orders/{order-id}/processes/payments/active:
     get:
-      summary: "Get Active Payment Process"
+      summary: "Get sdfdsf Active Payment Process"
       description: ""
       produces:
       - "application/hal+json"
