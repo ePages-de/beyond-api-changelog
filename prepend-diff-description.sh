@@ -59,8 +59,8 @@ DIFF_FILE=$(mktemp)
 ################################################################################
 # Build change log snippet
 ################################################################################
-CURRENT_DATE_AND_TIME=$(date '+%Y-%m-%d %H:%M:%S')
-CHANGE_LOG_HEADING="== ${CURRENT_DATE_AND_TIME}"
+CURRENT_DATE=$(date '+%Y-%m-%d')
+CHANGE_LOG_HEADING="== ${CURRENT_DATE}"
 CHANGE_LOG_TABLE_ROWS=$(cat ${DIFF_FILE} | jq -r '.[] | .[] | "|" + .ruleId + "\n" + "|" + .message + "\n"')
 CHANGE_LOG_TABLE=$(cat <<EOF
 |===
