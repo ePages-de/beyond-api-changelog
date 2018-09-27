@@ -1,3 +1,4 @@
+#!/bin/bash
 
 API_SPEC_URL='http://docs.beyondshop.cloud/openapi.yaml'
 API_SPEC_FILE=openapi.yaml
