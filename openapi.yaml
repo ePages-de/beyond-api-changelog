@@ -6010,7 +6010,7 @@ paths:
           description: ""
           examples:
             application/hal+json: "{\n  \"_embedded\" : {\n    \"products\" : [ {\n\
-              \      \"_id\" : \"920dd2ed-d999-4866-91ce-ca2214d91891\",\n      \"\
+              \      \"_id\" : \"17e72576-9e12-44dd-a97d-b5e7cd8e643e\",\n      \"\
               sku\" : \"vino020\",\n      \"name\" : \"Rioja Castillo de Puerto (2013)\"\
               ,\n      \"salesPrice\" : {\n        \"amount\" : 8.7,\n        \"currency\"\
               \ : \"EUR\"\n      },\n      \"listPrice\" : {\n        \"amount\" :\
@@ -6026,10 +6026,10 @@ paths:
               \    \"_links\" : {\n        \"default-image-data\" : {\n          \"\
               href\" : \"https://yourshop.api.urn/storage-api/images/rioja-01.jpg?hash=e9a1ce5c0c6abfebec8fb1f6faf77dca7e6e7777{&width,height,upscale}\"\
               ,\n          \"templated\" : true\n        },\n        \"self\" : {\n\
-              \          \"href\" : \"https://yourshop.api.urn/product-view/products/920dd2ed-d999-4866-91ce-ca2214d91891\"\
-              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/920dd2ed-d999-4866-91ce-ca2214d91891{?projection}\"\
+              \          \"href\" : \"https://yourshop.api.urn/product-view/products/17e72576-9e12-44dd-a97d-b5e7cd8e643e\"\
+              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/17e72576-9e12-44dd-a97d-b5e7cd8e643e{?projection}\"\
               ,\n          \"templated\" : true\n        }\n      }\n    }, {\n  \
-              \    \"_id\" : \"d7e56fb2-edcc-4f3c-a13b-d69f6f5b3582\",\n      \"sku\"\
+              \    \"_id\" : \"323d49e5-5de2-4e94-baf3-4286672b3610\",\n      \"sku\"\
               \ : \"EB001\",\n      \"name\" : \"Power & Vanilla Coconut Protein Bar\
               \ (Pack of 5)\",\n      \"salesPrice\" : {\n        \"amount\" : 4.95,\n\
               \        \"currency\" : \"EUR\"\n      },\n      \"listPrice\" : null,\n\
@@ -6038,10 +6038,10 @@ paths:
               \ : {\n        \"length\" : 19,\n        \"width\" : 18,\n        \"\
               height\" : 17\n      },\n      \"refPrice\" : null,\n      \"availabilityState\"\
               \ : \"IN_STOCK\",\n      \"_links\" : {\n        \"self\" : {\n    \
-              \      \"href\" : \"https://yourshop.api.urn/product-view/products/d7e56fb2-edcc-4f3c-a13b-d69f6f5b3582\"\
-              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/d7e56fb2-edcc-4f3c-a13b-d69f6f5b3582{?projection}\"\
+              \      \"href\" : \"https://yourshop.api.urn/product-view/products/323d49e5-5de2-4e94-baf3-4286672b3610\"\
+              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/323d49e5-5de2-4e94-baf3-4286672b3610{?projection}\"\
               ,\n          \"templated\" : true\n        }\n      }\n    }, {\n  \
-              \    \"_id\" : \"f3123763-5117-4e6f-b682-8f8e8a685e0a\",\n      \"sku\"\
+              \    \"_id\" : \"4351dbb6-c917-4439-9a05-7bc484f49915\",\n      \"sku\"\
               \ : \"sh-001\",\n      \"name\" : \"Soft Walk Ultra - Nibok Men's\"\
               ,\n      \"salesPrice\" : {\n        \"amount\" : 89.0,\n        \"\
               currency\" : \"EUR\"\n      },\n      \"listPrice\" : {\n        \"\
@@ -6053,8 +6053,8 @@ paths:
               ,\n      \"_links\" : {\n        \"default-image-data\" : {\n      \
               \    \"href\" : \"https://yourshop.api.urn/storage-api/images/nibok-men.jpg?hash=e9a1ce5c0c6abfebec8fb1f6faf77dca7e699999{&width,height,upscale}\"\
               ,\n          \"templated\" : true\n        },\n        \"self\" : {\n\
-              \          \"href\" : \"https://yourshop.api.urn/product-view/products/f3123763-5117-4e6f-b682-8f8e8a685e0a\"\
-              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/f3123763-5117-4e6f-b682-8f8e8a685e0a{?projection}\"\
+              \          \"href\" : \"https://yourshop.api.urn/product-view/products/4351dbb6-c917-4439-9a05-7bc484f49915\"\
+              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/4351dbb6-c917-4439-9a05-7bc484f49915{?projection}\"\
               ,\n          \"templated\" : true\n        }\n      }\n    } ]\n  },\n\
               \  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/product-view/products?page=0&size=40\"\
               \n    }\n  },\n  \"page\" : {\n    \"size\" : 40,\n    \"totalElements\"\
@@ -6086,13 +6086,13 @@ paths:
         200:
           description: ""
           examples:
-            application/hal+json: "{\n  \"_id\" : \"f3ec526d-90b7-4502-9bda-09adfc3f80bf\"\
-              ,\n  \"_indexedAt\" : \"2018-09-25T08:07:07.73\",\n  \"type\" : \"SMART\"\
+            application/hal+json: "{\n  \"_id\" : \"30f21350-9aba-4ab6-a51f-62a4a7b4525b\"\
+              ,\n  \"_indexedAt\" : \"2018-09-28T06:27:02.15\",\n  \"type\" : \"SMART\"\
               ,\n  \"name\" : \"Power Bars\",\n  \"label\" : \"power-bar\",\n  \"\
-              _links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/product-view/categories/f3ec526d-90b7-4502-9bda-09adfc3f80bf\"\
-              \n    },\n    \"category\" : {\n      \"href\" : \"https://yourshop.api.urn/product-view/categories/f3ec526d-90b7-4502-9bda-09adfc3f80bf{?projection}\"\
+              _links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/product-view/categories/30f21350-9aba-4ab6-a51f-62a4a7b4525b\"\
+              \n    },\n    \"category\" : {\n      \"href\" : \"https://yourshop.api.urn/product-view/categories/30f21350-9aba-4ab6-a51f-62a4a7b4525b{?projection}\"\
               ,\n      \"templated\" : true\n    },\n    \"products\" : {\n      \"\
-              href\" : \"https://yourshop.api.urn/product-view/categories/f3ec526d-90b7-4502-9bda-09adfc3f80bf/products\"\
+              href\" : \"https://yourshop.api.urn/product-view/categories/30f21350-9aba-4ab6-a51f-62a4a7b4525b/products\"\
               \n    }\n  }\n}"
           schema:
             $ref: "#/definitions/product-view_categories_categoryId1092984037"
@@ -6121,8 +6121,8 @@ paths:
         200:
           description: ""
           examples:
-            application/hal+json: "{\n  \"_id\" : \"c291535b-4f20-4c75-993a-25c920494991\"\
-              ,\n  \"_indexedAt\" : \"2018-09-25T08:05:37.021\",\n  \"sku\" : \"vino020\"\
+            application/hal+json: "{\n  \"_id\" : \"0efbc459-3d2c-4544-ad13-9475201b0eb9\"\
+              ,\n  \"_indexedAt\" : \"2018-09-28T06:25:44.993\",\n  \"sku\" : \"vino020\"\
               ,\n  \"name\" : \"Rioja Castillo de Puerto (2013)\",\n  \"salesPrice\"\
               \ : {\n    \"amount\" : 8.7,\n    \"currency\" : \"EUR\"\n  },\n  \"\
               listPrice\" : {\n    \"amount\" : 10.95,\n    \"currency\" : \"EUR\"\
@@ -6148,8 +6148,8 @@ paths:
               \    \"maxDays\" : 4,\n    \"displayUnit\" : \"WEEKS\"\n  },\n  \"_links\"\
               \ : {\n    \"default-image-data\" : {\n      \"href\" : \"https://yourshop.api.urn/storage-api/images/rioja-01.jpg?hash=e9a1ce5c0c6abfebec8fb1f6faf77dca7e6e7777{&width,height,upscale}\"\
               ,\n      \"templated\" : true\n    },\n    \"self\" : {\n      \"href\"\
-              \ : \"https://yourshop.api.urn/product-view/products/c291535b-4f20-4c75-993a-25c920494991\"\
-              \n    },\n    \"product\" : {\n      \"href\" : \"https://yourshop.api.urn/product-view/products/c291535b-4f20-4c75-993a-25c920494991{?projection}\"\
+              \ : \"https://yourshop.api.urn/product-view/products/0efbc459-3d2c-4544-ad13-9475201b0eb9\"\
+              \n    },\n    \"product\" : {\n      \"href\" : \"https://yourshop.api.urn/product-view/products/0efbc459-3d2c-4544-ad13-9475201b0eb9{?projection}\"\
               ,\n      \"templated\" : true\n    },\n    \"additional-image-data\"\
               \ : [ {\n      \"href\" : \"https://yourshop.api.urn/storage-api/images/rioja-02.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225998{&width,height,upscale}\"\
               ,\n      \"templated\" : true\n    }, {\n      \"href\" : \"https://yourshop.api.urn/storage-api/images/rioja-03.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225999{&width,height,upscale}\"\
@@ -6177,11 +6177,11 @@ paths:
           description: ""
           examples:
             application/hal+json: "{\n  \"type\" : \"SMART\",\n  \"name\" : \"Power\
-              \ Bars\",\n  \"label\" : \"power-bar\",\n  \"_id\" : \"e8c9b638-b9ee-46dc-a349-99568974abfc\"\
-              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/product-view/categories/e8c9b638-b9ee-46dc-a349-99568974abfc\"\
-              \n    },\n    \"category\" : {\n      \"href\" : \"https://yourshop.api.urn/product-view/categories/e8c9b638-b9ee-46dc-a349-99568974abfc{?projection}\"\
+              \ Bars\",\n  \"label\" : \"power-bar\",\n  \"_id\" : \"5788553b-142b-487c-90d1-003f126cc50c\"\
+              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/product-view/categories/5788553b-142b-487c-90d1-003f126cc50c\"\
+              \n    },\n    \"category\" : {\n      \"href\" : \"https://yourshop.api.urn/product-view/categories/5788553b-142b-487c-90d1-003f126cc50c{?projection}\"\
               ,\n      \"templated\" : true\n    },\n    \"products\" : {\n      \"\
-              href\" : \"https://yourshop.api.urn/product-view/categories/e8c9b638-b9ee-46dc-a349-99568974abfc/products\"\
+              href\" : \"https://yourshop.api.urn/product-view/categories/5788553b-142b-487c-90d1-003f126cc50c/products\"\
               \n    }\n  }\n}"
           schema:
             $ref: "#/definitions/product-view_categories_search_find-by-label-1017888571"
@@ -6206,20 +6206,20 @@ paths:
           examples:
             application/hal+json: "{\n  \"_embedded\" : {\n    \"categories\" : [\
               \ {\n      \"type\" : \"SMART\",\n      \"name\" : \"category that loves\
-              \ everyone\",\n      \"label\" : null,\n      \"_id\" : \"1e83385b-1d6a-44d7-be7c-f250c771921f\"\
+              \ everyone\",\n      \"label\" : null,\n      \"_id\" : \"e094be8a-ee7b-46e5-b371-579dc9d80a60\"\
               ,\n      \"_links\" : {\n        \"self\" : {\n          \"href\" :\
-              \ \"https://yourshop.api.urn/product-view/categories/1e83385b-1d6a-44d7-be7c-f250c771921f\"\
-              \n        },\n        \"category\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/categories/1e83385b-1d6a-44d7-be7c-f250c771921f{?projection}\"\
+              \ \"https://yourshop.api.urn/product-view/categories/e094be8a-ee7b-46e5-b371-579dc9d80a60\"\
+              \n        },\n        \"category\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/categories/e094be8a-ee7b-46e5-b371-579dc9d80a60{?projection}\"\
               ,\n          \"templated\" : true\n        },\n        \"products\"\
-              \ : {\n          \"href\" : \"https://yourshop.api.urn/product-view/categories/1e83385b-1d6a-44d7-be7c-f250c771921f/products\"\
+              \ : {\n          \"href\" : \"https://yourshop.api.urn/product-view/categories/e094be8a-ee7b-46e5-b371-579dc9d80a60/products\"\
               \n        }\n      }\n    }, {\n      \"type\" : \"MANUAL\",\n     \
               \ \"name\" : \"category that matches product 1 in a complicated way\"\
-              ,\n      \"label\" : null,\n      \"_id\" : \"2b61bd64-f870-4ac6-a697-60588b12c833\"\
+              ,\n      \"label\" : null,\n      \"_id\" : \"d6ad652e-7a95-4bbf-96d2-d35698a5b58b\"\
               ,\n      \"_links\" : {\n        \"self\" : {\n          \"href\" :\
-              \ \"https://yourshop.api.urn/product-view/categories/2b61bd64-f870-4ac6-a697-60588b12c833\"\
-              \n        },\n        \"category\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/categories/2b61bd64-f870-4ac6-a697-60588b12c833{?projection}\"\
+              \ \"https://yourshop.api.urn/product-view/categories/d6ad652e-7a95-4bbf-96d2-d35698a5b58b\"\
+              \n        },\n        \"category\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/categories/d6ad652e-7a95-4bbf-96d2-d35698a5b58b{?projection}\"\
               ,\n          \"templated\" : true\n        },\n        \"products\"\
-              \ : {\n          \"href\" : \"https://yourshop.api.urn/product-view/categories/2b61bd64-f870-4ac6-a697-60588b12c833/products\"\
+              \ : {\n          \"href\" : \"https://yourshop.api.urn/product-view/categories/d6ad652e-7a95-4bbf-96d2-d35698a5b58b/products\"\
               \n        }\n      }\n    } ]\n  },\n  \"_links\" : {\n    \"self\"\
               \ : {\n      \"href\" : \"https://yourshop.api.urn/product-view/categories/search/find-by-product?page=0&size=40\"\
               \n    }\n  },\n  \"page\" : {\n    \"size\" : 40,\n    \"totalElements\"\
@@ -6244,7 +6244,7 @@ paths:
           description: ""
           examples:
             application/hal+json: "{\n  \"_embedded\" : {\n    \"products\" : [ {\n\
-              \      \"_id\" : \"a453451c-56ab-470d-b12a-5e32de44fe1a\",\n      \"\
+              \      \"_id\" : \"a5dd492a-1758-4640-a4ed-d15a2bd86afe\",\n      \"\
               sku\" : \"vino020\",\n      \"name\" : \"Rioja Castillo de Puerto (2013)\"\
               ,\n      \"salesPrice\" : {\n        \"amount\" : 8.7,\n        \"currency\"\
               \ : \"EUR\"\n      },\n      \"listPrice\" : {\n        \"amount\" :\
@@ -6260,10 +6260,10 @@ paths:
               _links\" : {\n        \"default-image-data\" : {\n          \"href\"\
               \ : \"https://yourshop.api.urn/storage-api/images/rioja-01.jpg?hash=e9a1ce5c0c6abfebec8fb1f6faf77dca7e6e7777{&width,height,upscale}\"\
               ,\n          \"templated\" : true\n        },\n        \"self\" : {\n\
-              \          \"href\" : \"https://yourshop.api.urn/product-view/products/a453451c-56ab-470d-b12a-5e32de44fe1a\"\
-              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/a453451c-56ab-470d-b12a-5e32de44fe1a{?projection}\"\
+              \          \"href\" : \"https://yourshop.api.urn/product-view/products/a5dd492a-1758-4640-a4ed-d15a2bd86afe\"\
+              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/a5dd492a-1758-4640-a4ed-d15a2bd86afe{?projection}\"\
               ,\n          \"templated\" : true\n        }\n      }\n    } ]\n  },\n\
-              \  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/product-view/categories/a7b8ff2a-28f8-4a11-91a2-58e40ebb1052/products?page=0&size=40&sort=id,asc\"\
+              \  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/product-view/categories/73adf6fc-8582-4fe1-a1f6-f51adb9db934/products?page=0&size=40&sort=id,asc\"\
               \n    }\n  },\n  \"page\" : {\n    \"size\" : 40,\n    \"totalElements\"\
               \ : 1,\n    \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}"
   /product-view/products/search/find-available-tags:
@@ -6314,7 +6314,7 @@ paths:
           description: ""
           examples:
             application/hal+json: "{\n  \"_embedded\" : {\n    \"products\" : [ {\n\
-              \      \"_id\" : \"0da3963d-96f3-425d-9f34-c9328a5fbf25\",\n      \"\
+              \      \"_id\" : \"d518fca5-1ff6-43f5-b992-a6a00fb89ebd\",\n      \"\
               sku\" : \"vino020\",\n      \"name\" : \"Rioja Castillo de Puerto (2013)\"\
               ,\n      \"salesPrice\" : {\n        \"amount\" : 8.7,\n        \"currency\"\
               \ : \"EUR\"\n      },\n      \"listPrice\" : {\n        \"amount\" :\
@@ -6330,10 +6330,10 @@ paths:
               \    \"_links\" : {\n        \"default-image-data\" : {\n          \"\
               href\" : \"https://yourshop.api.urn/storage-api/images/rioja-01.jpg?hash=e9a1ce5c0c6abfebec8fb1f6faf77dca7e6e7777{&width,height,upscale}\"\
               ,\n          \"templated\" : true\n        },\n        \"self\" : {\n\
-              \          \"href\" : \"https://yourshop.api.urn/product-view/products/0da3963d-96f3-425d-9f34-c9328a5fbf25\"\
-              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/0da3963d-96f3-425d-9f34-c9328a5fbf25{?projection}\"\
+              \          \"href\" : \"https://yourshop.api.urn/product-view/products/d518fca5-1ff6-43f5-b992-a6a00fb89ebd\"\
+              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/d518fca5-1ff6-43f5-b992-a6a00fb89ebd{?projection}\"\
               ,\n          \"templated\" : true\n        }\n      }\n    } ]\n  },\n\
-              \  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/product-view/products/search/find-by-category?categoryId=bc8854fe-fcdb-42c7-95b6-af5d3469f378&page=0&size=40&sort=id,asc\"\
+              \  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/product-view/products/search/find-by-category?categoryId=34fdd317-9d07-454e-92be-bf2475241acd&page=0&size=40&sort=id,asc\"\
               \n    }\n  },\n  \"page\" : {\n    \"size\" : 40,\n    \"totalElements\"\
               \ : 1,\n    \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}"
           schema:
@@ -6364,7 +6364,7 @@ paths:
           description: ""
           examples:
             application/hal+json: "{\n  \"_embedded\" : {\n    \"products\" : [ {\n\
-              \      \"_id\" : \"16d04005-d7af-44d8-adeb-1fbadd19a58b\",\n      \"\
+              \      \"_id\" : \"84fa4fe0-4894-4e0f-b412-2384cdd92126\",\n      \"\
               sku\" : \"vino020\",\n      \"name\" : \"Rioja Castillo de Puerto (2013)\"\
               ,\n      \"salesPrice\" : {\n        \"amount\" : 8.7,\n        \"currency\"\
               \ : \"EUR\"\n      },\n      \"listPrice\" : {\n        \"amount\" :\
@@ -6380,8 +6380,8 @@ paths:
               \    \"_links\" : {\n        \"default-image-data\" : {\n          \"\
               href\" : \"https://yourshop.api.urn/storage-api/images/rioja-01.jpg?hash=e9a1ce5c0c6abfebec8fb1f6faf77dca7e6e7777{&width,height,upscale}\"\
               ,\n          \"templated\" : true\n        },\n        \"self\" : {\n\
-              \          \"href\" : \"https://yourshop.api.urn/product-view/products/16d04005-d7af-44d8-adeb-1fbadd19a58b\"\
-              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/16d04005-d7af-44d8-adeb-1fbadd19a58b{?projection}\"\
+              \          \"href\" : \"https://yourshop.api.urn/product-view/products/84fa4fe0-4894-4e0f-b412-2384cdd92126\"\
+              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/84fa4fe0-4894-4e0f-b412-2384cdd92126{?projection}\"\
               ,\n          \"templated\" : true\n        }\n      }\n    } ]\n  },\n\
               \  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/product-view/products/search/find-by-query?page=0&size=40\"\
               \n    }\n  },\n  \"page\" : {\n    \"size\" : 40,\n    \"totalElements\"\
@@ -6409,7 +6409,7 @@ paths:
           description: ""
           examples:
             application/hal+json: "{\n  \"_embedded\" : {\n    \"products\" : [ {\n\
-              \      \"_id\" : \"5ec79ce1-6788-4326-9f21-845c29911086\",\n      \"\
+              \      \"_id\" : \"daebe904-8d1c-4ddf-8003-9f75f5fe4c33\",\n      \"\
               sku\" : \"vino020\",\n      \"name\" : \"Rioja Castillo de Puerto (2013)\"\
               ,\n      \"salesPrice\" : {\n        \"amount\" : 8.7,\n        \"currency\"\
               \ : \"EUR\"\n      },\n      \"listPrice\" : {\n        \"amount\" :\
@@ -6425,10 +6425,10 @@ paths:
               \    \"_links\" : {\n        \"default-image-data\" : {\n          \"\
               href\" : \"https://yourshop.api.urn/storage-api/images/rioja-01.jpg?hash=e9a1ce5c0c6abfebec8fb1f6faf77dca7e6e7777{&width,height,upscale}\"\
               ,\n          \"templated\" : true\n        },\n        \"self\" : {\n\
-              \          \"href\" : \"https://yourshop.api.urn/product-view/products/5ec79ce1-6788-4326-9f21-845c29911086\"\
-              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/5ec79ce1-6788-4326-9f21-845c29911086{?projection}\"\
+              \          \"href\" : \"https://yourshop.api.urn/product-view/products/daebe904-8d1c-4ddf-8003-9f75f5fe4c33\"\
+              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/daebe904-8d1c-4ddf-8003-9f75f5fe4c33{?projection}\"\
               ,\n          \"templated\" : true\n        }\n      }\n    }, {\n  \
-              \    \"_id\" : \"d69acced-01bf-4150-ad07-97d35418b8b1\",\n      \"sku\"\
+              \    \"_id\" : \"e82b912d-5aac-47ff-91af-b8bcc9a7d3b9\",\n      \"sku\"\
               \ : \"sh-001\",\n      \"name\" : \"Soft Walk Ultra - Nibok Men's\"\
               ,\n      \"salesPrice\" : {\n        \"amount\" : 89.0,\n        \"\
               currency\" : \"EUR\"\n      },\n      \"listPrice\" : {\n        \"\
@@ -6440,8 +6440,8 @@ paths:
               ,\n      \"_links\" : {\n        \"default-image-data\" : {\n      \
               \    \"href\" : \"https://yourshop.api.urn/storage-api/images/nibok-men.jpg?hash=e9a1ce5c0c6abfebec8fb1f6faf77dca7e699999{&width,height,upscale}\"\
               ,\n          \"templated\" : true\n        },\n        \"self\" : {\n\
-              \          \"href\" : \"https://yourshop.api.urn/product-view/products/d69acced-01bf-4150-ad07-97d35418b8b1\"\
-              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/d69acced-01bf-4150-ad07-97d35418b8b1{?projection}\"\
+              \          \"href\" : \"https://yourshop.api.urn/product-view/products/e82b912d-5aac-47ff-91af-b8bcc9a7d3b9\"\
+              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/e82b912d-5aac-47ff-91af-b8bcc9a7d3b9{?projection}\"\
               ,\n          \"templated\" : true\n        }\n      }\n    } ]\n  },\n\
               \  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/product-view/products/search/find-by-search-term?page=0&size=40&sort=id,asc\"\
               \n    }\n  },\n  \"page\" : {\n    \"size\" : 40,\n    \"totalElements\"\
@@ -6469,7 +6469,7 @@ paths:
           description: ""
           examples:
             application/hal+json: "{\n  \"_embedded\" : {\n    \"products\" : [ {\n\
-              \      \"_id\" : \"082a378b-fb10-4983-8e1d-a713f7abeaa8\",\n      \"\
+              \      \"_id\" : \"043983c1-73d0-4448-b76b-e485ee1abce6\",\n      \"\
               sku\" : \"vino020\",\n      \"name\" : \"Rioja Castillo de Puerto (2013)\"\
               ,\n      \"salesPrice\" : {\n        \"amount\" : 8.7,\n        \"currency\"\
               \ : \"EUR\"\n      },\n      \"listPrice\" : {\n        \"amount\" :\
@@ -6485,8 +6485,8 @@ paths:
               \    \"_links\" : {\n        \"default-image-data\" : {\n          \"\
               href\" : \"https://yourshop.api.urn/storage-api/images/rioja-01.jpg?hash=e9a1ce5c0c6abfebec8fb1f6faf77dca7e6e7777{&width,height,upscale}\"\
               ,\n          \"templated\" : true\n        },\n        \"self\" : {\n\
-              \          \"href\" : \"https://yourshop.api.urn/product-view/products/082a378b-fb10-4983-8e1d-a713f7abeaa8\"\
-              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/082a378b-fb10-4983-8e1d-a713f7abeaa8{?projection}\"\
+              \          \"href\" : \"https://yourshop.api.urn/product-view/products/043983c1-73d0-4448-b76b-e485ee1abce6\"\
+              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/043983c1-73d0-4448-b76b-e485ee1abce6{?projection}\"\
               ,\n          \"templated\" : true\n        }\n      }\n    } ]\n  },\n\
               \  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/product-view/products/search/find-by-tags?page=0&size=40&sort=createdAt,desc&sort=id,asc\"\
               \n    }\n  },\n  \"page\" : {\n    \"size\" : 40,\n    \"totalElements\"\
@@ -9641,10 +9641,10 @@ paths:
               \ : \"cornershop.amazingdiscounts.xyz\",\n  \"fallbackHostname\" : \"\
               cornershop.beyondshop.cloud\",\n  \"tax\" : {\n    \"taxModel\" : \"\
               GROSS\",\n    \"vatExempted\" : false,\n    \"country\" : \"GB\"\n \
-              \ },\n  \"currencies\" : [ \"EUR\", \"GBP\" ],\n  \"defaultCurrency\"\
+              \ },\n  \"currencies\" : [ \"GBP\", \"EUR\" ],\n  \"defaultCurrency\"\
               \ : \"EUR\",\n  \"locales\" : [ \"en-GB\", \"de-DE\" ],\n  \"defaultLocale\"\
               \ : \"en-GB\",\n  \"closedByMerchant\" : false,\n  \"resellerName\"\
-              \ : \"epages\",\n  \"_id\" : \"2ea78cfd-377e-4b19-8b3f-7b648e9f3559\"\
+              \ : \"epages\",\n  \"_id\" : \"42fa3d18-432a-4bc2-93df-28349711055c\"\
               ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/shop\"\
               \n    },\n    \"shop\" : {\n      \"href\" : \"https://yourshop.api.urn/shop\"\
               \n    },\n    \"address\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/address\"\
@@ -9671,13 +9671,13 @@ paths:
         name: ""
         required: false
         schema:
-          $ref: "#/definitions/shop1024778187"
+          $ref: "#/definitions/shop-2118505709"
         x-examples:
           application/json: "{\n  \"name\" : \"anotherName\",\n  \"closedShopMessage\"\
             \ : \"Sorry, this shop is closed.\",\n  \"primaryHostname\" : \"cornershop.amazingdiscounts.xyz\"\
             ,\n  \"fallbackHostname\" : \"cornershop.beyondshop.cloud\",\n  \"tax\"\
             \ : {\n    \"taxModel\" : \"GROSS\",\n    \"vatExempted\" : false\n  },\n\
-            \  \"currencies\" : [ \"USD\", \"EUR\", \"GBP\" ],\n  \"defaultCurrency\"\
+            \  \"currencies\" : [ \"GBP\", \"USD\", \"EUR\" ],\n  \"defaultCurrency\"\
             \ : \"USD\",\n  \"locales\" : [ \"en-GB\", \"de-DE\" ],\n  \"defaultLocale\"\
             \ : \"en-GB\",\n  \"closedByMerchant\" : false\n}"
           application/json-patch+json: "[ {\n  \"op\" : \"add\",\n  \"path\" : \"\
@@ -9690,10 +9690,10 @@ paths:
               \ : \"Sorry, this shop is closed.\",\n  \"primaryHostname\" : \"cornershop.amazingdiscounts.xyz\"\
               ,\n  \"fallbackHostname\" : \"cornershop.beyondshop.cloud\",\n  \"tax\"\
               \ : {\n    \"taxModel\" : \"GROSS\",\n    \"vatExempted\" : false,\n\
-              \    \"country\" : null\n  },\n  \"currencies\" : [ \"USD\", \"EUR\"\
-              , \"GBP\" ],\n  \"defaultCurrency\" : \"USD\",\n  \"locales\" : [ \"\
+              \    \"country\" : null\n  },\n  \"currencies\" : [ \"GBP\", \"USD\"\
+              , \"EUR\" ],\n  \"defaultCurrency\" : \"USD\",\n  \"locales\" : [ \"\
               en-GB\", \"de-DE\" ],\n  \"defaultLocale\" : \"en-GB\",\n  \"closedByMerchant\"\
-              \ : false,\n  \"resellerName\" : \"epages\",\n  \"_id\" : \"059fa979-8b90-4b74-9b3a-b72debf6d7e2\"\
+              \ : false,\n  \"resellerName\" : \"epages\",\n  \"_id\" : \"78b306e8-942a-44c9-9d7f-ae3417e2217b\"\
               ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/shop\"\
               \n    },\n    \"shop\" : {\n      \"href\" : \"https://yourshop.api.urn/shop\"\
               \n    },\n    \"address\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/address\"\
@@ -9876,19 +9876,20 @@ paths:
           description: ""
           examples:
             application/hal+json: "{\n  \"_embedded\" : {\n    \"features\" : [ {\n\
-              \      \"type\" : \"TOGGLE\",\n      \"name\" : \"shop-admin.shop.custom-domains\"\
-              ,\n      \"details\" : { },\n      \"_links\" : {\n        \"self\"\
-              \ : {\n          \"href\" : \"https://yourshop.api.urn/shop/features/shop-admin.shop.custom-domains\"\
-              \n        },\n        \"owner\" : {\n          \"href\" : \"https://yourshop.api.urn/shop\"\
-              \n        },\n        \"feature-definition\" : {\n          \"href\"\
-              \ : \"https://yourshop.api.urn/feature-definitions/shop-admin.shop.custom-domains\"\
-              \n        }\n      }\n    }, {\n      \"name\" : \"shop-admin.shop.max-products\"\
-              ,\n      \"details\" : {\n        \"maxValue\" : 100,\n        \"currentValue\"\
-              \ : 0\n      },\n      \"type\" : \"COUNTER\",\n      \"_links\" : {\n\
-              \        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/shop/features/shop-admin.shop.max-products\"\
+              \      \"name\" : \"shop-admin.shop.max-products\",\n      \"details\"\
+              \ : {\n        \"maxValue\" : 100,\n        \"currentValue\" : 0\n \
+              \     },\n      \"type\" : \"COUNTER\",\n      \"_links\" : {\n    \
+              \    \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/shop/features/shop-admin.shop.max-products\"\
               \n        },\n        \"owner\" : {\n          \"href\" : \"https://yourshop.api.urn/shop\"\
               \n        },\n        \"feature-definition\" : {\n          \"href\"\
               \ : \"https://yourshop.api.urn/feature-definitions/shop-admin.shop.max-products\"\
+              \n        }\n      }\n    }, {\n      \"type\" : \"TOGGLE\",\n     \
+              \ \"name\" : \"shop-admin.shop.custom-domains\",\n      \"details\"\
+              \ : { },\n      \"_links\" : {\n        \"self\" : {\n          \"href\"\
+              \ : \"https://yourshop.api.urn/shop/features/shop-admin.shop.custom-domains\"\
+              \n        },\n        \"owner\" : {\n          \"href\" : \"https://yourshop.api.urn/shop\"\
+              \n        },\n        \"feature-definition\" : {\n          \"href\"\
+              \ : \"https://yourshop.api.urn/feature-definitions/shop-admin.shop.custom-domains\"\
               \n        }\n      }\n    } ]\n  },\n  \"_links\" : {\n    \"self\"\
               \ : {\n      \"href\" : \"https://yourshop.api.urn/shop/features?page=0&size=20\"\
               \n    },\n    \"owner\" : {\n      \"href\" : \"https://yourshop.api.urn/shop\"\
@@ -9915,10 +9916,10 @@ paths:
           description: ""
           examples:
             application/hal+json: "{\n  \"_embedded\" : {\n    \"images\" : [ {\n\
-              \      \"label\" : \"logo\",\n      \"_id\" : \"29c183aa-28c5-4382-909f-4e456f149787\"\
+              \      \"label\" : \"logo\",\n      \"_id\" : \"153ac5c9-bc61-4f20-8bc1-a0bbef14816a\"\
               ,\n      \"_links\" : {\n        \"self\" : {\n          \"href\" :\
-              \ \"https://yourshop.api.urn/shop/images/29c183aa-28c5-4382-909f-4e456f149787\"\
-              \n        },\n        \"image\" : {\n          \"href\" : \"https://yourshop.api.urn/shop/images/29c183aa-28c5-4382-909f-4e456f149787\"\
+              \ \"https://yourshop.api.urn/shop/images/153ac5c9-bc61-4f20-8bc1-a0bbef14816a\"\
+              \n        },\n        \"image\" : {\n          \"href\" : \"https://yourshop.api.urn/shop/images/153ac5c9-bc61-4f20-8bc1-a0bbef14816a\"\
               \n        },\n        \"data\" : {\n          \"href\" : \"https://yourshop.api.urn/api/core-storage/images/file.png?hash=212-2323-4343{&width,height,upscale}\"\
               ,\n          \"templated\" : true\n        },\n        \"metadata\"\
               \ : {\n          \"href\" : \"https://yourshop.api.urn/api/core-storage/images/file.png?hash=212-2323-4343&download=no\"\
@@ -9927,7 +9928,7 @@ paths:
               \n    }\n  },\n  \"page\" : {\n    \"size\" : 20,\n    \"totalElements\"\
               \ : 1,\n    \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}"
           schema:
-            $ref: "#/definitions/shop_images_search_find-by-label918748962"
+            $ref: "#/definitions/shop_images918748962"
     post:
       tags:
       - "shop"
@@ -10186,9 +10187,9 @@ paths:
         200:
           description: ""
           examples:
-            application/hal+json: "{\n  \"label\" : \"logo\",\n  \"_id\" : \"d3d1acc8-df90-4534-92d3-f62efd4f1485\"\
-              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/images/d3d1acc8-df90-4534-92d3-f62efd4f1485\"\
-              \n    },\n    \"image\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/images/d3d1acc8-df90-4534-92d3-f62efd4f1485\"\
+            application/hal+json: "{\n  \"label\" : \"logo\",\n  \"_id\" : \"062e01a1-7535-4e99-b231-f054701abefd\"\
+              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/images/062e01a1-7535-4e99-b231-f054701abefd\"\
+              \n    },\n    \"image\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/images/062e01a1-7535-4e99-b231-f054701abefd\"\
               \n    },\n    \"data\" : {\n      \"href\" : \"https://yourshop.api.urn/api/core-storage/images/file.png?hash=212-2323-4343{&width,height,upscale}\"\
               ,\n      \"templated\" : true\n    },\n    \"metadata\" : {\n      \"\
               href\" : \"https://yourshop.api.urn/api/core-storage/images/file.png?hash=212-2323-4343&download=no\"\
@@ -10236,10 +10237,10 @@ paths:
           description: ""
           examples:
             application/hal+json: "{\n  \"_embedded\" : {\n    \"images\" : [ {\n\
-              \      \"label\" : \"logo\",\n      \"_id\" : \"b4468e0f-9186-43e2-8647-aa4de19f2105\"\
+              \      \"label\" : \"logo\",\n      \"_id\" : \"368e3d40-f65f-4cd6-9f03-c81da446e902\"\
               ,\n      \"_links\" : {\n        \"self\" : {\n          \"href\" :\
-              \ \"https://yourshop.api.urn/shop/images/b4468e0f-9186-43e2-8647-aa4de19f2105\"\
-              \n        },\n        \"image\" : {\n          \"href\" : \"https://yourshop.api.urn/shop/images/b4468e0f-9186-43e2-8647-aa4de19f2105\"\
+              \ \"https://yourshop.api.urn/shop/images/368e3d40-f65f-4cd6-9f03-c81da446e902\"\
+              \n        },\n        \"image\" : {\n          \"href\" : \"https://yourshop.api.urn/shop/images/368e3d40-f65f-4cd6-9f03-c81da446e902\"\
               \n        },\n        \"data\" : {\n          \"href\" : \"https://yourshop.api.urn/api/core-storage/images/file.png?hash=212-2323-4343{&width,height,upscale}\"\
               ,\n          \"templated\" : true\n        },\n        \"metadata\"\
               \ : {\n          \"href\" : \"https://yourshop.api.urn/api/core-storage/images/file.png?hash=212-2323-4343&download=no\"\
@@ -10248,7 +10249,7 @@ paths:
               \n    }\n  },\n  \"page\" : {\n    \"size\" : 20,\n    \"totalElements\"\
               \ : 1,\n    \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}"
           schema:
-            $ref: "#/definitions/shop_images_search_find-by-label918748962"
+            $ref: "#/definitions/shop_images918748962"
   /shop-id:
     get:
       tags:
@@ -10262,7 +10263,7 @@ paths:
         200:
           description: ""
           examples:
-            application/hal+json: "{\n  \"shopId\" : \"5af918fc-b551-41a5-bafd-b88c991a3bac\"\
+            application/hal+json: "{\n  \"shopId\" : \"4ac076a2-6788-4364-b351-9bf978a0fa5f\"\
               \n}"
           schema:
             $ref: "#/definitions/shop-id927029385"
@@ -14719,6 +14720,73 @@ definitions:
       _id:
         type: "string"
         description: "The ID of the return process."
+  shop-2118505709:
+    type: "object"
+    required:
+    - "currencies"
+    - "defaultCurrency"
+    - "defaultLocale"
+    - "fallbackHostname"
+    - "locales"
+    - "name"
+    - "primaryHostname"
+    properties:
+      defaultLocale:
+        type: "string"
+        description: "The default locale of the shop (cannot be changed)."
+      closedShopMessage:
+        type: "string"
+        description: "A message that is shown when the shop is closed by its owner."
+        minLength: 0
+        maxLength: 65536
+      locales:
+        type: "array"
+        description: "List of locales that are supported by this shop. Defaults to\
+          \ `defaultLocale`. The `defaultLocale` is always included in this list."
+      closedByMerchant:
+        type: "boolean"
+        description: "Indicates if the shop is closed by its owner. Can be `true`\
+          \ or `false`."
+      defaultCurrency:
+        type: "string"
+        description: "The default currency of the shop."
+      primaryHostname:
+        type: "string"
+        description: "The primary hostname of the shop."
+        minLength: 0
+        maxLength: 255
+      name:
+        type: "string"
+        description: "The name of the shop."
+        minLength: 0
+        maxLength: 255
+      tax:
+        type: "object"
+        properties:
+          taxModel:
+            type: "string"
+            description: "The tax model used for all product prices in this shop."
+          vatExempted:
+            type: "boolean"
+            description: "Indicates if the merchant is exempted to declare VAT. Can\
+              \ be `true` or `false`."
+      fallbackHostname:
+        type: "string"
+        description: "The unchangeable, fallback hostname of the shop."
+        minLength: 0
+        maxLength: 255
+      currencies:
+        type: "array"
+        description: "List of currencies that are supported by this shop. Defaults\
+          \ to `defaultCurrency`. The `defaultCurrency` is always included in this\
+          \ list."
+    example: "{\n  \"name\" : \"anotherName\",\n  \"closedShopMessage\" : \"Sorry,\
+      \ this shop is closed.\",\n  \"primaryHostname\" : \"cornershop.amazingdiscounts.xyz\"\
+      ,\n  \"fallbackHostname\" : \"cornershop.beyondshop.cloud\",\n  \"tax\" : {\n\
+      \    \"taxModel\" : \"GROSS\",\n    \"vatExempted\" : false\n  },\n  \"currencies\"\
+      \ : [ \"GBP\", \"USD\", \"EUR\" ],\n  \"defaultCurrency\" : \"USD\",\n  \"locales\"\
+      \ : [ \"en-GB\", \"de-DE\" ],\n  \"defaultLocale\" : \"en-GB\",\n  \"closedByMerchant\"\
+      \ : false\n}"
   webhook-subscriptions_id-209735219:
     type: "object"
     required:
@@ -15023,14 +15091,14 @@ definitions:
       _id:
         type: "string"
         description: "The immutable, unique identifier of the requested resource."
-  users_id_roles1375437107:
-    example: "https://yourshop.api.urn/roles/aec5dfa6-818e-46a1-aa81-dae32309a4c3"
   shop-id927029385:
     type: "object"
     properties:
       shopId:
         type: "string"
         description: "The unique identifier of the shop."
+  users_id_roles1375437107:
+    example: "https://yourshop.api.urn/roles/aec5dfa6-818e-46a1-aa81-dae32309a4c3"
   orders_order-id_processes_shippings_shipping-process-id_mark-delivered-1907336295:
     type: "object"
     properties:
@@ -15302,73 +15370,21 @@ definitions:
         description: "The text that comes along with the list price. Can be either\
           \ labeling the original price, or deviations from that, such as e.g. a discount\
           \ treatment or the recommended retail price."
-  shop1024778187:
+  shop_images918748962:
     type: "object"
-    required:
-    - "currencies"
-    - "defaultCurrency"
-    - "defaultLocale"
-    - "fallbackHostname"
-    - "locales"
-    - "name"
-    - "primaryHostname"
     properties:
-      defaultLocale:
-        type: "string"
-        description: "The default locale of the shop (cannot be changed)."
-      closedShopMessage:
-        type: "string"
-        description: "A message that is shown when the shop is closed by its owner."
-        minLength: 0
-        maxLength: 65536
-      locales:
-        type: "array"
-        description: "List of locales that are supported by this shop. Defaults to\
-          \ `defaultLocale`. The `defaultLocale` is always included in this list."
-      closedByMerchant:
-        type: "boolean"
-        description: "Indicates if the shop is closed by its owner. Can be `true`\
-          \ or `false`."
-      defaultCurrency:
-        type: "string"
-        description: "The default currency of the shop."
-      primaryHostname:
-        type: "string"
-        description: "The primary hostname of the shop."
-        minLength: 0
-        maxLength: 255
-      name:
-        type: "string"
-        description: "The name of the shop."
-        minLength: 0
-        maxLength: 255
-      tax:
+      _links:
         type: "object"
-        properties:
-          taxModel:
-            type: "string"
-            description: "The tax model used for all product prices in this shop."
-          vatExempted:
-            type: "boolean"
-            description: "Indicates if the merchant is exempted to declare VAT. Can\
-              \ be `true` or `false`."
-      fallbackHostname:
-        type: "string"
-        description: "The unchangeable, fallback hostname of the shop."
-        minLength: 0
-        maxLength: 255
-      currencies:
-        type: "array"
-        description: "List of currencies that are supported by this shop. Defaults\
-          \ to `defaultCurrency`. The `defaultCurrency` is always included in this\
-          \ list."
-    example: "{\n  \"name\" : \"anotherName\",\n  \"closedShopMessage\" : \"Sorry,\
-      \ this shop is closed.\",\n  \"primaryHostname\" : \"cornershop.amazingdiscounts.xyz\"\
-      ,\n  \"fallbackHostname\" : \"cornershop.beyondshop.cloud\",\n  \"tax\" : {\n\
-      \    \"taxModel\" : \"GROSS\",\n    \"vatExempted\" : false\n  },\n  \"currencies\"\
-      \ : [ \"USD\", \"EUR\", \"GBP\" ],\n  \"defaultCurrency\" : \"USD\",\n  \"locales\"\
-      \ : [ \"en-GB\", \"de-DE\" ],\n  \"defaultLocale\" : \"en-GB\",\n  \"closedByMerchant\"\
-      \ : false\n}"
+        description: "See <<hypermedia,Hypermedia>>"
+        properties: {}
+      _embedded:
+        type: "object"
+        description: "List of <<resources-image-get,images>>"
+        properties: {}
+      page:
+        type: "object"
+        description: "See <<pagination,Pagination>>"
+        properties: {}
   products_productId_attributes589021179:
     type: "object"
     properties:
@@ -15412,21 +15428,6 @@ definitions:
         type: "string"
         description: "The value of the shop attribute. Assuming the attribute name\
           \ to be `default-sorting-products`, the value can be e.g. `asc`."
-  shop_images_search_find-by-label918748962:
-    type: "object"
-    properties:
-      _embedded:
-        type: "object"
-        description: "List of <<resources-image-get,images>>"
-        properties: {}
-      _links:
-        type: "object"
-        description: "See <<hypermedia,Hypermedia>>"
-        properties: {}
-      page:
-        type: "object"
-        description: "See <<pagination,Pagination>>"
-        properties: {}
   users_verify-password-2034533541:
     type: "object"
     properties:
