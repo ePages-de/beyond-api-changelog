@@ -29,4 +29,19 @@ Other options might be:
 - https://bitbucket.org/atlassian/openapi-diff
 - https://javalibs.com/artifact/com.deepoove/swagger-diff
 - https://swagger.io/blog/api-development/using-swagger-to-detect-breaking-api-changes/
+
+### openapi-diff
+
+https://bitbucket.org/atlassian/openapi-diff
+
+```
+$ ./node_modules/.bin/openapi-diff ${PREVIOUS_API_SPEC_FILE} ${API_SPEC_FILE} | tail -n +2 | jq '.'
+```
+
+
+### Java based
 - https://github.com/Sayi/swagger-diff
+
+```
+java -jar swagger-diff.jar -old ${PREVIOUS_API_SPEC_FILE} -new ${API_SPEC_FILE} -v 2.0 -output-mode markdown
+```
