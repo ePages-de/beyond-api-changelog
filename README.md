@@ -35,7 +35,9 @@ Other options might be:
 https://bitbucket.org/atlassian/openapi-diff
 
 ```
-$ ./node_modules/.bin/openapi-diff ${PREVIOUS_API_SPEC_FILE} ${API_SPEC_FILE} | tail -n +2 | jq -r 'delpaths([["breakingDifferencesFound"]]) | .[] | .[] | "|" + .type + "\n" + "|" + .code + "\n" + "|" + .sourceSpecEntityDetails[].location | gsub("paths."; "")'
+
+$ OPEN_API_DIFF=$(mktemp)
+$ ./node_modules/.bin/openapi-diff ${PREVIOUS_API_SPEC_FILE} ${API_SPEC_FILE} > ${OPEN_API_DIFF} | tail -n +2 | jq -r 'delpaths([["breakingDifferencesFound"]]) | .[] | .[] | "|" + .type + "\n" + "|" + .code + "\n" + "|" + .sourceSpecEntityDetails[].location | gsub("paths."; "")'
 ```
 
 
