@@ -520,12 +520,12 @@ paths:
               \"variant\\\" : \\\"TILE\\\",\\n      \\\"uri\\\" : \\\"http://example.com/tile.png\\\
               \"\\n    }, {\\n      \\\"setName\\\" : \\\"official\\\",\\n      \\\
               \"variant\\\" : \\\"STOREFRONT\\\",\\n      \\\"uri\\\" : \\\"http://example.com/storefront.png\\\
-              \"\\n    } ]\\n  }\\n}\",\n      \"createdAt\" : \"2018-09-28T09:34:50.024\"\
+              \"\\n    } ]\\n  }\\n}\",\n      \"createdAt\" : \"2018-10-05T13:34:39.103\"\
               ,\n      \"feature\" : \"app.test-app\",\n      \"type\" : \"PAYMENT\"\
-              ,\n      \"_id\" : \"7aca1ab6-d2f1-48f9-bfdf-58e14ae5ebcc\",\n     \
+              ,\n      \"_id\" : \"2ccdc7d2-a53e-4d14-b60f-cf0547da85df\",\n     \
               \ \"installationStatus\" : \"INSTALLED\",\n      \"_links\" : {\n  \
-              \      \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/apps/7aca1ab6-d2f1-48f9-bfdf-58e14ae5ebcc\"\
-              \n        },\n        \"uninstall\" : {\n          \"href\" : \"https://yourshop.api.urn/apps/7aca1ab6-d2f1-48f9-bfdf-58e14ae5ebcc/uninstall\"\
+              \      \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/apps/2ccdc7d2-a53e-4d14-b60f-cf0547da85df\"\
+              \n        },\n        \"uninstall\" : {\n          \"href\" : \"https://yourshop.api.urn/apps/2ccdc7d2-a53e-4d14-b60f-cf0547da85df/uninstall\"\
               \n        }\n      }\n    }, {\n      \"name\" : \"Simple + Secure Payment\"\
               ,\n      \"price\" : \"19 USD per month\",\n      \"description\" :\
               \ \"A payment method for simple and secure payments in online shops.\"\
@@ -555,12 +555,12 @@ paths:
               \"variant\\\" : \\\"TILE\\\",\\n      \\\"uri\\\" : \\\"http://example.com/tile.png\\\
               \"\\n    }, {\\n      \\\"setName\\\" : \\\"official\\\",\\n      \\\
               \"variant\\\" : \\\"STOREFRONT\\\",\\n      \\\"uri\\\" : \\\"http://example.com/storefront.png\\\
-              \"\\n    } ]\\n  }\\n}\",\n      \"createdAt\" : \"2018-09-28T09:34:50.239\"\
+              \"\\n    } ]\\n  }\\n}\",\n      \"createdAt\" : \"2018-10-05T13:34:39.372\"\
               ,\n      \"feature\" : \"app.another-test-app\",\n      \"type\" : \"\
-              PAYMENT\",\n      \"_id\" : \"b23d6691-7a04-41c7-aa80-377af6cfb14a\"\
+              PAYMENT\",\n      \"_id\" : \"b9e20376-23d7-4d72-805e-6f19a3c5d17f\"\
               ,\n      \"installationStatus\" : \"INSTALLED\",\n      \"_links\" :\
-              \ {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/apps/b23d6691-7a04-41c7-aa80-377af6cfb14a\"\
-              \n        },\n        \"uninstall\" : {\n          \"href\" : \"https://yourshop.api.urn/apps/b23d6691-7a04-41c7-aa80-377af6cfb14a/uninstall\"\
+              \ {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/apps/b9e20376-23d7-4d72-805e-6f19a3c5d17f\"\
+              \n        },\n        \"uninstall\" : {\n          \"href\" : \"https://yourshop.api.urn/apps/b9e20376-23d7-4d72-805e-6f19a3c5d17f/uninstall\"\
               \n        }\n      }\n    } ]\n  },\n  \"_links\" : {\n    \"self\"\
               \ : {\n      \"href\" : \"https://yourshop.api.urn/apps\"\n    }\n \
               \ },\n  \"page\" : {\n    \"size\" : 20,\n    \"totalElements\" : 2,\n\
@@ -624,11 +624,11 @@ paths:
               \"variant\\\" : \\\"TILE\\\",\\n      \\\"uri\\\" : \\\"http://example.com/tile.png\\\
               \"\\n    }, {\\n      \\\"setName\\\" : \\\"official\\\",\\n      \\\
               \"variant\\\" : \\\"STOREFRONT\\\",\\n      \\\"uri\\\" : \\\"http://example.com/storefront.png\\\
-              \"\\n    } ]\\n  }\\n}\",\n  \"createdAt\" : \"2018-09-28T09:34:46.138\"\
+              \"\\n    } ]\\n  }\\n}\",\n  \"createdAt\" : \"2018-10-05T13:34:36.056\"\
               ,\n  \"feature\" : \"app.test-app\",\n  \"type\" : \"PAYMENT\",\n  \"\
-              _id\" : \"60a89f3f-fcdb-41d5-8a7d-433dda1aed72\",\n  \"installationStatus\"\
+              _id\" : \"3cdcd6ff-5cc0-445f-9721-946b691ba4c0\",\n  \"installationStatus\"\
               \ : \"AVAILABLE\",\n  \"_links\" : {\n    \"self\" : {\n      \"href\"\
-              \ : \"https://yourshop.api.urn/apps/60a89f3f-fcdb-41d5-8a7d-433dda1aed72\"\
+              \ : \"https://yourshop.api.urn/apps/3cdcd6ff-5cc0-445f-9721-946b691ba4c0\"\
               \n    }\n  }\n}"
           schema:
             $ref: "#/definitions/apps_appId-847214231"
@@ -684,11 +684,11 @@ paths:
               \"variant\\\" : \\\"TILE\\\",\\n      \\\"uri\\\" : \\\"http://example.com/tile.png\\\
               \"\\n    }, {\\n      \\\"setName\\\" : \\\"official\\\",\\n      \\\
               \"variant\\\" : \\\"STOREFRONT\\\",\\n      \\\"uri\\\" : \\\"http://example.com/storefront.png\\\
-              \"\\n    } ]\\n  }\\n}\",\n  \"createdAt\" : \"2018-09-28T09:34:51.305\"\
+              \"\\n    } ]\\n  }\\n}\",\n  \"createdAt\" : \"2018-10-05T13:34:40.26\"\
               ,\n  \"feature\" : \"app.test-app\",\n  \"type\" : \"PAYMENT\",\n  \"\
-              _id\" : \"b5c8da55-ffea-4ba8-9ee3-ee7cc2d1b66a\",\n  \"installationStatus\"\
+              _id\" : \"8d29a2ab-86ed-4b32-838a-ecbf2c50a4d7\",\n  \"installationStatus\"\
               \ : \"AVAILABLE\",\n  \"_links\" : {\n    \"self\" : {\n      \"href\"\
-              \ : \"https://yourshop.api.urn/apps/b5c8da55-ffea-4ba8-9ee3-ee7cc2d1b66a\"\
+              \ : \"https://yourshop.api.urn/apps/8d29a2ab-86ed-4b32-838a-ecbf2c50a4d7\"\
               \n    }\n  }\n}"
           schema:
             $ref: "#/definitions/apps_appId-847214231"
@@ -2717,20 +2717,20 @@ paths:
               \ {\n      \"clientId\" : \"client_id\",\n      \"name\" : \"Mobile\
               \ Product Management\",\n      \"scopes\" : [ \"ordr:u\", \"ordr:r\"\
               \ ],\n      \"callbackUrl\" : \"https://hostname/callback\",\n     \
-              \ \"_id\" : \"89dcc491-defd-4b55-8e99-6e7068e89c38\",\n      \"_links\"\
-              \ : {\n        \"regenerate-secret\" : {\n          \"href\" : \"https://yourshop.api.urn/custom-apps/89dcc491-defd-4b55-8e99-6e7068e89c38/regenerate-secret\"\
+              \ \"_id\" : \"80444a05-e617-4074-a401-29d72b2cf71c\",\n      \"_links\"\
+              \ : {\n        \"regenerate-secret\" : {\n          \"href\" : \"https://yourshop.api.urn/custom-apps/80444a05-e617-4074-a401-29d72b2cf71c/regenerate-secret\"\
               \n        }\n      }\n    }, {\n      \"clientId\" : \"client_id\",\n\
               \      \"name\" : \"Mobile Product Management\",\n      \"scopes\" :\
               \ [ \"ordr:u\", \"ordr:r\" ],\n      \"callbackUrl\" : \"https://hostname/callback\"\
-              ,\n      \"_id\" : \"63a4831c-90f0-4042-8979-6e45da4c9a5e\",\n     \
+              ,\n      \"_id\" : \"4d4eba8f-edc0-4be0-a821-e0a84fd92c57\",\n     \
               \ \"_links\" : {\n        \"regenerate-secret\" : {\n          \"href\"\
-              \ : \"https://yourshop.api.urn/custom-apps/63a4831c-90f0-4042-8979-6e45da4c9a5e/regenerate-secret\"\
+              \ : \"https://yourshop.api.urn/custom-apps/4d4eba8f-edc0-4be0-a821-e0a84fd92c57/regenerate-secret\"\
               \n        }\n      }\n    }, {\n      \"clientId\" : \"client_id\",\n\
               \      \"name\" : \"Mobile Product Management\",\n      \"scopes\" :\
               \ [ \"ordr:u\", \"ordr:r\" ],\n      \"callbackUrl\" : \"https://hostname/callback\"\
-              ,\n      \"_id\" : \"7a051931-3416-4869-9f7c-a20540a48f86\",\n     \
+              ,\n      \"_id\" : \"0f13c816-256a-4375-a83d-3e0a63debcb2\",\n     \
               \ \"_links\" : {\n        \"regenerate-secret\" : {\n          \"href\"\
-              \ : \"https://yourshop.api.urn/custom-apps/7a051931-3416-4869-9f7c-a20540a48f86/regenerate-secret\"\
+              \ : \"https://yourshop.api.urn/custom-apps/0f13c816-256a-4375-a83d-3e0a63debcb2/regenerate-secret\"\
               \n        }\n      }\n    } ]\n  },\n  \"_links\" : {\n    \"self\"\
               \ : {\n      \"href\" : \"https://yourshop.api.urn/custom-apps?page=0&size=20\"\
               \n    }\n  },\n  \"page\" : {\n    \"size\" : 20,\n    \"totalElements\"\
@@ -2769,12 +2769,12 @@ paths:
             application/hal+json: "{\n  \"clientSecret\" : \"client_secret\",\n  \"\
               clientId\" : \"client_id\",\n  \"scopes\" : [ \"ordr:u\", \"ordr:r\"\
               \ ],\n  \"callbackUrl\" : \"https://hostname/callback\",\n  \"name\"\
-              \ : \"Mobile Product Management\",\n  \"_id\" : \"a51e3f89-7a1e-446d-9526-134ff9a59e92\"\
+              \ : \"Mobile Product Management\",\n  \"_id\" : \"dd2f56fb-375e-4b01-bd94-3bab564a1d5e\"\
               ,\n  \"_links\" : {\n    \"regenerate-secret\" : {\n      \"href\" :\
-              \ \"https://yourshop.api.urn/custom-apps/a51e3f89-7a1e-446d-9526-134ff9a59e92/regenerate-secret\"\
+              \ \"https://yourshop.api.urn/custom-apps/dd2f56fb-375e-4b01-bd94-3bab564a1d5e/regenerate-secret\"\
               \n    }\n  }\n}"
           schema:
-            $ref: "#/definitions/custom-apps_customAppId_regenerate-secret-525208887"
+            $ref: "#/definitions/custom-apps-525208887"
       security:
       - oauth2_accessCode:
         - "acap:m"
@@ -2802,8 +2802,8 @@ paths:
             application/hal+json: "{\n  \"clientId\" : \"client_id\",\n  \"name\"\
               \ : \"Mobile Product Management\",\n  \"scopes\" : [ \"ordr:u\", \"\
               ordr:r\" ],\n  \"callbackUrl\" : \"https://hostname/callback\",\n  \"\
-              _id\" : \"61912342-c312-4a53-8247-72130826df98\",\n  \"_links\" : {\n\
-              \    \"regenerate-secret\" : {\n      \"href\" : \"https://yourshop.api.urn/custom-apps/61912342-c312-4a53-8247-72130826df98/regenerate-secret\"\
+              _id\" : \"34548594-1cf2-4644-80d1-933e368b5862\",\n  \"_links\" : {\n\
+              \    \"regenerate-secret\" : {\n      \"href\" : \"https://yourshop.api.urn/custom-apps/34548594-1cf2-4644-80d1-933e368b5862/regenerate-secret\"\
               \n    }\n  }\n}"
           schema:
             $ref: "#/definitions/custom-apps_customAppId-1474085348"
@@ -2843,9 +2843,9 @@ paths:
           examples:
             application/hal+json: "{\n  \"clientId\" : \"client_id\",\n  \"name\"\
               \ : \"Managed Payment Methods\",\n  \"scopes\" : [ \"pymt:m\" ],\n \
-              \ \"callbackUrl\" : \"https://hostname/callback\",\n  \"_id\" : \"6d2357b8-110c-4774-a900-dd28ebc4cc87\"\
+              \ \"callbackUrl\" : \"https://hostname/callback\",\n  \"_id\" : \"6a963757-5865-464d-9ce0-a3433998ce9c\"\
               ,\n  \"_links\" : {\n    \"regenerate-secret\" : {\n      \"href\" :\
-              \ \"https://yourshop.api.urn/custom-apps/6d2357b8-110c-4774-a900-dd28ebc4cc87/regenerate-secret\"\
+              \ \"https://yourshop.api.urn/custom-apps/6a963757-5865-464d-9ce0-a3433998ce9c/regenerate-secret\"\
               \n    }\n  }\n}"
           schema:
             $ref: "#/definitions/custom-apps_customAppId-1474085348"
@@ -2894,15 +2894,15 @@ paths:
         200:
           description: ""
           examples:
-            application/hal+json: "{\n  \"clientSecret\" : \"684ba38f-b07f-432f-9edd-98b249ededdc\"\
+            application/hal+json: "{\n  \"clientSecret\" : \"f1462034-2a34-414f-ab9a-5804372d20d7\"\
               ,\n  \"clientId\" : \"client_id\",\n  \"scopes\" : [ \"ordr:u\", \"\
               ordr:r\" ],\n  \"callbackUrl\" : \"https://hostname/callback\",\n  \"\
-              name\" : \"Mobile Product Management\",\n  \"_id\" : \"30ea76d5-5936-46d2-a02f-12023330954c\"\
+              name\" : \"Mobile Product Management\",\n  \"_id\" : \"70836a95-3e2c-42f0-ae3f-1f87d8242a0d\"\
               ,\n  \"_links\" : {\n    \"regenerate-secret\" : {\n      \"href\" :\
-              \ \"https://yourshop.api.urn/custom-apps/30ea76d5-5936-46d2-a02f-12023330954c/regenerate-secret\"\
+              \ \"https://yourshop.api.urn/custom-apps/70836a95-3e2c-42f0-ae3f-1f87d8242a0d/regenerate-secret\"\
               \n    }\n  }\n}"
           schema:
-            $ref: "#/definitions/custom-apps_customAppId_regenerate-secret-525208887"
+            $ref: "#/definitions/custom-apps-525208887"
       security:
       - oauth2_accessCode:
         - "acap:m"
@@ -10818,7 +10818,7 @@ paths:
         200:
           description: ""
           examples:
-            application/hal+json: "{\n  \"shopId\" : \"78fcddf6-cc67-4692-9ade-55b4cd0b9f93\"\
+            application/hal+json: "{\n  \"shopId\" : \"66d4e4ed-c6f5-4c69-b4ee-bf68caa16100\"\
               \n}"
           schema:
             $ref: "#/definitions/shop-id927029385"
@@ -14696,7 +14696,7 @@ definitions:
           \ If the value is longer the numericSuffixLength is extended"
     example: "{\n  \"stringPrefix\" : \"2017-shop-\",\n  \"nextNumericSuffix\" : 10000,\n\
       \  \"numericSuffixLength\" : 4\n}"
-  custom-apps_customAppId_regenerate-secret-525208887:
+  custom-apps-525208887:
     type: "object"
     required:
     - "name"
