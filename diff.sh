@@ -43,8 +43,16 @@ git show ${COMMIT_2}:${API_SPEC_FILE} > ${SPEC_FILE_2}
 
 if [[ "$OUTPUT_FORMAT" = "adoc" ]]; then
     OPEN_API_DIFF=$(mktemp)
+
+    ./node_modules/.bin/openapi-diff ${SPEC_FILE_1} ${SPEC_FILE_2}
+
     ./node_modules/.bin/openapi-diff ${SPEC_FILE_1} ${SPEC_FILE_2} > ${OPEN_API_DIFF}
-    cat ${OPEN_API_DIFF} | tail -n +2 | jq -r 'delpaths([["breakingDifferencesFound"]]) | .[] | .[] | "|" + .type + "\n" + "|" + .code + "\n" + "|" + .sourceSpecEntityDetails[].location | gsub("paths."; "")'
+
+    echo "|==="
+    echo "|Change |Description"
+    cat ${OPEN_API_DIFF} | tail -n +2 | jq -r 'delpaths([["breakingDifferencesFound"]]) | .[] | .[] | "\n|" + .code + "\n" + "|" + .sourceSpecEntityDetails[].location | gsub("paths."; "")'
+    echo
+    echo "|==="
 else
     java -jar swagger-diff.jar -old ${SPEC_FILE_1} -new ${SPEC_FILE_2} -v 2.0 -output-mode markdown
 fi
