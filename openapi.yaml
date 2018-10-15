@@ -465,12 +465,12 @@ paths:
               \"variant\\\" : \\\"TILE\\\",\\n      \\\"uri\\\" : \\\"http://example.com/tile.png\\\
               \"\\n    }, {\\n      \\\"setName\\\" : \\\"official\\\",\\n      \\\
               \"variant\\\" : \\\"STOREFRONT\\\",\\n      \\\"uri\\\" : \\\"http://example.com/storefront.png\\\
-              \"\\n    } ]\\n  }\\n}\",\n      \"createdAt\" : \"2018-10-09T11:54:43.189\"\
-              ,\n      \"feature\" : \"app.another-test-app\",\n      \"type\" : \"\
-              PAYMENT\",\n      \"_id\" : \"0fc5bfc1-3902-43af-a3a3-d94054f0a3d6\"\
-              ,\n      \"installationStatus\" : \"INSTALLED\",\n      \"_links\" :\
-              \ {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/apps/0fc5bfc1-3902-43af-a3a3-d94054f0a3d6\"\
-              \n        },\n        \"uninstall\" : {\n          \"href\" : \"https://yourshop.api.urn/apps/0fc5bfc1-3902-43af-a3a3-d94054f0a3d6/uninstall\"\
+              \"\\n    } ]\\n  }\\n}\",\n      \"createdAt\" : \"2018-10-15T12:49:37.982\"\
+              ,\n      \"feature\" : \"app.test-app\",\n      \"type\" : \"PAYMENT\"\
+              ,\n      \"_id\" : \"135eb12f-74e5-46fc-8dd9-5e456235399b\",\n     \
+              \ \"installationStatus\" : \"INSTALLED\",\n      \"_links\" : {\n  \
+              \      \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/apps/135eb12f-74e5-46fc-8dd9-5e456235399b\"\
+              \n        },\n        \"uninstall\" : {\n          \"href\" : \"https://yourshop.api.urn/apps/135eb12f-74e5-46fc-8dd9-5e456235399b/uninstall\"\
               \n        }\n      }\n    }, {\n      \"name\" : \"Simple + Secure Payment\"\
               ,\n      \"price\" : \"19 USD per month\",\n      \"description\" :\
               \ \"A payment method for simple and secure payments in online shops.\"\
@@ -500,12 +500,12 @@ paths:
               \"variant\\\" : \\\"TILE\\\",\\n      \\\"uri\\\" : \\\"http://example.com/tile.png\\\
               \"\\n    }, {\\n      \\\"setName\\\" : \\\"official\\\",\\n      \\\
               \"variant\\\" : \\\"STOREFRONT\\\",\\n      \\\"uri\\\" : \\\"http://example.com/storefront.png\\\
-              \"\\n    } ]\\n  }\\n}\",\n      \"createdAt\" : \"2018-10-09T11:54:43.06\"\
-              ,\n      \"feature\" : \"app.test-app\",\n      \"type\" : \"PAYMENT\"\
-              ,\n      \"_id\" : \"ddc77ab7-4880-4933-9af4-0a5e29ccd6c9\",\n     \
-              \ \"installationStatus\" : \"INSTALLED\",\n      \"_links\" : {\n  \
-              \      \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/apps/ddc77ab7-4880-4933-9af4-0a5e29ccd6c9\"\
-              \n        },\n        \"uninstall\" : {\n          \"href\" : \"https://yourshop.api.urn/apps/ddc77ab7-4880-4933-9af4-0a5e29ccd6c9/uninstall\"\
+              \"\\n    } ]\\n  }\\n}\",\n      \"createdAt\" : \"2018-10-15T12:49:38.099\"\
+              ,\n      \"feature\" : \"app.another-test-app\",\n      \"type\" : \"\
+              PAYMENT\",\n      \"_id\" : \"880241ca-7812-470f-9319-5bebf1acb177\"\
+              ,\n      \"installationStatus\" : \"INSTALLED\",\n      \"_links\" :\
+              \ {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/apps/880241ca-7812-470f-9319-5bebf1acb177\"\
+              \n        },\n        \"uninstall\" : {\n          \"href\" : \"https://yourshop.api.urn/apps/880241ca-7812-470f-9319-5bebf1acb177/uninstall\"\
               \n        }\n      }\n    } ]\n  },\n  \"_links\" : {\n    \"self\"\
               \ : {\n      \"href\" : \"https://yourshop.api.urn/apps\"\n    }\n \
               \ },\n  \"page\" : {\n    \"size\" : 20,\n    \"totalElements\" : 2,\n\
@@ -569,11 +569,11 @@ paths:
               \"variant\\\" : \\\"TILE\\\",\\n      \\\"uri\\\" : \\\"http://example.com/tile.png\\\
               \"\\n    }, {\\n      \\\"setName\\\" : \\\"official\\\",\\n      \\\
               \"variant\\\" : \\\"STOREFRONT\\\",\\n      \\\"uri\\\" : \\\"http://example.com/storefront.png\\\
-              \"\\n    } ]\\n  }\\n}\",\n  \"createdAt\" : \"2018-10-09T11:54:39.598\"\
+              \"\\n    } ]\\n  }\\n}\",\n  \"createdAt\" : \"2018-10-15T12:49:34.158\"\
               ,\n  \"feature\" : \"app.test-app\",\n  \"type\" : \"PAYMENT\",\n  \"\
-              _id\" : \"c02fbb96-5bac-4500-963e-f3e802394448\",\n  \"installationStatus\"\
+              _id\" : \"893d298b-fa87-4bbe-8437-4cf558620178\",\n  \"installationStatus\"\
               \ : \"AVAILABLE\",\n  \"_links\" : {\n    \"self\" : {\n      \"href\"\
-              \ : \"https://yourshop.api.urn/apps/c02fbb96-5bac-4500-963e-f3e802394448\"\
+              \ : \"https://yourshop.api.urn/apps/893d298b-fa87-4bbe-8437-4cf558620178\"\
               \n    }\n  }\n}"
           schema:
             $ref: "#/definitions/apps_appId_uninstall-847214231"
@@ -629,11 +629,11 @@ paths:
               \"variant\\\" : \\\"TILE\\\",\\n      \\\"uri\\\" : \\\"http://example.com/tile.png\\\
               \"\\n    }, {\\n      \\\"setName\\\" : \\\"official\\\",\\n      \\\
               \"variant\\\" : \\\"STOREFRONT\\\",\\n      \\\"uri\\\" : \\\"http://example.com/storefront.png\\\
-              \"\\n    } ]\\n  }\\n}\",\n  \"createdAt\" : \"2018-10-09T11:54:43.973\"\
+              \"\\n    } ]\\n  }\\n}\",\n  \"createdAt\" : \"2018-10-15T12:49:38.721\"\
               ,\n  \"feature\" : \"app.test-app\",\n  \"type\" : \"PAYMENT\",\n  \"\
-              _id\" : \"bfca2b02-83fe-42f7-ae67-01f3211ddae2\",\n  \"installationStatus\"\
+              _id\" : \"0af6c9ec-0b77-457e-941a-7beff246463a\",\n  \"installationStatus\"\
               \ : \"AVAILABLE\",\n  \"_links\" : {\n    \"self\" : {\n      \"href\"\
-              \ : \"https://yourshop.api.urn/apps/bfca2b02-83fe-42f7-ae67-01f3211ddae2\"\
+              \ : \"https://yourshop.api.urn/apps/0af6c9ec-0b77-457e-941a-7beff246463a\"\
               \n    }\n  }\n}"
           schema:
             $ref: "#/definitions/apps_appId_uninstall-847214231"
@@ -2661,20 +2661,24 @@ paths:
               \ {\n      \"clientId\" : \"client_id\",\n      \"name\" : \"Mobile\
               \ Product Management\",\n      \"scopes\" : [ \"ordr:u\", \"ordr:r\"\
               \ ],\n      \"callbackUrl\" : \"https://hostname/callback\",\n     \
-              \ \"_id\" : \"f1ea7be6-3afe-4646-a16b-6fafa62c24d0\",\n      \"_links\"\
-              \ : {\n        \"regenerate-secret\" : {\n          \"href\" : \"https://yourshop.api.urn/custom-apps/f1ea7be6-3afe-4646-a16b-6fafa62c24d0/regenerate-secret\"\
+              \ \"_id\" : \"1be5ec20-c9b5-42ad-ac47-6a53a5ffc631\",\n      \"_links\"\
+              \ : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/custom-apps/1be5ec20-c9b5-42ad-ac47-6a53a5ffc631\"\
+              \n        },\n        \"regenerate-secret\" : {\n          \"href\"\
+              \ : \"https://yourshop.api.urn/custom-apps/1be5ec20-c9b5-42ad-ac47-6a53a5ffc631/regenerate-secret\"\
               \n        }\n      }\n    }, {\n      \"clientId\" : \"client_id\",\n\
               \      \"name\" : \"Mobile Product Management\",\n      \"scopes\" :\
               \ [ \"ordr:u\", \"ordr:r\" ],\n      \"callbackUrl\" : \"https://hostname/callback\"\
-              ,\n      \"_id\" : \"afa7d57a-1786-48a0-99e6-c92ff6bff8c2\",\n     \
-              \ \"_links\" : {\n        \"regenerate-secret\" : {\n          \"href\"\
-              \ : \"https://yourshop.api.urn/custom-apps/afa7d57a-1786-48a0-99e6-c92ff6bff8c2/regenerate-secret\"\
+              ,\n      \"_id\" : \"552af17a-cf70-4c8d-b60c-d5e968230c72\",\n     \
+              \ \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/custom-apps/552af17a-cf70-4c8d-b60c-d5e968230c72\"\
+              \n        },\n        \"regenerate-secret\" : {\n          \"href\"\
+              \ : \"https://yourshop.api.urn/custom-apps/552af17a-cf70-4c8d-b60c-d5e968230c72/regenerate-secret\"\
               \n        }\n      }\n    }, {\n      \"clientId\" : \"client_id\",\n\
               \      \"name\" : \"Mobile Product Management\",\n      \"scopes\" :\
               \ [ \"ordr:u\", \"ordr:r\" ],\n      \"callbackUrl\" : \"https://hostname/callback\"\
-              ,\n      \"_id\" : \"3f9cdb39-b188-46a3-9756-bbe56858f6ac\",\n     \
-              \ \"_links\" : {\n        \"regenerate-secret\" : {\n          \"href\"\
-              \ : \"https://yourshop.api.urn/custom-apps/3f9cdb39-b188-46a3-9756-bbe56858f6ac/regenerate-secret\"\
+              ,\n      \"_id\" : \"9abf82c0-f16c-4a19-b534-2ecb6720e19f\",\n     \
+              \ \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/custom-apps/9abf82c0-f16c-4a19-b534-2ecb6720e19f\"\
+              \n        },\n        \"regenerate-secret\" : {\n          \"href\"\
+              \ : \"https://yourshop.api.urn/custom-apps/9abf82c0-f16c-4a19-b534-2ecb6720e19f/regenerate-secret\"\
               \n        }\n      }\n    } ]\n  },\n  \"_links\" : {\n    \"self\"\
               \ : {\n      \"href\" : \"https://yourshop.api.urn/custom-apps?page=0&size=20\"\
               \n    }\n  },\n  \"page\" : {\n    \"size\" : 20,\n    \"totalElements\"\
@@ -2713,9 +2717,9 @@ paths:
             application/hal+json: "{\n  \"clientSecret\" : \"client_secret\",\n  \"\
               clientId\" : \"client_id\",\n  \"scopes\" : [ \"ordr:u\", \"ordr:r\"\
               \ ],\n  \"callbackUrl\" : \"https://hostname/callback\",\n  \"name\"\
-              \ : \"Mobile Product Management\",\n  \"_id\" : \"d4e0be80-3bbb-4be1-aa25-9070f59808d9\"\
-              ,\n  \"_links\" : {\n    \"regenerate-secret\" : {\n      \"href\" :\
-              \ \"https://yourshop.api.urn/custom-apps/d4e0be80-3bbb-4be1-aa25-9070f59808d9/regenerate-secret\"\
+              \ : \"Mobile Product Management\",\n  \"_id\" : \"14f6f7c4-1cee-46eb-8c44-c8a78ba23689\"\
+              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/custom-apps/14f6f7c4-1cee-46eb-8c44-c8a78ba23689\"\
+              \n    },\n    \"regenerate-secret\" : {\n      \"href\" : \"https://yourshop.api.urn/custom-apps/14f6f7c4-1cee-46eb-8c44-c8a78ba23689/regenerate-secret\"\
               \n    }\n  }\n}"
           schema:
             $ref: "#/definitions/custom-apps-525208887"
@@ -2746,8 +2750,9 @@ paths:
             application/hal+json: "{\n  \"clientId\" : \"client_id\",\n  \"name\"\
               \ : \"Mobile Product Management\",\n  \"scopes\" : [ \"ordr:u\", \"\
               ordr:r\" ],\n  \"callbackUrl\" : \"https://hostname/callback\",\n  \"\
-              _id\" : \"6df4af5d-3185-4f46-bae9-775639c11410\",\n  \"_links\" : {\n\
-              \    \"regenerate-secret\" : {\n      \"href\" : \"https://yourshop.api.urn/custom-apps/6df4af5d-3185-4f46-bae9-775639c11410/regenerate-secret\"\
+              _id\" : \"3068ee65-5145-4072-969e-48d69cf4c17b\",\n  \"_links\" : {\n\
+              \    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/custom-apps/3068ee65-5145-4072-969e-48d69cf4c17b\"\
+              \n    },\n    \"regenerate-secret\" : {\n      \"href\" : \"https://yourshop.api.urn/custom-apps/3068ee65-5145-4072-969e-48d69cf4c17b/regenerate-secret\"\
               \n    }\n  }\n}"
           schema:
             $ref: "#/definitions/custom-apps_customAppId-1474085348"
@@ -2787,9 +2792,9 @@ paths:
           examples:
             application/hal+json: "{\n  \"clientId\" : \"client_id\",\n  \"name\"\
               \ : \"Managed Payment Methods\",\n  \"scopes\" : [ \"pymt:m\" ],\n \
-              \ \"callbackUrl\" : \"https://hostname/callback\",\n  \"_id\" : \"d5c259fa-48a1-4516-b80b-6abf0a457b6e\"\
-              ,\n  \"_links\" : {\n    \"regenerate-secret\" : {\n      \"href\" :\
-              \ \"https://yourshop.api.urn/custom-apps/d5c259fa-48a1-4516-b80b-6abf0a457b6e/regenerate-secret\"\
+              \ \"callbackUrl\" : \"https://hostname/callback\",\n  \"_id\" : \"04a2531f-2af9-4761-92b3-78e48239501b\"\
+              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/custom-apps/04a2531f-2af9-4761-92b3-78e48239501b\"\
+              \n    },\n    \"regenerate-secret\" : {\n      \"href\" : \"https://yourshop.api.urn/custom-apps/04a2531f-2af9-4761-92b3-78e48239501b/regenerate-secret\"\
               \n    }\n  }\n}"
           schema:
             $ref: "#/definitions/custom-apps_customAppId-1474085348"
@@ -2838,12 +2843,12 @@ paths:
         200:
           description: ""
           examples:
-            application/hal+json: "{\n  \"clientSecret\" : \"8854b81f-9373-491e-8bd1-1be9ff52f2f2\"\
+            application/hal+json: "{\n  \"clientSecret\" : \"14613130-3f77-40ed-bd9e-e1d5712e0071\"\
               ,\n  \"clientId\" : \"client_id\",\n  \"scopes\" : [ \"ordr:u\", \"\
               ordr:r\" ],\n  \"callbackUrl\" : \"https://hostname/callback\",\n  \"\
-              name\" : \"Mobile Product Management\",\n  \"_id\" : \"406adb21-e89b-436c-bf85-ff565e09e9bd\"\
-              ,\n  \"_links\" : {\n    \"regenerate-secret\" : {\n      \"href\" :\
-              \ \"https://yourshop.api.urn/custom-apps/406adb21-e89b-436c-bf85-ff565e09e9bd/regenerate-secret\"\
+              name\" : \"Mobile Product Management\",\n  \"_id\" : \"296a6202-f870-4af4-8874-cf4540857106\"\
+              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/custom-apps/296a6202-f870-4af4-8874-cf4540857106\"\
+              \n    },\n    \"regenerate-secret\" : {\n      \"href\" : \"https://yourshop.api.urn/custom-apps/296a6202-f870-4af4-8874-cf4540857106/regenerate-secret\"\
               \n    }\n  }\n}"
           schema:
             $ref: "#/definitions/custom-apps-525208887"
@@ -2852,6 +2857,78 @@ paths:
         - "acap:m"
       - oauth2_application:
         - "acap:m"
+  /custom-apps/{customAppId}/upgrade:
+    post:
+      tags:
+      - "custom-apps"
+      summary: "/custom-apps/{customAppId}/upgrade"
+      description: ""
+      operationId: "custom-apps-upgrade"
+      consumes:
+      - "application/hal+json"
+      produces:
+      - "application/hal+json"
+      parameters:
+      - name: "customAppId"
+        in: "path"
+        description: ""
+        required: true
+        type: "string"
+      - in: "body"
+        name: ""
+        required: false
+        schema:
+          $ref: "#/definitions/custom-apps_customAppId_upgrade-1420447974"
+        x-examples:
+          application/hal+json: "{\n    \"type\": \"SHIPPING\",\n    \"feature\":\
+            \ \"test-feature-name\",\n    \"callbackUrl\": \"http://example.com/some\"\
+            ,\n    \"feature\": \"sas-shipping-app\",\n    \"name\": {\n        \"\
+            en-US\": \"Simple + Secure Shipping\"\n    },\n    \"price\": {\n    \
+            \    \"en-US\": \"20 USD per month\"\n    },\n    \"description\": {\n\
+            \        \"en-US\": \"A payment method for simple and secure shipping\
+            \ in online shops.\"\n    },\n    \"images\": {\n        \"en-US\": [\"\
+            http://example.com/image1.png\"]\n    },\n    \"developer\": {\n     \
+            \   \"en-US\": \"ePages Inc.\"\n    },\n    \"supportEmail\": {\n    \
+            \    \"en-US\": \"supporters@example.com\"\n    },\n    \"iconUrl\": {\n\
+            \        \"en-US\": \"http://example.com/icon.png\"\n    },\n    \"appUrl\"\
+            : {\n        \"en-US\": \"http://example.com/new-login\"\n    },\n   \
+            \ \"logoUrl\": {\n        \"en-US\": \"http://example.com/new-logo.png\"\
+            \n    },\n    \"videoUrl\": {\n        \"en-US\": \"http://example.com/video.mpg\"\
+            \n    },\n    \"infoWebsite\": {\n        \"en-US\": \"http://example.com/info.html\"\
+            \n    },\n    \"supportWebsite\": {\n        \"en-US\": \"http://example.com/support.html\"\
+            \n    }\n}"
+      responses:
+        200:
+          description: ""
+          examples:
+            application/hal+json: "{\n  \"additionalConfiguration\" : null,\n  \"\
+              supportWebsite\" : {\n    \"en-US\" : \"http://example.com/support.html\"\
+              \n  },\n  \"clientId\" : \"[client_id]\",\n  \"scopes\" : [ \"prod:m\"\
+              \ ],\n  \"callbackUrl\" : \"http://example.com/some\",\n  \"createdAt\"\
+              \ : \"2018-10-15T12:49:58.106\",\n  \"images\" : {\n    \"en-US\" :\
+              \ [ \"http://example.com/image1.png\" ]\n  },\n  \"developer\" : {\n\
+              \    \"en-US\" : \"ePages Inc.\"\n  },\n  \"supportEmail\" : {\n   \
+              \ \"en-US\" : \"supporters@example.com\"\n  },\n  \"iconUrl\" : {\n\
+              \    \"en-US\" : \"http://example.com/icon.png\"\n  },\n  \"appUrl\"\
+              \ : {\n    \"en-US\" : \"http://example.com/new-login\"\n  },\n  \"\
+              logoUrl\" : {\n    \"en-US\" : \"http://example.com/new-login\"\n  },\n\
+              \  \"videoUrl\" : {\n    \"en-US\" : \"http://example.com/video.mpg\"\
+              \n  },\n  \"infoWebsite\" : {\n    \"en-US\" : \"http://example.com/video.mpg\"\
+              \n  },\n  \"price\" : {\n    \"en-US\" : \"20 USD per month\"\n  },\n\
+              \  \"feature\" : \"app.sas-shipping-app\",\n  \"description\" : {\n\
+              \    \"en-US\" : \"A payment method for simple and secure shipping in\
+              \ online shops.\"\n  },\n  \"name\" : {\n    \"en-US\" : \"Simple +\
+              \ Secure Shipping\"\n  },\n  \"type\" : \"SHIPPING\",\n  \"_links\"\
+              \ : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/add-on-management/apps/bfd48edf-ba14-4c7f-8be1-8b8212157ec6\"\
+              \n    },\n    \"install\" : {\n      \"href\" : \"https://yourshop.api.urn/add-on-management/apps/bfd48edf-ba14-4c7f-8be1-8b8212157ec6/install\"\
+              \n    },\n    \"regenerate-secret\" : {\n      \"href\" : \"https://yourshop.api.urn/add-on-management/apps/bfd48edf-ba14-4c7f-8be1-8b8212157ec6/regenerate-secret\"\
+              \n    }\n  },\n  \"_id\" : \"bfd48edf-ba14-4c7f-8be1-8b8212157ec6\"\n\
+              }"
+      security:
+      - oauth2_accessCode:
+        - "aapp:m"
+      - oauth2_application:
+        - "aapp:m"
   /google-shopping/access-data:
     post:
       tags:
@@ -3421,17 +3498,49 @@ paths:
           description: ""
           examples:
             application/hal+json: "{\n  \"_embedded\" : {\n    \"orders\" : [ {\n\
-              \      \"_id\" : \"02995e8f-df36-466f-8060-2ab64bbd2b44\",\n      \"\
-              createdAt\" : \"2018-10-12T09:02:49.711\",\n      \"cartId\" : \"6c84669e-9371-4a7f-9b2d-7f2efae9e517\"\
+              \      \"_id\" : \"aa3cc8ce-2cd6-4790-9165-0305296a2bcc\",\n      \"\
+              createdAt\" : \"2018-10-15T11:02:10.157\",\n      \"cartId\" : \"8069bfd8-615e-4387-88d0-8ddb6b5ce105\"\
               ,\n      \"currency\" : \"EUR\",\n      \"taxModel\" : \"GROSS\",\n\
               \      \"taxable\" : false,\n      \"testOrder\" : false,\n      \"\
               termsAndConditionsExplicitlyAccepted\" : false,\n      \"productLineItems\"\
-              \ : [ {\n        \"product\" : {\n          \"sku\" : \"EB001\",\n \
-              \         \"name\" : \"Power & Vanilla Coconut Protein Bar (Pack of\
-              \ 5)\",\n          \"essentialFeatures\" : \"Preservative-free. No added\
-              \ sweeteners. Vegan.\",\n          \"shippingWeight\" : 190,\n     \
-              \     \"defaultImageDataUri\" : \"http://your.image.hoster.com/randomimage.png\"\
-              ,\n          \"_id\" : \"257605c5-f570-4c38-9782-601fdcda1188\",\n \
+              \ : [ {\n        \"product\" : {\n          \"sku\" : \"vino020\",\n\
+              \          \"name\" : \"Rioja Castillo de Puerto (2013)\",\n       \
+              \   \"essentialFeatures\" : \"Dry. 12% alcohol. Best vine variety.\"\
+              ,\n          \"shippingWeight\" : 100,\n          \"defaultImageDataUri\"\
+              \ : \"http://your.image.hoster.com/randomimage.png\",\n          \"\
+              _id\" : \"6b56a613-af29-490a-b462-a1a4362e6e81\",\n          \"_links\"\
+              \ : {\n            \"default-image-data\" : {\n              \"href\"\
+              \ : \"https://yourshop.api.urn/http:/your.image.hoster.com/randomimage.png\"\
+              \n            }\n          }\n        },\n        \"quantity\" : {\n\
+              \          \"value\" : 3,\n          \"unit\" : \"PIECE\"\n        },\n\
+              \        \"quantityInt\" : 3,\n        \"initialQuantity\" : 3,\n  \
+              \      \"unitPrice\" : {\n          \"taxModel\" : \"GROSS\",\n    \
+              \      \"currency\" : \"EUR\",\n          \"amount\" : 2.5\n       \
+              \ },\n        \"lineItemPrice\" : {\n          \"taxModel\" : \"GROSS\"\
+              ,\n          \"currency\" : \"EUR\",\n          \"amount\" : 7.5\n \
+              \       },\n        \"initialLineItemPrice\" : {\n          \"taxModel\"\
+              \ : \"GROSS\",\n          \"currency\" : \"EUR\",\n          \"amount\"\
+              \ : 7.5\n        },\n        \"lineItemTax\" : {\n          \"taxClass\"\
+              \ : \"REGULAR\",\n          \"taxRate\" : 0.19,\n          \"currency\"\
+              \ : \"EUR\",\n          \"amount\" : 1.197\n        },\n        \"unshipped\"\
+              \ : {\n          \"quantity\" : 3,\n          \"amount\" : null\n  \
+              \      },\n        \"shipped\" : {\n          \"quantity\" : 0,\n  \
+              \        \"amount\" : null\n        },\n        \"pending\" : {\n  \
+              \        \"quantity\" : 0,\n          \"amount\" : null\n        },\n\
+              \        \"returned\" : {\n          \"quantity\" : 0,\n          \"\
+              amount\" : {\n            \"currency\" : \"EUR\",\n            \"amount\"\
+              \ : 0\n          }\n        },\n        \"broken\" : {\n          \"\
+              quantity\" : 0,\n          \"amount\" : {\n            \"currency\"\
+              \ : \"EUR\",\n            \"amount\" : 0\n          }\n        },\n\
+              \        \"canceled\" : {\n          \"quantity\" : 0,\n          \"\
+              amount\" : {\n            \"currency\" : \"EUR\",\n            \"amount\"\
+              \ : 0\n          }\n        },\n        \"_id\" : \"033d2bbe-c56f-46fa-93ea-6b82d67531e5\"\
+              \n      }, {\n        \"product\" : {\n          \"sku\" : \"EB001\"\
+              ,\n          \"name\" : \"Power & Vanilla Coconut Protein Bar (Pack\
+              \ of 5)\",\n          \"essentialFeatures\" : \"Preservative-free. No\
+              \ added sweeteners. Vegan.\",\n          \"shippingWeight\" : 190,\n\
+              \          \"defaultImageDataUri\" : \"http://your.image.hoster.com/randomimage.png\"\
+              ,\n          \"_id\" : \"37fb5d44-e968-43b8-96f6-885977a79fc6\",\n \
               \         \"_links\" : {\n            \"default-image-data\" : {\n \
               \             \"href\" : \"https://yourshop.api.urn/http:/your.image.hoster.com/randomimage.png\"\
               \n            }\n          }\n        },\n        \"quantity\" : {\n\
@@ -3458,80 +3567,49 @@ paths:
               \    }\n        },\n        \"canceled\" : {\n          \"quantity\"\
               \ : 0,\n          \"amount\" : {\n            \"currency\" : \"EUR\"\
               ,\n            \"amount\" : 0\n          }\n        },\n        \"_id\"\
-              \ : \"a311d180-9f99-4991-ad7d-e8a01ef2eea0\"\n      }, {\n        \"\
-              product\" : {\n          \"sku\" : \"vino020\",\n          \"name\"\
-              \ : \"Rioja Castillo de Puerto (2013)\",\n          \"essentialFeatures\"\
-              \ : \"Dry. 12% alcohol. Best vine variety.\",\n          \"shippingWeight\"\
-              \ : 100,\n          \"defaultImageDataUri\" : \"http://your.image.hoster.com/randomimage.png\"\
-              ,\n          \"_id\" : \"35920c30-ab24-430c-90f3-26b58b74e4cd\",\n \
-              \         \"_links\" : {\n            \"default-image-data\" : {\n \
-              \             \"href\" : \"https://yourshop.api.urn/http:/your.image.hoster.com/randomimage.png\"\
-              \n            }\n          }\n        },\n        \"quantity\" : {\n\
-              \          \"value\" : 3,\n          \"unit\" : \"PIECE\"\n        },\n\
-              \        \"quantityInt\" : 3,\n        \"initialQuantity\" : 3,\n  \
-              \      \"unitPrice\" : {\n          \"taxModel\" : \"GROSS\",\n    \
-              \      \"currency\" : \"EUR\",\n          \"amount\" : 2.5\n       \
-              \ },\n        \"lineItemPrice\" : {\n          \"taxModel\" : \"GROSS\"\
-              ,\n          \"currency\" : \"EUR\",\n          \"amount\" : 7.5\n \
-              \       },\n        \"initialLineItemPrice\" : {\n          \"taxModel\"\
-              \ : \"GROSS\",\n          \"currency\" : \"EUR\",\n          \"amount\"\
-              \ : 7.5\n        },\n        \"lineItemTax\" : {\n          \"taxClass\"\
-              \ : \"REGULAR\",\n          \"taxRate\" : 0.19,\n          \"currency\"\
-              \ : \"EUR\",\n          \"amount\" : 1.197\n        },\n        \"unshipped\"\
-              \ : {\n          \"quantity\" : 3,\n          \"amount\" : null\n  \
-              \      },\n        \"shipped\" : {\n          \"quantity\" : 0,\n  \
-              \        \"amount\" : null\n        },\n        \"pending\" : {\n  \
-              \        \"quantity\" : 0,\n          \"amount\" : null\n        },\n\
-              \        \"returned\" : {\n          \"quantity\" : 0,\n          \"\
-              amount\" : {\n            \"currency\" : \"EUR\",\n            \"amount\"\
-              \ : 0\n          }\n        },\n        \"broken\" : {\n          \"\
-              quantity\" : 0,\n          \"amount\" : {\n            \"currency\"\
-              \ : \"EUR\",\n            \"amount\" : 0\n          }\n        },\n\
-              \        \"canceled\" : {\n          \"quantity\" : 0,\n          \"\
-              amount\" : {\n            \"currency\" : \"EUR\",\n            \"amount\"\
-              \ : 0\n          }\n        },\n        \"_id\" : \"d7dc3baf-157e-4c64-986c-65e640c56de5\"\
-              \n      } ],\n      \"shippingLineItem\" : {\n        \"lineItemPrice\"\
-              \ : {\n          \"taxModel\" : \"GROSS\",\n          \"currency\" :\
-              \ \"EUR\",\n          \"amount\" : 19.99\n        },\n        \"initialLineItemPrice\"\
-              \ : {\n          \"taxModel\" : \"GROSS\",\n          \"currency\" :\
-              \ \"EUR\",\n          \"amount\" : 19.99\n        },\n        \"taxClass\"\
-              \ : \"REGULAR\",\n        \"shippingMethod\" : {\n          \"name\"\
-              \ : \"Standard Shipping 2\",\n          \"description\" : \"Standard\
-              \ Shipping\",\n          \"freeShippingValue\" : {\n            \"currency\"\
-              \ : \"EUR\",\n            \"amount\" : 400\n          },\n         \
-              \ \"fixedPrice\" : {\n            \"taxModel\" : \"GROSS\",\n      \
-              \      \"currency\" : \"EUR\",\n            \"amount\" : 19.99\n   \
-              \       },\n          \"weightBasedPrice\" : null\n        },\n    \
-              \    \"lineItemTaxes\" : [ {\n          \"taxClass\" : \"REGULAR\",\n\
-              \          \"taxRate\" : 0.19,\n          \"currency\" : \"EUR\",\n\
-              \          \"amount\" : 3.192\n        } ]\n      },\n      \"paymentLineItem\"\
+              \ : \"77a793e5-8063-4f1f-9a3a-6852683d9b15\"\n      } ],\n      \"shippingLineItem\"\
               \ : {\n        \"lineItemPrice\" : {\n          \"taxModel\" : \"GROSS\"\
-              ,\n          \"currency\" : \"EUR\",\n          \"amount\" : 0\n   \
-              \     },\n        \"initialLineItemPrice\" : {\n          \"taxModel\"\
+              ,\n          \"currency\" : \"EUR\",\n          \"amount\" : 19.99\n\
+              \        },\n        \"initialLineItemPrice\" : {\n          \"taxModel\"\
               \ : \"GROSS\",\n          \"currency\" : \"EUR\",\n          \"amount\"\
-              \ : 0\n        },\n        \"taxClass\" : \"REGULAR\",\n        \"paymentMethod\"\
-              \ : {\n          \"name\" : \"PayPal\",\n          \"description\" :\
-              \ \"Pay with PayPal\",\n          \"discountOrFee\" : {\n          \
-              \  \"type\" : \"ABSOLUTE\",\n            \"absoluteValue\" : {\n   \
-              \           \"taxModel\" : \"GROSS\",\n              \"currency\" :\
-              \ \"EUR\",\n              \"amount\" : 0\n            },\n         \
-              \   \"percentageValue\" : null\n          },\n          \"onlinePayment\"\
-              \ : false\n        },\n        \"lineItemTaxes\" : [ {\n          \"\
+              \ : 19.99\n        },\n        \"taxClass\" : \"REGULAR\",\n       \
+              \ \"shippingMethod\" : {\n          \"name\" : \"Standard Shipping 2\"\
+              ,\n          \"description\" : \"Standard Shipping\",\n          \"\
+              freeShippingValue\" : {\n            \"currency\" : \"EUR\",\n     \
+              \       \"amount\" : 400\n          },\n          \"fixedPrice\" : {\n\
+              \            \"taxModel\" : \"GROSS\",\n            \"currency\" : \"\
+              EUR\",\n            \"amount\" : 19.99\n          },\n          \"weightBasedPrice\"\
+              \ : null\n        },\n        \"lineItemTaxes\" : [ {\n          \"\
               taxClass\" : \"REGULAR\",\n          \"taxRate\" : 0.19,\n         \
-              \ \"currency\" : \"EUR\",\n          \"amount\" : 0\n        } ]\n \
-              \     },\n      \"subtotal\" : {\n        \"currency\" : \"EUR\",\n\
-              \        \"amount\" : 57.45\n      },\n      \"grandTotal\" : {\n  \
-              \      \"currency\" : \"EUR\",\n        \"amount\" : 77.44\n      },\n\
-              \      \"balanceDue\" : {\n        \"currency\" : \"EUR\",\n       \
-              \ \"amount\" : 77.44\n      },\n      \"netTotal\" : {\n        \"currency\"\
-              \ : \"EUR\",\n        \"amount\" : 68.2687\n      },\n      \"taxTotal\"\
-              \ : {\n        \"currency\" : \"EUR\",\n        \"amount\" : 9.1713\n\
-              \      },\n      \"initialSubtotal\" : {\n        \"currency\" : \"\
-              EUR\",\n        \"amount\" : 57.45\n      },\n      \"initialGrandTotal\"\
-              \ : {\n        \"currency\" : \"EUR\",\n        \"amount\" : 77.44\n\
-              \      },\n      \"initialBalanceDue\" : {\n        \"currency\" : \"\
-              EUR\",\n        \"amount\" : 77.44\n      },\n      \"initialNetTotal\"\
-              \ : {\n        \"currency\" : \"EUR\",\n        \"amount\" : 68.2687\n\
+              \ \"currency\" : \"EUR\",\n          \"amount\" : 3.192\n        } ]\n\
+              \      },\n      \"paymentLineItem\" : {\n        \"lineItemPrice\"\
+              \ : {\n          \"taxModel\" : \"GROSS\",\n          \"currency\" :\
+              \ \"EUR\",\n          \"amount\" : 0\n        },\n        \"initialLineItemPrice\"\
+              \ : {\n          \"taxModel\" : \"GROSS\",\n          \"currency\" :\
+              \ \"EUR\",\n          \"amount\" : 0\n        },\n        \"taxClass\"\
+              \ : \"REGULAR\",\n        \"paymentMethod\" : {\n          \"name\"\
+              \ : \"PayPal\",\n          \"description\" : \"Pay with PayPal\",\n\
+              \          \"discountOrFee\" : {\n            \"type\" : \"ABSOLUTE\"\
+              ,\n            \"absoluteValue\" : {\n              \"taxModel\" : \"\
+              GROSS\",\n              \"currency\" : \"EUR\",\n              \"amount\"\
+              \ : 0\n            },\n            \"percentageValue\" : null\n    \
+              \      },\n          \"onlinePayment\" : false\n        },\n       \
+              \ \"lineItemTaxes\" : [ {\n          \"taxClass\" : \"REGULAR\",\n \
+              \         \"taxRate\" : 0.19,\n          \"currency\" : \"EUR\",\n \
+              \         \"amount\" : 0\n        } ]\n      },\n      \"subtotal\"\
+              \ : {\n        \"currency\" : \"EUR\",\n        \"amount\" : 57.45\n\
+              \      },\n      \"grandTotal\" : {\n        \"currency\" : \"EUR\"\
+              ,\n        \"amount\" : 77.44\n      },\n      \"balanceDue\" : {\n\
+              \        \"currency\" : \"EUR\",\n        \"amount\" : 77.44\n     \
+              \ },\n      \"netTotal\" : {\n        \"currency\" : \"EUR\",\n    \
+              \    \"amount\" : 68.2687\n      },\n      \"taxTotal\" : {\n      \
+              \  \"currency\" : \"EUR\",\n        \"amount\" : 9.1713\n      },\n\
+              \      \"initialSubtotal\" : {\n        \"currency\" : \"EUR\",\n  \
+              \      \"amount\" : 57.45\n      },\n      \"initialGrandTotal\" : {\n\
+              \        \"currency\" : \"EUR\",\n        \"amount\" : 77.44\n     \
+              \ },\n      \"initialBalanceDue\" : {\n        \"currency\" : \"EUR\"\
+              ,\n        \"amount\" : 77.44\n      },\n      \"initialNetTotal\" :\
+              \ {\n        \"currency\" : \"EUR\",\n        \"amount\" : 68.2687\n\
               \      },\n      \"initialTaxTotal\" : {\n        \"currency\" : \"\
               EUR\",\n        \"amount\" : 9.1713\n      },\n      \"taxes\" : [ {\n\
               \        \"taxClass\" : \"REGULAR\",\n        \"taxRate\" : 0.19,\n\
@@ -3568,7 +3646,7 @@ paths:
               \     \"paymentStatus\" : \"PENDING\",\n      \"shippingStatus\" : \"\
               UNSHIPPED\",\n      \"canceled\" : false,\n      \"orderNumber\" : \"\
               10001\",\n      \"customerComment\" : null,\n      \"orderNote\" : \"\
-              not paid yet\",\n      \"entryDate\" : \"2018-10-12T09:02:49.711\",\n\
+              not paid yet\",\n      \"entryDate\" : \"2018-10-15T11:02:10.157\",\n\
               \      \"totalReceived\" : {\n        \"currency\" : \"EUR\",\n    \
               \    \"amount\" : 0\n      },\n      \"totalRefunded\" : {\n       \
               \ \"currency\" : \"EUR\",\n        \"amount\" : 0\n      },\n      \"\
@@ -3576,14 +3654,14 @@ paths:
               \ : 77.44\n      },\n      \"marketingChannel\" : \"Google shopping\"\
               ,\n      \"marketingSubchannel\" : \"Some category\",\n      \"salesChannel\"\
               \ : \"Storefront\",\n      \"_links\" : {\n        \"self\" : {\n  \
-              \        \"href\" : \"https://yourshop.api.urn/orders/02995e8f-df36-466f-8060-2ab64bbd2b44\"\
-              \n        },\n        \"order\" : {\n          \"href\" : \"https://yourshop.api.urn/orders/02995e8f-df36-466f-8060-2ab64bbd2b44\"\
-              \n        },\n        \"order-note\" : {\n          \"href\" : \"https://yourshop.api.urn/orders/02995e8f-df36-466f-8060-2ab64bbd2b44/order-note\"\
-              \n        },\n        \"processes\" : {\n          \"href\" : \"https://yourshop.api.urn/orders/02995e8f-df36-466f-8060-2ab64bbd2b44/processes\"\
-              \n        },\n        \"events\" : {\n          \"href\" : \"https://yourshop.api.urn/orders/02995e8f-df36-466f-8060-2ab64bbd2b44/events\"\
-              \n        },\n        \"cancel\" : {\n          \"href\" : \"https://yourshop.api.urn/orders/02995e8f-df36-466f-8060-2ab64bbd2b44/cancel\"\
+              \        \"href\" : \"https://yourshop.api.urn/orders/aa3cc8ce-2cd6-4790-9165-0305296a2bcc\"\
+              \n        },\n        \"order\" : {\n          \"href\" : \"https://yourshop.api.urn/orders/aa3cc8ce-2cd6-4790-9165-0305296a2bcc\"\
+              \n        },\n        \"order-note\" : {\n          \"href\" : \"https://yourshop.api.urn/orders/aa3cc8ce-2cd6-4790-9165-0305296a2bcc/order-note\"\
+              \n        },\n        \"processes\" : {\n          \"href\" : \"https://yourshop.api.urn/orders/aa3cc8ce-2cd6-4790-9165-0305296a2bcc/processes\"\
+              \n        },\n        \"events\" : {\n          \"href\" : \"https://yourshop.api.urn/orders/aa3cc8ce-2cd6-4790-9165-0305296a2bcc/events\"\
+              \n        },\n        \"cancel\" : {\n          \"href\" : \"https://yourshop.api.urn/orders/aa3cc8ce-2cd6-4790-9165-0305296a2bcc/cancel\"\
               \n        },\n        \"create-invoice\" : {\n          \"href\" : \"\
-              https://yourshop.api.urn/orders/02995e8f-df36-466f-8060-2ab64bbd2b44/create-invoice\"\
+              https://yourshop.api.urn/orders/aa3cc8ce-2cd6-4790-9165-0305296a2bcc/create-invoice\"\
               \n        },\n        \"terms-and-conditions-pdf\" : {\n          \"\
               href\" : \"https://yourshop.api.urn/pdf-storage/attachments/some.pdf?hash=23213\"\
               \n        },\n        \"right-of-withdrawal-pdf\" : {\n          \"\
@@ -3618,46 +3696,18 @@ paths:
         200:
           description: ""
           examples:
-            application/hal+json: "{\n  \"_id\" : \"be76f797-1051-43b2-89a5-61fe92359e68\"\
-              ,\n  \"createdAt\" : \"2018-10-12T09:02:47.938\",\n  \"cartId\" : \"\
-              d6cf94e9-e90d-4709-a479-8fdc4e4d18e8\",\n  \"currency\" : \"EUR\",\n\
+            application/hal+json: "{\n  \"_id\" : \"6670815d-3e79-4d60-ad52-448b5f525fa2\"\
+              ,\n  \"createdAt\" : \"2018-10-15T11:02:08.892\",\n  \"cartId\" : \"\
+              0d32e5a2-d836-41e5-b51e-60d3c5aefb33\",\n  \"currency\" : \"EUR\",\n\
               \  \"taxModel\" : \"GROSS\",\n  \"taxable\" : false,\n  \"testOrder\"\
               \ : false,\n  \"termsAndConditionsExplicitlyAccepted\" : false,\n  \"\
-              productLineItems\" : [ {\n    \"product\" : {\n      \"sku\" : \"vino020\"\
-              ,\n      \"name\" : \"Rioja Castillo de Puerto (2013)\",\n      \"essentialFeatures\"\
-              \ : \"Dry. 12% alcohol. Best vine variety.\",\n      \"shippingWeight\"\
-              \ : 100,\n      \"defaultImageDataUri\" : \"http://your.image.hoster.com/randomimage.png\"\
-              ,\n      \"_id\" : \"91ae8f0a-4ae4-438d-9a60-7ec4c0bb97b9\",\n     \
-              \ \"_links\" : {\n        \"default-image-data\" : {\n          \"href\"\
-              \ : \"https://yourshop.api.urn/http:/your.image.hoster.com/randomimage.png\"\
-              \n        }\n      }\n    },\n    \"quantity\" : {\n      \"value\"\
-              \ : 3,\n      \"unit\" : \"PIECE\"\n    },\n    \"quantityInt\" : 3,\n\
-              \    \"initialQuantity\" : 3,\n    \"unitPrice\" : {\n      \"taxModel\"\
-              \ : \"GROSS\",\n      \"currency\" : \"EUR\",\n      \"amount\" : 2.5\n\
-              \    },\n    \"lineItemPrice\" : {\n      \"taxModel\" : \"GROSS\",\n\
-              \      \"currency\" : \"EUR\",\n      \"amount\" : 7.5\n    },\n   \
-              \ \"initialLineItemPrice\" : {\n      \"taxModel\" : \"GROSS\",\n  \
-              \    \"currency\" : \"EUR\",\n      \"amount\" : 7.5\n    },\n    \"\
-              lineItemTax\" : {\n      \"taxClass\" : \"REGULAR\",\n      \"taxRate\"\
-              \ : 0.19,\n      \"currency\" : \"EUR\",\n      \"amount\" : 1.197\n\
-              \    },\n    \"unshipped\" : {\n      \"quantity\" : 3,\n      \"amount\"\
-              \ : null\n    },\n    \"shipped\" : {\n      \"quantity\" : 0,\n   \
-              \   \"amount\" : null\n    },\n    \"pending\" : {\n      \"quantity\"\
-              \ : 0,\n      \"amount\" : null\n    },\n    \"returned\" : {\n    \
-              \  \"quantity\" : 0,\n      \"amount\" : {\n        \"currency\" : \"\
-              EUR\",\n        \"amount\" : 0\n      }\n    },\n    \"broken\" : {\n\
-              \      \"quantity\" : 0,\n      \"amount\" : {\n        \"currency\"\
-              \ : \"EUR\",\n        \"amount\" : 0\n      }\n    },\n    \"canceled\"\
-              \ : {\n      \"quantity\" : 0,\n      \"amount\" : {\n        \"currency\"\
-              \ : \"EUR\",\n        \"amount\" : 0\n      }\n    },\n    \"_id\" :\
-              \ \"1e68838d-54e0-42ea-95e3-c39119ccade4\"\n  }, {\n    \"product\"\
-              \ : {\n      \"sku\" : \"EB001\",\n      \"name\" : \"Power & Vanilla\
-              \ Coconut Protein Bar (Pack of 5)\",\n      \"essentialFeatures\" :\
-              \ \"Preservative-free. No added sweeteners. Vegan.\",\n      \"shippingWeight\"\
-              \ : 190,\n      \"defaultImageDataUri\" : \"http://your.image.hoster.com/randomimage.png\"\
-              ,\n      \"_id\" : \"6682e221-7b76-43a1-851e-9de4869f66ec\",\n     \
-              \ \"_links\" : {\n        \"default-image-data\" : {\n          \"href\"\
-              \ : \"https://yourshop.api.urn/http:/your.image.hoster.com/randomimage.png\"\
+              productLineItems\" : [ {\n    \"product\" : {\n      \"sku\" : \"EB001\"\
+              ,\n      \"name\" : \"Power & Vanilla Coconut Protein Bar (Pack of 5)\"\
+              ,\n      \"essentialFeatures\" : \"Preservative-free. No added sweeteners.\
+              \ Vegan.\",\n      \"shippingWeight\" : 190,\n      \"defaultImageDataUri\"\
+              \ : \"http://your.image.hoster.com/randomimage.png\",\n      \"_id\"\
+              \ : \"1227e6d2-54d9-4add-aedd-0768f608a3cb\",\n      \"_links\" : {\n\
+              \        \"default-image-data\" : {\n          \"href\" : \"https://yourshop.api.urn/http:/your.image.hoster.com/randomimage.png\"\
               \n        }\n      }\n    },\n    \"quantity\" : {\n      \"value\"\
               \ : 5,\n      \"unit\" : \"PIECE\"\n    },\n    \"quantityInt\" : 5,\n\
               \    \"initialQuantity\" : 5,\n    \"unitPrice\" : {\n      \"taxModel\"\
@@ -3678,7 +3728,34 @@ paths:
               \ : \"EUR\",\n        \"amount\" : 0\n      }\n    },\n    \"canceled\"\
               \ : {\n      \"quantity\" : 0,\n      \"amount\" : {\n        \"currency\"\
               \ : \"EUR\",\n        \"amount\" : 0\n      }\n    },\n    \"_id\" :\
-              \ \"6d8819d1-6228-4abe-8dc3-f262d157d3f0\"\n  } ],\n  \"shippingLineItem\"\
+              \ \"29a68fca-9e82-442d-83a2-8b52cc995fe6\"\n  }, {\n    \"product\"\
+              \ : {\n      \"sku\" : \"vino020\",\n      \"name\" : \"Rioja Castillo\
+              \ de Puerto (2013)\",\n      \"essentialFeatures\" : \"Dry. 12% alcohol.\
+              \ Best vine variety.\",\n      \"shippingWeight\" : 100,\n      \"defaultImageDataUri\"\
+              \ : \"http://your.image.hoster.com/randomimage.png\",\n      \"_id\"\
+              \ : \"c242efda-220b-4c91-96d7-e21ac439c372\",\n      \"_links\" : {\n\
+              \        \"default-image-data\" : {\n          \"href\" : \"https://yourshop.api.urn/http:/your.image.hoster.com/randomimage.png\"\
+              \n        }\n      }\n    },\n    \"quantity\" : {\n      \"value\"\
+              \ : 3,\n      \"unit\" : \"PIECE\"\n    },\n    \"quantityInt\" : 3,\n\
+              \    \"initialQuantity\" : 3,\n    \"unitPrice\" : {\n      \"taxModel\"\
+              \ : \"GROSS\",\n      \"currency\" : \"EUR\",\n      \"amount\" : 2.5\n\
+              \    },\n    \"lineItemPrice\" : {\n      \"taxModel\" : \"GROSS\",\n\
+              \      \"currency\" : \"EUR\",\n      \"amount\" : 7.5\n    },\n   \
+              \ \"initialLineItemPrice\" : {\n      \"taxModel\" : \"GROSS\",\n  \
+              \    \"currency\" : \"EUR\",\n      \"amount\" : 7.5\n    },\n    \"\
+              lineItemTax\" : {\n      \"taxClass\" : \"REGULAR\",\n      \"taxRate\"\
+              \ : 0.19,\n      \"currency\" : \"EUR\",\n      \"amount\" : 1.197\n\
+              \    },\n    \"unshipped\" : {\n      \"quantity\" : 3,\n      \"amount\"\
+              \ : null\n    },\n    \"shipped\" : {\n      \"quantity\" : 0,\n   \
+              \   \"amount\" : null\n    },\n    \"pending\" : {\n      \"quantity\"\
+              \ : 0,\n      \"amount\" : null\n    },\n    \"returned\" : {\n    \
+              \  \"quantity\" : 0,\n      \"amount\" : {\n        \"currency\" : \"\
+              EUR\",\n        \"amount\" : 0\n      }\n    },\n    \"broken\" : {\n\
+              \      \"quantity\" : 0,\n      \"amount\" : {\n        \"currency\"\
+              \ : \"EUR\",\n        \"amount\" : 0\n      }\n    },\n    \"canceled\"\
+              \ : {\n      \"quantity\" : 0,\n      \"amount\" : {\n        \"currency\"\
+              \ : \"EUR\",\n        \"amount\" : 0\n      }\n    },\n    \"_id\" :\
+              \ \"5d4ba50e-0ff2-4a95-ae90-b9dca7ff8418\"\n  } ],\n  \"shippingLineItem\"\
               \ : {\n    \"lineItemPrice\" : {\n      \"taxModel\" : \"GROSS\",\n\
               \      \"currency\" : \"EUR\",\n      \"amount\" : 19.99\n    },\n \
               \   \"initialLineItemPrice\" : {\n      \"taxModel\" : \"GROSS\",\n\
@@ -3746,23 +3823,23 @@ paths:
               , \"Hinterhof\", \"20999 Alsterwasser\", \"GERMANY\" ]\n  },\n  \"paymentStatus\"\
               \ : \"PENDING\",\n  \"shippingStatus\" : \"UNSHIPPED\",\n  \"canceled\"\
               \ : false,\n  \"orderNumber\" : \"10001\",\n  \"customerComment\" :\
-              \ null,\n  \"orderNote\" : \"not paid yet\",\n  \"entryDate\" : \"2018-10-12T09:02:47.938\"\
+              \ null,\n  \"orderNote\" : \"not paid yet\",\n  \"entryDate\" : \"2018-10-15T11:02:08.892\"\
               ,\n  \"totalReceived\" : {\n    \"currency\" : \"EUR\",\n    \"amount\"\
               \ : 0\n  },\n  \"totalRefunded\" : {\n    \"currency\" : \"EUR\",\n\
               \    \"amount\" : 0\n  },\n  \"openAmount\" : {\n    \"currency\" :\
               \ \"EUR\",\n    \"amount\" : 77.44\n  },\n  \"marketingChannel\" : \"\
               Google shopping\",\n  \"marketingSubchannel\" : \"Some category\",\n\
               \  \"salesChannel\" : \"Storefront\",\n  \"_links\" : {\n    \"self\"\
-              \ : {\n      \"href\" : \"https://yourshop.api.urn/orders/be76f797-1051-43b2-89a5-61fe92359e68\"\
-              \n    },\n    \"order\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/be76f797-1051-43b2-89a5-61fe92359e68\"\
-              \n    },\n    \"order-note\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/be76f797-1051-43b2-89a5-61fe92359e68/order-note\"\
-              \n    },\n    \"processes\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/be76f797-1051-43b2-89a5-61fe92359e68/processes\"\
-              \n    },\n    \"events\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/be76f797-1051-43b2-89a5-61fe92359e68/events\"\
-              \n    },\n    \"cancel\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/be76f797-1051-43b2-89a5-61fe92359e68/cancel\"\
-              \n    },\n    \"create-invoice\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/be76f797-1051-43b2-89a5-61fe92359e68/create-invoice\"\
-              \n    },\n    \"right-of-withdrawal-pdf\" : {\n      \"href\" : \"https://yourshop.api.urn/pdf-storage/attachments/some.pdf?hash=23213\"\
+              \ : {\n      \"href\" : \"https://yourshop.api.urn/orders/6670815d-3e79-4d60-ad52-448b5f525fa2\"\
+              \n    },\n    \"order\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/6670815d-3e79-4d60-ad52-448b5f525fa2\"\
+              \n    },\n    \"order-note\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/6670815d-3e79-4d60-ad52-448b5f525fa2/order-note\"\
+              \n    },\n    \"processes\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/6670815d-3e79-4d60-ad52-448b5f525fa2/processes\"\
+              \n    },\n    \"events\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/6670815d-3e79-4d60-ad52-448b5f525fa2/events\"\
+              \n    },\n    \"cancel\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/6670815d-3e79-4d60-ad52-448b5f525fa2/cancel\"\
+              \n    },\n    \"create-invoice\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/6670815d-3e79-4d60-ad52-448b5f525fa2/create-invoice\"\
               \n    },\n    \"terms-and-conditions-pdf\" : {\n      \"href\" : \"\
               https://yourshop.api.urn/pdf-storage/attachments/some.pdf?hash=23213\"\
+              \n    },\n    \"right-of-withdrawal-pdf\" : {\n      \"href\" : \"https://yourshop.api.urn/pdf-storage/attachments/some.pdf?hash=23213\"\
               \n    }\n  }\n}"
           schema:
             $ref: "#/definitions/orders_order-id-31107470"
@@ -3784,45 +3861,18 @@ paths:
         200:
           description: ""
           examples:
-            application/hal+json: "{\n  \"_id\" : \"76b03a59-f9a8-487a-9149-bdd7c44dd567\"\
-              ,\n  \"createdAt\" : \"2018-10-12T09:02:37.157\",\n  \"cartId\" : \"\
-              ab9f0c5b-407a-48e8-be4a-9a5e19c0b094\",\n  \"currency\" : \"EUR\",\n\
+            application/hal+json: "{\n  \"_id\" : \"922d412f-16ea-430d-94e6-d56448cf5e03\"\
+              ,\n  \"createdAt\" : \"2018-10-15T11:02:00.694\",\n  \"cartId\" : \"\
+              d2eafbad-3f1e-4532-ae11-861a6c35fcbc\",\n  \"currency\" : \"EUR\",\n\
               \  \"taxModel\" : \"GROSS\",\n  \"taxable\" : false,\n  \"testOrder\"\
               \ : false,\n  \"termsAndConditionsExplicitlyAccepted\" : false,\n  \"\
-              productLineItems\" : [ {\n    \"product\" : {\n      \"sku\" : \"EB001\"\
-              ,\n      \"name\" : \"Power & Vanilla Coconut Protein Bar (Pack of 5)\"\
-              ,\n      \"essentialFeatures\" : \"Preservative-free. No added sweeteners.\
-              \ Vegan.\",\n      \"shippingWeight\" : 190,\n      \"defaultImageDataUri\"\
-              \ : \"http://your.image.hoster.com/randomimage.png\",\n      \"_id\"\
-              \ : \"73a73197-ecd8-4bde-a514-58e578ad778a\",\n      \"_links\" : {\n\
-              \        \"default-image-data\" : {\n          \"href\" : \"https://yourshop.api.urn/http:/your.image.hoster.com/randomimage.png\"\
-              \n        }\n      }\n    },\n    \"quantity\" : {\n      \"value\"\
-              \ : 5,\n      \"unit\" : \"PIECE\"\n    },\n    \"quantityInt\" : 5,\n\
-              \    \"initialQuantity\" : 5,\n    \"unitPrice\" : {\n      \"taxModel\"\
-              \ : \"GROSS\",\n      \"currency\" : \"EUR\",\n      \"amount\" : 9.99\n\
-              \    },\n    \"lineItemPrice\" : {\n      \"taxModel\" : \"GROSS\",\n\
-              \      \"currency\" : \"EUR\",\n      \"amount\" : 49.95\n    },\n \
-              \   \"initialLineItemPrice\" : {\n      \"taxModel\" : \"GROSS\",\n\
-              \      \"currency\" : \"EUR\",\n      \"amount\" : 49.95\n    },\n \
-              \   \"lineItemTax\" : {\n      \"taxClass\" : \"REGULAR\",\n      \"\
-              taxRate\" : 0.19,\n      \"currency\" : \"EUR\",\n      \"amount\" :\
-              \ 7.9743\n    },\n    \"unshipped\" : {\n      \"quantity\" : 5,\n \
-              \     \"amount\" : null\n    },\n    \"shipped\" : {\n      \"quantity\"\
-              \ : 0,\n      \"amount\" : null\n    },\n    \"pending\" : {\n     \
-              \ \"quantity\" : 0,\n      \"amount\" : null\n    },\n    \"returned\"\
-              \ : {\n      \"quantity\" : 0,\n      \"amount\" : {\n        \"currency\"\
-              \ : \"EUR\",\n        \"amount\" : 0\n      }\n    },\n    \"broken\"\
-              \ : {\n      \"quantity\" : 0,\n      \"amount\" : {\n        \"currency\"\
-              \ : \"EUR\",\n        \"amount\" : 0\n      }\n    },\n    \"canceled\"\
-              \ : {\n      \"quantity\" : 0,\n      \"amount\" : {\n        \"currency\"\
-              \ : \"EUR\",\n        \"amount\" : 0\n      }\n    },\n    \"_id\" :\
-              \ \"35e4bddf-0af6-4e51-9484-ef2985fe0828\"\n  }, {\n    \"product\"\
-              \ : {\n      \"sku\" : \"vino020\",\n      \"name\" : \"Rioja Castillo\
-              \ de Puerto (2013)\",\n      \"essentialFeatures\" : \"Dry. 12% alcohol.\
-              \ Best vine variety.\",\n      \"shippingWeight\" : 100,\n      \"defaultImageDataUri\"\
-              \ : \"http://your.image.hoster.com/randomimage.png\",\n      \"_id\"\
-              \ : \"a5c14247-6fc7-47da-9b8f-85b1463d894a\",\n      \"_links\" : {\n\
-              \        \"default-image-data\" : {\n          \"href\" : \"https://yourshop.api.urn/http:/your.image.hoster.com/randomimage.png\"\
+              productLineItems\" : [ {\n    \"product\" : {\n      \"sku\" : \"vino020\"\
+              ,\n      \"name\" : \"Rioja Castillo de Puerto (2013)\",\n      \"essentialFeatures\"\
+              \ : \"Dry. 12% alcohol. Best vine variety.\",\n      \"shippingWeight\"\
+              \ : 100,\n      \"defaultImageDataUri\" : \"http://your.image.hoster.com/randomimage.png\"\
+              ,\n      \"_id\" : \"566e9e30-0dfd-4804-aab8-93cdd98357e6\",\n     \
+              \ \"_links\" : {\n        \"default-image-data\" : {\n          \"href\"\
+              \ : \"https://yourshop.api.urn/http:/your.image.hoster.com/randomimage.png\"\
               \n        }\n      }\n    },\n    \"quantity\" : {\n      \"value\"\
               \ : 3,\n      \"unit\" : \"PIECE\"\n    },\n    \"quantityInt\" : 3,\n\
               \    \"initialQuantity\" : 3,\n    \"unitPrice\" : {\n      \"taxModel\"\
@@ -3843,7 +3893,35 @@ paths:
               \ : \"EUR\",\n        \"amount\" : 0\n      }\n    },\n    \"canceled\"\
               \ : {\n      \"quantity\" : 0,\n      \"amount\" : {\n        \"currency\"\
               \ : \"EUR\",\n        \"amount\" : 0\n      }\n    },\n    \"_id\" :\
-              \ \"9c2a6b62-9bd8-4337-907b-10c2dd101e74\"\n  } ],\n  \"shippingLineItem\"\
+              \ \"7d750835-61db-4389-bb45-e4b301d2c878\"\n  }, {\n    \"product\"\
+              \ : {\n      \"sku\" : \"EB001\",\n      \"name\" : \"Power & Vanilla\
+              \ Coconut Protein Bar (Pack of 5)\",\n      \"essentialFeatures\" :\
+              \ \"Preservative-free. No added sweeteners. Vegan.\",\n      \"shippingWeight\"\
+              \ : 190,\n      \"defaultImageDataUri\" : \"http://your.image.hoster.com/randomimage.png\"\
+              ,\n      \"_id\" : \"64793b65-370d-4445-9995-e152b2a0d6e8\",\n     \
+              \ \"_links\" : {\n        \"default-image-data\" : {\n          \"href\"\
+              \ : \"https://yourshop.api.urn/http:/your.image.hoster.com/randomimage.png\"\
+              \n        }\n      }\n    },\n    \"quantity\" : {\n      \"value\"\
+              \ : 5,\n      \"unit\" : \"PIECE\"\n    },\n    \"quantityInt\" : 5,\n\
+              \    \"initialQuantity\" : 5,\n    \"unitPrice\" : {\n      \"taxModel\"\
+              \ : \"GROSS\",\n      \"currency\" : \"EUR\",\n      \"amount\" : 9.99\n\
+              \    },\n    \"lineItemPrice\" : {\n      \"taxModel\" : \"GROSS\",\n\
+              \      \"currency\" : \"EUR\",\n      \"amount\" : 49.95\n    },\n \
+              \   \"initialLineItemPrice\" : {\n      \"taxModel\" : \"GROSS\",\n\
+              \      \"currency\" : \"EUR\",\n      \"amount\" : 49.95\n    },\n \
+              \   \"lineItemTax\" : {\n      \"taxClass\" : \"REGULAR\",\n      \"\
+              taxRate\" : 0.19,\n      \"currency\" : \"EUR\",\n      \"amount\" :\
+              \ 7.9743\n    },\n    \"unshipped\" : {\n      \"quantity\" : 5,\n \
+              \     \"amount\" : null\n    },\n    \"shipped\" : {\n      \"quantity\"\
+              \ : 0,\n      \"amount\" : null\n    },\n    \"pending\" : {\n     \
+              \ \"quantity\" : 0,\n      \"amount\" : null\n    },\n    \"returned\"\
+              \ : {\n      \"quantity\" : 0,\n      \"amount\" : {\n        \"currency\"\
+              \ : \"EUR\",\n        \"amount\" : 0\n      }\n    },\n    \"broken\"\
+              \ : {\n      \"quantity\" : 0,\n      \"amount\" : {\n        \"currency\"\
+              \ : \"EUR\",\n        \"amount\" : 0\n      }\n    },\n    \"canceled\"\
+              \ : {\n      \"quantity\" : 0,\n      \"amount\" : {\n        \"currency\"\
+              \ : \"EUR\",\n        \"amount\" : 0\n      }\n    },\n    \"_id\" :\
+              \ \"d0d316ef-86b0-4c23-aa8c-05f0c23b2c81\"\n  } ],\n  \"shippingLineItem\"\
               \ : {\n    \"lineItemPrice\" : {\n      \"taxModel\" : \"GROSS\",\n\
               \      \"currency\" : \"EUR\",\n      \"amount\" : 19.99\n    },\n \
               \   \"initialLineItemPrice\" : {\n      \"taxModel\" : \"GROSS\",\n\
@@ -3911,23 +3989,23 @@ paths:
               , \"Hinterhof\", \"20999 Alsterwasser\", \"GERMANY\" ]\n  },\n  \"paymentStatus\"\
               \ : \"PENDING\",\n  \"shippingStatus\" : \"UNSHIPPED\",\n  \"canceled\"\
               \ : false,\n  \"orderNumber\" : \"10001\",\n  \"customerComment\" :\
-              \ null,\n  \"orderNote\" : \"not paid yet\",\n  \"entryDate\" : \"2018-10-12T09:02:37.157\"\
+              \ null,\n  \"orderNote\" : \"not paid yet\",\n  \"entryDate\" : \"2018-10-15T11:02:00.694\"\
               ,\n  \"totalReceived\" : {\n    \"currency\" : \"EUR\",\n    \"amount\"\
               \ : 0\n  },\n  \"totalRefunded\" : {\n    \"currency\" : \"EUR\",\n\
               \    \"amount\" : 0\n  },\n  \"openAmount\" : {\n    \"currency\" :\
               \ \"EUR\",\n    \"amount\" : 77.44\n  },\n  \"marketingChannel\" : \"\
               Google shopping\",\n  \"marketingSubchannel\" : \"Some category\",\n\
               \  \"salesChannel\" : \"Storefront\",\n  \"_links\" : {\n    \"self\"\
-              \ : {\n      \"href\" : \"https://yourshop.api.urn/orders/76b03a59-f9a8-487a-9149-bdd7c44dd567\"\
-              \n    },\n    \"order\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/76b03a59-f9a8-487a-9149-bdd7c44dd567\"\
-              \n    },\n    \"order-note\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/76b03a59-f9a8-487a-9149-bdd7c44dd567/order-note\"\
-              \n    },\n    \"processes\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/76b03a59-f9a8-487a-9149-bdd7c44dd567/processes\"\
-              \n    },\n    \"events\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/76b03a59-f9a8-487a-9149-bdd7c44dd567/events\"\
-              \n    },\n    \"cancel\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/76b03a59-f9a8-487a-9149-bdd7c44dd567/cancel\"\
-              \n    },\n    \"create-invoice\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/76b03a59-f9a8-487a-9149-bdd7c44dd567/create-invoice\"\
+              \ : {\n      \"href\" : \"https://yourshop.api.urn/orders/922d412f-16ea-430d-94e6-d56448cf5e03\"\
+              \n    },\n    \"order\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/922d412f-16ea-430d-94e6-d56448cf5e03\"\
+              \n    },\n    \"order-note\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/922d412f-16ea-430d-94e6-d56448cf5e03/order-note\"\
+              \n    },\n    \"processes\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/922d412f-16ea-430d-94e6-d56448cf5e03/processes\"\
+              \n    },\n    \"events\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/922d412f-16ea-430d-94e6-d56448cf5e03/events\"\
+              \n    },\n    \"cancel\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/922d412f-16ea-430d-94e6-d56448cf5e03/cancel\"\
+              \n    },\n    \"create-invoice\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/922d412f-16ea-430d-94e6-d56448cf5e03/create-invoice\"\
+              \n    },\n    \"right-of-withdrawal-pdf\" : {\n      \"href\" : \"https://yourshop.api.urn/pdf-storage/attachments/some.pdf?hash=23213\"\
               \n    },\n    \"terms-and-conditions-pdf\" : {\n      \"href\" : \"\
               https://yourshop.api.urn/pdf-storage/attachments/some.pdf?hash=23213\"\
-              \n    },\n    \"right-of-withdrawal-pdf\" : {\n      \"href\" : \"https://yourshop.api.urn/pdf-storage/attachments/some.pdf?hash=23213\"\
               \n    }\n  }\n}"
       security:
       - oauth2_accessCode:
@@ -3953,16 +4031,16 @@ paths:
         200:
           description: ""
           examples:
-            application/hal+json: "{\n  \"_id\" : \"57535596-8b80-4da6-b77e-9c40c9eaee7a\"\
-              ,\n  \"createdAt\" : \"2018-10-12T09:02:46.418\",\n  \"cartId\" : \"\
-              a2e81ccb-ec8c-45ae-b44b-bf4bfcf80754\",\n  \"currency\" : \"EUR\",\n\
+            application/hal+json: "{\n  \"_id\" : \"b861e5a8-6e2d-4224-8566-0a3137bbcdeb\"\
+              ,\n  \"createdAt\" : \"2018-10-15T11:02:07.056\",\n  \"cartId\" : \"\
+              84fd4395-e519-4c06-b1fb-e7a9984cd03d\",\n  \"currency\" : \"EUR\",\n\
               \  \"taxModel\" : \"GROSS\",\n  \"taxable\" : false,\n  \"testOrder\"\
               \ : false,\n  \"termsAndConditionsExplicitlyAccepted\" : false,\n  \"\
               productLineItems\" : [ {\n    \"product\" : {\n      \"sku\" : \"vino020\"\
               ,\n      \"name\" : \"Rioja Castillo de Puerto (2013)\",\n      \"essentialFeatures\"\
               \ : \"Dry. 12% alcohol. Best vine variety.\",\n      \"shippingWeight\"\
               \ : 100,\n      \"defaultImageDataUri\" : \"http://your.image.hoster.com/randomimage.png\"\
-              ,\n      \"_id\" : \"4f7cf263-01c0-4c16-a813-0877d6cb8ab3\",\n     \
+              ,\n      \"_id\" : \"37f0568c-9734-4e3a-87d3-892e992a74c9\",\n     \
               \ \"_links\" : {\n        \"default-image-data\" : {\n          \"href\"\
               \ : \"https://yourshop.api.urn/http:/your.image.hoster.com/randomimage.png\"\
               \n        }\n      }\n    },\n    \"quantity\" : {\n      \"value\"\
@@ -3985,12 +4063,12 @@ paths:
               \ : \"EUR\",\n        \"amount\" : 0\n      }\n    },\n    \"canceled\"\
               \ : {\n      \"quantity\" : 0,\n      \"amount\" : {\n        \"currency\"\
               \ : \"EUR\",\n        \"amount\" : 0\n      }\n    },\n    \"_id\" :\
-              \ \"8d4c6942-6819-4665-8277-a0dc372f6926\"\n  }, {\n    \"product\"\
+              \ \"640f8f5b-3983-4119-b1f4-f0e21ce3bf45\"\n  }, {\n    \"product\"\
               \ : {\n      \"sku\" : \"EB001\",\n      \"name\" : \"Power & Vanilla\
               \ Coconut Protein Bar (Pack of 5)\",\n      \"essentialFeatures\" :\
               \ \"Preservative-free. No added sweeteners. Vegan.\",\n      \"shippingWeight\"\
               \ : 190,\n      \"defaultImageDataUri\" : \"http://your.image.hoster.com/randomimage.png\"\
-              ,\n      \"_id\" : \"b968d7bc-e459-43b3-92e8-5208654678cd\",\n     \
+              ,\n      \"_id\" : \"d110c066-3cab-4fc4-93e7-28d4a4e8d799\",\n     \
               \ \"_links\" : {\n        \"default-image-data\" : {\n          \"href\"\
               \ : \"https://yourshop.api.urn/http:/your.image.hoster.com/randomimage.png\"\
               \n        }\n      }\n    },\n    \"quantity\" : {\n      \"value\"\
@@ -4013,7 +4091,7 @@ paths:
               \ : \"EUR\",\n        \"amount\" : 0\n      }\n    },\n    \"canceled\"\
               \ : {\n      \"quantity\" : 0,\n      \"amount\" : {\n        \"currency\"\
               \ : \"EUR\",\n        \"amount\" : 0\n      }\n    },\n    \"_id\" :\
-              \ \"ceb70bac-cf25-477b-90ef-93b375923d71\"\n  } ],\n  \"shippingLineItem\"\
+              \ \"b6ca0dfb-afea-4fef-9239-6195187829c0\"\n  } ],\n  \"shippingLineItem\"\
               \ : {\n    \"lineItemPrice\" : {\n      \"taxModel\" : \"GROSS\",\n\
               \      \"currency\" : \"EUR\",\n      \"amount\" : 19.99\n    },\n \
               \   \"initialLineItemPrice\" : {\n      \"taxModel\" : \"GROSS\",\n\
@@ -4081,21 +4159,21 @@ paths:
               , \"Hinterhof\", \"20999 Alsterwasser\", \"GERMANY\" ]\n  },\n  \"paymentStatus\"\
               \ : \"PENDING\",\n  \"shippingStatus\" : \"UNSHIPPED\",\n  \"canceled\"\
               \ : false,\n  \"orderNumber\" : \"10001\",\n  \"customerComment\" :\
-              \ null,\n  \"orderNote\" : \"not paid yet\",\n  \"entryDate\" : \"2018-10-12T09:02:46.418\"\
+              \ null,\n  \"orderNote\" : \"not paid yet\",\n  \"entryDate\" : \"2018-10-15T11:02:07.056\"\
               ,\n  \"totalReceived\" : {\n    \"currency\" : \"EUR\",\n    \"amount\"\
               \ : 0\n  },\n  \"totalRefunded\" : {\n    \"currency\" : \"EUR\",\n\
               \    \"amount\" : 0\n  },\n  \"openAmount\" : {\n    \"currency\" :\
               \ \"EUR\",\n    \"amount\" : 77.44\n  },\n  \"marketingChannel\" : \"\
               Google shopping\",\n  \"marketingSubchannel\" : \"Some category\",\n\
               \  \"salesChannel\" : \"Storefront\",\n  \"_links\" : {\n    \"self\"\
-              \ : {\n      \"href\" : \"https://yourshop.api.urn/orders/57535596-8b80-4da6-b77e-9c40c9eaee7a\"\
-              \n    },\n    \"order\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/57535596-8b80-4da6-b77e-9c40c9eaee7a\"\
-              \n    },\n    \"order-note\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/57535596-8b80-4da6-b77e-9c40c9eaee7a/order-note\"\
-              \n    },\n    \"processes\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/57535596-8b80-4da6-b77e-9c40c9eaee7a/processes\"\
-              \n    },\n    \"events\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/57535596-8b80-4da6-b77e-9c40c9eaee7a/events\"\
-              \n    },\n    \"cancel\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/57535596-8b80-4da6-b77e-9c40c9eaee7a/cancel\"\
+              \ : {\n      \"href\" : \"https://yourshop.api.urn/orders/b861e5a8-6e2d-4224-8566-0a3137bbcdeb\"\
+              \n    },\n    \"order\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/b861e5a8-6e2d-4224-8566-0a3137bbcdeb\"\
+              \n    },\n    \"order-note\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/b861e5a8-6e2d-4224-8566-0a3137bbcdeb/order-note\"\
+              \n    },\n    \"processes\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/b861e5a8-6e2d-4224-8566-0a3137bbcdeb/processes\"\
+              \n    },\n    \"events\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/b861e5a8-6e2d-4224-8566-0a3137bbcdeb/events\"\
+              \n    },\n    \"cancel\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/b861e5a8-6e2d-4224-8566-0a3137bbcdeb/cancel\"\
               \n    },\n    \"invoice-pdf\" : {\n      \"href\" : \"https://yourshop.api.urn/api/pdf-storage/attachments/invoice-10003.pdf?hash=9e5e2631c6f5877d64cb3d40db46ec6eb48a3a92\"\
-              \n    },\n    \"send-invoice\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/57535596-8b80-4da6-b77e-9c40c9eaee7a/send-invoice\"\
+              \n    },\n    \"send-invoice\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/b861e5a8-6e2d-4224-8566-0a3137bbcdeb/send-invoice\"\
               \n    },\n    \"right-of-withdrawal-pdf\" : {\n      \"href\" : \"https://yourshop.api.urn/pdf-storage/attachments/some.pdf?hash=23213\"\
               \n    },\n    \"terms-and-conditions-pdf\" : {\n      \"href\" : \"\
               https://yourshop.api.urn/pdf-storage/attachments/some.pdf?hash=23213\"\
@@ -4146,45 +4224,18 @@ paths:
         200:
           description: ""
           examples:
-            application/hal+json: "{\n  \"_id\" : \"89e428ae-de37-423e-a99a-50f50422e675\"\
-              ,\n  \"createdAt\" : \"2018-10-12T09:02:40.004\",\n  \"cartId\" : \"\
-              15e3eb85-6e80-407e-b1ff-9bb39986381d\",\n  \"currency\" : \"EUR\",\n\
+            application/hal+json: "{\n  \"_id\" : \"0346e789-ebd8-46c0-a529-86da705efff2\"\
+              ,\n  \"createdAt\" : \"2018-10-15T11:02:02.627\",\n  \"cartId\" : \"\
+              f9923f3a-b600-4380-b721-ad010257327f\",\n  \"currency\" : \"EUR\",\n\
               \  \"taxModel\" : \"GROSS\",\n  \"taxable\" : false,\n  \"testOrder\"\
               \ : false,\n  \"termsAndConditionsExplicitlyAccepted\" : false,\n  \"\
-              productLineItems\" : [ {\n    \"product\" : {\n      \"sku\" : \"EB001\"\
-              ,\n      \"name\" : \"Power & Vanilla Coconut Protein Bar (Pack of 5)\"\
-              ,\n      \"essentialFeatures\" : \"Preservative-free. No added sweeteners.\
-              \ Vegan.\",\n      \"shippingWeight\" : 190,\n      \"defaultImageDataUri\"\
-              \ : \"http://your.image.hoster.com/randomimage.png\",\n      \"_id\"\
-              \ : \"e8521617-6bdc-45fc-be92-8d8732b716e5\",\n      \"_links\" : {\n\
-              \        \"default-image-data\" : {\n          \"href\" : \"https://yourshop.api.urn/http:/your.image.hoster.com/randomimage.png\"\
-              \n        }\n      }\n    },\n    \"quantity\" : {\n      \"value\"\
-              \ : 5,\n      \"unit\" : \"PIECE\"\n    },\n    \"quantityInt\" : 5,\n\
-              \    \"initialQuantity\" : 5,\n    \"unitPrice\" : {\n      \"taxModel\"\
-              \ : \"GROSS\",\n      \"currency\" : \"EUR\",\n      \"amount\" : 9.99\n\
-              \    },\n    \"lineItemPrice\" : {\n      \"taxModel\" : \"GROSS\",\n\
-              \      \"currency\" : \"EUR\",\n      \"amount\" : 49.95\n    },\n \
-              \   \"initialLineItemPrice\" : {\n      \"taxModel\" : \"GROSS\",\n\
-              \      \"currency\" : \"EUR\",\n      \"amount\" : 49.95\n    },\n \
-              \   \"lineItemTax\" : {\n      \"taxClass\" : \"REGULAR\",\n      \"\
-              taxRate\" : 0.19,\n      \"currency\" : \"EUR\",\n      \"amount\" :\
-              \ 7.9743\n    },\n    \"unshipped\" : {\n      \"quantity\" : 5,\n \
-              \     \"amount\" : null\n    },\n    \"shipped\" : {\n      \"quantity\"\
-              \ : 0,\n      \"amount\" : null\n    },\n    \"pending\" : {\n     \
-              \ \"quantity\" : 0,\n      \"amount\" : null\n    },\n    \"returned\"\
-              \ : {\n      \"quantity\" : 0,\n      \"amount\" : {\n        \"currency\"\
-              \ : \"EUR\",\n        \"amount\" : 0\n      }\n    },\n    \"broken\"\
-              \ : {\n      \"quantity\" : 0,\n      \"amount\" : {\n        \"currency\"\
-              \ : \"EUR\",\n        \"amount\" : 0\n      }\n    },\n    \"canceled\"\
-              \ : {\n      \"quantity\" : 0,\n      \"amount\" : {\n        \"currency\"\
-              \ : \"EUR\",\n        \"amount\" : 0\n      }\n    },\n    \"_id\" :\
-              \ \"bc275d7e-5767-425a-a900-40b4b718efa7\"\n  }, {\n    \"product\"\
-              \ : {\n      \"sku\" : \"vino020\",\n      \"name\" : \"Rioja Castillo\
-              \ de Puerto (2013)\",\n      \"essentialFeatures\" : \"Dry. 12% alcohol.\
-              \ Best vine variety.\",\n      \"shippingWeight\" : 100,\n      \"defaultImageDataUri\"\
-              \ : \"http://your.image.hoster.com/randomimage.png\",\n      \"_id\"\
-              \ : \"f7ee9c93-84ad-4444-a945-55b060fd41ff\",\n      \"_links\" : {\n\
-              \        \"default-image-data\" : {\n          \"href\" : \"https://yourshop.api.urn/http:/your.image.hoster.com/randomimage.png\"\
+              productLineItems\" : [ {\n    \"product\" : {\n      \"sku\" : \"vino020\"\
+              ,\n      \"name\" : \"Rioja Castillo de Puerto (2013)\",\n      \"essentialFeatures\"\
+              \ : \"Dry. 12% alcohol. Best vine variety.\",\n      \"shippingWeight\"\
+              \ : 100,\n      \"defaultImageDataUri\" : \"http://your.image.hoster.com/randomimage.png\"\
+              ,\n      \"_id\" : \"f832f2d0-a9e2-4f8a-9acc-e12bf5dd5996\",\n     \
+              \ \"_links\" : {\n        \"default-image-data\" : {\n          \"href\"\
+              \ : \"https://yourshop.api.urn/http:/your.image.hoster.com/randomimage.png\"\
               \n        }\n      }\n    },\n    \"quantity\" : {\n      \"value\"\
               \ : 3,\n      \"unit\" : \"PIECE\"\n    },\n    \"quantityInt\" : 3,\n\
               \    \"initialQuantity\" : 3,\n    \"unitPrice\" : {\n      \"taxModel\"\
@@ -4205,7 +4256,35 @@ paths:
               \ : \"EUR\",\n        \"amount\" : 0\n      }\n    },\n    \"canceled\"\
               \ : {\n      \"quantity\" : 0,\n      \"amount\" : {\n        \"currency\"\
               \ : \"EUR\",\n        \"amount\" : 0\n      }\n    },\n    \"_id\" :\
-              \ \"bd68b8ec-f4b7-45a7-aa64-39b5a34ec3b9\"\n  } ],\n  \"shippingLineItem\"\
+              \ \"3a3e5a7f-6ad1-4c1e-8321-5f69afb9875a\"\n  }, {\n    \"product\"\
+              \ : {\n      \"sku\" : \"EB001\",\n      \"name\" : \"Power & Vanilla\
+              \ Coconut Protein Bar (Pack of 5)\",\n      \"essentialFeatures\" :\
+              \ \"Preservative-free. No added sweeteners. Vegan.\",\n      \"shippingWeight\"\
+              \ : 190,\n      \"defaultImageDataUri\" : \"http://your.image.hoster.com/randomimage.png\"\
+              ,\n      \"_id\" : \"865b1149-237c-4a33-abf1-c16902d6546b\",\n     \
+              \ \"_links\" : {\n        \"default-image-data\" : {\n          \"href\"\
+              \ : \"https://yourshop.api.urn/http:/your.image.hoster.com/randomimage.png\"\
+              \n        }\n      }\n    },\n    \"quantity\" : {\n      \"value\"\
+              \ : 5,\n      \"unit\" : \"PIECE\"\n    },\n    \"quantityInt\" : 5,\n\
+              \    \"initialQuantity\" : 5,\n    \"unitPrice\" : {\n      \"taxModel\"\
+              \ : \"GROSS\",\n      \"currency\" : \"EUR\",\n      \"amount\" : 9.99\n\
+              \    },\n    \"lineItemPrice\" : {\n      \"taxModel\" : \"GROSS\",\n\
+              \      \"currency\" : \"EUR\",\n      \"amount\" : 49.95\n    },\n \
+              \   \"initialLineItemPrice\" : {\n      \"taxModel\" : \"GROSS\",\n\
+              \      \"currency\" : \"EUR\",\n      \"amount\" : 49.95\n    },\n \
+              \   \"lineItemTax\" : {\n      \"taxClass\" : \"REGULAR\",\n      \"\
+              taxRate\" : 0.19,\n      \"currency\" : \"EUR\",\n      \"amount\" :\
+              \ 7.9743\n    },\n    \"unshipped\" : {\n      \"quantity\" : 5,\n \
+              \     \"amount\" : null\n    },\n    \"shipped\" : {\n      \"quantity\"\
+              \ : 0,\n      \"amount\" : null\n    },\n    \"pending\" : {\n     \
+              \ \"quantity\" : 0,\n      \"amount\" : null\n    },\n    \"returned\"\
+              \ : {\n      \"quantity\" : 0,\n      \"amount\" : {\n        \"currency\"\
+              \ : \"EUR\",\n        \"amount\" : 0\n      }\n    },\n    \"broken\"\
+              \ : {\n      \"quantity\" : 0,\n      \"amount\" : {\n        \"currency\"\
+              \ : \"EUR\",\n        \"amount\" : 0\n      }\n    },\n    \"canceled\"\
+              \ : {\n      \"quantity\" : 0,\n      \"amount\" : {\n        \"currency\"\
+              \ : \"EUR\",\n        \"amount\" : 0\n      }\n    },\n    \"_id\" :\
+              \ \"4413601c-5744-4763-8b2d-1fcdcc831dce\"\n  } ],\n  \"shippingLineItem\"\
               \ : {\n    \"lineItemPrice\" : {\n      \"taxModel\" : \"GROSS\",\n\
               \      \"currency\" : \"EUR\",\n      \"amount\" : 19.99\n    },\n \
               \   \"initialLineItemPrice\" : {\n      \"taxModel\" : \"GROSS\",\n\
@@ -4274,19 +4353,19 @@ paths:
               \ ]\n  },\n  \"paymentStatus\" : \"PENDING\",\n  \"shippingStatus\"\
               \ : \"UNSHIPPED\",\n  \"canceled\" : false,\n  \"orderNumber\" : \"\
               10001\",\n  \"customerComment\" : null,\n  \"orderNote\" : \"not paid\
-              \ yet\",\n  \"entryDate\" : \"2018-10-12T09:02:40.004\",\n  \"totalReceived\"\
+              \ yet\",\n  \"entryDate\" : \"2018-10-15T11:02:02.627\",\n  \"totalReceived\"\
               \ : {\n    \"currency\" : \"EUR\",\n    \"amount\" : 0\n  },\n  \"totalRefunded\"\
               \ : {\n    \"currency\" : \"EUR\",\n    \"amount\" : 0\n  },\n  \"openAmount\"\
               \ : {\n    \"currency\" : \"EUR\",\n    \"amount\" : 77.44\n  },\n \
               \ \"marketingChannel\" : \"Google shopping\",\n  \"marketingSubchannel\"\
               \ : \"Some category\",\n  \"salesChannel\" : \"Storefront\",\n  \"_links\"\
-              \ : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/89e428ae-de37-423e-a99a-50f50422e675\"\
-              \n    },\n    \"order\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/89e428ae-de37-423e-a99a-50f50422e675\"\
-              \n    },\n    \"order-note\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/89e428ae-de37-423e-a99a-50f50422e675/order-note\"\
-              \n    },\n    \"processes\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/89e428ae-de37-423e-a99a-50f50422e675/processes\"\
-              \n    },\n    \"events\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/89e428ae-de37-423e-a99a-50f50422e675/events\"\
-              \n    },\n    \"cancel\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/89e428ae-de37-423e-a99a-50f50422e675/cancel\"\
-              \n    },\n    \"create-invoice\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/89e428ae-de37-423e-a99a-50f50422e675/create-invoice\"\
+              \ : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/0346e789-ebd8-46c0-a529-86da705efff2\"\
+              \n    },\n    \"order\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/0346e789-ebd8-46c0-a529-86da705efff2\"\
+              \n    },\n    \"order-note\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/0346e789-ebd8-46c0-a529-86da705efff2/order-note\"\
+              \n    },\n    \"processes\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/0346e789-ebd8-46c0-a529-86da705efff2/processes\"\
+              \n    },\n    \"events\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/0346e789-ebd8-46c0-a529-86da705efff2/events\"\
+              \n    },\n    \"cancel\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/0346e789-ebd8-46c0-a529-86da705efff2/cancel\"\
+              \n    },\n    \"create-invoice\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/0346e789-ebd8-46c0-a529-86da705efff2/create-invoice\"\
               \n    },\n    \"right-of-withdrawal-pdf\" : {\n      \"href\" : \"https://yourshop.api.urn/pdf-storage/attachments/some.pdf?hash=23213\"\
               \n    },\n    \"terms-and-conditions-pdf\" : {\n      \"href\" : \"\
               https://yourshop.api.urn/pdf-storage/attachments/some.pdf?hash=23213\"\
@@ -4315,46 +4394,18 @@ paths:
         200:
           description: ""
           examples:
-            application/hal+json: "{\n  \"_id\" : \"d648c7c2-d219-4b7d-883e-6756675a44fd\"\
-              ,\n  \"createdAt\" : \"2018-10-12T09:02:56.74\",\n  \"cartId\" : \"\
-              4eb2d05a-d38f-4101-a743-f755df25f793\",\n  \"currency\" : \"EUR\",\n\
+            application/hal+json: "{\n  \"_id\" : \"13e1e573-339f-4b9c-a5d5-963301e7f6cc\"\
+              ,\n  \"createdAt\" : \"2018-10-15T11:02:14.859\",\n  \"cartId\" : \"\
+              c30c98d8-659a-4bc7-8c75-8674a6df00f4\",\n  \"currency\" : \"EUR\",\n\
               \  \"taxModel\" : \"GROSS\",\n  \"taxable\" : false,\n  \"testOrder\"\
               \ : false,\n  \"termsAndConditionsExplicitlyAccepted\" : false,\n  \"\
-              productLineItems\" : [ {\n    \"product\" : {\n      \"sku\" : \"vino020\"\
-              ,\n      \"name\" : \"Rioja Castillo de Puerto (2013)\",\n      \"essentialFeatures\"\
-              \ : \"Dry. 12% alcohol. Best vine variety.\",\n      \"shippingWeight\"\
-              \ : 100,\n      \"defaultImageDataUri\" : \"http://your.image.hoster.com/randomimage.png\"\
-              ,\n      \"_id\" : \"00ac6fb4-56f8-48cc-8dc9-1c69327bda07\",\n     \
-              \ \"_links\" : {\n        \"default-image-data\" : {\n          \"href\"\
-              \ : \"https://yourshop.api.urn/http:/your.image.hoster.com/randomimage.png\"\
-              \n        }\n      }\n    },\n    \"quantity\" : {\n      \"value\"\
-              \ : 3,\n      \"unit\" : \"PIECE\"\n    },\n    \"quantityInt\" : 3,\n\
-              \    \"initialQuantity\" : 3,\n    \"unitPrice\" : {\n      \"taxModel\"\
-              \ : \"GROSS\",\n      \"currency\" : \"EUR\",\n      \"amount\" : 2.5\n\
-              \    },\n    \"lineItemPrice\" : {\n      \"taxModel\" : \"GROSS\",\n\
-              \      \"currency\" : \"EUR\",\n      \"amount\" : 7.5\n    },\n   \
-              \ \"initialLineItemPrice\" : {\n      \"taxModel\" : \"GROSS\",\n  \
-              \    \"currency\" : \"EUR\",\n      \"amount\" : 7.5\n    },\n    \"\
-              lineItemTax\" : {\n      \"taxClass\" : \"REGULAR\",\n      \"taxRate\"\
-              \ : 0.19,\n      \"currency\" : \"EUR\",\n      \"amount\" : 1.197\n\
-              \    },\n    \"unshipped\" : {\n      \"quantity\" : 3,\n      \"amount\"\
-              \ : null\n    },\n    \"shipped\" : {\n      \"quantity\" : 0,\n   \
-              \   \"amount\" : null\n    },\n    \"pending\" : {\n      \"quantity\"\
-              \ : 0,\n      \"amount\" : null\n    },\n    \"returned\" : {\n    \
-              \  \"quantity\" : 0,\n      \"amount\" : {\n        \"currency\" : \"\
-              EUR\",\n        \"amount\" : 0\n      }\n    },\n    \"broken\" : {\n\
-              \      \"quantity\" : 0,\n      \"amount\" : {\n        \"currency\"\
-              \ : \"EUR\",\n        \"amount\" : 0\n      }\n    },\n    \"canceled\"\
-              \ : {\n      \"quantity\" : 0,\n      \"amount\" : {\n        \"currency\"\
-              \ : \"EUR\",\n        \"amount\" : 0\n      }\n    },\n    \"_id\" :\
-              \ \"40935673-d0d8-4328-b139-77dead8136ed\"\n  }, {\n    \"product\"\
-              \ : {\n      \"sku\" : \"EB001\",\n      \"name\" : \"Power & Vanilla\
-              \ Coconut Protein Bar (Pack of 5)\",\n      \"essentialFeatures\" :\
-              \ \"Preservative-free. No added sweeteners. Vegan.\",\n      \"shippingWeight\"\
-              \ : 190,\n      \"defaultImageDataUri\" : \"http://your.image.hoster.com/randomimage.png\"\
-              ,\n      \"_id\" : \"a01abbab-af1e-4609-bfde-5c44a0788a37\",\n     \
-              \ \"_links\" : {\n        \"default-image-data\" : {\n          \"href\"\
-              \ : \"https://yourshop.api.urn/http:/your.image.hoster.com/randomimage.png\"\
+              productLineItems\" : [ {\n    \"product\" : {\n      \"sku\" : \"EB001\"\
+              ,\n      \"name\" : \"Power & Vanilla Coconut Protein Bar (Pack of 5)\"\
+              ,\n      \"essentialFeatures\" : \"Preservative-free. No added sweeteners.\
+              \ Vegan.\",\n      \"shippingWeight\" : 190,\n      \"defaultImageDataUri\"\
+              \ : \"http://your.image.hoster.com/randomimage.png\",\n      \"_id\"\
+              \ : \"d8bfb96e-998e-46ed-8c82-2b10affcaa28\",\n      \"_links\" : {\n\
+              \        \"default-image-data\" : {\n          \"href\" : \"https://yourshop.api.urn/http:/your.image.hoster.com/randomimage.png\"\
               \n        }\n      }\n    },\n    \"quantity\" : {\n      \"value\"\
               \ : 5,\n      \"unit\" : \"PIECE\"\n    },\n    \"quantityInt\" : 5,\n\
               \    \"initialQuantity\" : 5,\n    \"unitPrice\" : {\n      \"taxModel\"\
@@ -4375,7 +4426,34 @@ paths:
               \ : \"EUR\",\n        \"amount\" : 0\n      }\n    },\n    \"canceled\"\
               \ : {\n      \"quantity\" : 0,\n      \"amount\" : {\n        \"currency\"\
               \ : \"EUR\",\n        \"amount\" : 0\n      }\n    },\n    \"_id\" :\
-              \ \"b8946106-676b-4f72-8b2d-0b5fae193482\"\n  } ],\n  \"shippingLineItem\"\
+              \ \"3f632ce2-20f5-439b-a472-8bb0d22b749e\"\n  }, {\n    \"product\"\
+              \ : {\n      \"sku\" : \"vino020\",\n      \"name\" : \"Rioja Castillo\
+              \ de Puerto (2013)\",\n      \"essentialFeatures\" : \"Dry. 12% alcohol.\
+              \ Best vine variety.\",\n      \"shippingWeight\" : 100,\n      \"defaultImageDataUri\"\
+              \ : \"http://your.image.hoster.com/randomimage.png\",\n      \"_id\"\
+              \ : \"13208ca2-0843-442e-968b-ace4e8ae7b00\",\n      \"_links\" : {\n\
+              \        \"default-image-data\" : {\n          \"href\" : \"https://yourshop.api.urn/http:/your.image.hoster.com/randomimage.png\"\
+              \n        }\n      }\n    },\n    \"quantity\" : {\n      \"value\"\
+              \ : 3,\n      \"unit\" : \"PIECE\"\n    },\n    \"quantityInt\" : 3,\n\
+              \    \"initialQuantity\" : 3,\n    \"unitPrice\" : {\n      \"taxModel\"\
+              \ : \"GROSS\",\n      \"currency\" : \"EUR\",\n      \"amount\" : 2.5\n\
+              \    },\n    \"lineItemPrice\" : {\n      \"taxModel\" : \"GROSS\",\n\
+              \      \"currency\" : \"EUR\",\n      \"amount\" : 7.5\n    },\n   \
+              \ \"initialLineItemPrice\" : {\n      \"taxModel\" : \"GROSS\",\n  \
+              \    \"currency\" : \"EUR\",\n      \"amount\" : 7.5\n    },\n    \"\
+              lineItemTax\" : {\n      \"taxClass\" : \"REGULAR\",\n      \"taxRate\"\
+              \ : 0.19,\n      \"currency\" : \"EUR\",\n      \"amount\" : 1.197\n\
+              \    },\n    \"unshipped\" : {\n      \"quantity\" : 3,\n      \"amount\"\
+              \ : null\n    },\n    \"shipped\" : {\n      \"quantity\" : 0,\n   \
+              \   \"amount\" : null\n    },\n    \"pending\" : {\n      \"quantity\"\
+              \ : 0,\n      \"amount\" : null\n    },\n    \"returned\" : {\n    \
+              \  \"quantity\" : 0,\n      \"amount\" : {\n        \"currency\" : \"\
+              EUR\",\n        \"amount\" : 0\n      }\n    },\n    \"broken\" : {\n\
+              \      \"quantity\" : 0,\n      \"amount\" : {\n        \"currency\"\
+              \ : \"EUR\",\n        \"amount\" : 0\n      }\n    },\n    \"canceled\"\
+              \ : {\n      \"quantity\" : 0,\n      \"amount\" : {\n        \"currency\"\
+              \ : \"EUR\",\n        \"amount\" : 0\n      }\n    },\n    \"_id\" :\
+              \ \"7639712f-6824-46c5-96e2-22eec848781c\"\n  } ],\n  \"shippingLineItem\"\
               \ : {\n    \"lineItemPrice\" : {\n      \"taxModel\" : \"GROSS\",\n\
               \      \"currency\" : \"EUR\",\n      \"amount\" : 19.99\n    },\n \
               \   \"initialLineItemPrice\" : {\n      \"taxModel\" : \"GROSS\",\n\
@@ -4443,23 +4521,23 @@ paths:
               , \"Hinterhof\", \"20999 Alsterwasser\", \"GERMANY\" ]\n  },\n  \"paymentStatus\"\
               \ : \"PENDING\",\n  \"shippingStatus\" : \"UNSHIPPED\",\n  \"canceled\"\
               \ : false,\n  \"orderNumber\" : \"10001\",\n  \"customerComment\" :\
-              \ null,\n  \"orderNote\" : \"not paid yet\",\n  \"entryDate\" : \"2018-10-12T09:02:56.74\"\
+              \ null,\n  \"orderNote\" : \"not paid yet\",\n  \"entryDate\" : \"2018-10-15T11:02:14.859\"\
               ,\n  \"totalReceived\" : {\n    \"currency\" : \"EUR\",\n    \"amount\"\
               \ : 0\n  },\n  \"totalRefunded\" : {\n    \"currency\" : \"EUR\",\n\
               \    \"amount\" : 0\n  },\n  \"openAmount\" : {\n    \"currency\" :\
               \ \"EUR\",\n    \"amount\" : 77.44\n  },\n  \"marketingChannel\" : \"\
               Google shopping\",\n  \"marketingSubchannel\" : \"Some category\",\n\
               \  \"salesChannel\" : \"Storefront\",\n  \"_links\" : {\n    \"self\"\
-              \ : {\n      \"href\" : \"https://yourshop.api.urn/orders/d648c7c2-d219-4b7d-883e-6756675a44fd\"\
-              \n    },\n    \"order\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/d648c7c2-d219-4b7d-883e-6756675a44fd\"\
-              \n    },\n    \"order-note\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/d648c7c2-d219-4b7d-883e-6756675a44fd/order-note\"\
-              \n    },\n    \"processes\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/d648c7c2-d219-4b7d-883e-6756675a44fd/processes\"\
-              \n    },\n    \"events\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/d648c7c2-d219-4b7d-883e-6756675a44fd/events\"\
-              \n    },\n    \"cancel\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/d648c7c2-d219-4b7d-883e-6756675a44fd/cancel\"\
-              \n    },\n    \"retry-create-invoice\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/d648c7c2-d219-4b7d-883e-6756675a44fd/create-invoice\"\
+              \ : {\n      \"href\" : \"https://yourshop.api.urn/orders/13e1e573-339f-4b9c-a5d5-963301e7f6cc\"\
+              \n    },\n    \"order\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/13e1e573-339f-4b9c-a5d5-963301e7f6cc\"\
+              \n    },\n    \"order-note\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/13e1e573-339f-4b9c-a5d5-963301e7f6cc/order-note\"\
+              \n    },\n    \"processes\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/13e1e573-339f-4b9c-a5d5-963301e7f6cc/processes\"\
+              \n    },\n    \"events\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/13e1e573-339f-4b9c-a5d5-963301e7f6cc/events\"\
+              \n    },\n    \"cancel\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/13e1e573-339f-4b9c-a5d5-963301e7f6cc/cancel\"\
+              \n    },\n    \"retry-create-invoice\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/13e1e573-339f-4b9c-a5d5-963301e7f6cc/create-invoice\"\
+              \n    },\n    \"right-of-withdrawal-pdf\" : {\n      \"href\" : \"https://yourshop.api.urn/pdf-storage/attachments/some.pdf?hash=23213\"\
               \n    },\n    \"terms-and-conditions-pdf\" : {\n      \"href\" : \"\
               https://yourshop.api.urn/pdf-storage/attachments/some.pdf?hash=23213\"\
-              \n    },\n    \"right-of-withdrawal-pdf\" : {\n      \"href\" : \"https://yourshop.api.urn/pdf-storage/attachments/some.pdf?hash=23213\"\
               \n    }\n  }\n}"
       security:
       - oauth2_accessCode:
@@ -4487,32 +4565,32 @@ paths:
           examples:
             application/hal+json: "{\n  \"_embedded\" : {\n    \"order-events\" :\
               \ [ {\n      \"triggeredBy\" : \"user\",\n      \"comment\" : \"comment\"\
-              ,\n      \"createdAt\" : \"2018-10-12T08:59:47.449\",\n      \"details\"\
-              \ : {\n        \"paymentProcessId\" : \"31285624-68c4-406b-946f-d262b352fcb2\"\
+              ,\n      \"createdAt\" : \"2018-10-15T10:59:48.567\",\n      \"details\"\
+              \ : {\n        \"paymentProcessId\" : \"21e2c062-e39e-4f8e-b8d5-6df64f3d0042\"\
               ,\n        \"type\" : \"payment-voided\"\n      },\n      \"_links\"\
-              \ : {\n        \"payment-process\" : {\n          \"href\" : \"https://yourshop.api.urn/orders/027f1960-f163-47e7-9ca4-732b2f050048/processes/payments/31285624-68c4-406b-946f-d262b352fcb2\"\
+              \ : {\n        \"payment-process\" : {\n          \"href\" : \"https://yourshop.api.urn/orders/ad9290f8-98ed-418a-9f22-159bdd036535/processes/payments/21e2c062-e39e-4f8e-b8d5-6df64f3d0042\"\
               \n        }\n      }\n    }, {\n      \"triggeredBy\" : null,\n    \
-              \  \"comment\" : null,\n      \"createdAt\" : \"2018-10-12T08:59:47.359\"\
+              \  \"comment\" : null,\n      \"createdAt\" : \"2018-10-15T10:59:48.377\"\
               ,\n      \"details\" : {\n        \"amount\" : {\n          \"currency\"\
               \ : \"EUR\",\n          \"amount\" : 0\n        },\n        \"paymentId\"\
               \ : null,\n        \"paymentProcessId\" : null,\n        \"type\" :\
               \ \"payment-created\"\n      }\n    }, {\n      \"triggeredBy\" : \"\
               user\",\n      \"comment\" : \"customer transfer\",\n      \"createdAt\"\
-              \ : \"2018-10-12T08:59:47.256\",\n      \"details\" : {\n        \"\
+              \ : \"2018-10-15T10:59:48.188\",\n      \"details\" : {\n        \"\
               amount\" : {\n          \"currency\" : \"EUR\",\n          \"amount\"\
-              \ : 77.44\n        },\n        \"paymentProcessId\" : \"fb8df54c-cbdb-4dc6-a259-0193ab035068\"\
+              \ : 77.44\n        },\n        \"paymentProcessId\" : \"c726e654-6255-40ca-a5fa-44fb27e442d8\"\
               ,\n        \"type\" : \"payment-paid\"\n      },\n      \"_links\" :\
-              \ {\n        \"payment-process\" : {\n          \"href\" : \"https://yourshop.api.urn/orders/027f1960-f163-47e7-9ca4-732b2f050048/processes/payments/fb8df54c-cbdb-4dc6-a259-0193ab035068\"\
+              \ {\n        \"payment-process\" : {\n          \"href\" : \"https://yourshop.api.urn/orders/ad9290f8-98ed-418a-9f22-159bdd036535/processes/payments/c726e654-6255-40ca-a5fa-44fb27e442d8\"\
               \n        }\n      }\n    }, {\n      \"triggeredBy\" : null,\n    \
-              \  \"comment\" : null,\n      \"createdAt\" : \"2018-10-12T08:59:47.023\"\
+              \  \"comment\" : null,\n      \"createdAt\" : \"2018-10-15T10:59:47.82\"\
               ,\n      \"details\" : {\n        \"amount\" : {\n          \"currency\"\
               \ : \"EUR\",\n          \"amount\" : 77.44\n        },\n        \"paymentId\"\
               \ : null,\n        \"paymentProcessId\" : null,\n        \"type\" :\
               \ \"payment-created\"\n      }\n    }, {\n      \"triggeredBy\" : null,\n\
-              \      \"comment\" : null,\n      \"createdAt\" : \"2018-10-12T08:59:46.985\"\
+              \      \"comment\" : null,\n      \"createdAt\" : \"2018-10-15T10:59:47.743\"\
               ,\n      \"details\" : {\n        \"type\" : \"order-created\"\n   \
               \   }\n    } ]\n  },\n  \"_links\" : {\n    \"self\" : {\n      \"href\"\
-              \ : \"https://yourshop.api.urn/orders/027f1960-f163-47e7-9ca4-732b2f050048/events\"\
+              \ : \"https://yourshop.api.urn/orders/ad9290f8-98ed-418a-9f22-159bdd036535/events\"\
               \n    }\n  },\n  \"page\" : {\n    \"size\" : 10,\n    \"totalElements\"\
               \ : 5,\n    \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}"
           schema:
@@ -4550,8 +4628,8 @@ paths:
         200:
           description: ""
           examples:
-            application/hal+json: "{\n  \"createdAt\" : \"2018-10-12T09:02:51.242\"\
-              ,\n  \"cartId\" : \"74d8c924-e7ff-46ae-b2ca-fdbbd449d3fc\",\n  \"currency\"\
+            application/hal+json: "{\n  \"createdAt\" : \"2018-10-15T11:02:11.061\"\
+              ,\n  \"cartId\" : \"f7f5be64-240f-4320-98f1-9db25227c34d\",\n  \"currency\"\
               \ : \"EUR\",\n  \"taxModel\" : \"GROSS\",\n  \"taxable\" : false,\n\
               \  \"testOrder\" : false,\n  \"termsAndConditionsExplicitlyAccepted\"\
               \ : false,\n  \"productLineItems\" : [ {\n    \"quantity\" : {\n   \
@@ -4566,7 +4644,7 @@ paths:
               \ (Pack of 5)\",\n      \"essentialFeatures\" : \"Preservative-free.\
               \ No added sweeteners. Vegan.\",\n      \"shippingWeight\" : 190,\n\
               \      \"defaultImageDataUri\" : \"http://your.image.hoster.com/randomimage.png\"\
-              ,\n      \"_id\" : \"9ef68653-ee53-4229-97ab-7cddf0b31709\",\n     \
+              ,\n      \"_id\" : \"a812b9d5-e5ae-4c78-b7e8-c9d24741eff6\",\n     \
               \ \"_links\" : {\n        \"default-image-data\" : {\n          \"href\"\
               \ : \"https://yourshop.api.urn/http:/your.image.hoster.com/randomimage.png\"\
               \n        }\n      }\n    },\n    \"lineItemTax\" : {\n      \"taxClass\"\
@@ -4583,7 +4661,7 @@ paths:
               name\" : \"Rioja Castillo de Puerto (2013)\",\n      \"essentialFeatures\"\
               \ : \"Dry. 12% alcohol. Best vine variety.\",\n      \"shippingWeight\"\
               \ : 100,\n      \"defaultImageDataUri\" : \"http://your.image.hoster.com/randomimage.png\"\
-              ,\n      \"_id\" : \"c323bb3d-94fd-405f-932d-1a9c116d015c\",\n     \
+              ,\n      \"_id\" : \"75f85c2b-82d4-45e6-a868-69dce6f5a50b\",\n     \
               \ \"_links\" : {\n        \"default-image-data\" : {\n          \"href\"\
               \ : \"https://yourshop.api.urn/http:/your.image.hoster.com/randomimage.png\"\
               \n        }\n      }\n    },\n    \"lineItemTax\" : {\n      \"taxClass\"\
@@ -4656,17 +4734,17 @@ paths:
               \ GmbH\", \"Astrid Agnes Alster\", \"Alsterwasserweg 2\", \"Erdgeschoss\"\
               , \"Hinterhof\", \"20999 Alsterwasser\", \"GERMANY\" ]\n  },\n  \"customerComment\"\
               \ : null,\n  \"orderNote\" : \"not paid yet\",\n  \"invoicePdfUri\"\
-              \ : null,\n  \"entryDate\" : \"2018-10-12T09:02:51.242\",\n  \"marketingChannel\"\
+              \ : null,\n  \"entryDate\" : \"2018-10-15T11:02:11.061\",\n  \"marketingChannel\"\
               \ : \"Google shopping\",\n  \"marketingSubchannel\" : \"Some category\"\
               ,\n  \"salesChannel\" : \"Storefront\",\n  \"shippingStatus\" : \"UNSHIPPED\"\
               ,\n  \"totalReceived\" : {\n    \"currency\" : \"EUR\",\n    \"amount\"\
               \ : 0\n  },\n  \"totalRefunded\" : {\n    \"currency\" : \"EUR\",\n\
               \    \"amount\" : 0\n  },\n  \"openAmount\" : {\n    \"currency\" :\
               \ \"EUR\",\n    \"amount\" : 77.44\n  },\n  \"paymentStatus\" : \"PENDING\"\
-              ,\n  \"canceled\" : false,\n  \"_id\" : \"fbc01f0e-7bc2-4a5b-802a-2093686a5155\"\
+              ,\n  \"canceled\" : false,\n  \"_id\" : \"009138d1-762f-4aab-b3ce-b501692f5640\"\
               ,\n  \"orderNumber\" : \"10001\",\n  \"invoiceNumber\" : \"10001\",\n\
-              \  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/fbc01f0e-7bc2-4a5b-802a-2093686a5155\"\
-              \n    },\n    \"order\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/fbc01f0e-7bc2-4a5b-802a-2093686a5155\"\
+              \  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/009138d1-762f-4aab-b3ce-b501692f5640\"\
+              \n    },\n    \"order\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/009138d1-762f-4aab-b3ce-b501692f5640\"\
               \n    }\n  }\n}"
       security:
       - oauth2_accessCode:
@@ -4695,61 +4773,61 @@ paths:
             application/hal+json: "{\n  \"_embedded\" : {\n    \"refund-processes\"\
               \ : [ {\n      \"amount\" : {\n        \"currency\" : \"EUR\",\n   \
               \     \"amount\" : 19.98\n      },\n      \"status\" : \"VOIDED\",\n\
-              \      \"completed\" : true,\n      \"_id\" : \"0dbd175e-6ead-4d11-b8e6-b0a40d2cf80f\"\
+              \      \"completed\" : true,\n      \"_id\" : \"c4cb8742-55c9-496a-a0db-bf86aa007129\"\
               ,\n      \"_links\" : {\n        \"self\" : {\n          \"href\" :\
-              \ \"https://yourshop.api.urn/orders/0e989883-a692-4e37-9fa1-7350259498f3/processes/refunds/0dbd175e-6ead-4d11-b8e6-b0a40d2cf80f\"\
+              \ \"https://yourshop.api.urn/orders/50e4d0e2-0668-422e-b17d-3d28bd312f13/processes/refunds/c4cb8742-55c9-496a-a0db-bf86aa007129\"\
               \n        },\n        \"refund-process\" : {\n          \"href\" : \"\
-              https://yourshop.api.urn/orders/0e989883-a692-4e37-9fa1-7350259498f3/processes/refunds/0dbd175e-6ead-4d11-b8e6-b0a40d2cf80f\"\
+              https://yourshop.api.urn/orders/50e4d0e2-0668-422e-b17d-3d28bd312f13/processes/refunds/c4cb8742-55c9-496a-a0db-bf86aa007129\"\
               \n        }\n      }\n    }, {\n      \"amount\" : {\n        \"currency\"\
               \ : \"EUR\",\n        \"amount\" : 39.96\n      },\n      \"status\"\
-              \ : \"PENDING\",\n      \"completed\" : false,\n      \"_id\" : \"543f65b6-6c91-4bb5-9049-1e32b75d996d\"\
+              \ : \"PENDING\",\n      \"completed\" : false,\n      \"_id\" : \"8a8b99cc-c759-47ff-af86-04b096a14f4f\"\
               ,\n      \"_links\" : {\n        \"self\" : {\n          \"href\" :\
-              \ \"https://yourshop.api.urn/orders/0e989883-a692-4e37-9fa1-7350259498f3/processes/refunds/543f65b6-6c91-4bb5-9049-1e32b75d996d\"\
+              \ \"https://yourshop.api.urn/orders/50e4d0e2-0668-422e-b17d-3d28bd312f13/processes/refunds/8a8b99cc-c759-47ff-af86-04b096a14f4f\"\
               \n        },\n        \"refund-process\" : {\n          \"href\" : \"\
-              https://yourshop.api.urn/orders/0e989883-a692-4e37-9fa1-7350259498f3/processes/refunds/543f65b6-6c91-4bb5-9049-1e32b75d996d\"\
-              \n        },\n        \"mark-paid\" : {\n          \"href\" : \"https://yourshop.api.urn/orders/0e989883-a692-4e37-9fa1-7350259498f3/processes/refunds/543f65b6-6c91-4bb5-9049-1e32b75d996d/mark-paid\"\
+              https://yourshop.api.urn/orders/50e4d0e2-0668-422e-b17d-3d28bd312f13/processes/refunds/8a8b99cc-c759-47ff-af86-04b096a14f4f\"\
+              \n        },\n        \"mark-paid\" : {\n          \"href\" : \"https://yourshop.api.urn/orders/50e4d0e2-0668-422e-b17d-3d28bd312f13/processes/refunds/8a8b99cc-c759-47ff-af86-04b096a14f4f/mark-paid\"\
               \n        }\n      }\n    } ],\n    \"cancel-processes\" : [ {\n   \
-              \   \"lineItems\" : [ {\n        \"productLineItemId\" : \"b083e120-321c-42fa-bac9-c33a25dab4b8\"\
-              ,\n        \"quantity\" : 2\n      } ],\n      \"_id\" : \"56f67da0-7e5a-414f-b44f-657ac72a0c1a\"\
+              \   \"lineItems\" : [ {\n        \"productLineItemId\" : \"b2b90ce4-7c22-43e4-87d0-d603a343c92e\"\
+              ,\n        \"quantity\" : 2\n      } ],\n      \"_id\" : \"06291e10-5126-49c3-aad8-6ce86faff486\"\
               ,\n      \"_links\" : {\n        \"self\" : {\n          \"href\" :\
-              \ \"https://yourshop.api.urn/orders/0e989883-a692-4e37-9fa1-7350259498f3/processes/cancelations/56f67da0-7e5a-414f-b44f-657ac72a0c1a\"\
+              \ \"https://yourshop.api.urn/orders/50e4d0e2-0668-422e-b17d-3d28bd312f13/processes/cancelations/06291e10-5126-49c3-aad8-6ce86faff486\"\
               \n        },\n        \"cancel-process\" : {\n          \"href\" : \"\
-              https://yourshop.api.urn/orders/0e989883-a692-4e37-9fa1-7350259498f3/processes/cancelations/56f67da0-7e5a-414f-b44f-657ac72a0c1a\"\
+              https://yourshop.api.urn/orders/50e4d0e2-0668-422e-b17d-3d28bd312f13/processes/cancelations/06291e10-5126-49c3-aad8-6ce86faff486\"\
               \n        }\n      }\n    } ],\n    \"shipping-processes\" : [ {\n \
               \     \"status\" : \"SHIPPED\",\n      \"trackingCode\" : \"lookAtMyTrackingCodeWow\"\
               ,\n      \"trackingLink\" : \"http://tracking.is/fun?code=lookAtMyTrackingCodeWow\"\
-              ,\n      \"lineItems\" : [ {\n        \"productLineItemId\" : \"b083e120-321c-42fa-bac9-c33a25dab4b8\"\
-              ,\n        \"quantity\" : 3\n      } ],\n      \"_id\" : \"38620c2a-ed9c-4b00-ae82-a26c2bc173a7\"\
+              ,\n      \"lineItems\" : [ {\n        \"productLineItemId\" : \"b2b90ce4-7c22-43e4-87d0-d603a343c92e\"\
+              ,\n        \"quantity\" : 3\n      } ],\n      \"_id\" : \"261f5f10-88ed-464b-a601-a811c6d04aff\"\
               ,\n      \"_links\" : {\n        \"self\" : {\n          \"href\" :\
-              \ \"https://yourshop.api.urn/orders/0e989883-a692-4e37-9fa1-7350259498f3/processes/shippings/38620c2a-ed9c-4b00-ae82-a26c2bc173a7\"\
+              \ \"https://yourshop.api.urn/orders/50e4d0e2-0668-422e-b17d-3d28bd312f13/processes/shippings/261f5f10-88ed-464b-a601-a811c6d04aff\"\
               \n        },\n        \"shipping-process\" : {\n          \"href\" :\
-              \ \"https://yourshop.api.urn/orders/0e989883-a692-4e37-9fa1-7350259498f3/processes/shippings/38620c2a-ed9c-4b00-ae82-a26c2bc173a7\"\
+              \ \"https://yourshop.api.urn/orders/50e4d0e2-0668-422e-b17d-3d28bd312f13/processes/shippings/261f5f10-88ed-464b-a601-a811c6d04aff\"\
               \n        },\n        \"mark-delivered\" : {\n          \"href\" : \"\
-              https://yourshop.api.urn/orders/0e989883-a692-4e37-9fa1-7350259498f3/processes/shippings/38620c2a-ed9c-4b00-ae82-a26c2bc173a7/mark-delivered\"\
+              https://yourshop.api.urn/orders/50e4d0e2-0668-422e-b17d-3d28bd312f13/processes/shippings/261f5f10-88ed-464b-a601-a811c6d04aff/mark-delivered\"\
               \n        }\n      }\n    } ],\n    \"payment-processes\" : [ {\n  \
               \    \"amount\" : {\n        \"currency\" : \"EUR\",\n        \"amount\"\
               \ : 77.44\n      },\n      \"status\" : \"PAID\",\n      \"paymentId\"\
-              \ : null,\n      \"completed\" : true,\n      \"_id\" : \"3cb0cd25-0530-4bf4-bd78-31bbf92bda26\"\
+              \ : null,\n      \"completed\" : true,\n      \"_id\" : \"a041ed62-1b43-4381-92e0-0db2be2aa80e\"\
               ,\n      \"_links\" : {\n        \"self\" : {\n          \"href\" :\
-              \ \"https://yourshop.api.urn/orders/0e989883-a692-4e37-9fa1-7350259498f3/processes/payments/3cb0cd25-0530-4bf4-bd78-31bbf92bda26\"\
+              \ \"https://yourshop.api.urn/orders/50e4d0e2-0668-422e-b17d-3d28bd312f13/processes/payments/a041ed62-1b43-4381-92e0-0db2be2aa80e\"\
               \n        },\n        \"payment-process\" : {\n          \"href\" :\
-              \ \"https://yourshop.api.urn/orders/0e989883-a692-4e37-9fa1-7350259498f3/processes/payments/3cb0cd25-0530-4bf4-bd78-31bbf92bda26\"\
+              \ \"https://yourshop.api.urn/orders/50e4d0e2-0668-422e-b17d-3d28bd312f13/processes/payments/a041ed62-1b43-4381-92e0-0db2be2aa80e\"\
               \n        }\n      }\n    } ],\n    \"return-processes\" : [ {\n   \
-              \   \"lineItems\" : [ {\n        \"productLineItemId\" : \"b083e120-321c-42fa-bac9-c33a25dab4b8\"\
+              \   \"lineItems\" : [ {\n        \"productLineItemId\" : \"b2b90ce4-7c22-43e4-87d0-d603a343c92e\"\
               ,\n        \"quantity\" : 2,\n        \"status\" : \"RETURNED\"\n  \
               \    } ],\n      \"shippingPriceRefund\" : null,\n      \"_id\" : \"\
-              3dad0d64-7fe5-489c-b3cc-cf6fd5b80003\",\n      \"_links\" : {\n    \
-              \    \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/orders/0e989883-a692-4e37-9fa1-7350259498f3/processes/returns/3dad0d64-7fe5-489c-b3cc-cf6fd5b80003\"\
+              99b918ec-df20-4aaa-aaae-ce7a1f70fabd\",\n      \"_links\" : {\n    \
+              \    \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/orders/50e4d0e2-0668-422e-b17d-3d28bd312f13/processes/returns/99b918ec-df20-4aaa-aaae-ce7a1f70fabd\"\
               \n        },\n        \"return-process\" : {\n          \"href\" : \"\
-              https://yourshop.api.urn/orders/0e989883-a692-4e37-9fa1-7350259498f3/processes/returns/3dad0d64-7fe5-489c-b3cc-cf6fd5b80003\"\
+              https://yourshop.api.urn/orders/50e4d0e2-0668-422e-b17d-3d28bd312f13/processes/returns/99b918ec-df20-4aaa-aaae-ce7a1f70fabd\"\
               \n        }\n      }\n    } ]\n  },\n  \"_links\" : {\n    \"self\"\
-              \ : {\n      \"href\" : \"https://yourshop.api.urn/orders/0e989883-a692-4e37-9fa1-7350259498f3/processes\"\
-              \n    },\n    \"processes\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/0e989883-a692-4e37-9fa1-7350259498f3/processes\"\
-              \n    },\n    \"payment-processes\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/0e989883-a692-4e37-9fa1-7350259498f3/processes/payments\"\
-              \n    },\n    \"shipping-processes\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/0e989883-a692-4e37-9fa1-7350259498f3/processes/shippings\"\
-              \n    },\n    \"return-processes\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/0e989883-a692-4e37-9fa1-7350259498f3/processes/returns\"\
-              \n    },\n    \"cancel-processes\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/0e989883-a692-4e37-9fa1-7350259498f3/processes/cancelations\"\
-              \n    },\n    \"refund-processes\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/0e989883-a692-4e37-9fa1-7350259498f3/processes/refunds\"\
+              \ : {\n      \"href\" : \"https://yourshop.api.urn/orders/50e4d0e2-0668-422e-b17d-3d28bd312f13/processes\"\
+              \n    },\n    \"processes\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/50e4d0e2-0668-422e-b17d-3d28bd312f13/processes\"\
+              \n    },\n    \"payment-processes\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/50e4d0e2-0668-422e-b17d-3d28bd312f13/processes/payments\"\
+              \n    },\n    \"shipping-processes\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/50e4d0e2-0668-422e-b17d-3d28bd312f13/processes/shippings\"\
+              \n    },\n    \"return-processes\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/50e4d0e2-0668-422e-b17d-3d28bd312f13/processes/returns\"\
+              \n    },\n    \"cancel-processes\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/50e4d0e2-0668-422e-b17d-3d28bd312f13/processes/cancelations\"\
+              \n    },\n    \"refund-processes\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/50e4d0e2-0668-422e-b17d-3d28bd312f13/processes/refunds\"\
               \n    }\n  }\n}"
           schema:
             $ref: "#/definitions/google-shopping_taxonomy-309252030"
@@ -4798,46 +4876,18 @@ paths:
         200:
           description: ""
           examples:
-            application/hal+json: "{\n  \"_id\" : \"6fbc45af-88e1-4e5a-bb93-d12cfd1265bb\"\
-              ,\n  \"createdAt\" : \"2018-10-12T09:02:44.668\",\n  \"cartId\" : \"\
-              1b62c955-c240-4ee2-b761-6f783f47e878\",\n  \"currency\" : \"EUR\",\n\
+            application/hal+json: "{\n  \"_id\" : \"d4da06d9-f9bf-4255-ae30-b89bd231f49e\"\
+              ,\n  \"createdAt\" : \"2018-10-15T11:02:05.852\",\n  \"cartId\" : \"\
+              e23ef94c-0feb-424c-a217-2d7d61b2cf63\",\n  \"currency\" : \"EUR\",\n\
               \  \"taxModel\" : \"GROSS\",\n  \"taxable\" : false,\n  \"testOrder\"\
               \ : false,\n  \"termsAndConditionsExplicitlyAccepted\" : false,\n  \"\
-              productLineItems\" : [ {\n    \"product\" : {\n      \"sku\" : \"vino020\"\
-              ,\n      \"name\" : \"Rioja Castillo de Puerto (2013)\",\n      \"essentialFeatures\"\
-              \ : \"Dry. 12% alcohol. Best vine variety.\",\n      \"shippingWeight\"\
-              \ : 100,\n      \"defaultImageDataUri\" : \"http://your.image.hoster.com/randomimage.png\"\
-              ,\n      \"_id\" : \"6f11ceb8-f30a-4c25-b896-68621d47d772\",\n     \
-              \ \"_links\" : {\n        \"default-image-data\" : {\n          \"href\"\
-              \ : \"https://yourshop.api.urn/http:/your.image.hoster.com/randomimage.png\"\
-              \n        }\n      }\n    },\n    \"quantity\" : {\n      \"value\"\
-              \ : 3,\n      \"unit\" : \"PIECE\"\n    },\n    \"quantityInt\" : 3,\n\
-              \    \"initialQuantity\" : 3,\n    \"unitPrice\" : {\n      \"taxModel\"\
-              \ : \"GROSS\",\n      \"currency\" : \"EUR\",\n      \"amount\" : 2.5\n\
-              \    },\n    \"lineItemPrice\" : {\n      \"taxModel\" : \"GROSS\",\n\
-              \      \"currency\" : \"EUR\",\n      \"amount\" : 7.5\n    },\n   \
-              \ \"initialLineItemPrice\" : {\n      \"taxModel\" : \"GROSS\",\n  \
-              \    \"currency\" : \"EUR\",\n      \"amount\" : 7.5\n    },\n    \"\
-              lineItemTax\" : {\n      \"taxClass\" : \"REGULAR\",\n      \"taxRate\"\
-              \ : 0.19,\n      \"currency\" : \"EUR\",\n      \"amount\" : 1.197\n\
-              \    },\n    \"unshipped\" : {\n      \"quantity\" : 3,\n      \"amount\"\
-              \ : null\n    },\n    \"shipped\" : {\n      \"quantity\" : 0,\n   \
-              \   \"amount\" : null\n    },\n    \"pending\" : {\n      \"quantity\"\
-              \ : 0,\n      \"amount\" : null\n    },\n    \"returned\" : {\n    \
-              \  \"quantity\" : 0,\n      \"amount\" : {\n        \"currency\" : \"\
-              EUR\",\n        \"amount\" : 0\n      }\n    },\n    \"broken\" : {\n\
-              \      \"quantity\" : 0,\n      \"amount\" : {\n        \"currency\"\
-              \ : \"EUR\",\n        \"amount\" : 0\n      }\n    },\n    \"canceled\"\
-              \ : {\n      \"quantity\" : 0,\n      \"amount\" : {\n        \"currency\"\
-              \ : \"EUR\",\n        \"amount\" : 0\n      }\n    },\n    \"_id\" :\
-              \ \"161d7f90-4940-44ca-a625-c2b2eed6799f\"\n  }, {\n    \"product\"\
-              \ : {\n      \"sku\" : \"EB001\",\n      \"name\" : \"Power & Vanilla\
-              \ Coconut Protein Bar (Pack of 5)\",\n      \"essentialFeatures\" :\
-              \ \"Preservative-free. No added sweeteners. Vegan.\",\n      \"shippingWeight\"\
-              \ : 190,\n      \"defaultImageDataUri\" : \"http://your.image.hoster.com/randomimage.png\"\
-              ,\n      \"_id\" : \"17ff7b3d-a359-4b31-a3b5-8ddd793e0de8\",\n     \
-              \ \"_links\" : {\n        \"default-image-data\" : {\n          \"href\"\
-              \ : \"https://yourshop.api.urn/http:/your.image.hoster.com/randomimage.png\"\
+              productLineItems\" : [ {\n    \"product\" : {\n      \"sku\" : \"EB001\"\
+              ,\n      \"name\" : \"Power & Vanilla Coconut Protein Bar (Pack of 5)\"\
+              ,\n      \"essentialFeatures\" : \"Preservative-free. No added sweeteners.\
+              \ Vegan.\",\n      \"shippingWeight\" : 190,\n      \"defaultImageDataUri\"\
+              \ : \"http://your.image.hoster.com/randomimage.png\",\n      \"_id\"\
+              \ : \"78638c20-dd52-4411-93bc-75271beaf185\",\n      \"_links\" : {\n\
+              \        \"default-image-data\" : {\n          \"href\" : \"https://yourshop.api.urn/http:/your.image.hoster.com/randomimage.png\"\
               \n        }\n      }\n    },\n    \"quantity\" : {\n      \"value\"\
               \ : 5,\n      \"unit\" : \"PIECE\"\n    },\n    \"quantityInt\" : 5,\n\
               \    \"initialQuantity\" : 5,\n    \"unitPrice\" : {\n      \"taxModel\"\
@@ -4858,7 +4908,34 @@ paths:
               \ : \"EUR\",\n        \"amount\" : 0\n      }\n    },\n    \"canceled\"\
               \ : {\n      \"quantity\" : 0,\n      \"amount\" : {\n        \"currency\"\
               \ : \"EUR\",\n        \"amount\" : 0\n      }\n    },\n    \"_id\" :\
-              \ \"8786ce53-b316-40b4-a5d2-f3fd251662c2\"\n  } ],\n  \"shippingLineItem\"\
+              \ \"627aef40-186f-4641-b996-e2a8b4cb4a87\"\n  }, {\n    \"product\"\
+              \ : {\n      \"sku\" : \"vino020\",\n      \"name\" : \"Rioja Castillo\
+              \ de Puerto (2013)\",\n      \"essentialFeatures\" : \"Dry. 12% alcohol.\
+              \ Best vine variety.\",\n      \"shippingWeight\" : 100,\n      \"defaultImageDataUri\"\
+              \ : \"http://your.image.hoster.com/randomimage.png\",\n      \"_id\"\
+              \ : \"0a419807-2633-4b42-bdb1-d11d50ec18e7\",\n      \"_links\" : {\n\
+              \        \"default-image-data\" : {\n          \"href\" : \"https://yourshop.api.urn/http:/your.image.hoster.com/randomimage.png\"\
+              \n        }\n      }\n    },\n    \"quantity\" : {\n      \"value\"\
+              \ : 3,\n      \"unit\" : \"PIECE\"\n    },\n    \"quantityInt\" : 3,\n\
+              \    \"initialQuantity\" : 3,\n    \"unitPrice\" : {\n      \"taxModel\"\
+              \ : \"GROSS\",\n      \"currency\" : \"EUR\",\n      \"amount\" : 2.5\n\
+              \    },\n    \"lineItemPrice\" : {\n      \"taxModel\" : \"GROSS\",\n\
+              \      \"currency\" : \"EUR\",\n      \"amount\" : 7.5\n    },\n   \
+              \ \"initialLineItemPrice\" : {\n      \"taxModel\" : \"GROSS\",\n  \
+              \    \"currency\" : \"EUR\",\n      \"amount\" : 7.5\n    },\n    \"\
+              lineItemTax\" : {\n      \"taxClass\" : \"REGULAR\",\n      \"taxRate\"\
+              \ : 0.19,\n      \"currency\" : \"EUR\",\n      \"amount\" : 1.197\n\
+              \    },\n    \"unshipped\" : {\n      \"quantity\" : 3,\n      \"amount\"\
+              \ : null\n    },\n    \"shipped\" : {\n      \"quantity\" : 0,\n   \
+              \   \"amount\" : null\n    },\n    \"pending\" : {\n      \"quantity\"\
+              \ : 0,\n      \"amount\" : null\n    },\n    \"returned\" : {\n    \
+              \  \"quantity\" : 0,\n      \"amount\" : {\n        \"currency\" : \"\
+              EUR\",\n        \"amount\" : 0\n      }\n    },\n    \"broken\" : {\n\
+              \      \"quantity\" : 0,\n      \"amount\" : {\n        \"currency\"\
+              \ : \"EUR\",\n        \"amount\" : 0\n      }\n    },\n    \"canceled\"\
+              \ : {\n      \"quantity\" : 0,\n      \"amount\" : {\n        \"currency\"\
+              \ : \"EUR\",\n        \"amount\" : 0\n      }\n    },\n    \"_id\" :\
+              \ \"b092572d-bc52-4097-be5b-a1e2410fd327\"\n  } ],\n  \"shippingLineItem\"\
               \ : {\n    \"lineItemPrice\" : {\n      \"taxModel\" : \"GROSS\",\n\
               \      \"currency\" : \"EUR\",\n      \"amount\" : 19.99\n    },\n \
               \   \"initialLineItemPrice\" : {\n      \"taxModel\" : \"GROSS\",\n\
@@ -4927,22 +5004,22 @@ paths:
               \ ]\n  },\n  \"paymentStatus\" : \"PENDING\",\n  \"shippingStatus\"\
               \ : \"UNSHIPPED\",\n  \"canceled\" : false,\n  \"orderNumber\" : \"\
               10001\",\n  \"customerComment\" : null,\n  \"orderNote\" : \"not paid\
-              \ yet\",\n  \"entryDate\" : \"2018-10-12T09:02:44.668\",\n  \"totalReceived\"\
+              \ yet\",\n  \"entryDate\" : \"2018-10-15T11:02:05.852\",\n  \"totalReceived\"\
               \ : {\n    \"currency\" : \"EUR\",\n    \"amount\" : 0\n  },\n  \"totalRefunded\"\
               \ : {\n    \"currency\" : \"EUR\",\n    \"amount\" : 0\n  },\n  \"openAmount\"\
               \ : {\n    \"currency\" : \"EUR\",\n    \"amount\" : 77.44\n  },\n \
               \ \"marketingChannel\" : \"Google shopping\",\n  \"marketingSubchannel\"\
               \ : \"Some category\",\n  \"salesChannel\" : \"Storefront\",\n  \"_links\"\
-              \ : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/6fbc45af-88e1-4e5a-bb93-d12cfd1265bb\"\
-              \n    },\n    \"order\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/6fbc45af-88e1-4e5a-bb93-d12cfd1265bb\"\
-              \n    },\n    \"order-note\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/6fbc45af-88e1-4e5a-bb93-d12cfd1265bb/order-note\"\
-              \n    },\n    \"processes\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/6fbc45af-88e1-4e5a-bb93-d12cfd1265bb/processes\"\
-              \n    },\n    \"events\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/6fbc45af-88e1-4e5a-bb93-d12cfd1265bb/events\"\
-              \n    },\n    \"cancel\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/6fbc45af-88e1-4e5a-bb93-d12cfd1265bb/cancel\"\
-              \n    },\n    \"create-invoice\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/6fbc45af-88e1-4e5a-bb93-d12cfd1265bb/create-invoice\"\
-              \n    },\n    \"right-of-withdrawal-pdf\" : {\n      \"href\" : \"https://yourshop.api.urn/pdf-storage/attachments/some.pdf?hash=23213\"\
+              \ : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/d4da06d9-f9bf-4255-ae30-b89bd231f49e\"\
+              \n    },\n    \"order\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/d4da06d9-f9bf-4255-ae30-b89bd231f49e\"\
+              \n    },\n    \"order-note\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/d4da06d9-f9bf-4255-ae30-b89bd231f49e/order-note\"\
+              \n    },\n    \"processes\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/d4da06d9-f9bf-4255-ae30-b89bd231f49e/processes\"\
+              \n    },\n    \"events\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/d4da06d9-f9bf-4255-ae30-b89bd231f49e/events\"\
+              \n    },\n    \"cancel\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/d4da06d9-f9bf-4255-ae30-b89bd231f49e/cancel\"\
+              \n    },\n    \"create-invoice\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/d4da06d9-f9bf-4255-ae30-b89bd231f49e/create-invoice\"\
               \n    },\n    \"terms-and-conditions-pdf\" : {\n      \"href\" : \"\
               https://yourshop.api.urn/pdf-storage/attachments/some.pdf?hash=23213\"\
+              \n    },\n    \"right-of-withdrawal-pdf\" : {\n      \"href\" : \"https://yourshop.api.urn/pdf-storage/attachments/some.pdf?hash=23213\"\
               \n    }\n  }\n}"
       security:
       - oauth2_accessCode:
@@ -4971,16 +5048,16 @@ paths:
             application/hal+json: "{\n  \"_embedded\" : {\n    \"refund-processes\"\
               \ : [ {\n      \"amount\" : {\n        \"currency\" : \"EUR\",\n   \
               \     \"amount\" : 19.98\n      },\n      \"status\" : \"PENDING\",\n\
-              \      \"completed\" : false,\n      \"_id\" : \"f412309a-c7dc-43b5-ba4e-e369e973ba85\"\
+              \      \"completed\" : false,\n      \"_id\" : \"f5d84ee3-ae97-4806-b424-266f510da586\"\
               ,\n      \"_links\" : {\n        \"self\" : {\n          \"href\" :\
-              \ \"https://yourshop.api.urn/orders/3cbf4923-4c4e-44f4-87d8-84d21bfcf463/processes/refunds/f412309a-c7dc-43b5-ba4e-e369e973ba85\"\
+              \ \"https://yourshop.api.urn/orders/c9a677ac-dd4c-42ec-ab75-ee7fef1e11d4/processes/refunds/f5d84ee3-ae97-4806-b424-266f510da586\"\
               \n        },\n        \"refund-process\" : {\n          \"href\" : \"\
-              https://yourshop.api.urn/orders/3cbf4923-4c4e-44f4-87d8-84d21bfcf463/processes/refunds/f412309a-c7dc-43b5-ba4e-e369e973ba85\"\
-              \n        },\n        \"mark-paid\" : {\n          \"href\" : \"https://yourshop.api.urn/orders/3cbf4923-4c4e-44f4-87d8-84d21bfcf463/processes/refunds/f412309a-c7dc-43b5-ba4e-e369e973ba85/mark-paid\"\
+              https://yourshop.api.urn/orders/c9a677ac-dd4c-42ec-ab75-ee7fef1e11d4/processes/refunds/f5d84ee3-ae97-4806-b424-266f510da586\"\
+              \n        },\n        \"mark-paid\" : {\n          \"href\" : \"https://yourshop.api.urn/orders/c9a677ac-dd4c-42ec-ab75-ee7fef1e11d4/processes/refunds/f5d84ee3-ae97-4806-b424-266f510da586/mark-paid\"\
               \n        }\n      }\n    } ]\n  },\n  \"_links\" : {\n    \"self\"\
-              \ : {\n      \"href\" : \"https://yourshop.api.urn/orders/3cbf4923-4c4e-44f4-87d8-84d21bfcf463/processes/refunds?page=0&size=20\"\
-              \n    },\n    \"refund-processes\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/3cbf4923-4c4e-44f4-87d8-84d21bfcf463/processes/refunds\"\
-              \n    },\n    \"active\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/3cbf4923-4c4e-44f4-87d8-84d21bfcf463/processes/refunds/active\"\
+              \ : {\n      \"href\" : \"https://yourshop.api.urn/orders/c9a677ac-dd4c-42ec-ab75-ee7fef1e11d4/processes/refunds?page=0&size=20\"\
+              \n    },\n    \"refund-processes\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/c9a677ac-dd4c-42ec-ab75-ee7fef1e11d4/processes/refunds\"\
+              \n    },\n    \"active\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/c9a677ac-dd4c-42ec-ab75-ee7fef1e11d4/processes/refunds/active\"\
               \n    }\n  },\n  \"page\" : {\n    \"size\" : 20,\n    \"totalElements\"\
               \ : 1,\n    \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}"
           schema:
@@ -5011,17 +5088,17 @@ paths:
           examples:
             application/hal+json: "{\n  \"_embedded\" : {\n    \"return-processes\"\
               \ : [ {\n      \"lineItems\" : [ {\n        \"productLineItemId\" :\
-              \ \"7c7289c9-394b-44d4-85f4-65c4a648f210\",\n        \"quantity\" :\
+              \ \"29005022-e679-4db5-ab14-216517201a93\",\n        \"quantity\" :\
               \ 3,\n        \"status\" : \"RETURNED\"\n      } ],\n      \"shippingPriceRefund\"\
               \ : {\n        \"currency\" : \"EUR\",\n        \"amount\" : 19.99\n\
-              \      },\n      \"_id\" : \"35a04e0b-252f-46e4-bcf1-a8ceaf279031\"\
+              \      },\n      \"_id\" : \"f2928726-bbce-4c57-9b5b-0918baa29772\"\
               ,\n      \"_links\" : {\n        \"self\" : {\n          \"href\" :\
-              \ \"https://yourshop.api.urn/orders/e241ee38-2bf9-4e1b-b392-d2f4f1a22d34/processes/returns/35a04e0b-252f-46e4-bcf1-a8ceaf279031\"\
+              \ \"https://yourshop.api.urn/orders/3e246cd0-60fe-42ff-958d-bda6683a2da1/processes/returns/f2928726-bbce-4c57-9b5b-0918baa29772\"\
               \n        },\n        \"return-process\" : {\n          \"href\" : \"\
-              https://yourshop.api.urn/orders/e241ee38-2bf9-4e1b-b392-d2f4f1a22d34/processes/returns/35a04e0b-252f-46e4-bcf1-a8ceaf279031\"\
+              https://yourshop.api.urn/orders/3e246cd0-60fe-42ff-958d-bda6683a2da1/processes/returns/f2928726-bbce-4c57-9b5b-0918baa29772\"\
               \n        }\n      }\n    } ]\n  },\n  \"_links\" : {\n    \"self\"\
-              \ : {\n      \"href\" : \"https://yourshop.api.urn/orders/e241ee38-2bf9-4e1b-b392-d2f4f1a22d34/processes/returns?page=0&size=20\"\
-              \n    },\n    \"return-processes\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/e241ee38-2bf9-4e1b-b392-d2f4f1a22d34/processes/returns\"\
+              \ : {\n      \"href\" : \"https://yourshop.api.urn/orders/3e246cd0-60fe-42ff-958d-bda6683a2da1/processes/returns?page=0&size=20\"\
+              \n    },\n    \"return-processes\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/3e246cd0-60fe-42ff-958d-bda6683a2da1/processes/returns\"\
               \n    }\n  },\n  \"page\" : {\n    \"size\" : 20,\n    \"totalElements\"\
               \ : 1,\n    \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}"
           schema:
@@ -5051,11 +5128,11 @@ paths:
         name: ""
         required: false
         schema:
-          $ref: "#/definitions/orders_order-id_processes_returns924012616"
+          $ref: "#/definitions/orders_order-id_processes_returns1945876182"
         x-examples:
           application/json: "{\n  \"comment\" : \"This needs to be done fast!\",\n\
             \  \"lineItems\" : [ {\n    \"quantity\" : 3,\n    \"productLineItemId\"\
-            \ : \"6422a1ba-b5aa-46b7-98a6-c2ad59672703\",\n    \"status\" : \"RETURNED\"\
+            \ : \"6f3fe608-c5c2-4d95-80b7-b27c0ee93fa9\",\n    \"status\" : \"RETURNED\"\
             \n  } ],\n  \"shippingPriceRefund\" : {\n    \"currency\" : \"EUR\",\n\
             \    \"amount\" : 19.99\n  }\n}"
       responses:
@@ -5063,12 +5140,12 @@ paths:
           description: ""
           examples:
             application/hal+json: "{\n  \"lineItems\" : [ {\n    \"productLineItemId\"\
-              \ : \"6422a1ba-b5aa-46b7-98a6-c2ad59672703\",\n    \"quantity\" : 3,\n\
+              \ : \"6f3fe608-c5c2-4d95-80b7-b27c0ee93fa9\",\n    \"quantity\" : 3,\n\
               \    \"status\" : \"RETURNED\"\n  } ],\n  \"shippingPriceRefund\" :\
               \ {\n    \"currency\" : \"EUR\",\n    \"amount\" : 19.99\n  },\n  \"\
-              _id\" : \"248889c9-7384-4d1d-9527-5b701ede39d2\",\n  \"_links\" : {\n\
-              \    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/2c62c6e2-caca-41e0-a9e1-f1885e9dbd3b/processes/returns/248889c9-7384-4d1d-9527-5b701ede39d2\"\
-              \n    },\n    \"return-process\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/2c62c6e2-caca-41e0-a9e1-f1885e9dbd3b/processes/returns/248889c9-7384-4d1d-9527-5b701ede39d2\"\
+              _id\" : \"e03ea29d-d1c3-457c-ac11-ce4cb3702cc6\",\n  \"_links\" : {\n\
+              \    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/ba749443-5c66-49fe-b2f2-60fc8527b139/processes/returns/e03ea29d-d1c3-457c-ac11-ce4cb3702cc6\"\
+              \n    },\n    \"return-process\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/ba749443-5c66-49fe-b2f2-60fc8527b139/processes/returns/e03ea29d-d1c3-457c-ac11-ce4cb3702cc6\"\
               \n    }\n  }\n}"
       security:
       - oauth2_accessCode:
@@ -5097,19 +5174,19 @@ paths:
             application/hal+json: "{\n  \"_embedded\" : {\n    \"shipping-processes\"\
               \ : [ {\n      \"status\" : \"PENDING\",\n      \"trackingCode\" : \"\
               lookAtMyTrackingCodeWow\",\n      \"trackingLink\" : \"http://tracking.is/fun?code=lookAtMyTrackingCodeWow\"\
-              ,\n      \"lineItems\" : [ {\n        \"productLineItemId\" : \"a0d74a61-b631-48da-a8c1-0678fcf307e6\"\
-              ,\n        \"quantity\" : 3\n      } ],\n      \"_id\" : \"e3818bee-ed08-4b0f-adbe-3ccad0f896c5\"\
+              ,\n      \"lineItems\" : [ {\n        \"productLineItemId\" : \"9aaabc9f-8803-4b21-9d8c-9b543269b69d\"\
+              ,\n        \"quantity\" : 3\n      } ],\n      \"_id\" : \"52c28cf1-476a-461d-b66b-d192fa0af5a7\"\
               ,\n      \"_links\" : {\n        \"self\" : {\n          \"href\" :\
-              \ \"https://yourshop.api.urn/orders/d7971618-bda8-4f97-9347-ef3b805986a4/processes/shippings/e3818bee-ed08-4b0f-adbe-3ccad0f896c5\"\
+              \ \"https://yourshop.api.urn/orders/df222148-8d7f-4281-b0fa-e33fb3867208/processes/shippings/52c28cf1-476a-461d-b66b-d192fa0af5a7\"\
               \n        },\n        \"shipping-process\" : {\n          \"href\" :\
-              \ \"https://yourshop.api.urn/orders/d7971618-bda8-4f97-9347-ef3b805986a4/processes/shippings/e3818bee-ed08-4b0f-adbe-3ccad0f896c5\"\
+              \ \"https://yourshop.api.urn/orders/df222148-8d7f-4281-b0fa-e33fb3867208/processes/shippings/52c28cf1-476a-461d-b66b-d192fa0af5a7\"\
               \n        },\n        \"mark-shipped\" : {\n          \"href\" : \"\
-              https://yourshop.api.urn/orders/d7971618-bda8-4f97-9347-ef3b805986a4/processes/shippings/e3818bee-ed08-4b0f-adbe-3ccad0f896c5/mark-shipped\"\
+              https://yourshop.api.urn/orders/df222148-8d7f-4281-b0fa-e33fb3867208/processes/shippings/52c28cf1-476a-461d-b66b-d192fa0af5a7/mark-shipped\"\
               \n        },\n        \"mark-delivered\" : {\n          \"href\" : \"\
-              https://yourshop.api.urn/orders/d7971618-bda8-4f97-9347-ef3b805986a4/processes/shippings/e3818bee-ed08-4b0f-adbe-3ccad0f896c5/mark-delivered\"\
+              https://yourshop.api.urn/orders/df222148-8d7f-4281-b0fa-e33fb3867208/processes/shippings/52c28cf1-476a-461d-b66b-d192fa0af5a7/mark-delivered\"\
               \n        }\n      }\n    } ]\n  },\n  \"_links\" : {\n    \"self\"\
-              \ : {\n      \"href\" : \"https://yourshop.api.urn/orders/d7971618-bda8-4f97-9347-ef3b805986a4/processes/shippings?page=0&size=20\"\
-              \n    },\n    \"shipping-processes\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/d7971618-bda8-4f97-9347-ef3b805986a4/processes/shippings\"\
+              \ : {\n      \"href\" : \"https://yourshop.api.urn/orders/df222148-8d7f-4281-b0fa-e33fb3867208/processes/shippings?page=0&size=20\"\
+              \n    },\n    \"shipping-processes\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/df222148-8d7f-4281-b0fa-e33fb3867208/processes/shippings\"\
               \n    }\n  },\n  \"page\" : {\n    \"size\" : 20,\n    \"totalElements\"\
               \ : 1,\n    \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}"
           schema:
@@ -5139,25 +5216,25 @@ paths:
         name: ""
         required: false
         schema:
-          $ref: "#/definitions/orders_order-id_processes_shippings1671477874"
+          $ref: "#/definitions/orders_order-id_processes_shippings1947038285"
         x-examples:
           application/json: "{\n  \"comment\" : \"This needs to be done fast!\",\n\
             \  \"sendMail\" : true,\n  \"trackingCode\" : \"lookAtMyTrackingCodeWow\"\
             ,\n  \"trackingLink\" : \"http://tracking.is/fun?code=lookAtMyTrackingCodeWow\"\
             ,\n  \"lineItems\" : [ {\n    \"quantity\" : 3,\n    \"productLineItemId\"\
-            \ : \"32b5d35e-817c-4c6a-854a-d75712ccc936\"\n  } ]\n}"
+            \ : \"5911e05a-99c6-467b-b26e-a12aa8101215\"\n  } ]\n}"
       responses:
         201:
           description: ""
           examples:
             application/hal+json: "{\n  \"status\" : \"PENDING\",\n  \"trackingCode\"\
               \ : \"lookAtMyTrackingCodeWow\",\n  \"trackingLink\" : \"http://tracking.is/fun?code=lookAtMyTrackingCodeWow\"\
-              ,\n  \"lineItems\" : [ {\n    \"productLineItemId\" : \"32b5d35e-817c-4c6a-854a-d75712ccc936\"\
-              ,\n    \"quantity\" : 3\n  } ],\n  \"_id\" : \"174988f0-4a9b-412a-9e09-f46349684792\"\
-              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/9e66d7ca-81a6-48de-8530-b1b1e95a893e/processes/shippings/174988f0-4a9b-412a-9e09-f46349684792\"\
-              \n    },\n    \"shipping-process\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/9e66d7ca-81a6-48de-8530-b1b1e95a893e/processes/shippings/174988f0-4a9b-412a-9e09-f46349684792\"\
-              \n    },\n    \"mark-shipped\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/9e66d7ca-81a6-48de-8530-b1b1e95a893e/processes/shippings/174988f0-4a9b-412a-9e09-f46349684792/mark-shipped\"\
-              \n    },\n    \"mark-delivered\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/9e66d7ca-81a6-48de-8530-b1b1e95a893e/processes/shippings/174988f0-4a9b-412a-9e09-f46349684792/mark-delivered\"\
+              ,\n  \"lineItems\" : [ {\n    \"productLineItemId\" : \"5911e05a-99c6-467b-b26e-a12aa8101215\"\
+              ,\n    \"quantity\" : 3\n  } ],\n  \"_id\" : \"af5956a6-ec56-4182-ab2c-41ce2b6dcef0\"\
+              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/6f028873-2d49-43e1-bca0-f41332fde0af/processes/shippings/af5956a6-ec56-4182-ab2c-41ce2b6dcef0\"\
+              \n    },\n    \"shipping-process\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/6f028873-2d49-43e1-bca0-f41332fde0af/processes/shippings/af5956a6-ec56-4182-ab2c-41ce2b6dcef0\"\
+              \n    },\n    \"mark-shipped\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/6f028873-2d49-43e1-bca0-f41332fde0af/processes/shippings/af5956a6-ec56-4182-ab2c-41ce2b6dcef0/mark-shipped\"\
+              \n    },\n    \"mark-delivered\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/6f028873-2d49-43e1-bca0-f41332fde0af/processes/shippings/af5956a6-ec56-4182-ab2c-41ce2b6dcef0/mark-delivered\"\
               \n    }\n  }\n}"
       security:
       - oauth2_accessCode:
@@ -5185,10 +5262,10 @@ paths:
           examples:
             application/hal+json: "{\n  \"amount\" : {\n    \"currency\" : \"EUR\"\
               ,\n    \"amount\" : 19.98\n  },\n  \"status\" : \"PENDING\",\n  \"completed\"\
-              \ : false,\n  \"_id\" : \"eb5d02ee-0eef-41b3-b15d-43e6d78cf0b9\",\n\
-              \  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/1893d325-8857-42d8-8e76-54a971afbf1c/processes/refunds/eb5d02ee-0eef-41b3-b15d-43e6d78cf0b9\"\
-              \n    },\n    \"refund-process\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/1893d325-8857-42d8-8e76-54a971afbf1c/processes/refunds/eb5d02ee-0eef-41b3-b15d-43e6d78cf0b9\"\
-              \n    },\n    \"mark-paid\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/1893d325-8857-42d8-8e76-54a971afbf1c/processes/refunds/eb5d02ee-0eef-41b3-b15d-43e6d78cf0b9/mark-paid\"\
+              \ : false,\n  \"_id\" : \"495aedd3-cac7-4cc1-ab3c-35459d1b0234\",\n\
+              \  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/159f8456-69a0-4839-9dff-2edc8dc73442/processes/refunds/495aedd3-cac7-4cc1-ab3c-35459d1b0234\"\
+              \n    },\n    \"refund-process\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/159f8456-69a0-4839-9dff-2edc8dc73442/processes/refunds/495aedd3-cac7-4cc1-ab3c-35459d1b0234\"\
+              \n    },\n    \"mark-paid\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/159f8456-69a0-4839-9dff-2edc8dc73442/processes/refunds/495aedd3-cac7-4cc1-ab3c-35459d1b0234/mark-paid\"\
               \n    }\n  }\n}"
       security:
       - oauth2_accessCode:
@@ -5221,10 +5298,10 @@ paths:
           examples:
             application/hal+json: "{\n  \"amount\" : {\n    \"currency\" : \"EUR\"\
               ,\n    \"amount\" : 19.98\n  },\n  \"status\" : \"PENDING\",\n  \"completed\"\
-              \ : false,\n  \"_id\" : \"a7675467-1802-4bae-a995-0ca8090ce30a\",\n\
-              \  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/bb0d83fa-eba2-424f-a22b-c03c3ad8ea44/processes/refunds/a7675467-1802-4bae-a995-0ca8090ce30a\"\
-              \n    },\n    \"refund-process\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/bb0d83fa-eba2-424f-a22b-c03c3ad8ea44/processes/refunds/a7675467-1802-4bae-a995-0ca8090ce30a\"\
-              \n    },\n    \"mark-paid\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/bb0d83fa-eba2-424f-a22b-c03c3ad8ea44/processes/refunds/a7675467-1802-4bae-a995-0ca8090ce30a/mark-paid\"\
+              \ : false,\n  \"_id\" : \"047d43ce-3515-42da-a335-214e519bfdcb\",\n\
+              \  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/e3575d3c-15b0-40ab-9486-4b6937273a85/processes/refunds/047d43ce-3515-42da-a335-214e519bfdcb\"\
+              \n    },\n    \"refund-process\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/e3575d3c-15b0-40ab-9486-4b6937273a85/processes/refunds/047d43ce-3515-42da-a335-214e519bfdcb\"\
+              \n    },\n    \"mark-paid\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/e3575d3c-15b0-40ab-9486-4b6937273a85/processes/refunds/047d43ce-3515-42da-a335-214e519bfdcb/mark-paid\"\
               \n    }\n  }\n}"
           schema:
             $ref: "#/definitions/orders_order-id_processes_refunds_id-1056864005"
@@ -5258,12 +5335,12 @@ paths:
           description: ""
           examples:
             application/hal+json: "{\n  \"lineItems\" : [ {\n    \"productLineItemId\"\
-              \ : \"b85aa266-30f0-4c6c-8a1b-4da541a54456\",\n    \"quantity\" : 3,\n\
+              \ : \"773aea75-43b5-4d0e-9659-72043d6e9818\",\n    \"quantity\" : 3,\n\
               \    \"status\" : \"RETURNED\"\n  } ],\n  \"shippingPriceRefund\" :\
               \ {\n    \"currency\" : \"EUR\",\n    \"amount\" : 19.99\n  },\n  \"\
-              _id\" : \"7c964ee7-4ead-4bb2-af9e-187469b08718\",\n  \"_links\" : {\n\
-              \    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/f2d40978-ab9c-4e53-bd9b-c317cfc79621/processes/returns/7c964ee7-4ead-4bb2-af9e-187469b08718\"\
-              \n    },\n    \"return-process\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/f2d40978-ab9c-4e53-bd9b-c317cfc79621/processes/returns/7c964ee7-4ead-4bb2-af9e-187469b08718\"\
+              _id\" : \"e417db46-6c38-4d28-8812-ec700b2d4147\",\n  \"_links\" : {\n\
+              \    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/6389050a-5f74-47a9-a462-6d459f59e660/processes/returns/e417db46-6c38-4d28-8812-ec700b2d4147\"\
+              \n    },\n    \"return-process\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/6389050a-5f74-47a9-a462-6d459f59e660/processes/returns/e417db46-6c38-4d28-8812-ec700b2d4147\"\
               \n    }\n  }\n}"
           schema:
             $ref: "#/definitions/orders_order-id_processes_returns_return-process-id1141741742"
@@ -5298,12 +5375,12 @@ paths:
           examples:
             application/hal+json: "{\n  \"status\" : \"PENDING\",\n  \"trackingCode\"\
               \ : \"lookAtMyTrackingCodeWow\",\n  \"trackingLink\" : \"http://tracking.is/fun?code=lookAtMyTrackingCodeWow\"\
-              ,\n  \"lineItems\" : [ {\n    \"productLineItemId\" : \"0124e313-7973-4848-8a34-4e42ff3f1554\"\
-              ,\n    \"quantity\" : 3\n  } ],\n  \"_id\" : \"61d105bc-44f9-4670-ba7e-e121e69c3358\"\
-              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/68e0cf83-06ff-4092-8e89-7b72391e531f/processes/shippings/61d105bc-44f9-4670-ba7e-e121e69c3358\"\
-              \n    },\n    \"shipping-process\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/68e0cf83-06ff-4092-8e89-7b72391e531f/processes/shippings/61d105bc-44f9-4670-ba7e-e121e69c3358\"\
-              \n    },\n    \"mark-shipped\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/68e0cf83-06ff-4092-8e89-7b72391e531f/processes/shippings/61d105bc-44f9-4670-ba7e-e121e69c3358/mark-shipped\"\
-              \n    },\n    \"mark-delivered\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/68e0cf83-06ff-4092-8e89-7b72391e531f/processes/shippings/61d105bc-44f9-4670-ba7e-e121e69c3358/mark-delivered\"\
+              ,\n  \"lineItems\" : [ {\n    \"productLineItemId\" : \"99eb63b2-5e8c-4924-9604-9b0635318cd8\"\
+              ,\n    \"quantity\" : 3\n  } ],\n  \"_id\" : \"589f356d-0258-4197-a086-f888b7c8fca0\"\
+              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/7352f204-d1c7-4707-b3b6-b67403907f1f/processes/shippings/589f356d-0258-4197-a086-f888b7c8fca0\"\
+              \n    },\n    \"shipping-process\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/7352f204-d1c7-4707-b3b6-b67403907f1f/processes/shippings/589f356d-0258-4197-a086-f888b7c8fca0\"\
+              \n    },\n    \"mark-shipped\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/7352f204-d1c7-4707-b3b6-b67403907f1f/processes/shippings/589f356d-0258-4197-a086-f888b7c8fca0/mark-shipped\"\
+              \n    },\n    \"mark-delivered\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/7352f204-d1c7-4707-b3b6-b67403907f1f/processes/shippings/589f356d-0258-4197-a086-f888b7c8fca0/mark-delivered\"\
               \n    }\n  }\n}"
           schema:
             $ref: "#/definitions/orders_order-id_processes_shippings_shipping-process-id710385301"
@@ -5344,9 +5421,9 @@ paths:
           examples:
             application/hal+json: "{\n  \"amount\" : {\n    \"currency\" : \"EUR\"\
               ,\n    \"amount\" : 19.98\n  },\n  \"status\" : \"PAID\",\n  \"completed\"\
-              \ : true,\n  \"_id\" : \"6db018eb-8528-439d-a737-31c7173d9eee\",\n \
-              \ \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/0b8f8173-82af-4c46-8b95-c7328673e7c0/processes/refunds/6db018eb-8528-439d-a737-31c7173d9eee\"\
-              \n    },\n    \"refund-process\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/0b8f8173-82af-4c46-8b95-c7328673e7c0/processes/refunds/6db018eb-8528-439d-a737-31c7173d9eee\"\
+              \ : true,\n  \"_id\" : \"97af1969-aea4-41b7-8a8f-50b7a94dc6a3\",\n \
+              \ \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/33540dbc-4bbe-4511-a653-2c480f2f9329/processes/refunds/97af1969-aea4-41b7-8a8f-50b7a94dc6a3\"\
+              \n    },\n    \"refund-process\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/33540dbc-4bbe-4511-a653-2c480f2f9329/processes/refunds/97af1969-aea4-41b7-8a8f-50b7a94dc6a3\"\
               \n    }\n  }\n}"
       security:
       - oauth2_accessCode:
@@ -5388,10 +5465,10 @@ paths:
           examples:
             application/hal+json: "{\n  \"status\" : \"DELIVERED\",\n  \"trackingCode\"\
               \ : \"lookAtMyTrackingCodeWow\",\n  \"trackingLink\" : \"http://tracking.is/fun?code=lookAtMyTrackingCodeWow\"\
-              ,\n  \"lineItems\" : [ {\n    \"productLineItemId\" : \"cdf84903-f0f6-44d5-9285-9fef7256564b\"\
-              ,\n    \"quantity\" : 3\n  } ],\n  \"_id\" : \"3bb31139-7218-4dea-a698-7794bbb67449\"\
-              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/548578ef-2a0b-4892-9818-240fc0d10e17/processes/shippings/3bb31139-7218-4dea-a698-7794bbb67449\"\
-              \n    },\n    \"shipping-process\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/548578ef-2a0b-4892-9818-240fc0d10e17/processes/shippings/3bb31139-7218-4dea-a698-7794bbb67449\"\
+              ,\n  \"lineItems\" : [ {\n    \"productLineItemId\" : \"163f7c63-3f19-4e33-b739-e08a5a1c9ad2\"\
+              ,\n    \"quantity\" : 3\n  } ],\n  \"_id\" : \"62801f19-2a60-41ff-8c51-6a7a1f9bb191\"\
+              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/eaaa8a3a-3288-453e-a26e-36fa721788b1/processes/shippings/62801f19-2a60-41ff-8c51-6a7a1f9bb191\"\
+              \n    },\n    \"shipping-process\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/eaaa8a3a-3288-453e-a26e-36fa721788b1/processes/shippings/62801f19-2a60-41ff-8c51-6a7a1f9bb191\"\
               \n    }\n  }\n}"
       security:
       - oauth2_accessCode:
@@ -5436,11 +5513,11 @@ paths:
           examples:
             application/hal+json: "{\n  \"status\" : \"SHIPPED\",\n  \"trackingCode\"\
               \ : \"lookAtMyTrackingCodeWow\",\n  \"trackingLink\" : \"http://tracking.is/fun?code=lookAtMyTrackingCodeWow\"\
-              ,\n  \"lineItems\" : [ {\n    \"productLineItemId\" : \"aec980fe-7201-4415-a656-32359784195f\"\
-              ,\n    \"quantity\" : 3\n  } ],\n  \"_id\" : \"82e712f0-d897-48c8-8a7e-7de0a61e60a5\"\
-              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/e5de73a9-4eb5-4ee4-829b-86c6d7332e48/processes/shippings/82e712f0-d897-48c8-8a7e-7de0a61e60a5\"\
-              \n    },\n    \"shipping-process\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/e5de73a9-4eb5-4ee4-829b-86c6d7332e48/processes/shippings/82e712f0-d897-48c8-8a7e-7de0a61e60a5\"\
-              \n    },\n    \"mark-delivered\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/e5de73a9-4eb5-4ee4-829b-86c6d7332e48/processes/shippings/82e712f0-d897-48c8-8a7e-7de0a61e60a5/mark-delivered\"\
+              ,\n  \"lineItems\" : [ {\n    \"productLineItemId\" : \"9a1f5177-74f9-4396-87f8-0da5a1e65e89\"\
+              ,\n    \"quantity\" : 3\n  } ],\n  \"_id\" : \"fb80bd31-b5a0-43cd-b91d-fa94944d1755\"\
+              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/859eb5d4-9aa0-43c4-adae-1ccf5b7cc8c2/processes/shippings/fb80bd31-b5a0-43cd-b91d-fa94944d1755\"\
+              \n    },\n    \"shipping-process\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/859eb5d4-9aa0-43c4-adae-1ccf5b7cc8c2/processes/shippings/fb80bd31-b5a0-43cd-b91d-fa94944d1755\"\
+              \n    },\n    \"mark-delivered\" : {\n      \"href\" : \"https://yourshop.api.urn/orders/859eb5d4-9aa0-43c4-adae-1ccf5b7cc8c2/processes/shippings/fb80bd31-b5a0-43cd-b91d-fa94944d1755/mark-delivered\"\
               \n    }\n  }\n}"
       security:
       - oauth2_accessCode:
@@ -11519,6 +11596,7 @@ securityDefinitions:
       ordn:u: "No description"
       acap:r: "No description"
       acap:m: "No description"
+      aapp:m: "No description"
       gsad:c: "No description"
       gspr:r: "No description"
       gspr:c: "No description"
@@ -11602,6 +11680,7 @@ securityDefinitions:
       ordn:u: "No description"
       acap:r: "No description"
       acap:m: "No description"
+      aapp:m: "No description"
       gsad:c: "No description"
       gspr:r: "No description"
       gspr:c: "No description"
@@ -12156,6 +12235,41 @@ definitions:
         description: "The VAT identifier of the shop."
         minLength: 0
         maxLength: 20
+  orders_order-id_processes_returns1945876182:
+    type: "object"
+    properties:
+      lineItems:
+        type: "array"
+        items:
+          type: "object"
+          properties:
+            quantity:
+              type: "number"
+              description: "The quantity of the product line item in this return process."
+            productLineItemId:
+              type: "string"
+              description: "The ID of a specified product line item in this return\
+                \ process."
+            status:
+              type: "string"
+              description: "The status of the product line item in this return process.\
+                \ Can be `RETURNED` or `BROKEN`."
+      shippingPriceRefund:
+        type: "object"
+        properties:
+          amount:
+            type: "number"
+            description: "The price for the shipping line item to be refunded."
+          currency:
+            type: "string"
+            description: "The currency of the price for the shipping line item."
+      comment:
+        type: "string"
+        description: "The comment to this status change."
+    example: "{\n  \"comment\" : \"This needs to be done fast!\",\n  \"lineItems\"\
+      \ : [ {\n    \"quantity\" : 3,\n    \"productLineItemId\" : \"6f3fe608-c5c2-4d95-80b7-b27c0ee93fa9\"\
+      ,\n    \"status\" : \"RETURNED\"\n  } ],\n  \"shippingPriceRefund\" : {\n  \
+      \  \"currency\" : \"EUR\",\n    \"amount\" : 19.99\n  }\n}"
   users_id_roles-1944407500:
     example: "https://yourshop.api.urn/roles/679c42c0-d687-4764-b2d8-f92d83b64ef8"
   amazon-marketplace_access-data-1529372953:
@@ -12315,6 +12429,10 @@ definitions:
         type: "object"
         description: "The status of the product publication process."
         properties: {}
+  amazon-marketplace_products475137901:
+    example: "https://yourshop.api.urn/products/5c06cb5e-94f1-4c8f-86d6-c10d1ea2ee01\n\
+      https://yourshop.api.urn/products/3348b2f0-15d5-4abc-ac20-777ea760d63f\nhttps://yourshop.api.urn/products/54af8e29-654e-41f4-b554-da447d4a7d5e\n\
+      https://yourshop.api.urn/products/407b5e8a-1075-4591-a186-240a2abce1d7\nhttps://yourshop.api.urn/products/b68341b1-cd3b-41bd-ae73-6768cecae314\n"
   custom-apps_customAppId-1474085348:
     type: "object"
     required:
@@ -12344,10 +12462,40 @@ definitions:
       scopes:
         type: "array"
         description: "The scopes the app requires to interact with the shop system."
-  amazon-marketplace_products475137901:
-    example: "https://yourshop.api.urn/products/5c06cb5e-94f1-4c8f-86d6-c10d1ea2ee01\n\
-      https://yourshop.api.urn/products/3348b2f0-15d5-4abc-ac20-777ea760d63f\nhttps://yourshop.api.urn/products/54af8e29-654e-41f4-b554-da447d4a7d5e\n\
-      https://yourshop.api.urn/products/407b5e8a-1075-4591-a186-240a2abce1d7\nhttps://yourshop.api.urn/products/b68341b1-cd3b-41bd-ae73-6768cecae314\n"
+  orders_order-id_processes_shippings1947038285:
+    type: "object"
+    properties:
+      lineItems:
+        type: "array"
+        items:
+          type: "object"
+          properties:
+            quantity:
+              type: "number"
+              description: "The quantity of a product line item that is marked with\
+                \ a new status."
+            productLineItemId:
+              type: "string"
+              description: "The ID of a product line item that is marked with a new\
+                \ status."
+      trackingLink:
+        type: "string"
+        description: "The tracking link for this shipping process."
+      sendMail:
+        type: "boolean"
+        description: "Indicates if a mail is to be sent out with this shipping process\
+          \ transition."
+      trackingCode:
+        type: "string"
+        description: "The tracking code for this shipping process."
+      comment:
+        type: "string"
+        description: "The comment to this status change."
+    example: "{\n  \"comment\" : \"This needs to be done fast!\",\n  \"sendMail\"\
+      \ : true,\n  \"trackingCode\" : \"lookAtMyTrackingCodeWow\",\n  \"trackingLink\"\
+      \ : \"http://tracking.is/fun?code=lookAtMyTrackingCodeWow\",\n  \"lineItems\"\
+      \ : [ {\n    \"quantity\" : 3,\n    \"productLineItemId\" : \"5911e05a-99c6-467b-b26e-a12aa8101215\"\
+      \n  } ]\n}"
   products_productId_attachments884805373:
     type: "object"
     properties:
@@ -13573,6 +13721,91 @@ definitions:
       }"
   products_productId_availability_enable-stock-management-168834398:
     example: "{ \"initialAvailableStock\" : 100, \"stockThreshold\" : 2 }"
+  custom-apps_customAppId_upgrade-1420447974:
+    type: "object"
+    properties:
+      images:
+        type: "object"
+        description: "The URLs to the images for a visual description of the app."
+        properties: {}
+      description:
+        type: "object"
+        description: "The app description for different locales. The value is a map\
+          \ of language tag to string value. The map needs to contain at least one\
+          \ entry. If one of the localized fields contains a translation for a language,\
+          \ this language also needs to be present for other localized fields."
+        properties: {}
+      appUrl:
+        type: "object"
+        description: "The URL to the user interface of this app."
+        properties: {}
+      type:
+        type: "string"
+        description: "The type name of the app used to categorize apps"
+      logoUrl:
+        type: "object"
+        description: "The URL to the logo of this app."
+        properties: {}
+      supportEmail:
+        type: "object"
+        description: "The email address that can be used to contact support for this\
+          \ app."
+        properties: {}
+      videoUrl:
+        type: "object"
+        description: "The URL to the video promoting this app."
+        properties: {}
+      feature:
+        type: "string"
+        description: "The feature name of this app."
+      price:
+        type: "object"
+        description: "The price for different locales. The value is a map of language\
+          \ tag to string value. The map needs to contain at least one entry. If one\
+          \ of the localized fields contains a translation for a language, this language\
+          \ also needs to be present for other localized fields."
+        properties: {}
+      infoWebsite:
+        type: "object"
+        description: "The URL to the website of this app."
+        properties: {}
+      name:
+        type: "object"
+        description: "The app name for different locales. The value is a map of language\
+          \ tag to string value. The map needs to contain at least one entry. If one\
+          \ of the localized fields contains a translation for a language, this language\
+          \ also needs to be present for other localized fields."
+        properties: {}
+      supportWebsite:
+        type: "object"
+        description: "The URL to a website of this app giving support information."
+        properties: {}
+      developer:
+        type: "object"
+        description: "The name of the app developer."
+        properties: {}
+      callbackUrl:
+        type: "string"
+        description: "The callback URL used for the OAuth 2.0 flow."
+      iconUrl:
+        type: "object"
+        description: "The URL to the icon of this app."
+        properties: {}
+    example: "{\n    \"type\": \"SHIPPING\",\n    \"feature\": \"test-feature-name\"\
+      ,\n    \"callbackUrl\": \"http://example.com/some\",\n    \"feature\": \"sas-shipping-app\"\
+      ,\n    \"name\": {\n        \"en-US\": \"Simple + Secure Shipping\"\n    },\n\
+      \    \"price\": {\n        \"en-US\": \"20 USD per month\"\n    },\n    \"description\"\
+      : {\n        \"en-US\": \"A payment method for simple and secure shipping in\
+      \ online shops.\"\n    },\n    \"images\": {\n        \"en-US\": [\"http://example.com/image1.png\"\
+      ]\n    },\n    \"developer\": {\n        \"en-US\": \"ePages Inc.\"\n    },\n\
+      \    \"supportEmail\": {\n        \"en-US\": \"supporters@example.com\"\n  \
+      \  },\n    \"iconUrl\": {\n        \"en-US\": \"http://example.com/icon.png\"\
+      \n    },\n    \"appUrl\": {\n        \"en-US\": \"http://example.com/new-login\"\
+      \n    },\n    \"logoUrl\": {\n        \"en-US\": \"http://example.com/new-logo.png\"\
+      \n    },\n    \"videoUrl\": {\n        \"en-US\": \"http://example.com/video.mpg\"\
+      \n    },\n    \"infoWebsite\": {\n        \"en-US\": \"http://example.com/info.html\"\
+      \n    },\n    \"supportWebsite\": {\n        \"en-US\": \"http://example.com/support.html\"\
+      \n    }\n}"
   shipping-zones_shippingZoneId-432755100:
     type: "object"
     properties:
@@ -14173,41 +14406,6 @@ definitions:
           currency:
             type: "string"
             description: "The currency of the initial total tax amount."
-  orders_order-id_processes_returns924012616:
-    type: "object"
-    properties:
-      lineItems:
-        type: "array"
-        items:
-          type: "object"
-          properties:
-            quantity:
-              type: "number"
-              description: "The quantity of the product line item in this return process."
-            productLineItemId:
-              type: "string"
-              description: "The ID of a specified product line item in this return\
-                \ process."
-            status:
-              type: "string"
-              description: "The status of the product line item in this return process.\
-                \ Can be `RETURNED` or `BROKEN`."
-      shippingPriceRefund:
-        type: "object"
-        properties:
-          amount:
-            type: "number"
-            description: "The price for the shipping line item to be refunded."
-          currency:
-            type: "string"
-            description: "The currency of the price for the shipping line item."
-      comment:
-        type: "string"
-        description: "The comment to this status change."
-    example: "{\n  \"comment\" : \"This needs to be done fast!\",\n  \"lineItems\"\
-      \ : [ {\n    \"quantity\" : 3,\n    \"productLineItemId\" : \"6422a1ba-b5aa-46b7-98a6-c2ad59672703\"\
-      ,\n    \"status\" : \"RETURNED\"\n  } ],\n  \"shippingPriceRefund\" : {\n  \
-      \  \"currency\" : \"EUR\",\n    \"amount\" : 19.99\n  }\n}"
   payments_paymentId_status-929827377:
     type: "object"
     properties:
@@ -15937,40 +16135,6 @@ definitions:
         description: "the length of the numeric part of the invoice number. If the\
           \ numeric value is shorter, the value is padded with zeros to the left.\
           \ If the value is longer the numericSuffixLength is extended"
-  orders_order-id_processes_shippings1671477874:
-    type: "object"
-    properties:
-      lineItems:
-        type: "array"
-        items:
-          type: "object"
-          properties:
-            quantity:
-              type: "number"
-              description: "The quantity of a product line item that is marked with\
-                \ a new status."
-            productLineItemId:
-              type: "string"
-              description: "The ID of a product line item that is marked with a new\
-                \ status."
-      trackingLink:
-        type: "string"
-        description: "The tracking link for this shipping process."
-      sendMail:
-        type: "boolean"
-        description: "Indicates if a mail is to be sent out with this shipping process\
-          \ transition."
-      trackingCode:
-        type: "string"
-        description: "The tracking code for this shipping process."
-      comment:
-        type: "string"
-        description: "The comment to this status change."
-    example: "{\n  \"comment\" : \"This needs to be done fast!\",\n  \"sendMail\"\
-      \ : true,\n  \"trackingCode\" : \"lookAtMyTrackingCodeWow\",\n  \"trackingLink\"\
-      \ : \"http://tracking.is/fun?code=lookAtMyTrackingCodeWow\",\n  \"lineItems\"\
-      \ : [ {\n    \"quantity\" : 3,\n    \"productLineItemId\" : \"32b5d35e-817c-4c6a-854a-d75712ccc936\"\
-      \n  } ]\n}"
   google-shopping_taxonomy-309252030:
     type: "object"
     properties:
@@ -16121,6 +16285,29 @@ definitions:
         description: "The list of countries this shipping zone applies to."
     example: "{\n  \"name\" : \"BENELUX region\",\n  \"serviceableCountries\" : [\
       \ \"BE\", \"NL\", \"LU\", \"DE\" ]\n}"
+  orders_order-id_processes_shippings_shipping-process-id_mark-shipped-1348703161:
+    type: "object"
+    properties:
+      sendMail:
+        type: "boolean"
+        description: "Indicates if a mail is to be sent out with this shipping process\
+          \ transition."
+      details:
+        type: "object"
+        properties:
+          trackingLink:
+            type: "string"
+            description: "The tracking link for this shipping process."
+          trackingCode:
+            type: "string"
+            description: "The tracking code for this shipping process."
+      comment:
+        type: "string"
+        description: "The comment to this status change."
+    example: "{\n  \"comment\" : \"This needs to be done fast!\",\n  \"sendMail\"\
+      \ : true,\n  \"details\" : {\n    \"trackingCode\" : \"lookAtMyTrackingCodeWow\"\
+      ,\n    \"trackingLink\" : \"http://tracking.is/fun?code=lookAtMyTrackingCodeWow\"\
+      \n  }\n}"
   orders_order-id_shipping-address-1866146017:
     type: "object"
     properties:
@@ -16145,29 +16332,6 @@ definitions:
       \ : [ \"Astrid Alster GmbH\", \"Astrid Agnes Alster\", \"Alsterwasserweg 2\"\
       , \"Erdgeschoss\", \"20999 Alsterwasser\", \"Germany\" ],\n    \"_id\" : null\n\
       \  },\n  \"comment\" : \"Updated shipping address\"\n}"
-  orders_order-id_processes_shippings_shipping-process-id_mark-shipped-1348703161:
-    type: "object"
-    properties:
-      sendMail:
-        type: "boolean"
-        description: "Indicates if a mail is to be sent out with this shipping process\
-          \ transition."
-      details:
-        type: "object"
-        properties:
-          trackingLink:
-            type: "string"
-            description: "The tracking link for this shipping process."
-          trackingCode:
-            type: "string"
-            description: "The tracking code for this shipping process."
-      comment:
-        type: "string"
-        description: "The comment to this status change."
-    example: "{\n  \"comment\" : \"This needs to be done fast!\",\n  \"sendMail\"\
-      \ : true,\n  \"details\" : {\n    \"trackingCode\" : \"lookAtMyTrackingCodeWow\"\
-      ,\n    \"trackingLink\" : \"http://tracking.is/fun?code=lookAtMyTrackingCodeWow\"\
-      \n  }\n}"
   product-settings1479860459:
     type: "object"
     properties:
