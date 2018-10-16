@@ -43,9 +43,6 @@ git show ${COMMIT_2}:${API_SPEC_FILE} > ${SPEC_FILE_2}
 
 if [[ "$OUTPUT_FORMAT" = "adoc" ]]; then
     OPEN_API_DIFF=$(mktemp)
-
-    ./node_modules/.bin/openapi-diff ${SPEC_FILE_1} ${SPEC_FILE_2}
-
     ./node_modules/.bin/openapi-diff ${SPEC_FILE_1} ${SPEC_FILE_2} > ${OPEN_API_DIFF}
 
     echo "|==="

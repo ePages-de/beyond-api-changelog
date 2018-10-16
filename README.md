@@ -47,3 +47,19 @@ $ ./node_modules/.bin/openapi-diff ${PREVIOUS_API_SPEC_FILE} ${API_SPEC_FILE} > 
 ```
 java -jar swagger-diff.jar -old ${PREVIOUS_API_SPEC_FILE} -new ${API_SPEC_FILE} -v 2.0 -output-mode markdown
 ```
+
+### Manual update of OpenAPI spec
+
+```
+{
+API_SPEC_URL='http://docs.beyondshop.cloud/openapi.yaml'
+API_SPEC_FILE=openapi.yaml
+CHANGE_LOG_FILE=beyond-api-changelog.adoc
+
+curl -s ${API_SPEC_URL} > ${API_SPEC_FILE}
+
+git add .
+git commit -m "Update API spec"
+git push upstream master
+}
+```

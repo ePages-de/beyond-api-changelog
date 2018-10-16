@@ -446,42 +446,8 @@ paths:
               \ : \"http://example.com/login\",\n      \"videoUrl\" : \"http://example.com/video.mpg\"\
               ,\n      \"infoWebsite\" : \"http://example.com/info.html\",\n     \
               \ \"supportWebsite\" : \"http://example.com/support.html\",\n      \"\
-              clientId\" : \"client_id\",\n      \"scopes\" : [ \"ordr:u\", \"ordr:r\"\
-              \ ],\n      \"callbackUrl\" : \"http://example.com/callback\",\n   \
-              \   \"additionalConfiguration\" : \"{\\n  \\\"productionConfiguration\\\
-              \" : {\\n    \\\"name\\\" : \\\"my-payment-integration\\\",\\n    \\\
-              \"referralUriTemplate\\\" : \\\"http://example.com/referral\\\",\\n\
-              \    \\\"integrationStatusUri\\\" : \\\"http://example.com/merchant-account-status/{shopId}\\\
-              \",\\n    \\\"disconnectUri\\\" : \\\"http://example.com/merchant-account-status/{shopId}\\\
-              \",\\n    \\\"createPaymentUri\\\" : \\\"http://example.com/payments\\\
-              \",\\n    \\\"capturePaymentUri\\\" : \\\"http://example.com/payments/{id}/capture\\\
-              \",\\n    \\\"refundPaymentUri\\\" : \\\"http://example.com/payments/{id}/refund\\\
-              \",\\n    \\\"workflow\\\" : \\\"PAYMENT_ON_SELECTION\\\",\\n    \\\"\
-              logos\\\" : [ {\\n      \\\"setName\\\" : \\\"official\\\",\\n     \
-              \ \\\"variant\\\" : \\\"DETAILS\\\",\\n      \\\"uri\\\" : \\\"http://example.com/details.png\\\
-              \"\\n    }, {\\n      \\\"setName\\\" : \\\"official\\\",\\n      \\\
-              \"variant\\\" : \\\"LIST\\\",\\n      \\\"uri\\\" : \\\"http://example.com/list.png\\\
-              \"\\n    }, {\\n      \\\"setName\\\" : \\\"official\\\",\\n      \\\
-              \"variant\\\" : \\\"TILE\\\",\\n      \\\"uri\\\" : \\\"http://example.com/tile.png\\\
-              \"\\n    }, {\\n      \\\"setName\\\" : \\\"official\\\",\\n      \\\
-              \"variant\\\" : \\\"STOREFRONT\\\",\\n      \\\"uri\\\" : \\\"http://example.com/storefront.png\\\
-              \"\\n    } ]\\n  }\\n}\",\n      \"createdAt\" : \"2018-10-15T12:49:37.982\"\
-              ,\n      \"feature\" : \"app.test-app\",\n      \"type\" : \"PAYMENT\"\
-              ,\n      \"_id\" : \"135eb12f-74e5-46fc-8dd9-5e456235399b\",\n     \
-              \ \"installationStatus\" : \"INSTALLED\",\n      \"_links\" : {\n  \
-              \      \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/apps/135eb12f-74e5-46fc-8dd9-5e456235399b\"\
-              \n        },\n        \"uninstall\" : {\n          \"href\" : \"https://yourshop.api.urn/apps/135eb12f-74e5-46fc-8dd9-5e456235399b/uninstall\"\
-              \n        }\n      }\n    }, {\n      \"name\" : \"Simple + Secure Payment\"\
-              ,\n      \"price\" : \"19 USD per month\",\n      \"description\" :\
-              \ \"A payment method for simple and secure payments in online shops.\"\
-              ,\n      \"images\" : [ \"http://example.com/image1.png\" ],\n     \
-              \ \"developer\" : \"Mr D. Veloper\",\n      \"supportEmail\" : \"support@example.com\"\
-              ,\n      \"iconUrl\" : \"http://example.com/icon.png\",\n      \"appUrl\"\
-              \ : \"http://example.com/login\",\n      \"logoUrl\" : \"http://example.com/login\"\
-              ,\n      \"videoUrl\" : \"http://example.com/video.mpg\",\n      \"\
-              infoWebsite\" : \"http://example.com/info.html\",\n      \"supportWebsite\"\
-              \ : \"http://example.com/support.html\",\n      \"clientId\" : \"client_id\"\
-              ,\n      \"scopes\" : [ \"ordr:u\", \"ordr:r\" ],\n      \"callbackUrl\"\
+              feature\" : \"app.test-app\",\n      \"clientId\" : \"client_id\",\n\
+              \      \"scopes\" : [ \"ordr:u\", \"ordr:r\" ],\n      \"callbackUrl\"\
               \ : \"http://example.com/callback\",\n      \"additionalConfiguration\"\
               \ : \"{\\n  \\\"productionConfiguration\\\" : {\\n    \\\"name\\\" :\
               \ \\\"my-payment-integration\\\",\\n    \\\"referralUriTemplate\\\"\
@@ -500,18 +466,51 @@ paths:
               \"variant\\\" : \\\"TILE\\\",\\n      \\\"uri\\\" : \\\"http://example.com/tile.png\\\
               \"\\n    }, {\\n      \\\"setName\\\" : \\\"official\\\",\\n      \\\
               \"variant\\\" : \\\"STOREFRONT\\\",\\n      \\\"uri\\\" : \\\"http://example.com/storefront.png\\\
-              \"\\n    } ]\\n  }\\n}\",\n      \"createdAt\" : \"2018-10-15T12:49:38.099\"\
-              ,\n      \"feature\" : \"app.another-test-app\",\n      \"type\" : \"\
-              PAYMENT\",\n      \"_id\" : \"880241ca-7812-470f-9319-5bebf1acb177\"\
+              \"\\n    } ]\\n  }\\n}\",\n      \"createdAt\" : \"2018-10-16T09:08:28.55\"\
+              ,\n      \"type\" : \"PAYMENT\",\n      \"_id\" : \"7f1d0605-cb0b-4c35-a67d-a4d1d45b5ae3\"\
               ,\n      \"installationStatus\" : \"INSTALLED\",\n      \"_links\" :\
-              \ {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/apps/880241ca-7812-470f-9319-5bebf1acb177\"\
-              \n        },\n        \"uninstall\" : {\n          \"href\" : \"https://yourshop.api.urn/apps/880241ca-7812-470f-9319-5bebf1acb177/uninstall\"\
+              \ {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/apps/7f1d0605-cb0b-4c35-a67d-a4d1d45b5ae3\"\
+              \n        },\n        \"uninstall\" : {\n          \"href\" : \"https://yourshop.api.urn/apps/7f1d0605-cb0b-4c35-a67d-a4d1d45b5ae3/uninstall\"\
+              \n        }\n      }\n    }, {\n      \"name\" : \"Simple + Secure Payment\"\
+              ,\n      \"price\" : \"19 USD per month\",\n      \"description\" :\
+              \ \"A payment method for simple and secure payments in online shops.\"\
+              ,\n      \"images\" : [ \"http://example.com/image1.png\" ],\n     \
+              \ \"developer\" : \"Mr D. Veloper\",\n      \"supportEmail\" : \"support@example.com\"\
+              ,\n      \"iconUrl\" : \"http://example.com/icon.png\",\n      \"appUrl\"\
+              \ : \"http://example.com/login\",\n      \"logoUrl\" : \"http://example.com/login\"\
+              ,\n      \"videoUrl\" : \"http://example.com/video.mpg\",\n      \"\
+              infoWebsite\" : \"http://example.com/info.html\",\n      \"supportWebsite\"\
+              \ : \"http://example.com/support.html\",\n      \"feature\" : \"app.another-test-app\"\
+              ,\n      \"clientId\" : \"client_id\",\n      \"scopes\" : [ \"ordr:u\"\
+              , \"ordr:r\" ],\n      \"callbackUrl\" : \"http://example.com/callback\"\
+              ,\n      \"additionalConfiguration\" : \"{\\n  \\\"productionConfiguration\\\
+              \" : {\\n    \\\"name\\\" : \\\"my-payment-integration\\\",\\n    \\\
+              \"referralUriTemplate\\\" : \\\"http://example.com/referral\\\",\\n\
+              \    \\\"integrationStatusUri\\\" : \\\"http://example.com/merchant-account-status/{shopId}\\\
+              \",\\n    \\\"disconnectUri\\\" : \\\"http://example.com/merchant-account-status/{shopId}\\\
+              \",\\n    \\\"createPaymentUri\\\" : \\\"http://example.com/payments\\\
+              \",\\n    \\\"capturePaymentUri\\\" : \\\"http://example.com/payments/{id}/capture\\\
+              \",\\n    \\\"refundPaymentUri\\\" : \\\"http://example.com/payments/{id}/refund\\\
+              \",\\n    \\\"workflow\\\" : \\\"PAYMENT_ON_SELECTION\\\",\\n    \\\"\
+              logos\\\" : [ {\\n      \\\"setName\\\" : \\\"official\\\",\\n     \
+              \ \\\"variant\\\" : \\\"DETAILS\\\",\\n      \\\"uri\\\" : \\\"http://example.com/details.png\\\
+              \"\\n    }, {\\n      \\\"setName\\\" : \\\"official\\\",\\n      \\\
+              \"variant\\\" : \\\"LIST\\\",\\n      \\\"uri\\\" : \\\"http://example.com/list.png\\\
+              \"\\n    }, {\\n      \\\"setName\\\" : \\\"official\\\",\\n      \\\
+              \"variant\\\" : \\\"TILE\\\",\\n      \\\"uri\\\" : \\\"http://example.com/tile.png\\\
+              \"\\n    }, {\\n      \\\"setName\\\" : \\\"official\\\",\\n      \\\
+              \"variant\\\" : \\\"STOREFRONT\\\",\\n      \\\"uri\\\" : \\\"http://example.com/storefront.png\\\
+              \"\\n    } ]\\n  }\\n}\",\n      \"createdAt\" : \"2018-10-16T09:08:28.839\"\
+              ,\n      \"type\" : \"PAYMENT\",\n      \"_id\" : \"8fa9d79c-eda5-45cd-b550-61031b121f47\"\
+              ,\n      \"installationStatus\" : \"INSTALLED\",\n      \"_links\" :\
+              \ {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/apps/8fa9d79c-eda5-45cd-b550-61031b121f47\"\
+              \n        },\n        \"uninstall\" : {\n          \"href\" : \"https://yourshop.api.urn/apps/8fa9d79c-eda5-45cd-b550-61031b121f47/uninstall\"\
               \n        }\n      }\n    } ]\n  },\n  \"_links\" : {\n    \"self\"\
               \ : {\n      \"href\" : \"https://yourshop.api.urn/apps\"\n    }\n \
               \ },\n  \"page\" : {\n    \"size\" : 20,\n    \"totalElements\" : 2,\n\
               \    \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}"
           schema:
-            $ref: "#/definitions/carts_cartId_payment-methods-663923302"
+            $ref: "#/definitions/signers-663923302"
       security:
       - oauth2_accessCode:
         - "aapp:r"
@@ -550,13 +549,13 @@ paths:
               ,\n  \"logoUrl\" : \"http://example.com/login\",\n  \"videoUrl\" : \"\
               http://example.com/video.mpg\",\n  \"infoWebsite\" : \"http://example.com/info.html\"\
               ,\n  \"supportWebsite\" : \"http://example.com/support.html\",\n  \"\
-              clientId\" : \"client_id\",\n  \"scopes\" : [ \"ordr:u\", \"ordr:r\"\
-              \ ],\n  \"callbackUrl\" : \"http://example.com/callback\",\n  \"additionalConfiguration\"\
-              \ : \"{\\n  \\\"productionConfiguration\\\" : {\\n    \\\"name\\\" :\
-              \ \\\"my-payment-integration\\\",\\n    \\\"referralUriTemplate\\\"\
-              \ : \\\"http://example.com/referral\\\",\\n    \\\"integrationStatusUri\\\
-              \" : \\\"http://example.com/merchant-account-status/{shopId}\\\",\\\
-              n    \\\"disconnectUri\\\" : \\\"http://example.com/merchant-account-status/{shopId}\\\
+              feature\" : \"app.test-app\",\n  \"clientId\" : \"client_id\",\n  \"\
+              scopes\" : [ \"ordr:u\", \"ordr:r\" ],\n  \"callbackUrl\" : \"http://example.com/callback\"\
+              ,\n  \"additionalConfiguration\" : \"{\\n  \\\"productionConfiguration\\\
+              \" : {\\n    \\\"name\\\" : \\\"my-payment-integration\\\",\\n    \\\
+              \"referralUriTemplate\\\" : \\\"http://example.com/referral\\\",\\n\
+              \    \\\"integrationStatusUri\\\" : \\\"http://example.com/merchant-account-status/{shopId}\\\
+              \",\\n    \\\"disconnectUri\\\" : \\\"http://example.com/merchant-account-status/{shopId}\\\
               \",\\n    \\\"createPaymentUri\\\" : \\\"http://example.com/payments\\\
               \",\\n    \\\"capturePaymentUri\\\" : \\\"http://example.com/payments/{id}/capture\\\
               \",\\n    \\\"refundPaymentUri\\\" : \\\"http://example.com/payments/{id}/refund\\\
@@ -569,11 +568,10 @@ paths:
               \"variant\\\" : \\\"TILE\\\",\\n      \\\"uri\\\" : \\\"http://example.com/tile.png\\\
               \"\\n    }, {\\n      \\\"setName\\\" : \\\"official\\\",\\n      \\\
               \"variant\\\" : \\\"STOREFRONT\\\",\\n      \\\"uri\\\" : \\\"http://example.com/storefront.png\\\
-              \"\\n    } ]\\n  }\\n}\",\n  \"createdAt\" : \"2018-10-15T12:49:34.158\"\
-              ,\n  \"feature\" : \"app.test-app\",\n  \"type\" : \"PAYMENT\",\n  \"\
-              _id\" : \"893d298b-fa87-4bbe-8437-4cf558620178\",\n  \"installationStatus\"\
-              \ : \"AVAILABLE\",\n  \"_links\" : {\n    \"self\" : {\n      \"href\"\
-              \ : \"https://yourshop.api.urn/apps/893d298b-fa87-4bbe-8437-4cf558620178\"\
+              \"\\n    } ]\\n  }\\n}\",\n  \"createdAt\" : \"2018-10-16T09:08:24.709\"\
+              ,\n  \"type\" : \"PAYMENT\",\n  \"_id\" : \"e0c9aa55-c351-4b0b-9402-33ff3c8a2cf9\"\
+              ,\n  \"installationStatus\" : \"AVAILABLE\",\n  \"_links\" : {\n   \
+              \ \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/apps/e0c9aa55-c351-4b0b-9402-33ff3c8a2cf9\"\
               \n    }\n  }\n}"
           schema:
             $ref: "#/definitions/apps_appId_uninstall-847214231"
@@ -610,13 +608,13 @@ paths:
               ,\n  \"logoUrl\" : \"http://example.com/login\",\n  \"videoUrl\" : \"\
               http://example.com/video.mpg\",\n  \"infoWebsite\" : \"http://example.com/info.html\"\
               ,\n  \"supportWebsite\" : \"http://example.com/support.html\",\n  \"\
-              clientId\" : \"client_id\",\n  \"scopes\" : [ \"ordr:u\", \"ordr:r\"\
-              \ ],\n  \"callbackUrl\" : \"http://example.com/callback\",\n  \"additionalConfiguration\"\
-              \ : \"{\\n  \\\"productionConfiguration\\\" : {\\n    \\\"name\\\" :\
-              \ \\\"my-payment-integration\\\",\\n    \\\"referralUriTemplate\\\"\
-              \ : \\\"http://example.com/referral\\\",\\n    \\\"integrationStatusUri\\\
-              \" : \\\"http://example.com/merchant-account-status/{shopId}\\\",\\\
-              n    \\\"disconnectUri\\\" : \\\"http://example.com/merchant-account-status/{shopId}\\\
+              feature\" : \"app.test-app\",\n  \"clientId\" : \"client_id\",\n  \"\
+              scopes\" : [ \"ordr:u\", \"ordr:r\" ],\n  \"callbackUrl\" : \"http://example.com/callback\"\
+              ,\n  \"additionalConfiguration\" : \"{\\n  \\\"productionConfiguration\\\
+              \" : {\\n    \\\"name\\\" : \\\"my-payment-integration\\\",\\n    \\\
+              \"referralUriTemplate\\\" : \\\"http://example.com/referral\\\",\\n\
+              \    \\\"integrationStatusUri\\\" : \\\"http://example.com/merchant-account-status/{shopId}\\\
+              \",\\n    \\\"disconnectUri\\\" : \\\"http://example.com/merchant-account-status/{shopId}\\\
               \",\\n    \\\"createPaymentUri\\\" : \\\"http://example.com/payments\\\
               \",\\n    \\\"capturePaymentUri\\\" : \\\"http://example.com/payments/{id}/capture\\\
               \",\\n    \\\"refundPaymentUri\\\" : \\\"http://example.com/payments/{id}/refund\\\
@@ -629,11 +627,10 @@ paths:
               \"variant\\\" : \\\"TILE\\\",\\n      \\\"uri\\\" : \\\"http://example.com/tile.png\\\
               \"\\n    }, {\\n      \\\"setName\\\" : \\\"official\\\",\\n      \\\
               \"variant\\\" : \\\"STOREFRONT\\\",\\n      \\\"uri\\\" : \\\"http://example.com/storefront.png\\\
-              \"\\n    } ]\\n  }\\n}\",\n  \"createdAt\" : \"2018-10-15T12:49:38.721\"\
-              ,\n  \"feature\" : \"app.test-app\",\n  \"type\" : \"PAYMENT\",\n  \"\
-              _id\" : \"0af6c9ec-0b77-457e-941a-7beff246463a\",\n  \"installationStatus\"\
-              \ : \"AVAILABLE\",\n  \"_links\" : {\n    \"self\" : {\n      \"href\"\
-              \ : \"https://yourshop.api.urn/apps/0af6c9ec-0b77-457e-941a-7beff246463a\"\
+              \"\\n    } ]\\n  }\\n}\",\n  \"createdAt\" : \"2018-10-16T09:08:30.051\"\
+              ,\n  \"type\" : \"PAYMENT\",\n  \"_id\" : \"d8df828a-25e3-406e-ab18-a96b4c68cd73\"\
+              ,\n  \"installationStatus\" : \"AVAILABLE\",\n  \"_links\" : {\n   \
+              \ \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/apps/d8df828a-25e3-406e-ab18-a96b4c68cd73\"\
               \n    }\n  }\n}"
           schema:
             $ref: "#/definitions/apps_appId_uninstall-847214231"
@@ -1365,7 +1362,7 @@ paths:
               \ : {\n      \"href\" : \"https://yourshop.api.urn/carts/ab006c82-7f9d-436e-8a98-bc5cd9cc96aa/payment-methods\"\
               \n    }\n  }\n}"
           schema:
-            $ref: "#/definitions/carts_cartId_payment-methods-663923302"
+            $ref: "#/definitions/signers-663923302"
   /carts/{cartId}/shipping-address:
     put:
       tags:
@@ -2661,30 +2658,30 @@ paths:
               \ {\n      \"clientId\" : \"client_id\",\n      \"name\" : \"Mobile\
               \ Product Management\",\n      \"scopes\" : [ \"ordr:u\", \"ordr:r\"\
               \ ],\n      \"callbackUrl\" : \"https://hostname/callback\",\n     \
-              \ \"_id\" : \"1be5ec20-c9b5-42ad-ac47-6a53a5ffc631\",\n      \"_links\"\
-              \ : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/custom-apps/1be5ec20-c9b5-42ad-ac47-6a53a5ffc631\"\
+              \ \"_id\" : \"777ec57e-8c99-4c94-a77d-2b7b61bd290c\",\n      \"_links\"\
+              \ : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/custom-apps/777ec57e-8c99-4c94-a77d-2b7b61bd290c\"\
               \n        },\n        \"regenerate-secret\" : {\n          \"href\"\
-              \ : \"https://yourshop.api.urn/custom-apps/1be5ec20-c9b5-42ad-ac47-6a53a5ffc631/regenerate-secret\"\
+              \ : \"https://yourshop.api.urn/custom-apps/777ec57e-8c99-4c94-a77d-2b7b61bd290c/regenerate-secret\"\
               \n        }\n      }\n    }, {\n      \"clientId\" : \"client_id\",\n\
               \      \"name\" : \"Mobile Product Management\",\n      \"scopes\" :\
               \ [ \"ordr:u\", \"ordr:r\" ],\n      \"callbackUrl\" : \"https://hostname/callback\"\
-              ,\n      \"_id\" : \"552af17a-cf70-4c8d-b60c-d5e968230c72\",\n     \
-              \ \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/custom-apps/552af17a-cf70-4c8d-b60c-d5e968230c72\"\
+              ,\n      \"_id\" : \"cd14b21d-ad22-4f86-9a6e-837d9fd5ae3d\",\n     \
+              \ \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/custom-apps/cd14b21d-ad22-4f86-9a6e-837d9fd5ae3d\"\
               \n        },\n        \"regenerate-secret\" : {\n          \"href\"\
-              \ : \"https://yourshop.api.urn/custom-apps/552af17a-cf70-4c8d-b60c-d5e968230c72/regenerate-secret\"\
+              \ : \"https://yourshop.api.urn/custom-apps/cd14b21d-ad22-4f86-9a6e-837d9fd5ae3d/regenerate-secret\"\
               \n        }\n      }\n    }, {\n      \"clientId\" : \"client_id\",\n\
               \      \"name\" : \"Mobile Product Management\",\n      \"scopes\" :\
               \ [ \"ordr:u\", \"ordr:r\" ],\n      \"callbackUrl\" : \"https://hostname/callback\"\
-              ,\n      \"_id\" : \"9abf82c0-f16c-4a19-b534-2ecb6720e19f\",\n     \
-              \ \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/custom-apps/9abf82c0-f16c-4a19-b534-2ecb6720e19f\"\
+              ,\n      \"_id\" : \"e875aaaf-11b3-4ed0-867b-3bb88da89fb2\",\n     \
+              \ \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/custom-apps/e875aaaf-11b3-4ed0-867b-3bb88da89fb2\"\
               \n        },\n        \"regenerate-secret\" : {\n          \"href\"\
-              \ : \"https://yourshop.api.urn/custom-apps/9abf82c0-f16c-4a19-b534-2ecb6720e19f/regenerate-secret\"\
+              \ : \"https://yourshop.api.urn/custom-apps/e875aaaf-11b3-4ed0-867b-3bb88da89fb2/regenerate-secret\"\
               \n        }\n      }\n    } ]\n  },\n  \"_links\" : {\n    \"self\"\
               \ : {\n      \"href\" : \"https://yourshop.api.urn/custom-apps?page=0&size=20\"\
               \n    }\n  },\n  \"page\" : {\n    \"size\" : 20,\n    \"totalElements\"\
               \ : 3,\n    \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}"
           schema:
-            $ref: "#/definitions/carts_cartId_payment-methods-663923302"
+            $ref: "#/definitions/signers-663923302"
       security:
       - oauth2_accessCode:
         - "acap:r"
@@ -2717,12 +2714,12 @@ paths:
             application/hal+json: "{\n  \"clientSecret\" : \"client_secret\",\n  \"\
               clientId\" : \"client_id\",\n  \"scopes\" : [ \"ordr:u\", \"ordr:r\"\
               \ ],\n  \"callbackUrl\" : \"https://hostname/callback\",\n  \"name\"\
-              \ : \"Mobile Product Management\",\n  \"_id\" : \"14f6f7c4-1cee-46eb-8c44-c8a78ba23689\"\
-              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/custom-apps/14f6f7c4-1cee-46eb-8c44-c8a78ba23689\"\
-              \n    },\n    \"regenerate-secret\" : {\n      \"href\" : \"https://yourshop.api.urn/custom-apps/14f6f7c4-1cee-46eb-8c44-c8a78ba23689/regenerate-secret\"\
+              \ : \"Mobile Product Management\",\n  \"_id\" : \"d6434c99-c003-4345-bc01-070f1051956a\"\
+              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/custom-apps/d6434c99-c003-4345-bc01-070f1051956a\"\
+              \n    },\n    \"regenerate-secret\" : {\n      \"href\" : \"https://yourshop.api.urn/custom-apps/d6434c99-c003-4345-bc01-070f1051956a/regenerate-secret\"\
               \n    }\n  }\n}"
           schema:
-            $ref: "#/definitions/custom-apps-525208887"
+            $ref: "#/definitions/custom-apps_customAppId_regenerate-secret-525208887"
       security:
       - oauth2_accessCode:
         - "acap:m"
@@ -2750,9 +2747,9 @@ paths:
             application/hal+json: "{\n  \"clientId\" : \"client_id\",\n  \"name\"\
               \ : \"Mobile Product Management\",\n  \"scopes\" : [ \"ordr:u\", \"\
               ordr:r\" ],\n  \"callbackUrl\" : \"https://hostname/callback\",\n  \"\
-              _id\" : \"3068ee65-5145-4072-969e-48d69cf4c17b\",\n  \"_links\" : {\n\
-              \    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/custom-apps/3068ee65-5145-4072-969e-48d69cf4c17b\"\
-              \n    },\n    \"regenerate-secret\" : {\n      \"href\" : \"https://yourshop.api.urn/custom-apps/3068ee65-5145-4072-969e-48d69cf4c17b/regenerate-secret\"\
+              _id\" : \"e7a2d63a-44ba-4b1f-8c82-73e3ee9a2ba1\",\n  \"_links\" : {\n\
+              \    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/custom-apps/e7a2d63a-44ba-4b1f-8c82-73e3ee9a2ba1\"\
+              \n    },\n    \"regenerate-secret\" : {\n      \"href\" : \"https://yourshop.api.urn/custom-apps/e7a2d63a-44ba-4b1f-8c82-73e3ee9a2ba1/regenerate-secret\"\
               \n    }\n  }\n}"
           schema:
             $ref: "#/definitions/custom-apps_customAppId-1474085348"
@@ -2792,9 +2789,9 @@ paths:
           examples:
             application/hal+json: "{\n  \"clientId\" : \"client_id\",\n  \"name\"\
               \ : \"Managed Payment Methods\",\n  \"scopes\" : [ \"pymt:m\" ],\n \
-              \ \"callbackUrl\" : \"https://hostname/callback\",\n  \"_id\" : \"04a2531f-2af9-4761-92b3-78e48239501b\"\
-              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/custom-apps/04a2531f-2af9-4761-92b3-78e48239501b\"\
-              \n    },\n    \"regenerate-secret\" : {\n      \"href\" : \"https://yourshop.api.urn/custom-apps/04a2531f-2af9-4761-92b3-78e48239501b/regenerate-secret\"\
+              \ \"callbackUrl\" : \"https://hostname/callback\",\n  \"_id\" : \"5daa954b-182e-4b8f-ab30-5111f3d2eb01\"\
+              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/custom-apps/5daa954b-182e-4b8f-ab30-5111f3d2eb01\"\
+              \n    },\n    \"regenerate-secret\" : {\n      \"href\" : \"https://yourshop.api.urn/custom-apps/5daa954b-182e-4b8f-ab30-5111f3d2eb01/regenerate-secret\"\
               \n    }\n  }\n}"
           schema:
             $ref: "#/definitions/custom-apps_customAppId-1474085348"
@@ -2843,15 +2840,15 @@ paths:
         200:
           description: ""
           examples:
-            application/hal+json: "{\n  \"clientSecret\" : \"14613130-3f77-40ed-bd9e-e1d5712e0071\"\
+            application/hal+json: "{\n  \"clientSecret\" : \"56ef4f9c-e30b-4553-ab47-5fc6d1beb38f\"\
               ,\n  \"clientId\" : \"client_id\",\n  \"scopes\" : [ \"ordr:u\", \"\
               ordr:r\" ],\n  \"callbackUrl\" : \"https://hostname/callback\",\n  \"\
-              name\" : \"Mobile Product Management\",\n  \"_id\" : \"296a6202-f870-4af4-8874-cf4540857106\"\
-              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/custom-apps/296a6202-f870-4af4-8874-cf4540857106\"\
-              \n    },\n    \"regenerate-secret\" : {\n      \"href\" : \"https://yourshop.api.urn/custom-apps/296a6202-f870-4af4-8874-cf4540857106/regenerate-secret\"\
+              name\" : \"Mobile Product Management\",\n  \"_id\" : \"0efd21f0-b3ea-481c-835f-cb8b3cc54cbf\"\
+              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/custom-apps/0efd21f0-b3ea-481c-835f-cb8b3cc54cbf\"\
+              \n    },\n    \"regenerate-secret\" : {\n      \"href\" : \"https://yourshop.api.urn/custom-apps/0efd21f0-b3ea-481c-835f-cb8b3cc54cbf/regenerate-secret\"\
               \n    }\n  }\n}"
           schema:
-            $ref: "#/definitions/custom-apps-525208887"
+            $ref: "#/definitions/custom-apps_customAppId_regenerate-secret-525208887"
       security:
       - oauth2_accessCode:
         - "acap:m"
@@ -2902,27 +2899,27 @@ paths:
           description: ""
           examples:
             application/hal+json: "{\n  \"additionalConfiguration\" : null,\n  \"\
-              supportWebsite\" : {\n    \"en-US\" : \"http://example.com/support.html\"\
-              \n  },\n  \"clientId\" : \"[client_id]\",\n  \"scopes\" : [ \"prod:m\"\
-              \ ],\n  \"callbackUrl\" : \"http://example.com/some\",\n  \"createdAt\"\
-              \ : \"2018-10-15T12:49:58.106\",\n  \"images\" : {\n    \"en-US\" :\
-              \ [ \"http://example.com/image1.png\" ]\n  },\n  \"developer\" : {\n\
-              \    \"en-US\" : \"ePages Inc.\"\n  },\n  \"supportEmail\" : {\n   \
-              \ \"en-US\" : \"supporters@example.com\"\n  },\n  \"iconUrl\" : {\n\
-              \    \"en-US\" : \"http://example.com/icon.png\"\n  },\n  \"appUrl\"\
-              \ : {\n    \"en-US\" : \"http://example.com/new-login\"\n  },\n  \"\
-              logoUrl\" : {\n    \"en-US\" : \"http://example.com/new-login\"\n  },\n\
-              \  \"videoUrl\" : {\n    \"en-US\" : \"http://example.com/video.mpg\"\
+              feature\" : \"app.sas-shipping-app\",\n  \"supportWebsite\" : {\n  \
+              \  \"en-US\" : \"http://example.com/support.html\"\n  },\n  \"clientId\"\
+              \ : \"[client_id]\",\n  \"scopes\" : [ \"prod:m\" ],\n  \"callbackUrl\"\
+              \ : \"http://example.com/some\",\n  \"createdAt\" : \"2018-10-16T09:08:48.261\"\
+              ,\n  \"developer\" : {\n    \"en-US\" : \"ePages Inc.\"\n  },\n  \"\
+              supportEmail\" : {\n    \"en-US\" : \"supporters@example.com\"\n  },\n\
+              \  \"iconUrl\" : {\n    \"en-US\" : \"http://example.com/icon.png\"\n\
+              \  },\n  \"appUrl\" : {\n    \"en-US\" : \"http://example.com/new-login\"\
+              \n  },\n  \"logoUrl\" : {\n    \"en-US\" : \"http://example.com/new-login\"\
+              \n  },\n  \"videoUrl\" : {\n    \"en-US\" : \"http://example.com/video.mpg\"\
               \n  },\n  \"infoWebsite\" : {\n    \"en-US\" : \"http://example.com/video.mpg\"\
-              \n  },\n  \"price\" : {\n    \"en-US\" : \"20 USD per month\"\n  },\n\
-              \  \"feature\" : \"app.sas-shipping-app\",\n  \"description\" : {\n\
-              \    \"en-US\" : \"A payment method for simple and secure shipping in\
-              \ online shops.\"\n  },\n  \"name\" : {\n    \"en-US\" : \"Simple +\
-              \ Secure Shipping\"\n  },\n  \"type\" : \"SHIPPING\",\n  \"_links\"\
-              \ : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/add-on-management/apps/bfd48edf-ba14-4c7f-8be1-8b8212157ec6\"\
-              \n    },\n    \"install\" : {\n      \"href\" : \"https://yourshop.api.urn/add-on-management/apps/bfd48edf-ba14-4c7f-8be1-8b8212157ec6/install\"\
-              \n    },\n    \"regenerate-secret\" : {\n      \"href\" : \"https://yourshop.api.urn/add-on-management/apps/bfd48edf-ba14-4c7f-8be1-8b8212157ec6/regenerate-secret\"\
-              \n    }\n  },\n  \"_id\" : \"bfd48edf-ba14-4c7f-8be1-8b8212157ec6\"\n\
+              \n  },\n  \"images\" : {\n    \"en-US\" : [ \"http://example.com/image1.png\"\
+              \ ]\n  },\n  \"price\" : {\n    \"en-US\" : \"20 USD per month\"\n \
+              \ },\n  \"description\" : {\n    \"en-US\" : \"A payment method for\
+              \ simple and secure shipping in online shops.\"\n  },\n  \"name\" :\
+              \ {\n    \"en-US\" : \"Simple + Secure Shipping\"\n  },\n  \"type\"\
+              \ : \"SHIPPING\",\n  \"_links\" : {\n    \"self\" : {\n      \"href\"\
+              \ : \"https://yourshop.api.urn/add-on-management/apps/f286683c-5d70-4413-a53f-75e21b76f2a3\"\
+              \n    },\n    \"install\" : {\n      \"href\" : \"https://yourshop.api.urn/add-on-management/apps/f286683c-5d70-4413-a53f-75e21b76f2a3/install\"\
+              \n    },\n    \"regenerate-secret\" : {\n      \"href\" : \"https://yourshop.api.urn/add-on-management/apps/f286683c-5d70-4413-a53f-75e21b76f2a3/regenerate-secret\"\
+              \n    }\n  },\n  \"_id\" : \"f286683c-5d70-4413-a53f-75e21b76f2a3\"\n\
               }"
       security:
       - oauth2_accessCode:
@@ -3474,11 +3471,11 @@ paths:
         200:
           description: ""
           examples:
-            application/json: "{\n  \"access_token\" : \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjEifQ.eyJ1c2VyX25hbWUiOiJ1c2VyIiwic2NvcGUiOlsicHJvZDpyYyJdLCJ0ZW5hbnRJZCI6MTQzOCwiZXhwIjoxNTM5NjA5Mzc4LCJpYXQiOjE1MzkzNTAxNzgsInVzZXJJZCI6IjVhMDEzYTMyLWEwZTQtNDBkYS1iNWE1LTc0MmRhODdhMmZkNCIsImp0aSI6IjlkMzNiYjVjLWZhMjAtNGZiNy1hMDMwLTQ1YWNmNDc0NDZjMiIsImNsaWVudF9pZCI6InNhbXBsZS1jbGllbnQiLCJ1c2VybmFtZSI6InVzZXIifQ.ZB9AcZAJXfp5CPeXhlT2Vo8X-Dqi4nYKDDiP__4J9zfkFWq1RuyVxFjNwo5zVUZalFLM-Gbm7MGdkyn0ZWYlBnXvo54cP8-dyNkcssrGyrKBK4DksZuh8Jzqf0Yk3dfpcsjPWx_iA-NIT-0N-op6-Z1yrBvKwffiaBLeuEMtNhyGLEUTtVfc_UdsOvS7Ui0ielK3v0VdAiCssncl5lwY40Njb-eaHphCtn_2gNJpvLWFSGLdyxtx1dldpTcLcj0Hwrq7ktarVpBGr-SpcUGVCgcbl8LsrEIW1QsUFqo3NK5_7E-Krs6nVU75pApRKRVin4CijD0-XUyh-3NkWFb-CQ\"\
-              ,\n  \"token_type\" : \"bearer\",\n  \"refresh_token\" : \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjEifQ.eyJ1c2VyX25hbWUiOiJ1c2VyIiwic2NvcGUiOlsicHJvZDpyYyJdLCJhdGkiOiI5ZDMzYmI1Yy1mYTIwLTRmYjctYTAzMC00NWFjZjQ3NDQ2YzIiLCJ0ZW5hbnRJZCI6MTQzOCwiZXhwIjoxNTQxOTQyMTc4LCJpYXQiOjE1MzkzNTAxNzgsInVzZXJJZCI6IjVhMDEzYTMyLWEwZTQtNDBkYS1iNWE1LTc0MmRhODdhMmZkNCIsImp0aSI6IjMxMGU4Zjg1LTcwNmYtNDE3ZS04ZDdiLTFmODY0MzE3NDRmYiIsImNsaWVudF9pZCI6InNhbXBsZS1jbGllbnQiLCJ1c2VybmFtZSI6InVzZXIifQ.G9oG98QqzBiycO-3BOceVrWgql1k2hf8FyHQ6o6Qdk7JSo5LA_6UqSSPH8AOoyXh4diuVeW3SF9PFDMPkDIlg8-9qphg4-oas7mSh11XJX3QwTBB212R2LU-Jk_zdXYl_CgnFnP1vblwJRiDMgE0YN-Wx9cUh_244KqlJE7Hl9o44ovaf1jiVcPTjIV0nFWRqcR2AZguREOJc2P6JaLhoO3ngdUbCB9hi9H_3Jss5DZOiXnk0jyLjdDwnB9vU5sF84CeMxC6TCtuugZvTTNT-4RA6VDfrnqkJzNB-oxtc9dD1_Hbw-3jy8pWkeqjbbUDm5HoOJ4hhGnztTUKfCljyQ\"\
+            application/json: "{\n  \"access_token\" : \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjEifQ.eyJ1c2VyX25hbWUiOiJ1c2VyIiwic2NvcGUiOlsicHJvZDpyYyJdLCJ0ZW5hbnRJZCI6MTQzOCwiZXhwIjoxNTM5OTQ5ODIxLCJpYXQiOjE1Mzk2OTA2MjEsInVzZXJJZCI6IjNlMmZhY2YwLTE0OTItNGU0NC05ZWU3LWE2MTVkNTA5NzliNCIsImp0aSI6ImY3NTU0MzkzLTgzODgtNDgxNi05NTkyLTQ4OWViZmE3NWE4YSIsImNsaWVudF9pZCI6InNhbXBsZS1jbGllbnQiLCJ1c2VybmFtZSI6InVzZXIifQ.c28gWLauTrBz_WD4CLHtFqCva6Enyhv069VNh92tIZbDkRTmi5ye2bNpeN2nOCSgX6tKfJvIJA8gx2lft7FbjxyviLojRyYwBa96t1y1PrF2PsOBKjtvAzuiM4Hcsh5xNAF2TKveYUdY2mMH9lLfi0xWTMDFILb40cu0AbdF8gYT3Rwq4Gn2OeS1M4JPYPY2Yx_314CdznYgoyf49xPzrDDkpecuKGKB9QysHTdKOaBWa4YIAgCm0TBnS0JKpAcZ6XlHgehwqhrmQu4BCrC2KuTymV04axkwh3d9FvJO7rr6bwWfTX4UIr8z8ecOsfpoxGZRKi3vnvx1Og3meT4WmQ\"\
+              ,\n  \"token_type\" : \"bearer\",\n  \"refresh_token\" : \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjEifQ.eyJ1c2VyX25hbWUiOiJ1c2VyIiwic2NvcGUiOlsicHJvZDpyYyJdLCJhdGkiOiJmNzU1NDM5My04Mzg4LTQ4MTYtOTU5Mi00ODllYmZhNzVhOGEiLCJ0ZW5hbnRJZCI6MTQzOCwiZXhwIjoxNTQyMjgyNjIxLCJpYXQiOjE1Mzk2OTA2MjEsInVzZXJJZCI6IjNlMmZhY2YwLTE0OTItNGU0NC05ZWU3LWE2MTVkNTA5NzliNCIsImp0aSI6ImJmNmZhYTNmLWI5MWYtNDU1Zi1iMmUzLTFjMjk4MzVhYTc2YyIsImNsaWVudF9pZCI6InNhbXBsZS1jbGllbnQiLCJ1c2VybmFtZSI6InVzZXIifQ.JMZEZ20McV8lhB9cmywDUzz00NtUkuQKyxaVJ4qm0AjLBIRQO5H0ldu_shzC_Hqt8RgEtLYj9MgTVBYL83OYxLcdN_kB-yNeg2OH7B9sMWeVnNHpXXZwjVwMxRMrwFFGf7FaNvyMhCyRgoGKelkUmlbMyOFJvOzLox7UhB2u3ArVGkINt6OcEY4wQAMqjuf3WUlRtg06GJj6M8KsE9Z2KByXRDq183qYeHBu8lVLzm3NRChMt2NMjNYxBhPvraug5-lFpj1Q6heun2bRYc1Ye38bqfGdUnt9MXfQIfHcVO-a2QddHY9hbZL3v_fLg-nCzYTDwmyN33JGlcon-b7KbA\"\
               ,\n  \"expires_in\" : 259199,\n  \"scope\" : \"prod:rc\",\n  \"tenantId\"\
-              \ : 1438,\n  \"iat\" : 1539350178,\n  \"userId\" : \"5a013a32-a0e4-40da-b5a5-742da87a2fd4\"\
-              ,\n  \"username\" : \"user\",\n  \"jti\" : \"9d33bb5c-fa20-4fb7-a030-45acf47446c2\"\
+              \ : 1438,\n  \"iat\" : 1539690621,\n  \"userId\" : \"3e2facf0-1492-4e44-9ee7-a615d50979b4\"\
+              ,\n  \"username\" : \"user\",\n  \"jti\" : \"f7554393-8388-4816-9592-489ebfa75a8a\"\
               \n}"
           schema:
             $ref: "#/definitions/oauth_token1255780863"
@@ -9355,16 +9352,16 @@ paths:
           examples:
             application/hal+json: "{\n  \"_embedded\" : {\n    \"scopes\" : [ {\n\
               \      \"name\" : \"ordr:r\",\n      \"_links\" : {\n        \"self\"\
-              \ : {\n          \"href\" : \"https://yourshop.api.urn/scopes/117bc5a6-ea82-45bb-b3f1-ae981a0c6f51\"\
-              \n        },\n        \"scope\" : {\n          \"href\" : \"https://yourshop.api.urn/scopes/117bc5a6-ea82-45bb-b3f1-ae981a0c6f51{?projection}\"\
+              \ : {\n          \"href\" : \"https://yourshop.api.urn/scopes/77b3e655-196e-4ed3-a584-897add294183\"\
+              \n        },\n        \"scope\" : {\n          \"href\" : \"https://yourshop.api.urn/scopes/77b3e655-196e-4ed3-a584-897add294183{?projection}\"\
               ,\n          \"templated\" : true\n        }\n      }\n    }, {\n  \
               \    \"name\" : \"prod:c\",\n      \"_links\" : {\n        \"self\"\
-              \ : {\n          \"href\" : \"https://yourshop.api.urn/scopes/165f4b37-d24f-45b4-b2b9-5c5dbcc7aa9e\"\
-              \n        },\n        \"scope\" : {\n          \"href\" : \"https://yourshop.api.urn/scopes/165f4b37-d24f-45b4-b2b9-5c5dbcc7aa9e{?projection}\"\
+              \ : {\n          \"href\" : \"https://yourshop.api.urn/scopes/cc8806e3-ca59-41cd-ad49-f2114692dac4\"\
+              \n        },\n        \"scope\" : {\n          \"href\" : \"https://yourshop.api.urn/scopes/cc8806e3-ca59-41cd-ad49-f2114692dac4{?projection}\"\
               ,\n          \"templated\" : true\n        }\n      }\n    }, {\n  \
               \    \"name\" : \"ordr:u\",\n      \"_links\" : {\n        \"self\"\
-              \ : {\n          \"href\" : \"https://yourshop.api.urn/scopes/2c1c052b-599f-4c70-80d3-d7ce49273c1d\"\
-              \n        },\n        \"scope\" : {\n          \"href\" : \"https://yourshop.api.urn/scopes/2c1c052b-599f-4c70-80d3-d7ce49273c1d{?projection}\"\
+              \ : {\n          \"href\" : \"https://yourshop.api.urn/scopes/cd07913f-7a4c-4d4b-8917-e69f82b656f8\"\
+              \n        },\n        \"scope\" : {\n          \"href\" : \"https://yourshop.api.urn/scopes/cd07913f-7a4c-4d4b-8917-e69f82b656f8{?projection}\"\
               ,\n          \"templated\" : true\n        }\n      }\n    } ]\n  },\n\
               \  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/scopes{?page,size,sort,projection}\"\
               ,\n      \"templated\" : true\n    },\n    \"profile\" : {\n      \"\
@@ -9911,7 +9908,7 @@ paths:
               \ },\n  \"currencies\" : [ \"GBP\", \"EUR\" ],\n  \"defaultCurrency\"\
               \ : \"EUR\",\n  \"locales\" : [ \"en-GB\", \"de-DE\" ],\n  \"defaultLocale\"\
               \ : \"en-GB\",\n  \"closedByMerchant\" : false,\n  \"resellerName\"\
-              \ : \"epages\",\n  \"_id\" : \"42fa3d18-432a-4bc2-93df-28349711055c\"\
+              \ : \"epages\",\n  \"_id\" : \"671963e5-e008-4051-ab22-d0bef44b3427\"\
               ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/shop\"\
               \n    },\n    \"shop\" : {\n      \"href\" : \"https://yourshop.api.urn/shop\"\
               \n    },\n    \"address\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/address\"\
@@ -9960,7 +9957,7 @@ paths:
               \    \"country\" : null\n  },\n  \"currencies\" : [ \"GBP\", \"USD\"\
               , \"EUR\" ],\n  \"defaultCurrency\" : \"USD\",\n  \"locales\" : [ \"\
               en-GB\", \"de-DE\" ],\n  \"defaultLocale\" : \"en-GB\",\n  \"closedByMerchant\"\
-              \ : false,\n  \"resellerName\" : \"epages\",\n  \"_id\" : \"78b306e8-942a-44c9-9d7f-ae3417e2217b\"\
+              \ : false,\n  \"resellerName\" : \"epages\",\n  \"_id\" : \"8ad57f73-3875-4034-b587-679a7b337bcf\"\
               ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/shop\"\
               \n    },\n    \"shop\" : {\n      \"href\" : \"https://yourshop.api.urn/shop\"\
               \n    },\n    \"address\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/address\"\
@@ -10183,10 +10180,10 @@ paths:
           description: ""
           examples:
             application/hal+json: "{\n  \"_embedded\" : {\n    \"images\" : [ {\n\
-              \      \"label\" : \"logo\",\n      \"_id\" : \"153ac5c9-bc61-4f20-8bc1-a0bbef14816a\"\
+              \      \"label\" : \"logo\",\n      \"_id\" : \"67295209-73c6-4142-af35-7c0f11b84a1d\"\
               ,\n      \"_links\" : {\n        \"self\" : {\n          \"href\" :\
-              \ \"https://yourshop.api.urn/shop/images/153ac5c9-bc61-4f20-8bc1-a0bbef14816a\"\
-              \n        },\n        \"image\" : {\n          \"href\" : \"https://yourshop.api.urn/shop/images/153ac5c9-bc61-4f20-8bc1-a0bbef14816a\"\
+              \ \"https://yourshop.api.urn/shop/images/67295209-73c6-4142-af35-7c0f11b84a1d\"\
+              \n        },\n        \"image\" : {\n          \"href\" : \"https://yourshop.api.urn/shop/images/67295209-73c6-4142-af35-7c0f11b84a1d\"\
               \n        },\n        \"data\" : {\n          \"href\" : \"https://yourshop.api.urn/api/core-storage/images/file.png?hash=212-2323-4343{&width,height,upscale}\"\
               ,\n          \"templated\" : true\n        },\n        \"metadata\"\
               \ : {\n          \"href\" : \"https://yourshop.api.urn/api/core-storage/images/file.png?hash=212-2323-4343&download=no\"\
@@ -10195,7 +10192,7 @@ paths:
               \n    }\n  },\n  \"page\" : {\n    \"size\" : 20,\n    \"totalElements\"\
               \ : 1,\n    \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}"
           schema:
-            $ref: "#/definitions/shop_images918748962"
+            $ref: "#/definitions/shop_images_search_find-by-label918748962"
     post:
       tags:
       - "shop"
@@ -10454,9 +10451,9 @@ paths:
         200:
           description: ""
           examples:
-            application/hal+json: "{\n  \"label\" : \"logo\",\n  \"_id\" : \"062e01a1-7535-4e99-b231-f054701abefd\"\
-              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/images/062e01a1-7535-4e99-b231-f054701abefd\"\
-              \n    },\n    \"image\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/images/062e01a1-7535-4e99-b231-f054701abefd\"\
+            application/hal+json: "{\n  \"label\" : \"logo\",\n  \"_id\" : \"9edf518a-a802-4b9f-b575-33b66d4bd973\"\
+              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/images/9edf518a-a802-4b9f-b575-33b66d4bd973\"\
+              \n    },\n    \"image\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/images/9edf518a-a802-4b9f-b575-33b66d4bd973\"\
               \n    },\n    \"data\" : {\n      \"href\" : \"https://yourshop.api.urn/api/core-storage/images/file.png?hash=212-2323-4343{&width,height,upscale}\"\
               ,\n      \"templated\" : true\n    },\n    \"metadata\" : {\n      \"\
               href\" : \"https://yourshop.api.urn/api/core-storage/images/file.png?hash=212-2323-4343&download=no\"\
@@ -10504,10 +10501,10 @@ paths:
           description: ""
           examples:
             application/hal+json: "{\n  \"_embedded\" : {\n    \"images\" : [ {\n\
-              \      \"label\" : \"logo\",\n      \"_id\" : \"368e3d40-f65f-4cd6-9f03-c81da446e902\"\
+              \      \"label\" : \"logo\",\n      \"_id\" : \"df29914b-7345-4c43-ae83-7b09cbc6a9ff\"\
               ,\n      \"_links\" : {\n        \"self\" : {\n          \"href\" :\
-              \ \"https://yourshop.api.urn/shop/images/368e3d40-f65f-4cd6-9f03-c81da446e902\"\
-              \n        },\n        \"image\" : {\n          \"href\" : \"https://yourshop.api.urn/shop/images/368e3d40-f65f-4cd6-9f03-c81da446e902\"\
+              \ \"https://yourshop.api.urn/shop/images/df29914b-7345-4c43-ae83-7b09cbc6a9ff\"\
+              \n        },\n        \"image\" : {\n          \"href\" : \"https://yourshop.api.urn/shop/images/df29914b-7345-4c43-ae83-7b09cbc6a9ff\"\
               \n        },\n        \"data\" : {\n          \"href\" : \"https://yourshop.api.urn/api/core-storage/images/file.png?hash=212-2323-4343{&width,height,upscale}\"\
               ,\n          \"templated\" : true\n        },\n        \"metadata\"\
               \ : {\n          \"href\" : \"https://yourshop.api.urn/api/core-storage/images/file.png?hash=212-2323-4343&download=no\"\
@@ -10516,7 +10513,7 @@ paths:
               \n    }\n  },\n  \"page\" : {\n    \"size\" : 20,\n    \"totalElements\"\
               \ : 1,\n    \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}"
           schema:
-            $ref: "#/definitions/shop_images918748962"
+            $ref: "#/definitions/shop_images_search_find-by-label918748962"
   /shop-id:
     get:
       tags:
@@ -10539,6 +10536,31 @@ paths:
         - "paym:m"
       - oauth2_application:
         - "paym:m"
+  /shops/{shopId}:
+    delete:
+      tags:
+      - "shops"
+      summary: "/shops/{shopId}"
+      description: ""
+      operationId: "system-shop-mark-deleted"
+      produces:
+      - "application/hal+json"
+      parameters:
+      - name: "shopId"
+        in: "path"
+        description: ""
+        required: true
+        type: "string"
+      responses:
+        204:
+          description: ""
+          examples:
+            application/hal+json: "null"
+      security:
+      - oauth2_accessCode:
+        - "shop:d"
+      - oauth2_application:
+        - "shop:d"
   /shops/{id}/attributes/{name}:
     delete:
       tags:
@@ -10580,15 +10602,15 @@ paths:
           description: ""
           examples:
             application/hal+json: "{\n  \"_embedded\" : {\n    \"signers\" : [ {\n\
-              \      \"_id\" : \"8df33411-f05d-4236-9953-8a1031f5b7c1\",\n      \"\
-              createdAt\" : \"2018-10-12T13:15:30.705\",\n      \"_links\" : {\n \
-              \       \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/signers/8df33411-f05d-4236-9953-8a1031f5b7c1\"\
-              \n        }\n      }\n    }, {\n      \"_id\" : \"b39c8b31-0f76-454d-8d21-f6fe6395ea56\"\
-              ,\n      \"createdAt\" : \"2018-10-12T13:15:30.664\",\n      \"_links\"\
-              \ : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/signers/b39c8b31-0f76-454d-8d21-f6fe6395ea56\"\
+              \      \"_id\" : \"13100b91-5ddd-4807-9552-896c6cc98a75\",\n      \"\
+              createdAt\" : \"2018-10-16T11:49:46.392\",\n      \"_links\" : {\n \
+              \       \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/signers/13100b91-5ddd-4807-9552-896c6cc98a75\"\
+              \n        }\n      }\n    }, {\n      \"_id\" : \"1b553237-1bd5-4393-8f6a-ca350afd43bb\"\
+              ,\n      \"createdAt\" : \"2018-10-16T11:49:46.436\",\n      \"_links\"\
+              \ : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/signers/1b553237-1bd5-4393-8f6a-ca350afd43bb\"\
               \n        }\n      }\n    } ]\n  }\n}"
           schema:
-            $ref: "#/definitions/carts_cartId_payment-methods-663923302"
+            $ref: "#/definitions/signers-663923302"
     post:
       tags:
       - "signers"
@@ -10601,9 +10623,9 @@ paths:
         200:
           description: ""
           examples:
-            application/hal+json: "{\n  \"_id\" : \"49ef54ed-1474-4fa3-b41f-ff211217bb4f\"\
-              ,\n  \"sharedSecret\" : \"e39celm2kosllsu7g60i3vkv2q\",\n  \"_links\"\
-              \ : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/signers/49ef54ed-1474-4fa3-b41f-ff211217bb4f\"\
+            application/hal+json: "{\n  \"_id\" : \"84975741-e2ff-4253-960f-bfc644885569\"\
+              ,\n  \"sharedSecret\" : \"388jc7r3icklor1tqr34tc80dd\",\n  \"_links\"\
+              \ : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/signers/84975741-e2ff-4253-960f-bfc644885569\"\
               \n    }\n  }\n}"
           schema:
             $ref: "#/definitions/signers1038188776"
@@ -10639,15 +10661,15 @@ paths:
           examples:
             application/hal+json: "{\n  \"_embedded\" : {\n    \"users\" : [ {\n \
               \     \"username\" : \"username\",\n      \"email\" : \"baxter@example.org\"\
-              ,\n      \"enabled\" : true,\n      \"_id\" : \"2f8e3895-d810-47b5-994d-c79652a3102e\"\
+              ,\n      \"enabled\" : true,\n      \"_id\" : \"9d7e20ea-fa72-4cfb-86c4-5b082eaed81f\"\
               ,\n      \"_links\" : {\n        \"self\" : {\n          \"href\" :\
-              \ \"https://yourshop.api.urn/users/2f8e3895-d810-47b5-994d-c79652a3102e\"\
-              \n        },\n        \"user\" : {\n          \"href\" : \"https://yourshop.api.urn/users/2f8e3895-d810-47b5-994d-c79652a3102e\"\
+              \ \"https://yourshop.api.urn/users/9d7e20ea-fa72-4cfb-86c4-5b082eaed81f\"\
+              \n        },\n        \"user\" : {\n          \"href\" : \"https://yourshop.api.urn/users/9d7e20ea-fa72-4cfb-86c4-5b082eaed81f\"\
               \n        },\n        \"change-password\" : {\n          \"href\" :\
-              \ \"https://yourshop.api.urn/users/2f8e3895-d810-47b5-994d-c79652a3102e/change-password\"\
+              \ \"https://yourshop.api.urn/users/9d7e20ea-fa72-4cfb-86c4-5b082eaed81f/change-password\"\
               \n        },\n        \"change-email-request\" : {\n          \"href\"\
-              \ : \"https://yourshop.api.urn/users/2f8e3895-d810-47b5-994d-c79652a3102e/change-email-request\"\
-              \n        },\n        \"roles\" : {\n          \"href\" : \"https://yourshop.api.urn/users/2f8e3895-d810-47b5-994d-c79652a3102e/roles\"\
+              \ : \"https://yourshop.api.urn/users/9d7e20ea-fa72-4cfb-86c4-5b082eaed81f/change-email-request\"\
+              \n        },\n        \"roles\" : {\n          \"href\" : \"https://yourshop.api.urn/users/9d7e20ea-fa72-4cfb-86c4-5b082eaed81f/roles\"\
               \n        }\n      }\n    } ]\n  },\n  \"_links\" : {\n    \"self\"\
               \ : {\n      \"href\" : \"https://yourshop.api.urn/users?page=0&size=20\"\
               \n    },\n    \"search\" : {\n      \"href\" : \"https://yourshop.api.urn/users/search\"\
@@ -10684,15 +10706,15 @@ paths:
           description: ""
           examples:
             application/json: "{\n  \"username\" : \"user\",\n  \"email\" : \"baxter@example.org\"\
-              ,\n  \"enabled\" : true,\n  \"_id\" : \"1a19c2d6-2463-4425-abf1-53530bf28d2f\"\
-              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/users/1a19c2d6-2463-4425-abf1-53530bf28d2f\"\
-              \n    },\n    \"user\" : {\n      \"href\" : \"https://yourshop.api.urn/users/1a19c2d6-2463-4425-abf1-53530bf28d2f\"\
-              \n    },\n    \"change-password\" : {\n      \"href\" : \"https://yourshop.api.urn/users/1a19c2d6-2463-4425-abf1-53530bf28d2f/change-password\"\
-              \n    },\n    \"change-email-request\" : {\n      \"href\" : \"https://yourshop.api.urn/users/1a19c2d6-2463-4425-abf1-53530bf28d2f/change-email-request\"\
-              \n    },\n    \"roles\" : {\n      \"href\" : \"https://yourshop.api.urn/users/1a19c2d6-2463-4425-abf1-53530bf28d2f/roles\"\
+              ,\n  \"enabled\" : true,\n  \"_id\" : \"3e6722b7-807b-4958-b9ef-9b6ff1e293d0\"\
+              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/users/3e6722b7-807b-4958-b9ef-9b6ff1e293d0\"\
+              \n    },\n    \"user\" : {\n      \"href\" : \"https://yourshop.api.urn/users/3e6722b7-807b-4958-b9ef-9b6ff1e293d0\"\
+              \n    },\n    \"change-password\" : {\n      \"href\" : \"https://yourshop.api.urn/users/3e6722b7-807b-4958-b9ef-9b6ff1e293d0/change-password\"\
+              \n    },\n    \"change-email-request\" : {\n      \"href\" : \"https://yourshop.api.urn/users/3e6722b7-807b-4958-b9ef-9b6ff1e293d0/change-email-request\"\
+              \n    },\n    \"roles\" : {\n      \"href\" : \"https://yourshop.api.urn/users/3e6722b7-807b-4958-b9ef-9b6ff1e293d0/roles\"\
               \n    }\n  }\n}"
           schema:
-            $ref: "#/definitions/users_id_change-password-999644662"
+            $ref: "#/definitions/users-999644662"
       security:
       - oauth2_accessCode:
         - "user:c"
@@ -10843,15 +10865,15 @@ paths:
           description: ""
           examples:
             application/hal+json: "{\n  \"username\" : \"username\",\n  \"email\"\
-              \ : \"baxter@example.org\",\n  \"enabled\" : true,\n  \"_id\" : \"ee8c5c7a-44c2-4995-9003-1a2974f84134\"\
-              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/users/ee8c5c7a-44c2-4995-9003-1a2974f84134\"\
-              \n    },\n    \"user\" : {\n      \"href\" : \"https://yourshop.api.urn/users/ee8c5c7a-44c2-4995-9003-1a2974f84134\"\
-              \n    },\n    \"change-password\" : {\n      \"href\" : \"https://yourshop.api.urn/users/ee8c5c7a-44c2-4995-9003-1a2974f84134/change-password\"\
-              \n    },\n    \"change-email-request\" : {\n      \"href\" : \"https://yourshop.api.urn/users/ee8c5c7a-44c2-4995-9003-1a2974f84134/change-email-request\"\
-              \n    },\n    \"roles\" : {\n      \"href\" : \"https://yourshop.api.urn/users/ee8c5c7a-44c2-4995-9003-1a2974f84134/roles\"\
+              \ : \"baxter@example.org\",\n  \"enabled\" : true,\n  \"_id\" : \"61f23621-8e61-490d-89e4-a516a02224ad\"\
+              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/users/61f23621-8e61-490d-89e4-a516a02224ad\"\
+              \n    },\n    \"user\" : {\n      \"href\" : \"https://yourshop.api.urn/users/61f23621-8e61-490d-89e4-a516a02224ad\"\
+              \n    },\n    \"change-password\" : {\n      \"href\" : \"https://yourshop.api.urn/users/61f23621-8e61-490d-89e4-a516a02224ad/change-password\"\
+              \n    },\n    \"change-email-request\" : {\n      \"href\" : \"https://yourshop.api.urn/users/61f23621-8e61-490d-89e4-a516a02224ad/change-email-request\"\
+              \n    },\n    \"roles\" : {\n      \"href\" : \"https://yourshop.api.urn/users/61f23621-8e61-490d-89e4-a516a02224ad/roles\"\
               \n    }\n  }\n}"
           schema:
-            $ref: "#/definitions/users_id_change-password-999644662"
+            $ref: "#/definitions/users-999644662"
       security:
       - oauth2_accessCode:
         - "user:r"
@@ -10871,10 +10893,10 @@ paths:
           description: ""
           examples:
             application/hal+json: "{\n  \"username\" : \"username\",\n  \"email\"\
-              \ : \"baxter@example.org\",\n  \"enabled\" : true,\n  \"_id\" : \"b4205c1b-18dd-4e8e-bda5-02b2a7339769\"\
-              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/users/b4205c1b-18dd-4e8e-bda5-02b2a7339769\"\
-              \n    },\n    \"user\" : {\n      \"href\" : \"https://yourshop.api.urn/users/b4205c1b-18dd-4e8e-bda5-02b2a7339769\"\
-              \n    },\n    \"roles\" : {\n      \"href\" : \"https://yourshop.api.urn/users/b4205c1b-18dd-4e8e-bda5-02b2a7339769/roles\"\
+              \ : \"baxter@example.org\",\n  \"enabled\" : true,\n  \"_id\" : \"9b42c184-0585-4139-acbc-7a95ef9d14c2\"\
+              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/users/9b42c184-0585-4139-acbc-7a95ef9d14c2\"\
+              \n    },\n    \"user\" : {\n      \"href\" : \"https://yourshop.api.urn/users/9b42c184-0585-4139-acbc-7a95ef9d14c2\"\
+              \n    },\n    \"roles\" : {\n      \"href\" : \"https://yourshop.api.urn/users/9b42c184-0585-4139-acbc-7a95ef9d14c2/roles\"\
               \n    }\n  }\n}"
       security:
       - oauth2_accessCode:
@@ -10946,13 +10968,13 @@ paths:
           description: ""
           examples:
             application/json: "{\n  \"username\" : \"user\",\n  \"email\" : \"baxter@example.org\"\
-              ,\n  \"enabled\" : true,\n  \"_id\" : \"d56ebbec-b4c4-42a9-8efe-8534334bb851\"\
-              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/users/d56ebbec-b4c4-42a9-8efe-8534334bb851\"\
-              \n    },\n    \"user\" : {\n      \"href\" : \"https://yourshop.api.urn/users/d56ebbec-b4c4-42a9-8efe-8534334bb851\"\
-              \n    },\n    \"roles\" : {\n      \"href\" : \"https://yourshop.api.urn/users/d56ebbec-b4c4-42a9-8efe-8534334bb851/roles\"\
+              ,\n  \"enabled\" : true,\n  \"_id\" : \"f9b0774b-2649-49db-896d-a57e97e25792\"\
+              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/users/f9b0774b-2649-49db-896d-a57e97e25792\"\
+              \n    },\n    \"user\" : {\n      \"href\" : \"https://yourshop.api.urn/users/f9b0774b-2649-49db-896d-a57e97e25792\"\
+              \n    },\n    \"roles\" : {\n      \"href\" : \"https://yourshop.api.urn/users/f9b0774b-2649-49db-896d-a57e97e25792/roles\"\
               \n    }\n  }\n}"
           schema:
-            $ref: "#/definitions/users_id_change-password-999644662"
+            $ref: "#/definitions/users-999644662"
   /users/{id}/change-username:
     post:
       tags:
@@ -10983,15 +11005,15 @@ paths:
           description: ""
           examples:
             application/json: "{\n  \"username\" : \"new username\",\n  \"email\"\
-              \ : \"baxter@example.org\",\n  \"enabled\" : true,\n  \"_id\" : \"d9a1de60-c2fa-4928-a7f4-887571947cd0\"\
-              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/users/d9a1de60-c2fa-4928-a7f4-887571947cd0\"\
-              \n    },\n    \"user\" : {\n      \"href\" : \"https://yourshop.api.urn/users/d9a1de60-c2fa-4928-a7f4-887571947cd0\"\
-              \n    },\n    \"change-password\" : {\n      \"href\" : \"https://yourshop.api.urn/users/d9a1de60-c2fa-4928-a7f4-887571947cd0/change-password\"\
-              \n    },\n    \"change-email-request\" : {\n      \"href\" : \"https://yourshop.api.urn/users/d9a1de60-c2fa-4928-a7f4-887571947cd0/change-email-request\"\
-              \n    },\n    \"roles\" : {\n      \"href\" : \"https://yourshop.api.urn/users/d9a1de60-c2fa-4928-a7f4-887571947cd0/roles\"\
+              \ : \"baxter@example.org\",\n  \"enabled\" : true,\n  \"_id\" : \"c9a48f13-81b8-452b-86e1-6058315c6178\"\
+              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/users/c9a48f13-81b8-452b-86e1-6058315c6178\"\
+              \n    },\n    \"user\" : {\n      \"href\" : \"https://yourshop.api.urn/users/c9a48f13-81b8-452b-86e1-6058315c6178\"\
+              \n    },\n    \"change-password\" : {\n      \"href\" : \"https://yourshop.api.urn/users/c9a48f13-81b8-452b-86e1-6058315c6178/change-password\"\
+              \n    },\n    \"change-email-request\" : {\n      \"href\" : \"https://yourshop.api.urn/users/c9a48f13-81b8-452b-86e1-6058315c6178/change-email-request\"\
+              \n    },\n    \"roles\" : {\n      \"href\" : \"https://yourshop.api.urn/users/c9a48f13-81b8-452b-86e1-6058315c6178/roles\"\
               \n    }\n  }\n}"
           schema:
-            $ref: "#/definitions/users_id_change-password-999644662"
+            $ref: "#/definitions/users-999644662"
   /users/{id}/roles:
     get:
       tags:
@@ -11013,289 +11035,22 @@ paths:
           examples:
             application/hal+json: "{\n  \"_embedded\" : {\n    \"roles\" : [ {\n \
               \     \"generated\" : true,\n      \"name\" : \"merchant\",\n      \"\
-              _embedded\" : {\n        \"scopes\" : [ {\n          \"name\" : \"aapp:r\"\
+              _embedded\" : {\n        \"scopes\" : [ {\n          \"name\" : \"prda:r\"\
               ,\n          \"_links\" : {\n            \"self\" : {\n            \
-              \  \"href\" : \"https://yourshop.api.urn/scopes/dc247616-a868-4aa6-bdc7-bd648b1d15f1{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"aapu:u\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/09a55d59-5af9-42ca-a8b7-83ca3364afc5{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"acap:m\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/b9e506e4-e47c-4179-8113-fbdd10f951d1{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"acap:r\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/b26c0d00-6235-4ac9-907b-05e67fd26171{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"adon:m\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/4d7b33d1-4763-4d33-b48b-09c473b6dd52{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"adon:r\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/4b00228a-94ca-4cdc-b3ee-fabdce059aee{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"amad:c\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/0ee27d77-c8c6-40dc-a2c8-5fc4c97575a7{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"amad:d\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/95b55394-75a3-43b3-b814-5d388637b745{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"amad:r\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/a20ef102-6c39-42fd-9c04-63850a5b47ca{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"amad:u\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/812a820d-f1c0-4c7f-a191-7c65ec27d6a9{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"amzp:c\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/bb00495e-4da4-4520-bab5-2ef8f3cf3e2c{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"amzp:d\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/6e9412cf-9e74-4a4c-8d27-2a8ffb403a4f{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"amzp:r\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/104a543f-268f-4496-b32e-f97818ec81b5{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"amzp:u\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/8bd13970-5168-42f7-93a7-715ff3a43595{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"amzs:r\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/47921eb9-e30c-4346-ad70-ac4752b1df33{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"catg:c\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/70fac461-0700-4b39-828c-adaaafa167b2{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"catg:d\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/6e8bc330-a420-46ad-9482-80f981362997{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"catg:r\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/26cd1e55-8850-4e02-8015-a5acaaaee130{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"catg:u\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/1984636e-0c46-4186-aa55-1b992ce017b9{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"clpr:c\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/d218e7d9-9d41-4dc5-ac9d-3ea682c046ff{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"clpr:r\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/ac89be5c-4b97-4012-9423-92e465963f7e{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"cset:r\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/c4f6528b-257f-409e-9d1d-48279f77670b{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"cset:u\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/19c115ff-a305-4dc5-940f-827ca57078c0{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"feat:r\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/d9099528-6f21-4e24-a379-cf4bf88cfb8e{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"gsad:c\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/247917ac-e30e-4982-9dee-e91041f2a17a{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"gsad:d\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/2369e95b-3da0-4856-ad0c-e2dc2f21f1ff{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"gsad:r\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/f36828d9-4b7b-45dd-be1d-add290a2b6ab{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"gsad:u\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/c885f057-3fdb-4675-af5b-dbf5e5f1e6fc{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"gspr:c\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/48ab533c-d164-4930-bba4-8370210248a1{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"gspr:d\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/437bbebc-8c6e-4629-ab3c-5c3f01f32758{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"gspr:r\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/db0d7ec7-1313-4ab2-843d-2ecede26d2d3{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"gspr:u\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/414eaa13-45d4-4eb8-871c-e67bc469ea23{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"lcnt:u\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/9ffeb35b-59bc-4d76-af25-fa39e8b61ef1{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"legl:r\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/3c8b659b-0ac8-4192-8d33-819ee5ea4f8d{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"legl:u\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/1b9697d1-6c7c-4d0c-9fd6-cff8fcb28382{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"mtst:r\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/3a0daf18-643d-4fdd-8b30-1cba74ead415{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"oapp:r\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/30870a92-a2ea-4e4c-9aff-76658e9fb32f{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"orde:r\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/1ba19096-118f-4941-be2a-36de0180309e{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"ordn:r\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/09b18696-16eb-429c-b537-5c662f22cabd{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"ordn:u\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/a5e8fed2-a0a3-499c-9aa2-065ffd88e963{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"ordp:r\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/bc650bfe-8eeb-4267-aa1d-6cbeb65f5d3c{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"ordr:r\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/b353a2c3-37be-425a-b6c9-42d82de97d4a{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"ordr:u\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/c254ce0e-f1c1-4d92-8354-fcc53649d88b{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"papp:m\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/ff4a3a20-037d-4d6f-88fa-f7747163a24a{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"prad:c\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/c6636f5c-e574-4c46-8f1b-76e376031297{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"prad:d\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/33cc0ab0-d942-4418-8a40-7be642ebeaf1{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"prad:r\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/8635627b-d087-4ed7-b5f6-04184ea58399{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"prad:u\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/81d11103-8aec-4277-957e-957ebc90426b{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"prda:r\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/a4869296-d215-47b1-8feb-7bdf9b0fd65b{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"prda:u\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/4de9cc81-fda5-4a88-bc8b-54a297b2329b{?projection}\"\
+              \  \"href\" : \"https://yourshop.api.urn/scopes/7b2da2e4-b8c0-4c60-82a2-4f9415a8856f{?projection}\"\
               ,\n              \"templated\" : true\n            }\n          }\n\
               \        }, {\n          \"name\" : \"prod:c\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/cd0e908c-ffec-4ba5-885a-209db9a7ad4c{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"prod:d\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/190116c7-fd70-46b5-a3fb-e930dc309c4f{?projection}\"\
+              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/2f92c2c0-eb27-4afb-a96f-975901e1009f{?projection}\"\
               ,\n              \"templated\" : true\n            }\n          }\n\
               \        }, {\n          \"name\" : \"prod:r\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/8873599f-1d26-442d-9891-1a0604b481ee{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"prod:u\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/82d5fbe9-e77b-47c9-b506-774629102078{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"prst:r\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/a906cdad-55b1-468e-83c8-5618a9bb067b{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"prst:u\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/3f355cec-dc0a-4bf1-a2f6-595fc75f57d7{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"pymt:r\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/2734a2df-c5bd-4c4e-91f7-4f7d835b0852{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"pymt:u\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/754d66e5-f07e-4d56-8599-15f02f2ace40{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"pypr:c\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/8f6b8e30-9b85-448d-aa88-8327a2cced44{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"pypr:r\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/ae44e883-8c4c-4aaa-8530-222603f4bab2{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"pypr:u\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/e2db24ed-0cb7-49d2-a587-97e3f576bb6d{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"rfpr:r\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/267a277f-4af5-4ae8-864c-226c7d164fc7{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"rfpr:u\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/3a755893-4aa5-4987-b661-3ce4e4e52c18{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"ridx:a\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/5cb3f4f9-7483-4f8c-87f3-b61ae0ba25ec{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"ridx:c\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/d1b407d1-162b-4c3d-aa62-5ff4b5593a25{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"ridx:p\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/ee328698-6e34-4494-8523-b7b281342b52{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"rtpr:c\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/626cb5de-e3fe-4aee-a615-74e22fccd7f0{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"rtpr:r\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/545db1d6-aab5-49da-90fe-0a46be33f5cc{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"scop:r\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/de609227-8b4e-4de6-b08d-a4a4eb63b307{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"shad:r\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/5c83bc78-b629-4bf0-afc8-c7e0024f4a26{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"shad:u\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/4ade92ce-4ae2-4816-b894-7fe4c282f577{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"shat:c\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/3283fbcf-408c-4332-a403-501773bea173{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"shat:d\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/7720c902-5ea9-4a46-879b-9a5156b888bd{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"shat:r\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/9916d93e-5102-478b-9f1c-fa9bef620a73{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"shat:u\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/3866909f-6374-4f9c-809c-66fb00e6d210{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"shcl:c\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/990dfad7-8655-4aef-a50c-67a4411c8ebf{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"shim:c\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/f915ba93-989b-454e-b1e7-a5e4577de567{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"shim:d\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/d3ae4fc4-bf9f-450f-a1b8-a0f8a0ce25e8{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"shim:r\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/09910756-7f84-4da5-b78d-63c20d497c6a{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"shop:r\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/6d6593a9-bc6a-4b07-8ca0-ec0d1c534797{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"shop:u\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/737c6c9e-2060-4272-aeba-3e8a9287333b{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"shpr:c\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/aa43fcbf-8cc4-4133-8958-bb93bdc9c8fd{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"shpr:r\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/35003b8a-48a9-493a-a5fc-957248a94097{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"shpr:u\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/febb426c-8fc1-473e-88f9-4e4e9866a90d{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"shpz:c\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/98a8e825-a32a-43bb-9e73-7f2a47189f49{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"shpz:d\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/07bff8da-fce2-4271-970a-5c260fba1674{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"shpz:r\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/ac3b16a6-5f58-4ae1-888a-e8797081b55b{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"shpz:u\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/a4143199-9346-4873-83b7-7fe680c76884{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"user:c\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/1c05a462-e45b-4cfe-8f06-905a557a0843{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"user:d\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/eaf9f7ae-5a68-40ae-b4f5-66d85865dd11{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"user:r\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/25949a6b-16a3-4bf5-b66a-e37aebab8352{?projection}\"\
-              ,\n              \"templated\" : true\n            }\n          }\n\
-              \        }, {\n          \"name\" : \"user:u\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/d2b9b44c-3d4d-4838-9250-c5c906b5ce8b{?projection}\"\
+              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/c00a966f-eaaa-4c2e-838f-26eb36cc457e{?projection}\"\
               ,\n              \"templated\" : true\n            }\n          }\n\
               \        } ]\n      },\n      \"_links\" : {\n        \"self\" : {\n\
-              \          \"href\" : \"https://yourshop.api.urn/roles/bbe79aeb-6174-4d5e-b6e6-91e0e93aeb46\"\
-              \n        },\n        \"role\" : {\n          \"href\" : \"https://yourshop.api.urn/roles/bbe79aeb-6174-4d5e-b6e6-91e0e93aeb46\"\
-              \n        },\n        \"scopes\" : {\n          \"href\" : \"https://yourshop.api.urn/roles/bbe79aeb-6174-4d5e-b6e6-91e0e93aeb46/scopes\"\
-              \n        }\n      }\n    } ]\n  },\n  \"_links\" : {\n    \"self\"\
-              \ : {\n      \"href\" : \"https://yourshop.api.urn/users/7bf627f4-009a-4245-b639-1c234b14ce22/roles\"\
+              \          \"href\" : \"https://yourshop.api.urn/roles/70c487f9-a840-4cca-b82f-f5536b98fb97\"\
+              \n        },\n        \"role\" : {\n          \"href\" : \"https://yourshop.api.urn/roles/70c487f9-a840-4cca-b82f-f5536b98fb97\"\
+              \n        },\n        \"scopes\" : {\n          \"href\" : \"https://yourshop.api.urn/roles/70c487f9-a840-4cca-b82f-f5536b98fb97/scopes{?projection}\"\
+              ,\n          \"templated\" : true\n        }\n      }\n    } ]\n  },\n\
+              \  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/users/06f37169-2802-40a5-b2b3-0c185e0f866d/roles\"\
               \n    }\n  }\n}"
           schema:
             $ref: "#/definitions/google-shopping_taxonomy-309252030"
@@ -11322,9 +11077,9 @@ paths:
         name: ""
         required: false
         schema:
-          $ref: "#/definitions/users_id_roles-2104995567"
+          $ref: "#/definitions/users_id_roles1649905872"
         x-examples:
-          text/uri-list: "https://yourshop.api.urn/roles/14da850d-7896-4d59-b77e-1cf7210b2be3"
+          text/uri-list: "https://yourshop.api.urn/roles/aa710f45-2d5c-4950-b907-ee7712951cf9"
       responses:
         204:
           description: ""
@@ -11354,9 +11109,9 @@ paths:
         name: ""
         required: false
         schema:
-          $ref: "#/definitions/users_id_roles-1944407500"
+          $ref: "#/definitions/users_id_roles1296308199"
         x-examples:
-          text/uri-list: "https://yourshop.api.urn/roles/679c42c0-d687-4764-b2d8-f92d83b64ef8"
+          text/uri-list: "https://yourshop.api.urn/roles/37ba22a3-aaa6-4212-838a-0d591cd2f49d"
       responses:
         204:
           description: ""
@@ -11648,6 +11403,7 @@ securityDefinitions:
       shat:u: "No description"
       shat:d: "No description"
       shim:d: "No description"
+      shop:d: "No description"
       user:r: "No description"
       user:c: "No description"
       user:d: "No description"
@@ -11732,6 +11488,7 @@ securityDefinitions:
       shat:u: "No description"
       shat:d: "No description"
       shim:d: "No description"
+      shop:d: "No description"
       user:r: "No description"
       user:c: "No description"
       user:d: "No description"
@@ -12270,8 +12027,6 @@ definitions:
       \ : [ {\n    \"quantity\" : 3,\n    \"productLineItemId\" : \"6f3fe608-c5c2-4d95-80b7-b27c0ee93fa9\"\
       ,\n    \"status\" : \"RETURNED\"\n  } ],\n  \"shippingPriceRefund\" : {\n  \
       \  \"currency\" : \"EUR\",\n    \"amount\" : 19.99\n  }\n}"
-  users_id_roles-1944407500:
-    example: "https://yourshop.api.urn/roles/679c42c0-d687-4764-b2d8-f92d83b64ef8"
   amazon-marketplace_access-data-1529372953:
     type: "object"
     required:
@@ -12429,10 +12184,6 @@ definitions:
         type: "object"
         description: "The status of the product publication process."
         properties: {}
-  amazon-marketplace_products475137901:
-    example: "https://yourshop.api.urn/products/5c06cb5e-94f1-4c8f-86d6-c10d1ea2ee01\n\
-      https://yourshop.api.urn/products/3348b2f0-15d5-4abc-ac20-777ea760d63f\nhttps://yourshop.api.urn/products/54af8e29-654e-41f4-b554-da447d4a7d5e\n\
-      https://yourshop.api.urn/products/407b5e8a-1075-4591-a186-240a2abce1d7\nhttps://yourshop.api.urn/products/b68341b1-cd3b-41bd-ae73-6768cecae314\n"
   custom-apps_customAppId-1474085348:
     type: "object"
     required:
@@ -12462,6 +12213,10 @@ definitions:
       scopes:
         type: "array"
         description: "The scopes the app requires to interact with the shop system."
+  amazon-marketplace_products475137901:
+    example: "https://yourshop.api.urn/products/5c06cb5e-94f1-4c8f-86d6-c10d1ea2ee01\n\
+      https://yourshop.api.urn/products/3348b2f0-15d5-4abc-ac20-777ea760d63f\nhttps://yourshop.api.urn/products/54af8e29-654e-41f4-b554-da447d4a7d5e\n\
+      https://yourshop.api.urn/products/407b5e8a-1075-4591-a186-240a2abce1d7\nhttps://yourshop.api.urn/products/b68341b1-cd3b-41bd-ae73-6768cecae314\n"
   orders_order-id_processes_shippings1947038285:
     type: "object"
     properties:
@@ -13704,6 +13459,8 @@ definitions:
         type: "string"
         description: "The endpoint that generates a reference to the payment provider's\
           \ site for merchant self-signup."
+  products_productId_availability_enable-stock-management-168834398:
+    example: "{ \"initialAvailableStock\" : 100, \"stockThreshold\" : 2 }"
   users_id_change-password466429056:
     type: "object"
     required:
@@ -13719,8 +13476,6 @@ definitions:
         minLength: 1
     example: "{\"currentPassword\":\"GoodPassword01!;)\",\"newPassword\":\"ValidPassword123\"\
       }"
-  products_productId_availability_enable-stock-management-168834398:
-    example: "{ \"initialAvailableStock\" : 100, \"stockThreshold\" : 2 }"
   custom-apps_customAppId_upgrade-1420447974:
     type: "object"
     properties:
@@ -14428,7 +14183,7 @@ definitions:
         type: "object"
         description: "See <<hypermedia,Hypermedia>>"
         properties: {}
-  users_id_change-password-999644662:
+  users-999644662:
     type: "object"
     required:
     - "email"
@@ -15117,7 +14872,7 @@ definitions:
       taxModel\" : \"GROSS\",\n    \"currency\" : \"EUR\",\n    \"amount\" : 20\n\
       \  },\n  \"freeShippingValue\" : {\n    \"taxModel\" : \"GROSS\",\n    \"currency\"\
       \ : \"EUR\",\n    \"amount\" : 200\n  }\n}"
-  custom-apps-525208887:
+  custom-apps_customAppId_regenerate-secret-525208887:
     type: "object"
     required:
     - "name"
@@ -15348,6 +15103,8 @@ definitions:
       :1500,\"width\":1000,\"height\":2000},\"refPrice\":{\"refQuantity\":1,\"unit\"\
       :\"LITER\",\"quantity\":0.75,\"price\":null},\"shippingPeriod\":{\"minDays\"\
       :2,\"maxDays\":4,\"displayUnit\":\"WEEKS\"}}"
+  users_id_roles1649905872:
+    example: "https://yourshop.api.urn/roles/aa710f45-2d5c-4950-b907-ee7712951cf9"
   google-shopping_products_publish714309657:
     example: "https://yourshop.api.urn/google-shopping/products/e108c932-db7f-4339-9444-182d34d95088\n\
       https://yourshop.api.urn/google-shopping/products/6162bbe7-8547-4a56-a277-fdb2272ced76\n\
@@ -15419,8 +15176,6 @@ definitions:
         description: "The current password of the user account."
     example: "{\n  \"currentPassword\" : \"GoodPassword01!;)\",\n  \"newEmail\" :\
       \ \"newEmail@Gmail.com\"\n}"
-  users_id_roles-2104995567:
-    example: "https://yourshop.api.urn/roles/14da850d-7896-4d59-b77e-1cf7210b2be3"
   amazon-marketplace_products_publish860504529:
     example: "https:/yourshop.api.urn/amazon-marketplace/products/c40e5685-2ae8-4ebb-a04b-897f40a03ef5\n\
       https:/yourshop.api.urn/amazon-marketplace/products/bd8c9ebc-cf0b-47dc-946e-b7838290b567\n\
@@ -15483,6 +15238,8 @@ definitions:
       _id:
         type: "string"
         description: "The ID of the return process."
+  users_id_roles1296308199:
+    example: "https://yourshop.api.urn/roles/37ba22a3-aaa6-4212-838a-0d591cd2f49d"
   shop-2118505709:
     type: "object"
     required:
@@ -16160,6 +15917,25 @@ definitions:
                 categoryId:
                   type: "number"
                   description: "The Google Shopping category id."
+  users-615951201:
+    type: "object"
+    required:
+    - "email"
+    - "password"
+    properties:
+      password:
+        type: "string"
+        description: "The password of the user."
+        minLength: 1
+      email:
+        type: "string"
+        description: "The email address of the user account."
+      username:
+        type: "string"
+        description: "Optional field. The username that identifies the user. If no\
+          \ username is passed, the email address is set as the username."
+    example: "{\"username\":\"user\",\"password\":\"GoodPassword01!;)\",\"email\"\
+      :\"baxter@example.org\"}"
   product-attribute-definitions_productAttributeDefinitionName1150957388:
     type: "object"
     required:
@@ -16255,25 +16031,6 @@ definitions:
         description: "The email address of the shop owner."
         minLength: 0
         maxLength: 150
-  users-615951201:
-    type: "object"
-    required:
-    - "email"
-    - "password"
-    properties:
-      password:
-        type: "string"
-        description: "The password of the user."
-        minLength: 1
-      email:
-        type: "string"
-        description: "The email address of the user account."
-      username:
-        type: "string"
-        description: "Optional field. The username that identifies the user. If no\
-          \ username is passed, the email address is set as the username."
-    example: "{\"username\":\"user\",\"password\":\"GoodPassword01!;)\",\"email\"\
-      :\"baxter@example.org\"}"
   shipping-zones_shippingZoneId-1063469749:
     type: "object"
     properties:
@@ -16444,16 +16201,16 @@ definitions:
       addressExtension\":\"Hinterhof\",\"postalCode\":\"20999\",\"city\":\"Alsterwasser\"\
       ,\"country\":\"DE\",\"state\":\"Hamburg\",\"email\":\"a.alsterh@example.com\"\
       ,\"phone\":\"(800) 555-0102\",\"mobile\":\"(800) 555-0103\"}"
-  shop_images918748962:
+  shop_images_search_find-by-label918748962:
     type: "object"
     properties:
-      _links:
-        type: "object"
-        description: "See <<hypermedia,Hypermedia>>"
-        properties: {}
       _embedded:
         type: "object"
         description: "List of <<resources-image-get,images>>"
+        properties: {}
+      _links:
+        type: "object"
+        description: "See <<hypermedia,Hypermedia>>"
         properties: {}
       page:
         type: "object"
@@ -16751,6 +16508,28 @@ definitions:
         description: "List of currencies that are supported by this shop. Defaults\
           \ to `defaultCurrency`. The `defaultCurrency` is always included in this\
           \ list."
+  signers-663923302:
+    type: "object"
+    properties:
+      _embedded:
+        type: "object"
+        properties:
+          signers:
+            type: "array"
+            items:
+              type: "object"
+              properties:
+                createdAt:
+                  type: "string"
+                  description: "The date at which the signer was created."
+                _links:
+                  type: "object"
+                  description: "See <<hypermedia,Hypermedia>>"
+                  properties: {}
+                _id:
+                  type: "string"
+                  description: "The immutable, unique identifier of the requested\
+                    \ resource."
   custom-apps1591820054:
     type: "object"
     required:
@@ -16772,89 +16551,6 @@ definitions:
         description: "The scopes the app requires to interact with the shop system."
     example: "{\n  \"name\" : \"Mobile Product Management\",\n  \"callbackUrl\" :\
       \ \"https://hostname/callback\",\n  \"scopes\" : [\"prod:crud\"]\n}"
-  carts_cartId_payment-methods-663923302:
-    type: "object"
-    properties:
-      _embedded:
-        type: "object"
-        properties:
-          payment-methods:
-            type: "array"
-            items:
-              type: "object"
-              properties:
-                lineItemPrice:
-                  type: "object"
-                  description: "The calculated price for this payment on the current\
-                    \ cart."
-                  properties: {}
-                _embedded:
-                  type: "object"
-                  properties:
-                    payment-method:
-                      type: "object"
-                      properties:
-                        taxClass:
-                          type: "string"
-                          description: "The tax class. Can be `REGULAR`, `REDUCED`,\
-                            \ or `EXEMPT`."
-                        onlinePayment:
-                          type: "boolean"
-                          description: "Indicates if the payment method is an online\
-                            \ payment. Can be `true` or `false`."
-                        description:
-                          type: "string"
-                          description: "Description of the payment method that is\
-                            \ used during checkout."
-                        officialName:
-                          type: "string"
-                          description: "The official name of the payment method chosen\
-                            \ by the merchant during setup."
-                        serviceableCountries:
-                          type: "array"
-                          description: "The list of target countries this payment\
-                            \ method can be used in."
-                        discountOrFee:
-                          type: "object"
-                          description: "The details about the fee to be payed or discount\
-                            \ to be granted for this payment method."
-                          properties:
-                            type:
-                              type: "string"
-                              description: "The discount or fee can be an absolute\
-                                \ or a percentage based value. Can be one of `PERCENTAGE`\
-                                \ or `ABSOLUTE`. `ABSOLUTE` contains another attribute\
-                                \ `absoluteValue` with a positive or negative `price`.\
-                                \ `PERCENTAGE` contains another attribute `percentageValue`\
-                                \ with a negative or positive percentage value."
-                        name:
-                          type: "string"
-                          description: "The name of the payment method that is used\
-                            \ during checkout."
-                        officialDescription:
-                          type: "string"
-                          description: "The official description of the payment method\
-                            \ chosen by the merchant during setup."
-                        position:
-                          type: "number"
-                          description: "The sorting position of the payment method\
-                            \ in the merchant administration in relation to other\
-                            \ payment methods."
-                        _id:
-                          type: "string"
-                          description: "The immutable, unique identifier of the requested\
-                            \ resource."
-                        activated:
-                          type: "boolean"
-                          description: "Indicates if a payment method is active. Can\
-                            \ be `true` or `false`."
-                selectable:
-                  type: "boolean"
-                  description: "Indicates if the payment method can be selected for\
-                    \ the current cart. A payment method can be become non-selectable\
-                    \ if the cart is modified, so that the `minimumOrderValue` is\
-                    \ no longer reached. A cart with an non-selectable payment method\
-                    \ cannot be ordered."
   payment-methods_paymentMethodId-482487356:
     type: "object"
     required:
