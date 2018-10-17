@@ -443,11 +443,45 @@ paths:
               \ ],\n      \"developer\" : \"Mr D. Veloper\",\n      \"supportEmail\"\
               \ : \"support@example.com\",\n      \"iconUrl\" : \"http://example.com/icon.png\"\
               ,\n      \"appUrl\" : \"http://example.com/login\",\n      \"logoUrl\"\
-              \ : \"http://example.com/login\",\n      \"videoUrl\" : \"http://example.com/video.mpg\"\
+              \ : \"http://example.com/logo.png\",\n      \"videoUrl\" : \"http://example.com/video.mpg\"\
               ,\n      \"infoWebsite\" : \"http://example.com/info.html\",\n     \
               \ \"supportWebsite\" : \"http://example.com/support.html\",\n      \"\
-              feature\" : \"app.test-app\",\n      \"clientId\" : \"client_id\",\n\
-              \      \"scopes\" : [ \"ordr:u\", \"ordr:r\" ],\n      \"callbackUrl\"\
+              clientId\" : \"client_id\",\n      \"scopes\" : [ \"ordr:u\", \"ordr:r\"\
+              \ ],\n      \"callbackUrl\" : \"http://example.com/callback\",\n   \
+              \   \"additionalConfiguration\" : \"{\\n  \\\"productionConfiguration\\\
+              \" : {\\n    \\\"name\\\" : \\\"my-payment-integration\\\",\\n    \\\
+              \"referralUriTemplate\\\" : \\\"http://example.com/referral\\\",\\n\
+              \    \\\"integrationStatusUri\\\" : \\\"http://example.com/merchant-account-status/{shopId}\\\
+              \",\\n    \\\"disconnectUri\\\" : \\\"http://example.com/merchant-account-status/{shopId}\\\
+              \",\\n    \\\"createPaymentUri\\\" : \\\"http://example.com/payments\\\
+              \",\\n    \\\"capturePaymentUri\\\" : \\\"http://example.com/payments/{id}/capture\\\
+              \",\\n    \\\"refundPaymentUri\\\" : \\\"http://example.com/payments/{id}/refund\\\
+              \",\\n    \\\"workflow\\\" : \\\"PAYMENT_ON_SELECTION\\\",\\n    \\\"\
+              logos\\\" : [ {\\n      \\\"setName\\\" : \\\"official\\\",\\n     \
+              \ \\\"variant\\\" : \\\"DETAILS\\\",\\n      \\\"uri\\\" : \\\"http://example.com/details.png\\\
+              \"\\n    }, {\\n      \\\"setName\\\" : \\\"official\\\",\\n      \\\
+              \"variant\\\" : \\\"LIST\\\",\\n      \\\"uri\\\" : \\\"http://example.com/list.png\\\
+              \"\\n    }, {\\n      \\\"setName\\\" : \\\"official\\\",\\n      \\\
+              \"variant\\\" : \\\"TILE\\\",\\n      \\\"uri\\\" : \\\"http://example.com/tile.png\\\
+              \"\\n    }, {\\n      \\\"setName\\\" : \\\"official\\\",\\n      \\\
+              \"variant\\\" : \\\"STOREFRONT\\\",\\n      \\\"uri\\\" : \\\"http://example.com/storefront.png\\\
+              \"\\n    } ]\\n  }\\n}\",\n      \"createdAt\" : \"2018-10-17T11:14:44.082\"\
+              ,\n      \"feature\" : \"app.another-test-app\",\n      \"type\" : \"\
+              PAYMENT\",\n      \"_id\" : \"4c4ba1a2-1cdd-4a30-a090-be04a8c0a874\"\
+              ,\n      \"installationStatus\" : \"INSTALLED\",\n      \"_links\" :\
+              \ {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/apps/4c4ba1a2-1cdd-4a30-a090-be04a8c0a874\"\
+              \n        },\n        \"uninstall\" : {\n          \"href\" : \"https://yourshop.api.urn/apps/4c4ba1a2-1cdd-4a30-a090-be04a8c0a874/uninstall\"\
+              \n        }\n      }\n    }, {\n      \"name\" : \"Simple + Secure Payment\"\
+              ,\n      \"price\" : \"19 USD per month\",\n      \"description\" :\
+              \ \"A payment method for simple and secure payments in online shops.\"\
+              ,\n      \"images\" : [ \"http://example.com/image1.png\" ],\n     \
+              \ \"developer\" : \"Mr D. Veloper\",\n      \"supportEmail\" : \"support@example.com\"\
+              ,\n      \"iconUrl\" : \"http://example.com/icon.png\",\n      \"appUrl\"\
+              \ : \"http://example.com/login\",\n      \"logoUrl\" : \"http://example.com/logo.png\"\
+              ,\n      \"videoUrl\" : \"http://example.com/video.mpg\",\n      \"\
+              infoWebsite\" : \"http://example.com/info.html\",\n      \"supportWebsite\"\
+              \ : \"http://example.com/support.html\",\n      \"clientId\" : \"client_id\"\
+              ,\n      \"scopes\" : [ \"ordr:u\", \"ordr:r\" ],\n      \"callbackUrl\"\
               \ : \"http://example.com/callback\",\n      \"additionalConfiguration\"\
               \ : \"{\\n  \\\"productionConfiguration\\\" : {\\n    \\\"name\\\" :\
               \ \\\"my-payment-integration\\\",\\n    \\\"referralUriTemplate\\\"\
@@ -466,51 +500,18 @@ paths:
               \"variant\\\" : \\\"TILE\\\",\\n      \\\"uri\\\" : \\\"http://example.com/tile.png\\\
               \"\\n    }, {\\n      \\\"setName\\\" : \\\"official\\\",\\n      \\\
               \"variant\\\" : \\\"STOREFRONT\\\",\\n      \\\"uri\\\" : \\\"http://example.com/storefront.png\\\
-              \"\\n    } ]\\n  }\\n}\",\n      \"createdAt\" : \"2018-10-16T09:08:28.55\"\
-              ,\n      \"type\" : \"PAYMENT\",\n      \"_id\" : \"7f1d0605-cb0b-4c35-a67d-a4d1d45b5ae3\"\
-              ,\n      \"installationStatus\" : \"INSTALLED\",\n      \"_links\" :\
-              \ {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/apps/7f1d0605-cb0b-4c35-a67d-a4d1d45b5ae3\"\
-              \n        },\n        \"uninstall\" : {\n          \"href\" : \"https://yourshop.api.urn/apps/7f1d0605-cb0b-4c35-a67d-a4d1d45b5ae3/uninstall\"\
-              \n        }\n      }\n    }, {\n      \"name\" : \"Simple + Secure Payment\"\
-              ,\n      \"price\" : \"19 USD per month\",\n      \"description\" :\
-              \ \"A payment method for simple and secure payments in online shops.\"\
-              ,\n      \"images\" : [ \"http://example.com/image1.png\" ],\n     \
-              \ \"developer\" : \"Mr D. Veloper\",\n      \"supportEmail\" : \"support@example.com\"\
-              ,\n      \"iconUrl\" : \"http://example.com/icon.png\",\n      \"appUrl\"\
-              \ : \"http://example.com/login\",\n      \"logoUrl\" : \"http://example.com/login\"\
-              ,\n      \"videoUrl\" : \"http://example.com/video.mpg\",\n      \"\
-              infoWebsite\" : \"http://example.com/info.html\",\n      \"supportWebsite\"\
-              \ : \"http://example.com/support.html\",\n      \"feature\" : \"app.another-test-app\"\
-              ,\n      \"clientId\" : \"client_id\",\n      \"scopes\" : [ \"ordr:u\"\
-              , \"ordr:r\" ],\n      \"callbackUrl\" : \"http://example.com/callback\"\
-              ,\n      \"additionalConfiguration\" : \"{\\n  \\\"productionConfiguration\\\
-              \" : {\\n    \\\"name\\\" : \\\"my-payment-integration\\\",\\n    \\\
-              \"referralUriTemplate\\\" : \\\"http://example.com/referral\\\",\\n\
-              \    \\\"integrationStatusUri\\\" : \\\"http://example.com/merchant-account-status/{shopId}\\\
-              \",\\n    \\\"disconnectUri\\\" : \\\"http://example.com/merchant-account-status/{shopId}\\\
-              \",\\n    \\\"createPaymentUri\\\" : \\\"http://example.com/payments\\\
-              \",\\n    \\\"capturePaymentUri\\\" : \\\"http://example.com/payments/{id}/capture\\\
-              \",\\n    \\\"refundPaymentUri\\\" : \\\"http://example.com/payments/{id}/refund\\\
-              \",\\n    \\\"workflow\\\" : \\\"PAYMENT_ON_SELECTION\\\",\\n    \\\"\
-              logos\\\" : [ {\\n      \\\"setName\\\" : \\\"official\\\",\\n     \
-              \ \\\"variant\\\" : \\\"DETAILS\\\",\\n      \\\"uri\\\" : \\\"http://example.com/details.png\\\
-              \"\\n    }, {\\n      \\\"setName\\\" : \\\"official\\\",\\n      \\\
-              \"variant\\\" : \\\"LIST\\\",\\n      \\\"uri\\\" : \\\"http://example.com/list.png\\\
-              \"\\n    }, {\\n      \\\"setName\\\" : \\\"official\\\",\\n      \\\
-              \"variant\\\" : \\\"TILE\\\",\\n      \\\"uri\\\" : \\\"http://example.com/tile.png\\\
-              \"\\n    }, {\\n      \\\"setName\\\" : \\\"official\\\",\\n      \\\
-              \"variant\\\" : \\\"STOREFRONT\\\",\\n      \\\"uri\\\" : \\\"http://example.com/storefront.png\\\
-              \"\\n    } ]\\n  }\\n}\",\n      \"createdAt\" : \"2018-10-16T09:08:28.839\"\
-              ,\n      \"type\" : \"PAYMENT\",\n      \"_id\" : \"8fa9d79c-eda5-45cd-b550-61031b121f47\"\
-              ,\n      \"installationStatus\" : \"INSTALLED\",\n      \"_links\" :\
-              \ {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/apps/8fa9d79c-eda5-45cd-b550-61031b121f47\"\
-              \n        },\n        \"uninstall\" : {\n          \"href\" : \"https://yourshop.api.urn/apps/8fa9d79c-eda5-45cd-b550-61031b121f47/uninstall\"\
+              \"\\n    } ]\\n  }\\n}\",\n      \"createdAt\" : \"2018-10-17T11:14:43.841\"\
+              ,\n      \"feature\" : \"app.test-app\",\n      \"type\" : \"PAYMENT\"\
+              ,\n      \"_id\" : \"a782a75b-4307-4b13-8424-f2dd3ff0137f\",\n     \
+              \ \"installationStatus\" : \"INSTALLED\",\n      \"_links\" : {\n  \
+              \      \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/apps/a782a75b-4307-4b13-8424-f2dd3ff0137f\"\
+              \n        },\n        \"uninstall\" : {\n          \"href\" : \"https://yourshop.api.urn/apps/a782a75b-4307-4b13-8424-f2dd3ff0137f/uninstall\"\
               \n        }\n      }\n    } ]\n  },\n  \"_links\" : {\n    \"self\"\
               \ : {\n      \"href\" : \"https://yourshop.api.urn/apps\"\n    }\n \
               \ },\n  \"page\" : {\n    \"size\" : 20,\n    \"totalElements\" : 2,\n\
               \    \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}"
           schema:
-            $ref: "#/definitions/signers-663923302"
+            $ref: "#/definitions/carts_cartId_payment-methods-663923302"
       security:
       - oauth2_accessCode:
         - "aapp:r"
@@ -546,16 +547,16 @@ paths:
               \ : [ \"http://example.com/image1.png\" ],\n  \"developer\" : \"Mr D.\
               \ Veloper\",\n  \"supportEmail\" : \"support@example.com\",\n  \"iconUrl\"\
               \ : \"http://example.com/icon.png\",\n  \"appUrl\" : \"http://example.com/login\"\
-              ,\n  \"logoUrl\" : \"http://example.com/login\",\n  \"videoUrl\" : \"\
-              http://example.com/video.mpg\",\n  \"infoWebsite\" : \"http://example.com/info.html\"\
+              ,\n  \"logoUrl\" : \"http://example.com/logo.png\",\n  \"videoUrl\"\
+              \ : \"http://example.com/video.mpg\",\n  \"infoWebsite\" : \"http://example.com/info.html\"\
               ,\n  \"supportWebsite\" : \"http://example.com/support.html\",\n  \"\
-              feature\" : \"app.test-app\",\n  \"clientId\" : \"client_id\",\n  \"\
-              scopes\" : [ \"ordr:u\", \"ordr:r\" ],\n  \"callbackUrl\" : \"http://example.com/callback\"\
-              ,\n  \"additionalConfiguration\" : \"{\\n  \\\"productionConfiguration\\\
-              \" : {\\n    \\\"name\\\" : \\\"my-payment-integration\\\",\\n    \\\
-              \"referralUriTemplate\\\" : \\\"http://example.com/referral\\\",\\n\
-              \    \\\"integrationStatusUri\\\" : \\\"http://example.com/merchant-account-status/{shopId}\\\
-              \",\\n    \\\"disconnectUri\\\" : \\\"http://example.com/merchant-account-status/{shopId}\\\
+              clientId\" : \"client_id\",\n  \"scopes\" : [ \"ordr:u\", \"ordr:r\"\
+              \ ],\n  \"callbackUrl\" : \"http://example.com/callback\",\n  \"additionalConfiguration\"\
+              \ : \"{\\n  \\\"productionConfiguration\\\" : {\\n    \\\"name\\\" :\
+              \ \\\"my-payment-integration\\\",\\n    \\\"referralUriTemplate\\\"\
+              \ : \\\"http://example.com/referral\\\",\\n    \\\"integrationStatusUri\\\
+              \" : \\\"http://example.com/merchant-account-status/{shopId}\\\",\\\
+              n    \\\"disconnectUri\\\" : \\\"http://example.com/merchant-account-status/{shopId}\\\
               \",\\n    \\\"createPaymentUri\\\" : \\\"http://example.com/payments\\\
               \",\\n    \\\"capturePaymentUri\\\" : \\\"http://example.com/payments/{id}/capture\\\
               \",\\n    \\\"refundPaymentUri\\\" : \\\"http://example.com/payments/{id}/refund\\\
@@ -568,10 +569,11 @@ paths:
               \"variant\\\" : \\\"TILE\\\",\\n      \\\"uri\\\" : \\\"http://example.com/tile.png\\\
               \"\\n    }, {\\n      \\\"setName\\\" : \\\"official\\\",\\n      \\\
               \"variant\\\" : \\\"STOREFRONT\\\",\\n      \\\"uri\\\" : \\\"http://example.com/storefront.png\\\
-              \"\\n    } ]\\n  }\\n}\",\n  \"createdAt\" : \"2018-10-16T09:08:24.709\"\
-              ,\n  \"type\" : \"PAYMENT\",\n  \"_id\" : \"e0c9aa55-c351-4b0b-9402-33ff3c8a2cf9\"\
-              ,\n  \"installationStatus\" : \"AVAILABLE\",\n  \"_links\" : {\n   \
-              \ \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/apps/e0c9aa55-c351-4b0b-9402-33ff3c8a2cf9\"\
+              \"\\n    } ]\\n  }\\n}\",\n  \"createdAt\" : \"2018-10-17T11:14:40.263\"\
+              ,\n  \"feature\" : \"app.test-app\",\n  \"type\" : \"PAYMENT\",\n  \"\
+              _id\" : \"f9977f63-a401-48f9-9bb8-04e16e3ea88f\",\n  \"installationStatus\"\
+              \ : \"AVAILABLE\",\n  \"_links\" : {\n    \"self\" : {\n      \"href\"\
+              \ : \"https://yourshop.api.urn/apps/f9977f63-a401-48f9-9bb8-04e16e3ea88f\"\
               \n    }\n  }\n}"
           schema:
             $ref: "#/definitions/apps_appId_uninstall-847214231"
@@ -605,16 +607,16 @@ paths:
               \ : [ \"http://example.com/image1.png\" ],\n  \"developer\" : \"Mr D.\
               \ Veloper\",\n  \"supportEmail\" : \"support@example.com\",\n  \"iconUrl\"\
               \ : \"http://example.com/icon.png\",\n  \"appUrl\" : \"http://example.com/login\"\
-              ,\n  \"logoUrl\" : \"http://example.com/login\",\n  \"videoUrl\" : \"\
-              http://example.com/video.mpg\",\n  \"infoWebsite\" : \"http://example.com/info.html\"\
+              ,\n  \"logoUrl\" : \"http://example.com/logo.png\",\n  \"videoUrl\"\
+              \ : \"http://example.com/video.mpg\",\n  \"infoWebsite\" : \"http://example.com/info.html\"\
               ,\n  \"supportWebsite\" : \"http://example.com/support.html\",\n  \"\
-              feature\" : \"app.test-app\",\n  \"clientId\" : \"client_id\",\n  \"\
-              scopes\" : [ \"ordr:u\", \"ordr:r\" ],\n  \"callbackUrl\" : \"http://example.com/callback\"\
-              ,\n  \"additionalConfiguration\" : \"{\\n  \\\"productionConfiguration\\\
-              \" : {\\n    \\\"name\\\" : \\\"my-payment-integration\\\",\\n    \\\
-              \"referralUriTemplate\\\" : \\\"http://example.com/referral\\\",\\n\
-              \    \\\"integrationStatusUri\\\" : \\\"http://example.com/merchant-account-status/{shopId}\\\
-              \",\\n    \\\"disconnectUri\\\" : \\\"http://example.com/merchant-account-status/{shopId}\\\
+              clientId\" : \"client_id\",\n  \"scopes\" : [ \"ordr:u\", \"ordr:r\"\
+              \ ],\n  \"callbackUrl\" : \"http://example.com/callback\",\n  \"additionalConfiguration\"\
+              \ : \"{\\n  \\\"productionConfiguration\\\" : {\\n    \\\"name\\\" :\
+              \ \\\"my-payment-integration\\\",\\n    \\\"referralUriTemplate\\\"\
+              \ : \\\"http://example.com/referral\\\",\\n    \\\"integrationStatusUri\\\
+              \" : \\\"http://example.com/merchant-account-status/{shopId}\\\",\\\
+              n    \\\"disconnectUri\\\" : \\\"http://example.com/merchant-account-status/{shopId}\\\
               \",\\n    \\\"createPaymentUri\\\" : \\\"http://example.com/payments\\\
               \",\\n    \\\"capturePaymentUri\\\" : \\\"http://example.com/payments/{id}/capture\\\
               \",\\n    \\\"refundPaymentUri\\\" : \\\"http://example.com/payments/{id}/refund\\\
@@ -627,10 +629,11 @@ paths:
               \"variant\\\" : \\\"TILE\\\",\\n      \\\"uri\\\" : \\\"http://example.com/tile.png\\\
               \"\\n    }, {\\n      \\\"setName\\\" : \\\"official\\\",\\n      \\\
               \"variant\\\" : \\\"STOREFRONT\\\",\\n      \\\"uri\\\" : \\\"http://example.com/storefront.png\\\
-              \"\\n    } ]\\n  }\\n}\",\n  \"createdAt\" : \"2018-10-16T09:08:30.051\"\
-              ,\n  \"type\" : \"PAYMENT\",\n  \"_id\" : \"d8df828a-25e3-406e-ab18-a96b4c68cd73\"\
-              ,\n  \"installationStatus\" : \"AVAILABLE\",\n  \"_links\" : {\n   \
-              \ \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/apps/d8df828a-25e3-406e-ab18-a96b4c68cd73\"\
+              \"\\n    } ]\\n  }\\n}\",\n  \"createdAt\" : \"2018-10-17T11:14:45.202\"\
+              ,\n  \"feature\" : \"app.test-app\",\n  \"type\" : \"PAYMENT\",\n  \"\
+              _id\" : \"1ce8c114-1e95-41e0-b4e9-77a72a7819c0\",\n  \"installationStatus\"\
+              \ : \"AVAILABLE\",\n  \"_links\" : {\n    \"self\" : {\n      \"href\"\
+              \ : \"https://yourshop.api.urn/apps/1ce8c114-1e95-41e0-b4e9-77a72a7819c0\"\
               \n    }\n  }\n}"
           schema:
             $ref: "#/definitions/apps_appId_uninstall-847214231"
@@ -1362,7 +1365,7 @@ paths:
               \ : {\n      \"href\" : \"https://yourshop.api.urn/carts/ab006c82-7f9d-436e-8a98-bc5cd9cc96aa/payment-methods\"\
               \n    }\n  }\n}"
           schema:
-            $ref: "#/definitions/signers-663923302"
+            $ref: "#/definitions/carts_cartId_payment-methods-663923302"
   /carts/{cartId}/shipping-address:
     put:
       tags:
@@ -2658,30 +2661,30 @@ paths:
               \ {\n      \"clientId\" : \"client_id\",\n      \"name\" : \"Mobile\
               \ Product Management\",\n      \"scopes\" : [ \"ordr:u\", \"ordr:r\"\
               \ ],\n      \"callbackUrl\" : \"https://hostname/callback\",\n     \
-              \ \"_id\" : \"777ec57e-8c99-4c94-a77d-2b7b61bd290c\",\n      \"_links\"\
-              \ : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/custom-apps/777ec57e-8c99-4c94-a77d-2b7b61bd290c\"\
+              \ \"_id\" : \"337d8363-a66f-44fb-9fff-20748203b4dc\",\n      \"_links\"\
+              \ : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/custom-apps/337d8363-a66f-44fb-9fff-20748203b4dc\"\
               \n        },\n        \"regenerate-secret\" : {\n          \"href\"\
-              \ : \"https://yourshop.api.urn/custom-apps/777ec57e-8c99-4c94-a77d-2b7b61bd290c/regenerate-secret\"\
+              \ : \"https://yourshop.api.urn/custom-apps/337d8363-a66f-44fb-9fff-20748203b4dc/regenerate-secret\"\
               \n        }\n      }\n    }, {\n      \"clientId\" : \"client_id\",\n\
               \      \"name\" : \"Mobile Product Management\",\n      \"scopes\" :\
               \ [ \"ordr:u\", \"ordr:r\" ],\n      \"callbackUrl\" : \"https://hostname/callback\"\
-              ,\n      \"_id\" : \"cd14b21d-ad22-4f86-9a6e-837d9fd5ae3d\",\n     \
-              \ \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/custom-apps/cd14b21d-ad22-4f86-9a6e-837d9fd5ae3d\"\
+              ,\n      \"_id\" : \"ece1d50b-d3db-480e-b06d-e18a7d0c85b5\",\n     \
+              \ \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/custom-apps/ece1d50b-d3db-480e-b06d-e18a7d0c85b5\"\
               \n        },\n        \"regenerate-secret\" : {\n          \"href\"\
-              \ : \"https://yourshop.api.urn/custom-apps/cd14b21d-ad22-4f86-9a6e-837d9fd5ae3d/regenerate-secret\"\
+              \ : \"https://yourshop.api.urn/custom-apps/ece1d50b-d3db-480e-b06d-e18a7d0c85b5/regenerate-secret\"\
               \n        }\n      }\n    }, {\n      \"clientId\" : \"client_id\",\n\
               \      \"name\" : \"Mobile Product Management\",\n      \"scopes\" :\
               \ [ \"ordr:u\", \"ordr:r\" ],\n      \"callbackUrl\" : \"https://hostname/callback\"\
-              ,\n      \"_id\" : \"e875aaaf-11b3-4ed0-867b-3bb88da89fb2\",\n     \
-              \ \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/custom-apps/e875aaaf-11b3-4ed0-867b-3bb88da89fb2\"\
+              ,\n      \"_id\" : \"f53fbbdf-f534-4d72-8ac8-3a11c8126f8f\",\n     \
+              \ \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/custom-apps/f53fbbdf-f534-4d72-8ac8-3a11c8126f8f\"\
               \n        },\n        \"regenerate-secret\" : {\n          \"href\"\
-              \ : \"https://yourshop.api.urn/custom-apps/e875aaaf-11b3-4ed0-867b-3bb88da89fb2/regenerate-secret\"\
+              \ : \"https://yourshop.api.urn/custom-apps/f53fbbdf-f534-4d72-8ac8-3a11c8126f8f/regenerate-secret\"\
               \n        }\n      }\n    } ]\n  },\n  \"_links\" : {\n    \"self\"\
               \ : {\n      \"href\" : \"https://yourshop.api.urn/custom-apps?page=0&size=20\"\
               \n    }\n  },\n  \"page\" : {\n    \"size\" : 20,\n    \"totalElements\"\
               \ : 3,\n    \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}"
           schema:
-            $ref: "#/definitions/signers-663923302"
+            $ref: "#/definitions/carts_cartId_payment-methods-663923302"
       security:
       - oauth2_accessCode:
         - "acap:r"
@@ -2714,12 +2717,12 @@ paths:
             application/hal+json: "{\n  \"clientSecret\" : \"client_secret\",\n  \"\
               clientId\" : \"client_id\",\n  \"scopes\" : [ \"ordr:u\", \"ordr:r\"\
               \ ],\n  \"callbackUrl\" : \"https://hostname/callback\",\n  \"name\"\
-              \ : \"Mobile Product Management\",\n  \"_id\" : \"d6434c99-c003-4345-bc01-070f1051956a\"\
-              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/custom-apps/d6434c99-c003-4345-bc01-070f1051956a\"\
-              \n    },\n    \"regenerate-secret\" : {\n      \"href\" : \"https://yourshop.api.urn/custom-apps/d6434c99-c003-4345-bc01-070f1051956a/regenerate-secret\"\
+              \ : \"Mobile Product Management\",\n  \"_id\" : \"78bb28e4-0f14-4cb0-b1e1-ac4e47618151\"\
+              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/custom-apps/78bb28e4-0f14-4cb0-b1e1-ac4e47618151\"\
+              \n    },\n    \"regenerate-secret\" : {\n      \"href\" : \"https://yourshop.api.urn/custom-apps/78bb28e4-0f14-4cb0-b1e1-ac4e47618151/regenerate-secret\"\
               \n    }\n  }\n}"
           schema:
-            $ref: "#/definitions/custom-apps_customAppId_regenerate-secret-525208887"
+            $ref: "#/definitions/custom-apps-525208887"
       security:
       - oauth2_accessCode:
         - "acap:m"
@@ -2747,9 +2750,9 @@ paths:
             application/hal+json: "{\n  \"clientId\" : \"client_id\",\n  \"name\"\
               \ : \"Mobile Product Management\",\n  \"scopes\" : [ \"ordr:u\", \"\
               ordr:r\" ],\n  \"callbackUrl\" : \"https://hostname/callback\",\n  \"\
-              _id\" : \"e7a2d63a-44ba-4b1f-8c82-73e3ee9a2ba1\",\n  \"_links\" : {\n\
-              \    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/custom-apps/e7a2d63a-44ba-4b1f-8c82-73e3ee9a2ba1\"\
-              \n    },\n    \"regenerate-secret\" : {\n      \"href\" : \"https://yourshop.api.urn/custom-apps/e7a2d63a-44ba-4b1f-8c82-73e3ee9a2ba1/regenerate-secret\"\
+              _id\" : \"57ed6cd2-5d69-4675-8b73-2f9295d2a7fa\",\n  \"_links\" : {\n\
+              \    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/custom-apps/57ed6cd2-5d69-4675-8b73-2f9295d2a7fa\"\
+              \n    },\n    \"regenerate-secret\" : {\n      \"href\" : \"https://yourshop.api.urn/custom-apps/57ed6cd2-5d69-4675-8b73-2f9295d2a7fa/regenerate-secret\"\
               \n    }\n  }\n}"
           schema:
             $ref: "#/definitions/custom-apps_customAppId-1474085348"
@@ -2789,9 +2792,9 @@ paths:
           examples:
             application/hal+json: "{\n  \"clientId\" : \"client_id\",\n  \"name\"\
               \ : \"Managed Payment Methods\",\n  \"scopes\" : [ \"pymt:m\" ],\n \
-              \ \"callbackUrl\" : \"https://hostname/callback\",\n  \"_id\" : \"5daa954b-182e-4b8f-ab30-5111f3d2eb01\"\
-              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/custom-apps/5daa954b-182e-4b8f-ab30-5111f3d2eb01\"\
-              \n    },\n    \"regenerate-secret\" : {\n      \"href\" : \"https://yourshop.api.urn/custom-apps/5daa954b-182e-4b8f-ab30-5111f3d2eb01/regenerate-secret\"\
+              \ \"callbackUrl\" : \"https://hostname/callback\",\n  \"_id\" : \"0a9f75c6-96e9-4f2a-ac0d-c5af51f728ed\"\
+              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/custom-apps/0a9f75c6-96e9-4f2a-ac0d-c5af51f728ed\"\
+              \n    },\n    \"regenerate-secret\" : {\n      \"href\" : \"https://yourshop.api.urn/custom-apps/0a9f75c6-96e9-4f2a-ac0d-c5af51f728ed/regenerate-secret\"\
               \n    }\n  }\n}"
           schema:
             $ref: "#/definitions/custom-apps_customAppId-1474085348"
@@ -2840,15 +2843,15 @@ paths:
         200:
           description: ""
           examples:
-            application/hal+json: "{\n  \"clientSecret\" : \"56ef4f9c-e30b-4553-ab47-5fc6d1beb38f\"\
+            application/hal+json: "{\n  \"clientSecret\" : \"a34c90aa-2c79-44f4-bd81-cab7de901122\"\
               ,\n  \"clientId\" : \"client_id\",\n  \"scopes\" : [ \"ordr:u\", \"\
               ordr:r\" ],\n  \"callbackUrl\" : \"https://hostname/callback\",\n  \"\
-              name\" : \"Mobile Product Management\",\n  \"_id\" : \"0efd21f0-b3ea-481c-835f-cb8b3cc54cbf\"\
-              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/custom-apps/0efd21f0-b3ea-481c-835f-cb8b3cc54cbf\"\
-              \n    },\n    \"regenerate-secret\" : {\n      \"href\" : \"https://yourshop.api.urn/custom-apps/0efd21f0-b3ea-481c-835f-cb8b3cc54cbf/regenerate-secret\"\
+              name\" : \"Mobile Product Management\",\n  \"_id\" : \"8bddea8e-c1e2-4e5b-9dd8-4a22fdd09c8a\"\
+              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/custom-apps/8bddea8e-c1e2-4e5b-9dd8-4a22fdd09c8a\"\
+              \n    },\n    \"regenerate-secret\" : {\n      \"href\" : \"https://yourshop.api.urn/custom-apps/8bddea8e-c1e2-4e5b-9dd8-4a22fdd09c8a/regenerate-secret\"\
               \n    }\n  }\n}"
           schema:
-            $ref: "#/definitions/custom-apps_customAppId_regenerate-secret-525208887"
+            $ref: "#/definitions/custom-apps-525208887"
       security:
       - oauth2_accessCode:
         - "acap:m"
@@ -2899,27 +2902,26 @@ paths:
           description: ""
           examples:
             application/hal+json: "{\n  \"additionalConfiguration\" : null,\n  \"\
-              feature\" : \"app.sas-shipping-app\",\n  \"supportWebsite\" : {\n  \
-              \  \"en-US\" : \"http://example.com/support.html\"\n  },\n  \"clientId\"\
-              \ : \"[client_id]\",\n  \"scopes\" : [ \"prod:m\" ],\n  \"callbackUrl\"\
-              \ : \"http://example.com/some\",\n  \"createdAt\" : \"2018-10-16T09:08:48.261\"\
-              ,\n  \"developer\" : {\n    \"en-US\" : \"ePages Inc.\"\n  },\n  \"\
-              supportEmail\" : {\n    \"en-US\" : \"supporters@example.com\"\n  },\n\
-              \  \"iconUrl\" : {\n    \"en-US\" : \"http://example.com/icon.png\"\n\
-              \  },\n  \"appUrl\" : {\n    \"en-US\" : \"http://example.com/new-login\"\
-              \n  },\n  \"logoUrl\" : {\n    \"en-US\" : \"http://example.com/new-login\"\
+              images\" : {\n    \"en-US\" : [ \"http://example.com/image1.png\" ]\n\
+              \  },\n  \"developer\" : {\n    \"en-US\" : \"ePages Inc.\"\n  },\n\
+              \  \"supportEmail\" : {\n    \"en-US\" : \"supporters@example.com\"\n\
+              \  },\n  \"iconUrl\" : {\n    \"en-US\" : \"http://example.com/icon.png\"\
+              \n  },\n  \"appUrl\" : {\n    \"en-US\" : \"http://example.com/new-login\"\
+              \n  },\n  \"logoUrl\" : {\n    \"en-US\" : \"http://example.com/new-logo.png\"\
               \n  },\n  \"videoUrl\" : {\n    \"en-US\" : \"http://example.com/video.mpg\"\
               \n  },\n  \"infoWebsite\" : {\n    \"en-US\" : \"http://example.com/video.mpg\"\
-              \n  },\n  \"images\" : {\n    \"en-US\" : [ \"http://example.com/image1.png\"\
-              \ ]\n  },\n  \"price\" : {\n    \"en-US\" : \"20 USD per month\"\n \
-              \ },\n  \"description\" : {\n    \"en-US\" : \"A payment method for\
-              \ simple and secure shipping in online shops.\"\n  },\n  \"name\" :\
-              \ {\n    \"en-US\" : \"Simple + Secure Shipping\"\n  },\n  \"type\"\
-              \ : \"SHIPPING\",\n  \"_links\" : {\n    \"self\" : {\n      \"href\"\
-              \ : \"https://yourshop.api.urn/add-on-management/apps/f286683c-5d70-4413-a53f-75e21b76f2a3\"\
-              \n    },\n    \"install\" : {\n      \"href\" : \"https://yourshop.api.urn/add-on-management/apps/f286683c-5d70-4413-a53f-75e21b76f2a3/install\"\
-              \n    },\n    \"regenerate-secret\" : {\n      \"href\" : \"https://yourshop.api.urn/add-on-management/apps/f286683c-5d70-4413-a53f-75e21b76f2a3/regenerate-secret\"\
-              \n    }\n  },\n  \"_id\" : \"f286683c-5d70-4413-a53f-75e21b76f2a3\"\n\
+              \n  },\n  \"supportWebsite\" : {\n    \"en-US\" : \"http://example.com/support.html\"\
+              \n  },\n  \"clientId\" : \"[client_id]\",\n  \"scopes\" : [ \"prod:m\"\
+              \ ],\n  \"callbackUrl\" : \"http://example.com/some\",\n  \"createdAt\"\
+              \ : \"2018-10-17T11:15:04.396\",\n  \"price\" : {\n    \"en-US\" : \"\
+              20 USD per month\"\n  },\n  \"feature\" : \"app.sas-shipping-app\",\n\
+              \  \"description\" : {\n    \"en-US\" : \"A payment method for simple\
+              \ and secure shipping in online shops.\"\n  },\n  \"name\" : {\n   \
+              \ \"en-US\" : \"Simple + Secure Shipping\"\n  },\n  \"type\" : \"SHIPPING\"\
+              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/add-on-management/apps/c9dede88-bb3b-47c9-9ce3-f1d3538f4724\"\
+              \n    },\n    \"install\" : {\n      \"href\" : \"https://yourshop.api.urn/add-on-management/apps/c9dede88-bb3b-47c9-9ce3-f1d3538f4724/install\"\
+              \n    },\n    \"regenerate-secret\" : {\n      \"href\" : \"https://yourshop.api.urn/add-on-management/apps/c9dede88-bb3b-47c9-9ce3-f1d3538f4724/regenerate-secret\"\
+              \n    }\n  },\n  \"_id\" : \"c9dede88-bb3b-47c9-9ce3-f1d3538f4724\"\n\
               }"
       security:
       - oauth2_accessCode:
@@ -3471,11 +3473,11 @@ paths:
         200:
           description: ""
           examples:
-            application/json: "{\n  \"access_token\" : \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjEifQ.eyJ1c2VyX25hbWUiOiJ1c2VyIiwic2NvcGUiOlsicHJvZDpyYyJdLCJ0ZW5hbnRJZCI6MTQzOCwiZXhwIjoxNTM5OTQ5ODIxLCJpYXQiOjE1Mzk2OTA2MjEsInVzZXJJZCI6IjNlMmZhY2YwLTE0OTItNGU0NC05ZWU3LWE2MTVkNTA5NzliNCIsImp0aSI6ImY3NTU0MzkzLTgzODgtNDgxNi05NTkyLTQ4OWViZmE3NWE4YSIsImNsaWVudF9pZCI6InNhbXBsZS1jbGllbnQiLCJ1c2VybmFtZSI6InVzZXIifQ.c28gWLauTrBz_WD4CLHtFqCva6Enyhv069VNh92tIZbDkRTmi5ye2bNpeN2nOCSgX6tKfJvIJA8gx2lft7FbjxyviLojRyYwBa96t1y1PrF2PsOBKjtvAzuiM4Hcsh5xNAF2TKveYUdY2mMH9lLfi0xWTMDFILb40cu0AbdF8gYT3Rwq4Gn2OeS1M4JPYPY2Yx_314CdznYgoyf49xPzrDDkpecuKGKB9QysHTdKOaBWa4YIAgCm0TBnS0JKpAcZ6XlHgehwqhrmQu4BCrC2KuTymV04axkwh3d9FvJO7rr6bwWfTX4UIr8z8ecOsfpoxGZRKi3vnvx1Og3meT4WmQ\"\
-              ,\n  \"token_type\" : \"bearer\",\n  \"refresh_token\" : \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjEifQ.eyJ1c2VyX25hbWUiOiJ1c2VyIiwic2NvcGUiOlsicHJvZDpyYyJdLCJhdGkiOiJmNzU1NDM5My04Mzg4LTQ4MTYtOTU5Mi00ODllYmZhNzVhOGEiLCJ0ZW5hbnRJZCI6MTQzOCwiZXhwIjoxNTQyMjgyNjIxLCJpYXQiOjE1Mzk2OTA2MjEsInVzZXJJZCI6IjNlMmZhY2YwLTE0OTItNGU0NC05ZWU3LWE2MTVkNTA5NzliNCIsImp0aSI6ImJmNmZhYTNmLWI5MWYtNDU1Zi1iMmUzLTFjMjk4MzVhYTc2YyIsImNsaWVudF9pZCI6InNhbXBsZS1jbGllbnQiLCJ1c2VybmFtZSI6InVzZXIifQ.JMZEZ20McV8lhB9cmywDUzz00NtUkuQKyxaVJ4qm0AjLBIRQO5H0ldu_shzC_Hqt8RgEtLYj9MgTVBYL83OYxLcdN_kB-yNeg2OH7B9sMWeVnNHpXXZwjVwMxRMrwFFGf7FaNvyMhCyRgoGKelkUmlbMyOFJvOzLox7UhB2u3ArVGkINt6OcEY4wQAMqjuf3WUlRtg06GJj6M8KsE9Z2KByXRDq183qYeHBu8lVLzm3NRChMt2NMjNYxBhPvraug5-lFpj1Q6heun2bRYc1Ye38bqfGdUnt9MXfQIfHcVO-a2QddHY9hbZL3v_fLg-nCzYTDwmyN33JGlcon-b7KbA\"\
+            application/json: "{\n  \"access_token\" : \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjEifQ.eyJ1c2VyX25hbWUiOiJ1c2VyIiwic2NvcGUiOlsicHJvZDpyYyJdLCJ0ZW5hbnRJZCI6MTQzOCwiZXhwIjoxNTQwMDM1MzU0LCJpYXQiOjE1Mzk3NzYxNTQsInVzZXJJZCI6IjIwYmY1ZjkxLTU5YzctNGQ4Zi04ZTc0LTQ3MDcyMjVkMDY4OCIsImp0aSI6ImU0ZjJlYjc1LTc2ZTUtNDE2Yi05YjkyLWE4YTM2ZDljOTVhNSIsImNsaWVudF9pZCI6InNhbXBsZS1jbGllbnQiLCJ1c2VybmFtZSI6InVzZXIifQ.GXBj89YlIJ8IbTEzHLmkfIBhRQ9Cov7pkcH3YoRvnyWEx-qd3UxSQeonGpd5pIwTqLFTNDMrsOk0rRBDZcZE2MaqUlz306L2Q_-if6W7BvGz_gSq3vwWTxNzI_dIUAKS_iWOr6X9ldNWGsTh86nkZ2wPfMt4LAgk1r7F9v3_xyxq3b83RBhmTAWADMFn6okxKZMiFED4aFdg4Z9v95DCwk7fUlUrrnqPAjUC1kRCXHVgLUwVjiQFaLF8_S29YHDZ2rW6zplalTD5pMaq0cqjxDGI_NSq0Z3g9VxgiujxJQtC4PN4mbhVobjls3WskVr1ypn1-9SXSkeuFekVExZ03Q\"\
+              ,\n  \"token_type\" : \"bearer\",\n  \"refresh_token\" : \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjEifQ.eyJ1c2VyX25hbWUiOiJ1c2VyIiwic2NvcGUiOlsicHJvZDpyYyJdLCJhdGkiOiJlNGYyZWI3NS03NmU1LTQxNmItOWI5Mi1hOGEzNmQ5Yzk1YTUiLCJ0ZW5hbnRJZCI6MTQzOCwiZXhwIjoxNTQyMzY4MTU0LCJpYXQiOjE1Mzk3NzYxNTQsInVzZXJJZCI6IjIwYmY1ZjkxLTU5YzctNGQ4Zi04ZTc0LTQ3MDcyMjVkMDY4OCIsImp0aSI6ImY3ZTlmNjFjLTJiNTctNDEyNS04Y2I2LWIzNTE0ZDdkMjViYiIsImNsaWVudF9pZCI6InNhbXBsZS1jbGllbnQiLCJ1c2VybmFtZSI6InVzZXIifQ.DgsoyK5d-A0kX9LTrjmlxuJBEVZGLc5zbWBRT-EOsLjq-xiLuK5HcXHvTwp5RIWlGyNU5rHWCZPZU0n_17If4WEDqzA9UymW8hDPZUVp-lhN910qArh0Gnw-XIANaMGi5wWccpr2Cq4O4n9NmcqxaTvFtEfuUcqo29EO_d9oYii3bH7AUy6mhDGF-UpSUpqFlOXJdmYEs468nbXdGnribK69laZTjPQqB8edobalJ9xIYQ4pvGxRPyHWAJMbAvI_9v1sOmbe3XO8l0QFeNymb5nNZnT4XBb6O7lKppTMzJpdHt83QIobERCmIGydtN7yCaOV7O7EDlLSQIcsbf1zFw\"\
               ,\n  \"expires_in\" : 259199,\n  \"scope\" : \"prod:rc\",\n  \"tenantId\"\
-              \ : 1438,\n  \"iat\" : 1539690621,\n  \"userId\" : \"3e2facf0-1492-4e44-9ee7-a615d50979b4\"\
-              ,\n  \"username\" : \"user\",\n  \"jti\" : \"f7554393-8388-4816-9592-489ebfa75a8a\"\
+              \ : 1438,\n  \"iat\" : 1539776154,\n  \"userId\" : \"20bf5f91-59c7-4d8f-8e74-4707225d0688\"\
+              ,\n  \"username\" : \"user\",\n  \"jti\" : \"e4f2eb75-76e5-416b-9b92-a8a36d9c95a5\"\
               \n}"
           schema:
             $ref: "#/definitions/oauth_token1255780863"
@@ -9352,16 +9354,16 @@ paths:
           examples:
             application/hal+json: "{\n  \"_embedded\" : {\n    \"scopes\" : [ {\n\
               \      \"name\" : \"ordr:r\",\n      \"_links\" : {\n        \"self\"\
-              \ : {\n          \"href\" : \"https://yourshop.api.urn/scopes/77b3e655-196e-4ed3-a584-897add294183\"\
-              \n        },\n        \"scope\" : {\n          \"href\" : \"https://yourshop.api.urn/scopes/77b3e655-196e-4ed3-a584-897add294183{?projection}\"\
+              \ : {\n          \"href\" : \"https://yourshop.api.urn/scopes/6aefb865-a095-4f77-b46a-9a0bdd9536a6\"\
+              \n        },\n        \"scope\" : {\n          \"href\" : \"https://yourshop.api.urn/scopes/6aefb865-a095-4f77-b46a-9a0bdd9536a6{?projection}\"\
               ,\n          \"templated\" : true\n        }\n      }\n    }, {\n  \
               \    \"name\" : \"prod:c\",\n      \"_links\" : {\n        \"self\"\
-              \ : {\n          \"href\" : \"https://yourshop.api.urn/scopes/cc8806e3-ca59-41cd-ad49-f2114692dac4\"\
-              \n        },\n        \"scope\" : {\n          \"href\" : \"https://yourshop.api.urn/scopes/cc8806e3-ca59-41cd-ad49-f2114692dac4{?projection}\"\
+              \ : {\n          \"href\" : \"https://yourshop.api.urn/scopes/9f2d290d-2f26-4125-a2f8-4da958c4f11e\"\
+              \n        },\n        \"scope\" : {\n          \"href\" : \"https://yourshop.api.urn/scopes/9f2d290d-2f26-4125-a2f8-4da958c4f11e{?projection}\"\
               ,\n          \"templated\" : true\n        }\n      }\n    }, {\n  \
               \    \"name\" : \"ordr:u\",\n      \"_links\" : {\n        \"self\"\
-              \ : {\n          \"href\" : \"https://yourshop.api.urn/scopes/cd07913f-7a4c-4d4b-8917-e69f82b656f8\"\
-              \n        },\n        \"scope\" : {\n          \"href\" : \"https://yourshop.api.urn/scopes/cd07913f-7a4c-4d4b-8917-e69f82b656f8{?projection}\"\
+              \ : {\n          \"href\" : \"https://yourshop.api.urn/scopes/cd8e2f8f-9d3e-41b5-84ee-11c663707fe9\"\
+              \n        },\n        \"scope\" : {\n          \"href\" : \"https://yourshop.api.urn/scopes/cd8e2f8f-9d3e-41b5-84ee-11c663707fe9{?projection}\"\
               ,\n          \"templated\" : true\n        }\n      }\n    } ]\n  },\n\
               \  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/scopes{?page,size,sort,projection}\"\
               ,\n      \"templated\" : true\n    },\n    \"profile\" : {\n      \"\
@@ -10602,15 +10604,15 @@ paths:
           description: ""
           examples:
             application/hal+json: "{\n  \"_embedded\" : {\n    \"signers\" : [ {\n\
-              \      \"_id\" : \"13100b91-5ddd-4807-9552-896c6cc98a75\",\n      \"\
-              createdAt\" : \"2018-10-16T11:49:46.392\",\n      \"_links\" : {\n \
-              \       \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/signers/13100b91-5ddd-4807-9552-896c6cc98a75\"\
-              \n        }\n      }\n    }, {\n      \"_id\" : \"1b553237-1bd5-4393-8f6a-ca350afd43bb\"\
-              ,\n      \"createdAt\" : \"2018-10-16T11:49:46.436\",\n      \"_links\"\
-              \ : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/signers/1b553237-1bd5-4393-8f6a-ca350afd43bb\"\
+              \      \"_id\" : \"82f0e7e8-ad1b-4fe5-bee9-156c67f7d3d8\",\n      \"\
+              createdAt\" : \"2018-10-17T11:35:14.498\",\n      \"_links\" : {\n \
+              \       \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/signers/82f0e7e8-ad1b-4fe5-bee9-156c67f7d3d8\"\
+              \n        }\n      }\n    }, {\n      \"_id\" : \"b0d4a44e-e049-4473-b0c7-7430fd1f5f58\"\
+              ,\n      \"createdAt\" : \"2018-10-17T11:35:14.521\",\n      \"_links\"\
+              \ : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/signers/b0d4a44e-e049-4473-b0c7-7430fd1f5f58\"\
               \n        }\n      }\n    } ]\n  }\n}"
           schema:
-            $ref: "#/definitions/signers-663923302"
+            $ref: "#/definitions/carts_cartId_payment-methods-663923302"
     post:
       tags:
       - "signers"
@@ -10623,9 +10625,9 @@ paths:
         200:
           description: ""
           examples:
-            application/hal+json: "{\n  \"_id\" : \"84975741-e2ff-4253-960f-bfc644885569\"\
-              ,\n  \"sharedSecret\" : \"388jc7r3icklor1tqr34tc80dd\",\n  \"_links\"\
-              \ : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/signers/84975741-e2ff-4253-960f-bfc644885569\"\
+            application/hal+json: "{\n  \"_id\" : \"3de30323-6478-4a8c-8a57-443559a8ec2d\"\
+              ,\n  \"sharedSecret\" : \"fhs2q9kqaqdlg4hvad8546k4cf\",\n  \"_links\"\
+              \ : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/signers/3de30323-6478-4a8c-8a57-443559a8ec2d\"\
               \n    }\n  }\n}"
           schema:
             $ref: "#/definitions/signers1038188776"
@@ -10661,15 +10663,15 @@ paths:
           examples:
             application/hal+json: "{\n  \"_embedded\" : {\n    \"users\" : [ {\n \
               \     \"username\" : \"username\",\n      \"email\" : \"baxter@example.org\"\
-              ,\n      \"enabled\" : true,\n      \"_id\" : \"9d7e20ea-fa72-4cfb-86c4-5b082eaed81f\"\
+              ,\n      \"enabled\" : true,\n      \"_id\" : \"a65b2ce0-3128-413d-9a28-6f1d6c6f616a\"\
               ,\n      \"_links\" : {\n        \"self\" : {\n          \"href\" :\
-              \ \"https://yourshop.api.urn/users/9d7e20ea-fa72-4cfb-86c4-5b082eaed81f\"\
-              \n        },\n        \"user\" : {\n          \"href\" : \"https://yourshop.api.urn/users/9d7e20ea-fa72-4cfb-86c4-5b082eaed81f\"\
+              \ \"https://yourshop.api.urn/users/a65b2ce0-3128-413d-9a28-6f1d6c6f616a\"\
+              \n        },\n        \"user\" : {\n          \"href\" : \"https://yourshop.api.urn/users/a65b2ce0-3128-413d-9a28-6f1d6c6f616a\"\
               \n        },\n        \"change-password\" : {\n          \"href\" :\
-              \ \"https://yourshop.api.urn/users/9d7e20ea-fa72-4cfb-86c4-5b082eaed81f/change-password\"\
+              \ \"https://yourshop.api.urn/users/a65b2ce0-3128-413d-9a28-6f1d6c6f616a/change-password\"\
               \n        },\n        \"change-email-request\" : {\n          \"href\"\
-              \ : \"https://yourshop.api.urn/users/9d7e20ea-fa72-4cfb-86c4-5b082eaed81f/change-email-request\"\
-              \n        },\n        \"roles\" : {\n          \"href\" : \"https://yourshop.api.urn/users/9d7e20ea-fa72-4cfb-86c4-5b082eaed81f/roles\"\
+              \ : \"https://yourshop.api.urn/users/a65b2ce0-3128-413d-9a28-6f1d6c6f616a/change-email-request\"\
+              \n        },\n        \"roles\" : {\n          \"href\" : \"https://yourshop.api.urn/users/a65b2ce0-3128-413d-9a28-6f1d6c6f616a/roles\"\
               \n        }\n      }\n    } ]\n  },\n  \"_links\" : {\n    \"self\"\
               \ : {\n      \"href\" : \"https://yourshop.api.urn/users?page=0&size=20\"\
               \n    },\n    \"search\" : {\n      \"href\" : \"https://yourshop.api.urn/users/search\"\
@@ -10706,15 +10708,15 @@ paths:
           description: ""
           examples:
             application/json: "{\n  \"username\" : \"user\",\n  \"email\" : \"baxter@example.org\"\
-              ,\n  \"enabled\" : true,\n  \"_id\" : \"3e6722b7-807b-4958-b9ef-9b6ff1e293d0\"\
-              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/users/3e6722b7-807b-4958-b9ef-9b6ff1e293d0\"\
-              \n    },\n    \"user\" : {\n      \"href\" : \"https://yourshop.api.urn/users/3e6722b7-807b-4958-b9ef-9b6ff1e293d0\"\
-              \n    },\n    \"change-password\" : {\n      \"href\" : \"https://yourshop.api.urn/users/3e6722b7-807b-4958-b9ef-9b6ff1e293d0/change-password\"\
-              \n    },\n    \"change-email-request\" : {\n      \"href\" : \"https://yourshop.api.urn/users/3e6722b7-807b-4958-b9ef-9b6ff1e293d0/change-email-request\"\
-              \n    },\n    \"roles\" : {\n      \"href\" : \"https://yourshop.api.urn/users/3e6722b7-807b-4958-b9ef-9b6ff1e293d0/roles\"\
+              ,\n  \"enabled\" : true,\n  \"_id\" : \"065a5a95-20ac-49f0-875b-1d1999000871\"\
+              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/users/065a5a95-20ac-49f0-875b-1d1999000871\"\
+              \n    },\n    \"user\" : {\n      \"href\" : \"https://yourshop.api.urn/users/065a5a95-20ac-49f0-875b-1d1999000871\"\
+              \n    },\n    \"change-password\" : {\n      \"href\" : \"https://yourshop.api.urn/users/065a5a95-20ac-49f0-875b-1d1999000871/change-password\"\
+              \n    },\n    \"change-email-request\" : {\n      \"href\" : \"https://yourshop.api.urn/users/065a5a95-20ac-49f0-875b-1d1999000871/change-email-request\"\
+              \n    },\n    \"roles\" : {\n      \"href\" : \"https://yourshop.api.urn/users/065a5a95-20ac-49f0-875b-1d1999000871/roles\"\
               \n    }\n  }\n}"
           schema:
-            $ref: "#/definitions/users-999644662"
+            $ref: "#/definitions/users_id-999644662"
       security:
       - oauth2_accessCode:
         - "user:c"
@@ -10865,15 +10867,15 @@ paths:
           description: ""
           examples:
             application/hal+json: "{\n  \"username\" : \"username\",\n  \"email\"\
-              \ : \"baxter@example.org\",\n  \"enabled\" : true,\n  \"_id\" : \"61f23621-8e61-490d-89e4-a516a02224ad\"\
-              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/users/61f23621-8e61-490d-89e4-a516a02224ad\"\
-              \n    },\n    \"user\" : {\n      \"href\" : \"https://yourshop.api.urn/users/61f23621-8e61-490d-89e4-a516a02224ad\"\
-              \n    },\n    \"change-password\" : {\n      \"href\" : \"https://yourshop.api.urn/users/61f23621-8e61-490d-89e4-a516a02224ad/change-password\"\
-              \n    },\n    \"change-email-request\" : {\n      \"href\" : \"https://yourshop.api.urn/users/61f23621-8e61-490d-89e4-a516a02224ad/change-email-request\"\
-              \n    },\n    \"roles\" : {\n      \"href\" : \"https://yourshop.api.urn/users/61f23621-8e61-490d-89e4-a516a02224ad/roles\"\
+              \ : \"baxter@example.org\",\n  \"enabled\" : true,\n  \"_id\" : \"83a70b32-e58d-4db7-9798-a20ef5d4335c\"\
+              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/users/83a70b32-e58d-4db7-9798-a20ef5d4335c\"\
+              \n    },\n    \"user\" : {\n      \"href\" : \"https://yourshop.api.urn/users/83a70b32-e58d-4db7-9798-a20ef5d4335c\"\
+              \n    },\n    \"change-password\" : {\n      \"href\" : \"https://yourshop.api.urn/users/83a70b32-e58d-4db7-9798-a20ef5d4335c/change-password\"\
+              \n    },\n    \"change-email-request\" : {\n      \"href\" : \"https://yourshop.api.urn/users/83a70b32-e58d-4db7-9798-a20ef5d4335c/change-email-request\"\
+              \n    },\n    \"roles\" : {\n      \"href\" : \"https://yourshop.api.urn/users/83a70b32-e58d-4db7-9798-a20ef5d4335c/roles\"\
               \n    }\n  }\n}"
           schema:
-            $ref: "#/definitions/users-999644662"
+            $ref: "#/definitions/users_id-999644662"
       security:
       - oauth2_accessCode:
         - "user:r"
@@ -10893,10 +10895,10 @@ paths:
           description: ""
           examples:
             application/hal+json: "{\n  \"username\" : \"username\",\n  \"email\"\
-              \ : \"baxter@example.org\",\n  \"enabled\" : true,\n  \"_id\" : \"9b42c184-0585-4139-acbc-7a95ef9d14c2\"\
-              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/users/9b42c184-0585-4139-acbc-7a95ef9d14c2\"\
-              \n    },\n    \"user\" : {\n      \"href\" : \"https://yourshop.api.urn/users/9b42c184-0585-4139-acbc-7a95ef9d14c2\"\
-              \n    },\n    \"roles\" : {\n      \"href\" : \"https://yourshop.api.urn/users/9b42c184-0585-4139-acbc-7a95ef9d14c2/roles\"\
+              \ : \"baxter@example.org\",\n  \"enabled\" : true,\n  \"_id\" : \"d401aa16-77b4-4256-83fc-725360c7b5bb\"\
+              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/users/d401aa16-77b4-4256-83fc-725360c7b5bb\"\
+              \n    },\n    \"user\" : {\n      \"href\" : \"https://yourshop.api.urn/users/d401aa16-77b4-4256-83fc-725360c7b5bb\"\
+              \n    },\n    \"roles\" : {\n      \"href\" : \"https://yourshop.api.urn/users/d401aa16-77b4-4256-83fc-725360c7b5bb/roles\"\
               \n    }\n  }\n}"
       security:
       - oauth2_accessCode:
@@ -10968,13 +10970,13 @@ paths:
           description: ""
           examples:
             application/json: "{\n  \"username\" : \"user\",\n  \"email\" : \"baxter@example.org\"\
-              ,\n  \"enabled\" : true,\n  \"_id\" : \"f9b0774b-2649-49db-896d-a57e97e25792\"\
-              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/users/f9b0774b-2649-49db-896d-a57e97e25792\"\
-              \n    },\n    \"user\" : {\n      \"href\" : \"https://yourshop.api.urn/users/f9b0774b-2649-49db-896d-a57e97e25792\"\
-              \n    },\n    \"roles\" : {\n      \"href\" : \"https://yourshop.api.urn/users/f9b0774b-2649-49db-896d-a57e97e25792/roles\"\
+              ,\n  \"enabled\" : true,\n  \"_id\" : \"a5c8d385-b494-4aaa-b2a4-d30fa309f61f\"\
+              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/users/a5c8d385-b494-4aaa-b2a4-d30fa309f61f\"\
+              \n    },\n    \"user\" : {\n      \"href\" : \"https://yourshop.api.urn/users/a5c8d385-b494-4aaa-b2a4-d30fa309f61f\"\
+              \n    },\n    \"roles\" : {\n      \"href\" : \"https://yourshop.api.urn/users/a5c8d385-b494-4aaa-b2a4-d30fa309f61f/roles\"\
               \n    }\n  }\n}"
           schema:
-            $ref: "#/definitions/users-999644662"
+            $ref: "#/definitions/users_id-999644662"
   /users/{id}/change-username:
     post:
       tags:
@@ -11005,15 +11007,15 @@ paths:
           description: ""
           examples:
             application/json: "{\n  \"username\" : \"new username\",\n  \"email\"\
-              \ : \"baxter@example.org\",\n  \"enabled\" : true,\n  \"_id\" : \"c9a48f13-81b8-452b-86e1-6058315c6178\"\
-              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/users/c9a48f13-81b8-452b-86e1-6058315c6178\"\
-              \n    },\n    \"user\" : {\n      \"href\" : \"https://yourshop.api.urn/users/c9a48f13-81b8-452b-86e1-6058315c6178\"\
-              \n    },\n    \"change-password\" : {\n      \"href\" : \"https://yourshop.api.urn/users/c9a48f13-81b8-452b-86e1-6058315c6178/change-password\"\
-              \n    },\n    \"change-email-request\" : {\n      \"href\" : \"https://yourshop.api.urn/users/c9a48f13-81b8-452b-86e1-6058315c6178/change-email-request\"\
-              \n    },\n    \"roles\" : {\n      \"href\" : \"https://yourshop.api.urn/users/c9a48f13-81b8-452b-86e1-6058315c6178/roles\"\
+              \ : \"baxter@example.org\",\n  \"enabled\" : true,\n  \"_id\" : \"5d31ca0d-3ecb-4e56-aba8-9b76cbe25d64\"\
+              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/users/5d31ca0d-3ecb-4e56-aba8-9b76cbe25d64\"\
+              \n    },\n    \"user\" : {\n      \"href\" : \"https://yourshop.api.urn/users/5d31ca0d-3ecb-4e56-aba8-9b76cbe25d64\"\
+              \n    },\n    \"change-password\" : {\n      \"href\" : \"https://yourshop.api.urn/users/5d31ca0d-3ecb-4e56-aba8-9b76cbe25d64/change-password\"\
+              \n    },\n    \"change-email-request\" : {\n      \"href\" : \"https://yourshop.api.urn/users/5d31ca0d-3ecb-4e56-aba8-9b76cbe25d64/change-email-request\"\
+              \n    },\n    \"roles\" : {\n      \"href\" : \"https://yourshop.api.urn/users/5d31ca0d-3ecb-4e56-aba8-9b76cbe25d64/roles\"\
               \n    }\n  }\n}"
           schema:
-            $ref: "#/definitions/users-999644662"
+            $ref: "#/definitions/users_id-999644662"
   /users/{id}/roles:
     get:
       tags:
@@ -11037,20 +11039,20 @@ paths:
               \     \"generated\" : true,\n      \"name\" : \"merchant\",\n      \"\
               _embedded\" : {\n        \"scopes\" : [ {\n          \"name\" : \"prda:r\"\
               ,\n          \"_links\" : {\n            \"self\" : {\n            \
-              \  \"href\" : \"https://yourshop.api.urn/scopes/7b2da2e4-b8c0-4c60-82a2-4f9415a8856f{?projection}\"\
+              \  \"href\" : \"https://yourshop.api.urn/scopes/d282dda1-5cf7-4e12-bc71-93f67015bff3{?projection}\"\
               ,\n              \"templated\" : true\n            }\n          }\n\
               \        }, {\n          \"name\" : \"prod:c\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/2f92c2c0-eb27-4afb-a96f-975901e1009f{?projection}\"\
+              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/97bf0e94-86b6-4be1-b869-68361a02b531{?projection}\"\
               ,\n              \"templated\" : true\n            }\n          }\n\
               \        }, {\n          \"name\" : \"prod:r\",\n          \"_links\"\
-              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/c00a966f-eaaa-4c2e-838f-26eb36cc457e{?projection}\"\
+              \ : {\n            \"self\" : {\n              \"href\" : \"https://yourshop.api.urn/scopes/06b57151-05bc-4b79-8650-7e39fda565b3{?projection}\"\
               ,\n              \"templated\" : true\n            }\n          }\n\
               \        } ]\n      },\n      \"_links\" : {\n        \"self\" : {\n\
-              \          \"href\" : \"https://yourshop.api.urn/roles/70c487f9-a840-4cca-b82f-f5536b98fb97\"\
-              \n        },\n        \"role\" : {\n          \"href\" : \"https://yourshop.api.urn/roles/70c487f9-a840-4cca-b82f-f5536b98fb97\"\
-              \n        },\n        \"scopes\" : {\n          \"href\" : \"https://yourshop.api.urn/roles/70c487f9-a840-4cca-b82f-f5536b98fb97/scopes{?projection}\"\
+              \          \"href\" : \"https://yourshop.api.urn/roles/c53854e0-b564-4a6b-b18c-60ebeb669247\"\
+              \n        },\n        \"role\" : {\n          \"href\" : \"https://yourshop.api.urn/roles/c53854e0-b564-4a6b-b18c-60ebeb669247\"\
+              \n        },\n        \"scopes\" : {\n          \"href\" : \"https://yourshop.api.urn/roles/c53854e0-b564-4a6b-b18c-60ebeb669247/scopes{?projection}\"\
               ,\n          \"templated\" : true\n        }\n      }\n    } ]\n  },\n\
-              \  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/users/06f37169-2802-40a5-b2b3-0c185e0f866d/roles\"\
+              \  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/users/d72e0511-81f7-4444-963d-a5745027e908/roles\"\
               \n    }\n  }\n}"
           schema:
             $ref: "#/definitions/google-shopping_taxonomy-309252030"
@@ -11077,9 +11079,9 @@ paths:
         name: ""
         required: false
         schema:
-          $ref: "#/definitions/users_id_roles1649905872"
+          $ref: "#/definitions/users_id_roles2136697932"
         x-examples:
-          text/uri-list: "https://yourshop.api.urn/roles/aa710f45-2d5c-4950-b907-ee7712951cf9"
+          text/uri-list: "https://yourshop.api.urn/roles/5e467708-de0a-4015-b27b-e1337c48bd06"
       responses:
         204:
           description: ""
@@ -11109,9 +11111,9 @@ paths:
         name: ""
         required: false
         schema:
-          $ref: "#/definitions/users_id_roles1296308199"
+          $ref: "#/definitions/users_id_roles1270184406"
         x-examples:
-          text/uri-list: "https://yourshop.api.urn/roles/37ba22a3-aaa6-4212-838a-0d591cd2f49d"
+          text/uri-list: "https://yourshop.api.urn/roles/0503710d-c4bd-4f9b-9950-35ff2822223c"
       responses:
         204:
           description: ""
@@ -11716,6 +11718,8 @@ definitions:
       \ target=\\\"_blank\\\"><u>this is my test html</u></a>\\n</em></strong> </li></ol>\
       \ </blockquote>\",\"productIdentifiers\":null,\"manufacturer\":\"patched manufacturer\"\
       }"
+  users_id_roles2136697932:
+    example: "https://yourshop.api.urn/roles/5e467708-de0a-4015-b27b-e1337c48bd06"
   product-view_products_productId1752920684:
     type: "object"
     properties:
@@ -12184,6 +12188,10 @@ definitions:
         type: "object"
         description: "The status of the product publication process."
         properties: {}
+  amazon-marketplace_products475137901:
+    example: "https://yourshop.api.urn/products/5c06cb5e-94f1-4c8f-86d6-c10d1ea2ee01\n\
+      https://yourshop.api.urn/products/3348b2f0-15d5-4abc-ac20-777ea760d63f\nhttps://yourshop.api.urn/products/54af8e29-654e-41f4-b554-da447d4a7d5e\n\
+      https://yourshop.api.urn/products/407b5e8a-1075-4591-a186-240a2abce1d7\nhttps://yourshop.api.urn/products/b68341b1-cd3b-41bd-ae73-6768cecae314\n"
   custom-apps_customAppId-1474085348:
     type: "object"
     required:
@@ -12213,10 +12221,6 @@ definitions:
       scopes:
         type: "array"
         description: "The scopes the app requires to interact with the shop system."
-  amazon-marketplace_products475137901:
-    example: "https://yourshop.api.urn/products/5c06cb5e-94f1-4c8f-86d6-c10d1ea2ee01\n\
-      https://yourshop.api.urn/products/3348b2f0-15d5-4abc-ac20-777ea760d63f\nhttps://yourshop.api.urn/products/54af8e29-654e-41f4-b554-da447d4a7d5e\n\
-      https://yourshop.api.urn/products/407b5e8a-1075-4591-a186-240a2abce1d7\nhttps://yourshop.api.urn/products/b68341b1-cd3b-41bd-ae73-6768cecae314\n"
   orders_order-id_processes_shippings1947038285:
     type: "object"
     properties:
@@ -14183,7 +14187,7 @@ definitions:
         type: "object"
         description: "See <<hypermedia,Hypermedia>>"
         properties: {}
-  users-999644662:
+  users_id-999644662:
     type: "object"
     required:
     - "email"
@@ -14241,6 +14245,8 @@ definitions:
         type: "object"
         description: "See <<pagination,Pagination>>"
         properties: {}
+  users_id_roles1270184406:
+    example: "https://yourshop.api.urn/roles/0503710d-c4bd-4f9b-9950-35ff2822223c"
   shop_legal-1543943523:
     example: "{\n  \"vatId\" : \"GB 111111111\"\n}"
   products_productId_availability919963839:
@@ -14872,7 +14878,7 @@ definitions:
       taxModel\" : \"GROSS\",\n    \"currency\" : \"EUR\",\n    \"amount\" : 20\n\
       \  },\n  \"freeShippingValue\" : {\n    \"taxModel\" : \"GROSS\",\n    \"currency\"\
       \ : \"EUR\",\n    \"amount\" : 200\n  }\n}"
-  custom-apps_customAppId_regenerate-secret-525208887:
+  custom-apps-525208887:
     type: "object"
     required:
     - "name"
@@ -15103,8 +15109,6 @@ definitions:
       :1500,\"width\":1000,\"height\":2000},\"refPrice\":{\"refQuantity\":1,\"unit\"\
       :\"LITER\",\"quantity\":0.75,\"price\":null},\"shippingPeriod\":{\"minDays\"\
       :2,\"maxDays\":4,\"displayUnit\":\"WEEKS\"}}"
-  users_id_roles1649905872:
-    example: "https://yourshop.api.urn/roles/aa710f45-2d5c-4950-b907-ee7712951cf9"
   google-shopping_products_publish714309657:
     example: "https://yourshop.api.urn/google-shopping/products/e108c932-db7f-4339-9444-182d34d95088\n\
       https://yourshop.api.urn/google-shopping/products/6162bbe7-8547-4a56-a277-fdb2272ced76\n\
@@ -15238,8 +15242,6 @@ definitions:
       _id:
         type: "string"
         description: "The ID of the return process."
-  users_id_roles1296308199:
-    example: "https://yourshop.api.urn/roles/37ba22a3-aaa6-4212-838a-0d591cd2f49d"
   shop-2118505709:
     type: "object"
     required:
@@ -16508,28 +16510,6 @@ definitions:
         description: "List of currencies that are supported by this shop. Defaults\
           \ to `defaultCurrency`. The `defaultCurrency` is always included in this\
           \ list."
-  signers-663923302:
-    type: "object"
-    properties:
-      _embedded:
-        type: "object"
-        properties:
-          signers:
-            type: "array"
-            items:
-              type: "object"
-              properties:
-                createdAt:
-                  type: "string"
-                  description: "The date at which the signer was created."
-                _links:
-                  type: "object"
-                  description: "See <<hypermedia,Hypermedia>>"
-                  properties: {}
-                _id:
-                  type: "string"
-                  description: "The immutable, unique identifier of the requested\
-                    \ resource."
   custom-apps1591820054:
     type: "object"
     required:
@@ -16551,6 +16531,89 @@ definitions:
         description: "The scopes the app requires to interact with the shop system."
     example: "{\n  \"name\" : \"Mobile Product Management\",\n  \"callbackUrl\" :\
       \ \"https://hostname/callback\",\n  \"scopes\" : [\"prod:crud\"]\n}"
+  carts_cartId_payment-methods-663923302:
+    type: "object"
+    properties:
+      _embedded:
+        type: "object"
+        properties:
+          payment-methods:
+            type: "array"
+            items:
+              type: "object"
+              properties:
+                lineItemPrice:
+                  type: "object"
+                  description: "The calculated price for this payment on the current\
+                    \ cart."
+                  properties: {}
+                _embedded:
+                  type: "object"
+                  properties:
+                    payment-method:
+                      type: "object"
+                      properties:
+                        taxClass:
+                          type: "string"
+                          description: "The tax class. Can be `REGULAR`, `REDUCED`,\
+                            \ or `EXEMPT`."
+                        onlinePayment:
+                          type: "boolean"
+                          description: "Indicates if the payment method is an online\
+                            \ payment. Can be `true` or `false`."
+                        description:
+                          type: "string"
+                          description: "Description of the payment method that is\
+                            \ used during checkout."
+                        officialName:
+                          type: "string"
+                          description: "The official name of the payment method chosen\
+                            \ by the merchant during setup."
+                        serviceableCountries:
+                          type: "array"
+                          description: "The list of target countries this payment\
+                            \ method can be used in."
+                        discountOrFee:
+                          type: "object"
+                          description: "The details about the fee to be payed or discount\
+                            \ to be granted for this payment method."
+                          properties:
+                            type:
+                              type: "string"
+                              description: "The discount or fee can be an absolute\
+                                \ or a percentage based value. Can be one of `PERCENTAGE`\
+                                \ or `ABSOLUTE`. `ABSOLUTE` contains another attribute\
+                                \ `absoluteValue` with a positive or negative `price`.\
+                                \ `PERCENTAGE` contains another attribute `percentageValue`\
+                                \ with a negative or positive percentage value."
+                        name:
+                          type: "string"
+                          description: "The name of the payment method that is used\
+                            \ during checkout."
+                        officialDescription:
+                          type: "string"
+                          description: "The official description of the payment method\
+                            \ chosen by the merchant during setup."
+                        position:
+                          type: "number"
+                          description: "The sorting position of the payment method\
+                            \ in the merchant administration in relation to other\
+                            \ payment methods."
+                        _id:
+                          type: "string"
+                          description: "The immutable, unique identifier of the requested\
+                            \ resource."
+                        activated:
+                          type: "boolean"
+                          description: "Indicates if a payment method is active. Can\
+                            \ be `true` or `false`."
+                selectable:
+                  type: "boolean"
+                  description: "Indicates if the payment method can be selected for\
+                    \ the current cart. A payment method can be become non-selectable\
+                    \ if the cart is modified, so that the `minimumOrderValue` is\
+                    \ no longer reached. A cart with an non-selectable payment method\
+                    \ cannot be ordered."
   payment-methods_paymentMethodId-482487356:
     type: "object"
     required:
