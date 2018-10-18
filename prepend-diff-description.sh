@@ -65,12 +65,16 @@ ${API_DIFF}
 EOF
 )
 
-echo -e "${CHANGE_LOG}"
-
 ################################################################################
 # Insert change log
 ################################################################################
-ESCAPED_CHANGE_LOG=$(echo -e "${CHANGE_LOG}" | sed -e 's/[\/&|]/\\&/g')
-CHANGE_LOG_PLACEHOLDER="###CHANGE_LOG_HERE###"
-sed -i "/# Beyond API Changelog/ a ${CHANGE_LOG_PLACEHOLDER}" ${CHANGE_LOG_FILE}
-perl -pi -e "s/${CHANGE_LOG_PLACEHOLDER}/${ESCAPED_CHANGE_LOG}/g" ${CHANGE_LOG_FILE}
+
+if [[ $API_DIFF == *"* "* ]]; then
+  echo "Addint API diff into changelog file."
+  ESCAPED_CHANGE_LOG=$(echo -e "${CHANGE_LOG}" | sed -e 's/[\/&|]/\\&/g')
+  CHANGE_LOG_PLACEHOLDER="###CHANGE_LOG_HERE###"
+  sed -i "/# Beyond API Changelog/ a ${CHANGE_LOG_PLACEHOLDER}" ${CHANGE_LOG_FILE}
+  perl -pi -e "s/${CHANGE_LOG_PLACEHOLDER}/${ESCAPED_CHANGE_LOG}/g" ${CHANGE_LOG_FILE}
+else
+  echo "No changes in the API."
+fi

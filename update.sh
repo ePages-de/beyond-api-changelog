@@ -8,7 +8,7 @@ API_SPEC_FILE=openapi.yaml
 CHANGE_LOG_FILE=beyond-api-changelog.md
 
 PREVIOUS_API_SPEC_FILE=$(mktemp)
-PREVIOUS_API_SPEC_COMMIT=$(git log -1 --pretty=format:"%h" -- ${API_SPEC_FILE})
+PREVIOUS_API_SPEC_COMMIT=$(git log -1 --pretty=format:"%h" -- ${CHANGE_LOG_FILE})
 
 curl -s ${API_SPEC_URL} > ${API_SPEC_FILE}
 git diff --exit-code > /dev/null
@@ -26,5 +26,8 @@ git commit -m "Update API spec"
 git show ${PREVIOUS_API_SPEC_COMMIT}:${API_SPEC_FILE} > ${PREVIOUS_API_SPEC_FILE}
 ./prepend-diff-description.sh -o ${PREVIOUS_API_SPEC_FILE} -n ${API_SPEC_FILE} -c ${CHANGE_LOG_FILE}
 
-git add .
-git commit -m "Update change log"
+git diff --exit-code --name-only ${CHANGE_LOG_FILE} > /dev/null
+if [[ $? -eq 1 ]]; then
+    git add .
+    git commit -m "Update change log"
+fi
