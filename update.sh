@@ -21,7 +21,9 @@ git commit -m "Update API spec"
 # Update change log
 ################################################################################
 PREVIOUS_API_SPEC_FILE=$(mktemp)
-git show HEAD~1:${API_SPEC_FILE} > ${PREVIOUS_API_SPEC_FILE}
+PREVIOUS_API_SPEC_COMMIT=$(git log -1 --pretty=format:"%h" -- ${API_SPEC_FILE})
+
+git show ${PREVIOUS_API_SPEC_COMMIT}:${API_SPEC_FILE} > ${PREVIOUS_API_SPEC_FILE}
 ./prepend-diff-description.sh -o ${PREVIOUS_API_SPEC_FILE} -n ${API_SPEC_FILE} -c ${CHANGE_LOG_FILE}
 
 git add .
