@@ -5,7 +5,7 @@
 ################################################################################
 API_SPEC_URL='http://docs.beyondshop.cloud/openapi.yaml'
 API_SPEC_FILE=openapi.yaml
-CHANGE_LOG_FILE=beyond-api-changelog.adoc
+CHANGE_LOG_FILE=beyond-api-changelog.md
 
 curl -s ${API_SPEC_URL} > ${API_SPEC_FILE}
 git diff --exit-code > /dev/null
