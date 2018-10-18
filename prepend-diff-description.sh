@@ -1,5 +1,7 @@
 #!/bin/bash
 
+SCRIPT_DIR="$(cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
 usage () {
      cat << EOF
 DESCRIPTION:
@@ -51,12 +53,6 @@ if [[ -z ${CHANGE_LOG_FILE} ]]; then
 fi
 
 ################################################################################
-# Calculate diff
-################################################################################
-DIFF_FILE=$(mktemp)
-./node_modules/.bin/swagger-diff --outformat=json --outfile=${DIFF_FILE} ${OLD_API_SPEC_FILE} ${NEW_API_SPEC_FILE} > /dev/null
-
-################################################################################
 # Build change log snippet
 ################################################################################
 CURRENT_DATE=$(date '+%Y-%m-%d')
@@ -70,7 +66,7 @@ ${CHANGE_LOG_TABLE_ROWS}
 |===
 EOF
 )
-CHANGE_LOG="\n${CHANGE_LOG_HEADING}\n\n${CHANGE_LOG_TABLE}\n"
+CHANGE_LOG=$(${SCRIPT_DIR}/diff.sh )
 
 ################################################################################
 # Insert change log

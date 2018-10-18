@@ -7,7 +7,7 @@ DESCRIPTION:
 Generates a diff of the OpenAPI file from the given git commits.
 
 SYNOPSIS:
-$0 [-o output_format] commit_id_1 commit_id_2
+$0 [-o output_format] file_old file_new
 
 OPTIONS:
     -o   The output format. "adoc" or "markdown" are supported. Default: markdown.
@@ -15,8 +15,13 @@ OPTIONS:
     -?   Show this message.
 
 EXAMPLE:
-./diff.sh 3622ffd830ba3c6e2cc22c63b75d4862b928cd7a HEAD
-./diff.sh -o adoc 3622ffd830ba3c6e2cc22c63b75d4862b928cd7a HEAD
+SPEC_FILE_1=$(mktemp)
+SPEC_FILE_2=$(mktemp)
+git show HEAD~5:openapi.yaml > ${SPEC_FILE_1}
+git show HEAD:openapi.yaml > ${SPEC_FILE_2}
+
+./diff.sh ${SPEC_FILE_1} ${SPEC_FILE_2}
+./diff.sh -o adoc ${SPEC_FILE_1} ${SPEC_FILE_2}
 EOF
 }
 
@@ -31,15 +36,8 @@ while getopts "o: h ?" option ; do
      esac
 done
 
-COMMIT_1=${@:$OPTIND:1}
-COMMIT_2=${@:$OPTIND+1:1}
-
-API_SPEC_FILE=openapi.yaml
-SPEC_FILE_1=$(mktemp)
-SPEC_FILE_2=$(mktemp)
-
-git show ${COMMIT_1}:${API_SPEC_FILE} > ${SPEC_FILE_1}
-git show ${COMMIT_2}:${API_SPEC_FILE} > ${SPEC_FILE_2}
+SPEC_FILE_1=${@:$OPTIND:1}
+SPEC_FILE_2=${@:$OPTIND+1:1}
 
 if [[ "$OUTPUT_FORMAT" = "adoc" ]]; then
     OPEN_API_DIFF=$(mktemp)
