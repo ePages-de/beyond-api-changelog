@@ -9,7 +9,7 @@ script and then push the changes to GitHub.
 
 ```
 ./update.sh
-git push
+git push upstream master
 ```
 
 ## Dependencies
