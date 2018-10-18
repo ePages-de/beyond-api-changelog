@@ -59,6 +59,7 @@ CURRENT_DATE=$(date '+%Y-%m-%d')
 API_DIFF=$(${SCRIPT_DIR}/diff.sh ${OLD_API_SPEC_FILE} ${NEW_API_SPEC_FILE})
 
 CHANGE_LOG=$(cat <<EOF
+
 ## ${CURRENT_DATE}
 
 ${API_DIFF}
@@ -70,7 +71,7 @@ EOF
 ################################################################################
 
 if [[ $API_DIFF == *"* "* ]]; then
-  echo "Addint API diff into changelog file."
+  echo "Adding API diff into changelog file."
   ESCAPED_CHANGE_LOG=$(echo -e "${CHANGE_LOG}" | sed -e 's/[\/&|]/\\&/g')
   CHANGE_LOG_PLACEHOLDER="###CHANGE_LOG_HERE###"
   sed -i "/# Beyond API Changelog/ a ${CHANGE_LOG_PLACEHOLDER}" ${CHANGE_LOG_FILE}

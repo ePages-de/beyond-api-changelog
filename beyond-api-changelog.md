@@ -1,4 +1,5 @@
 # Beyond API Changelog
+
 ## 2018-10-18
 
 ### What's New
@@ -32,6 +33,7 @@
     Return Type
 
         Add _links //See <<hypermedia,Hypermedia>>
+
 ## 2018-10-18
 
 ### What's New
