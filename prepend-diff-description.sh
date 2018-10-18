@@ -65,7 +65,7 @@ ${API_DIFF}
 EOF
 )
 
-echo -e "${API_DIFF}"
+echo -e "${CHANGE_LOG}"
 
 ################################################################################
 # Insert change log
