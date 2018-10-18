@@ -3,6 +3,39 @@
 
 ### What's New
 ---
+* `GET` /payment-signup/merchant-accounts/{paymentMethodDefinition} Get Merchant Account
+* `DELETE` /payment-signup/merchant-accounts/{paymentMethodDefinition} Disconnect Merchant Account
+* `POST` /payment-signup/referrals/{paymentMethodDefinition} Initiate Referral
+
+### What's Deprecated
+---
+* `PUT` /payment-methods/{paymentMethodId}/payment-integration Set Payment Integration on Payment Method
+* `GET` /payment-signup/merchant-accounts/{paymentIntegration} Get Merchant Account
+* `DELETE` /payment-signup/merchant-accounts/{paymentIntegration} Disconnect Merchant Account
+* `POST` /payment-signup/referrals/{paymentIntegration} Initiate Referral
+
+### What's Changed
+---
+* `GET` /carts/{cartId} Get Cart  
+    Return Type
+
+        Add _links //See <<hypermedia,Hypermedia>>
+* `GET` /payment-methods/{paymentMethodId} Get Payment Method  
+    Return Type
+
+        Add _links //See <<hypermedia,Hypermedia>>
+* `POST` /payment-methods/{paymentMethodId}/activate Activate Payment Method  
+    Return Type
+
+        Add _links //See <<hypermedia,Hypermedia>>
+* `POST` /payment-methods/{paymentMethodId}/deactivate Deactivate Payment Method  
+    Return Type
+
+        Add _links //See <<hypermedia,Hypermedia>>
+## 2018-10-18
+
+### What's New
+---
 * `POST` /custom-apps/{customAppId}/upgrade /custom-apps/{customAppId}/upgrade
 * `DELETE` /shops/{shopId} /shops/{shopId}
 
