@@ -58,7 +58,7 @@ fi
 CURRENT_DATE=$(date '+%Y-%m-%d')
 API_DIFF=$(${SCRIPT_DIR}/diff.sh ${OLD_API_SPEC_FILE} ${NEW_API_SPEC_FILE})
 
-CHANGE_LOG_TABLE=$(cat <<EOF
+CHANGE_LOG=$(cat <<EOF
 ## ${CURRENT_DATE}
 
 ${API_DIFF}
@@ -70,10 +70,5 @@ EOF
 ################################################################################
 ESCAPED_CHANGE_LOG=$(echo -e "${CHANGE_LOG}" | sed -e 's/[\/&|]/\\&/g')
 CHANGE_LOG_PLACEHOLDER="###CHANGE_LOG_HERE###"
-sed -i "/= Beyond API Changelog/ a ${CHANGE_LOG_PLACEHOLDER}" ${CHANGE_LOG_FILE}
+sed -i "/# Beyond API Changelog/ a ${CHANGE_LOG_PLACEHOLDER}" ${CHANGE_LOG_FILE}
 perl -pi -e "s/${CHANGE_LOG_PLACEHOLDER}/${ESCAPED_CHANGE_LOG}/g" ${CHANGE_LOG_FILE}
-
-################################################################################
-# Cleanup
-################################################################################
-rm ${DIFF_FILE}
