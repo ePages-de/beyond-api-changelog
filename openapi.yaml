@@ -36,7 +36,7 @@ paths:
           description: ""
           examples:
             application/hal+json: "{\n  \"sellerId\" : \"123456\",\n  \"_links\" :\
-              \ {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/amazon-marketplace/access-data/50dbf2db-b215-4ad0-9532-d85d066c1e82\"\
+              \ {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/amazon-marketplace/access-data/fd86d666-4d2d-44be-97fc-fa6e35fd6193\"\
               \n    },\n    \"access-data\" : {\n      \"href\" : \"https://yourshop.api.urn/amazon-marketplace/access-data{?page,size,sort}\"\
               ,\n      \"templated\" : true\n    }\n  }\n}"
           schema:
@@ -70,7 +70,7 @@ paths:
           description: ""
           examples:
             application/hal+json: "{\n  \"sellerId\" : \"1234567\",\n  \"_links\"\
-              \ : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/amazon-marketplace/access-data/4c28d500-63c0-44ad-adce-f946c4d4979c\"\
+              \ : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/amazon-marketplace/access-data/d2de892f-55de-40f7-b5cf-bc8ff6d3d3b3\"\
               \n    },\n    \"access-data\" : {\n      \"href\" : \"https://yourshop.api.urn/amazon-marketplace/access-data{?page,size,sort}\"\
               ,\n      \"templated\" : true\n    }\n  }\n}"
           schema:
@@ -104,7 +104,7 @@ paths:
           description: ""
           examples:
             application/hal+json: "{\n  \"sellerId\" : \"1234567\",\n  \"_links\"\
-              \ : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/amazon-marketplace/access-data/c3adfea4-7099-49bd-ae58-9392a1c89a36\"\
+              \ : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/amazon-marketplace/access-data/11a8b5f4-c4be-4144-9f42-9c818dbf7b4e\"\
               \n    },\n    \"access-data\" : {\n      \"href\" : \"https://yourshop.api.urn/amazon-marketplace/access-data{?page,size,sort}\"\
               ,\n      \"templated\" : true\n    }\n  }\n}"
           schema:
@@ -145,49 +145,49 @@ paths:
             application/hal+json: "{\n  \"_embedded\" : {\n    \"products\" : [ {\n\
               \      \"asin\" : null,\n      \"marketplaceId\" : null,\n      \"price\"\
               \ : null,\n      \"status\" : {\n        \"type\" : \"ASSIGNED\",\n\
-              \        \"errorMessage\" : null\n      },\n      \"_id\" : \"105f99c6-a8f4-46c4-8705-f10d96e2dce9\"\
-              ,\n      \"parentId\" : \"e988d932-0e6a-4137-b1d8-21458957a160\",\n\
+              \        \"errorMessage\" : null\n      },\n      \"_id\" : \"56afdd03-7bc9-4748-9a4b-ea9cbbc3532c\"\
+              ,\n      \"parentId\" : \"3763a2bc-0477-4cf6-98d3-610f1edd6887\",\n\
               \      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"\
-              https://yourshop.api.urn/amazon-marketplace/products/105f99c6-a8f4-46c4-8705-f10d96e2dce9\"\
+              https://yourshop.api.urn/amazon-marketplace/products/56afdd03-7bc9-4748-9a4b-ea9cbbc3532c\"\
               \n        },\n        \"products\" : {\n          \"href\" : \"https://yourshop.api.urn/amazon-marketplace/products{?page,size,sort}\"\
               ,\n          \"templated\" : true\n        },\n        \"product\" :\
-              \ {\n          \"href\" : \"https://yourshop.api.urn/products/e988d932-0e6a-4137-b1d8-21458957a160\"\
+              \ {\n          \"href\" : \"https://yourshop.api.urn/products/3763a2bc-0477-4cf6-98d3-610f1edd6887\"\
               \n        }\n      }\n    }, {\n      \"asin\" : null,\n      \"marketplaceId\"\
               \ : null,\n      \"price\" : null,\n      \"status\" : {\n        \"\
               type\" : \"ASSIGNED\",\n        \"errorMessage\" : null\n      },\n\
-              \      \"_id\" : \"9ccc7206-6bc2-4ee7-9679-cbf3ef7b813f\",\n      \"\
-              parentId\" : \"a861c1c6-d4b3-42b6-8fbb-a1763506fd46\",\n      \"_links\"\
-              \ : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/amazon-marketplace/products/9ccc7206-6bc2-4ee7-9679-cbf3ef7b813f\"\
+              \      \"_id\" : \"67c6054b-1bf1-466f-baa2-7eb760fa4d35\",\n      \"\
+              parentId\" : \"3a17b482-0999-4395-bd0b-1a8cfc7808de\",\n      \"_links\"\
+              \ : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/amazon-marketplace/products/67c6054b-1bf1-466f-baa2-7eb760fa4d35\"\
               \n        },\n        \"products\" : {\n          \"href\" : \"https://yourshop.api.urn/amazon-marketplace/products{?page,size,sort}\"\
               ,\n          \"templated\" : true\n        },\n        \"product\" :\
-              \ {\n          \"href\" : \"https://yourshop.api.urn/products/a861c1c6-d4b3-42b6-8fbb-a1763506fd46\"\
+              \ {\n          \"href\" : \"https://yourshop.api.urn/products/3a17b482-0999-4395-bd0b-1a8cfc7808de\"\
               \n        }\n      }\n    }, {\n      \"asin\" : null,\n      \"marketplaceId\"\
               \ : null,\n      \"price\" : null,\n      \"status\" : {\n        \"\
               type\" : \"ASSIGNED\",\n        \"errorMessage\" : null\n      },\n\
-              \      \"_id\" : \"a9fbef97-1464-4584-ac92-2d54c3ec6515\",\n      \"\
-              parentId\" : \"1f979d31-db71-4f27-a110-0bc97604e72c\",\n      \"_links\"\
-              \ : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/amazon-marketplace/products/a9fbef97-1464-4584-ac92-2d54c3ec6515\"\
+              \      \"_id\" : \"895bed88-f6c2-4aff-bad1-4ae58fbb40eb\",\n      \"\
+              parentId\" : \"a7173cb3-faef-4079-ba64-cff7102b7643\",\n      \"_links\"\
+              \ : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/amazon-marketplace/products/895bed88-f6c2-4aff-bad1-4ae58fbb40eb\"\
               \n        },\n        \"products\" : {\n          \"href\" : \"https://yourshop.api.urn/amazon-marketplace/products{?page,size,sort}\"\
               ,\n          \"templated\" : true\n        },\n        \"product\" :\
-              \ {\n          \"href\" : \"https://yourshop.api.urn/products/1f979d31-db71-4f27-a110-0bc97604e72c\"\
+              \ {\n          \"href\" : \"https://yourshop.api.urn/products/a7173cb3-faef-4079-ba64-cff7102b7643\"\
               \n        }\n      }\n    }, {\n      \"asin\" : null,\n      \"marketplaceId\"\
               \ : null,\n      \"price\" : null,\n      \"status\" : {\n        \"\
               type\" : \"ASSIGNED\",\n        \"errorMessage\" : null\n      },\n\
-              \      \"_id\" : \"bd78874d-2b12-4c9f-b28c-2c31fe75c5a0\",\n      \"\
-              parentId\" : \"ec101310-7a86-4283-9289-dcd7d779d10e\",\n      \"_links\"\
-              \ : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/amazon-marketplace/products/bd78874d-2b12-4c9f-b28c-2c31fe75c5a0\"\
+              \      \"_id\" : \"d1e99222-a402-40e3-9677-15f9a8927f0f\",\n      \"\
+              parentId\" : \"6342dc2b-da45-4dbf-ba5d-9dc8a8b1df24\",\n      \"_links\"\
+              \ : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/amazon-marketplace/products/d1e99222-a402-40e3-9677-15f9a8927f0f\"\
               \n        },\n        \"products\" : {\n          \"href\" : \"https://yourshop.api.urn/amazon-marketplace/products{?page,size,sort}\"\
               ,\n          \"templated\" : true\n        },\n        \"product\" :\
-              \ {\n          \"href\" : \"https://yourshop.api.urn/products/ec101310-7a86-4283-9289-dcd7d779d10e\"\
+              \ {\n          \"href\" : \"https://yourshop.api.urn/products/6342dc2b-da45-4dbf-ba5d-9dc8a8b1df24\"\
               \n        }\n      }\n    }, {\n      \"asin\" : null,\n      \"marketplaceId\"\
               \ : null,\n      \"price\" : null,\n      \"status\" : {\n        \"\
               type\" : \"ASSIGNED\",\n        \"errorMessage\" : null\n      },\n\
-              \      \"_id\" : \"c107e59a-d020-4f18-a2ae-703dac45ac86\",\n      \"\
-              parentId\" : \"5e85045a-2998-4055-ba22-b13a97207e6a\",\n      \"_links\"\
-              \ : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/amazon-marketplace/products/c107e59a-d020-4f18-a2ae-703dac45ac86\"\
+              \      \"_id\" : \"f52186f2-388b-4460-a37d-559ff070622c\",\n      \"\
+              parentId\" : \"e1ad6723-1490-4577-a8dc-6478a3a8d003\",\n      \"_links\"\
+              \ : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/amazon-marketplace/products/f52186f2-388b-4460-a37d-559ff070622c\"\
               \n        },\n        \"products\" : {\n          \"href\" : \"https://yourshop.api.urn/amazon-marketplace/products{?page,size,sort}\"\
               ,\n          \"templated\" : true\n        },\n        \"product\" :\
-              \ {\n          \"href\" : \"https://yourshop.api.urn/products/5e85045a-2998-4055-ba22-b13a97207e6a\"\
+              \ {\n          \"href\" : \"https://yourshop.api.urn/products/e1ad6723-1490-4577-a8dc-6478a3a8d003\"\
               \n        }\n      }\n    } ]\n  },\n  \"_links\" : {\n    \"self\"\
               \ : {\n      \"href\" : \"https://yourshop.api.urn/products{?page,size,sort}\"\
               ,\n      \"templated\" : true\n    }\n  },\n  \"page\" : {\n    \"size\"\
@@ -213,13 +213,13 @@ paths:
         name: ""
         required: false
         schema:
-          $ref: "#/definitions/amazon-marketplace_products475137901"
+          $ref: "#/definitions/amazon-marketplace_products865141284"
         x-examples:
-          text/uri-list: "https://yourshop.api.urn/products/5c06cb5e-94f1-4c8f-86d6-c10d1ea2ee01\n\
-            https://yourshop.api.urn/products/3348b2f0-15d5-4abc-ac20-777ea760d63f\n\
-            https://yourshop.api.urn/products/54af8e29-654e-41f4-b554-da447d4a7d5e\n\
-            https://yourshop.api.urn/products/407b5e8a-1075-4591-a186-240a2abce1d7\n\
-            https://yourshop.api.urn/products/b68341b1-cd3b-41bd-ae73-6768cecae314\n"
+          text/uri-list: "https://yourshop.api.urn/products/cb7d7057-83e7-4846-83df-9b5fa86c9de0\n\
+            https://yourshop.api.urn/products/2c757d65-6339-4242-9f16-fa04411ebe25\n\
+            https://yourshop.api.urn/products/3bf55a64-8e4a-4f9d-979d-260c3ac45acd\n\
+            https://yourshop.api.urn/products/ff909693-daca-45b4-83a8-4e8e2fdd5fc1\n\
+            https://yourshop.api.urn/products/395ccfb1-e127-456b-a6e6-34be44cdb42d\n"
       responses:
         201:
           description: ""
@@ -243,13 +243,13 @@ paths:
         name: ""
         required: false
         schema:
-          $ref: "#/definitions/amazon-marketplace_products_publish860504529"
+          $ref: "#/definitions/amazon-marketplace_products_publish456272859"
         x-examples:
-          text/uri-list: "https:/yourshop.api.urn/amazon-marketplace/products/c40e5685-2ae8-4ebb-a04b-897f40a03ef5\n\
-            https:/yourshop.api.urn/amazon-marketplace/products/bd8c9ebc-cf0b-47dc-946e-b7838290b567\n\
-            https:/yourshop.api.urn/amazon-marketplace/products/31d3c714-d1c4-46ea-94a1-9daad7c969ff\n\
-            https:/yourshop.api.urn/amazon-marketplace/products/4672e7f9-f4a0-4fdf-87f3-49843522f17b\n\
-            https:/yourshop.api.urn/amazon-marketplace/products/86729ae9-312e-4329-ad34-e49f9c159aad\n"
+          text/uri-list: "https:/yourshop.api.urn/amazon-marketplace/products/1407cf20-8885-454f-a29d-a9d25fbbe2ed\n\
+            https:/yourshop.api.urn/amazon-marketplace/products/ad179827-6dd3-47f6-a685-8e4fd13caf66\n\
+            https:/yourshop.api.urn/amazon-marketplace/products/831863e1-7e21-41a1-8dc9-9625f2e2969e\n\
+            https:/yourshop.api.urn/amazon-marketplace/products/970847d9-222a-42ea-9749-76272751ab6b\n\
+            https:/yourshop.api.urn/amazon-marketplace/products/9cd6c629-b3ee-47f8-a19a-474ae61afa37\n"
       responses:
         202:
           description: ""
@@ -280,12 +280,12 @@ paths:
           examples:
             application/hal+json: "{\n  \"asin\" : null,\n  \"marketplaceId\" : null,\n\
               \  \"price\" : null,\n  \"status\" : {\n    \"type\" : \"ASSIGNED\"\
-              ,\n    \"errorMessage\" : null\n  },\n  \"_id\" : \"37106c03-e65c-44b0-90c1-d5db351fad99\"\
-              ,\n  \"parentId\" : \"4303b379-fa16-42e5-b2de-aa3db0d5a213\",\n  \"\
-              _links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/amazon-marketplace/products/37106c03-e65c-44b0-90c1-d5db351fad99\"\
+              ,\n    \"errorMessage\" : null\n  },\n  \"_id\" : \"3500f9d6-814e-46b1-a439-2bbd9751b3a9\"\
+              ,\n  \"parentId\" : \"c4ed9a2c-da6b-4218-af07-b383690ef998\",\n  \"\
+              _links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/amazon-marketplace/products/3500f9d6-814e-46b1-a439-2bbd9751b3a9\"\
               \n    },\n    \"products\" : {\n      \"href\" : \"https://yourshop.api.urn/amazon-marketplace/products{?page,size,sort}\"\
               ,\n      \"templated\" : true\n    },\n    \"product\" : {\n      \"\
-              href\" : \"https://yourshop.api.urn/products/4303b379-fa16-42e5-b2de-aa3db0d5a213\"\
+              href\" : \"https://yourshop.api.urn/products/c4ed9a2c-da6b-4218-af07-b383690ef998\"\
               \n    }\n  }\n}"
           schema:
             $ref: "#/definitions/amazon-marketplace_products_id-1446382770"
@@ -326,12 +326,12 @@ paths:
             application/hal+json: "{\n  \"asin\" : \"B0018M993S\",\n  \"marketplaceId\"\
               \ : \"A1PA6795UKMFR9\",\n  \"price\" : {\n    \"amount\" : 3.99,\n \
               \   \"currency\" : \"EUR\"\n  },\n  \"status\" : {\n    \"type\" : \"\
-              ASSIGNED\",\n    \"errorMessage\" : null\n  },\n  \"_id\" : \"e78f2ab9-6883-4ad0-be6a-d3c353b17d90\"\
-              ,\n  \"parentId\" : \"e6448b35-4d32-499a-a543-358202a2356b\",\n  \"\
-              _links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/amazon-marketplace/products/e78f2ab9-6883-4ad0-be6a-d3c353b17d90\"\
+              ASSIGNED\",\n    \"errorMessage\" : null\n  },\n  \"_id\" : \"90537a90-f753-41ba-bce1-d000d42cefb9\"\
+              ,\n  \"parentId\" : \"0b4bdfc4-0704-4172-99d2-92bd8f3272c0\",\n  \"\
+              _links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/amazon-marketplace/products/90537a90-f753-41ba-bce1-d000d42cefb9\"\
               \n    },\n    \"products\" : {\n      \"href\" : \"https://yourshop.api.urn/amazon-marketplace/products{?page,size,sort}\"\
               ,\n      \"templated\" : true\n    },\n    \"product\" : {\n      \"\
-              href\" : \"https://yourshop.api.urn/products/e6448b35-4d32-499a-a543-358202a2356b\"\
+              href\" : \"https://yourshop.api.urn/products/0b4bdfc4-0704-4172-99d2-92bd8f3272c0\"\
               \n    },\n    \"amazon-product-listing\" : {\n      \"href\" : \"https://www.amazon.de/dp/B0018M993S\"\
               \n    }\n  }\n}"
           schema:
@@ -12041,20 +12041,6 @@ definitions:
       displayAddressLines\" : [ \"Astrid Alster GmbH\", \"Astrid Agnes Alster\", \"\
       Alsterwasserweg 2\", \"Erdgeschoss\", \"20999 Alsterwasser\", \"Germany\" ],\n\
       \    \"_id\" : null\n  },\n  \"comment\" : \"Updated billing address\"\n}"
-  webhook-subscriptions1499914335:
-    type: "object"
-    required:
-    - "callbackUri"
-    - "eventTypes"
-    properties:
-      callbackUri:
-        type: "string"
-        description: "The callback URI of the webhook."
-      eventTypes:
-        type: "array"
-        description: "The event type names the webhook listens to."
-    example: "{\n    \"callbackUri\":\"http://example.com/test\",\n    \"eventTypes\"\
-      : [\"order.created\", \"product.created\"]\n}"
   amazon-marketplace_products_id1800128114:
     type: "object"
     required:
@@ -12088,6 +12074,20 @@ definitions:
         type: "object"
         description: "The status of the product publication process."
         properties: {}
+  webhook-subscriptions1499914335:
+    type: "object"
+    required:
+    - "callbackUri"
+    - "eventTypes"
+    properties:
+      callbackUri:
+        type: "string"
+        description: "The callback URI of the webhook."
+      eventTypes:
+        type: "array"
+        description: "The event type names the webhook listens to."
+    example: "{\n    \"callbackUri\":\"http://example.com/test\",\n    \"eventTypes\"\
+      : [\"order.created\", \"product.created\"]\n}"
   carts_cartId831072946:
     type: "object"
     properties:
@@ -12477,10 +12477,6 @@ definitions:
       scopes:
         type: "array"
         description: "The scopes the app requires to interact with the shop system."
-  amazon-marketplace_products475137901:
-    example: "https://yourshop.api.urn/products/5c06cb5e-94f1-4c8f-86d6-c10d1ea2ee01\n\
-      https://yourshop.api.urn/products/3348b2f0-15d5-4abc-ac20-777ea760d63f\nhttps://yourshop.api.urn/products/54af8e29-654e-41f4-b554-da447d4a7d5e\n\
-      https://yourshop.api.urn/products/407b5e8a-1075-4591-a186-240a2abce1d7\nhttps://yourshop.api.urn/products/b68341b1-cd3b-41bd-ae73-6768cecae314\n"
   orders_order-id_processes_shippings1947038285:
     type: "object"
     properties:
@@ -14904,27 +14900,6 @@ definitions:
         type: "object"
         description: "See <<pagination,Pagination>>"
         properties: {}
-  amazon-marketplace_products_id-1446382770:
-    type: "object"
-    required:
-    - "status"
-    properties:
-      _links:
-        type: "object"
-        description: "See <<hypermedia,Hypermedia>>"
-        properties: {}
-      _id:
-        type: "string"
-        description: "The immutable, unique system internal identifier of the requested\
-          \ resource."
-      parentId:
-        type: "string"
-        description: "The system internal unique identifier of the related original\
-          \ product."
-      status:
-        type: "object"
-        description: "The status of the product publication process."
-        properties: {}
   products-2095283301:
     type: "object"
     required:
@@ -15078,6 +15053,27 @@ definitions:
       :1500,\"width\":1000,\"height\":2000},\"refPrice\":{\"refQuantity\":1,\"unit\"\
       :\"LITER\",\"quantity\":0.75,\"price\":null},\"shippingPeriod\":{\"minDays\"\
       :2,\"maxDays\":4,\"displayUnit\":\"WEEKS\"}}"
+  amazon-marketplace_products_id-1446382770:
+    type: "object"
+    required:
+    - "status"
+    properties:
+      _links:
+        type: "object"
+        description: "See <<hypermedia,Hypermedia>>"
+        properties: {}
+      _id:
+        type: "string"
+        description: "The immutable, unique system internal identifier of the requested\
+          \ resource."
+      parentId:
+        type: "string"
+        description: "The system internal unique identifier of the related original\
+          \ product."
+      status:
+        type: "object"
+        description: "The status of the product publication process."
+        properties: {}
   google-shopping_products_publish714309657:
     example: "https://yourshop.api.urn/google-shopping/products/e108c932-db7f-4339-9444-182d34d95088\n\
       https://yourshop.api.urn/google-shopping/products/6162bbe7-8547-4a56-a277-fdb2272ced76\n\
@@ -15188,12 +15184,6 @@ definitions:
         description: "The current password of the user account."
     example: "{\n  \"currentPassword\" : \"GoodPassword01!;)\",\n  \"newEmail\" :\
       \ \"newEmail@Gmail.com\"\n}"
-  amazon-marketplace_products_publish860504529:
-    example: "https:/yourshop.api.urn/amazon-marketplace/products/c40e5685-2ae8-4ebb-a04b-897f40a03ef5\n\
-      https:/yourshop.api.urn/amazon-marketplace/products/bd8c9ebc-cf0b-47dc-946e-b7838290b567\n\
-      https:/yourshop.api.urn/amazon-marketplace/products/31d3c714-d1c4-46ea-94a1-9daad7c969ff\n\
-      https:/yourshop.api.urn/amazon-marketplace/products/4672e7f9-f4a0-4fdf-87f3-49843522f17b\n\
-      https:/yourshop.api.urn/amazon-marketplace/products/86729ae9-312e-4329-ad34-e49f9c159aad\n"
   shop_attributes847708956:
     type: "object"
     required:
@@ -15471,6 +15461,10 @@ definitions:
       eventTypes:
         type: "array"
         description: "The event type names the webhook listens to."
+  amazon-marketplace_products865141284:
+    example: "https://yourshop.api.urn/products/cb7d7057-83e7-4846-83df-9b5fa86c9de0\n\
+      https://yourshop.api.urn/products/2c757d65-6339-4242-9f16-fa04411ebe25\nhttps://yourshop.api.urn/products/3bf55a64-8e4a-4f9d-979d-260c3ac45acd\n\
+      https://yourshop.api.urn/products/ff909693-daca-45b4-83a8-4e8e2fdd5fc1\nhttps://yourshop.api.urn/products/395ccfb1-e127-456b-a6e6-34be44cdb42d\n"
   shop_images_imageId-12542474:
     type: "object"
     required:
@@ -15732,6 +15726,24 @@ definitions:
         description: "The type of the product collection. Can be `SMART` or `MANUAL`."
     example: "{\"name\":\"Power Bars\",\"label\":\"power-bar\",\"type\":\"SMART\"\
       ,\"query\":{\"bool\":{\"filter\":{\"term\":{\"tags\":\"power-bar\"}}}}}"
+  amazon-marketplace_products_id838601022:
+    type: "object"
+    properties:
+      marketplaceId:
+        type: "string"
+        description: "The identifier of the Amazon Marketplace on which is product\
+          \ is offered, e.g. A1PA6795UKMFR9 for Germany (see https://docs.developer.amazonservices.com/en_US/dev_guide/DG_Endpoints.html[docs.developer.amazonservices.com])."
+      price:
+        type: "object"
+        description: "The price at which the product is offered on the Amazon Marketplace."
+        properties: {}
+      asin:
+        type: "string"
+        description: "The Amazon Standard Identification Number of the product to\
+          \ be offered (see https://www.amazon.com/gp/seller/asin-upc-isbn-info.html[amazon.com])."
+    example: "{\n  \"marketplaceId\" : \"A1PA6795UKMFR9\",\n  \"asin\" : \"B0018M993S\"\
+      ,\n  \"price\" : {\n    \"amount\" : 3.99,\n    \"currency\" : \"EUR\"\n  }\n\
+      }"
   orders_order-id_processes_shippings_shipping-process-id710385301:
     type: "object"
     properties:
@@ -15755,24 +15767,6 @@ definitions:
         type: "string"
         description: "The status of the shipping process. Can be `UNSHIPPED`, `PARTIALLY_SHIPPED`,\
           \ or `SHIPPED`."
-  amazon-marketplace_products_id838601022:
-    type: "object"
-    properties:
-      marketplaceId:
-        type: "string"
-        description: "The identifier of the Amazon Marketplace on which is product\
-          \ is offered, e.g. A1PA6795UKMFR9 for Germany (see https://docs.developer.amazonservices.com/en_US/dev_guide/DG_Endpoints.html[docs.developer.amazonservices.com])."
-      price:
-        type: "object"
-        description: "The price at which the product is offered on the Amazon Marketplace."
-        properties: {}
-      asin:
-        type: "string"
-        description: "The Amazon Standard Identification Number of the product to\
-          \ be offered (see https://www.amazon.com/gp/seller/asin-upc-isbn-info.html[amazon.com])."
-    example: "{\n  \"marketplaceId\" : \"A1PA6795UKMFR9\",\n  \"asin\" : \"B0018M993S\"\
-      ,\n  \"price\" : {\n    \"amount\" : 3.99,\n    \"currency\" : \"EUR\"\n  }\n\
-      }"
   shipping-zones_shippingZoneId_shipping-methods1725312021:
     type: "object"
     properties:
@@ -16498,6 +16492,12 @@ definitions:
       iconUrl:
         type: "string"
         description: "The URL to the icon of this app."
+  amazon-marketplace_products_publish456272859:
+    example: "https:/yourshop.api.urn/amazon-marketplace/products/1407cf20-8885-454f-a29d-a9d25fbbe2ed\n\
+      https:/yourshop.api.urn/amazon-marketplace/products/ad179827-6dd3-47f6-a685-8e4fd13caf66\n\
+      https:/yourshop.api.urn/amazon-marketplace/products/831863e1-7e21-41a1-8dc9-9625f2e2969e\n\
+      https:/yourshop.api.urn/amazon-marketplace/products/970847d9-222a-42ea-9749-76272751ab6b\n\
+      https:/yourshop.api.urn/amazon-marketplace/products/9cd6c629-b3ee-47f8-a19a-474ae61afa37\n"
   product-attribute-definitions-309488281:
     type: "object"
     required:
