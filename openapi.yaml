@@ -36,7 +36,7 @@ paths:
           description: ""
           examples:
             application/hal+json: "{\n  \"sellerId\" : \"123456\",\n  \"_links\" :\
-              \ {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/amazon-marketplace/access-data/fd86d666-4d2d-44be-97fc-fa6e35fd6193\"\
+              \ {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/amazon-marketplace/access-data/09b49587-6677-4021-bf1b-4c5e557e83be\"\
               \n    },\n    \"access-data\" : {\n      \"href\" : \"https://yourshop.api.urn/amazon-marketplace/access-data{?page,size,sort}\"\
               ,\n      \"templated\" : true\n    }\n  }\n}"
           schema:
@@ -70,7 +70,7 @@ paths:
           description: ""
           examples:
             application/hal+json: "{\n  \"sellerId\" : \"1234567\",\n  \"_links\"\
-              \ : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/amazon-marketplace/access-data/d2de892f-55de-40f7-b5cf-bc8ff6d3d3b3\"\
+              \ : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/amazon-marketplace/access-data/d3af3a8b-b470-430e-9b77-531a41550ad6\"\
               \n    },\n    \"access-data\" : {\n      \"href\" : \"https://yourshop.api.urn/amazon-marketplace/access-data{?page,size,sort}\"\
               ,\n      \"templated\" : true\n    }\n  }\n}"
           schema:
@@ -104,7 +104,7 @@ paths:
           description: ""
           examples:
             application/hal+json: "{\n  \"sellerId\" : \"1234567\",\n  \"_links\"\
-              \ : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/amazon-marketplace/access-data/11a8b5f4-c4be-4144-9f42-9c818dbf7b4e\"\
+              \ : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/amazon-marketplace/access-data/00023abd-7803-4df8-b7dd-a6d8395c7d84\"\
               \n    },\n    \"access-data\" : {\n      \"href\" : \"https://yourshop.api.urn/amazon-marketplace/access-data{?page,size,sort}\"\
               ,\n      \"templated\" : true\n    }\n  }\n}"
           schema:
@@ -145,49 +145,49 @@ paths:
             application/hal+json: "{\n  \"_embedded\" : {\n    \"products\" : [ {\n\
               \      \"asin\" : null,\n      \"marketplaceId\" : null,\n      \"price\"\
               \ : null,\n      \"status\" : {\n        \"type\" : \"ASSIGNED\",\n\
-              \        \"errorMessage\" : null\n      },\n      \"_id\" : \"56afdd03-7bc9-4748-9a4b-ea9cbbc3532c\"\
-              ,\n      \"parentId\" : \"3763a2bc-0477-4cf6-98d3-610f1edd6887\",\n\
+              \        \"errorMessage\" : null\n      },\n      \"_id\" : \"22c330d4-f611-46cb-88de-40031beb1642\"\
+              ,\n      \"parentId\" : \"e40f0042-67e6-445c-97b4-ac6f86d7e891\",\n\
               \      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"\
-              https://yourshop.api.urn/amazon-marketplace/products/56afdd03-7bc9-4748-9a4b-ea9cbbc3532c\"\
+              https://yourshop.api.urn/amazon-marketplace/products/22c330d4-f611-46cb-88de-40031beb1642\"\
               \n        },\n        \"products\" : {\n          \"href\" : \"https://yourshop.api.urn/amazon-marketplace/products{?page,size,sort}\"\
               ,\n          \"templated\" : true\n        },\n        \"product\" :\
-              \ {\n          \"href\" : \"https://yourshop.api.urn/products/3763a2bc-0477-4cf6-98d3-610f1edd6887\"\
+              \ {\n          \"href\" : \"https://yourshop.api.urn/products/e40f0042-67e6-445c-97b4-ac6f86d7e891\"\
               \n        }\n      }\n    }, {\n      \"asin\" : null,\n      \"marketplaceId\"\
               \ : null,\n      \"price\" : null,\n      \"status\" : {\n        \"\
               type\" : \"ASSIGNED\",\n        \"errorMessage\" : null\n      },\n\
-              \      \"_id\" : \"67c6054b-1bf1-466f-baa2-7eb760fa4d35\",\n      \"\
-              parentId\" : \"3a17b482-0999-4395-bd0b-1a8cfc7808de\",\n      \"_links\"\
-              \ : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/amazon-marketplace/products/67c6054b-1bf1-466f-baa2-7eb760fa4d35\"\
+              \      \"_id\" : \"bfcb2bd5-9a18-46cd-ad86-9e1fdc5a7003\",\n      \"\
+              parentId\" : \"583f81f4-2f41-4f7d-828d-391f7e57695a\",\n      \"_links\"\
+              \ : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/amazon-marketplace/products/bfcb2bd5-9a18-46cd-ad86-9e1fdc5a7003\"\
               \n        },\n        \"products\" : {\n          \"href\" : \"https://yourshop.api.urn/amazon-marketplace/products{?page,size,sort}\"\
               ,\n          \"templated\" : true\n        },\n        \"product\" :\
-              \ {\n          \"href\" : \"https://yourshop.api.urn/products/3a17b482-0999-4395-bd0b-1a8cfc7808de\"\
+              \ {\n          \"href\" : \"https://yourshop.api.urn/products/583f81f4-2f41-4f7d-828d-391f7e57695a\"\
               \n        }\n      }\n    }, {\n      \"asin\" : null,\n      \"marketplaceId\"\
               \ : null,\n      \"price\" : null,\n      \"status\" : {\n        \"\
               type\" : \"ASSIGNED\",\n        \"errorMessage\" : null\n      },\n\
-              \      \"_id\" : \"895bed88-f6c2-4aff-bad1-4ae58fbb40eb\",\n      \"\
-              parentId\" : \"a7173cb3-faef-4079-ba64-cff7102b7643\",\n      \"_links\"\
-              \ : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/amazon-marketplace/products/895bed88-f6c2-4aff-bad1-4ae58fbb40eb\"\
+              \      \"_id\" : \"d70c3f4e-e5a2-40de-839e-fc9218751c53\",\n      \"\
+              parentId\" : \"b5adf53f-d6ba-4ff4-add4-7d8b8189313a\",\n      \"_links\"\
+              \ : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/amazon-marketplace/products/d70c3f4e-e5a2-40de-839e-fc9218751c53\"\
               \n        },\n        \"products\" : {\n          \"href\" : \"https://yourshop.api.urn/amazon-marketplace/products{?page,size,sort}\"\
               ,\n          \"templated\" : true\n        },\n        \"product\" :\
-              \ {\n          \"href\" : \"https://yourshop.api.urn/products/a7173cb3-faef-4079-ba64-cff7102b7643\"\
+              \ {\n          \"href\" : \"https://yourshop.api.urn/products/b5adf53f-d6ba-4ff4-add4-7d8b8189313a\"\
               \n        }\n      }\n    }, {\n      \"asin\" : null,\n      \"marketplaceId\"\
               \ : null,\n      \"price\" : null,\n      \"status\" : {\n        \"\
               type\" : \"ASSIGNED\",\n        \"errorMessage\" : null\n      },\n\
-              \      \"_id\" : \"d1e99222-a402-40e3-9677-15f9a8927f0f\",\n      \"\
-              parentId\" : \"6342dc2b-da45-4dbf-ba5d-9dc8a8b1df24\",\n      \"_links\"\
-              \ : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/amazon-marketplace/products/d1e99222-a402-40e3-9677-15f9a8927f0f\"\
+              \      \"_id\" : \"d7f6ca64-f149-40a9-a536-4b4f154a438b\",\n      \"\
+              parentId\" : \"4b1285fb-b317-4a24-bd32-8bd92f027552\",\n      \"_links\"\
+              \ : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/amazon-marketplace/products/d7f6ca64-f149-40a9-a536-4b4f154a438b\"\
               \n        },\n        \"products\" : {\n          \"href\" : \"https://yourshop.api.urn/amazon-marketplace/products{?page,size,sort}\"\
               ,\n          \"templated\" : true\n        },\n        \"product\" :\
-              \ {\n          \"href\" : \"https://yourshop.api.urn/products/6342dc2b-da45-4dbf-ba5d-9dc8a8b1df24\"\
+              \ {\n          \"href\" : \"https://yourshop.api.urn/products/4b1285fb-b317-4a24-bd32-8bd92f027552\"\
               \n        }\n      }\n    }, {\n      \"asin\" : null,\n      \"marketplaceId\"\
               \ : null,\n      \"price\" : null,\n      \"status\" : {\n        \"\
               type\" : \"ASSIGNED\",\n        \"errorMessage\" : null\n      },\n\
-              \      \"_id\" : \"f52186f2-388b-4460-a37d-559ff070622c\",\n      \"\
-              parentId\" : \"e1ad6723-1490-4577-a8dc-6478a3a8d003\",\n      \"_links\"\
-              \ : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/amazon-marketplace/products/f52186f2-388b-4460-a37d-559ff070622c\"\
+              \      \"_id\" : \"d86d0de3-bf1d-4163-90a1-2fa2abadaa41\",\n      \"\
+              parentId\" : \"d2923004-b714-45aa-88fa-8486f4f59e60\",\n      \"_links\"\
+              \ : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/amazon-marketplace/products/d86d0de3-bf1d-4163-90a1-2fa2abadaa41\"\
               \n        },\n        \"products\" : {\n          \"href\" : \"https://yourshop.api.urn/amazon-marketplace/products{?page,size,sort}\"\
               ,\n          \"templated\" : true\n        },\n        \"product\" :\
-              \ {\n          \"href\" : \"https://yourshop.api.urn/products/e1ad6723-1490-4577-a8dc-6478a3a8d003\"\
+              \ {\n          \"href\" : \"https://yourshop.api.urn/products/d2923004-b714-45aa-88fa-8486f4f59e60\"\
               \n        }\n      }\n    } ]\n  },\n  \"_links\" : {\n    \"self\"\
               \ : {\n      \"href\" : \"https://yourshop.api.urn/products{?page,size,sort}\"\
               ,\n      \"templated\" : true\n    }\n  },\n  \"page\" : {\n    \"size\"\
@@ -213,13 +213,13 @@ paths:
         name: ""
         required: false
         schema:
-          $ref: "#/definitions/amazon-marketplace_products865141284"
+          $ref: "#/definitions/amazon-marketplace_products-1643190952"
         x-examples:
-          text/uri-list: "https://yourshop.api.urn/products/cb7d7057-83e7-4846-83df-9b5fa86c9de0\n\
-            https://yourshop.api.urn/products/2c757d65-6339-4242-9f16-fa04411ebe25\n\
-            https://yourshop.api.urn/products/3bf55a64-8e4a-4f9d-979d-260c3ac45acd\n\
-            https://yourshop.api.urn/products/ff909693-daca-45b4-83a8-4e8e2fdd5fc1\n\
-            https://yourshop.api.urn/products/395ccfb1-e127-456b-a6e6-34be44cdb42d\n"
+          text/uri-list: "https://yourshop.api.urn/products/70840d75-3f8e-4473-89f8-b740d9d5546d\n\
+            https://yourshop.api.urn/products/2246aecf-ee87-46a3-830a-de1d11e26cfd\n\
+            https://yourshop.api.urn/products/aef38417-5b04-4ca8-8988-f97057534288\n\
+            https://yourshop.api.urn/products/72da7a6d-a1af-4db7-9913-6fdb3adc6e8b\n\
+            https://yourshop.api.urn/products/7a11de41-8fbd-4621-803c-e6535c5a3ac6\n"
       responses:
         201:
           description: ""
@@ -243,13 +243,13 @@ paths:
         name: ""
         required: false
         schema:
-          $ref: "#/definitions/amazon-marketplace_products_publish456272859"
+          $ref: "#/definitions/amazon-marketplace_products_publish33206512"
         x-examples:
-          text/uri-list: "https:/yourshop.api.urn/amazon-marketplace/products/1407cf20-8885-454f-a29d-a9d25fbbe2ed\n\
-            https:/yourshop.api.urn/amazon-marketplace/products/ad179827-6dd3-47f6-a685-8e4fd13caf66\n\
-            https:/yourshop.api.urn/amazon-marketplace/products/831863e1-7e21-41a1-8dc9-9625f2e2969e\n\
-            https:/yourshop.api.urn/amazon-marketplace/products/970847d9-222a-42ea-9749-76272751ab6b\n\
-            https:/yourshop.api.urn/amazon-marketplace/products/9cd6c629-b3ee-47f8-a19a-474ae61afa37\n"
+          text/uri-list: "https:/yourshop.api.urn/amazon-marketplace/products/754d00e8-a29c-4b6a-9f6b-8a09ff5758d0\n\
+            https:/yourshop.api.urn/amazon-marketplace/products/906fb7ea-7265-4752-83d6-229079bacd2b\n\
+            https:/yourshop.api.urn/amazon-marketplace/products/58851fb9-4bef-4a7e-ae7b-e89a9f79556d\n\
+            https:/yourshop.api.urn/amazon-marketplace/products/af34adb1-069c-491c-9058-6b37763ff254\n\
+            https:/yourshop.api.urn/amazon-marketplace/products/2c33045f-0338-477f-a374-0262c58d0319\n"
       responses:
         202:
           description: ""
@@ -280,12 +280,12 @@ paths:
           examples:
             application/hal+json: "{\n  \"asin\" : null,\n  \"marketplaceId\" : null,\n\
               \  \"price\" : null,\n  \"status\" : {\n    \"type\" : \"ASSIGNED\"\
-              ,\n    \"errorMessage\" : null\n  },\n  \"_id\" : \"3500f9d6-814e-46b1-a439-2bbd9751b3a9\"\
-              ,\n  \"parentId\" : \"c4ed9a2c-da6b-4218-af07-b383690ef998\",\n  \"\
-              _links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/amazon-marketplace/products/3500f9d6-814e-46b1-a439-2bbd9751b3a9\"\
+              ,\n    \"errorMessage\" : null\n  },\n  \"_id\" : \"de851442-e9a7-4dc4-8152-23156eaaf685\"\
+              ,\n  \"parentId\" : \"5bd827f0-eaf9-4208-85e8-d60bd439b590\",\n  \"\
+              _links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/amazon-marketplace/products/de851442-e9a7-4dc4-8152-23156eaaf685\"\
               \n    },\n    \"products\" : {\n      \"href\" : \"https://yourshop.api.urn/amazon-marketplace/products{?page,size,sort}\"\
               ,\n      \"templated\" : true\n    },\n    \"product\" : {\n      \"\
-              href\" : \"https://yourshop.api.urn/products/c4ed9a2c-da6b-4218-af07-b383690ef998\"\
+              href\" : \"https://yourshop.api.urn/products/5bd827f0-eaf9-4208-85e8-d60bd439b590\"\
               \n    }\n  }\n}"
           schema:
             $ref: "#/definitions/amazon-marketplace_products_id-1446382770"
@@ -326,12 +326,12 @@ paths:
             application/hal+json: "{\n  \"asin\" : \"B0018M993S\",\n  \"marketplaceId\"\
               \ : \"A1PA6795UKMFR9\",\n  \"price\" : {\n    \"amount\" : 3.99,\n \
               \   \"currency\" : \"EUR\"\n  },\n  \"status\" : {\n    \"type\" : \"\
-              ASSIGNED\",\n    \"errorMessage\" : null\n  },\n  \"_id\" : \"90537a90-f753-41ba-bce1-d000d42cefb9\"\
-              ,\n  \"parentId\" : \"0b4bdfc4-0704-4172-99d2-92bd8f3272c0\",\n  \"\
-              _links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/amazon-marketplace/products/90537a90-f753-41ba-bce1-d000d42cefb9\"\
+              ASSIGNED\",\n    \"errorMessage\" : null\n  },\n  \"_id\" : \"45f574a7-67ac-4a40-acbd-c85b139183e7\"\
+              ,\n  \"parentId\" : \"2ae97b3c-25ba-4b7b-89de-9a2a8694ab11\",\n  \"\
+              _links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/amazon-marketplace/products/45f574a7-67ac-4a40-acbd-c85b139183e7\"\
               \n    },\n    \"products\" : {\n      \"href\" : \"https://yourshop.api.urn/amazon-marketplace/products{?page,size,sort}\"\
               ,\n      \"templated\" : true\n    },\n    \"product\" : {\n      \"\
-              href\" : \"https://yourshop.api.urn/products/0b4bdfc4-0704-4172-99d2-92bd8f3272c0\"\
+              href\" : \"https://yourshop.api.urn/products/2ae97b3c-25ba-4b7b-89de-9a2a8694ab11\"\
               \n    },\n    \"amazon-product-listing\" : {\n      \"href\" : \"https://www.amazon.de/dp/B0018M993S\"\
               \n    }\n  }\n}"
           schema:
@@ -11573,6 +11573,12 @@ definitions:
         type: "number"
         description: "The category number as defined in the Google taxonomy."
     example: "{\n  \"category\" : 111,\n  \"visible\" : true\n}"
+  amazon-marketplace_products_publish33206512:
+    example: "https:/yourshop.api.urn/amazon-marketplace/products/754d00e8-a29c-4b6a-9f6b-8a09ff5758d0\n\
+      https:/yourshop.api.urn/amazon-marketplace/products/906fb7ea-7265-4752-83d6-229079bacd2b\n\
+      https:/yourshop.api.urn/amazon-marketplace/products/58851fb9-4bef-4a7e-ae7b-e89a9f79556d\n\
+      https:/yourshop.api.urn/amazon-marketplace/products/af34adb1-069c-491c-9058-6b37763ff254\n\
+      https:/yourshop.api.urn/amazon-marketplace/products/2c33045f-0338-477f-a374-0262c58d0319\n"
   amazon-marketplace_search_find-product721630217:
     type: "object"
     properties:
@@ -13859,6 +13865,10 @@ definitions:
       \n    },\n    \"infoWebsite\": {\n        \"en-US\": \"http://example.com/info.html\"\
       \n    },\n    \"supportWebsite\": {\n        \"en-US\": \"http://example.com/support.html\"\
       \n    }\n}"
+  amazon-marketplace_products-1643190952:
+    example: "https://yourshop.api.urn/products/70840d75-3f8e-4473-89f8-b740d9d5546d\n\
+      https://yourshop.api.urn/products/2246aecf-ee87-46a3-830a-de1d11e26cfd\nhttps://yourshop.api.urn/products/aef38417-5b04-4ca8-8988-f97057534288\n\
+      https://yourshop.api.urn/products/72da7a6d-a1af-4db7-9913-6fdb3adc6e8b\nhttps://yourshop.api.urn/products/7a11de41-8fbd-4621-803c-e6535c5a3ac6\n"
   orders_order-id-31107470:
     type: "object"
     properties:
@@ -15461,10 +15471,6 @@ definitions:
       eventTypes:
         type: "array"
         description: "The event type names the webhook listens to."
-  amazon-marketplace_products865141284:
-    example: "https://yourshop.api.urn/products/cb7d7057-83e7-4846-83df-9b5fa86c9de0\n\
-      https://yourshop.api.urn/products/2c757d65-6339-4242-9f16-fa04411ebe25\nhttps://yourshop.api.urn/products/3bf55a64-8e4a-4f9d-979d-260c3ac45acd\n\
-      https://yourshop.api.urn/products/ff909693-daca-45b4-83a8-4e8e2fdd5fc1\nhttps://yourshop.api.urn/products/395ccfb1-e127-456b-a6e6-34be44cdb42d\n"
   shop_images_imageId-12542474:
     type: "object"
     required:
@@ -16492,12 +16498,6 @@ definitions:
       iconUrl:
         type: "string"
         description: "The URL to the icon of this app."
-  amazon-marketplace_products_publish456272859:
-    example: "https:/yourshop.api.urn/amazon-marketplace/products/1407cf20-8885-454f-a29d-a9d25fbbe2ed\n\
-      https:/yourshop.api.urn/amazon-marketplace/products/ad179827-6dd3-47f6-a685-8e4fd13caf66\n\
-      https:/yourshop.api.urn/amazon-marketplace/products/831863e1-7e21-41a1-8dc9-9625f2e2969e\n\
-      https:/yourshop.api.urn/amazon-marketplace/products/970847d9-222a-42ea-9749-76272751ab6b\n\
-      https:/yourshop.api.urn/amazon-marketplace/products/9cd6c629-b3ee-47f8-a19a-474ae61afa37\n"
   product-attribute-definitions-309488281:
     type: "object"
     required:
