@@ -1,5 +1,17 @@
 # Beyond API Changelog
 
+## 2018-10-25
+
+### What's New
+---
+
+### What's Deprecated
+---
+* `GET` /products/search/find-attribute-string-values Find existing attribute values
+
+### What's Changed
+---
+
 ## 2018-10-18
 
 ### What's New
