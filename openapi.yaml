@@ -465,12 +465,12 @@ paths:
               \"variant\\\" : \\\"TILE\\\",\\n      \\\"uri\\\" : \\\"http://example.com/tile.png\\\
               \"\\n    }, {\\n      \\\"setName\\\" : \\\"official\\\",\\n      \\\
               \"variant\\\" : \\\"STOREFRONT\\\",\\n      \\\"uri\\\" : \\\"http://example.com/storefront.png\\\
-              \"\\n    } ]\\n  }\\n}\",\n      \"createdAt\" : \"2018-10-24T07:40:56.108\"\
+              \"\\n    } ]\\n  }\\n}\",\n      \"createdAt\" : \"2018-10-26T14:24:41.062\"\
               ,\n      \"feature\" : \"app.test-app\",\n      \"type\" : \"PAYMENT\"\
-              ,\n      \"_id\" : \"2b295ff0-5d9e-4365-a355-0bf6a989d9c2\",\n     \
+              ,\n      \"_id\" : \"13b8db41-d915-4943-9260-0deb8f5cd97a\",\n     \
               \ \"installationStatus\" : \"INSTALLED\",\n      \"_links\" : {\n  \
-              \      \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/apps/2b295ff0-5d9e-4365-a355-0bf6a989d9c2\"\
-              \n        },\n        \"uninstall\" : {\n          \"href\" : \"https://yourshop.api.urn/apps/2b295ff0-5d9e-4365-a355-0bf6a989d9c2/uninstall\"\
+              \      \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/apps/13b8db41-d915-4943-9260-0deb8f5cd97a\"\
+              \n        },\n        \"uninstall\" : {\n          \"href\" : \"https://yourshop.api.urn/apps/13b8db41-d915-4943-9260-0deb8f5cd97a/uninstall\"\
               \n        }\n      }\n    }, {\n      \"name\" : \"Simple + Secure Payment\"\
               ,\n      \"price\" : \"19 USD per month\",\n      \"description\" :\
               \ \"A payment method for simple and secure payments in online shops.\"\
@@ -500,12 +500,12 @@ paths:
               \"variant\\\" : \\\"TILE\\\",\\n      \\\"uri\\\" : \\\"http://example.com/tile.png\\\
               \"\\n    }, {\\n      \\\"setName\\\" : \\\"official\\\",\\n      \\\
               \"variant\\\" : \\\"STOREFRONT\\\",\\n      \\\"uri\\\" : \\\"http://example.com/storefront.png\\\
-              \"\\n    } ]\\n  }\\n}\",\n      \"createdAt\" : \"2018-10-24T07:40:56.38\"\
+              \"\\n    } ]\\n  }\\n}\",\n      \"createdAt\" : \"2018-10-26T14:24:41.297\"\
               ,\n      \"feature\" : \"app.another-test-app\",\n      \"type\" : \"\
-              PAYMENT\",\n      \"_id\" : \"e10f0e38-86d9-434b-969e-30edb9ac5ec8\"\
+              PAYMENT\",\n      \"_id\" : \"d6ee7035-b7b1-4c67-b742-2fa552223daa\"\
               ,\n      \"installationStatus\" : \"INSTALLED\",\n      \"_links\" :\
-              \ {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/apps/e10f0e38-86d9-434b-969e-30edb9ac5ec8\"\
-              \n        },\n        \"uninstall\" : {\n          \"href\" : \"https://yourshop.api.urn/apps/e10f0e38-86d9-434b-969e-30edb9ac5ec8/uninstall\"\
+              \ {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/apps/d6ee7035-b7b1-4c67-b742-2fa552223daa\"\
+              \n        },\n        \"uninstall\" : {\n          \"href\" : \"https://yourshop.api.urn/apps/d6ee7035-b7b1-4c67-b742-2fa552223daa/uninstall\"\
               \n        }\n      }\n    } ]\n  },\n  \"_links\" : {\n    \"self\"\
               \ : {\n      \"href\" : \"https://yourshop.api.urn/apps\"\n    }\n \
               \ },\n  \"page\" : {\n    \"size\" : 20,\n    \"totalElements\" : 2,\n\
@@ -569,11 +569,11 @@ paths:
               \"variant\\\" : \\\"TILE\\\",\\n      \\\"uri\\\" : \\\"http://example.com/tile.png\\\
               \"\\n    }, {\\n      \\\"setName\\\" : \\\"official\\\",\\n      \\\
               \"variant\\\" : \\\"STOREFRONT\\\",\\n      \\\"uri\\\" : \\\"http://example.com/storefront.png\\\
-              \"\\n    } ]\\n  }\\n}\",\n  \"createdAt\" : \"2018-10-24T07:40:53.234\"\
+              \"\\n    } ]\\n  }\\n}\",\n  \"createdAt\" : \"2018-10-26T14:24:37.144\"\
               ,\n  \"feature\" : \"app.test-app\",\n  \"type\" : \"PAYMENT\",\n  \"\
-              _id\" : \"ff6a16b1-3e28-4379-baf3-103b9511eaf0\",\n  \"installationStatus\"\
+              _id\" : \"4195b948-5940-46c9-83af-6c867fde82bb\",\n  \"installationStatus\"\
               \ : \"AVAILABLE\",\n  \"_links\" : {\n    \"self\" : {\n      \"href\"\
-              \ : \"https://yourshop.api.urn/apps/ff6a16b1-3e28-4379-baf3-103b9511eaf0\"\
+              \ : \"https://yourshop.api.urn/apps/4195b948-5940-46c9-83af-6c867fde82bb\"\
               \n    }\n  }\n}"
           schema:
             $ref: "#/definitions/apps_appId-847214231"
@@ -629,11 +629,11 @@ paths:
               \"variant\\\" : \\\"TILE\\\",\\n      \\\"uri\\\" : \\\"http://example.com/tile.png\\\
               \"\\n    }, {\\n      \\\"setName\\\" : \\\"official\\\",\\n      \\\
               \"variant\\\" : \\\"STOREFRONT\\\",\\n      \\\"uri\\\" : \\\"http://example.com/storefront.png\\\
-              \"\\n    } ]\\n  }\\n}\",\n  \"createdAt\" : \"2018-10-24T07:40:57.521\"\
+              \"\\n    } ]\\n  }\\n}\",\n  \"createdAt\" : \"2018-10-26T14:24:42.421\"\
               ,\n  \"feature\" : \"app.test-app\",\n  \"type\" : \"PAYMENT\",\n  \"\
-              _id\" : \"33fdb33c-c960-467c-a096-926c30711fec\",\n  \"installationStatus\"\
+              _id\" : \"b4e8a14b-ffb6-432c-83a2-51428a5193cb\",\n  \"installationStatus\"\
               \ : \"AVAILABLE\",\n  \"_links\" : {\n    \"self\" : {\n      \"href\"\
-              \ : \"https://yourshop.api.urn/apps/33fdb33c-c960-467c-a096-926c30711fec\"\
+              \ : \"https://yourshop.api.urn/apps/b4e8a14b-ffb6-432c-83a2-51428a5193cb\"\
               \n    }\n  }\n}"
           schema:
             $ref: "#/definitions/apps_appId-847214231"
@@ -2195,17 +2195,17 @@ paths:
               \ {\n      \"name\" : \"Corner Shop\",\n      \"label\" : \"corner-shop\"\
               ,\n      \"type\" : \"MANUAL\",\n      \"query\" : {\"bool\":{\"filter\"\
               :[{\"terms\":{\"id\":[\"6c449297-65fc-41aa-a49c-68a3561b33e5\",\"6c449297-65fc-41aa-a49c-68a3561b33e6\"\
-              ]}}]}},\n      \"_id\" : \"47dd50a8-5ef9-48c5-8a34-62445c6ca94b\",\n\
+              ]}}]}},\n      \"_id\" : \"76242821-b891-419f-b0de-b20f90992af4\",\n\
               \      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"\
-              https://yourshop.api.urn/categories/47dd50a8-5ef9-48c5-8a34-62445c6ca94b\"\
-              \n        },\n        \"category\" : {\n          \"href\" : \"https://yourshop.api.urn/categories/47dd50a8-5ef9-48c5-8a34-62445c6ca94b\"\
+              https://yourshop.api.urn/categories/76242821-b891-419f-b0de-b20f90992af4\"\
+              \n        },\n        \"category\" : {\n          \"href\" : \"https://yourshop.api.urn/categories/76242821-b891-419f-b0de-b20f90992af4\"\
               \n        }\n      }\n    }, {\n      \"name\" : \"Power Bars\",\n \
               \     \"label\" : \"power-bar\",\n      \"type\" : \"SMART\",\n    \
               \  \"query\" : { \"bool\": { \"filter\": { \"term\": { \"tags\": \"\
-              power-bar\" }}}},\n      \"_id\" : \"982f2211-a621-4dc6-a727-af615292376a\"\
+              power-bar\" }}}},\n      \"_id\" : \"a769e2d4-8521-4084-a6ef-85c867eb3071\"\
               ,\n      \"_links\" : {\n        \"self\" : {\n          \"href\" :\
-              \ \"https://yourshop.api.urn/categories/982f2211-a621-4dc6-a727-af615292376a\"\
-              \n        },\n        \"category\" : {\n          \"href\" : \"https://yourshop.api.urn/categories/982f2211-a621-4dc6-a727-af615292376a\"\
+              \ \"https://yourshop.api.urn/categories/a769e2d4-8521-4084-a6ef-85c867eb3071\"\
+              \n        },\n        \"category\" : {\n          \"href\" : \"https://yourshop.api.urn/categories/a769e2d4-8521-4084-a6ef-85c867eb3071\"\
               \n        }\n      }\n    } ]\n  },\n  \"_links\" : {\n    \"self\"\
               \ : {\n      \"href\" : \"https://yourshop.api.urn/categories?page=0&size=20\"\
               \n    }\n  },\n  \"page\" : {\n    \"size\" : 20,\n    \"totalElements\"\
@@ -2243,9 +2243,9 @@ paths:
           examples:
             application/hal+json: "{\n  \"name\" : \"Power Bars\",\n  \"label\" :\
               \ \"power-bar\",\n  \"type\" : \"SMART\",\n  \"query\" : {\"bool\":{\"\
-              filter\":{\"term\":{\"tags\":\"power-bar\"}}}},\n  \"_id\" : \"e01fa709-6442-4684-90c9-dcfd4976b592\"\
-              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/categories/e01fa709-6442-4684-90c9-dcfd4976b592\"\
-              \n    },\n    \"category\" : {\n      \"href\" : \"https://yourshop.api.urn/categories/e01fa709-6442-4684-90c9-dcfd4976b592\"\
+              filter\":{\"term\":{\"tags\":\"power-bar\"}}}},\n  \"_id\" : \"86ccfcce-4ce6-45c3-9ca8-a0fe5fd57b7b\"\
+              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/categories/86ccfcce-4ce6-45c3-9ca8-a0fe5fd57b7b\"\
+              \n    },\n    \"category\" : {\n      \"href\" : \"https://yourshop.api.urn/categories/86ccfcce-4ce6-45c3-9ca8-a0fe5fd57b7b\"\
               \n    }\n  }\n}"
       security:
       - oauth2_accessCode:
@@ -2274,9 +2274,9 @@ paths:
             application/hal+json: "{\n  \"name\" : \"Power Bars\",\n  \"label\" :\
               \ \"power-bar\",\n  \"type\" : \"SMART\",\n  \"query\" : { \"bool\"\
               : { \"filter\": { \"term\": { \"tags\": \"power-bar\" }}}},\n  \"_id\"\
-              \ : \"aa5f20d8-89ff-4190-a687-e89cbb476dcd\",\n  \"_links\" : {\n  \
-              \  \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/categories/aa5f20d8-89ff-4190-a687-e89cbb476dcd\"\
-              \n    },\n    \"category\" : {\n      \"href\" : \"https://yourshop.api.urn/categories/aa5f20d8-89ff-4190-a687-e89cbb476dcd\"\
+              \ : \"d4bce3d0-876f-4456-8ea5-ae4949e5fe5e\",\n  \"_links\" : {\n  \
+              \  \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/categories/d4bce3d0-876f-4456-8ea5-ae4949e5fe5e\"\
+              \n    },\n    \"category\" : {\n      \"href\" : \"https://yourshop.api.urn/categories/d4bce3d0-876f-4456-8ea5-ae4949e5fe5e\"\
               \n    }\n  }\n}"
           schema:
             $ref: "#/definitions/categories_id-565740918"
@@ -2318,9 +2318,9 @@ paths:
             application/hal+json: "{\n  \"name\" : \"updated name\",\n  \"label\"\
               \ : \"updated-name\",\n  \"type\" : \"MANUAL\",\n  \"query\" : {\"bool\"\
               :{\"filter\":[{\"terms\":{\"id\":[\"6c449297-65fc-41aa-a49c-68a3561b33e5\"\
-              ,\"6c449297-65fc-41aa-a49c-68a3561b33e6\"]}}]}},\n  \"_id\" : \"719c1ee2-dce3-4a40-8175-13fe642ea89e\"\
-              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/categories/719c1ee2-dce3-4a40-8175-13fe642ea89e\"\
-              \n    },\n    \"category\" : {\n      \"href\" : \"https://yourshop.api.urn/categories/719c1ee2-dce3-4a40-8175-13fe642ea89e\"\
+              ,\"6c449297-65fc-41aa-a49c-68a3561b33e6\"]}}]}},\n  \"_id\" : \"bce50c25-e4ff-4cbc-b522-2dcdb033599e\"\
+              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/categories/bce50c25-e4ff-4cbc-b522-2dcdb033599e\"\
+              \n    },\n    \"category\" : {\n      \"href\" : \"https://yourshop.api.urn/categories/bce50c25-e4ff-4cbc-b522-2dcdb033599e\"\
               \n    }\n  }\n}"
           schema:
             $ref: "#/definitions/categories_id-565740918"
@@ -2389,9 +2389,9 @@ paths:
             application/hal+json: "{\n  \"name\" : \"patched name\",\n  \"label\"\
               \ : \"power-bar\",\n  \"type\" : \"MANUAL\",\n  \"query\" : {\"bool\"\
               :{\"filter\":[{\"terms\":{\"id\":[\"6c449297-65fc-41aa-a49c-68a3561b33e5\"\
-              ,\"6c449297-65fc-41aa-a49c-68a3561b33e6\"]}}]}},\n  \"_id\" : \"9835d6bf-09fa-4490-8c1a-5d98a6998dfa\"\
-              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/categories/9835d6bf-09fa-4490-8c1a-5d98a6998dfa\"\
-              \n    },\n    \"category\" : {\n      \"href\" : \"https://yourshop.api.urn/categories/9835d6bf-09fa-4490-8c1a-5d98a6998dfa\"\
+              ,\"6c449297-65fc-41aa-a49c-68a3561b33e6\"]}}]}},\n  \"_id\" : \"1a9d32fc-70cd-42a6-9aa5-7328c413729e\"\
+              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/categories/1a9d32fc-70cd-42a6-9aa5-7328c413729e\"\
+              \n    },\n    \"category\" : {\n      \"href\" : \"https://yourshop.api.urn/categories/1a9d32fc-70cd-42a6-9aa5-7328c413729e\"\
               \n    }\n  }\n}"
       security:
       - oauth2_accessCode:
@@ -2660,24 +2660,24 @@ paths:
               \ {\n      \"clientId\" : \"client_id\",\n      \"name\" : \"Mobile\
               \ Product Management\",\n      \"scopes\" : [ \"ordr:u\", \"ordr:r\"\
               \ ],\n      \"callbackUrl\" : \"https://hostname/callback\",\n     \
-              \ \"_id\" : \"eeca04f9-1edd-480c-b86e-d8cb74c61c60\",\n      \"_links\"\
-              \ : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/custom-apps/eeca04f9-1edd-480c-b86e-d8cb74c61c60\"\
+              \ \"_id\" : \"cb166322-89ef-4ac0-a67b-e745a5fa5a0c\",\n      \"_links\"\
+              \ : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/custom-apps/cb166322-89ef-4ac0-a67b-e745a5fa5a0c\"\
               \n        },\n        \"regenerate-secret\" : {\n          \"href\"\
-              \ : \"https://yourshop.api.urn/custom-apps/eeca04f9-1edd-480c-b86e-d8cb74c61c60/regenerate-secret\"\
+              \ : \"https://yourshop.api.urn/custom-apps/cb166322-89ef-4ac0-a67b-e745a5fa5a0c/regenerate-secret\"\
               \n        }\n      }\n    }, {\n      \"clientId\" : \"client_id\",\n\
               \      \"name\" : \"Mobile Product Management\",\n      \"scopes\" :\
               \ [ \"ordr:u\", \"ordr:r\" ],\n      \"callbackUrl\" : \"https://hostname/callback\"\
-              ,\n      \"_id\" : \"af17056b-b54b-40d7-b02f-37edb07d66d5\",\n     \
-              \ \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/custom-apps/af17056b-b54b-40d7-b02f-37edb07d66d5\"\
+              ,\n      \"_id\" : \"25a5c6a4-d539-483c-a6df-b640c336c9fd\",\n     \
+              \ \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/custom-apps/25a5c6a4-d539-483c-a6df-b640c336c9fd\"\
               \n        },\n        \"regenerate-secret\" : {\n          \"href\"\
-              \ : \"https://yourshop.api.urn/custom-apps/af17056b-b54b-40d7-b02f-37edb07d66d5/regenerate-secret\"\
+              \ : \"https://yourshop.api.urn/custom-apps/25a5c6a4-d539-483c-a6df-b640c336c9fd/regenerate-secret\"\
               \n        }\n      }\n    }, {\n      \"clientId\" : \"client_id\",\n\
               \      \"name\" : \"Mobile Product Management\",\n      \"scopes\" :\
               \ [ \"ordr:u\", \"ordr:r\" ],\n      \"callbackUrl\" : \"https://hostname/callback\"\
-              ,\n      \"_id\" : \"55780726-5491-46d6-b107-5f3680d27960\",\n     \
-              \ \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/custom-apps/55780726-5491-46d6-b107-5f3680d27960\"\
+              ,\n      \"_id\" : \"8a028104-af17-4425-9b3e-7a6b3ef0913d\",\n     \
+              \ \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/custom-apps/8a028104-af17-4425-9b3e-7a6b3ef0913d\"\
               \n        },\n        \"regenerate-secret\" : {\n          \"href\"\
-              \ : \"https://yourshop.api.urn/custom-apps/55780726-5491-46d6-b107-5f3680d27960/regenerate-secret\"\
+              \ : \"https://yourshop.api.urn/custom-apps/8a028104-af17-4425-9b3e-7a6b3ef0913d/regenerate-secret\"\
               \n        }\n      }\n    } ]\n  },\n  \"_links\" : {\n    \"self\"\
               \ : {\n      \"href\" : \"https://yourshop.api.urn/custom-apps?page=0&size=20\"\
               \n    }\n  },\n  \"page\" : {\n    \"size\" : 20,\n    \"totalElements\"\
@@ -2716,12 +2716,12 @@ paths:
             application/hal+json: "{\n  \"clientSecret\" : \"client_secret\",\n  \"\
               clientId\" : \"client_id\",\n  \"scopes\" : [ \"ordr:u\", \"ordr:r\"\
               \ ],\n  \"callbackUrl\" : \"https://hostname/callback\",\n  \"name\"\
-              \ : \"Mobile Product Management\",\n  \"_id\" : \"d3c739c4-6579-41cc-a577-55591d09286c\"\
-              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/custom-apps/d3c739c4-6579-41cc-a577-55591d09286c\"\
-              \n    },\n    \"regenerate-secret\" : {\n      \"href\" : \"https://yourshop.api.urn/custom-apps/d3c739c4-6579-41cc-a577-55591d09286c/regenerate-secret\"\
+              \ : \"Mobile Product Management\",\n  \"_id\" : \"7386b00f-190a-428d-b9c2-ac99807548a1\"\
+              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/custom-apps/7386b00f-190a-428d-b9c2-ac99807548a1\"\
+              \n    },\n    \"regenerate-secret\" : {\n      \"href\" : \"https://yourshop.api.urn/custom-apps/7386b00f-190a-428d-b9c2-ac99807548a1/regenerate-secret\"\
               \n    }\n  }\n}"
           schema:
-            $ref: "#/definitions/custom-apps_customAppId_regenerate-secret-525208887"
+            $ref: "#/definitions/custom-apps-525208887"
       security:
       - oauth2_accessCode:
         - "acap:m"
@@ -2749,9 +2749,9 @@ paths:
             application/hal+json: "{\n  \"clientId\" : \"client_id\",\n  \"name\"\
               \ : \"Mobile Product Management\",\n  \"scopes\" : [ \"ordr:u\", \"\
               ordr:r\" ],\n  \"callbackUrl\" : \"https://hostname/callback\",\n  \"\
-              _id\" : \"7798f4a4-24cb-48b4-b4aa-e838bf5e251f\",\n  \"_links\" : {\n\
-              \    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/custom-apps/7798f4a4-24cb-48b4-b4aa-e838bf5e251f\"\
-              \n    },\n    \"regenerate-secret\" : {\n      \"href\" : \"https://yourshop.api.urn/custom-apps/7798f4a4-24cb-48b4-b4aa-e838bf5e251f/regenerate-secret\"\
+              _id\" : \"6d412424-7080-4784-9fa8-9b50ca22fc02\",\n  \"_links\" : {\n\
+              \    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/custom-apps/6d412424-7080-4784-9fa8-9b50ca22fc02\"\
+              \n    },\n    \"regenerate-secret\" : {\n      \"href\" : \"https://yourshop.api.urn/custom-apps/6d412424-7080-4784-9fa8-9b50ca22fc02/regenerate-secret\"\
               \n    }\n  }\n}"
           schema:
             $ref: "#/definitions/custom-apps_customAppId-1474085348"
@@ -2791,9 +2791,9 @@ paths:
           examples:
             application/hal+json: "{\n  \"clientId\" : \"client_id\",\n  \"name\"\
               \ : \"Managed Payment Methods\",\n  \"scopes\" : [ \"pymt:m\" ],\n \
-              \ \"callbackUrl\" : \"https://hostname/callback\",\n  \"_id\" : \"6a9c6066-644c-4895-b65a-8ac8b446ab85\"\
-              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/custom-apps/6a9c6066-644c-4895-b65a-8ac8b446ab85\"\
-              \n    },\n    \"regenerate-secret\" : {\n      \"href\" : \"https://yourshop.api.urn/custom-apps/6a9c6066-644c-4895-b65a-8ac8b446ab85/regenerate-secret\"\
+              \ \"callbackUrl\" : \"https://hostname/callback\",\n  \"_id\" : \"4e96ffa0-39c2-4d73-ba36-97b9dc62a3f5\"\
+              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/custom-apps/4e96ffa0-39c2-4d73-ba36-97b9dc62a3f5\"\
+              \n    },\n    \"regenerate-secret\" : {\n      \"href\" : \"https://yourshop.api.urn/custom-apps/4e96ffa0-39c2-4d73-ba36-97b9dc62a3f5/regenerate-secret\"\
               \n    }\n  }\n}"
           schema:
             $ref: "#/definitions/custom-apps_customAppId-1474085348"
@@ -2842,15 +2842,15 @@ paths:
         200:
           description: ""
           examples:
-            application/hal+json: "{\n  \"clientSecret\" : \"e0a59ca8-5a14-4e5b-828f-6171f0772223\"\
+            application/hal+json: "{\n  \"clientSecret\" : \"c4496695-55bd-40c4-a2a8-ec1ae1dcdb7c\"\
               ,\n  \"clientId\" : \"client_id\",\n  \"scopes\" : [ \"ordr:u\", \"\
               ordr:r\" ],\n  \"callbackUrl\" : \"https://hostname/callback\",\n  \"\
-              name\" : \"Mobile Product Management\",\n  \"_id\" : \"73066347-916b-48ee-9b3b-02c1ad5ce147\"\
-              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/custom-apps/73066347-916b-48ee-9b3b-02c1ad5ce147\"\
-              \n    },\n    \"regenerate-secret\" : {\n      \"href\" : \"https://yourshop.api.urn/custom-apps/73066347-916b-48ee-9b3b-02c1ad5ce147/regenerate-secret\"\
+              name\" : \"Mobile Product Management\",\n  \"_id\" : \"ff7199c9-be16-4fe6-860e-26d444fb3e04\"\
+              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/custom-apps/ff7199c9-be16-4fe6-860e-26d444fb3e04\"\
+              \n    },\n    \"regenerate-secret\" : {\n      \"href\" : \"https://yourshop.api.urn/custom-apps/ff7199c9-be16-4fe6-860e-26d444fb3e04/regenerate-secret\"\
               \n    }\n  }\n}"
           schema:
-            $ref: "#/definitions/custom-apps_customAppId_regenerate-secret-525208887"
+            $ref: "#/definitions/custom-apps-525208887"
       security:
       - oauth2_accessCode:
         - "acap:m"
@@ -2860,7 +2860,7 @@ paths:
     post:
       tags:
       - "custom-apps"
-      summary: "/custom-apps/{customAppId}/upgrade"
+      summary: "Upgrade custom app to app"
       description: ""
       operationId: "custom-apps-upgrade"
       consumes:
@@ -2901,26 +2901,26 @@ paths:
           description: ""
           examples:
             application/hal+json: "{\n  \"additionalConfiguration\" : null,\n  \"\
-              price\" : {\n    \"en-US\" : \"20 USD per month\"\n  },\n  \"images\"\
-              \ : {\n    \"en-US\" : [ \"http://example.com/image1.png\" ]\n  },\n\
-              \  \"developer\" : {\n    \"en-US\" : \"ePages Inc.\"\n  },\n  \"supportEmail\"\
-              \ : {\n    \"en-US\" : \"supporters@example.com\"\n  },\n  \"iconUrl\"\
-              \ : {\n    \"en-US\" : \"http://example.com/icon.png\"\n  },\n  \"appUrl\"\
-              \ : {\n    \"en-US\" : \"http://example.com/new-login\"\n  },\n  \"\
-              logoUrl\" : {\n    \"en-US\" : \"http://example.com/new-logo.png\"\n\
-              \  },\n  \"videoUrl\" : {\n    \"en-US\" : \"http://example.com/video.mpg\"\
+              clientId\" : \"[client_id]\",\n  \"scopes\" : [ \"prod:m\" ],\n  \"\
+              callbackUrl\" : \"http://example.com/some\",\n  \"createdAt\" : \"2018-10-26T14:25:01.189\"\
+              ,\n  \"price\" : {\n    \"en-US\" : \"20 USD per month\"\n  },\n  \"\
+              supportEmail\" : {\n    \"en-US\" : \"supporters@example.com\"\n  },\n\
+              \  \"iconUrl\" : {\n    \"en-US\" : \"http://example.com/icon.png\"\n\
+              \  },\n  \"appUrl\" : {\n    \"en-US\" : \"http://example.com/new-login\"\
+              \n  },\n  \"logoUrl\" : {\n    \"en-US\" : \"http://example.com/new-logo.png\"\
+              \n  },\n  \"videoUrl\" : {\n    \"en-US\" : \"http://example.com/video.mpg\"\
               \n  },\n  \"infoWebsite\" : {\n    \"en-US\" : \"http://example.com/video.mpg\"\
               \n  },\n  \"supportWebsite\" : {\n    \"en-US\" : \"http://example.com/support.html\"\
-              \n  },\n  \"clientId\" : \"[client_id]\",\n  \"scopes\" : [ \"prod:m\"\
-              \ ],\n  \"callbackUrl\" : \"http://example.com/some\",\n  \"createdAt\"\
-              \ : \"2018-10-24T07:41:13.928\",\n  \"feature\" : \"app.sas-shipping-app\"\
-              ,\n  \"description\" : {\n    \"en-US\" : \"A payment method for simple\
-              \ and secure shipping in online shops.\"\n  },\n  \"name\" : {\n   \
-              \ \"en-US\" : \"Simple + Secure Shipping\"\n  },\n  \"type\" : \"SHIPPING\"\
-              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/add-on-management/apps/4299172f-c83e-4a83-aa22-4fc9fc7f80fc\"\
-              \n    },\n    \"install\" : {\n      \"href\" : \"https://yourshop.api.urn/add-on-management/apps/4299172f-c83e-4a83-aa22-4fc9fc7f80fc/install\"\
-              \n    },\n    \"regenerate-secret\" : {\n      \"href\" : \"https://yourshop.api.urn/add-on-management/apps/4299172f-c83e-4a83-aa22-4fc9fc7f80fc/regenerate-secret\"\
-              \n    }\n  },\n  \"_id\" : \"4299172f-c83e-4a83-aa22-4fc9fc7f80fc\"\n\
+              \n  },\n  \"images\" : {\n    \"en-US\" : [ \"http://example.com/image1.png\"\
+              \ ]\n  },\n  \"developer\" : {\n    \"en-US\" : \"ePages Inc.\"\n  },\n\
+              \  \"feature\" : \"app.sas-shipping-app\",\n  \"description\" : {\n\
+              \    \"en-US\" : \"A payment method for simple and secure shipping in\
+              \ online shops.\"\n  },\n  \"name\" : {\n    \"en-US\" : \"Simple +\
+              \ Secure Shipping\"\n  },\n  \"type\" : \"SHIPPING\",\n  \"_links\"\
+              \ : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/add-on-management/apps/8804e7af-dac0-4aa7-b159-747b9174ef20\"\
+              \n    },\n    \"install\" : {\n      \"href\" : \"https://yourshop.api.urn/add-on-management/apps/8804e7af-dac0-4aa7-b159-747b9174ef20/install\"\
+              \n    },\n    \"regenerate-secret\" : {\n      \"href\" : \"https://yourshop.api.urn/add-on-management/apps/8804e7af-dac0-4aa7-b159-747b9174ef20/regenerate-secret\"\
+              \n    }\n  },\n  \"_id\" : \"8804e7af-dac0-4aa7-b159-747b9174ef20\"\n\
               }"
       security:
       - oauth2_accessCode:
@@ -2951,8 +2951,8 @@ paths:
         201:
           description: ""
           examples:
-            application/hal+json: "{\n  \"authorizeUrl\" : \"https://google-auth.com/o/oauth2/auth?access_type=offline&client_id=32649939298-sh91tfd793vkuudkk34aliqeg8astose.apps.googleusercontent.com&redirect_uri=http://system.epages.works/api/google-shopping/nonce&response_type=code&scope=https://www.googleapis.com/auth/content+https://www.googleapis.com/auth/siteverification&state=921be856-8568-4552-90a4-52c207d6f6a2\"\
-              ,\n  \"nonceExpirationDate\" : 1538488237\n}"
+            application/hal+json: "{\n  \"authorizeUrl\" : \"https://google-auth.com/o/oauth2/auth?access_type=offline&client_id=32649939298-sh91tfd793vkuudkk34aliqeg8astose.apps.googleusercontent.com&redirect_uri=http://system.epages.works/api/google-shopping/nonce&response_type=code&scope=https://www.googleapis.com/auth/content+https://www.googleapis.com/auth/siteverification&state=a0b5dcd8-b792-46a5-a38b-9ebc3ad0e610\"\
+              ,\n  \"nonceExpirationDate\" : 1540555531\n}"
           schema:
             $ref: "#/definitions/google-shopping_access-data1382315771"
       security:
@@ -2976,49 +2976,49 @@ paths:
             application/hal+json: "{\n  \"_embedded\" : {\n    \"products\" : [ {\n\
               \      \"visible\" : true,\n      \"category\" : 123456,\n      \"status\"\
               \ : {\n        \"type\" : \"INCOMPLETE\",\n        \"errorMessage\"\
-              \ : null\n      },\n      \"_id\" : \"4265f981-2306-4466-bb93-64550727d7a2\"\
-              ,\n      \"parentId\" : \"4916d108-427f-48ff-aed9-6e704a4611c8\",\n\
+              \ : null\n      },\n      \"_id\" : \"043828c2-42a7-4825-85c4-5c442b3b32ef\"\
+              ,\n      \"parentId\" : \"88955554-b2e5-47e1-b263-eccdce945b3d\",\n\
               \      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"\
-              https://yourshop.api.urn/google-shopping/products/4265f981-2306-4466-bb93-64550727d7a2\"\
+              https://yourshop.api.urn/google-shopping/products/043828c2-42a7-4825-85c4-5c442b3b32ef\"\
               \n        },\n        \"products\" : {\n          \"href\" : \"https://yourshop.api.urn/google-shopping/products{?page,size,sort}\"\
               ,\n          \"templated\" : true\n        },\n        \"product\" :\
-              \ {\n          \"href\" : \"https://yourshop.api.urn/products/4916d108-427f-48ff-aed9-6e704a4611c8\"\
+              \ {\n          \"href\" : \"https://yourshop.api.urn/products/88955554-b2e5-47e1-b263-eccdce945b3d\"\
               \n        }\n      }\n    }, {\n      \"visible\" : true,\n      \"\
               category\" : 123456,\n      \"status\" : {\n        \"type\" : \"INCOMPLETE\"\
-              ,\n        \"errorMessage\" : null\n      },\n      \"_id\" : \"54a99544-b73f-42af-bb5e-db62c4a777e9\"\
-              ,\n      \"parentId\" : \"0f83866d-8a1e-45fc-9c45-0f35d6a73ff8\",\n\
+              ,\n        \"errorMessage\" : null\n      },\n      \"_id\" : \"60b1f126-eb8e-43c9-9f33-c65bb1423a3e\"\
+              ,\n      \"parentId\" : \"b4fe06fd-ff02-454f-ba03-bb03d3cebcb8\",\n\
               \      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"\
-              https://yourshop.api.urn/google-shopping/products/54a99544-b73f-42af-bb5e-db62c4a777e9\"\
+              https://yourshop.api.urn/google-shopping/products/60b1f126-eb8e-43c9-9f33-c65bb1423a3e\"\
               \n        },\n        \"products\" : {\n          \"href\" : \"https://yourshop.api.urn/google-shopping/products{?page,size,sort}\"\
               ,\n          \"templated\" : true\n        },\n        \"product\" :\
-              \ {\n          \"href\" : \"https://yourshop.api.urn/products/0f83866d-8a1e-45fc-9c45-0f35d6a73ff8\"\
+              \ {\n          \"href\" : \"https://yourshop.api.urn/products/b4fe06fd-ff02-454f-ba03-bb03d3cebcb8\"\
               \n        }\n      }\n    }, {\n      \"visible\" : true,\n      \"\
               category\" : 123456,\n      \"status\" : {\n        \"type\" : \"INCOMPLETE\"\
-              ,\n        \"errorMessage\" : null\n      },\n      \"_id\" : \"619d43ac-807c-4da3-9a45-1162f0b912a3\"\
-              ,\n      \"parentId\" : \"5cde5c4a-1af8-4212-97fd-fce0c854f0e0\",\n\
+              ,\n        \"errorMessage\" : null\n      },\n      \"_id\" : \"ced50f1c-4be5-47d9-ac0c-b1f5cbc6078f\"\
+              ,\n      \"parentId\" : \"bfda3ca5-9411-4144-a5a8-baadac9b524b\",\n\
               \      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"\
-              https://yourshop.api.urn/google-shopping/products/619d43ac-807c-4da3-9a45-1162f0b912a3\"\
+              https://yourshop.api.urn/google-shopping/products/ced50f1c-4be5-47d9-ac0c-b1f5cbc6078f\"\
               \n        },\n        \"products\" : {\n          \"href\" : \"https://yourshop.api.urn/google-shopping/products{?page,size,sort}\"\
               ,\n          \"templated\" : true\n        },\n        \"product\" :\
-              \ {\n          \"href\" : \"https://yourshop.api.urn/products/5cde5c4a-1af8-4212-97fd-fce0c854f0e0\"\
+              \ {\n          \"href\" : \"https://yourshop.api.urn/products/bfda3ca5-9411-4144-a5a8-baadac9b524b\"\
               \n        }\n      }\n    }, {\n      \"visible\" : true,\n      \"\
               category\" : 123456,\n      \"status\" : {\n        \"type\" : \"INCOMPLETE\"\
-              ,\n        \"errorMessage\" : null\n      },\n      \"_id\" : \"8794a2cc-8174-4fdc-aa0e-fc455f90bca3\"\
-              ,\n      \"parentId\" : \"192f97b3-5b1c-4512-9602-7beac2259914\",\n\
+              ,\n        \"errorMessage\" : null\n      },\n      \"_id\" : \"f5bec87e-4cb3-4d75-9e61-6468f40ee045\"\
+              ,\n      \"parentId\" : \"35c17b93-eeff-4262-8ff5-28e40f247e54\",\n\
               \      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"\
-              https://yourshop.api.urn/google-shopping/products/8794a2cc-8174-4fdc-aa0e-fc455f90bca3\"\
+              https://yourshop.api.urn/google-shopping/products/f5bec87e-4cb3-4d75-9e61-6468f40ee045\"\
               \n        },\n        \"products\" : {\n          \"href\" : \"https://yourshop.api.urn/google-shopping/products{?page,size,sort}\"\
               ,\n          \"templated\" : true\n        },\n        \"product\" :\
-              \ {\n          \"href\" : \"https://yourshop.api.urn/products/192f97b3-5b1c-4512-9602-7beac2259914\"\
+              \ {\n          \"href\" : \"https://yourshop.api.urn/products/35c17b93-eeff-4262-8ff5-28e40f247e54\"\
               \n        }\n      }\n    }, {\n      \"visible\" : true,\n      \"\
               category\" : 123456,\n      \"status\" : {\n        \"type\" : \"INCOMPLETE\"\
-              ,\n        \"errorMessage\" : null\n      },\n      \"_id\" : \"dce8377f-4666-4ace-8a6e-1f478074f430\"\
-              ,\n      \"parentId\" : \"c3f738a5-92d8-497b-a5cf-0f306690b585\",\n\
+              ,\n        \"errorMessage\" : null\n      },\n      \"_id\" : \"fb40f3ed-8410-4149-bb12-496f7072e868\"\
+              ,\n      \"parentId\" : \"3adf878f-518a-4dd1-a78f-0d5a6a66fd82\",\n\
               \      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"\
-              https://yourshop.api.urn/google-shopping/products/dce8377f-4666-4ace-8a6e-1f478074f430\"\
+              https://yourshop.api.urn/google-shopping/products/fb40f3ed-8410-4149-bb12-496f7072e868\"\
               \n        },\n        \"products\" : {\n          \"href\" : \"https://yourshop.api.urn/google-shopping/products{?page,size,sort}\"\
               ,\n          \"templated\" : true\n        },\n        \"product\" :\
-              \ {\n          \"href\" : \"https://yourshop.api.urn/products/c3f738a5-92d8-497b-a5cf-0f306690b585\"\
+              \ {\n          \"href\" : \"https://yourshop.api.urn/products/3adf878f-518a-4dd1-a78f-0d5a6a66fd82\"\
               \n        }\n      }\n    } ]\n  },\n  \"_links\" : {\n    \"self\"\
               \ : {\n      \"href\" : \"https://yourshop.api.urn/google-shopping/products{?page,size,sort}\"\
               ,\n      \"templated\" : true\n    }\n  },\n  \"page\" : {\n    \"size\"\
@@ -3044,13 +3044,13 @@ paths:
         name: ""
         required: false
         schema:
-          $ref: "#/definitions/google-shopping_products1101177183"
+          $ref: "#/definitions/google-shopping_products711922993"
         x-examples:
-          text/uri-list: "https://yourshop.api.urn/products/186f907e-9500-401b-a6e1-46c05a16e17a\n\
-            https://yourshop.api.urn/products/8b1ed19a-93fe-4695-bafa-65b627def65b\n\
-            https://yourshop.api.urn/products/ae07b56d-dc19-4e20-ae6b-fa51c590faf7\n\
-            https://yourshop.api.urn/products/98afd174-35eb-49d4-b8b4-5960ead61ed3\n\
-            https://yourshop.api.urn/products/eb41b14b-c8c5-4925-952e-53f3489068af\n"
+          text/uri-list: "https://yourshop.api.urn/products/2b495533-3a54-4c04-9a36-1f44e5276bcd\n\
+            https://yourshop.api.urn/products/f8909acc-b517-4bca-a07e-8e9524eab076\n\
+            https://yourshop.api.urn/products/46c41aa3-0182-4ad8-aba0-0916b1ba2f64\n\
+            https://yourshop.api.urn/products/efe792cf-51fe-46d1-8590-f4605f46a1d7\n\
+            https://yourshop.api.urn/products/e6eeb125-bb68-448e-aed7-8e583748bed1\n"
       responses:
         201:
           description: ""
@@ -3130,13 +3130,13 @@ paths:
         name: ""
         required: false
         schema:
-          $ref: "#/definitions/google-shopping_products_publish714309657"
+          $ref: "#/definitions/google-shopping_products_publish-1044276609"
         x-examples:
-          text/uri-list: "https://yourshop.api.urn/google-shopping/products/e108c932-db7f-4339-9444-182d34d95088\n\
-            https://yourshop.api.urn/google-shopping/products/6162bbe7-8547-4a56-a277-fdb2272ced76\n\
-            https://yourshop.api.urn/google-shopping/products/8c4139e4-738e-4eee-8718-9e1b09d025e7\n\
-            https://yourshop.api.urn/google-shopping/products/566363db-8143-4e2a-b5be-83943a0269d9\n\
-            https://yourshop.api.urn/google-shopping/products/21a86531-e6c0-45b7-bfc4-a3abfbfff07e\n"
+          text/uri-list: "https://yourshop.api.urn/google-shopping/products/3ccb216d-19d0-4a79-9911-50da4ef13ded\n\
+            https://yourshop.api.urn/google-shopping/products/fde950dc-0734-4dd8-8cdf-c86b9300427e\n\
+            https://yourshop.api.urn/google-shopping/products/543f430d-b847-4e06-8da3-04f45a928677\n\
+            https://yourshop.api.urn/google-shopping/products/ea69eefd-85d3-4594-9229-3d628818ec3b\n\
+            https://yourshop.api.urn/google-shopping/products/5d432308-33f8-4b67-8027-24d491f1777b\n"
       responses:
         202:
           description: ""
@@ -3167,16 +3167,16 @@ paths:
           examples:
             application/hal+json: "{\n  \"visible\" : true,\n  \"category\" : 123456,\n\
               \  \"status\" : {\n    \"type\" : \"READY_TO_PUBLISH\",\n    \"errorMessage\"\
-              \ : null\n  },\n  \"_id\" : \"1270c4eb-2abc-4bbd-8845-538e10d9f88d\"\
-              ,\n  \"parentId\" : \"7bf36a25-9068-416d-8c41-65ea2fb28b81\",\n  \"\
-              _links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/google-shopping/products/1270c4eb-2abc-4bbd-8845-538e10d9f88d\"\
+              \ : null\n  },\n  \"_id\" : \"ca6a2433-3d69-4970-af0b-20d6e70f3122\"\
+              ,\n  \"parentId\" : \"072febf9-0ceb-4cc3-a2ca-ce3c18cd2b7c\",\n  \"\
+              _links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/google-shopping/products/ca6a2433-3d69-4970-af0b-20d6e70f3122\"\
               \n    },\n    \"products\" : {\n      \"href\" : \"https://yourshop.api.urn/google-shopping/products{?page,size,sort}\"\
               ,\n      \"templated\" : true\n    },\n    \"product\" : {\n      \"\
-              href\" : \"https://yourshop.api.urn/products/7bf36a25-9068-416d-8c41-65ea2fb28b81\"\
-              \n    },\n    \"publish\" : {\n      \"href\" : \"https://yourshop.api.urn/google-shopping/products/1270c4eb-2abc-4bbd-8845-538e10d9f88d/publish\"\
+              href\" : \"https://yourshop.api.urn/products/072febf9-0ceb-4cc3-a2ca-ce3c18cd2b7c\"\
+              \n    },\n    \"publish\" : {\n      \"href\" : \"https://yourshop.api.urn/google-shopping/products/ca6a2433-3d69-4970-af0b-20d6e70f3122/publish\"\
               \n    }\n  }\n}"
           schema:
-            $ref: "#/definitions/google-shopping_products_id1430177660"
+            $ref: "#/definitions/google-shopping_products_id_publish1430177660"
       security:
       - oauth2_accessCode:
         - "gspr:r"
@@ -3211,16 +3211,16 @@ paths:
           examples:
             application/hal+json: "{\n  \"visible\" : true,\n  \"category\" : 111,\n\
               \  \"status\" : {\n    \"type\" : \"READY_TO_PUBLISH\",\n    \"errorMessage\"\
-              \ : null\n  },\n  \"_id\" : \"81772bcd-5f75-4b70-938f-742f43827ee2\"\
-              ,\n  \"parentId\" : \"7befddd5-ab87-4a12-812d-5d1b101a111f\",\n  \"\
-              _links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/google-shopping/products/81772bcd-5f75-4b70-938f-742f43827ee2\"\
+              \ : null\n  },\n  \"_id\" : \"5c22c71f-67f4-4ab5-b746-7d052998db9e\"\
+              ,\n  \"parentId\" : \"88cec79a-e2c6-45c3-a530-2557d6a303f0\",\n  \"\
+              _links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/google-shopping/products/5c22c71f-67f4-4ab5-b746-7d052998db9e\"\
               \n    },\n    \"products\" : {\n      \"href\" : \"https://yourshop.api.urn/google-shopping/products{?page,size,sort}\"\
               ,\n      \"templated\" : true\n    },\n    \"product\" : {\n      \"\
-              href\" : \"https://yourshop.api.urn/products/7befddd5-ab87-4a12-812d-5d1b101a111f\"\
-              \n    },\n    \"publish\" : {\n      \"href\" : \"https://yourshop.api.urn/google-shopping/products/81772bcd-5f75-4b70-938f-742f43827ee2/publish\"\
+              href\" : \"https://yourshop.api.urn/products/88cec79a-e2c6-45c3-a530-2557d6a303f0\"\
+              \n    },\n    \"publish\" : {\n      \"href\" : \"https://yourshop.api.urn/google-shopping/products/5c22c71f-67f4-4ab5-b746-7d052998db9e/publish\"\
               \n    }\n  }\n}"
           schema:
-            $ref: "#/definitions/google-shopping_products_id1430177660"
+            $ref: "#/definitions/google-shopping_products_id_publish1430177660"
       security:
       - oauth2_accessCode:
         - "gspr:u"
@@ -3268,16 +3268,16 @@ paths:
           examples:
             application/hal+json: "{\n  \"visible\" : true,\n  \"category\" : 123456,\n\
               \  \"status\" : {\n    \"type\" : \"PUBLISHED\",\n    \"errorMessage\"\
-              \ : null\n  },\n  \"_id\" : \"8b25c94e-1ceb-4f66-928e-fc75fa96d427\"\
-              ,\n  \"parentId\" : \"ad41de8c-65a7-4777-9a08-15405ecaa813\",\n  \"\
-              _links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/google-shopping/products/8b25c94e-1ceb-4f66-928e-fc75fa96d427\"\
+              \ : null\n  },\n  \"_id\" : \"7b247f77-69fc-48e2-a8c7-96043179ae5d\"\
+              ,\n  \"parentId\" : \"136f8545-1a62-4cec-806b-d4b152721f01\",\n  \"\
+              _links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/google-shopping/products/7b247f77-69fc-48e2-a8c7-96043179ae5d\"\
               \n    },\n    \"products\" : {\n      \"href\" : \"https://yourshop.api.urn/google-shopping/products{?page,size,sort}\"\
               ,\n      \"templated\" : true\n    },\n    \"product\" : {\n      \"\
-              href\" : \"https://yourshop.api.urn/products/ad41de8c-65a7-4777-9a08-15405ecaa813\"\
-              \n    },\n    \"unpublish\" : {\n      \"href\" : \"https://yourshop.api.urn/google-shopping/products/8b25c94e-1ceb-4f66-928e-fc75fa96d427/unpublish\"\
+              href\" : \"https://yourshop.api.urn/products/136f8545-1a62-4cec-806b-d4b152721f01\"\
+              \n    },\n    \"unpublish\" : {\n      \"href\" : \"https://yourshop.api.urn/google-shopping/products/7b247f77-69fc-48e2-a8c7-96043179ae5d/unpublish\"\
               \n    }\n  }\n}"
           schema:
-            $ref: "#/definitions/google-shopping_products_id1430177660"
+            $ref: "#/definitions/google-shopping_products_id_publish1430177660"
       security:
       - oauth2_accessCode:
         - "gspr:u"
@@ -3304,16 +3304,16 @@ paths:
           examples:
             application/hal+json: "{\n  \"visible\" : true,\n  \"category\" : 123456,\n\
               \  \"status\" : {\n    \"type\" : \"READY_TO_PUBLISH\",\n    \"errorMessage\"\
-              \ : null\n  },\n  \"_id\" : \"4126f114-a527-4474-a604-53d871a34c66\"\
-              ,\n  \"parentId\" : \"b236fa54-1f43-47d6-91a1-a37a263df4d0\",\n  \"\
-              _links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/google-shopping/products/4126f114-a527-4474-a604-53d871a34c66\"\
+              \ : null\n  },\n  \"_id\" : \"b20d991c-6577-4f41-b814-5408fd4a299e\"\
+              ,\n  \"parentId\" : \"50af1fdb-417f-486d-9287-49158ac14968\",\n  \"\
+              _links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/google-shopping/products/b20d991c-6577-4f41-b814-5408fd4a299e\"\
               \n    },\n    \"products\" : {\n      \"href\" : \"https://yourshop.api.urn/google-shopping/products{?page,size,sort}\"\
               ,\n      \"templated\" : true\n    },\n    \"product\" : {\n      \"\
-              href\" : \"https://yourshop.api.urn/products/b236fa54-1f43-47d6-91a1-a37a263df4d0\"\
-              \n    },\n    \"publish\" : {\n      \"href\" : \"https://yourshop.api.urn/google-shopping/products/4126f114-a527-4474-a604-53d871a34c66/publish\"\
+              href\" : \"https://yourshop.api.urn/products/50af1fdb-417f-486d-9287-49158ac14968\"\
+              \n    },\n    \"publish\" : {\n      \"href\" : \"https://yourshop.api.urn/google-shopping/products/b20d991c-6577-4f41-b814-5408fd4a299e/publish\"\
               \n    }\n  }\n}"
           schema:
-            $ref: "#/definitions/google-shopping_products_id1430177660"
+            $ref: "#/definitions/google-shopping_products_id_publish1430177660"
       security:
       - oauth2_accessCode:
         - "gspr:u"
@@ -6249,7 +6249,7 @@ paths:
           description: ""
           examples:
             application/hal+json: "{\n  \"_embedded\" : {\n    \"products\" : [ {\n\
-              \      \"_id\" : \"4765fa06-fe80-49f7-ae08-19cec07ad0d8\",\n      \"\
+              \      \"_id\" : \"f19d0e3c-29d5-495f-81ac-eb0b048a097e\",\n      \"\
               sku\" : \"vino020\",\n      \"name\" : \"Rioja Castillo de Puerto (2013)\"\
               ,\n      \"salesPrice\" : {\n        \"amount\" : 8.7,\n        \"currency\"\
               \ : \"EUR\"\n      },\n      \"listPrice\" : {\n        \"amount\" :\
@@ -6265,10 +6265,10 @@ paths:
               \    \"_links\" : {\n        \"default-image-data\" : {\n          \"\
               href\" : \"https://yourshop.api.urn/storage-api/images/rioja-01.jpg?hash=e9a1ce5c0c6abfebec8fb1f6faf77dca7e6e7777{&width,height,upscale}\"\
               ,\n          \"templated\" : true\n        },\n        \"self\" : {\n\
-              \          \"href\" : \"https://yourshop.api.urn/product-view/products/4765fa06-fe80-49f7-ae08-19cec07ad0d8\"\
-              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/4765fa06-fe80-49f7-ae08-19cec07ad0d8{?projection}\"\
+              \          \"href\" : \"https://yourshop.api.urn/product-view/products/f19d0e3c-29d5-495f-81ac-eb0b048a097e\"\
+              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/f19d0e3c-29d5-495f-81ac-eb0b048a097e{?projection}\"\
               ,\n          \"templated\" : true\n        }\n      }\n    }, {\n  \
-              \    \"_id\" : \"934e8a5e-a001-4fba-a970-ce92a83d3e43\",\n      \"sku\"\
+              \    \"_id\" : \"9b1e28f1-f014-4eb2-8afa-a8b6e5c01a6d\",\n      \"sku\"\
               \ : \"EB001\",\n      \"name\" : \"Power & Vanilla Coconut Protein Bar\
               \ (Pack of 5)\",\n      \"salesPrice\" : {\n        \"amount\" : 4.95,\n\
               \        \"currency\" : \"EUR\"\n      },\n      \"listPrice\" : null,\n\
@@ -6277,10 +6277,10 @@ paths:
               \ : {\n        \"length\" : 19,\n        \"width\" : 18,\n        \"\
               height\" : 17\n      },\n      \"refPrice\" : null,\n      \"availabilityState\"\
               \ : \"IN_STOCK\",\n      \"_links\" : {\n        \"self\" : {\n    \
-              \      \"href\" : \"https://yourshop.api.urn/product-view/products/934e8a5e-a001-4fba-a970-ce92a83d3e43\"\
-              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/934e8a5e-a001-4fba-a970-ce92a83d3e43{?projection}\"\
+              \      \"href\" : \"https://yourshop.api.urn/product-view/products/9b1e28f1-f014-4eb2-8afa-a8b6e5c01a6d\"\
+              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/9b1e28f1-f014-4eb2-8afa-a8b6e5c01a6d{?projection}\"\
               ,\n          \"templated\" : true\n        }\n      }\n    }, {\n  \
-              \    \"_id\" : \"2608b33b-8409-495b-ac37-4af1867c8947\",\n      \"sku\"\
+              \    \"_id\" : \"0a6cda5e-fbec-48a5-a8c5-3f04bfd7c83d\",\n      \"sku\"\
               \ : \"sh-001\",\n      \"name\" : \"Soft Walk Ultra - Nibok Men's\"\
               ,\n      \"salesPrice\" : {\n        \"amount\" : 89.0,\n        \"\
               currency\" : \"EUR\"\n      },\n      \"listPrice\" : {\n        \"\
@@ -6292,8 +6292,8 @@ paths:
               ,\n      \"_links\" : {\n        \"default-image-data\" : {\n      \
               \    \"href\" : \"https://yourshop.api.urn/storage-api/images/nibok-men.jpg?hash=e9a1ce5c0c6abfebec8fb1f6faf77dca7e699999{&width,height,upscale}\"\
               ,\n          \"templated\" : true\n        },\n        \"self\" : {\n\
-              \          \"href\" : \"https://yourshop.api.urn/product-view/products/2608b33b-8409-495b-ac37-4af1867c8947\"\
-              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/2608b33b-8409-495b-ac37-4af1867c8947{?projection}\"\
+              \          \"href\" : \"https://yourshop.api.urn/product-view/products/0a6cda5e-fbec-48a5-a8c5-3f04bfd7c83d\"\
+              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/0a6cda5e-fbec-48a5-a8c5-3f04bfd7c83d{?projection}\"\
               ,\n          \"templated\" : true\n        }\n      }\n    } ]\n  },\n\
               \  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/product-view/products?page=0&size=40\"\
               \n    }\n  },\n  \"page\" : {\n    \"size\" : 40,\n    \"totalElements\"\
@@ -6325,13 +6325,13 @@ paths:
         200:
           description: ""
           examples:
-            application/hal+json: "{\n  \"_id\" : \"48298387-c570-493a-b65c-307eaa4d516a\"\
-              ,\n  \"_indexedAt\" : \"2018-10-22T13:31:49.452\",\n  \"type\" : \"\
+            application/hal+json: "{\n  \"_id\" : \"c08bd643-ba8b-4a96-a198-08c9adfce3fb\"\
+              ,\n  \"_indexedAt\" : \"2018-10-26T13:26:31.907\",\n  \"type\" : \"\
               SMART\",\n  \"name\" : \"Power Bars\",\n  \"label\" : \"power-bar\"\
-              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/product-view/categories/48298387-c570-493a-b65c-307eaa4d516a\"\
-              \n    },\n    \"category\" : {\n      \"href\" : \"https://yourshop.api.urn/product-view/categories/48298387-c570-493a-b65c-307eaa4d516a{?projection}\"\
+              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/product-view/categories/c08bd643-ba8b-4a96-a198-08c9adfce3fb\"\
+              \n    },\n    \"category\" : {\n      \"href\" : \"https://yourshop.api.urn/product-view/categories/c08bd643-ba8b-4a96-a198-08c9adfce3fb{?projection}\"\
               ,\n      \"templated\" : true\n    },\n    \"products\" : {\n      \"\
-              href\" : \"https://yourshop.api.urn/product-view/categories/48298387-c570-493a-b65c-307eaa4d516a/products\"\
+              href\" : \"https://yourshop.api.urn/product-view/categories/c08bd643-ba8b-4a96-a198-08c9adfce3fb/products\"\
               \n    }\n  }\n}"
           schema:
             $ref: "#/definitions/product-view_categories_categoryId1092984037"
@@ -6360,8 +6360,8 @@ paths:
         200:
           description: ""
           examples:
-            application/hal+json: "{\n  \"_id\" : \"dd36ead7-6a29-40fb-a892-d56f5cd73288\"\
-              ,\n  \"_indexedAt\" : \"2018-10-22T13:31:13.198\",\n  \"sku\" : \"vino020\"\
+            application/hal+json: "{\n  \"_id\" : \"3e51da4a-8d78-4c11-a40c-535eef4845fc\"\
+              ,\n  \"_indexedAt\" : \"2018-10-26T13:25:49.62\",\n  \"sku\" : \"vino020\"\
               ,\n  \"name\" : \"Rioja Castillo de Puerto (2013)\",\n  \"salesPrice\"\
               \ : {\n    \"amount\" : 8.7,\n    \"currency\" : \"EUR\"\n  },\n  \"\
               listPrice\" : {\n    \"amount\" : 10.95,\n    \"currency\" : \"EUR\"\
@@ -6387,8 +6387,8 @@ paths:
               \    \"maxDays\" : 4,\n    \"displayUnit\" : \"WEEKS\"\n  },\n  \"_links\"\
               \ : {\n    \"default-image-data\" : {\n      \"href\" : \"https://yourshop.api.urn/storage-api/images/rioja-01.jpg?hash=e9a1ce5c0c6abfebec8fb1f6faf77dca7e6e7777{&width,height,upscale}\"\
               ,\n      \"templated\" : true\n    },\n    \"self\" : {\n      \"href\"\
-              \ : \"https://yourshop.api.urn/product-view/products/dd36ead7-6a29-40fb-a892-d56f5cd73288\"\
-              \n    },\n    \"product\" : {\n      \"href\" : \"https://yourshop.api.urn/product-view/products/dd36ead7-6a29-40fb-a892-d56f5cd73288{?projection}\"\
+              \ : \"https://yourshop.api.urn/product-view/products/3e51da4a-8d78-4c11-a40c-535eef4845fc\"\
+              \n    },\n    \"product\" : {\n      \"href\" : \"https://yourshop.api.urn/product-view/products/3e51da4a-8d78-4c11-a40c-535eef4845fc{?projection}\"\
               ,\n      \"templated\" : true\n    },\n    \"additional-image-data\"\
               \ : [ {\n      \"href\" : \"https://yourshop.api.urn/storage-api/images/rioja-02.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225998{&width,height,upscale}\"\
               ,\n      \"templated\" : true\n    }, {\n      \"href\" : \"https://yourshop.api.urn/storage-api/images/rioja-03.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225999{&width,height,upscale}\"\
@@ -6416,11 +6416,11 @@ paths:
           description: ""
           examples:
             application/hal+json: "{\n  \"type\" : \"SMART\",\n  \"name\" : \"Power\
-              \ Bars\",\n  \"label\" : \"power-bar\",\n  \"_id\" : \"1fa4ab65-a566-46ad-8ec3-1ff25d12817b\"\
-              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/product-view/categories/1fa4ab65-a566-46ad-8ec3-1ff25d12817b\"\
-              \n    },\n    \"category\" : {\n      \"href\" : \"https://yourshop.api.urn/product-view/categories/1fa4ab65-a566-46ad-8ec3-1ff25d12817b{?projection}\"\
+              \ Bars\",\n  \"label\" : \"power-bar\",\n  \"_id\" : \"1d1b45ca-2fa1-430e-b1bb-5f0c20aa240e\"\
+              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/product-view/categories/1d1b45ca-2fa1-430e-b1bb-5f0c20aa240e\"\
+              \n    },\n    \"category\" : {\n      \"href\" : \"https://yourshop.api.urn/product-view/categories/1d1b45ca-2fa1-430e-b1bb-5f0c20aa240e{?projection}\"\
               ,\n      \"templated\" : true\n    },\n    \"products\" : {\n      \"\
-              href\" : \"https://yourshop.api.urn/product-view/categories/1fa4ab65-a566-46ad-8ec3-1ff25d12817b/products\"\
+              href\" : \"https://yourshop.api.urn/product-view/categories/1d1b45ca-2fa1-430e-b1bb-5f0c20aa240e/products\"\
               \n    }\n  }\n}"
           schema:
             $ref: "#/definitions/product-view_categories_search_find-by-label-1017888571"
@@ -6445,20 +6445,20 @@ paths:
           examples:
             application/hal+json: "{\n  \"_embedded\" : {\n    \"categories\" : [\
               \ {\n      \"type\" : \"SMART\",\n      \"name\" : \"category that loves\
-              \ everyone\",\n      \"label\" : null,\n      \"_id\" : \"74a9de36-d70c-4369-9073-5a06b5f141cc\"\
+              \ everyone\",\n      \"label\" : null,\n      \"_id\" : \"fc08dfbf-37d4-4dab-baa7-8de5d060d83c\"\
               ,\n      \"_links\" : {\n        \"self\" : {\n          \"href\" :\
-              \ \"https://yourshop.api.urn/product-view/categories/74a9de36-d70c-4369-9073-5a06b5f141cc\"\
-              \n        },\n        \"category\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/categories/74a9de36-d70c-4369-9073-5a06b5f141cc{?projection}\"\
+              \ \"https://yourshop.api.urn/product-view/categories/fc08dfbf-37d4-4dab-baa7-8de5d060d83c\"\
+              \n        },\n        \"category\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/categories/fc08dfbf-37d4-4dab-baa7-8de5d060d83c{?projection}\"\
               ,\n          \"templated\" : true\n        },\n        \"products\"\
-              \ : {\n          \"href\" : \"https://yourshop.api.urn/product-view/categories/74a9de36-d70c-4369-9073-5a06b5f141cc/products\"\
+              \ : {\n          \"href\" : \"https://yourshop.api.urn/product-view/categories/fc08dfbf-37d4-4dab-baa7-8de5d060d83c/products\"\
               \n        }\n      }\n    }, {\n      \"type\" : \"MANUAL\",\n     \
               \ \"name\" : \"category that matches product 1 in a complicated way\"\
-              ,\n      \"label\" : null,\n      \"_id\" : \"a1388abb-4520-4bfe-a661-7bd0b1adc56a\"\
+              ,\n      \"label\" : null,\n      \"_id\" : \"35f749ce-0224-4a99-a57e-0a55baf4a524\"\
               ,\n      \"_links\" : {\n        \"self\" : {\n          \"href\" :\
-              \ \"https://yourshop.api.urn/product-view/categories/a1388abb-4520-4bfe-a661-7bd0b1adc56a\"\
-              \n        },\n        \"category\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/categories/a1388abb-4520-4bfe-a661-7bd0b1adc56a{?projection}\"\
+              \ \"https://yourshop.api.urn/product-view/categories/35f749ce-0224-4a99-a57e-0a55baf4a524\"\
+              \n        },\n        \"category\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/categories/35f749ce-0224-4a99-a57e-0a55baf4a524{?projection}\"\
               ,\n          \"templated\" : true\n        },\n        \"products\"\
-              \ : {\n          \"href\" : \"https://yourshop.api.urn/product-view/categories/a1388abb-4520-4bfe-a661-7bd0b1adc56a/products\"\
+              \ : {\n          \"href\" : \"https://yourshop.api.urn/product-view/categories/35f749ce-0224-4a99-a57e-0a55baf4a524/products\"\
               \n        }\n      }\n    } ]\n  },\n  \"_links\" : {\n    \"self\"\
               \ : {\n      \"href\" : \"https://yourshop.api.urn/product-view/categories/search/find-by-product?page=0&size=40\"\
               \n    }\n  },\n  \"page\" : {\n    \"size\" : 40,\n    \"totalElements\"\
@@ -6483,7 +6483,7 @@ paths:
           description: ""
           examples:
             application/hal+json: "{\n  \"_embedded\" : {\n    \"products\" : [ {\n\
-              \      \"_id\" : \"3212928c-56f2-44d1-b1fe-13b91befc5af\",\n      \"\
+              \      \"_id\" : \"98a198b9-41ba-4117-9e19-022069e5ec77\",\n      \"\
               sku\" : \"vino020\",\n      \"name\" : \"Rioja Castillo de Puerto (2013)\"\
               ,\n      \"salesPrice\" : {\n        \"amount\" : 8.7,\n        \"currency\"\
               \ : \"EUR\"\n      },\n      \"listPrice\" : {\n        \"amount\" :\
@@ -6499,10 +6499,10 @@ paths:
               _links\" : {\n        \"default-image-data\" : {\n          \"href\"\
               \ : \"https://yourshop.api.urn/storage-api/images/rioja-01.jpg?hash=e9a1ce5c0c6abfebec8fb1f6faf77dca7e6e7777{&width,height,upscale}\"\
               ,\n          \"templated\" : true\n        },\n        \"self\" : {\n\
-              \          \"href\" : \"https://yourshop.api.urn/product-view/products/3212928c-56f2-44d1-b1fe-13b91befc5af\"\
-              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/3212928c-56f2-44d1-b1fe-13b91befc5af{?projection}\"\
+              \          \"href\" : \"https://yourshop.api.urn/product-view/products/98a198b9-41ba-4117-9e19-022069e5ec77\"\
+              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/98a198b9-41ba-4117-9e19-022069e5ec77{?projection}\"\
               ,\n          \"templated\" : true\n        }\n      }\n    } ]\n  },\n\
-              \  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/product-view/categories/e670c190-2526-4882-9d17-d6b5bb430819/products?page=0&size=40&sort=id,asc\"\
+              \  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/product-view/categories/4da4bf82-ee67-4319-a3f4-02cdd22c9107/products?page=0&size=40&sort=id,asc\"\
               \n    }\n  },\n  \"page\" : {\n    \"size\" : 40,\n    \"totalElements\"\
               \ : 1,\n    \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}"
   /product-view/products/search/find-available-tags:
@@ -6553,7 +6553,7 @@ paths:
           description: ""
           examples:
             application/hal+json: "{\n  \"_embedded\" : {\n    \"products\" : [ {\n\
-              \      \"_id\" : \"e4c70804-c902-401f-a9ad-ddffa952256b\",\n      \"\
+              \      \"_id\" : \"d4032d8a-6bd7-4965-921c-7f1ebc806800\",\n      \"\
               sku\" : \"vino020\",\n      \"name\" : \"Rioja Castillo de Puerto (2013)\"\
               ,\n      \"salesPrice\" : {\n        \"amount\" : 8.7,\n        \"currency\"\
               \ : \"EUR\"\n      },\n      \"listPrice\" : {\n        \"amount\" :\
@@ -6569,10 +6569,10 @@ paths:
               \    \"_links\" : {\n        \"default-image-data\" : {\n          \"\
               href\" : \"https://yourshop.api.urn/storage-api/images/rioja-01.jpg?hash=e9a1ce5c0c6abfebec8fb1f6faf77dca7e6e7777{&width,height,upscale}\"\
               ,\n          \"templated\" : true\n        },\n        \"self\" : {\n\
-              \          \"href\" : \"https://yourshop.api.urn/product-view/products/e4c70804-c902-401f-a9ad-ddffa952256b\"\
-              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/e4c70804-c902-401f-a9ad-ddffa952256b{?projection}\"\
+              \          \"href\" : \"https://yourshop.api.urn/product-view/products/d4032d8a-6bd7-4965-921c-7f1ebc806800\"\
+              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/d4032d8a-6bd7-4965-921c-7f1ebc806800{?projection}\"\
               ,\n          \"templated\" : true\n        }\n      }\n    } ]\n  },\n\
-              \  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/product-view/products/search/find-by-category?categoryId=a4ec4c64-efec-4a6a-a954-f94609d7cbb2&page=0&size=40&sort=id,asc\"\
+              \  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/product-view/products/search/find-by-category?categoryId=44a6e8ae-6a3b-4649-8702-6c090af77a7f&page=0&size=40&sort=id,asc\"\
               \n    }\n  },\n  \"page\" : {\n    \"size\" : 40,\n    \"totalElements\"\
               \ : 1,\n    \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}"
           schema:
@@ -6603,7 +6603,7 @@ paths:
           description: ""
           examples:
             application/hal+json: "{\n  \"_embedded\" : {\n    \"products\" : [ {\n\
-              \      \"_id\" : \"e9808211-abae-49fe-a347-c0c2c34b52c0\",\n      \"\
+              \      \"_id\" : \"415157a8-2d40-4b36-a812-4a810e0f88b6\",\n      \"\
               sku\" : \"vino020\",\n      \"name\" : \"Rioja Castillo de Puerto (2013)\"\
               ,\n      \"salesPrice\" : {\n        \"amount\" : 8.7,\n        \"currency\"\
               \ : \"EUR\"\n      },\n      \"listPrice\" : {\n        \"amount\" :\
@@ -6619,8 +6619,8 @@ paths:
               \    \"_links\" : {\n        \"default-image-data\" : {\n          \"\
               href\" : \"https://yourshop.api.urn/storage-api/images/rioja-01.jpg?hash=e9a1ce5c0c6abfebec8fb1f6faf77dca7e6e7777{&width,height,upscale}\"\
               ,\n          \"templated\" : true\n        },\n        \"self\" : {\n\
-              \          \"href\" : \"https://yourshop.api.urn/product-view/products/e9808211-abae-49fe-a347-c0c2c34b52c0\"\
-              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/e9808211-abae-49fe-a347-c0c2c34b52c0{?projection}\"\
+              \          \"href\" : \"https://yourshop.api.urn/product-view/products/415157a8-2d40-4b36-a812-4a810e0f88b6\"\
+              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/415157a8-2d40-4b36-a812-4a810e0f88b6{?projection}\"\
               ,\n          \"templated\" : true\n        }\n      }\n    } ]\n  },\n\
               \  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/product-view/products/search/find-by-query?page=0&size=40\"\
               \n    }\n  },\n  \"page\" : {\n    \"size\" : 40,\n    \"totalElements\"\
@@ -6648,7 +6648,7 @@ paths:
           description: ""
           examples:
             application/hal+json: "{\n  \"_embedded\" : {\n    \"products\" : [ {\n\
-              \      \"_id\" : \"367ed1ad-bbf0-4731-b116-bc8b21f5e27a\",\n      \"\
+              \      \"_id\" : \"5bda4e8e-4f53-4472-9857-2e01a87458fa\",\n      \"\
               sku\" : \"sh-001\",\n      \"name\" : \"Soft Walk Ultra - Nibok Men's\"\
               ,\n      \"salesPrice\" : {\n        \"amount\" : 89.0,\n        \"\
               currency\" : \"EUR\"\n      },\n      \"listPrice\" : {\n        \"\
@@ -6660,10 +6660,10 @@ paths:
               ,\n      \"_links\" : {\n        \"default-image-data\" : {\n      \
               \    \"href\" : \"https://yourshop.api.urn/storage-api/images/nibok-men.jpg?hash=e9a1ce5c0c6abfebec8fb1f6faf77dca7e699999{&width,height,upscale}\"\
               ,\n          \"templated\" : true\n        },\n        \"self\" : {\n\
-              \          \"href\" : \"https://yourshop.api.urn/product-view/products/367ed1ad-bbf0-4731-b116-bc8b21f5e27a\"\
-              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/367ed1ad-bbf0-4731-b116-bc8b21f5e27a{?projection}\"\
+              \          \"href\" : \"https://yourshop.api.urn/product-view/products/5bda4e8e-4f53-4472-9857-2e01a87458fa\"\
+              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/5bda4e8e-4f53-4472-9857-2e01a87458fa{?projection}\"\
               ,\n          \"templated\" : true\n        }\n      }\n    }, {\n  \
-              \    \"_id\" : \"d9eca9fc-8fc6-464d-b065-1dd93b685687\",\n      \"sku\"\
+              \    \"_id\" : \"d6f39fcf-4426-404d-ae99-3818c64c1f66\",\n      \"sku\"\
               \ : \"vino020\",\n      \"name\" : \"Rioja Castillo de Puerto (2013)\"\
               ,\n      \"salesPrice\" : {\n        \"amount\" : 8.7,\n        \"currency\"\
               \ : \"EUR\"\n      },\n      \"listPrice\" : {\n        \"amount\" :\
@@ -6679,8 +6679,8 @@ paths:
               \    \"_links\" : {\n        \"default-image-data\" : {\n          \"\
               href\" : \"https://yourshop.api.urn/storage-api/images/rioja-01.jpg?hash=e9a1ce5c0c6abfebec8fb1f6faf77dca7e6e7777{&width,height,upscale}\"\
               ,\n          \"templated\" : true\n        },\n        \"self\" : {\n\
-              \          \"href\" : \"https://yourshop.api.urn/product-view/products/d9eca9fc-8fc6-464d-b065-1dd93b685687\"\
-              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/d9eca9fc-8fc6-464d-b065-1dd93b685687{?projection}\"\
+              \          \"href\" : \"https://yourshop.api.urn/product-view/products/d6f39fcf-4426-404d-ae99-3818c64c1f66\"\
+              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/d6f39fcf-4426-404d-ae99-3818c64c1f66{?projection}\"\
               ,\n          \"templated\" : true\n        }\n      }\n    } ]\n  },\n\
               \  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/product-view/products/search/find-by-search-term?page=0&size=40&sort=id,asc\"\
               \n    }\n  },\n  \"page\" : {\n    \"size\" : 40,\n    \"totalElements\"\
@@ -6708,7 +6708,7 @@ paths:
           description: ""
           examples:
             application/hal+json: "{\n  \"_embedded\" : {\n    \"products\" : [ {\n\
-              \      \"_id\" : \"de4fb065-c37b-4238-bfe2-bdeb1b33b46f\",\n      \"\
+              \      \"_id\" : \"9f8eed91-d68e-4583-87da-3b3f116520fe\",\n      \"\
               sku\" : \"vino020\",\n      \"name\" : \"Rioja Castillo de Puerto (2013)\"\
               ,\n      \"salesPrice\" : {\n        \"amount\" : 8.7,\n        \"currency\"\
               \ : \"EUR\"\n      },\n      \"listPrice\" : {\n        \"amount\" :\
@@ -6724,8 +6724,8 @@ paths:
               \    \"_links\" : {\n        \"default-image-data\" : {\n          \"\
               href\" : \"https://yourshop.api.urn/storage-api/images/rioja-01.jpg?hash=e9a1ce5c0c6abfebec8fb1f6faf77dca7e6e7777{&width,height,upscale}\"\
               ,\n          \"templated\" : true\n        },\n        \"self\" : {\n\
-              \          \"href\" : \"https://yourshop.api.urn/product-view/products/de4fb065-c37b-4238-bfe2-bdeb1b33b46f\"\
-              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/de4fb065-c37b-4238-bfe2-bdeb1b33b46f{?projection}\"\
+              \          \"href\" : \"https://yourshop.api.urn/product-view/products/9f8eed91-d68e-4583-87da-3b3f116520fe\"\
+              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/9f8eed91-d68e-4583-87da-3b3f116520fe{?projection}\"\
               ,\n          \"templated\" : true\n        }\n      }\n    } ]\n  },\n\
               \  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/product-view/products/search/find-by-tags?page=0&size=40&sort=createdAt,desc&sort=id,asc\"\
               \n    }\n  },\n  \"page\" : {\n    \"size\" : 40,\n    \"totalElements\"\
@@ -6750,7 +6750,7 @@ paths:
               availabilityState\" : \"IN_STOCK\",\n          \"availableStock\" :\
               \ 20,\n          \"stockThreshold\" : 2,\n          \"purchasable\"\
               \ : true,\n          \"_links\" : {\n            \"self\" : {\n    \
-              \          \"href\" : \"https://yourshop.api.urn/products/0ca7ea1a-c262-453f-a6ff-802c48436ab1/availability\"\
+              \          \"href\" : \"https://yourshop.api.urn/products/eae04f8b-1066-4c59-b143-4844d55b3a42/availability\"\
               \n            }\n          }\n        }\n      },\n      \"sku\" : \"\
               vino020\",\n      \"salesPrice\" : {\n        \"taxModel\" : \"NET\"\
               ,\n        \"currency\" : \"EUR\",\n        \"amount\" : 8.7,\n    \
@@ -6792,21 +6792,21 @@ paths:
               STRING\",\n        \"value\" : \"usa\"\n      }, {\n        \"namespace\"\
               \ : \"seo\",\n        \"name\" : \"slug\",\n        \"locale\" : \"\
               en-GB\",\n        \"type\" : \"STRING\",\n        \"value\" : \"rioja\"\
-              \n      } ],\n      \"_id\" : \"0ca7ea1a-c262-453f-a6ff-802c48436ab1\"\
+              \n      } ],\n      \"_id\" : \"eae04f8b-1066-4c59-b143-4844d55b3a42\"\
               ,\n      \"_links\" : {\n        \"self\" : {\n          \"href\" :\
-              \ \"https://yourshop.api.urn/products/0ca7ea1a-c262-453f-a6ff-802c48436ab1\"\
-              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/products/0ca7ea1a-c262-453f-a6ff-802c48436ab1\"\
+              \ \"https://yourshop.api.urn/products/eae04f8b-1066-4c59-b143-4844d55b3a42\"\
+              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/products/eae04f8b-1066-4c59-b143-4844d55b3a42\"\
               \n        },\n        \"availability\" : {\n          \"href\" : \"\
-              https://yourshop.api.urn/products/0ca7ea1a-c262-453f-a6ff-802c48436ab1/availability\"\
-              \n        },\n        \"attributes\" : {\n          \"href\" : \"https://yourshop.api.urn/products/0ca7ea1a-c262-453f-a6ff-802c48436ab1/attributes{?locale}\"\
+              https://yourshop.api.urn/products/eae04f8b-1066-4c59-b143-4844d55b3a42/availability\"\
+              \n        },\n        \"attributes\" : {\n          \"href\" : \"https://yourshop.api.urn/products/eae04f8b-1066-4c59-b143-4844d55b3a42/attributes{?locale}\"\
               ,\n          \"templated\" : true\n        },\n        \"attachments\"\
-              \ : {\n          \"href\" : \"https://yourshop.api.urn/products/0ca7ea1a-c262-453f-a6ff-802c48436ab1/attachments\"\
-              \n        },\n        \"images\" : {\n          \"href\" : \"https://yourshop.api.urn/products/0ca7ea1a-c262-453f-a6ff-802c48436ab1/images\"\
-              \n        },\n        \"amazon\" : {\n          \"href\" : \"http://amazon/amazon-products/0ca7ea1a-c262-453f-a6ff-802c48436ab1\"\
+              \ : {\n          \"href\" : \"https://yourshop.api.urn/products/eae04f8b-1066-4c59-b143-4844d55b3a42/attachments\"\
+              \n        },\n        \"images\" : {\n          \"href\" : \"https://yourshop.api.urn/products/eae04f8b-1066-4c59-b143-4844d55b3a42/images\"\
+              \n        },\n        \"amazon\" : {\n          \"href\" : \"http://amazon/amazon-products/eae04f8b-1066-4c59-b143-4844d55b3a42\"\
               \n        },\n        \"google-shopping\" : {\n          \"href\" :\
-              \ \"http://google-shopping/google-products/0ca7ea1a-c262-453f-a6ff-802c48436ab1\"\
+              \ \"http://google-shopping/google-products/eae04f8b-1066-4c59-b143-4844d55b3a42\"\
               \n        },\n        \"default-image\" : {\n          \"href\" : \"\
-              https://yourshop.api.urn/products/0ca7ea1a-c262-453f-a6ff-802c48436ab1/default-image\"\
+              https://yourshop.api.urn/products/eae04f8b-1066-4c59-b143-4844d55b3a42/default-image\"\
               \n        },\n        \"default-image-data\" : {\n          \"href\"\
               \ : \"https://yourshop.api.urn/api/core-storage/images/photostore-2.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225998{&width,height,upscale}\"\
               ,\n          \"templated\" : true\n        },\n        \"default-image-metadata\"\
@@ -6861,7 +6861,7 @@ paths:
               \ {\n      \"availabilityState\" : \"IN_STOCK\",\n      \"availableStock\"\
               \ : null,\n      \"stockThreshold\" : null,\n      \"purchasable\" :\
               \ true,\n      \"_links\" : {\n        \"self\" : {\n          \"href\"\
-              \ : \"https://yourshop.api.urn/products/aab6ab49-b22e-451e-b6af-606cbe0cec24/availability\"\
+              \ : \"https://yourshop.api.urn/products/256994c1-dbff-4589-a1f1-06e07d0b40cc/availability\"\
               \n        }\n      }\n    }\n  },\n  \"sku\" : \"123456789-001\",\n\
               \  \"salesPrice\" : {\n    \"taxModel\" : \"NET\",\n    \"currency\"\
               \ : \"EUR\",\n    \"amount\" : 8.7,\n    \"derivedPrice\" : {\n    \
@@ -6890,15 +6890,15 @@ paths:
               \ : \"WEEKS\"\n  },\n  \"name\" : \"Rioja Castillo de Puerto (2013)\"\
               ,\n  \"description\" : \"Spain\\nRioja Tempranillo\",\n  \"manufacturer\"\
               \ : \"Grape Vineyard\",\n  \"essentialFeatures\" : \"Dry. 12% alcohol.\
-              \ Best vine variety.\",\n  \"attributes\" : [ ],\n  \"_id\" : \"aab6ab49-b22e-451e-b6af-606cbe0cec24\"\
-              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/products/aab6ab49-b22e-451e-b6af-606cbe0cec24\"\
-              \n    },\n    \"product\" : {\n      \"href\" : \"https://yourshop.api.urn/products/aab6ab49-b22e-451e-b6af-606cbe0cec24\"\
-              \n    },\n    \"availability\" : {\n      \"href\" : \"https://yourshop.api.urn/products/aab6ab49-b22e-451e-b6af-606cbe0cec24/availability\"\
-              \n    },\n    \"attributes\" : {\n      \"href\" : \"https://yourshop.api.urn/products/aab6ab49-b22e-451e-b6af-606cbe0cec24/attributes{?locale}\"\
+              \ Best vine variety.\",\n  \"attributes\" : [ ],\n  \"_id\" : \"256994c1-dbff-4589-a1f1-06e07d0b40cc\"\
+              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/products/256994c1-dbff-4589-a1f1-06e07d0b40cc\"\
+              \n    },\n    \"product\" : {\n      \"href\" : \"https://yourshop.api.urn/products/256994c1-dbff-4589-a1f1-06e07d0b40cc\"\
+              \n    },\n    \"availability\" : {\n      \"href\" : \"https://yourshop.api.urn/products/256994c1-dbff-4589-a1f1-06e07d0b40cc/availability\"\
+              \n    },\n    \"attributes\" : {\n      \"href\" : \"https://yourshop.api.urn/products/256994c1-dbff-4589-a1f1-06e07d0b40cc/attributes{?locale}\"\
               ,\n      \"templated\" : true\n    },\n    \"attachments\" : {\n   \
-              \   \"href\" : \"https://yourshop.api.urn/products/aab6ab49-b22e-451e-b6af-606cbe0cec24/attachments\"\
-              \n    },\n    \"images\" : {\n      \"href\" : \"https://yourshop.api.urn/products/aab6ab49-b22e-451e-b6af-606cbe0cec24/images\"\
-              \n    },\n    \"default-image\" : {\n      \"href\" : \"https://yourshop.api.urn/products/aab6ab49-b22e-451e-b6af-606cbe0cec24/default-image\"\
+              \   \"href\" : \"https://yourshop.api.urn/products/256994c1-dbff-4589-a1f1-06e07d0b40cc/attachments\"\
+              \n    },\n    \"images\" : {\n      \"href\" : \"https://yourshop.api.urn/products/256994c1-dbff-4589-a1f1-06e07d0b40cc/images\"\
+              \n    },\n    \"default-image\" : {\n      \"href\" : \"https://yourshop.api.urn/products/256994c1-dbff-4589-a1f1-06e07d0b40cc/default-image\"\
               \n    }\n  }\n}"
       security:
       - oauth2_accessCode:
@@ -6928,7 +6928,7 @@ paths:
               \ {\n      \"availabilityState\" : \"IN_STOCK\",\n      \"availableStock\"\
               \ : null,\n      \"stockThreshold\" : null,\n      \"purchasable\" :\
               \ true,\n      \"_links\" : {\n        \"self\" : {\n          \"href\"\
-              \ : \"https://yourshop.api.urn/products/992deb84-6d2e-4f7a-85d2-0df5f70b6585/availability\"\
+              \ : \"https://yourshop.api.urn/products/072fd6c2-2338-436f-9605-7d744e869819/availability\"\
               \n        }\n      }\n    }\n  },\n  \"sku\" : \"vino020\",\n  \"salesPrice\"\
               \ : {\n    \"taxModel\" : \"NET\",\n    \"currency\" : \"EUR\",\n  \
               \  \"amount\" : 8.7,\n    \"derivedPrice\" : {\n      \"taxModel\" :\
@@ -6964,17 +6964,17 @@ paths:
               flag\",\n    \"locale\" : \"en-GB\",\n    \"type\" : \"STRING\",\n \
               \   \"value\" : \"usa\"\n  }, {\n    \"namespace\" : \"seo\",\n    \"\
               name\" : \"slug\",\n    \"locale\" : \"en-GB\",\n    \"type\" : \"STRING\"\
-              ,\n    \"value\" : \"rioja\"\n  } ],\n  \"_id\" : \"992deb84-6d2e-4f7a-85d2-0df5f70b6585\"\
-              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/products/992deb84-6d2e-4f7a-85d2-0df5f70b6585\"\
-              \n    },\n    \"product\" : {\n      \"href\" : \"https://yourshop.api.urn/products/992deb84-6d2e-4f7a-85d2-0df5f70b6585\"\
-              \n    },\n    \"availability\" : {\n      \"href\" : \"https://yourshop.api.urn/products/992deb84-6d2e-4f7a-85d2-0df5f70b6585/availability\"\
-              \n    },\n    \"attributes\" : {\n      \"href\" : \"https://yourshop.api.urn/products/992deb84-6d2e-4f7a-85d2-0df5f70b6585/attributes{?locale}\"\
+              ,\n    \"value\" : \"rioja\"\n  } ],\n  \"_id\" : \"072fd6c2-2338-436f-9605-7d744e869819\"\
+              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/products/072fd6c2-2338-436f-9605-7d744e869819\"\
+              \n    },\n    \"product\" : {\n      \"href\" : \"https://yourshop.api.urn/products/072fd6c2-2338-436f-9605-7d744e869819\"\
+              \n    },\n    \"availability\" : {\n      \"href\" : \"https://yourshop.api.urn/products/072fd6c2-2338-436f-9605-7d744e869819/availability\"\
+              \n    },\n    \"attributes\" : {\n      \"href\" : \"https://yourshop.api.urn/products/072fd6c2-2338-436f-9605-7d744e869819/attributes{?locale}\"\
               ,\n      \"templated\" : true\n    },\n    \"attachments\" : {\n   \
-              \   \"href\" : \"https://yourshop.api.urn/products/992deb84-6d2e-4f7a-85d2-0df5f70b6585/attachments\"\
-              \n    },\n    \"images\" : {\n      \"href\" : \"https://yourshop.api.urn/products/992deb84-6d2e-4f7a-85d2-0df5f70b6585/images\"\
-              \n    },\n    \"amazon\" : {\n      \"href\" : \"http://amazon/amazon-products/992deb84-6d2e-4f7a-85d2-0df5f70b6585\"\
-              \n    },\n    \"google-shopping\" : {\n      \"href\" : \"http://google-shopping/google-products/992deb84-6d2e-4f7a-85d2-0df5f70b6585\"\
-              \n    },\n    \"default-image\" : {\n      \"href\" : \"https://yourshop.api.urn/products/992deb84-6d2e-4f7a-85d2-0df5f70b6585/default-image\"\
+              \   \"href\" : \"https://yourshop.api.urn/products/072fd6c2-2338-436f-9605-7d744e869819/attachments\"\
+              \n    },\n    \"images\" : {\n      \"href\" : \"https://yourshop.api.urn/products/072fd6c2-2338-436f-9605-7d744e869819/images\"\
+              \n    },\n    \"amazon\" : {\n      \"href\" : \"http://amazon/amazon-products/072fd6c2-2338-436f-9605-7d744e869819\"\
+              \n    },\n    \"google-shopping\" : {\n      \"href\" : \"http://google-shopping/google-products/072fd6c2-2338-436f-9605-7d744e869819\"\
+              \n    },\n    \"default-image\" : {\n      \"href\" : \"https://yourshop.api.urn/products/072fd6c2-2338-436f-9605-7d744e869819/default-image\"\
               \n    },\n    \"default-image-data\" : {\n      \"href\" : \"https://yourshop.api.urn/api/core-storage/images/photostore-2.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225998{&width,height,upscale}\"\
               ,\n      \"templated\" : true\n    },\n    \"default-image-metadata\"\
               \ : {\n      \"href\" : \"https://yourshop.api.urn/api/core-storage/images/photostore-2.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225998&download=no\"\
@@ -7050,7 +7050,7 @@ paths:
               \ {\n      \"availabilityState\" : \"IN_STOCK\",\n      \"availableStock\"\
               \ : null,\n      \"stockThreshold\" : null,\n      \"purchasable\" :\
               \ true,\n      \"_links\" : {\n        \"self\" : {\n          \"href\"\
-              \ : \"https://yourshop.api.urn/products/0107d7eb-3850-4065-a026-9210ac97e5a5/availability\"\
+              \ : \"https://yourshop.api.urn/products/990036f6-5ab4-4c2d-ac61-20e11ccfffd2/availability\"\
               \n        }\n      }\n    }\n  },\n  \"sku\" : \"vino020\",\n  \"salesPrice\"\
               \ : {\n    \"taxModel\" : \"NET\",\n    \"currency\" : \"EUR\",\n  \
               \  \"amount\" : 8.7,\n    \"derivedPrice\" : {\n      \"taxModel\" :\
@@ -7088,15 +7088,15 @@ paths:
               \ : \"STRING\",\n    \"value\" : \"usa\"\n  }, {\n    \"namespace\"\
               \ : \"seo\",\n    \"name\" : \"slug\",\n    \"locale\" : \"en-GB\",\n\
               \    \"type\" : \"STRING\",\n    \"value\" : \"rioja\"\n  } ],\n  \"\
-              _id\" : \"0107d7eb-3850-4065-a026-9210ac97e5a5\",\n  \"_links\" : {\n\
-              \    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/products/0107d7eb-3850-4065-a026-9210ac97e5a5\"\
-              \n    },\n    \"product\" : {\n      \"href\" : \"https://yourshop.api.urn/products/0107d7eb-3850-4065-a026-9210ac97e5a5\"\
-              \n    },\n    \"availability\" : {\n      \"href\" : \"https://yourshop.api.urn/products/0107d7eb-3850-4065-a026-9210ac97e5a5/availability\"\
-              \n    },\n    \"attributes\" : {\n      \"href\" : \"https://yourshop.api.urn/products/0107d7eb-3850-4065-a026-9210ac97e5a5/attributes{?locale}\"\
+              _id\" : \"990036f6-5ab4-4c2d-ac61-20e11ccfffd2\",\n  \"_links\" : {\n\
+              \    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/products/990036f6-5ab4-4c2d-ac61-20e11ccfffd2\"\
+              \n    },\n    \"product\" : {\n      \"href\" : \"https://yourshop.api.urn/products/990036f6-5ab4-4c2d-ac61-20e11ccfffd2\"\
+              \n    },\n    \"availability\" : {\n      \"href\" : \"https://yourshop.api.urn/products/990036f6-5ab4-4c2d-ac61-20e11ccfffd2/availability\"\
+              \n    },\n    \"attributes\" : {\n      \"href\" : \"https://yourshop.api.urn/products/990036f6-5ab4-4c2d-ac61-20e11ccfffd2/attributes{?locale}\"\
               ,\n      \"templated\" : true\n    },\n    \"attachments\" : {\n   \
-              \   \"href\" : \"https://yourshop.api.urn/products/0107d7eb-3850-4065-a026-9210ac97e5a5/attachments\"\
-              \n    },\n    \"images\" : {\n      \"href\" : \"https://yourshop.api.urn/products/0107d7eb-3850-4065-a026-9210ac97e5a5/images\"\
-              \n    },\n    \"default-image\" : {\n      \"href\" : \"https://yourshop.api.urn/products/0107d7eb-3850-4065-a026-9210ac97e5a5/default-image\"\
+              \   \"href\" : \"https://yourshop.api.urn/products/990036f6-5ab4-4c2d-ac61-20e11ccfffd2/attachments\"\
+              \n    },\n    \"images\" : {\n      \"href\" : \"https://yourshop.api.urn/products/990036f6-5ab4-4c2d-ac61-20e11ccfffd2/images\"\
+              \n    },\n    \"default-image\" : {\n      \"href\" : \"https://yourshop.api.urn/products/990036f6-5ab4-4c2d-ac61-20e11ccfffd2/default-image\"\
               \n    }\n  }\n}"
       security:
       - oauth2_accessCode:
@@ -7127,7 +7127,7 @@ paths:
               \ {\n      \"availabilityState\" : \"IN_STOCK\",\n      \"availableStock\"\
               \ : null,\n      \"stockThreshold\" : null,\n      \"purchasable\" :\
               \ true,\n      \"_links\" : {\n        \"self\" : {\n          \"href\"\
-              \ : \"https://yourshop.api.urn/products/f8b5d652-8323-47a3-b060-03be5a3aa0f5/availability\"\
+              \ : \"https://yourshop.api.urn/products/49070601-bedf-47d0-a878-76a6963f2d77/availability\"\
               \n        }\n      }\n    }\n  },\n  \"sku\" : \"vino020\",\n  \"salesPrice\"\
               \ : {\n    \"taxModel\" : \"NET\",\n    \"currency\" : \"EUR\",\n  \
               \  \"amount\" : 8.7,\n    \"derivedPrice\" : {\n      \"taxModel\" :\
@@ -7163,17 +7163,17 @@ paths:
               flag\",\n    \"locale\" : \"en-GB\",\n    \"type\" : \"STRING\",\n \
               \   \"value\" : \"usa\"\n  }, {\n    \"namespace\" : \"seo\",\n    \"\
               name\" : \"slug\",\n    \"locale\" : \"en-GB\",\n    \"type\" : \"STRING\"\
-              ,\n    \"value\" : \"rioja\"\n  } ],\n  \"_id\" : \"f8b5d652-8323-47a3-b060-03be5a3aa0f5\"\
-              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/products/f8b5d652-8323-47a3-b060-03be5a3aa0f5\"\
-              \n    },\n    \"product\" : {\n      \"href\" : \"https://yourshop.api.urn/products/f8b5d652-8323-47a3-b060-03be5a3aa0f5\"\
-              \n    },\n    \"availability\" : {\n      \"href\" : \"https://yourshop.api.urn/products/f8b5d652-8323-47a3-b060-03be5a3aa0f5/availability\"\
-              \n    },\n    \"attributes\" : {\n      \"href\" : \"https://yourshop.api.urn/products/f8b5d652-8323-47a3-b060-03be5a3aa0f5/attributes{?locale}\"\
+              ,\n    \"value\" : \"rioja\"\n  } ],\n  \"_id\" : \"49070601-bedf-47d0-a878-76a6963f2d77\"\
+              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/products/49070601-bedf-47d0-a878-76a6963f2d77\"\
+              \n    },\n    \"product\" : {\n      \"href\" : \"https://yourshop.api.urn/products/49070601-bedf-47d0-a878-76a6963f2d77\"\
+              \n    },\n    \"availability\" : {\n      \"href\" : \"https://yourshop.api.urn/products/49070601-bedf-47d0-a878-76a6963f2d77/availability\"\
+              \n    },\n    \"attributes\" : {\n      \"href\" : \"https://yourshop.api.urn/products/49070601-bedf-47d0-a878-76a6963f2d77/attributes{?locale}\"\
               ,\n      \"templated\" : true\n    },\n    \"attachments\" : {\n   \
-              \   \"href\" : \"https://yourshop.api.urn/products/f8b5d652-8323-47a3-b060-03be5a3aa0f5/attachments\"\
-              \n    },\n    \"images\" : {\n      \"href\" : \"https://yourshop.api.urn/products/f8b5d652-8323-47a3-b060-03be5a3aa0f5/images\"\
-              \n    },\n    \"amazon\" : {\n      \"href\" : \"http://amazon/amazon-products/f8b5d652-8323-47a3-b060-03be5a3aa0f5\"\
-              \n    },\n    \"google-shopping\" : {\n      \"href\" : \"http://google-shopping/google-products/f8b5d652-8323-47a3-b060-03be5a3aa0f5\"\
-              \n    },\n    \"default-image\" : {\n      \"href\" : \"https://yourshop.api.urn/products/f8b5d652-8323-47a3-b060-03be5a3aa0f5/default-image\"\
+              \   \"href\" : \"https://yourshop.api.urn/products/49070601-bedf-47d0-a878-76a6963f2d77/attachments\"\
+              \n    },\n    \"images\" : {\n      \"href\" : \"https://yourshop.api.urn/products/49070601-bedf-47d0-a878-76a6963f2d77/images\"\
+              \n    },\n    \"amazon\" : {\n      \"href\" : \"http://amazon/amazon-products/49070601-bedf-47d0-a878-76a6963f2d77\"\
+              \n    },\n    \"google-shopping\" : {\n      \"href\" : \"http://google-shopping/google-products/49070601-bedf-47d0-a878-76a6963f2d77\"\
+              \n    },\n    \"default-image\" : {\n      \"href\" : \"https://yourshop.api.urn/products/49070601-bedf-47d0-a878-76a6963f2d77/default-image\"\
               \n    },\n    \"default-image-data\" : {\n      \"href\" : \"https://yourshop.api.urn/api/core-storage/images/photostore-2.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225998{&width,height,upscale}\"\
               ,\n      \"templated\" : true\n    },\n    \"default-image-metadata\"\
               \ : {\n      \"href\" : \"https://yourshop.api.urn/api/core-storage/images/photostore-2.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225998&download=no\"\
@@ -7238,21 +7238,21 @@ paths:
           examples:
             application/hal+json: "{\n  \"_embedded\" : {\n    \"attachments\" : [\
               \ {\n      \"mimeType\" : \"application/pdf\",\n      \"length\" : 1,\n\
-              \      \"label\" : \"Handbuch\",\n      \"_id\" : \"f13555bc-55de-4694-856e-c81baf7d28f5\"\
+              \      \"label\" : \"Handbuch\",\n      \"_id\" : \"da196179-c83e-4676-a54a-b0bd67d49b2f\"\
               ,\n      \"_links\" : {\n        \"self\" : {\n          \"href\" :\
-              \ \"https://yourshop.api.urn/products/b7e67f02-3caa-4094-8d31-49b335372d68/attachments/f13555bc-55de-4694-856e-c81baf7d28f5\"\
+              \ \"https://yourshop.api.urn/products/ebe240ff-3259-4244-bf56-34e3b878691e/attachments/da196179-c83e-4676-a54a-b0bd67d49b2f\"\
               \n        },\n        \"data\" : {\n          \"href\" : \"https://yourshop.api.urn/api/core-storage/attachments/1_my_attachment.pdf?hash=8a627f655c68f56dfbbf217ab7d5563281225801\"\
               \n        },\n        \"metadata\" : {\n          \"href\" : \"https://yourshop.api.urn/api/core-storage/attachments/1_my_attachment.pdf?hash=8a627f655c68f56dfbbf217ab7d5563281225801&download=no\"\
-              \n        },\n        \"attachment\" : {\n          \"href\" : \"https://yourshop.api.urn/products/b7e67f02-3caa-4094-8d31-49b335372d68/attachments/f13555bc-55de-4694-856e-c81baf7d28f5\"\
+              \n        },\n        \"attachment\" : {\n          \"href\" : \"https://yourshop.api.urn/products/ebe240ff-3259-4244-bf56-34e3b878691e/attachments/da196179-c83e-4676-a54a-b0bd67d49b2f\"\
               \n        }\n      }\n    }, {\n      \"mimeType\" : \"application/pdf\"\
               ,\n      \"length\" : 1,\n      \"label\" : \"Handbuch\",\n      \"\
-              _id\" : \"335414f3-bf42-4416-a6f7-e70333abbea7\",\n      \"_links\"\
-              \ : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/products/b7e67f02-3caa-4094-8d31-49b335372d68/attachments/335414f3-bf42-4416-a6f7-e70333abbea7\"\
+              _id\" : \"5b1a00d0-cbc9-494a-b1c9-742cbd48f18f\",\n      \"_links\"\
+              \ : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/products/ebe240ff-3259-4244-bf56-34e3b878691e/attachments/5b1a00d0-cbc9-494a-b1c9-742cbd48f18f\"\
               \n        },\n        \"data\" : {\n          \"href\" : \"https://yourshop.api.urn/api/core-storage/attachments/2_my_attachment.pdf?hash=8a627f655c68f56dfbbf217ab7d5563281225802\"\
               \n        },\n        \"metadata\" : {\n          \"href\" : \"https://yourshop.api.urn/api/core-storage/attachments/2_my_attachment.pdf?hash=8a627f655c68f56dfbbf217ab7d5563281225802&download=no\"\
-              \n        },\n        \"attachment\" : {\n          \"href\" : \"https://yourshop.api.urn/products/b7e67f02-3caa-4094-8d31-49b335372d68/attachments/335414f3-bf42-4416-a6f7-e70333abbea7\"\
+              \n        },\n        \"attachment\" : {\n          \"href\" : \"https://yourshop.api.urn/products/ebe240ff-3259-4244-bf56-34e3b878691e/attachments/5b1a00d0-cbc9-494a-b1c9-742cbd48f18f\"\
               \n        }\n      }\n    } ]\n  },\n  \"_links\" : {\n    \"self\"\
-              \ : {\n      \"href\" : \"https://yourshop.api.urn/products/b7e67f02-3caa-4094-8d31-49b335372d68/attachments?page=0&size=20\"\
+              \ : {\n      \"href\" : \"https://yourshop.api.urn/products/ebe240ff-3259-4244-bf56-34e3b878691e/attachments?page=0&size=20\"\
               \n    }\n  },\n  \"page\" : {\n    \"size\" : 20,\n    \"totalElements\"\
               \ : 2,\n    \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}"
           schema:
@@ -7292,11 +7292,11 @@ paths:
           description: ""
           examples:
             application/hal+json: "{\n  \"mimeType\" : \"application/pdf\",\n  \"\
-              length\" : 1,\n  \"label\" : \"Handbuch\",\n  \"_id\" : \"67d8a032-f984-4a9e-8426-9187f439177f\"\
-              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/products/0ab003c4-207b-416b-a5dd-5a7ad0bc7ed9/attachments/67d8a032-f984-4a9e-8426-9187f439177f\"\
+              length\" : 1,\n  \"label\" : \"Handbuch\",\n  \"_id\" : \"2cb76ad1-f17b-4975-a1e7-f945858843bf\"\
+              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/products/9b78695e-703a-4f6e-9888-effebe14cd28/attachments/2cb76ad1-f17b-4975-a1e7-f945858843bf\"\
               \n    },\n    \"data\" : {\n      \"href\" : \"https://yourshop.api.urn/api/core-storage/attachments/my_document_1.pdf?hash=8a627f655c68f56dfbbf217ab7d5563281225666\"\
               \n    },\n    \"metadata\" : {\n      \"href\" : \"https://yourshop.api.urn/api/core-storage/attachments/my_document_1.pdf?hash=8a627f655c68f56dfbbf217ab7d5563281225666&download=no\"\
-              \n    },\n    \"attachment\" : {\n      \"href\" : \"https://yourshop.api.urn/products/0ab003c4-207b-416b-a5dd-5a7ad0bc7ed9/attachments/67d8a032-f984-4a9e-8426-9187f439177f\"\
+              \n    },\n    \"attachment\" : {\n      \"href\" : \"https://yourshop.api.urn/products/9b78695e-703a-4f6e-9888-effebe14cd28/attachments/2cb76ad1-f17b-4975-a1e7-f945858843bf\"\
               \n    }\n  }\n}"
       security:
       - oauth2_accessCode:
@@ -7326,37 +7326,37 @@ paths:
               \ {\n      \"namespace\" : \"_dummy_namespace\",\n      \"name\" : \"\
               _dummy_attr_undefined_locale\",\n      \"locale\" : \"\",\n      \"\
               type\" : \"NUMBER\",\n      \"value\" : 42.0,\n      \"_links\" : {\n\
-              \        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/products/17f491e1-4ef5-4637-9a45-d17696e90a07/attributes/_dummy_namespace/_dummy_attr_undefined_locale?locale=\"\
-              \n        },\n        \"owner\" : {\n          \"href\" : \"https://yourshop.api.urn/products/17f491e1-4ef5-4637-9a45-d17696e90a07\"\
+              \        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/products/7c466af6-10c9-4657-948b-9ffe945e7abc/attributes/_dummy_namespace/_dummy_attr_undefined_locale?locale=\"\
+              \n        },\n        \"owner\" : {\n          \"href\" : \"https://yourshop.api.urn/products/7c466af6-10c9-4657-948b-9ffe945e7abc\"\
               \n        }\n      }\n    }, {\n      \"namespace\" : \"custom\",\n\
               \      \"name\" : \"length\",\n      \"locale\" : \"en-GB\",\n     \
               \ \"type\" : \"NUMBER\",\n      \"value\" : 3.0,\n      \"_links\" :\
-              \ {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/products/17f491e1-4ef5-4637-9a45-d17696e90a07/attributes/custom/length?locale=en-GB\"\
-              \n        },\n        \"owner\" : {\n          \"href\" : \"https://yourshop.api.urn/products/17f491e1-4ef5-4637-9a45-d17696e90a07\"\
+              \ {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/products/7c466af6-10c9-4657-948b-9ffe945e7abc/attributes/custom/length?locale=en-GB\"\
+              \n        },\n        \"owner\" : {\n          \"href\" : \"https://yourshop.api.urn/products/7c466af6-10c9-4657-948b-9ffe945e7abc\"\
               \n        }\n      }\n    }, {\n      \"namespace\" : \"mbo\",\n   \
               \   \"name\" : \"flag\",\n      \"locale\" : \"\",\n      \"type\" :\
               \ \"NUMBER\",\n      \"value\" : 42.0,\n      \"_links\" : {\n     \
-              \   \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/products/17f491e1-4ef5-4637-9a45-d17696e90a07/attributes/mbo/flag?locale=\"\
-              \n        },\n        \"owner\" : {\n          \"href\" : \"https://yourshop.api.urn/products/17f491e1-4ef5-4637-9a45-d17696e90a07\"\
+              \   \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/products/7c466af6-10c9-4657-948b-9ffe945e7abc/attributes/mbo/flag?locale=\"\
+              \n        },\n        \"owner\" : {\n          \"href\" : \"https://yourshop.api.urn/products/7c466af6-10c9-4657-948b-9ffe945e7abc\"\
               \n        }\n      }\n    }, {\n      \"namespace\" : \"namespace_seo\"\
               ,\n      \"name\" : \"attr_shop_locale\",\n      \"locale\" : \"en-GB\"\
               ,\n      \"type\" : \"STRING\",\n      \"value\" : \"my-product\",\n\
               \      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"\
-              https://yourshop.api.urn/products/17f491e1-4ef5-4637-9a45-d17696e90a07/attributes/namespace_seo/attr_shop_locale?locale=en-GB\"\
-              \n        },\n        \"owner\" : {\n          \"href\" : \"https://yourshop.api.urn/products/17f491e1-4ef5-4637-9a45-d17696e90a07\"\
+              https://yourshop.api.urn/products/7c466af6-10c9-4657-948b-9ffe945e7abc/attributes/namespace_seo/attr_shop_locale?locale=en-GB\"\
+              \n        },\n        \"owner\" : {\n          \"href\" : \"https://yourshop.api.urn/products/7c466af6-10c9-4657-948b-9ffe945e7abc\"\
               \n        }\n      }\n    }, {\n      \"namespace\" : \"namespace_seo\"\
               ,\n      \"name\" : \"attr_undefined_locale\",\n      \"locale\" : \"\
               \",\n      \"type\" : \"NUMBER\",\n      \"value\" : 42.0,\n      \"\
-              _links\" : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/products/17f491e1-4ef5-4637-9a45-d17696e90a07/attributes/namespace_seo/attr_undefined_locale?locale=\"\
-              \n        },\n        \"owner\" : {\n          \"href\" : \"https://yourshop.api.urn/products/17f491e1-4ef5-4637-9a45-d17696e90a07\"\
+              _links\" : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/products/7c466af6-10c9-4657-948b-9ffe945e7abc/attributes/namespace_seo/attr_undefined_locale?locale=\"\
+              \n        },\n        \"owner\" : {\n          \"href\" : \"https://yourshop.api.urn/products/7c466af6-10c9-4657-948b-9ffe945e7abc\"\
               \n        }\n      }\n    }, {\n      \"namespace\" : \"seo\",\n   \
               \   \"name\" : \"slug\",\n      \"locale\" : \"en-GB\",\n      \"type\"\
               \ : \"STRING\",\n      \"value\" : \"my-product\",\n      \"_links\"\
-              \ : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/products/17f491e1-4ef5-4637-9a45-d17696e90a07/attributes/seo/slug?locale=en-GB\"\
-              \n        },\n        \"owner\" : {\n          \"href\" : \"https://yourshop.api.urn/products/17f491e1-4ef5-4637-9a45-d17696e90a07\"\
+              \ : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/products/7c466af6-10c9-4657-948b-9ffe945e7abc/attributes/seo/slug?locale=en-GB\"\
+              \n        },\n        \"owner\" : {\n          \"href\" : \"https://yourshop.api.urn/products/7c466af6-10c9-4657-948b-9ffe945e7abc\"\
               \n        }\n      }\n    } ]\n  },\n  \"_links\" : {\n    \"self\"\
-              \ : {\n      \"href\" : \"https://yourshop.api.urn/products/17f491e1-4ef5-4637-9a45-d17696e90a07/attributes?locale=en-GB\"\
-              \n    },\n    \"owner\" : {\n      \"href\" : \"https://yourshop.api.urn/products/17f491e1-4ef5-4637-9a45-d17696e90a07\"\
+              \ : {\n      \"href\" : \"https://yourshop.api.urn/products/7c466af6-10c9-4657-948b-9ffe945e7abc/attributes?locale=en-GB\"\
+              \n    },\n    \"owner\" : {\n      \"href\" : \"https://yourshop.api.urn/products/7c466af6-10c9-4657-948b-9ffe945e7abc\"\
               \n    }\n  },\n  \"page\" : {\n    \"size\" : 20,\n    \"totalElements\"\
               \ : 6,\n    \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}"
           schema:
@@ -7420,13 +7420,13 @@ paths:
             application/hal+json: "{\n  \"availabilityState\" : \"IN_STOCK\",\n  \"\
               availableStock\" : 20,\n  \"stockThreshold\" : 2,\n  \"purchasable\"\
               \ : true,\n  \"_links\" : {\n    \"product\" : {\n      \"href\" : \"\
-              https://yourshop.api.urn/products/1871063a-5271-47f8-bae7-28d6749491be\"\
-              \n    },\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/products/1871063a-5271-47f8-bae7-28d6749491be/availability\"\
-              \n    },\n    \"disable-purchasability\" : {\n      \"href\" : \"https://yourshop.api.urn/products/1871063a-5271-47f8-bae7-28d6749491be/availability/disable-purchasability\"\
-              \n    },\n    \"adjust-available-stock\" : {\n      \"href\" : \"https://yourshop.api.urn/products/1871063a-5271-47f8-bae7-28d6749491be/availability/adjust-available-stock\"\
-              \n    },\n    \"update-stock-threshold\" : {\n      \"href\" : \"https://yourshop.api.urn/products/1871063a-5271-47f8-bae7-28d6749491be/availability/update-stock-threshold\"\
+              https://yourshop.api.urn/products/907c5c1a-92dd-4f66-8f06-f0ac82287695\"\
+              \n    },\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/products/907c5c1a-92dd-4f66-8f06-f0ac82287695/availability\"\
+              \n    },\n    \"disable-purchasability\" : {\n      \"href\" : \"https://yourshop.api.urn/products/907c5c1a-92dd-4f66-8f06-f0ac82287695/availability/disable-purchasability\"\
+              \n    },\n    \"adjust-available-stock\" : {\n      \"href\" : \"https://yourshop.api.urn/products/907c5c1a-92dd-4f66-8f06-f0ac82287695/availability/adjust-available-stock\"\
+              \n    },\n    \"update-stock-threshold\" : {\n      \"href\" : \"https://yourshop.api.urn/products/907c5c1a-92dd-4f66-8f06-f0ac82287695/availability/update-stock-threshold\"\
               \n    },\n    \"disable-stock-management\" : {\n      \"href\" : \"\
-              https://yourshop.api.urn/products/1871063a-5271-47f8-bae7-28d6749491be/availability/disable-stock-management\"\
+              https://yourshop.api.urn/products/907c5c1a-92dd-4f66-8f06-f0ac82287695/availability/disable-stock-management\"\
               \n    }\n  }\n}"
           schema:
             $ref: "#/definitions/products_productId_availability919963839"
@@ -7454,9 +7454,9 @@ paths:
         name: ""
         required: false
         schema:
-          $ref: "#/definitions/products_productId_default-image1630778166"
+          $ref: "#/definitions/products_productId_default-image1776723590"
         x-examples:
-          text/uri-list: "http://localhost/products/images/59e621cd-ced7-41f9-8dfe-74608e320a35"
+          text/uri-list: "http://localhost/products/images/2b4baadf-85c5-49c0-a79f-c58b273e4f06"
       responses:
         204:
           description: ""
@@ -7486,21 +7486,21 @@ paths:
           description: ""
           examples:
             application/hal+json: "{\n  \"_embedded\" : {\n    \"images\" : [ {\n\
-              \      \"_id\" : \"7417614b-de51-44a0-abbc-6df84c9565ab\",\n      \"\
-              _links\" : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/products/e5015934-351c-4378-9af8-561d7f9e557e/images/7417614b-de51-44a0-abbc-6df84c9565ab\"\
+              \      \"_id\" : \"df48de42-da0f-4fb0-b236-45bdefe5c051\",\n      \"\
+              _links\" : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/products/dc57d3d8-e01d-4140-859d-c0b79bfb0c62/images/df48de42-da0f-4fb0-b236-45bdefe5c051\"\
               \n        },\n        \"data\" : {\n          \"href\" : \"https://yourshop.api.urn/api/core-storage/images/photostore-2.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225998{&width,height,upscale}\"\
               ,\n          \"templated\" : true\n        },\n        \"metadata\"\
               \ : {\n          \"href\" : \"https://yourshop.api.urn/api/core-storage/images/photostore-2.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225998&download=no\"\
-              \n        },\n        \"image\" : {\n          \"href\" : \"https://yourshop.api.urn/products/e5015934-351c-4378-9af8-561d7f9e557e/images/7417614b-de51-44a0-abbc-6df84c9565ab\"\
-              \n        }\n      }\n    }, {\n      \"_id\" : \"3dc0f31a-ca3a-4f34-a6cb-463d78aff7b0\"\
+              \n        },\n        \"image\" : {\n          \"href\" : \"https://yourshop.api.urn/products/dc57d3d8-e01d-4140-859d-c0b79bfb0c62/images/df48de42-da0f-4fb0-b236-45bdefe5c051\"\
+              \n        }\n      }\n    }, {\n      \"_id\" : \"4606935e-a3cf-48e7-848c-08241c8ce6a3\"\
               ,\n      \"_links\" : {\n        \"self\" : {\n          \"href\" :\
-              \ \"https://yourshop.api.urn/products/e5015934-351c-4378-9af8-561d7f9e557e/images/3dc0f31a-ca3a-4f34-a6cb-463d78aff7b0\"\
+              \ \"https://yourshop.api.urn/products/dc57d3d8-e01d-4140-859d-c0b79bfb0c62/images/4606935e-a3cf-48e7-848c-08241c8ce6a3\"\
               \n        },\n        \"data\" : {\n          \"href\" : \"https://yourshop.api.urn/api/core-storage/images/photostore-3.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225999{&width,height,upscale}\"\
               ,\n          \"templated\" : true\n        },\n        \"metadata\"\
               \ : {\n          \"href\" : \"https://yourshop.api.urn/api/core-storage/images/photostore-3.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225999&download=no\"\
-              \n        },\n        \"image\" : {\n          \"href\" : \"https://yourshop.api.urn/products/e5015934-351c-4378-9af8-561d7f9e557e/images/3dc0f31a-ca3a-4f34-a6cb-463d78aff7b0\"\
+              \n        },\n        \"image\" : {\n          \"href\" : \"https://yourshop.api.urn/products/dc57d3d8-e01d-4140-859d-c0b79bfb0c62/images/4606935e-a3cf-48e7-848c-08241c8ce6a3\"\
               \n        }\n      }\n    } ]\n  },\n  \"_links\" : {\n    \"self\"\
-              \ : {\n      \"href\" : \"https://yourshop.api.urn/products/e5015934-351c-4378-9af8-561d7f9e557e/images?page=0&size=20\"\
+              \ : {\n      \"href\" : \"https://yourshop.api.urn/products/dc57d3d8-e01d-4140-859d-c0b79bfb0c62/images?page=0&size=20\"\
               \n    }\n  },\n  \"page\" : {\n    \"size\" : 20,\n    \"totalElements\"\
               \ : 2,\n    \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}"
           schema:
@@ -8774,12 +8774,12 @@ paths:
         201:
           description: ""
           examples:
-            application/hal+json: "{\n  \"_id\" : \"ca5e13aa-9c04-495b-afae-b39ccfbc0ad4\"\
-              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/products/b696e7f6-66c0-4b59-8460-ff1de48bbb56/images/ca5e13aa-9c04-495b-afae-b39ccfbc0ad4\"\
+            application/hal+json: "{\n  \"_id\" : \"7722feb3-801c-45ab-b4f5-0367915687aa\"\
+              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/products/67a16d8c-1a98-4160-8d36-ca4b942f6233/images/7722feb3-801c-45ab-b4f5-0367915687aa\"\
               \n    },\n    \"data\" : {\n      \"href\" : \"https://yourshop.api.urn/api/core-storage/images/photostore-2.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225998{&width,height,upscale}\"\
               ,\n      \"templated\" : true\n    },\n    \"metadata\" : {\n      \"\
               href\" : \"https://yourshop.api.urn/api/core-storage/images/photostore-2.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225998&download=no\"\
-              \n    },\n    \"image\" : {\n      \"href\" : \"https://yourshop.api.urn/products/b696e7f6-66c0-4b59-8460-ff1de48bbb56/images/ca5e13aa-9c04-495b-afae-b39ccfbc0ad4\"\
+              \n    },\n    \"image\" : {\n      \"href\" : \"https://yourshop.api.urn/products/67a16d8c-1a98-4160-8d36-ca4b942f6233/images/7722feb3-801c-45ab-b4f5-0367915687aa\"\
               \n    }\n  }\n}"
       security:
       - oauth2_accessCode:
@@ -8811,11 +8811,11 @@ paths:
           description: ""
           examples:
             application/hal+json: "{\n  \"mimeType\" : \"application/pdf\",\n  \"\
-              length\" : 1,\n  \"label\" : \"Handbuch\",\n  \"_id\" : \"becac8b2-6e75-45f1-9d12-1df2e91d406e\"\
-              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/products/2ae14c42-32cd-4a86-af0c-b747439cacd8/attachments/becac8b2-6e75-45f1-9d12-1df2e91d406e\"\
+              length\" : 1,\n  \"label\" : \"Handbuch\",\n  \"_id\" : \"9f692a69-a9a2-4ff3-95a0-e1cb7e0af8b4\"\
+              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/products/e682651c-80a1-4e34-852c-6d52cbd2aff8/attachments/9f692a69-a9a2-4ff3-95a0-e1cb7e0af8b4\"\
               \n    },\n    \"data\" : {\n      \"href\" : \"https://yourshop.api.urn/api/core-storage/attachments/1_my_attachment.pdf?hash=8a627f655c68f56dfbbf217ab7d5563281225801\"\
               \n    },\n    \"metadata\" : {\n      \"href\" : \"https://yourshop.api.urn/api/core-storage/attachments/1_my_attachment.pdf?hash=8a627f655c68f56dfbbf217ab7d5563281225801&download=no\"\
-              \n    },\n    \"attachment\" : {\n      \"href\" : \"https://yourshop.api.urn/products/2ae14c42-32cd-4a86-af0c-b747439cacd8/attachments/becac8b2-6e75-45f1-9d12-1df2e91d406e\"\
+              \n    },\n    \"attachment\" : {\n      \"href\" : \"https://yourshop.api.urn/products/e682651c-80a1-4e34-852c-6d52cbd2aff8/attachments/9f692a69-a9a2-4ff3-95a0-e1cb7e0af8b4\"\
               \n    }\n  }\n}"
           schema:
             $ref: "#/definitions/products_productId_attachments_attachmentId-897355724"
@@ -8878,16 +8878,16 @@ paths:
               \ {\n      \"namespace\" : \"namespace_seo\",\n      \"name\" : \"attr_different_locale\"\
               ,\n      \"locale\" : \"de-DE\",\n      \"type\" : \"STRING\",\n   \
               \   \"value\" : \"mein-produkt\",\n      \"_links\" : {\n        \"\
-              self\" : {\n          \"href\" : \"https://yourshop.api.urn/products/1c9844e5-fe80-4c4c-80fb-d4a291cc9979/attributes/namespace_seo/attr_different_locale?locale=de-DE\"\
-              \n        },\n        \"owner\" : {\n          \"href\" : \"https://yourshop.api.urn/products/1c9844e5-fe80-4c4c-80fb-d4a291cc9979\"\
+              self\" : {\n          \"href\" : \"https://yourshop.api.urn/products/dc22e4a1-d69e-4628-b1e5-fb457f13f3be/attributes/namespace_seo/attr_different_locale?locale=de-DE\"\
+              \n        },\n        \"owner\" : {\n          \"href\" : \"https://yourshop.api.urn/products/dc22e4a1-d69e-4628-b1e5-fb457f13f3be\"\
               \n        }\n      }\n    }, {\n      \"namespace\" : \"namespace_seo\"\
               ,\n      \"name\" : \"attr_undefined_locale\",\n      \"locale\" : \"\
               \",\n      \"type\" : \"NUMBER\",\n      \"value\" : 42.0,\n      \"\
-              _links\" : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/products/1c9844e5-fe80-4c4c-80fb-d4a291cc9979/attributes/namespace_seo/attr_undefined_locale?locale=\"\
-              \n        },\n        \"owner\" : {\n          \"href\" : \"https://yourshop.api.urn/products/1c9844e5-fe80-4c4c-80fb-d4a291cc9979\"\
+              _links\" : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/products/dc22e4a1-d69e-4628-b1e5-fb457f13f3be/attributes/namespace_seo/attr_undefined_locale?locale=\"\
+              \n        },\n        \"owner\" : {\n          \"href\" : \"https://yourshop.api.urn/products/dc22e4a1-d69e-4628-b1e5-fb457f13f3be\"\
               \n        }\n      }\n    } ]\n  },\n  \"_links\" : {\n    \"self\"\
-              \ : {\n      \"href\" : \"https://yourshop.api.urn/products/1c9844e5-fe80-4c4c-80fb-d4a291cc9979/attributes?locale=de-DE\"\
-              \n    },\n    \"owner\" : {\n      \"href\" : \"https://yourshop.api.urn/products/1c9844e5-fe80-4c4c-80fb-d4a291cc9979\"\
+              \ : {\n      \"href\" : \"https://yourshop.api.urn/products/dc22e4a1-d69e-4628-b1e5-fb457f13f3be/attributes?locale=de-DE\"\
+              \n    },\n    \"owner\" : {\n      \"href\" : \"https://yourshop.api.urn/products/dc22e4a1-d69e-4628-b1e5-fb457f13f3be\"\
               \n    }\n  },\n  \"page\" : {\n    \"size\" : 20,\n    \"totalElements\"\
               \ : 2,\n    \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}"
           schema:
@@ -8928,13 +8928,13 @@ paths:
             application/hal+json: "{\n  \"availabilityState\" : \"IN_STOCK\",\n  \"\
               availableStock\" : 9,\n  \"stockThreshold\" : 2,\n  \"purchasable\"\
               \ : true,\n  \"_links\" : {\n    \"product\" : {\n      \"href\" : \"\
-              https://yourshop.api.urn/products/fa462a5a-7101-4e53-b358-62c6e8675576\"\
-              \n    },\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/products/fa462a5a-7101-4e53-b358-62c6e8675576/availability\"\
-              \n    },\n    \"disable-purchasability\" : {\n      \"href\" : \"https://yourshop.api.urn/products/fa462a5a-7101-4e53-b358-62c6e8675576/availability/disable-purchasability\"\
-              \n    },\n    \"adjust-available-stock\" : {\n      \"href\" : \"https://yourshop.api.urn/products/fa462a5a-7101-4e53-b358-62c6e8675576/availability/adjust-available-stock\"\
-              \n    },\n    \"update-stock-threshold\" : {\n      \"href\" : \"https://yourshop.api.urn/products/fa462a5a-7101-4e53-b358-62c6e8675576/availability/update-stock-threshold\"\
+              https://yourshop.api.urn/products/e559f0ab-afb7-4248-8258-2303b827caf3\"\
+              \n    },\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/products/e559f0ab-afb7-4248-8258-2303b827caf3/availability\"\
+              \n    },\n    \"disable-purchasability\" : {\n      \"href\" : \"https://yourshop.api.urn/products/e559f0ab-afb7-4248-8258-2303b827caf3/availability/disable-purchasability\"\
+              \n    },\n    \"adjust-available-stock\" : {\n      \"href\" : \"https://yourshop.api.urn/products/e559f0ab-afb7-4248-8258-2303b827caf3/availability/adjust-available-stock\"\
+              \n    },\n    \"update-stock-threshold\" : {\n      \"href\" : \"https://yourshop.api.urn/products/e559f0ab-afb7-4248-8258-2303b827caf3/availability/update-stock-threshold\"\
               \n    },\n    \"disable-stock-management\" : {\n      \"href\" : \"\
-              https://yourshop.api.urn/products/fa462a5a-7101-4e53-b358-62c6e8675576/availability/disable-stock-management\"\
+              https://yourshop.api.urn/products/e559f0ab-afb7-4248-8258-2303b827caf3/availability/disable-stock-management\"\
               \n    }\n  }\n}"
       security:
       - oauth2_accessCode:
@@ -8963,10 +8963,10 @@ paths:
             application/hal+json: "{\n  \"availabilityState\" : \"NOT_AVAILABLE\"\
               ,\n  \"availableStock\" : null,\n  \"stockThreshold\" : null,\n  \"\
               purchasable\" : false,\n  \"_links\" : {\n    \"product\" : {\n    \
-              \  \"href\" : \"https://yourshop.api.urn/products/af7998e1-306d-4a9b-b808-09ae64080a82\"\
-              \n    },\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/products/af7998e1-306d-4a9b-b808-09ae64080a82/availability\"\
-              \n    },\n    \"enable-purchasability\" : {\n      \"href\" : \"https://yourshop.api.urn/products/af7998e1-306d-4a9b-b808-09ae64080a82/availability/enable-purchasability\"\
-              \n    },\n    \"enable-stock-management\" : {\n      \"href\" : \"https://yourshop.api.urn/products/af7998e1-306d-4a9b-b808-09ae64080a82/availability/enable-stock-management\"\
+              \  \"href\" : \"https://yourshop.api.urn/products/13ae670c-8cec-4894-8acf-530a1ebfd672\"\
+              \n    },\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/products/13ae670c-8cec-4894-8acf-530a1ebfd672/availability\"\
+              \n    },\n    \"enable-purchasability\" : {\n      \"href\" : \"https://yourshop.api.urn/products/13ae670c-8cec-4894-8acf-530a1ebfd672/availability/enable-purchasability\"\
+              \n    },\n    \"enable-stock-management\" : {\n      \"href\" : \"https://yourshop.api.urn/products/13ae670c-8cec-4894-8acf-530a1ebfd672/availability/enable-stock-management\"\
               \n    }\n  }\n}"
       security:
       - oauth2_accessCode:
@@ -8995,10 +8995,10 @@ paths:
             application/hal+json: "{\n  \"availabilityState\" : \"IN_STOCK\",\n  \"\
               availableStock\" : null,\n  \"stockThreshold\" : null,\n  \"purchasable\"\
               \ : true,\n  \"_links\" : {\n    \"product\" : {\n      \"href\" : \"\
-              https://yourshop.api.urn/products/7b5b587e-a193-4d19-b626-b3c49485b1bd\"\
-              \n    },\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/products/7b5b587e-a193-4d19-b626-b3c49485b1bd/availability\"\
-              \n    },\n    \"disable-purchasability\" : {\n      \"href\" : \"https://yourshop.api.urn/products/7b5b587e-a193-4d19-b626-b3c49485b1bd/availability/disable-purchasability\"\
-              \n    },\n    \"enable-stock-management\" : {\n      \"href\" : \"https://yourshop.api.urn/products/7b5b587e-a193-4d19-b626-b3c49485b1bd/availability/enable-stock-management\"\
+              https://yourshop.api.urn/products/5f86d742-6fe0-4476-b243-365fa918cbec\"\
+              \n    },\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/products/5f86d742-6fe0-4476-b243-365fa918cbec/availability\"\
+              \n    },\n    \"disable-purchasability\" : {\n      \"href\" : \"https://yourshop.api.urn/products/5f86d742-6fe0-4476-b243-365fa918cbec/availability/disable-purchasability\"\
+              \n    },\n    \"enable-stock-management\" : {\n      \"href\" : \"https://yourshop.api.urn/products/5f86d742-6fe0-4476-b243-365fa918cbec/availability/enable-stock-management\"\
               \n    }\n  }\n}"
       security:
       - oauth2_accessCode:
@@ -9027,10 +9027,10 @@ paths:
             application/hal+json: "{\n  \"availabilityState\" : \"IN_STOCK\",\n  \"\
               availableStock\" : null,\n  \"stockThreshold\" : null,\n  \"purchasable\"\
               \ : true,\n  \"_links\" : {\n    \"product\" : {\n      \"href\" : \"\
-              https://yourshop.api.urn/products/4a26a870-edb3-42f5-bd4c-2af9510145db\"\
-              \n    },\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/products/4a26a870-edb3-42f5-bd4c-2af9510145db/availability\"\
-              \n    },\n    \"disable-purchasability\" : {\n      \"href\" : \"https://yourshop.api.urn/products/4a26a870-edb3-42f5-bd4c-2af9510145db/availability/disable-purchasability\"\
-              \n    },\n    \"enable-stock-management\" : {\n      \"href\" : \"https://yourshop.api.urn/products/4a26a870-edb3-42f5-bd4c-2af9510145db/availability/enable-stock-management\"\
+              https://yourshop.api.urn/products/8108140e-578f-4176-b36c-24a34652a433\"\
+              \n    },\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/products/8108140e-578f-4176-b36c-24a34652a433/availability\"\
+              \n    },\n    \"disable-purchasability\" : {\n      \"href\" : \"https://yourshop.api.urn/products/8108140e-578f-4176-b36c-24a34652a433/availability/disable-purchasability\"\
+              \n    },\n    \"enable-stock-management\" : {\n      \"href\" : \"https://yourshop.api.urn/products/8108140e-578f-4176-b36c-24a34652a433/availability/enable-stock-management\"\
               \n    }\n  }\n}"
       security:
       - oauth2_accessCode:
@@ -9069,13 +9069,13 @@ paths:
             application/hal+json: "{\n  \"availabilityState\" : \"IN_STOCK\",\n  \"\
               availableStock\" : 100,\n  \"stockThreshold\" : 2,\n  \"purchasable\"\
               \ : true,\n  \"_links\" : {\n    \"product\" : {\n      \"href\" : \"\
-              https://yourshop.api.urn/products/5d3d888f-f7f7-4922-9bb9-1a90984bbf8b\"\
-              \n    },\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/products/5d3d888f-f7f7-4922-9bb9-1a90984bbf8b/availability\"\
-              \n    },\n    \"disable-purchasability\" : {\n      \"href\" : \"https://yourshop.api.urn/products/5d3d888f-f7f7-4922-9bb9-1a90984bbf8b/availability/disable-purchasability\"\
-              \n    },\n    \"adjust-available-stock\" : {\n      \"href\" : \"https://yourshop.api.urn/products/5d3d888f-f7f7-4922-9bb9-1a90984bbf8b/availability/adjust-available-stock\"\
-              \n    },\n    \"update-stock-threshold\" : {\n      \"href\" : \"https://yourshop.api.urn/products/5d3d888f-f7f7-4922-9bb9-1a90984bbf8b/availability/update-stock-threshold\"\
+              https://yourshop.api.urn/products/5937b4e7-1883-4aec-b4f5-d8dcae538244\"\
+              \n    },\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/products/5937b4e7-1883-4aec-b4f5-d8dcae538244/availability\"\
+              \n    },\n    \"disable-purchasability\" : {\n      \"href\" : \"https://yourshop.api.urn/products/5937b4e7-1883-4aec-b4f5-d8dcae538244/availability/disable-purchasability\"\
+              \n    },\n    \"adjust-available-stock\" : {\n      \"href\" : \"https://yourshop.api.urn/products/5937b4e7-1883-4aec-b4f5-d8dcae538244/availability/adjust-available-stock\"\
+              \n    },\n    \"update-stock-threshold\" : {\n      \"href\" : \"https://yourshop.api.urn/products/5937b4e7-1883-4aec-b4f5-d8dcae538244/availability/update-stock-threshold\"\
               \n    },\n    \"disable-stock-management\" : {\n      \"href\" : \"\
-              https://yourshop.api.urn/products/5d3d888f-f7f7-4922-9bb9-1a90984bbf8b/availability/disable-stock-management\"\
+              https://yourshop.api.urn/products/5937b4e7-1883-4aec-b4f5-d8dcae538244/availability/disable-stock-management\"\
               \n    }\n  }\n}"
       security:
       - oauth2_accessCode:
@@ -9113,13 +9113,13 @@ paths:
             application/hal+json: "{\n  \"availabilityState\" : \"IN_STOCK\",\n  \"\
               availableStock\" : 10,\n  \"stockThreshold\" : 5,\n  \"purchasable\"\
               \ : true,\n  \"_links\" : {\n    \"product\" : {\n      \"href\" : \"\
-              https://yourshop.api.urn/products/b320a382-cae5-4340-91c9-d99be2f55ade\"\
-              \n    },\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/products/b320a382-cae5-4340-91c9-d99be2f55ade/availability\"\
-              \n    },\n    \"disable-purchasability\" : {\n      \"href\" : \"https://yourshop.api.urn/products/b320a382-cae5-4340-91c9-d99be2f55ade/availability/disable-purchasability\"\
-              \n    },\n    \"adjust-available-stock\" : {\n      \"href\" : \"https://yourshop.api.urn/products/b320a382-cae5-4340-91c9-d99be2f55ade/availability/adjust-available-stock\"\
-              \n    },\n    \"update-stock-threshold\" : {\n      \"href\" : \"https://yourshop.api.urn/products/b320a382-cae5-4340-91c9-d99be2f55ade/availability/update-stock-threshold\"\
+              https://yourshop.api.urn/products/5e7313ae-f205-4dc4-98a9-82e1638c3230\"\
+              \n    },\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/products/5e7313ae-f205-4dc4-98a9-82e1638c3230/availability\"\
+              \n    },\n    \"disable-purchasability\" : {\n      \"href\" : \"https://yourshop.api.urn/products/5e7313ae-f205-4dc4-98a9-82e1638c3230/availability/disable-purchasability\"\
+              \n    },\n    \"adjust-available-stock\" : {\n      \"href\" : \"https://yourshop.api.urn/products/5e7313ae-f205-4dc4-98a9-82e1638c3230/availability/adjust-available-stock\"\
+              \n    },\n    \"update-stock-threshold\" : {\n      \"href\" : \"https://yourshop.api.urn/products/5e7313ae-f205-4dc4-98a9-82e1638c3230/availability/update-stock-threshold\"\
               \n    },\n    \"disable-stock-management\" : {\n      \"href\" : \"\
-              https://yourshop.api.urn/products/b320a382-cae5-4340-91c9-d99be2f55ade/availability/disable-stock-management\"\
+              https://yourshop.api.urn/products/5e7313ae-f205-4dc4-98a9-82e1638c3230/availability/disable-stock-management\"\
               \n    }\n  }\n}"
       security:
       - oauth2_accessCode:
@@ -9150,12 +9150,12 @@ paths:
         200:
           description: ""
           examples:
-            application/hal+json: "{\n  \"_id\" : \"23aabcf1-5102-4e30-9987-bf853a6e5dee\"\
-              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/products/261c5bbb-a3ee-4496-8365-0050c0d73ec8/images/23aabcf1-5102-4e30-9987-bf853a6e5dee\"\
+            application/hal+json: "{\n  \"_id\" : \"de2137b1-f2ea-461d-9fa2-f8613dbc3f92\"\
+              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/products/f8f61a1e-64f0-4ead-be5c-feaaf4eadb61/images/de2137b1-f2ea-461d-9fa2-f8613dbc3f92\"\
               \n    },\n    \"data\" : {\n      \"href\" : \"https://yourshop.api.urn/api/core-storage/images/photostore-2.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225998{&width,height,upscale}\"\
               ,\n      \"templated\" : true\n    },\n    \"metadata\" : {\n      \"\
               href\" : \"https://yourshop.api.urn/api/core-storage/images/photostore-2.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225998&download=no\"\
-              \n    },\n    \"image\" : {\n      \"href\" : \"https://yourshop.api.urn/products/261c5bbb-a3ee-4496-8365-0050c0d73ec8/images/23aabcf1-5102-4e30-9987-bf853a6e5dee\"\
+              \n    },\n    \"image\" : {\n      \"href\" : \"https://yourshop.api.urn/products/f8f61a1e-64f0-4ead-be5c-feaaf4eadb61/images/de2137b1-f2ea-461d-9fa2-f8613dbc3f92\"\
               \n    }\n  }\n}"
           schema:
             $ref: "#/definitions/products_productId_images_imageId-365295234"
@@ -9223,11 +9223,11 @@ paths:
               \ {\n      \"namespace\" : \"namespace_seo\",\n      \"name\" : \"attr_different_locale\"\
               ,\n      \"locale\" : \"de-DE\",\n      \"type\" : \"STRING\",\n   \
               \   \"value\" : \"mein-produkt\",\n      \"_links\" : {\n        \"\
-              self\" : {\n          \"href\" : \"https://yourshop.api.urn/products/e1bf3140-1e0a-4aa3-9b54-ff431a1c5b1f/attributes/namespace_seo/attr_different_locale?locale=de-DE\"\
-              \n        },\n        \"owner\" : {\n          \"href\" : \"https://yourshop.api.urn/products/e1bf3140-1e0a-4aa3-9b54-ff431a1c5b1f\"\
+              self\" : {\n          \"href\" : \"https://yourshop.api.urn/products/f3a182a7-331b-4045-9dfc-9f071701401b/attributes/namespace_seo/attr_different_locale?locale=de-DE\"\
+              \n        },\n        \"owner\" : {\n          \"href\" : \"https://yourshop.api.urn/products/f3a182a7-331b-4045-9dfc-9f071701401b\"\
               \n        }\n      }\n    } ]\n  },\n  \"_links\" : {\n    \"self\"\
-              \ : {\n      \"href\" : \"https://yourshop.api.urn/products/e1bf3140-1e0a-4aa3-9b54-ff431a1c5b1f/attributes/namespace_seo/attr_different_locale?locale=de-DE\"\
-              \n    },\n    \"owner\" : {\n      \"href\" : \"https://yourshop.api.urn/products/e1bf3140-1e0a-4aa3-9b54-ff431a1c5b1f\"\
+              \ : {\n      \"href\" : \"https://yourshop.api.urn/products/f3a182a7-331b-4045-9dfc-9f071701401b/attributes/namespace_seo/attr_different_locale?locale=de-DE\"\
+              \n    },\n    \"owner\" : {\n      \"href\" : \"https://yourshop.api.urn/products/f3a182a7-331b-4045-9dfc-9f071701401b\"\
               \n    }\n  },\n  \"page\" : {\n    \"size\" : 20,\n    \"totalElements\"\
               \ : 1,\n    \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}"
           schema:
@@ -9838,9 +9838,9 @@ paths:
               cornershop.beyondshop.cloud\",\n  \"tax\" : {\n    \"taxModel\" : \"\
               GROSS\",\n    \"vatExempted\" : false,\n    \"country\" : \"GB\"\n \
               \ },\n  \"currencies\" : [ \"EUR\", \"GBP\" ],\n  \"defaultCurrency\"\
-              \ : \"EUR\",\n  \"locales\" : [ \"de-DE\", \"en-GB\" ],\n  \"defaultLocale\"\
+              \ : \"EUR\",\n  \"locales\" : [ \"en-GB\", \"de-DE\" ],\n  \"defaultLocale\"\
               \ : \"en-GB\",\n  \"closedByMerchant\" : false,\n  \"resellerName\"\
-              \ : \"epages\",\n  \"_id\" : \"fdad1720-59d8-4c91-8be0-7cacea4c13bd\"\
+              \ : \"epages\",\n  \"_id\" : \"af3d00e2-510d-4e46-a6ed-413178441c88\"\
               ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/shop\"\
               \n    },\n    \"shop\" : {\n      \"href\" : \"https://yourshop.api.urn/shop\"\
               \n    },\n    \"address\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/address\"\
@@ -9867,14 +9867,14 @@ paths:
         name: ""
         required: false
         schema:
-          $ref: "#/definitions/shop-1182683528"
+          $ref: "#/definitions/shop-311848108"
         x-examples:
           application/json: "{\n  \"name\" : \"anotherName\",\n  \"closedShopMessage\"\
             \ : \"Sorry, this shop is closed.\",\n  \"primaryHostname\" : \"cornershop.amazingdiscounts.xyz\"\
             ,\n  \"fallbackHostname\" : \"cornershop.beyondshop.cloud\",\n  \"tax\"\
             \ : {\n    \"taxModel\" : \"GROSS\",\n    \"vatExempted\" : false\n  },\n\
             \  \"currencies\" : [ \"EUR\", \"USD\", \"GBP\" ],\n  \"defaultCurrency\"\
-            \ : \"USD\",\n  \"locales\" : [ \"de-DE\", \"en-GB\" ],\n  \"defaultLocale\"\
+            \ : \"USD\",\n  \"locales\" : [ \"en-GB\", \"de-DE\" ],\n  \"defaultLocale\"\
             \ : \"en-GB\",\n  \"closedByMerchant\" : false\n}"
           application/json-patch+json: "[ {\n  \"op\" : \"add\",\n  \"path\" : \"\
             /closedByMerchant\",\n  \"value\" : true\n} ]"
@@ -9888,8 +9888,8 @@ paths:
               \ : {\n    \"taxModel\" : \"GROSS\",\n    \"vatExempted\" : false,\n\
               \    \"country\" : null\n  },\n  \"currencies\" : [ \"EUR\", \"USD\"\
               , \"GBP\" ],\n  \"defaultCurrency\" : \"USD\",\n  \"locales\" : [ \"\
-              de-DE\", \"en-GB\" ],\n  \"defaultLocale\" : \"en-GB\",\n  \"closedByMerchant\"\
-              \ : false,\n  \"resellerName\" : \"epages\",\n  \"_id\" : \"d43737d9-8dac-4a07-8dce-e25496829713\"\
+              en-GB\", \"de-DE\" ],\n  \"defaultLocale\" : \"en-GB\",\n  \"closedByMerchant\"\
+              \ : false,\n  \"resellerName\" : \"epages\",\n  \"_id\" : \"c569a70e-d8bf-4837-a92b-854bcc85b529\"\
               ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/shop\"\
               \n    },\n    \"shop\" : {\n      \"href\" : \"https://yourshop.api.urn/shop\"\
               \n    },\n    \"address\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/address\"\
@@ -10069,25 +10069,31 @@ paths:
           description: ""
           examples:
             application/hal+json: "{\n  \"_embedded\" : {\n    \"features\" : [ {\n\
-              \      \"name\" : \"shop-admin.shop.max-products\",\n      \"details\"\
-              \ : {\n        \"maxValue\" : 100,\n        \"currentValue\" : 0\n \
-              \     },\n      \"type\" : \"COUNTER\",\n      \"_links\" : {\n    \
-              \    \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/shop/features/shop-admin.shop.max-products\"\
+              \      \"name\" : \"domain-management.custom-domains\",\n      \"details\"\
+              \ : {\n        \"maxValue\" : 10,\n        \"currentValue\" : 0\n  \
+              \    },\n      \"type\" : \"COUNTER\",\n      \"_links\" : {\n     \
+              \   \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/shop/features/domain-management.custom-domains\"\
               \n        },\n        \"owner\" : {\n          \"href\" : \"https://yourshop.api.urn/shop\"\
               \n        },\n        \"feature-definition\" : {\n          \"href\"\
-              \ : \"https://yourshop.api.urn/feature-definitions/shop-admin.shop.max-products\"\
-              \n        }\n      }\n    }, {\n      \"type\" : \"TOGGLE\",\n     \
-              \ \"name\" : \"shop-admin.shop.custom-domains\",\n      \"details\"\
-              \ : { },\n      \"_links\" : {\n        \"self\" : {\n          \"href\"\
-              \ : \"https://yourshop.api.urn/shop/features/shop-admin.shop.custom-domains\"\
+              \ : \"https://yourshop.api.urn/feature-definitions/domain-management.custom-domains\"\
+              \n        }\n      }\n    }, {\n      \"name\" : \"add-on.custom-apps\"\
+              ,\n      \"details\" : { },\n      \"type\" : \"TOGGLE\",\n      \"\
+              _links\" : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/shop/features/add-on.custom-apps\"\
               \n        },\n        \"owner\" : {\n          \"href\" : \"https://yourshop.api.urn/shop\"\
               \n        },\n        \"feature-definition\" : {\n          \"href\"\
-              \ : \"https://yourshop.api.urn/feature-definitions/shop-admin.shop.custom-domains\"\
+              \ : \"https://yourshop.api.urn/feature-definitions/add-on.custom-apps\"\
+              \n        }\n      }\n    }, {\n      \"name\" : \"app.paypal-express\"\
+              ,\n      \"details\" : {\n        \"preInstalled\" : true\n      },\n\
+              \      \"type\" : \"APP\",\n      \"_links\" : {\n        \"self\" :\
+              \ {\n          \"href\" : \"https://yourshop.api.urn/shop/features/app.paypal-express\"\
+              \n        },\n        \"owner\" : {\n          \"href\" : \"https://yourshop.api.urn/shop\"\
+              \n        },\n        \"feature-definition\" : {\n          \"href\"\
+              \ : \"https://yourshop.api.urn/feature-definitions/app.paypal-express\"\
               \n        }\n      }\n    } ]\n  },\n  \"_links\" : {\n    \"self\"\
               \ : {\n      \"href\" : \"https://yourshop.api.urn/shop/features?page=0&size=20\"\
               \n    },\n    \"owner\" : {\n      \"href\" : \"https://yourshop.api.urn/shop\"\
               \n    }\n  },\n  \"page\" : {\n    \"size\" : 20,\n    \"totalElements\"\
-              \ : 2,\n    \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}"
+              \ : 3,\n    \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}"
           schema:
             $ref: "#/definitions/webhook-subscriptions-1206450827"
       security:
@@ -10099,7 +10105,7 @@ paths:
     get:
       tags:
       - "shop"
-      summary: "/shop/images"
+      summary: "List Shop Images"
       description: ""
       operationId: "merchant-images-list"
       produces:
@@ -10109,10 +10115,10 @@ paths:
           description: ""
           examples:
             application/hal+json: "{\n  \"_embedded\" : {\n    \"images\" : [ {\n\
-              \      \"label\" : \"logo\",\n      \"_id\" : \"f6309c3d-2768-4389-8b7a-803a61c7083e\"\
+              \      \"label\" : \"logo\",\n      \"_id\" : \"ffa4f6d1-e7ee-42e0-ae78-5315825aa76f\"\
               ,\n      \"_links\" : {\n        \"self\" : {\n          \"href\" :\
-              \ \"https://yourshop.api.urn/shop/images/f6309c3d-2768-4389-8b7a-803a61c7083e\"\
-              \n        },\n        \"image\" : {\n          \"href\" : \"https://yourshop.api.urn/shop/images/f6309c3d-2768-4389-8b7a-803a61c7083e\"\
+              \ \"https://yourshop.api.urn/shop/images/ffa4f6d1-e7ee-42e0-ae78-5315825aa76f\"\
+              \n        },\n        \"image\" : {\n          \"href\" : \"https://yourshop.api.urn/shop/images/ffa4f6d1-e7ee-42e0-ae78-5315825aa76f\"\
               \n        },\n        \"data\" : {\n          \"href\" : \"https://yourshop.api.urn/api/core-storage/images/file.png?hash=212-2323-4343{&width,height,upscale}\"\
               ,\n          \"templated\" : true\n        },\n        \"metadata\"\
               \ : {\n          \"href\" : \"https://yourshop.api.urn/api/core-storage/images/file.png?hash=212-2323-4343&download=no\"\
@@ -10121,7 +10127,7 @@ paths:
               \n    }\n  },\n  \"page\" : {\n    \"size\" : 20,\n    \"totalElements\"\
               \ : 1,\n    \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}"
           schema:
-            $ref: "#/definitions/shop_images918748962"
+            $ref: "#/definitions/shop_images_search_find-by-label918748962"
     post:
       tags:
       - "shop"
@@ -10341,15 +10347,15 @@ paths:
         200:
           description: ""
           examples:
-            application/hal+json: "{\n  \"name\" : \"shop-admin.shop.max-products\"\
-              ,\n  \"details\" : {\n    \"maxValue\" : 100,\n    \"currentValue\"\
-              \ : 0\n  },\n  \"type\" : \"COUNTER\",\n  \"_links\" : {\n    \"self\"\
-              \ : {\n      \"href\" : \"https://yourshop.api.urn/shop/features/shop-admin.shop.max-products\"\
+            application/hal+json: "{\n  \"name\" : \"domain-management.custom-domains\"\
+              ,\n  \"details\" : {\n    \"maxValue\" : 10,\n    \"currentValue\" :\
+              \ 0\n  },\n  \"type\" : \"COUNTER\",\n  \"_links\" : {\n    \"self\"\
+              \ : {\n      \"href\" : \"https://yourshop.api.urn/shop/features/domain-management.custom-domains\"\
               \n    },\n    \"owner\" : {\n      \"href\" : \"https://yourshop.api.urn/shop\"\
-              \n    },\n    \"feature-definition\" : {\n      \"href\" : \"https://yourshop.api.urn/feature-definitions/shop-admin.shop.max-products\"\
+              \n    },\n    \"feature-definition\" : {\n      \"href\" : \"https://yourshop.api.urn/feature-definitions/domain-management.custom-domains\"\
               \n    }\n  }\n}"
           schema:
-            $ref: "#/definitions/shop_features_featureName-647036562"
+            $ref: "#/definitions/shop_features_featureName1747195181"
       security:
       - oauth2_accessCode:
         - "feat:r"
@@ -10359,7 +10365,7 @@ paths:
     get:
       tags:
       - "shop"
-      summary: "/shop/images/{imageId}"
+      summary: "Get Shop Image"
       description: ""
       operationId: "merchant-image-get"
       produces:
@@ -10374,9 +10380,9 @@ paths:
         200:
           description: ""
           examples:
-            application/hal+json: "{\n  \"label\" : \"logo\",\n  \"_id\" : \"2723db61-665b-4188-9cee-5ceefc584bf6\"\
-              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/images/2723db61-665b-4188-9cee-5ceefc584bf6\"\
-              \n    },\n    \"image\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/images/2723db61-665b-4188-9cee-5ceefc584bf6\"\
+            application/hal+json: "{\n  \"label\" : \"logo\",\n  \"_id\" : \"0c9d38e8-58d1-4018-acd4-0b7568a14a5c\"\
+              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/images/0c9d38e8-58d1-4018-acd4-0b7568a14a5c\"\
+              \n    },\n    \"image\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/images/0c9d38e8-58d1-4018-acd4-0b7568a14a5c\"\
               \n    },\n    \"data\" : {\n      \"href\" : \"https://yourshop.api.urn/api/core-storage/images/file.png?hash=212-2323-4343{&width,height,upscale}\"\
               ,\n      \"templated\" : true\n    },\n    \"metadata\" : {\n      \"\
               href\" : \"https://yourshop.api.urn/api/core-storage/images/file.png?hash=212-2323-4343&download=no\"\
@@ -10408,7 +10414,7 @@ paths:
     get:
       tags:
       - "shop"
-      summary: "/shop/images/search/find-by-label"
+      summary: "Find Image by Label"
       description: ""
       operationId: "merchant-images-search-find-by-label"
       produces:
@@ -10424,10 +10430,10 @@ paths:
           description: ""
           examples:
             application/hal+json: "{\n  \"_embedded\" : {\n    \"images\" : [ {\n\
-              \      \"label\" : \"logo\",\n      \"_id\" : \"10f68adb-c321-4673-b309-4663d1d0a99e\"\
+              \      \"label\" : \"logo\",\n      \"_id\" : \"cc094d58-a82b-47b0-b3bf-7574bee881a4\"\
               ,\n      \"_links\" : {\n        \"self\" : {\n          \"href\" :\
-              \ \"https://yourshop.api.urn/shop/images/10f68adb-c321-4673-b309-4663d1d0a99e\"\
-              \n        },\n        \"image\" : {\n          \"href\" : \"https://yourshop.api.urn/shop/images/10f68adb-c321-4673-b309-4663d1d0a99e\"\
+              \ \"https://yourshop.api.urn/shop/images/cc094d58-a82b-47b0-b3bf-7574bee881a4\"\
+              \n        },\n        \"image\" : {\n          \"href\" : \"https://yourshop.api.urn/shop/images/cc094d58-a82b-47b0-b3bf-7574bee881a4\"\
               \n        },\n        \"data\" : {\n          \"href\" : \"https://yourshop.api.urn/api/core-storage/images/file.png?hash=212-2323-4343{&width,height,upscale}\"\
               ,\n          \"templated\" : true\n        },\n        \"metadata\"\
               \ : {\n          \"href\" : \"https://yourshop.api.urn/api/core-storage/images/file.png?hash=212-2323-4343&download=no\"\
@@ -10436,7 +10442,7 @@ paths:
               \n    }\n  },\n  \"page\" : {\n    \"size\" : 20,\n    \"totalElements\"\
               \ : 1,\n    \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}"
           schema:
-            $ref: "#/definitions/shop_images918748962"
+            $ref: "#/definitions/shop_images_search_find-by-label918748962"
   /shop-id:
     get:
       tags:
@@ -10450,7 +10456,7 @@ paths:
         200:
           description: ""
           examples:
-            application/hal+json: "{\n  \"shopId\" : \"efc83a3d-0b9b-48c8-990a-dcf379203e34\"\
+            application/hal+json: "{\n  \"shopId\" : \"42d4bea3-24d0-4283-a451-de5c36f22306\"\
               \n}"
           schema:
             $ref: "#/definitions/shop-id927029385"
@@ -10459,28 +10465,38 @@ paths:
         - "paym:m"
       - oauth2_application:
         - "paym:m"
-  /shops/{shopId}:
-    delete:
+  /shops/{shopId}/features:
+    post:
       tags:
       - "shops"
-      summary: "/shops/{shopId}"
+      summary: "/shops/{shopId}/features"
       description: ""
-      operationId: "system-shop-mark-deleted"
+      operationId: "feature-assign-app"
+      consumes:
+      - "application/hal+json"
       parameters:
       - name: "shopId"
         in: "path"
         description: ""
         required: true
         type: "string"
+      - in: "body"
+        name: ""
+        required: false
+        schema:
+          $ref: "#/definitions/shops_shopId_features400534055"
+        x-examples:
+          application/hal+json: "{\n  \"name\" : \"app.paypal-express\",\n  \"details\"\
+            \ : {\n    \"preInstalled\" : true\n  },\n  \"type\" : \"APP\"\n}"
       responses:
-        204:
+        201:
           description: ""
           examples: {}
       security:
       - oauth2_accessCode:
-        - "shop:d"
+        - "feat:c"
       - oauth2_application:
-        - "shop:d"
+        - "feat:c"
   /shops/{id}/attributes/{name}:
     delete:
       tags:
@@ -11322,7 +11338,7 @@ securityDefinitions:
       shat:u: "No description"
       shat:d: "No description"
       shim:d: "No description"
-      shop:d: "No description"
+      feat:c: "No description"
       user:r: "No description"
       user:c: "No description"
       user:d: "No description"
@@ -11406,7 +11422,7 @@ securityDefinitions:
       shat:u: "No description"
       shat:d: "No description"
       shim:d: "No description"
-      shop:d: "No description"
+      feat:c: "No description"
       user:r: "No description"
       user:c: "No description"
       user:d: "No description"
@@ -11414,8 +11430,6 @@ securityDefinitions:
   basic:
     type: "basic"
 definitions:
-  products_productId_availability_adjust-available-stock1877444327:
-    example: "{ \"relativeAmount\" : -1 }"
   users_support-326842236:
     type: "object"
     properties:
@@ -11427,30 +11441,8 @@ definitions:
         type: "boolean"
         description: "Indicates if the support access is enabled. Can be `true` or\
           \ `false`."
-  shop_features_featureName-647036562:
-    type: "object"
-    required:
-    - "name"
-    - "type"
-    properties:
-      _links:
-        type: "object"
-        description: "See <<hypermedia,Hypermedia>>"
-        properties: {}
-      name:
-        type: "string"
-        description: "The name referring to the feature definition."
-        minLength: 1
-      details:
-        type: "object"
-        description: "Additional information specific to the given feature type."
-        properties: {}
-      type:
-        type: "string"
-        description: "The type of the feature. Can be `TOGGLE` or `COUNTER`."
-        minLength: 1
-  products_productId_default-image1630778166:
-    example: "http://localhost/products/images/59e621cd-ced7-41f9-8dfe-74608e320a35"
+  products_productId_availability_adjust-available-stock1877444327:
+    example: "{ \"relativeAmount\" : -1 }"
   shop_address-345128085:
     example: "{\n  \"city\" : \"Barcelona\"\n}"
   payments_paymentId_status-1115446140:
@@ -11470,6 +11462,28 @@ definitions:
           \ or cancelation of the payment."
   users_id_roles297897929:
     example: "https://yourshop.api.urn/roles/68565c88-514c-40ae-af5c-6f000703eeab"
+  shop_features_featureName1747195181:
+    type: "object"
+    required:
+    - "name"
+    - "type"
+    properties:
+      _links:
+        type: "object"
+        description: "See <<hypermedia,Hypermedia>>"
+        properties: {}
+      name:
+        type: "string"
+        description: "The name referring to the feature definition."
+        minLength: 1
+      details:
+        type: "object"
+        description: "Additional information specific to the given feature type."
+        properties: {}
+      type:
+        type: "string"
+        description: "The type of the feature. Can be `TOGGLE`, `COUNTER`, or `APP`."
+        minLength: 1
   signers1038188776:
     type: "object"
     required:
@@ -11551,16 +11565,6 @@ definitions:
         type: "string"
         description: "The site verification token required to verify that a shop really\
           \ belongs to that specific merchant."
-  products_productId1131470183:
-    type: "array"
-    items:
-      type: "object"
-      properties: {}
-    example: "{\"name\":\"patched name\",\"description\":\"patched description. <p><br></p><blockquote>\
-      \ <ol><li><strong>\\n<h1></h1><h6></h6><em><a href=\\\"http://example.com\\\"\
-      \ target=\\\"_blank\\\"><u>this is my test html</u></a>\\n</em></strong> </li></ol>\
-      \ </blockquote>\",\"productIdentifiers\":null,\"manufacturer\":\"patched manufacturer\"\
-      }"
   product-view_products_productId1752920684:
     type: "object"
     properties:
@@ -11657,6 +11661,16 @@ definitions:
         description: "The list price of the product, also known as the manufacturer's\
           \ suggested retail price or recommended retail price."
         properties: {}
+  products_productId1131470183:
+    type: "array"
+    items:
+      type: "object"
+      properties: {}
+    example: "{\"name\":\"patched name\",\"description\":\"patched description. <p><br></p><blockquote>\
+      \ <ol><li><strong>\\n<h1></h1><h6></h6><em><a href=\\\"http://example.com\\\"\
+      \ target=\\\"_blank\\\"><u>this is my test html</u></a>\\n</em></strong> </li></ol>\
+      \ </blockquote>\",\"productIdentifiers\":null,\"manufacturer\":\"patched manufacturer\"\
+      }"
   configuration_order-number-1814832181:
     type: "object"
     required:
@@ -12369,6 +12383,73 @@ definitions:
                     type: "boolean"
                     description: "Indicates if a payment method is active. Can be\
                       \ `true` or `false`."
+  shop-311848108:
+    type: "object"
+    required:
+    - "currencies"
+    - "defaultCurrency"
+    - "defaultLocale"
+    - "fallbackHostname"
+    - "locales"
+    - "name"
+    - "primaryHostname"
+    properties:
+      defaultLocale:
+        type: "string"
+        description: "The default locale of the shop (cannot be changed)."
+      closedShopMessage:
+        type: "string"
+        description: "A message that is shown when the shop is closed by its owner."
+        minLength: 0
+        maxLength: 65536
+      locales:
+        type: "array"
+        description: "List of locales that are supported by this shop. Defaults to\
+          \ `defaultLocale`. The `defaultLocale` is always included in this list."
+      closedByMerchant:
+        type: "boolean"
+        description: "Indicates if the shop is closed by its owner. Can be `true`\
+          \ or `false`."
+      defaultCurrency:
+        type: "string"
+        description: "The default currency of the shop."
+      primaryHostname:
+        type: "string"
+        description: "The primary hostname of the shop."
+        minLength: 1
+        maxLength: 255
+      name:
+        type: "string"
+        description: "The name of the shop."
+        minLength: 1
+        maxLength: 255
+      tax:
+        type: "object"
+        properties:
+          taxModel:
+            type: "string"
+            description: "The tax model used for all product prices in this shop."
+          vatExempted:
+            type: "boolean"
+            description: "Indicates if the merchant is exempted to declare VAT. Can\
+              \ be `true` or `false`."
+      fallbackHostname:
+        type: "string"
+        description: "The unchangeable, fallback hostname of the shop."
+        minLength: 1
+        maxLength: 255
+      currencies:
+        type: "array"
+        description: "List of currencies that are supported by this shop. Defaults\
+          \ to `defaultCurrency`. The `defaultCurrency` is always included in this\
+          \ list."
+    example: "{\n  \"name\" : \"anotherName\",\n  \"closedShopMessage\" : \"Sorry,\
+      \ this shop is closed.\",\n  \"primaryHostname\" : \"cornershop.amazingdiscounts.xyz\"\
+      ,\n  \"fallbackHostname\" : \"cornershop.beyondshop.cloud\",\n  \"tax\" : {\n\
+      \    \"taxModel\" : \"GROSS\",\n    \"vatExempted\" : false\n  },\n  \"currencies\"\
+      \ : [ \"EUR\", \"USD\", \"GBP\" ],\n  \"defaultCurrency\" : \"USD\",\n  \"locales\"\
+      \ : [ \"en-GB\", \"de-DE\" ],\n  \"defaultLocale\" : \"en-GB\",\n  \"closedByMerchant\"\
+      \ : false\n}"
   custom-apps_customAppId-1474085348:
     type: "object"
     required:
@@ -13590,7 +13671,7 @@ definitions:
       ����u���)�����\x7ff߀~&���'��\"�\x16���\0\x1e��S����:_\x0fX�k\x7f\x11u�2=\x17\
       U����\x11�w\x17�/�x�J��%��j�i�K#y�ie����j��t��\x12��|\x19�o�[|\x06�y�\rY�>\x12\
       ���\x1f��\\��m?�\"6:}�����,�pb��D5\x05�T\b5( ��\x03��"
-  google-shopping_products_id1430177660:
+  google-shopping_products_id_publish1430177660:
     type: "object"
     properties:
       visible:
@@ -14403,6 +14484,10 @@ definitions:
           \ `APPROVED`, `CAPTURED`, `FAILED`, or `CAPTURE_PENDING`, depending on the\
           \ former status of the payment."
     example: "{\"paymentStatus\":\"APPROVED\"}"
+  google-shopping_products711922993:
+    example: "https://yourshop.api.urn/products/2b495533-3a54-4c04-9a36-1f44e5276bcd\n\
+      https://yourshop.api.urn/products/f8909acc-b517-4bca-a07e-8e9524eab076\nhttps://yourshop.api.urn/products/46c41aa3-0182-4ad8-aba0-0916b1ba2f64\n\
+      https://yourshop.api.urn/products/efe792cf-51fe-46d1-8590-f4605f46a1d7\nhttps://yourshop.api.urn/products/e6eeb125-bb68-448e-aed7-8e583748bed1\n"
   amazon-marketplace_access-data1639420137:
     type: "object"
     required:
@@ -14438,6 +14523,8 @@ definitions:
         type: "string"
         description: "Optional field. The username that identifies the user. If no\
           \ username is passed, the email address is set as the username."
+  products_productId_default-image1776723590:
+    example: "http://localhost/products/images/2b4baadf-85c5-49c0-a79f-c58b273e4f06"
   webhook-subscriptions-1206450827:
     type: "object"
     properties:
@@ -14476,30 +14563,6 @@ definitions:
         properties: {}
   shop_legal-1543943523:
     example: "{\n  \"vatId\" : \"GB 111111111\"\n}"
-  products_productId_availability919963839:
-    type: "object"
-    properties:
-      purchasable:
-        type: "boolean"
-        description: "Indicates if a product can be purchased. Can be `true` or `false`."
-      availabilityState:
-        type: "string"
-        description: "The current availability state of the product. If the related\
-          \ product is not in a purchasable availability state, it will be `NOT_AVAILABLE`.\
-          \ If the stock level is equal or lower than this value, the availability\
-          \ state is `LOW_STOCK`. Can be `IN_STOCK`, `LOW_STOCK`, `NOT_AVAILABLE`,\
-          \ or `OUT_OF_STOCK`."
-      _links:
-        type: "object"
-        description: "See <<hypermedia,Hypermedia>>"
-        properties: {}
-      availableStock:
-        type: "number"
-        description: "The number of products available in stock."
-      stockThreshold:
-        type: "number"
-        description: "Inventory level that indicates that the product needs to be\
-          \ reordered."
   carts_cartId_billing-address-1946356074:
     type: "object"
     required:
@@ -14614,6 +14677,30 @@ definitions:
       ,\"country\":\"DE\",\"state\":\"Hamburg\",\"email\":\"a.alsterh@example.com\"\
       ,\"phone\":\"(800) 555-0102\",\"mobile\":\"(800) 555-0103\",\"vatId\":\"123456789\"\
       ,\"taxNumber\":\"123-34-6789\",\"birthDate\":\"1985-03-20\"}"
+  products_productId_availability919963839:
+    type: "object"
+    properties:
+      purchasable:
+        type: "boolean"
+        description: "Indicates if a product can be purchased. Can be `true` or `false`."
+      availabilityState:
+        type: "string"
+        description: "The current availability state of the product. If the related\
+          \ product is not in a purchasable availability state, it will be `NOT_AVAILABLE`.\
+          \ If the stock level is equal or lower than this value, the availability\
+          \ state is `LOW_STOCK`. Can be `IN_STOCK`, `LOW_STOCK`, `NOT_AVAILABLE`,\
+          \ or `OUT_OF_STOCK`."
+      _links:
+        type: "object"
+        description: "See <<hypermedia,Hypermedia>>"
+        properties: {}
+      availableStock:
+        type: "number"
+        description: "The number of products available in stock."
+      stockThreshold:
+        type: "number"
+        description: "Inventory level that indicates that the product needs to be\
+          \ reordered."
   carts_cartId_create-payment1985146425:
     type: "object"
     properties:
@@ -14690,7 +14777,7 @@ definitions:
       taxModel\" : \"GROSS\",\n    \"currency\" : \"EUR\",\n    \"amount\" : 20\n\
       \  },\n  \"freeShippingValue\" : {\n    \"taxModel\" : \"GROSS\",\n    \"currency\"\
       \ : \"EUR\",\n    \"amount\" : 200\n  }\n}"
-  custom-apps_customAppId_regenerate-secret-525208887:
+  custom-apps-525208887:
     type: "object"
     required:
     - "name"
@@ -14751,6 +14838,27 @@ definitions:
       page:
         type: "object"
         description: "See <<pagination,Pagination>>"
+        properties: {}
+  amazon-marketplace_products_id-1446382770:
+    type: "object"
+    required:
+    - "status"
+    properties:
+      _links:
+        type: "object"
+        description: "See <<hypermedia,Hypermedia>>"
+        properties: {}
+      _id:
+        type: "string"
+        description: "The immutable, unique system internal identifier of the requested\
+          \ resource."
+      parentId:
+        type: "string"
+        description: "The system internal unique identifier of the related original\
+          \ product."
+      status:
+        type: "object"
+        description: "The status of the product publication process."
         properties: {}
   products-2095283301:
     type: "object"
@@ -14905,33 +15013,6 @@ definitions:
       :1500,\"width\":1000,\"height\":2000},\"refPrice\":{\"refQuantity\":1,\"unit\"\
       :\"LITER\",\"quantity\":0.75,\"price\":null},\"shippingPeriod\":{\"minDays\"\
       :2,\"maxDays\":4,\"displayUnit\":\"WEEKS\"}}"
-  amazon-marketplace_products_id-1446382770:
-    type: "object"
-    required:
-    - "status"
-    properties:
-      _links:
-        type: "object"
-        description: "See <<hypermedia,Hypermedia>>"
-        properties: {}
-      _id:
-        type: "string"
-        description: "The immutable, unique system internal identifier of the requested\
-          \ resource."
-      parentId:
-        type: "string"
-        description: "The system internal unique identifier of the related original\
-          \ product."
-      status:
-        type: "object"
-        description: "The status of the product publication process."
-        properties: {}
-  google-shopping_products_publish714309657:
-    example: "https://yourshop.api.urn/google-shopping/products/e108c932-db7f-4339-9444-182d34d95088\n\
-      https://yourshop.api.urn/google-shopping/products/6162bbe7-8547-4a56-a277-fdb2272ced76\n\
-      https://yourshop.api.urn/google-shopping/products/8c4139e4-738e-4eee-8718-9e1b09d025e7\n\
-      https://yourshop.api.urn/google-shopping/products/566363db-8143-4e2a-b5be-83943a0269d9\n\
-      https://yourshop.api.urn/google-shopping/products/21a86531-e6c0-45b7-bfc4-a3abfbfff07e\n"
   shop_attributes_name-945554648:
     type: "object"
     required:
@@ -15315,26 +15396,6 @@ definitions:
       eventTypes:
         type: "array"
         description: "The event type names the webhook listens to."
-  shop_images_imageId-12542474:
-    type: "object"
-    required:
-    - "label"
-    properties:
-      _links:
-        type: "object"
-        description: "See <<hypermedia,Hypermedia>>"
-        properties: {}
-      label:
-        type: "string"
-        description: "The label of the image that is used to state the purpose of\
-          \ the image. The labels 'logo' and 'fav-icon' can only be assigned once,\
-          \ and have a special meaning. The image with label 'logo' is used as the\
-          \ shop logo. The image with label 'fav-icon' is used as the fav icon of\
-          \ the shop."
-        minLength: 1
-      _id:
-        type: "string"
-        description: "The unique identifier of the image (cannot be changed)."
   orders_order-id_processes_refunds_active_mark-paid833139486:
     type: "object"
     properties:
@@ -15355,6 +15416,26 @@ definitions:
         description: "The comment to this status change."
     example: "{\n  \"comment\" : \"comment\",\n  \"details\" : {\n    \"amount\" :\
       \ {\n      \"currency\" : \"EUR\",\n      \"amount\" : 19.98\n    }\n  }\n}"
+  shop_images_imageId-12542474:
+    type: "object"
+    required:
+    - "label"
+    properties:
+      _links:
+        type: "object"
+        description: "See <<hypermedia,Hypermedia>>"
+        properties: {}
+      label:
+        type: "string"
+        description: "The label of the image that is used to state the purpose of\
+          \ the image. The labels 'logo' and 'fav-icon' can only be assigned once,\
+          \ and have a special meaning. The image with label 'logo' is used as the\
+          \ shop logo. The image with label 'fav-icon' is used as the fav icon of\
+          \ the shop."
+        minLength: 1
+      _id:
+        type: "string"
+        description: "The unique identifier of the image (cannot be changed)."
   products_productId_attachments_attachmentId-897355724:
     type: "object"
     properties:
@@ -15502,6 +15583,12 @@ definitions:
       \ \"DifferentChannel\",\n  \"marketingChannel\": \"Google\",\n  \"marketingSubchannel\"\
       : \"Search page 2\",\n  \"testOrder\": false,\n  \"termsAndConditionsExplicitlyAccepted\"\
       : true\n}"
+  google-shopping_products_publish-1044276609:
+    example: "https://yourshop.api.urn/google-shopping/products/3ccb216d-19d0-4a79-9911-50da4ef13ded\n\
+      https://yourshop.api.urn/google-shopping/products/fde950dc-0734-4dd8-8cdf-c86b9300427e\n\
+      https://yourshop.api.urn/google-shopping/products/543f430d-b847-4e06-8da3-04f45a928677\n\
+      https://yourshop.api.urn/google-shopping/products/ea69eefd-85d3-4594-9229-3d628818ec3b\n\
+      https://yourshop.api.urn/google-shopping/products/5d432308-33f8-4b67-8027-24d491f1777b\n"
   carts_cartId_create-payment2079035476:
     type: "object"
     properties:
@@ -16101,16 +16188,16 @@ definitions:
       addressExtension\":\"Hinterhof\",\"postalCode\":\"20999\",\"city\":\"Alsterwasser\"\
       ,\"country\":\"DE\",\"state\":\"Hamburg\",\"email\":\"a.alsterh@example.com\"\
       ,\"phone\":\"(800) 555-0102\",\"mobile\":\"(800) 555-0103\"}"
-  shop_images918748962:
+  shop_images_search_find-by-label918748962:
     type: "object"
     properties:
-      _links:
-        type: "object"
-        description: "See <<hypermedia,Hypermedia>>"
-        properties: {}
       _embedded:
         type: "object"
         description: "List of <<resources-image-get,images>>"
+        properties: {}
+      _links:
+        type: "object"
+        description: "See <<hypermedia,Hypermedia>>"
         properties: {}
       page:
         type: "object"
@@ -16467,6 +16554,29 @@ definitions:
         description: "The scopes the app requires to interact with the shop system."
     example: "{\n  \"name\" : \"Mobile Product Management\",\n  \"callbackUrl\" :\
       \ \"https://hostname/callback\",\n  \"scopes\" : [\"prod:crud\"]\n}"
+  shops_shopId_features400534055:
+    type: "object"
+    required:
+    - "name"
+    - "type"
+    properties:
+      name:
+        type: "string"
+        description: "The name referring to the feature definition."
+        minLength: 1
+      details:
+        type: "object"
+        description: "Additional information specific to the given feature type."
+        properties:
+          preInstalled:
+            type: "boolean"
+            description: "Controls pre-installation of app on shop provisioning."
+      type:
+        type: "string"
+        description: "The type of the feature. Can be `TOGGLE`, `COUNTER`, or `APP`."
+        minLength: 1
+    example: "{\n  \"name\" : \"app.paypal-express\",\n  \"details\" : {\n    \"preInstalled\"\
+      \ : true\n  },\n  \"type\" : \"APP\"\n}"
   payment-methods_paymentMethodId-482487356:
     type: "object"
     required:
@@ -16515,73 +16625,6 @@ definitions:
       \    \"currency\" : \"EUR\",\n      \"amount\" : 2.0\n    }\n  },\n  \"serviceableCountries\"\
       \ : [ \"DE\" ],\n  \"minimumOrderValue\" : {\n    \"currency\" : \"EUR\",\n\
       \    \"amount\" : 10.0\n  }\n}"
-  shop-1182683528:
-    type: "object"
-    required:
-    - "currencies"
-    - "defaultCurrency"
-    - "defaultLocale"
-    - "fallbackHostname"
-    - "locales"
-    - "name"
-    - "primaryHostname"
-    properties:
-      defaultLocale:
-        type: "string"
-        description: "The default locale of the shop (cannot be changed)."
-      closedShopMessage:
-        type: "string"
-        description: "A message that is shown when the shop is closed by its owner."
-        minLength: 0
-        maxLength: 65536
-      locales:
-        type: "array"
-        description: "List of locales that are supported by this shop. Defaults to\
-          \ `defaultLocale`. The `defaultLocale` is always included in this list."
-      closedByMerchant:
-        type: "boolean"
-        description: "Indicates if the shop is closed by its owner. Can be `true`\
-          \ or `false`."
-      defaultCurrency:
-        type: "string"
-        description: "The default currency of the shop."
-      primaryHostname:
-        type: "string"
-        description: "The primary hostname of the shop."
-        minLength: 1
-        maxLength: 255
-      name:
-        type: "string"
-        description: "The name of the shop."
-        minLength: 1
-        maxLength: 255
-      tax:
-        type: "object"
-        properties:
-          taxModel:
-            type: "string"
-            description: "The tax model used for all product prices in this shop."
-          vatExempted:
-            type: "boolean"
-            description: "Indicates if the merchant is exempted to declare VAT. Can\
-              \ be `true` or `false`."
-      fallbackHostname:
-        type: "string"
-        description: "The unchangeable, fallback hostname of the shop."
-        minLength: 1
-        maxLength: 255
-      currencies:
-        type: "array"
-        description: "List of currencies that are supported by this shop. Defaults\
-          \ to `defaultCurrency`. The `defaultCurrency` is always included in this\
-          \ list."
-    example: "{\n  \"name\" : \"anotherName\",\n  \"closedShopMessage\" : \"Sorry,\
-      \ this shop is closed.\",\n  \"primaryHostname\" : \"cornershop.amazingdiscounts.xyz\"\
-      ,\n  \"fallbackHostname\" : \"cornershop.beyondshop.cloud\",\n  \"tax\" : {\n\
-      \    \"taxModel\" : \"GROSS\",\n    \"vatExempted\" : false\n  },\n  \"currencies\"\
-      \ : [ \"EUR\", \"USD\", \"GBP\" ],\n  \"defaultCurrency\" : \"USD\",\n  \"locales\"\
-      \ : [ \"de-DE\", \"en-GB\" ],\n  \"defaultLocale\" : \"en-GB\",\n  \"closedByMerchant\"\
-      \ : false\n}"
   carts_cartId_line-items12828218:
     type: "object"
     properties:
@@ -16652,10 +16695,6 @@ definitions:
         type: "string"
         description: "The status of the refund process. Can be `PENDING`, `PAID`,\
           \ or `VOIDED`."
-  google-shopping_products1101177183:
-    example: "https://yourshop.api.urn/products/186f907e-9500-401b-a6e1-46c05a16e17a\n\
-      https://yourshop.api.urn/products/8b1ed19a-93fe-4695-bafa-65b627def65b\nhttps://yourshop.api.urn/products/ae07b56d-dc19-4e20-ae6b-fa51c590faf7\n\
-      https://yourshop.api.urn/products/98afd174-35eb-49d4-b8b4-5960ead61ed3\nhttps://yourshop.api.urn/products/eb41b14b-c8c5-4925-952e-53f3489068af\n"
   users_id_change-username675018182:
     type: "object"
     required:
