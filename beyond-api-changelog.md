@@ -1,5 +1,18 @@
 # Beyond API Changelog
 
+## 2018-10-26
+
+### What's New
+---
+* `POST` /shops/{shopId}/features /shops/{shopId}/features
+
+### What's Deprecated
+---
+* `DELETE` /shops/{shopId} /shops/{shopId}
+
+### What's Changed
+---
+
 ## 2018-10-25
 
 ### What's New
