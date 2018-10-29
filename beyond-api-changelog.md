@@ -1,5 +1,20 @@
 # Beyond API Changelog
 
+## 2018-10-29
+
+### What's New
+---
+* `GET` /payment-method-definitions List Payment Method Definitions
+* `POST` /payment-method-definitions Create Payment Method Definition
+* `GET` /payment-method-definitions/{paymentMethodDefinitionName} Get Payment Method Definition
+* `PUT` /payment-method-definitions/{paymentMethodDefinitionName} Update Payment Method Definition
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+
 ## 2018-10-26
 
 ### What's New
