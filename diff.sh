@@ -4,7 +4,7 @@
 usage () {
      cat << EOF
 DESCRIPTION:
-Generates a diff of the OpenAPI file from the given git commits.
+Generates a diff description for the given OpenAPI spec files.
 
 SYNOPSIS:
 $0 [-o output_format] file_old file_new
