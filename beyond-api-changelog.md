@@ -1,5 +1,28 @@
 # Beyond API Changelog
 
+## 2018-11-07
+
+### What's New
+---
+* `DELETE` /payment-method-definitions/{paymentMethodDefinitionName} Delete Payment Method Definition
+
+### What's Deprecated
+---
+* `GET` /app-types Get available app types
+* `GET` /apps List apps with language
+* `GET` /apps/{appId} Get app with language
+* `POST` /apps/{appId}/uninstall Uninstall app
+* `GET` /custom-apps List custom apps
+* `POST` /custom-apps Create custom app
+* `GET` /custom-apps/{customAppId} Get custom app
+* `PUT` /custom-apps/{customAppId} Update custom apps
+* `DELETE` /custom-apps/{customAppId} Delete custom app
+* `POST` /custom-apps/{customAppId}/regenerate-secret Regenerate client secret of a custom app
+* `POST` /custom-apps/{customAppId}/upgrade Upgrade custom app to app
+
+### What's Changed
+---
+
 ## 2018-11-01
 
 ### What's New
