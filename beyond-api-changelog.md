@@ -1,5 +1,34 @@
 # Beyond API Changelog
 
+## 2018-11-08
+
+### What's New
+---
+
+### What's Deprecated
+---
+* `GET` /google-shopping/access-data Get Access Data
+* `PUT` /google-shopping/access-data Update Access Data
+* `POST` /google-shopping/access-data Create Access Data
+* `DELETE` /google-shopping/access-data Delete Access Data
+* `GET` /google-shopping/products List Google Shopping Products
+* `POST` /google-shopping/products Create Google Shopping Product
+* `GET` /google-shopping/site-verification Retrieve Site Verification Token
+* `GET` /google-shopping/taxonomy List Taxonomy
+* `POST` /google-shopping/products/publish Publish List of Google Shopping Products
+* `GET` /google-shopping/products/{id} Get Google Shopping Product
+* `PUT` /google-shopping/products/{id} Update Google Shopping Product
+* `DELETE` /google-shopping/products/{id} Delete Google Shopping Product
+* `POST` /google-shopping/products/{id}/publish Publish Google Shopping Product
+* `POST` /google-shopping/products/{id}/unpublish Unpublish Google Shopping Product
+
+### What's Changed
+---
+* `GET` /orders/{order-id} Get Order  
+    Return Type
+
+        Add paymentNote //A prompt to pay the order which will be rendered in the invoice order document. Should contain a payment reference and the merchant's bank account details.
+
 ## 2018-11-07
 
 ### What's New
