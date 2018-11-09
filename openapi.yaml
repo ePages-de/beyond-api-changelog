@@ -1633,7 +1633,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/orders_order-id_processes-309252030'
+            $ref: '#/definitions/users_id_roles-309252030'
   /carts/{cartId}/line-items/{lineItemId}:
     put:
       tags:
@@ -3799,16 +3799,16 @@ paths:
           examples:
             application/json: |-
               {
-                "access_token" : "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjEifQ.eyJ1c2VyX25hbWUiOiJ1c2VyIiwic2NvcGUiOlsicHJvZDpyYyJdLCJ0ZW5hbnRJZCI6MTQzOCwiZXhwIjoxNTQxODU3NTE5LCJpYXQiOjE1NDE1OTgzMTksInVzZXJJZCI6IjkzYWZlZDdiLWY0NzktNGE3Yi1hMzFhLTQxOWZlYjYwZmU1OCIsImp0aSI6IjI3Yjk1MWM1LTdjYWMtNGVkYS04ZjQwLTNhMjczN2Y5MjA1ZiIsImNsaWVudF9pZCI6InNhbXBsZS1jbGllbnQiLCJ1c2VybmFtZSI6InVzZXIifQ.jCvRDH5sJDgqllR3TwyLucFo4y9iNaA-9MIrmzn6_Fqi0mKzQwWlyFecbBbekP4KGT_KViMyfPjQmFHjjKpstBmx1VhHQNGq0XOufRS5iGiszwmX1TFgbzLTQqDgHiWajyrZbybW3yAiOp7kHPSxmXc4VZ8qrdrWPc1lWu5Q9SwqjswqQyn3XO6Cs29cNRqMt1ZX2y5TItY0mXlIsNetAaKYPb6uKUiIw1ZaNSvrKDppIniuqxU77EOlQhUy5zAmes93TblvpSYcCrrc4aDsiXqX96NphUUaYf6rvND6wB_ERv94Ak4yrIjaLu-8JKCgxjpBeK4XLPExAsE7z4NesQ",
+                "access_token" : "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjEifQ.eyJ1c2VyX25hbWUiOiJ1c2VyIiwic2NvcGUiOlsicHJvZDpyYyJdLCJ0ZW5hbnRJZCI6MTQzOCwiZXhwIjoxNTQyMDI1MjIzLCJpYXQiOjE1NDE3NjYwMjMsInVzZXJJZCI6ImZhMTdlMDRmLTkwNjMtNGI5Ni05ZDhlLWI0YjlhMDkyZWJkZSIsImp0aSI6ImZkOWY3NDIwLWY5YjYtNDUzZS1iNmRjLTQwNWExZTNjMjNmMyIsImNsaWVudF9pZCI6InNhbXBsZS1jbGllbnQiLCJ1c2VybmFtZSI6InVzZXIifQ.kds6o0laA5Me-ft256Mc-oAllm7ww8ZN5ybn4Z2SVhsxnp2123-tPNSZ6k5f3JIlPjouXXA8E8c3v6cLk3S8aImX9WXtOn3om9lulNi-U6kqkY6yIlC9xV1AJlU359yn7l6kAKxVvFSDnjYcLfWanSABKTvuz99J5o-JLS6BRgEBmYEoSo1KHA8eAbSgCYzm970h6myeSex9I1cuvDgrnV9hGYlIFRA24Sa1LdwVL1TMy37uW9Sy5iPADr3da9ofWcOqKzyO-UtLML9P7GRMoAu_4GyzehiI2eAdBUNQmWGYCIrTyDpracPCr6iK6B2Wja7Al1tB_s1R2eiIc94Dxw",
                 "token_type" : "bearer",
-                "refresh_token" : "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjEifQ.eyJ1c2VyX25hbWUiOiJ1c2VyIiwic2NvcGUiOlsicHJvZDpyYyJdLCJhdGkiOiIyN2I5NTFjNS03Y2FjLTRlZGEtOGY0MC0zYTI3MzdmOTIwNWYiLCJ0ZW5hbnRJZCI6MTQzOCwiZXhwIjoxNTQ0MTkwMzE5LCJpYXQiOjE1NDE1OTgzMTksInVzZXJJZCI6IjkzYWZlZDdiLWY0NzktNGE3Yi1hMzFhLTQxOWZlYjYwZmU1OCIsImp0aSI6ImRjN2Y1MDg0LWVjODctNGFlOS1iN2FkLWZmNDlkN2Q5MTRjZCIsImNsaWVudF9pZCI6InNhbXBsZS1jbGllbnQiLCJ1c2VybmFtZSI6InVzZXIifQ.etDlqLBAYwMOPB5bQRyS4YjasFDYxLqG8h7ehDMiXKXsvTwsTLHzfWS2-eBwVmnXrRKaobH_6SO1MUE6ZaEL05NHufwBT3oT5TyRONgKr5SNhTqV9uaHKX5Ta5Mzi2Cotp9dpzlTj6t_NsIVyN1mtlXoaAUdLj4o6zuQ-DpaNbEzLi4KCcMnwtefVFa50A4JTL9kdltZMoNxcH6ZggboCpbaY3R18OVF6BPnpJkLPvQ1yld1mAtLcEpsrzEVIHlr4Zo2Nu9TxVaWAe0JflcYW8S4hHgEYE3e30IpMu3QB-VcIB2JwEMRbDZ94P50rvQbrsRoBys0bNNRBBhWtvIU2w",
+                "refresh_token" : "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjEifQ.eyJ1c2VyX25hbWUiOiJ1c2VyIiwic2NvcGUiOlsicHJvZDpyYyJdLCJhdGkiOiJmZDlmNzQyMC1mOWI2LTQ1M2UtYjZkYy00MDVhMWUzYzIzZjMiLCJ0ZW5hbnRJZCI6MTQzOCwiZXhwIjoxNTQ0MzU4MDIzLCJpYXQiOjE1NDE3NjYwMjMsInVzZXJJZCI6ImZhMTdlMDRmLTkwNjMtNGI5Ni05ZDhlLWI0YjlhMDkyZWJkZSIsImp0aSI6ImEwNThkZWJkLTc1ZTQtNDY5OC1hYjQ0LWY3NjczZjhlYWMyOCIsImNsaWVudF9pZCI6InNhbXBsZS1jbGllbnQiLCJ1c2VybmFtZSI6InVzZXIifQ.I8MgOa7wmFv5ofTMEeMDEBX8zQRVZRc9v0Jt3RR3Va-LPoZZVrmxBeXp-EpNwRW7ozvYSOsCl4oQXOcnHEgCH3FijD_-UtNHaJE4DOw1X-Z1q29pxsibp-_7H08ytjqNTG5sS_NMSziDtUnJMIzLvkEeCJlLRiWN1GitX5kcAPq03dRUhzhKm6iJlfiW-k3aAsJQ8IrUU3QMJPQVGrAt279J2kd0UTaDlXVqE9cU4EvwzcuWHEOQmHG6wwZnJ4b-ccC40pwV8z0LA-1xttKUKwNw9rqpcq6HgfNZUe8OHSqS0SwRCQYV0eOG-RiuWE-f4l3FJj-dLC2g0tdnE70eFw",
                 "expires_in" : 259199,
                 "scope" : "prod:rc",
                 "tenantId" : 1438,
-                "iat" : 1541598319,
-                "userId" : "93afed7b-f479-4a7b-a31a-419feb60fe58",
+                "iat" : 1541766023,
+                "userId" : "fa17e04f-9063-4b96-9d8e-b4b9a092ebde",
                 "username" : "user",
-                "jti" : "27b951c5-7cac-4eda-8f40-3a2737f9205f"
+                "jti" : "fd9f7420-f9b6-453e-b6dc-405a1e3c23f3"
               }
           schema:
             $ref: '#/definitions/oauth_token1255780863'
@@ -6819,7 +6819,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/orders_order-id_processes-309252030'
+            $ref: '#/definitions/users_id_roles-309252030'
       security:
       - oauth2_accessCode:
         - ordp:r
@@ -9886,7 +9886,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/orders_order-id_processes-309252030'
+            $ref: '#/definitions/users_id_roles-309252030'
   /product-view/products/search/find-by-category:
     get:
       tags:
@@ -13453,21 +13453,10 @@ paths:
                     "name" : "prod:c",
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/scopes/93198592-5091-4762-94f8-71ead0e877c6"
+                        "href" : "https://yourshop.api.urn/scopes/b69fec2c-5c69-4d25-bd37-7f5b9a60477a"
                       },
                       "scope" : {
-                        "href" : "https://yourshop.api.urn/scopes/93198592-5091-4762-94f8-71ead0e877c6{?projection}",
-                        "templated" : true
-                      }
-                    }
-                  }, {
-                    "name" : "ordr:u",
-                    "_links" : {
-                      "self" : {
-                        "href" : "https://yourshop.api.urn/scopes/bea21f2a-492a-4c39-a6cc-1049714b6a1d"
-                      },
-                      "scope" : {
-                        "href" : "https://yourshop.api.urn/scopes/bea21f2a-492a-4c39-a6cc-1049714b6a1d{?projection}",
+                        "href" : "https://yourshop.api.urn/scopes/b69fec2c-5c69-4d25-bd37-7f5b9a60477a{?projection}",
                         "templated" : true
                       }
                     }
@@ -13475,10 +13464,21 @@ paths:
                     "name" : "ordr:r",
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/scopes/fc9c82b9-46bc-4f95-8953-01ff5a1a7eb6"
+                        "href" : "https://yourshop.api.urn/scopes/d3b75cd0-49e4-42d5-a29d-36f73a19d379"
                       },
                       "scope" : {
-                        "href" : "https://yourshop.api.urn/scopes/fc9c82b9-46bc-4f95-8953-01ff5a1a7eb6{?projection}",
+                        "href" : "https://yourshop.api.urn/scopes/d3b75cd0-49e4-42d5-a29d-36f73a19d379{?projection}",
+                        "templated" : true
+                      }
+                    }
+                  }, {
+                    "name" : "ordr:u",
+                    "_links" : {
+                      "self" : {
+                        "href" : "https://yourshop.api.urn/scopes/e7f7a230-0078-4031-b786-3d44489b78c1"
+                      },
+                      "scope" : {
+                        "href" : "https://yourshop.api.urn/scopes/e7f7a230-0078-4031-b786-3d44489b78c1{?projection}",
                         "templated" : true
                       }
                     }
@@ -15293,19 +15293,19 @@ paths:
               {
                 "_embedded" : {
                   "signers" : [ {
-                    "_id" : "682245ba-d187-4e94-b670-e2d27e449c82",
-                    "createdAt" : "2018-11-07T13:44:46.383",
+                    "_id" : "6e379e79-2de2-404e-97e9-bbb4619e3497",
+                    "createdAt" : "2018-11-09T12:19:49.535",
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/signers/682245ba-d187-4e94-b670-e2d27e449c82"
+                        "href" : "https://yourshop.api.urn/signers/6e379e79-2de2-404e-97e9-bbb4619e3497"
                       }
                     }
                   }, {
-                    "_id" : "b5ddda2c-b237-4b46-82bf-bf21014e0a7c",
-                    "createdAt" : "2018-11-07T13:44:46.337",
+                    "_id" : "d3bf812c-988c-45de-9311-65b924e0c016",
+                    "createdAt" : "2018-11-09T12:19:49.582",
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/signers/b5ddda2c-b237-4b46-82bf-bf21014e0a7c"
+                        "href" : "https://yourshop.api.urn/signers/d3bf812c-988c-45de-9311-65b924e0c016"
                       }
                     }
                   } ]
@@ -15327,11 +15327,11 @@ paths:
           examples:
             application/hal+json: |-
               {
-                "_id" : "51859d97-8ea1-4330-877b-59c1baad52f4",
-                "sharedSecret" : "ourhq6t9kf3jnngcun7r6scm68",
+                "_id" : "1afd8a71-8c4f-465b-b325-3575f8bf1dba",
+                "sharedSecret" : "g60fk9n1j88vpcd9r83aljer9h",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/signers/51859d97-8ea1-4330-877b-59c1baad52f4"
+                    "href" : "https://yourshop.api.urn/signers/1afd8a71-8c4f-465b-b325-3575f8bf1dba"
                   }
                 }
               }
@@ -15374,22 +15374,22 @@ paths:
                     "username" : "username",
                     "email" : "baxter@example.org",
                     "enabled" : true,
-                    "_id" : "302286bb-d712-4c05-9231-8c284c732918",
+                    "_id" : "a895233e-68c2-4d7b-a78a-d21acf3e0562",
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/users/302286bb-d712-4c05-9231-8c284c732918"
+                        "href" : "https://yourshop.api.urn/users/a895233e-68c2-4d7b-a78a-d21acf3e0562"
                       },
                       "user" : {
-                        "href" : "https://yourshop.api.urn/users/302286bb-d712-4c05-9231-8c284c732918"
+                        "href" : "https://yourshop.api.urn/users/a895233e-68c2-4d7b-a78a-d21acf3e0562"
                       },
                       "change-password" : {
-                        "href" : "https://yourshop.api.urn/users/302286bb-d712-4c05-9231-8c284c732918/change-password"
+                        "href" : "https://yourshop.api.urn/users/a895233e-68c2-4d7b-a78a-d21acf3e0562/change-password"
                       },
                       "change-email-request" : {
-                        "href" : "https://yourshop.api.urn/users/302286bb-d712-4c05-9231-8c284c732918/change-email-request"
+                        "href" : "https://yourshop.api.urn/users/a895233e-68c2-4d7b-a78a-d21acf3e0562/change-email-request"
                       },
                       "roles" : {
-                        "href" : "https://yourshop.api.urn/users/302286bb-d712-4c05-9231-8c284c732918/roles"
+                        "href" : "https://yourshop.api.urn/users/a895233e-68c2-4d7b-a78a-d21acf3e0562/roles"
                       }
                     }
                   } ]
@@ -15443,27 +15443,27 @@ paths:
                 "username" : "user",
                 "email" : "baxter@example.org",
                 "enabled" : true,
-                "_id" : "98289089-1422-4db4-a462-ec68158d1de2",
+                "_id" : "edf57382-5f30-470d-a32c-5beb7d40a727",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/users/98289089-1422-4db4-a462-ec68158d1de2"
+                    "href" : "https://yourshop.api.urn/users/edf57382-5f30-470d-a32c-5beb7d40a727"
                   },
                   "user" : {
-                    "href" : "https://yourshop.api.urn/users/98289089-1422-4db4-a462-ec68158d1de2"
+                    "href" : "https://yourshop.api.urn/users/edf57382-5f30-470d-a32c-5beb7d40a727"
                   },
                   "change-password" : {
-                    "href" : "https://yourshop.api.urn/users/98289089-1422-4db4-a462-ec68158d1de2/change-password"
+                    "href" : "https://yourshop.api.urn/users/edf57382-5f30-470d-a32c-5beb7d40a727/change-password"
                   },
                   "change-email-request" : {
-                    "href" : "https://yourshop.api.urn/users/98289089-1422-4db4-a462-ec68158d1de2/change-email-request"
+                    "href" : "https://yourshop.api.urn/users/edf57382-5f30-470d-a32c-5beb7d40a727/change-email-request"
                   },
                   "roles" : {
-                    "href" : "https://yourshop.api.urn/users/98289089-1422-4db4-a462-ec68158d1de2/roles"
+                    "href" : "https://yourshop.api.urn/users/edf57382-5f30-470d-a32c-5beb7d40a727/roles"
                   }
                 }
               }
           schema:
-            $ref: '#/definitions/users_id_change-password-999644662'
+            $ref: '#/definitions/users_id_change-username-999644662'
       security:
       - oauth2_accessCode:
         - user:c
@@ -15637,27 +15637,27 @@ paths:
                 "username" : "username",
                 "email" : "baxter@example.org",
                 "enabled" : true,
-                "_id" : "dc654487-30cd-47c1-9708-7558edb04d25",
+                "_id" : "3906af76-9452-494e-b83a-8f21d616060f",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/users/dc654487-30cd-47c1-9708-7558edb04d25"
+                    "href" : "https://yourshop.api.urn/users/3906af76-9452-494e-b83a-8f21d616060f"
                   },
                   "user" : {
-                    "href" : "https://yourshop.api.urn/users/dc654487-30cd-47c1-9708-7558edb04d25"
+                    "href" : "https://yourshop.api.urn/users/3906af76-9452-494e-b83a-8f21d616060f"
                   },
                   "change-password" : {
-                    "href" : "https://yourshop.api.urn/users/dc654487-30cd-47c1-9708-7558edb04d25/change-password"
+                    "href" : "https://yourshop.api.urn/users/3906af76-9452-494e-b83a-8f21d616060f/change-password"
                   },
                   "change-email-request" : {
-                    "href" : "https://yourshop.api.urn/users/dc654487-30cd-47c1-9708-7558edb04d25/change-email-request"
+                    "href" : "https://yourshop.api.urn/users/3906af76-9452-494e-b83a-8f21d616060f/change-email-request"
                   },
                   "roles" : {
-                    "href" : "https://yourshop.api.urn/users/dc654487-30cd-47c1-9708-7558edb04d25/roles"
+                    "href" : "https://yourshop.api.urn/users/3906af76-9452-494e-b83a-8f21d616060f/roles"
                   }
                 }
               }
           schema:
-            $ref: '#/definitions/users_id_change-password-999644662'
+            $ref: '#/definitions/users_id_change-username-999644662'
       security:
       - oauth2_accessCode:
         - user:r
@@ -15681,16 +15681,16 @@ paths:
                 "username" : "username",
                 "email" : "baxter@example.org",
                 "enabled" : true,
-                "_id" : "b4510c0c-1763-4a9c-82d8-e79d740746de",
+                "_id" : "104e01b5-330f-4ce0-a659-889c1645d14c",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/users/b4510c0c-1763-4a9c-82d8-e79d740746de"
+                    "href" : "https://yourshop.api.urn/users/104e01b5-330f-4ce0-a659-889c1645d14c"
                   },
                   "user" : {
-                    "href" : "https://yourshop.api.urn/users/b4510c0c-1763-4a9c-82d8-e79d740746de"
+                    "href" : "https://yourshop.api.urn/users/104e01b5-330f-4ce0-a659-889c1645d14c"
                   },
                   "roles" : {
-                    "href" : "https://yourshop.api.urn/users/b4510c0c-1763-4a9c-82d8-e79d740746de/roles"
+                    "href" : "https://yourshop.api.urn/users/104e01b5-330f-4ce0-a659-889c1645d14c/roles"
                   }
                 }
               }
@@ -15770,21 +15770,21 @@ paths:
                 "username" : "user",
                 "email" : "baxter@example.org",
                 "enabled" : true,
-                "_id" : "b158a617-bf91-4887-99c7-de6efd80e372",
+                "_id" : "824a8eaf-8d5a-49cf-beaa-ebf4a403e5c4",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/users/b158a617-bf91-4887-99c7-de6efd80e372"
+                    "href" : "https://yourshop.api.urn/users/824a8eaf-8d5a-49cf-beaa-ebf4a403e5c4"
                   },
                   "user" : {
-                    "href" : "https://yourshop.api.urn/users/b158a617-bf91-4887-99c7-de6efd80e372"
+                    "href" : "https://yourshop.api.urn/users/824a8eaf-8d5a-49cf-beaa-ebf4a403e5c4"
                   },
                   "roles" : {
-                    "href" : "https://yourshop.api.urn/users/b158a617-bf91-4887-99c7-de6efd80e372/roles"
+                    "href" : "https://yourshop.api.urn/users/824a8eaf-8d5a-49cf-beaa-ebf4a403e5c4/roles"
                   }
                 }
               }
           schema:
-            $ref: '#/definitions/users_id_change-password-999644662'
+            $ref: '#/definitions/users_id_change-username-999644662'
   /users/{id}/change-username:
     post:
       tags:
@@ -15819,27 +15819,27 @@ paths:
                 "username" : "new username",
                 "email" : "baxter@example.org",
                 "enabled" : true,
-                "_id" : "3b1bdb97-5705-4c2c-8e2b-b6d29477bdd0",
+                "_id" : "4a71cbfb-1fac-4dab-8e97-01f08ed5e75e",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/users/3b1bdb97-5705-4c2c-8e2b-b6d29477bdd0"
+                    "href" : "https://yourshop.api.urn/users/4a71cbfb-1fac-4dab-8e97-01f08ed5e75e"
                   },
                   "user" : {
-                    "href" : "https://yourshop.api.urn/users/3b1bdb97-5705-4c2c-8e2b-b6d29477bdd0"
+                    "href" : "https://yourshop.api.urn/users/4a71cbfb-1fac-4dab-8e97-01f08ed5e75e"
                   },
                   "change-password" : {
-                    "href" : "https://yourshop.api.urn/users/3b1bdb97-5705-4c2c-8e2b-b6d29477bdd0/change-password"
+                    "href" : "https://yourshop.api.urn/users/4a71cbfb-1fac-4dab-8e97-01f08ed5e75e/change-password"
                   },
                   "change-email-request" : {
-                    "href" : "https://yourshop.api.urn/users/3b1bdb97-5705-4c2c-8e2b-b6d29477bdd0/change-email-request"
+                    "href" : "https://yourshop.api.urn/users/4a71cbfb-1fac-4dab-8e97-01f08ed5e75e/change-email-request"
                   },
                   "roles" : {
-                    "href" : "https://yourshop.api.urn/users/3b1bdb97-5705-4c2c-8e2b-b6d29477bdd0/roles"
+                    "href" : "https://yourshop.api.urn/users/4a71cbfb-1fac-4dab-8e97-01f08ed5e75e/roles"
                   }
                 }
               }
           schema:
-            $ref: '#/definitions/users_id_change-password-999644662'
+            $ref: '#/definitions/users_id_change-username-999644662'
   /users/{id}/roles:
     get:
       tags:
@@ -15870,7 +15870,7 @@ paths:
                         "name" : "prda:r",
                         "_links" : {
                           "self" : {
-                            "href" : "https://yourshop.api.urn/scopes/282b5333-91a3-4ab9-89a3-671930d6bc76{?projection}",
+                            "href" : "https://yourshop.api.urn/scopes/59bcf1ce-6ac2-4c38-9488-8539ca067d13{?projection}",
                             "templated" : true
                           }
                         }
@@ -15878,7 +15878,7 @@ paths:
                         "name" : "prod:c",
                         "_links" : {
                           "self" : {
-                            "href" : "https://yourshop.api.urn/scopes/6c77f97e-64bc-4886-b705-ba84a217772c{?projection}",
+                            "href" : "https://yourshop.api.urn/scopes/cfe16ed4-5bb5-4629-8e0c-a8a68dfcd266{?projection}",
                             "templated" : true
                           }
                         }
@@ -15886,7 +15886,7 @@ paths:
                         "name" : "prod:r",
                         "_links" : {
                           "self" : {
-                            "href" : "https://yourshop.api.urn/scopes/20a64a64-cddc-4f84-b9ab-a9a1586a8d7a{?projection}",
+                            "href" : "https://yourshop.api.urn/scopes/f741bfca-3be6-492d-bcc1-02e1ab85ac7c{?projection}",
                             "templated" : true
                           }
                         }
@@ -15894,13 +15894,13 @@ paths:
                     },
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/roles/468d6f31-abc1-4c33-ae2d-f277d92f2421"
+                        "href" : "https://yourshop.api.urn/roles/e0663e48-820f-4084-839b-94582c33b991"
                       },
                       "role" : {
-                        "href" : "https://yourshop.api.urn/roles/468d6f31-abc1-4c33-ae2d-f277d92f2421"
+                        "href" : "https://yourshop.api.urn/roles/e0663e48-820f-4084-839b-94582c33b991"
                       },
                       "scopes" : {
-                        "href" : "https://yourshop.api.urn/roles/468d6f31-abc1-4c33-ae2d-f277d92f2421/scopes{?projection}",
+                        "href" : "https://yourshop.api.urn/roles/e0663e48-820f-4084-839b-94582c33b991/scopes{?projection}",
                         "templated" : true
                       }
                     }
@@ -15908,12 +15908,12 @@ paths:
                 },
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/users/161a3e69-6c03-4a5b-91c7-389a8e87ab27/roles"
+                    "href" : "https://yourshop.api.urn/users/0ac85c48-a1eb-458e-a9af-bc891b576f42/roles"
                   }
                 }
               }
           schema:
-            $ref: '#/definitions/orders_order-id_processes-309252030'
+            $ref: '#/definitions/users_id_roles-309252030'
       security:
       - oauth2_accessCode:
         - user:r
@@ -15937,9 +15937,9 @@ paths:
         name: ""
         required: false
         schema:
-          $ref: '#/definitions/users_id_roles288098098'
+          $ref: '#/definitions/users_id_roles-902613076'
         x-examples:
-          text/uri-list: https://yourshop.api.urn/roles/eb65a443-1963-40cb-ac69-b8e316c46763
+          text/uri-list: https://yourshop.api.urn/roles/1f6ce16e-ece5-4d02-b251-34d8f31fc190
       responses:
         204:
           description: ""
@@ -15969,9 +15969,9 @@ paths:
         name: ""
         required: false
         schema:
-          $ref: '#/definitions/users_id_roles-45193115'
+          $ref: '#/definitions/users_id_roles1679002500'
         x-examples:
-          text/uri-list: https://yourshop.api.urn/roles/137155df-db8e-45a6-98d1-ff0496698a00
+          text/uri-list: https://yourshop.api.urn/roles/6632dcc3-0e82-487e-a020-20a30de53b57
       responses:
         204:
           description: ""
@@ -16461,6 +16461,19 @@ definitions:
         type: string
         description: The type of the feature. Can be `TOGGLE`, `COUNTER`, or `APP`.
         minLength: 1
+  products_productId_attributes-365070028:
+    type: object
+    properties:
+      value:
+        description: The value of the product attribute.
+      key:
+        type: string
+        description: The key of the product attribute definition.
+    example: |-
+      {
+        "key" : "colour",
+        "value" : "Yellow"
+      }
   signers1038188776:
     type: object
     required:
@@ -16478,19 +16491,6 @@ definitions:
         description: The shared secret that is used to sign the request.
         minLength: 1
         maxLength: 256
-  products_productId_attributes-365070028:
-    type: object
-    properties:
-      value:
-        description: The value of the product attribute.
-      key:
-        type: string
-        description: The key of the product attribute definition.
-    example: |-
-      {
-        "key" : "colour",
-        "value" : "Yellow"
-      }
   orders_order-id_processes_returns-1060607806:
     type: object
     properties:
@@ -16872,8 +16872,6 @@ definitions:
         "name" : "BE-NL-LU",
         "serviceableCountries" : [ "BE", "NL", "LU" ]
       }
-  users_id_roles288098098:
-    example: https://yourshop.api.urn/roles/eb65a443-1963-40cb-ac69-b8e316c46763
   shipping-zones_shippingZoneId_shipping-methods_shippingMethodId-957965376:
     type: object
     properties:
@@ -16998,8 +16996,6 @@ definitions:
         "label" : "Handbuch",
         "dataUri" : "my_document_1.pdf?hash=8a627f655c68f56dfbbf217ab7d5563281225666"
       }
-  users_id_roles-45193115:
-    example: https://yourshop.api.urn/roles/137155df-db8e-45a6-98d1-ff0496698a00
   orders_order-id_billing-address942247451:
     type: object
     properties:
@@ -18623,6 +18619,8 @@ definitions:
         type: string
         description: The endpoint that generates a reference to the payment provider's
           site for merchant self-signup.
+  products_productId_availability_enable-stock-management-168834398:
+    example: '{ "initialAvailableStock" : 100, "stockThreshold" : 2 }'
   users_id_change-password466429056:
     type: object
     required:
@@ -18637,8 +18635,6 @@ definitions:
           password change.
         minLength: 1
     example: '{"currentPassword":"GoodPassword01!;)","newPassword":"ValidPassword123"}'
-  products_productId_availability_enable-stock-management-168834398:
-    example: '{ "initialAvailableStock" : 100, "stockThreshold" : 2 }'
   carts_cartId_create-payment-and-order1631456624:
     type: object
     properties:
@@ -18857,7 +18853,7 @@ definitions:
           "en-US" : "Paymenator"
         }
       }
-  users_id_change-password-999644662:
+  users_id_change-username-999644662:
     type: object
     required:
     - email
@@ -19496,6 +19492,8 @@ definitions:
               description: The fixed price for the shipping method irrespective of
                 weight, dimensions, etc.
               properties: {}
+  users_id_roles1679002500:
+    example: https://yourshop.api.urn/roles/6632dcc3-0e82-487e-a020-20a30de53b57
   users_id_change-email-request-980210677:
     type: object
     properties:
@@ -19553,6 +19551,8 @@ definitions:
         description: The value of the quantity. A negative value reduces the line
           item quantity.
     example: '{"_type":"PRODUCT","_ref":"7e455915-e000-4366-b45c-8ddd198f81c9","quantityInt":2}'
+  users_id_roles-902613076:
+    example: https://yourshop.api.urn/roles/1f6ce16e-ece5-4d02-b251-34d8f31fc190
   orders_order-id_processes_returns_return-process-id1141741742:
     type: object
     properties:
@@ -20455,7 +20455,7 @@ definitions:
         description: the length of the numeric part of the invoice number. If the
           numeric value is shorter, the value is padded with zeros to the left. If
           the value is longer the numericSuffixLength is extended
-  orders_order-id_processes-309252030:
+  users_id_roles-309252030:
     type: object
     properties:
       _links:
@@ -20465,21 +20465,9 @@ definitions:
       _embedded:
         type: object
         properties:
-          refund-processes:
+          roles:
             type: array
-            description: All refund processes of the order.
-          cancel-processes:
-            type: array
-            description: All cancelation processes of the order.
-          shipping-processes:
-            type: array
-            description: All shipping processes of the order.
-          payment-processes:
-            type: array
-            description: All payment processes of the order.
-          return-processes:
-            type: array
-            description: All return processes of the order.
+            description: The roles of the user.
   users-615951201:
     type: object
     required:
