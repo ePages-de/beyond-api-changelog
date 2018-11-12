@@ -1,5 +1,37 @@
 # Beyond API Changelog
 
+## 2018-11-12
+
+### What's New
+---
+* `POST` /payment-method-definitions/{paymentMethodDefinitionName}/payment-method Triggers creation of Payment Method for current shop
+* `DELETE` /payment-method-definitions/{paymentMethodDefinitionName}/payment-method Triggers deletion of Payment Method for current shop
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `POST` /payment-method-definitions Create Payment Method Definition  
+    Return Type
+
+        Delete createPaymentUriTemplate //The uri template for creating a payment.
+        Delete workflow //The workflow of the payment method.
+        Delete _links //See <<hypermedia,Hypermedia>>
+        Delete sandbox //An indicator if the payment method is using a sandbox environment.
+        Delete referralUriTemplate //The uri template for the referral process.
+        Delete officialName //The translated name that will be used as display name for the payment method for merchants.
+        Delete refundPaymentUriTemplate //The uri template for refunding a payment.
+        Delete disconnectUriTemplate //The uri template for disconnecting.
+        Delete logos
+        Delete capturePaymentUriTemplate //The uri template for capturing a payment.
+        Delete statusUriTemplate //The uri template for the status.
+        Delete name //The unique name of a payment method definition.
+        Delete officialDescription //The translated description that will be used as description for the payment method for merchants.
+        Delete _id //The unique name of a payment method definition.
+        Delete defaultName //The translated name that will be used as default dispaly name for the payment method for customers.
+        Delete refund //The refund capabilities of the payment method.
+
 ## 2018-11-08
 
 ### What's New
