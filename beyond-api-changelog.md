@@ -1,5 +1,17 @@
 # Beyond API Changelog
 
+## 2018-11-21
+
+### What's New
+---
+* `DELETE` /carts/{cartId}/shipping-address Remove Shipping Address
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+
 ## 2018-11-12
 
 ### What's New
