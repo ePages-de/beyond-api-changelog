@@ -1,5 +1,26 @@
 # Beyond API Changelog
 
+## 2018-12-03
+
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `POST` /carts/{cartId}/line-items Add Line Item  
+    Parameter
+
+        Add .quantity //The quantity for the line item to be set. If the line item is already in the cart, the quantity is added. Defaults to one.
+        Delete .quantityInt //The value of the quantity. A negative value reduces the line item quantity.
+* `PUT` /carts/{cartId}/line-items/{lineItemId} Replace Line Items  
+    Parameter
+
+        Add .quantity //The quantity for the line item to be set. If the line item is already in the cart, the quantity is added. Defaults to one.
+        Delete .quantityInt //The value of the quantity. A negative value reduces the line item quantity.
+
 ## 2018-11-21
 
 ### What's New
