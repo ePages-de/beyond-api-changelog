@@ -1,5 +1,31 @@
 # Beyond API Changelog
 
+## 2018-12-11
+
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `POST` /payment-method-definitions Create payment method definition  
+    Parameter
+
+        Add .defaultDescription //Optional description that can be used as an explanation to customers how a payment method works. If it is provided by the app, it needs to be translated for each supported language.
+* `GET` /payment-method-definitions/{paymentMethodDefinitionName} Show payment method definition details  
+    Return Type
+
+        Add defaultDescription //Optional description that can be used as an explanation to customers how a payment method works. If it is provided by the app, it needs to be translated for each supported language.
+* `PUT` /payment-method-definitions/{paymentMethodDefinitionName} Modify payment method definition  
+    Parameter
+
+        Add .defaultDescription //Optional description that can be used as an explanation to customers how a payment method works. If it is provided by the app, it needs to be translated for each supported language.
+    Return Type
+
+        Add defaultDescription //Optional description that can be used as an explanation to customers how a payment method works. If it is provided by the app, it needs to be translated for each supported language.
+
 ## 2018-12-03
 
 ### What's New
