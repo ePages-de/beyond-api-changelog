@@ -2,7 +2,7 @@ swagger: "2.0"
 info:
   version: 1.0.0
   title: Beyond REST API
-host: api-shop.beyondshop.cloud
+host: '{$$.env.host}'
 basePath: /api
 schemes:
 - https
@@ -16503,8 +16503,8 @@ paths:
 securityDefinitions:
   oauth2_accessCode:
     type: oauth2
-    authorizationUrl: https://api-shop.beyondshop.cloud/api/auth/oauth-ext/authorize
-    tokenUrl: https://api-shop.beyondshop.cloud/api/oauth/token
+    authorizationUrl: https://{$$.env.host}/api/auth/oauth-ext/authorize
+    tokenUrl: https://{$$.env.host}/api/oauth/token
     flow: accessCode
     scopes:
       catg:r: No description
@@ -16572,7 +16572,7 @@ securityDefinitions:
       user:u: No description
   oauth2_application:
     type: oauth2
-    tokenUrl: https://api-shop.beyondshop.cloud/api/oauth/token
+    tokenUrl: https://{$$.env.host}/api/oauth/token
     flow: application
     scopes:
       catg:r: No description
