@@ -1,5 +1,28 @@
 # Beyond API Changelog
 
+## 2018-12-14
+
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `PUT` /carts/{cartId}/billing-address Set cart billing address  
+    Parameter
+
+        Add .dependentLocality //The secondardy place to the city, sometimes included for small towns or villages.
+* `PUT` /carts/{cartId}/shipping-address Set current cart shipping address  
+    Parameter
+
+        Add .dependentLocality //The secondardy place to the city, sometimes included for small towns or villages.
+* `PUT` /payment-method-definitions/{paymentMethodDefinitionName} Modify payment method definition  
+    Parameter
+
+        Add .name //The name of a payment method definition.
+
 ## 2018-12-11
 
 ### What's New
