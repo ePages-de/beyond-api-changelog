@@ -1,5 +1,20 @@
 # Beyond API Changelog
 
+## 2018-12-17
+
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `POST` /payments/{paymentId}/status Set payment status with amount  
+    Parameter
+
+        Add .amount //Optional absolute amount that has been paid so far. If not set, the full amount is assumed. Explicitly passing the amount only makes for status transitions towards `PAID`, `UNDERPAID` or `OVERPAID`.
+
 ## 2018-12-14
 
 ### What's New
