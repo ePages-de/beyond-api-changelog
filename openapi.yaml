@@ -3155,8 +3155,10 @@ paths:
     get:
       tags:
       - categories
-      summary: List Categories
-      description: ""
+      summary: List categories
+      description: |-
+        Returns a list of all categories in a paged manner.
+        Note that a `category` is referred to as `collection` in the cockpit.
       operationId: categories-list
       produces:
       - application/hal+json
@@ -3172,13 +3174,13 @@ paths:
                     "label" : "corner-shop",
                     "type" : "MANUAL",
                     "query" : {"bool":{"filter":[{"terms":{"id":["6c449297-65fc-41aa-a49c-68a3561b33e5","6c449297-65fc-41aa-a49c-68a3561b33e6"]}}]}},
-                    "_id" : "5e7137c1-5571-4164-9e75-f64b449bf4f1",
+                    "_id" : "dbf16166-031a-4138-bb43-b9cd468e09c4",
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/categories/5e7137c1-5571-4164-9e75-f64b449bf4f1"
+                        "href" : "https://yourshop.api.urn/categories/dbf16166-031a-4138-bb43-b9cd468e09c4"
                       },
                       "category" : {
-                        "href" : "https://yourshop.api.urn/categories/5e7137c1-5571-4164-9e75-f64b449bf4f1"
+                        "href" : "https://yourshop.api.urn/categories/dbf16166-031a-4138-bb43-b9cd468e09c4"
                       }
                     }
                   }, {
@@ -3186,13 +3188,13 @@ paths:
                     "label" : "power-bar",
                     "type" : "SMART",
                     "query" : { "bool": { "filter": { "term": { "tags": "power-bar" }}}},
-                    "_id" : "ee9c0c29-8d9e-49d6-86b2-1eeb127701c6",
+                    "_id" : "9cb4f510-d1f6-482c-92c6-de6ce2df43d3",
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/categories/ee9c0c29-8d9e-49d6-86b2-1eeb127701c6"
+                        "href" : "https://yourshop.api.urn/categories/9cb4f510-d1f6-482c-92c6-de6ce2df43d3"
                       },
                       "category" : {
-                        "href" : "https://yourshop.api.urn/categories/ee9c0c29-8d9e-49d6-86b2-1eeb127701c6"
+                        "href" : "https://yourshop.api.urn/categories/9cb4f510-d1f6-482c-92c6-de6ce2df43d3"
                       }
                     }
                   } ]
@@ -3219,8 +3221,10 @@ paths:
     post:
       tags:
       - categories
-      summary: Create Category
-      description: ""
+      summary: Create category
+      description: |-
+        Creates a category.
+        Note that a `category` is referred to as `collection` in the cockpit.
       operationId: category-create
       consumes:
       - application/json
@@ -3244,13 +3248,13 @@ paths:
                 "label" : "power-bar",
                 "type" : "SMART",
                 "query" : {"bool":{"filter":{"term":{"tags":"power-bar"}}}},
-                "_id" : "8851bcd4-a1b9-419d-a02f-e6b1bd7ee696",
+                "_id" : "70464008-ec2e-4992-aff3-288a7c399785",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/categories/8851bcd4-a1b9-419d-a02f-e6b1bd7ee696"
+                    "href" : "https://yourshop.api.urn/categories/70464008-ec2e-4992-aff3-288a7c399785"
                   },
                   "category" : {
-                    "href" : "https://yourshop.api.urn/categories/8851bcd4-a1b9-419d-a02f-e6b1bd7ee696"
+                    "href" : "https://yourshop.api.urn/categories/70464008-ec2e-4992-aff3-288a7c399785"
                   }
                 }
               }
@@ -3263,8 +3267,10 @@ paths:
     get:
       tags:
       - categories
-      summary: Get Category
-      description: ""
+      summary: Show category details
+      description: |-
+        Returns the details of the category identified by {categoryId}.
+        Note that a `category` is referred to as `collection` in the cockpit.
       operationId: category-get
       produces:
       - application/hal+json
@@ -3284,13 +3290,13 @@ paths:
                 "label" : "power-bar",
                 "type" : "SMART",
                 "query" : { "bool": { "filter": { "term": { "tags": "power-bar" }}}},
-                "_id" : "60721858-a3a9-48ae-b7aa-e1aacad3d2e2",
+                "_id" : "e9d86526-e329-4bdd-8158-c962498e0b6c",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/categories/60721858-a3a9-48ae-b7aa-e1aacad3d2e2"
+                    "href" : "https://yourshop.api.urn/categories/e9d86526-e329-4bdd-8158-c962498e0b6c"
                   },
                   "category" : {
-                    "href" : "https://yourshop.api.urn/categories/60721858-a3a9-48ae-b7aa-e1aacad3d2e2"
+                    "href" : "https://yourshop.api.urn/categories/e9d86526-e329-4bdd-8158-c962498e0b6c"
                   }
                 }
               }
@@ -3304,8 +3310,10 @@ paths:
     put:
       tags:
       - categories
-      summary: Update Category
-      description: ""
+      summary: Modify all category properties
+      description: |-
+        Modifies all properties of the category identified by {categoryId} with `application/json` content type.
+        Note that a `category` is referred to as `collection` in the cockpit.
       operationId: category-put
       consumes:
       - application/json
@@ -3334,13 +3342,13 @@ paths:
                 "label" : "updated-name",
                 "type" : "MANUAL",
                 "query" : {"bool":{"filter":[{"terms":{"id":["6c449297-65fc-41aa-a49c-68a3561b33e5","6c449297-65fc-41aa-a49c-68a3561b33e6"]}}]}},
-                "_id" : "62151e49-04c7-4bb0-8e11-d69b592c4de5",
+                "_id" : "c9a9c656-c23e-4f84-9fae-9e8dec319526",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/categories/62151e49-04c7-4bb0-8e11-d69b592c4de5"
+                    "href" : "https://yourshop.api.urn/categories/c9a9c656-c23e-4f84-9fae-9e8dec319526"
                   },
                   "category" : {
-                    "href" : "https://yourshop.api.urn/categories/62151e49-04c7-4bb0-8e11-d69b592c4de5"
+                    "href" : "https://yourshop.api.urn/categories/c9a9c656-c23e-4f84-9fae-9e8dec319526"
                   }
                 }
               }
@@ -3354,8 +3362,10 @@ paths:
     delete:
       tags:
       - categories
-      summary: Delete Category
-      description: ""
+      summary: Delete category
+      description: |-
+        Deletes a category.
+        Note that a `category` is referred to as `collection` in the cockpit.
       operationId: category-delete
       parameters:
       - name: id
@@ -3375,8 +3385,10 @@ paths:
     patch:
       tags:
       - categories
-      summary: Update Category
-      description: ""
+      summary: Update category partially (JSON patch)
+      description: |-
+        Updates the properties of the category identified by {categoryId} partially with `application/json-patch+json` content type.
+        Note that a `category` is referred to as `collection` in the cockpit.
       operationId: category-patch-jsonpatch
       consumes:
       - application/json-patch+json
@@ -3408,13 +3420,13 @@ paths:
                 "label" : "power-bar",
                 "type" : "MANUAL",
                 "query" : {"bool":{"filter":[{"terms":{"id":["6c449297-65fc-41aa-a49c-68a3561b33e5","6c449297-65fc-41aa-a49c-68a3561b33e6"]}}]}},
-                "_id" : "bf87fac6-6dc3-4a5a-8f8d-198eadd5439e",
+                "_id" : "848d5d86-e5fd-4b6d-a985-5c298bcc1be7",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/categories/bf87fac6-6dc3-4a5a-8f8d-198eadd5439e"
+                    "href" : "https://yourshop.api.urn/categories/848d5d86-e5fd-4b6d-a985-5c298bcc1be7"
                   },
                   "category" : {
-                    "href" : "https://yourshop.api.urn/categories/bf87fac6-6dc3-4a5a-8f8d-198eadd5439e"
+                    "href" : "https://yourshop.api.urn/categories/848d5d86-e5fd-4b6d-a985-5c298bcc1be7"
                   }
                 }
               }
@@ -3766,8 +3778,8 @@ paths:
     get:
       tags:
       - legal-content
-      summary: List Legal Content
-      description: ""
+      summary: List legal content
+      description: Returns the legal content of the current shop.
       operationId: merchant-legal-content-list
       produces:
       - application/json
@@ -3868,8 +3880,8 @@ paths:
     get:
       tags:
       - legal-content
-      summary: Get Legal Content
-      description: ""
+      summary: Show legal content details
+      description: Returns a specific part of the legal content information by `key`.
       operationId: merchant-legal-content-get
       produces:
       - application/json
@@ -3905,8 +3917,9 @@ paths:
     put:
       tags:
       - legal-content
-      summary: Update Legal Content
-      description: ""
+      summary: Update legal content
+      description: Updates the content of a specific part of the legal content information
+        by `key`. Changes on the properties `type` and `mandatory` will be ignored.
       operationId: merchant-legal-content-edit
       consumes:
       - application/json
@@ -9347,8 +9360,9 @@ paths:
     get:
       tags:
       - product-attribute-definitions
-      summary: List Product Attribute Definitions
-      description: ""
+      summary: List product attribute definitions
+      description: Returns a list of the available product attribute definitions for
+        the current shop.
       operationId: product-attribute-definitions-list
       produces:
       - application/hal+json
@@ -9396,8 +9410,9 @@ paths:
     post:
       tags:
       - product-attribute-definitions
-      summary: Create Product Attribute Definition
-      description: ""
+      summary: Create a number product attribute definition
+      description: Creates a product attribute definition of type STRING for the current
+        shop.
       operationId: product-attribute-definitions-create-string
       consumes:
       - application/json
@@ -9445,8 +9460,8 @@ paths:
     get:
       tags:
       - product-attribute-definitions
-      summary: Get Product Attribute Definition
-      description: ""
+      summary: Show product attribute definition details
+      description: Returns a single attribute definition by `key`.
       operationId: product-attribute-definition-get
       produces:
       - application/hal+json
@@ -9485,8 +9500,9 @@ paths:
     delete:
       tags:
       - product-attribute-definitions
-      summary: Delete Product Attribute Definition
-      description: ""
+      summary: Delete a product attribute definition
+      description: Deletes a product attribute definition from the current shop by
+        `key`.
       operationId: product-attribute-definitions-delete
       parameters:
       - name: productAttributeDefinitionKey
@@ -9512,8 +9528,8 @@ paths:
     get:
       tags:
       - product-settings
-      summary: Get Product Settings
-      description: ""
+      summary: Show product settings
+      description: Returns the settings of the product identified by {productId}.
       operationId: product-settings-get
       produces:
       - application/hal+json
@@ -9540,8 +9556,9 @@ paths:
     patch:
       tags:
       - product-settings
-      summary: Update Product Settings
-      description: ""
+      summary: Update product settings
+      description: Updates the settings of the product identified by {productId} with
+        `application/json-patch` content type.
       operationId: product-settings-patch
       consumes:
       - application/json-patch+json
@@ -9584,8 +9601,8 @@ paths:
     get:
       tags:
       - product-view
-      summary: List Product
-      description: ""
+      summary: List products
+      description: Returns a list of all products of the current shop.
       operationId: product-view-list
       produces:
       - application/hal+json
@@ -9597,7 +9614,7 @@ paths:
               {
                 "_embedded" : {
                   "products" : [ {
-                    "_id" : "915c2906-9568-438c-97d4-be085e41acd6",
+                    "_id" : "fb6fc5b4-e6ec-48fd-92dc-3148b98d5d02",
                     "sku" : "vino020",
                     "name" : "Rioja Castillo de Puerto (2013)",
                     "salesPrice" : {
@@ -9635,15 +9652,15 @@ paths:
                         "templated" : true
                       },
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/915c2906-9568-438c-97d4-be085e41acd6"
+                        "href" : "https://yourshop.api.urn/product-view/products/fb6fc5b4-e6ec-48fd-92dc-3148b98d5d02"
                       },
                       "product" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/915c2906-9568-438c-97d4-be085e41acd6{?projection}",
+                        "href" : "https://yourshop.api.urn/product-view/products/fb6fc5b4-e6ec-48fd-92dc-3148b98d5d02{?projection}",
                         "templated" : true
                       }
                     }
                   }, {
-                    "_id" : "669fbbf5-a66d-4601-805f-fd3e591e6c26",
+                    "_id" : "02297e3e-1cce-4c42-b086-bda61eccf6b6",
                     "sku" : "EB001",
                     "name" : "Power & Vanilla Coconut Protein Bar (Pack of 5)",
                     "salesPrice" : {
@@ -9663,15 +9680,15 @@ paths:
                     "availabilityState" : "IN_STOCK",
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/669fbbf5-a66d-4601-805f-fd3e591e6c26"
+                        "href" : "https://yourshop.api.urn/product-view/products/02297e3e-1cce-4c42-b086-bda61eccf6b6"
                       },
                       "product" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/669fbbf5-a66d-4601-805f-fd3e591e6c26{?projection}",
+                        "href" : "https://yourshop.api.urn/product-view/products/02297e3e-1cce-4c42-b086-bda61eccf6b6{?projection}",
                         "templated" : true
                       }
                     }
                   }, {
-                    "_id" : "73cb62a2-fc3f-462e-a366-e84f3ec4db95",
+                    "_id" : "4dc3e110-3006-4138-aae2-9cbe350c4b79",
                     "sku" : "sh-001",
                     "name" : "Soft Walk Ultra - Nibok Men's",
                     "salesPrice" : {
@@ -9698,10 +9715,10 @@ paths:
                         "templated" : true
                       },
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/73cb62a2-fc3f-462e-a366-e84f3ec4db95"
+                        "href" : "https://yourshop.api.urn/product-view/products/4dc3e110-3006-4138-aae2-9cbe350c4b79"
                       },
                       "product" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/73cb62a2-fc3f-462e-a366-e84f3ec4db95{?projection}",
+                        "href" : "https://yourshop.api.urn/product-view/products/4dc3e110-3006-4138-aae2-9cbe350c4b79{?projection}",
                         "templated" : true
                       }
                     }
@@ -9725,8 +9742,10 @@ paths:
     get:
       tags:
       - product-view
-      summary: Get Enchanced View of Category
-      description: ""
+      summary: Show enhanced view of category
+      description: |-
+        Returns an enhanced view of the product category identified by {categoryId}.
+        Note that a `category` is referred to as `collection` in the cockpit.
       operationId: category-get-enhanced
       produces:
       - application/hal+json
@@ -9748,21 +9767,21 @@ paths:
           examples:
             application/hal+json: |-
               {
-                "_id" : "593028d4-347c-42de-8b4a-00b068ec0082",
-                "_indexedAt" : "2018-12-10T13:37:26.321",
+                "_id" : "91506c69-b3fd-41bc-9be9-b0c5472a1549",
+                "_indexedAt" : "2018-12-19T10:51:46.244",
                 "type" : "SMART",
                 "name" : "Power Bars",
                 "label" : "power-bar",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/product-view/categories/593028d4-347c-42de-8b4a-00b068ec0082"
+                    "href" : "https://yourshop.api.urn/product-view/categories/91506c69-b3fd-41bc-9be9-b0c5472a1549"
                   },
                   "category" : {
-                    "href" : "https://yourshop.api.urn/product-view/categories/593028d4-347c-42de-8b4a-00b068ec0082{?projection}",
+                    "href" : "https://yourshop.api.urn/product-view/categories/91506c69-b3fd-41bc-9be9-b0c5472a1549{?projection}",
                     "templated" : true
                   },
                   "products" : {
-                    "href" : "https://yourshop.api.urn/product-view/categories/593028d4-347c-42de-8b4a-00b068ec0082/products"
+                    "href" : "https://yourshop.api.urn/product-view/categories/91506c69-b3fd-41bc-9be9-b0c5472a1549/products"
                   }
                 }
               }
@@ -9772,8 +9791,8 @@ paths:
     get:
       tags:
       - product-view
-      summary: Get Enchanced View of Product
-      description: ""
+      summary: Show enhanced view of product details
+      description: Returns enhanced details of the product identified by {productId}.
       operationId: product-view-find-by-id-enhanced
       produces:
       - application/hal+json
@@ -9795,8 +9814,8 @@ paths:
           examples:
             application/hal+json: |-
               {
-                "_id" : "3ff6c3a5-64c7-416d-a4c8-1a94c0ecd1ea",
-                "_indexedAt" : "2018-12-10T13:36:31.623",
+                "_id" : "fc234691-4acb-4666-bd40-b6a046a724f2",
+                "_indexedAt" : "2018-12-19T10:51:01.956",
                 "sku" : "vino020",
                 "name" : "Rioja Castillo de Puerto (2013)",
                 "salesPrice" : {
@@ -9862,10 +9881,10 @@ paths:
                     "templated" : true
                   },
                   "self" : {
-                    "href" : "https://yourshop.api.urn/product-view/products/3ff6c3a5-64c7-416d-a4c8-1a94c0ecd1ea"
+                    "href" : "https://yourshop.api.urn/product-view/products/fc234691-4acb-4666-bd40-b6a046a724f2"
                   },
                   "product" : {
-                    "href" : "https://yourshop.api.urn/product-view/products/3ff6c3a5-64c7-416d-a4c8-1a94c0ecd1ea{?projection}",
+                    "href" : "https://yourshop.api.urn/product-view/products/fc234691-4acb-4666-bd40-b6a046a724f2{?projection}",
                     "templated" : true
                   },
                   "additional-image-data" : [ {
@@ -9886,8 +9905,10 @@ paths:
     get:
       tags:
       - product-view
-      summary: Find Category by Label
-      description: ""
+      summary: Find product category by label
+      description: |-
+        Returns a product category by its unique label passed as a request parameter.
+        Note that a `category` is referred to as `collection` in the cockpit.
       operationId: category-get-by-label
       produces:
       - application/hal+json
@@ -9906,17 +9927,17 @@ paths:
                 "type" : "SMART",
                 "name" : "Power Bars",
                 "label" : "power-bar",
-                "_id" : "213a7936-5163-4002-bf1c-d21d67a0bba3",
+                "_id" : "99626abc-d6a3-46e2-94f8-82d0066e7c0a",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/product-view/categories/213a7936-5163-4002-bf1c-d21d67a0bba3"
+                    "href" : "https://yourshop.api.urn/product-view/categories/99626abc-d6a3-46e2-94f8-82d0066e7c0a"
                   },
                   "category" : {
-                    "href" : "https://yourshop.api.urn/product-view/categories/213a7936-5163-4002-bf1c-d21d67a0bba3{?projection}",
+                    "href" : "https://yourshop.api.urn/product-view/categories/99626abc-d6a3-46e2-94f8-82d0066e7c0a{?projection}",
                     "templated" : true
                   },
                   "products" : {
-                    "href" : "https://yourshop.api.urn/product-view/categories/213a7936-5163-4002-bf1c-d21d67a0bba3/products"
+                    "href" : "https://yourshop.api.urn/product-view/categories/99626abc-d6a3-46e2-94f8-82d0066e7c0a/products"
                   }
                 }
               }
@@ -9926,8 +9947,10 @@ paths:
     get:
       tags:
       - product-view
-      summary: List Categories Assigned to Product
-      description: ""
+      summary: List categories assigned to product
+      description: "Returns a list of all product categories the product identified\
+        \ by `productId` (which is passed as a request parameter) is part of. \nNote\
+        \ that a `category` is referred to as `collection` in the cockpit."
       operationId: product-view-find-categories-by-product
       produces:
       - application/hal+json
@@ -9948,34 +9971,34 @@ paths:
                     "type" : "SMART",
                     "name" : "category that loves everyone",
                     "label" : null,
-                    "_id" : "3904ffc0-4df8-4e46-aa6c-5084f8caeff9",
+                    "_id" : "1876a4bd-7da4-4c5b-bc57-02ef7de6d071",
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/categories/3904ffc0-4df8-4e46-aa6c-5084f8caeff9"
+                        "href" : "https://yourshop.api.urn/product-view/categories/1876a4bd-7da4-4c5b-bc57-02ef7de6d071"
                       },
                       "category" : {
-                        "href" : "https://yourshop.api.urn/product-view/categories/3904ffc0-4df8-4e46-aa6c-5084f8caeff9{?projection}",
+                        "href" : "https://yourshop.api.urn/product-view/categories/1876a4bd-7da4-4c5b-bc57-02ef7de6d071{?projection}",
                         "templated" : true
                       },
                       "products" : {
-                        "href" : "https://yourshop.api.urn/product-view/categories/3904ffc0-4df8-4e46-aa6c-5084f8caeff9/products"
+                        "href" : "https://yourshop.api.urn/product-view/categories/1876a4bd-7da4-4c5b-bc57-02ef7de6d071/products"
                       }
                     }
                   }, {
                     "type" : "MANUAL",
                     "name" : "category that matches product 1 in a complicated way",
                     "label" : null,
-                    "_id" : "3eed20dd-8528-40e0-8972-ff581a09e970",
+                    "_id" : "6e0e40fb-7bb9-4e13-a83a-996c80e5ebe3",
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/categories/3eed20dd-8528-40e0-8972-ff581a09e970"
+                        "href" : "https://yourshop.api.urn/product-view/categories/6e0e40fb-7bb9-4e13-a83a-996c80e5ebe3"
                       },
                       "category" : {
-                        "href" : "https://yourshop.api.urn/product-view/categories/3eed20dd-8528-40e0-8972-ff581a09e970{?projection}",
+                        "href" : "https://yourshop.api.urn/product-view/categories/6e0e40fb-7bb9-4e13-a83a-996c80e5ebe3{?projection}",
                         "templated" : true
                       },
                       "products" : {
-                        "href" : "https://yourshop.api.urn/product-view/categories/3eed20dd-8528-40e0-8972-ff581a09e970/products"
+                        "href" : "https://yourshop.api.urn/product-view/categories/6e0e40fb-7bb9-4e13-a83a-996c80e5ebe3/products"
                       }
                     }
                   } ]
@@ -9996,8 +10019,10 @@ paths:
     get:
       tags:
       - product-view
-      summary: List Products of Category
-      description: ""
+      summary: List products of category
+      description: |-
+        Returns a list of all products in the category identified by {categoryId}.
+        Note that a `category` is referred to as `collection` in the cockpit.
       operationId: category-products
       produces:
       - application/hal+json
@@ -10015,7 +10040,7 @@ paths:
               {
                 "_embedded" : {
                   "products" : [ {
-                    "_id" : "bc1a212f-ee10-455b-9f1a-ff0786528708",
+                    "_id" : "919a91b7-eb53-490d-96ee-f75036bbf429",
                     "sku" : "vino020",
                     "name" : "Rioja Castillo de Puerto (2013)",
                     "salesPrice" : {
@@ -10053,10 +10078,10 @@ paths:
                         "templated" : true
                       },
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/bc1a212f-ee10-455b-9f1a-ff0786528708"
+                        "href" : "https://yourshop.api.urn/product-view/products/919a91b7-eb53-490d-96ee-f75036bbf429"
                       },
                       "product" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/bc1a212f-ee10-455b-9f1a-ff0786528708{?projection}",
+                        "href" : "https://yourshop.api.urn/product-view/products/919a91b7-eb53-490d-96ee-f75036bbf429{?projection}",
                         "templated" : true
                       }
                     }
@@ -10064,7 +10089,7 @@ paths:
                 },
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/product-view/categories/c7ff6681-0a81-47c4-bfde-94ff32dfb9b0/products?page=0&size=40"
+                    "href" : "https://yourshop.api.urn/product-view/categories/1e2d3865-6123-4d32-bb6d-cbe4aefd2ddb/products?page=0&size=40"
                   }
                 },
                 "page" : {
@@ -10078,8 +10103,8 @@ paths:
     get:
       tags:
       - product-view
-      summary: 'List Available Tags '
-      description: ""
+      summary: List available tags
+      description: Returns a list of all available tags for the current shop.
       operationId: product-view-find-available-tags
       produces:
       - application/hal+json
@@ -10134,8 +10159,10 @@ paths:
     get:
       tags:
       - product-view
-      summary: List Product by Category
-      description: ""
+      summary: List products by category
+      description: |-
+        Searches for products using a `categoryId` passed as a request parameter.
+        Note that a `category` is referred to as `collection` in the cockpit.
       operationId: product-view-find-by-category
       produces:
       - application/hal+json
@@ -10154,7 +10181,7 @@ paths:
               {
                 "_embedded" : {
                   "products" : [ {
-                    "_id" : "14b689b9-b127-485a-bbf6-81e29ab34442",
+                    "_id" : "582347e5-5d4c-4064-8fe4-a5812bb41a57",
                     "sku" : "vino020",
                     "name" : "Rioja Castillo de Puerto (2013)",
                     "salesPrice" : {
@@ -10192,10 +10219,10 @@ paths:
                         "templated" : true
                       },
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/14b689b9-b127-485a-bbf6-81e29ab34442"
+                        "href" : "https://yourshop.api.urn/product-view/products/582347e5-5d4c-4064-8fe4-a5812bb41a57"
                       },
                       "product" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/14b689b9-b127-485a-bbf6-81e29ab34442{?projection}",
+                        "href" : "https://yourshop.api.urn/product-view/products/582347e5-5d4c-4064-8fe4-a5812bb41a57{?projection}",
                         "templated" : true
                       }
                     }
@@ -10203,7 +10230,7 @@ paths:
                 },
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/product-view/products/search/find-by-category?categoryId=36f5ee01-8f8c-4f1d-b9a7-721ffec7f9a7&page=0&size=40"
+                    "href" : "https://yourshop.api.urn/product-view/products/search/find-by-category?categoryId=43ed63c8-e334-42b1-b607-b20ba6cb6a66&page=0&size=40"
                   }
                 },
                 "page" : {
@@ -10219,8 +10246,8 @@ paths:
     post:
       tags:
       - product-view
-      summary: List Product by Query
-      description: ""
+      summary: List products by query
+      description: Searches for products using a query provided as request body.
       operationId: product-view-find-by-query
       consumes:
       - application/json
@@ -10243,7 +10270,7 @@ paths:
               {
                 "_embedded" : {
                   "products" : [ {
-                    "_id" : "2329a84d-7f78-4406-a93d-d990835b0e7b",
+                    "_id" : "68659a89-f420-44b3-9b5d-daf21572f719",
                     "sku" : "vino020",
                     "name" : "Rioja Castillo de Puerto (2013)",
                     "salesPrice" : {
@@ -10281,10 +10308,10 @@ paths:
                         "templated" : true
                       },
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/2329a84d-7f78-4406-a93d-d990835b0e7b"
+                        "href" : "https://yourshop.api.urn/product-view/products/68659a89-f420-44b3-9b5d-daf21572f719"
                       },
                       "product" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/2329a84d-7f78-4406-a93d-d990835b0e7b{?projection}",
+                        "href" : "https://yourshop.api.urn/product-view/products/68659a89-f420-44b3-9b5d-daf21572f719{?projection}",
                         "templated" : true
                       }
                     }
@@ -10308,8 +10335,8 @@ paths:
     get:
       tags:
       - product-view
-      summary: List Product by Term
-      description: ""
+      summary: List products by term
+      description: Searches for products using a search query passed in the URL.
       operationId: product-view-find-by-search-term
       produces:
       - application/hal+json
@@ -10328,7 +10355,53 @@ paths:
               {
                 "_embedded" : {
                   "products" : [ {
-                    "_id" : "44113a1f-9a62-4a81-956c-40eb16dcaca1",
+                    "_id" : "25ce1be4-89f3-4205-be37-438c2b9366f1",
+                    "sku" : "vino020",
+                    "name" : "Rioja Castillo de Puerto (2013)",
+                    "salesPrice" : {
+                      "amount" : 8.7,
+                      "currency" : "EUR"
+                    },
+                    "listPrice" : {
+                      "amount" : 10.95,
+                      "currency" : "EUR"
+                    },
+                    "manufacturerPrice" : {
+                      "amount" : 99.95,
+                      "currency" : "EUR"
+                    },
+                    "onSale" : true,
+                    "listPriceText" : "Old Price",
+                    "shippingDimension" : {
+                      "length" : 1500,
+                      "width" : 1000,
+                      "height" : 2000
+                    },
+                    "refPrice" : {
+                      "refQuantity" : 1,
+                      "unit" : "LITER",
+                      "quantity" : 0.75,
+                      "price" : {
+                        "amount" : 11.6,
+                        "currency" : "EUR"
+                      }
+                    },
+                    "availabilityState" : "IN_STOCK",
+                    "_links" : {
+                      "default-image-data" : {
+                        "href" : "https://yourshop.api.urn/storage-api/images/rioja-01.jpg?hash=e9a1ce5c0c6abfebec8fb1f6faf77dca7e6e7777{&width,height,upscale}",
+                        "templated" : true
+                      },
+                      "self" : {
+                        "href" : "https://yourshop.api.urn/product-view/products/25ce1be4-89f3-4205-be37-438c2b9366f1"
+                      },
+                      "product" : {
+                        "href" : "https://yourshop.api.urn/product-view/products/25ce1be4-89f3-4205-be37-438c2b9366f1{?projection}",
+                        "templated" : true
+                      }
+                    }
+                  }, {
+                    "_id" : "95b70c08-436f-464b-a252-8ed67f17f81e",
                     "sku" : "sh-001",
                     "name" : "Soft Walk Ultra - Nibok Men's",
                     "salesPrice" : {
@@ -10355,56 +10428,10 @@ paths:
                         "templated" : true
                       },
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/44113a1f-9a62-4a81-956c-40eb16dcaca1"
+                        "href" : "https://yourshop.api.urn/product-view/products/95b70c08-436f-464b-a252-8ed67f17f81e"
                       },
                       "product" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/44113a1f-9a62-4a81-956c-40eb16dcaca1{?projection}",
-                        "templated" : true
-                      }
-                    }
-                  }, {
-                    "_id" : "d05b1bc5-d9a1-4fe6-84f1-5a3b21302997",
-                    "sku" : "vino020",
-                    "name" : "Rioja Castillo de Puerto (2013)",
-                    "salesPrice" : {
-                      "amount" : 8.7,
-                      "currency" : "EUR"
-                    },
-                    "listPrice" : {
-                      "amount" : 10.95,
-                      "currency" : "EUR"
-                    },
-                    "manufacturerPrice" : {
-                      "amount" : 99.95,
-                      "currency" : "EUR"
-                    },
-                    "onSale" : true,
-                    "listPriceText" : "Old Price",
-                    "shippingDimension" : {
-                      "length" : 1500,
-                      "width" : 1000,
-                      "height" : 2000
-                    },
-                    "refPrice" : {
-                      "refQuantity" : 1,
-                      "unit" : "LITER",
-                      "quantity" : 0.75,
-                      "price" : {
-                        "amount" : 11.6,
-                        "currency" : "EUR"
-                      }
-                    },
-                    "availabilityState" : "IN_STOCK",
-                    "_links" : {
-                      "default-image-data" : {
-                        "href" : "https://yourshop.api.urn/storage-api/images/rioja-01.jpg?hash=e9a1ce5c0c6abfebec8fb1f6faf77dca7e6e7777{&width,height,upscale}",
-                        "templated" : true
-                      },
-                      "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/d05b1bc5-d9a1-4fe6-84f1-5a3b21302997"
-                      },
-                      "product" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/d05b1bc5-d9a1-4fe6-84f1-5a3b21302997{?projection}",
+                        "href" : "https://yourshop.api.urn/product-view/products/95b70c08-436f-464b-a252-8ed67f17f81e{?projection}",
                         "templated" : true
                       }
                     }
@@ -10428,8 +10455,10 @@ paths:
     get:
       tags:
       - product-view
-      summary: List Product by Tags
-      description: ""
+      summary: List products by tags
+      description: Returns a list of products filtered by any tag (passed as a request
+        parameter) of the list given by a client. The intention is to offer product
+        search capabilities for the storefront.
       operationId: product-view-find-by-tags
       produces:
       - application/hal+json
@@ -10448,7 +10477,7 @@ paths:
               {
                 "_embedded" : {
                   "products" : [ {
-                    "_id" : "0b8d663f-2f40-47cb-b5dd-175e7054a406",
+                    "_id" : "0826e6f2-b07d-48cc-ae4b-c43261879bec",
                     "sku" : "vino020",
                     "name" : "Rioja Castillo de Puerto (2013)",
                     "salesPrice" : {
@@ -10486,10 +10515,10 @@ paths:
                         "templated" : true
                       },
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/0b8d663f-2f40-47cb-b5dd-175e7054a406"
+                        "href" : "https://yourshop.api.urn/product-view/products/0826e6f2-b07d-48cc-ae4b-c43261879bec"
                       },
                       "product" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/0b8d663f-2f40-47cb-b5dd-175e7054a406{?projection}",
+                        "href" : "https://yourshop.api.urn/product-view/products/0826e6f2-b07d-48cc-ae4b-c43261879bec{?projection}",
                         "templated" : true
                       }
                     }
@@ -10513,8 +10542,10 @@ paths:
     get:
       tags:
       - products
-      summary: List Products
-      description: ""
+      summary: List products
+      description: Returns a list of all products of the current shop in a paged manner.
+        The returned data is an excerpt projection, which includes a small subset
+        of product properties.
       operationId: products-list
       produces:
       - application/hal+json
@@ -10534,7 +10565,7 @@ paths:
                         "purchasable" : true,
                         "_links" : {
                           "self" : {
-                            "href" : "https://yourshop.api.urn/products/0c0e90f4-d9fa-4688-863c-cd04877011ee/availability"
+                            "href" : "https://yourshop.api.urn/products/8bfa8ed2-b293-461e-9d7d-18139927b697/availability"
                           }
                         }
                       }
@@ -10613,34 +10644,34 @@ paths:
                     "description" : "Spain\nRioja Tempranillo",
                     "manufacturer" : "Grape Vineyard",
                     "essentialFeatures" : "Dry. 12% alcohol. Best vine variety.",
-                    "_id" : "0c0e90f4-d9fa-4688-863c-cd04877011ee",
+                    "_id" : "8bfa8ed2-b293-461e-9d7d-18139927b697",
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/products/0c0e90f4-d9fa-4688-863c-cd04877011ee"
+                        "href" : "https://yourshop.api.urn/products/8bfa8ed2-b293-461e-9d7d-18139927b697"
                       },
                       "product" : {
-                        "href" : "https://yourshop.api.urn/products/0c0e90f4-d9fa-4688-863c-cd04877011ee"
+                        "href" : "https://yourshop.api.urn/products/8bfa8ed2-b293-461e-9d7d-18139927b697"
                       },
                       "availability" : {
-                        "href" : "https://yourshop.api.urn/products/0c0e90f4-d9fa-4688-863c-cd04877011ee/availability"
+                        "href" : "https://yourshop.api.urn/products/8bfa8ed2-b293-461e-9d7d-18139927b697/availability"
                       },
                       "attributes" : {
-                        "href" : "https://yourshop.api.urn/products/0c0e90f4-d9fa-4688-863c-cd04877011ee/attributes"
+                        "href" : "https://yourshop.api.urn/products/8bfa8ed2-b293-461e-9d7d-18139927b697/attributes"
                       },
                       "attachments" : {
-                        "href" : "https://yourshop.api.urn/products/0c0e90f4-d9fa-4688-863c-cd04877011ee/attachments"
+                        "href" : "https://yourshop.api.urn/products/8bfa8ed2-b293-461e-9d7d-18139927b697/attachments"
                       },
                       "images" : {
-                        "href" : "https://yourshop.api.urn/products/0c0e90f4-d9fa-4688-863c-cd04877011ee/images"
+                        "href" : "https://yourshop.api.urn/products/8bfa8ed2-b293-461e-9d7d-18139927b697/images"
                       },
                       "amazon" : {
-                        "href" : "http://amazon/amazon-products/0c0e90f4-d9fa-4688-863c-cd04877011ee"
+                        "href" : "http://amazon/amazon-products/8bfa8ed2-b293-461e-9d7d-18139927b697"
                       },
                       "google-shopping" : {
-                        "href" : "http://google-shopping/google-products/0c0e90f4-d9fa-4688-863c-cd04877011ee"
+                        "href" : "http://google-shopping/google-products/8bfa8ed2-b293-461e-9d7d-18139927b697"
                       },
                       "default-image" : {
-                        "href" : "https://yourshop.api.urn/products/0c0e90f4-d9fa-4688-863c-cd04877011ee/default-image"
+                        "href" : "https://yourshop.api.urn/products/8bfa8ed2-b293-461e-9d7d-18139927b697/default-image"
                       },
                       "default-image-data" : {
                         "href" : "https://yourshop.api.urn/api/core-storage/images/photostore-2.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225998{&width,height,upscale}",
@@ -10677,8 +10708,8 @@ paths:
     post:
       tags:
       - products
-      summary: Create Product
-      description: ""
+      summary: Create product
+      description: Creates a new product.
       operationId: products-create
       consumes:
       - application/json
@@ -10754,7 +10785,7 @@ paths:
                     "purchasable" : true,
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/products/0c818feb-6caa-4831-ae7c-48de2a9857db/availability"
+                        "href" : "https://yourshop.api.urn/products/025eff70-fdbe-4504-ba56-0be18d746fa6/availability"
                       }
                     }
                   }
@@ -10833,28 +10864,28 @@ paths:
                 "description" : "Spain\nRioja Tempranillo",
                 "manufacturer" : "Grape Vineyard",
                 "essentialFeatures" : "Dry. 12% alcohol. Best vine variety.",
-                "_id" : "0c818feb-6caa-4831-ae7c-48de2a9857db",
+                "_id" : "025eff70-fdbe-4504-ba56-0be18d746fa6",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/products/0c818feb-6caa-4831-ae7c-48de2a9857db"
+                    "href" : "https://yourshop.api.urn/products/025eff70-fdbe-4504-ba56-0be18d746fa6"
                   },
                   "product" : {
-                    "href" : "https://yourshop.api.urn/products/0c818feb-6caa-4831-ae7c-48de2a9857db"
+                    "href" : "https://yourshop.api.urn/products/025eff70-fdbe-4504-ba56-0be18d746fa6"
                   },
                   "availability" : {
-                    "href" : "https://yourshop.api.urn/products/0c818feb-6caa-4831-ae7c-48de2a9857db/availability"
+                    "href" : "https://yourshop.api.urn/products/025eff70-fdbe-4504-ba56-0be18d746fa6/availability"
                   },
                   "attributes" : {
-                    "href" : "https://yourshop.api.urn/products/0c818feb-6caa-4831-ae7c-48de2a9857db/attributes"
+                    "href" : "https://yourshop.api.urn/products/025eff70-fdbe-4504-ba56-0be18d746fa6/attributes"
                   },
                   "attachments" : {
-                    "href" : "https://yourshop.api.urn/products/0c818feb-6caa-4831-ae7c-48de2a9857db/attachments"
+                    "href" : "https://yourshop.api.urn/products/025eff70-fdbe-4504-ba56-0be18d746fa6/attachments"
                   },
                   "images" : {
-                    "href" : "https://yourshop.api.urn/products/0c818feb-6caa-4831-ae7c-48de2a9857db/images"
+                    "href" : "https://yourshop.api.urn/products/025eff70-fdbe-4504-ba56-0be18d746fa6/images"
                   },
                   "default-image" : {
-                    "href" : "https://yourshop.api.urn/products/0c818feb-6caa-4831-ae7c-48de2a9857db/default-image"
+                    "href" : "https://yourshop.api.urn/products/025eff70-fdbe-4504-ba56-0be18d746fa6/default-image"
                   }
                 }
               }
@@ -10867,8 +10898,8 @@ paths:
     get:
       tags:
       - products
-      summary: Get Product
-      description: ""
+      summary: Show product details
+      description: Returns the details of the product identified by {productId}.
       operationId: product-get
       produces:
       - application/hal+json
@@ -10892,7 +10923,7 @@ paths:
                     "purchasable" : true,
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/products/86eb6945-a927-4bf9-910d-edf0a372eb40/availability"
+                        "href" : "https://yourshop.api.urn/products/33f9072f-54d5-429d-9e5e-c617e0e855ae/availability"
                       }
                     }
                   }
@@ -10971,34 +11002,34 @@ paths:
                 "description" : "Spain\nRioja Tempranillo",
                 "manufacturer" : "Grape Vineyard",
                 "essentialFeatures" : "Dry. 12% alcohol. Best vine variety.",
-                "_id" : "86eb6945-a927-4bf9-910d-edf0a372eb40",
+                "_id" : "33f9072f-54d5-429d-9e5e-c617e0e855ae",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/products/86eb6945-a927-4bf9-910d-edf0a372eb40"
+                    "href" : "https://yourshop.api.urn/products/33f9072f-54d5-429d-9e5e-c617e0e855ae"
                   },
                   "product" : {
-                    "href" : "https://yourshop.api.urn/products/86eb6945-a927-4bf9-910d-edf0a372eb40"
+                    "href" : "https://yourshop.api.urn/products/33f9072f-54d5-429d-9e5e-c617e0e855ae"
                   },
                   "availability" : {
-                    "href" : "https://yourshop.api.urn/products/86eb6945-a927-4bf9-910d-edf0a372eb40/availability"
+                    "href" : "https://yourshop.api.urn/products/33f9072f-54d5-429d-9e5e-c617e0e855ae/availability"
                   },
                   "attributes" : {
-                    "href" : "https://yourshop.api.urn/products/86eb6945-a927-4bf9-910d-edf0a372eb40/attributes"
+                    "href" : "https://yourshop.api.urn/products/33f9072f-54d5-429d-9e5e-c617e0e855ae/attributes"
                   },
                   "attachments" : {
-                    "href" : "https://yourshop.api.urn/products/86eb6945-a927-4bf9-910d-edf0a372eb40/attachments"
+                    "href" : "https://yourshop.api.urn/products/33f9072f-54d5-429d-9e5e-c617e0e855ae/attachments"
                   },
                   "images" : {
-                    "href" : "https://yourshop.api.urn/products/86eb6945-a927-4bf9-910d-edf0a372eb40/images"
+                    "href" : "https://yourshop.api.urn/products/33f9072f-54d5-429d-9e5e-c617e0e855ae/images"
                   },
                   "amazon" : {
-                    "href" : "http://amazon/amazon-products/86eb6945-a927-4bf9-910d-edf0a372eb40"
+                    "href" : "http://amazon/amazon-products/33f9072f-54d5-429d-9e5e-c617e0e855ae"
                   },
                   "google-shopping" : {
-                    "href" : "http://google-shopping/google-products/86eb6945-a927-4bf9-910d-edf0a372eb40"
+                    "href" : "http://google-shopping/google-products/33f9072f-54d5-429d-9e5e-c617e0e855ae"
                   },
                   "default-image" : {
-                    "href" : "https://yourshop.api.urn/products/86eb6945-a927-4bf9-910d-edf0a372eb40/default-image"
+                    "href" : "https://yourshop.api.urn/products/33f9072f-54d5-429d-9e5e-c617e0e855ae/default-image"
                   },
                   "default-image-data" : {
                     "href" : "https://yourshop.api.urn/api/core-storage/images/photostore-2.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225998{&width,height,upscale}",
@@ -11010,7 +11041,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/products_productId-1659560350'
+            $ref: '#/definitions/products_search_find-by-sku-1659560350'
       security:
       - oauth2_accessCode:
         - prod:r
@@ -11019,8 +11050,8 @@ paths:
     delete:
       tags:
       - products
-      summary: Delete Product
-      description: ""
+      summary: Delete product
+      description: Deletes the product identified by {productId}.
       operationId: product-delete
       parameters:
       - name: productId
@@ -11040,8 +11071,9 @@ paths:
     patch:
       tags:
       - products
-      summary: Update Product
-      description: ""
+      summary: Update product partially (JSON)
+      description: Updates the product identified by {productId} partially with `application/json`
+        content type.
       operationId: product-patch-json
       consumes:
       - application/json
@@ -11110,7 +11142,7 @@ paths:
                     "purchasable" : true,
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/products/7d9657de-faea-470a-a5f5-14768b13e91d/availability"
+                        "href" : "https://yourshop.api.urn/products/cd5cd18a-8d27-4575-b3e1-fc3e219ea4f0/availability"
                       }
                     }
                   }
@@ -11186,28 +11218,28 @@ paths:
                 "description" : "patched description. <p><br></p><blockquote> <ol><li><strong>\n<h1></h1><h6></h6><em><a href=\"http://example.com\" target=\"_blank\"><u>this is my test html</u></a>\n</em></strong> </li></ol> </blockquote>",
                 "manufacturer" : "patched manufacturer",
                 "essentialFeatures" : "Dry. 12% alcohol. Best vine variety.",
-                "_id" : "7d9657de-faea-470a-a5f5-14768b13e91d",
+                "_id" : "cd5cd18a-8d27-4575-b3e1-fc3e219ea4f0",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/products/7d9657de-faea-470a-a5f5-14768b13e91d"
+                    "href" : "https://yourshop.api.urn/products/cd5cd18a-8d27-4575-b3e1-fc3e219ea4f0"
                   },
                   "product" : {
-                    "href" : "https://yourshop.api.urn/products/7d9657de-faea-470a-a5f5-14768b13e91d"
+                    "href" : "https://yourshop.api.urn/products/cd5cd18a-8d27-4575-b3e1-fc3e219ea4f0"
                   },
                   "availability" : {
-                    "href" : "https://yourshop.api.urn/products/7d9657de-faea-470a-a5f5-14768b13e91d/availability"
+                    "href" : "https://yourshop.api.urn/products/cd5cd18a-8d27-4575-b3e1-fc3e219ea4f0/availability"
                   },
                   "attributes" : {
-                    "href" : "https://yourshop.api.urn/products/7d9657de-faea-470a-a5f5-14768b13e91d/attributes"
+                    "href" : "https://yourshop.api.urn/products/cd5cd18a-8d27-4575-b3e1-fc3e219ea4f0/attributes"
                   },
                   "attachments" : {
-                    "href" : "https://yourshop.api.urn/products/7d9657de-faea-470a-a5f5-14768b13e91d/attachments"
+                    "href" : "https://yourshop.api.urn/products/cd5cd18a-8d27-4575-b3e1-fc3e219ea4f0/attachments"
                   },
                   "images" : {
-                    "href" : "https://yourshop.api.urn/products/7d9657de-faea-470a-a5f5-14768b13e91d/images"
+                    "href" : "https://yourshop.api.urn/products/cd5cd18a-8d27-4575-b3e1-fc3e219ea4f0/images"
                   },
                   "default-image" : {
-                    "href" : "https://yourshop.api.urn/products/7d9657de-faea-470a-a5f5-14768b13e91d/default-image"
+                    "href" : "https://yourshop.api.urn/products/cd5cd18a-8d27-4575-b3e1-fc3e219ea4f0/default-image"
                   }
                 }
               }
@@ -11221,7 +11253,8 @@ paths:
       tags:
       - products
       summary: Find a product by SKU
-      description: ""
+      description: Returns the product corresponding to the SKU passed as a request
+        parameter.
       operationId: products-search-findBySku
       produces:
       - application/hal+json
@@ -11246,7 +11279,7 @@ paths:
                     "purchasable" : true,
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/products/1efafc16-aadf-4969-aca0-e8adab2e277a/availability"
+                        "href" : "https://yourshop.api.urn/products/a4545360-e182-48a7-9c69-a908360370e7/availability"
                       }
                     }
                   }
@@ -11325,34 +11358,34 @@ paths:
                 "description" : "Spain\nRioja Tempranillo",
                 "manufacturer" : "Grape Vineyard",
                 "essentialFeatures" : "Dry. 12% alcohol. Best vine variety.",
-                "_id" : "1efafc16-aadf-4969-aca0-e8adab2e277a",
+                "_id" : "a4545360-e182-48a7-9c69-a908360370e7",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/products/1efafc16-aadf-4969-aca0-e8adab2e277a"
+                    "href" : "https://yourshop.api.urn/products/a4545360-e182-48a7-9c69-a908360370e7"
                   },
                   "product" : {
-                    "href" : "https://yourshop.api.urn/products/1efafc16-aadf-4969-aca0-e8adab2e277a"
+                    "href" : "https://yourshop.api.urn/products/a4545360-e182-48a7-9c69-a908360370e7"
                   },
                   "availability" : {
-                    "href" : "https://yourshop.api.urn/products/1efafc16-aadf-4969-aca0-e8adab2e277a/availability"
+                    "href" : "https://yourshop.api.urn/products/a4545360-e182-48a7-9c69-a908360370e7/availability"
                   },
                   "attributes" : {
-                    "href" : "https://yourshop.api.urn/products/1efafc16-aadf-4969-aca0-e8adab2e277a/attributes"
+                    "href" : "https://yourshop.api.urn/products/a4545360-e182-48a7-9c69-a908360370e7/attributes"
                   },
                   "attachments" : {
-                    "href" : "https://yourshop.api.urn/products/1efafc16-aadf-4969-aca0-e8adab2e277a/attachments"
+                    "href" : "https://yourshop.api.urn/products/a4545360-e182-48a7-9c69-a908360370e7/attachments"
                   },
                   "images" : {
-                    "href" : "https://yourshop.api.urn/products/1efafc16-aadf-4969-aca0-e8adab2e277a/images"
+                    "href" : "https://yourshop.api.urn/products/a4545360-e182-48a7-9c69-a908360370e7/images"
                   },
                   "amazon" : {
-                    "href" : "http://amazon/amazon-products/1efafc16-aadf-4969-aca0-e8adab2e277a"
+                    "href" : "http://amazon/amazon-products/a4545360-e182-48a7-9c69-a908360370e7"
                   },
                   "google-shopping" : {
-                    "href" : "http://google-shopping/google-products/1efafc16-aadf-4969-aca0-e8adab2e277a"
+                    "href" : "http://google-shopping/google-products/a4545360-e182-48a7-9c69-a908360370e7"
                   },
                   "default-image" : {
-                    "href" : "https://yourshop.api.urn/products/1efafc16-aadf-4969-aca0-e8adab2e277a/default-image"
+                    "href" : "https://yourshop.api.urn/products/a4545360-e182-48a7-9c69-a908360370e7/default-image"
                   },
                   "default-image-data" : {
                     "href" : "https://yourshop.api.urn/api/core-storage/images/photostore-2.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225998{&width,height,upscale}",
@@ -11364,7 +11397,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/products_productId-1659560350'
+            $ref: '#/definitions/products_search_find-by-sku-1659560350'
       security:
       - oauth2_accessCode:
         - prod:r
@@ -11375,7 +11408,9 @@ paths:
       tags:
       - products
       summary: Find used tags
-      description: ""
+      description: Searches used tags by a starting string. This string is passed
+        as a request parameter. All strings are sorted by usage, starting with the
+        most frequently used.
       operationId: find-tags-starts-with
       produces:
       - application/hal+json
@@ -11423,8 +11458,8 @@ paths:
     get:
       tags:
       - products
-      summary: List Product Attachments
-      description: ""
+      summary: List product attachments
+      description: Returns the attachments of the product identified by {productId}.
       operationId: product-attachments-list
       produces:
       - application/hal+json
@@ -11445,10 +11480,10 @@ paths:
                     "mimeType" : "application/pdf",
                     "length" : 1,
                     "label" : "Handbuch",
-                    "_id" : "8e6d029c-a90c-473c-b068-a58a974e439f",
+                    "_id" : "60328103-8682-44e3-a704-829ba0920674",
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/products/b8d9956b-01fd-48fb-ad07-475eb7c5834a/attachments/8e6d029c-a90c-473c-b068-a58a974e439f"
+                        "href" : "https://yourshop.api.urn/products/f031a912-1598-464d-bea6-d19b3c3c2b9b/attachments/60328103-8682-44e3-a704-829ba0920674"
                       },
                       "data" : {
                         "href" : "https://yourshop.api.urn/api/core-storage/attachments/1_my_attachment.pdf?hash=8a627f655c68f56dfbbf217ab7d5563281225801"
@@ -11457,17 +11492,17 @@ paths:
                         "href" : "https://yourshop.api.urn/api/core-storage/attachments/1_my_attachment.pdf?hash=8a627f655c68f56dfbbf217ab7d5563281225801&download=no"
                       },
                       "attachment" : {
-                        "href" : "https://yourshop.api.urn/products/b8d9956b-01fd-48fb-ad07-475eb7c5834a/attachments/8e6d029c-a90c-473c-b068-a58a974e439f"
+                        "href" : "https://yourshop.api.urn/products/f031a912-1598-464d-bea6-d19b3c3c2b9b/attachments/60328103-8682-44e3-a704-829ba0920674"
                       }
                     }
                   }, {
                     "mimeType" : "application/pdf",
                     "length" : 1,
                     "label" : "Handbuch",
-                    "_id" : "a96be8b2-d8cb-4892-8740-29ed2316ac82",
+                    "_id" : "bd82d764-a217-4435-856f-c08d82a62499",
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/products/b8d9956b-01fd-48fb-ad07-475eb7c5834a/attachments/a96be8b2-d8cb-4892-8740-29ed2316ac82"
+                        "href" : "https://yourshop.api.urn/products/f031a912-1598-464d-bea6-d19b3c3c2b9b/attachments/bd82d764-a217-4435-856f-c08d82a62499"
                       },
                       "data" : {
                         "href" : "https://yourshop.api.urn/api/core-storage/attachments/2_my_attachment.pdf?hash=8a627f655c68f56dfbbf217ab7d5563281225802"
@@ -11476,14 +11511,14 @@ paths:
                         "href" : "https://yourshop.api.urn/api/core-storage/attachments/2_my_attachment.pdf?hash=8a627f655c68f56dfbbf217ab7d5563281225802&download=no"
                       },
                       "attachment" : {
-                        "href" : "https://yourshop.api.urn/products/b8d9956b-01fd-48fb-ad07-475eb7c5834a/attachments/a96be8b2-d8cb-4892-8740-29ed2316ac82"
+                        "href" : "https://yourshop.api.urn/products/f031a912-1598-464d-bea6-d19b3c3c2b9b/attachments/bd82d764-a217-4435-856f-c08d82a62499"
                       }
                     }
                   } ]
                 },
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/products/b8d9956b-01fd-48fb-ad07-475eb7c5834a/attachments?page=0&size=20"
+                    "href" : "https://yourshop.api.urn/products/f031a912-1598-464d-bea6-d19b3c3c2b9b/attachments?page=0&size=20"
                   }
                 },
                 "page" : {
@@ -11494,7 +11529,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/products_productId_attachments884805373'
+            $ref: '#/definitions/products_productId_images884805373'
       security:
       - oauth2_accessCode:
         - prod:r
@@ -11503,8 +11538,9 @@ paths:
     post:
       tags:
       - products
-      summary: Create Product Attachment
-      description: ""
+      summary: Add product attachment
+      description: Creates an attachment, and adds it to the product identified by
+        {productId}.
       operationId: product-attachments-create
       consumes:
       - application/hal+json
@@ -11538,10 +11574,10 @@ paths:
                 "mimeType" : "application/pdf",
                 "length" : 1,
                 "label" : "Handbuch",
-                "_id" : "dfaaff3b-f435-4139-9950-b58e32bab540",
+                "_id" : "3764e3d9-15b1-4a73-b831-dcc5be9a1581",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/products/882a6936-5418-4d92-859f-cbd99ecfe0f0/attachments/dfaaff3b-f435-4139-9950-b58e32bab540"
+                    "href" : "https://yourshop.api.urn/products/286c99b9-7d99-48b9-a5bd-c69dd4c1574a/attachments/3764e3d9-15b1-4a73-b831-dcc5be9a1581"
                   },
                   "data" : {
                     "href" : "https://yourshop.api.urn/api/core-storage/attachments/my_document_1.pdf?hash=8a627f655c68f56dfbbf217ab7d5563281225666"
@@ -11550,7 +11586,7 @@ paths:
                     "href" : "https://yourshop.api.urn/api/core-storage/attachments/my_document_1.pdf?hash=8a627f655c68f56dfbbf217ab7d5563281225666&download=no"
                   },
                   "attachment" : {
-                    "href" : "https://yourshop.api.urn/products/882a6936-5418-4d92-859f-cbd99ecfe0f0/attachments/dfaaff3b-f435-4139-9950-b58e32bab540"
+                    "href" : "https://yourshop.api.urn/products/286c99b9-7d99-48b9-a5bd-c69dd4c1574a/attachments/3764e3d9-15b1-4a73-b831-dcc5be9a1581"
                   }
                 }
               }
@@ -11563,8 +11599,8 @@ paths:
     get:
       tags:
       - products
-      summary: List Custom Product Attributes
-      description: ""
+      summary: List product attributes for a product
+      description: Returns all product attributes for the product identified by {productId}.
       operationId: product-attributes-list
       produces:
       - application/hal+json
@@ -11582,38 +11618,38 @@ paths:
               {
                 "_embedded" : {
                   "attributes" : [ {
-                    "value" : "Jazz",
-                    "key" : "genre",
-                    "_links" : {
-                      "self" : {
-                        "href" : "https://yourshop.api.urn/products/b54931ec-8401-4481-bb34-1283ce45a7b5/attributes/genre"
-                      },
-                      "product" : {
-                        "href" : "https://yourshop.api.urn/products/b54931ec-8401-4481-bb34-1283ce45a7b5"
-                      },
-                      "product-attribute-definition" : {
-                        "href" : "https://yourshop.api.urn/product-attribute-definitions/9de619d7-096d-40f4-b6c9-0202d4d75dfd"
-                      }
-                    }
-                  }, {
                     "value" : "red",
                     "key" : "colour",
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/products/b54931ec-8401-4481-bb34-1283ce45a7b5/attributes/colour"
+                        "href" : "https://yourshop.api.urn/products/abc2f4eb-05f1-460f-9832-5caf1d7bacdb/attributes/colour"
                       },
                       "product" : {
-                        "href" : "https://yourshop.api.urn/products/b54931ec-8401-4481-bb34-1283ce45a7b5"
+                        "href" : "https://yourshop.api.urn/products/abc2f4eb-05f1-460f-9832-5caf1d7bacdb"
                       },
                       "product-attribute-definition" : {
-                        "href" : "https://yourshop.api.urn/product-attribute-definitions/ba89636a-1cbf-442a-99c1-7d779b3cee66"
+                        "href" : "https://yourshop.api.urn/product-attribute-definitions/1fbd9929-a85b-42bb-95dd-68b8cc2dde59"
+                      }
+                    }
+                  }, {
+                    "value" : "Jazz",
+                    "key" : "genre",
+                    "_links" : {
+                      "self" : {
+                        "href" : "https://yourshop.api.urn/products/abc2f4eb-05f1-460f-9832-5caf1d7bacdb/attributes/genre"
+                      },
+                      "product" : {
+                        "href" : "https://yourshop.api.urn/products/abc2f4eb-05f1-460f-9832-5caf1d7bacdb"
+                      },
+                      "product-attribute-definition" : {
+                        "href" : "https://yourshop.api.urn/product-attribute-definitions/41f81f24-bbf9-47df-b7cd-a9fdc5888d6d"
                       }
                     }
                   } ]
                 },
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/products/b54931ec-8401-4481-bb34-1283ce45a7b5/attributes?page=0&size=20"
+                    "href" : "https://yourshop.api.urn/products/abc2f4eb-05f1-460f-9832-5caf1d7bacdb/attributes?page=0&size=20"
                   }
                 },
                 "page" : {
@@ -11633,8 +11669,9 @@ paths:
     post:
       tags:
       - products
-      summary: Create Custom Product Attribute of type NUMBER with name
-      description: ""
+      summary: Create product attribute of type NUMBER
+      description: Creates a product attribute of type NUMBER from an existing product
+        attribute definition. The `key` of the definition needs to be specified.
       operationId: product-attribute-create-number-with-name
       consumes:
       - application/json
@@ -11667,13 +11704,13 @@ paths:
                 "key" : "filling_capacity",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/products/ee547c08-0d42-43ab-ab47-251364065d2f/attributes/filling_capacity"
+                    "href" : "https://yourshop.api.urn/products/63c09349-55ed-4a1d-9ce2-e865e71cbbaf/attributes/filling_capacity"
                   },
                   "product" : {
-                    "href" : "https://yourshop.api.urn/products/ee547c08-0d42-43ab-ab47-251364065d2f"
+                    "href" : "https://yourshop.api.urn/products/63c09349-55ed-4a1d-9ce2-e865e71cbbaf"
                   },
                   "product-attribute-definition" : {
-                    "href" : "https://yourshop.api.urn/product-attribute-definitions/1971ffb2-a99f-456a-852a-46e5e93a9a34"
+                    "href" : "https://yourshop.api.urn/product-attribute-definitions/90b13e44-2d33-4c27-be8f-0598b936dbbd"
                   }
                 }
               }
@@ -11686,8 +11723,8 @@ paths:
     get:
       tags:
       - products
-      summary: Get Product Availability
-      description: ""
+      summary: Show product availability details
+      description: Returns the availability of the product identified by {productId}.
       operationId: product-availability-get
       produces:
       - application/hal+json
@@ -11709,22 +11746,22 @@ paths:
                 "purchasable" : true,
                 "_links" : {
                   "product" : {
-                    "href" : "https://yourshop.api.urn/products/5774a8da-dad4-4c38-9573-1ee2176802dc"
+                    "href" : "https://yourshop.api.urn/products/814f3c42-c956-47bc-8275-0768ffa2272c"
                   },
                   "self" : {
-                    "href" : "https://yourshop.api.urn/products/5774a8da-dad4-4c38-9573-1ee2176802dc/availability"
+                    "href" : "https://yourshop.api.urn/products/814f3c42-c956-47bc-8275-0768ffa2272c/availability"
                   },
                   "disable-purchasability" : {
-                    "href" : "https://yourshop.api.urn/products/5774a8da-dad4-4c38-9573-1ee2176802dc/availability/disable-purchasability"
+                    "href" : "https://yourshop.api.urn/products/814f3c42-c956-47bc-8275-0768ffa2272c/availability/disable-purchasability"
                   },
                   "adjust-available-stock" : {
-                    "href" : "https://yourshop.api.urn/products/5774a8da-dad4-4c38-9573-1ee2176802dc/availability/adjust-available-stock"
+                    "href" : "https://yourshop.api.urn/products/814f3c42-c956-47bc-8275-0768ffa2272c/availability/adjust-available-stock"
                   },
                   "update-stock-threshold" : {
-                    "href" : "https://yourshop.api.urn/products/5774a8da-dad4-4c38-9573-1ee2176802dc/availability/update-stock-threshold"
+                    "href" : "https://yourshop.api.urn/products/814f3c42-c956-47bc-8275-0768ffa2272c/availability/update-stock-threshold"
                   },
                   "disable-stock-management" : {
-                    "href" : "https://yourshop.api.urn/products/5774a8da-dad4-4c38-9573-1ee2176802dc/availability/disable-stock-management"
+                    "href" : "https://yourshop.api.urn/products/814f3c42-c956-47bc-8275-0768ffa2272c/availability/disable-stock-management"
                   }
                 }
               }
@@ -11739,8 +11776,9 @@ paths:
     put:
       tags:
       - products
-      summary: Set Default Product Image
-      description: ""
+      summary: Assign product image as default image
+      description: Assigns a product image as the default for the product identified
+        by {productId}. The request contains a single URI of the image to assign.
       operationId: product-images-set-default
       consumes:
       - text/uri-list
@@ -11754,9 +11792,9 @@ paths:
         name: ""
         required: false
         schema:
-          $ref: '#/definitions/products_productId_default-image818678903'
+          $ref: '#/definitions/products_productId_default-image950672999'
         x-examples:
-          text/uri-list: http://localhost/products/images/0c02f626-27b0-4eb8-bc9c-76737995f535
+          text/uri-list: http://localhost/products/images/ba36acb4-30b3-4278-a513-428aeaf43e80
       responses:
         204:
           description: ""
@@ -11770,8 +11808,8 @@ paths:
     get:
       tags:
       - products
-      summary: List Product Images
-      description: ""
+      summary: List product images
+      description: Returns a list of the images for the product identified by {productId}.
       operationId: product-images-list
       produces:
       - application/hal+json
@@ -11789,10 +11827,10 @@ paths:
               {
                 "_embedded" : {
                   "images" : [ {
-                    "_id" : "7d075de4-f6e3-49da-82b6-f441a1e4ef44",
+                    "_id" : "0fb50888-8504-4301-a865-1ac7d0e94574",
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/products/e9c7ad7a-ade7-47ca-9df4-186185c8dc71/images/7d075de4-f6e3-49da-82b6-f441a1e4ef44"
+                        "href" : "https://yourshop.api.urn/products/c247d6ee-622a-47fd-88de-16bc2543d5e5/images/0fb50888-8504-4301-a865-1ac7d0e94574"
                       },
                       "data" : {
                         "href" : "https://yourshop.api.urn/api/core-storage/images/photostore-2.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225998{&width,height,upscale}",
@@ -11802,14 +11840,14 @@ paths:
                         "href" : "https://yourshop.api.urn/api/core-storage/images/photostore-2.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225998&download=no"
                       },
                       "image" : {
-                        "href" : "https://yourshop.api.urn/products/e9c7ad7a-ade7-47ca-9df4-186185c8dc71/images/7d075de4-f6e3-49da-82b6-f441a1e4ef44"
+                        "href" : "https://yourshop.api.urn/products/c247d6ee-622a-47fd-88de-16bc2543d5e5/images/0fb50888-8504-4301-a865-1ac7d0e94574"
                       }
                     }
                   }, {
-                    "_id" : "b9fff555-8324-4ab7-8858-1a961189e48e",
+                    "_id" : "e02e85f0-eede-43f4-a128-03293f672c1c",
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/products/e9c7ad7a-ade7-47ca-9df4-186185c8dc71/images/b9fff555-8324-4ab7-8858-1a961189e48e"
+                        "href" : "https://yourshop.api.urn/products/c247d6ee-622a-47fd-88de-16bc2543d5e5/images/e02e85f0-eede-43f4-a128-03293f672c1c"
                       },
                       "data" : {
                         "href" : "https://yourshop.api.urn/api/core-storage/images/photostore-3.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225999{&width,height,upscale}",
@@ -11819,14 +11857,14 @@ paths:
                         "href" : "https://yourshop.api.urn/api/core-storage/images/photostore-3.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225999&download=no"
                       },
                       "image" : {
-                        "href" : "https://yourshop.api.urn/products/e9c7ad7a-ade7-47ca-9df4-186185c8dc71/images/b9fff555-8324-4ab7-8858-1a961189e48e"
+                        "href" : "https://yourshop.api.urn/products/c247d6ee-622a-47fd-88de-16bc2543d5e5/images/e02e85f0-eede-43f4-a128-03293f672c1c"
                       }
                     }
                   } ]
                 },
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/products/e9c7ad7a-ade7-47ca-9df4-186185c8dc71/images?page=0&size=20"
+                    "href" : "https://yourshop.api.urn/products/c247d6ee-622a-47fd-88de-16bc2543d5e5/images?page=0&size=20"
                   }
                 },
                 "page" : {
@@ -11837,7 +11875,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/products_productId_attachments884805373'
+            $ref: '#/definitions/products_productId_images884805373'
       security:
       - oauth2_accessCode:
         - prod:r
@@ -11846,8 +11884,8 @@ paths:
     post:
       tags:
       - products
-      summary: Create Product Image
-      description: ""
+      summary: Add product image
+      description: Creates an image, and adds it to the product identified by {productId}.
       operationId: product-images-create
       consumes:
       - application/hal+json
@@ -13111,10 +13149,10 @@ paths:
           examples:
             application/hal+json: |-
               {
-                "_id" : "41390c74-731f-45ba-aef9-cc11850a59ec",
+                "_id" : "10c5dca8-d873-4b36-9e66-2f7e116116be",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/products/ef6f686c-e030-4f01-aae4-76ab86f4229d/images/41390c74-731f-45ba-aef9-cc11850a59ec"
+                    "href" : "https://yourshop.api.urn/products/35dd5226-5610-43df-9bcd-9952c9aaa133/images/10c5dca8-d873-4b36-9e66-2f7e116116be"
                   },
                   "data" : {
                     "href" : "https://yourshop.api.urn/api/core-storage/images/photostore-2.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225998{&width,height,upscale}",
@@ -13124,7 +13162,7 @@ paths:
                     "href" : "https://yourshop.api.urn/api/core-storage/images/photostore-2.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225998&download=no"
                   },
                   "image" : {
-                    "href" : "https://yourshop.api.urn/products/ef6f686c-e030-4f01-aae4-76ab86f4229d/images/41390c74-731f-45ba-aef9-cc11850a59ec"
+                    "href" : "https://yourshop.api.urn/products/35dd5226-5610-43df-9bcd-9952c9aaa133/images/10c5dca8-d873-4b36-9e66-2f7e116116be"
                   }
                 }
               }
@@ -13137,8 +13175,9 @@ paths:
     get:
       tags:
       - products
-      summary: Get Product Attachment
-      description: ""
+      summary: Show product attachment details
+      description: Returns details for the single attachment identified by {attachmentId}
+        of the product identified by {productId}.
       operationId: product-attachment-get
       produces:
       - application/hal+json
@@ -13162,10 +13201,10 @@ paths:
                 "mimeType" : "application/pdf",
                 "length" : 1,
                 "label" : "Handbuch",
-                "_id" : "52dda8c6-a4ad-4cfc-a4db-ca696b2a1822",
+                "_id" : "9e55aabb-836c-4d48-b7af-604b4a709044",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/products/7da0b9db-2423-488e-8422-7ac20428580b/attachments/52dda8c6-a4ad-4cfc-a4db-ca696b2a1822"
+                    "href" : "https://yourshop.api.urn/products/e58e6655-9962-427f-9f26-89660011cb99/attachments/9e55aabb-836c-4d48-b7af-604b4a709044"
                   },
                   "data" : {
                     "href" : "https://yourshop.api.urn/api/core-storage/attachments/1_my_attachment.pdf?hash=8a627f655c68f56dfbbf217ab7d5563281225801"
@@ -13174,7 +13213,7 @@ paths:
                     "href" : "https://yourshop.api.urn/api/core-storage/attachments/1_my_attachment.pdf?hash=8a627f655c68f56dfbbf217ab7d5563281225801&download=no"
                   },
                   "attachment" : {
-                    "href" : "https://yourshop.api.urn/products/7da0b9db-2423-488e-8422-7ac20428580b/attachments/52dda8c6-a4ad-4cfc-a4db-ca696b2a1822"
+                    "href" : "https://yourshop.api.urn/products/e58e6655-9962-427f-9f26-89660011cb99/attachments/9e55aabb-836c-4d48-b7af-604b4a709044"
                   }
                 }
               }
@@ -13188,8 +13227,9 @@ paths:
     delete:
       tags:
       - products
-      summary: Delete Product Attachment
-      description: ""
+      summary: Delete product attachment
+      description: Deletes the single attachment identified by {attachmentId} of the
+        product identified by {productId}.
       operationId: product-attachment-delete
       parameters:
       - name: productId
@@ -13215,8 +13255,9 @@ paths:
     get:
       tags:
       - products
-      summary: Get Product Attribute of type NUMBER
-      description: ""
+      summary: Show product attribute of type NUMBER
+      description: Returns a product attribute of type NUMBER by `key` for the product
+        identified by {productId}.
       operationId: product-attribute-get-number
       produces:
       - application/hal+json
@@ -13241,13 +13282,13 @@ paths:
                 "key" : "size",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/products/b521b8e5-45f3-4198-bde5-76ea18974594/attributes/size"
+                    "href" : "https://yourshop.api.urn/products/5548ce25-125d-4cb9-9faa-4ba74d657fd1/attributes/size"
                   },
                   "product" : {
-                    "href" : "https://yourshop.api.urn/products/b521b8e5-45f3-4198-bde5-76ea18974594"
+                    "href" : "https://yourshop.api.urn/products/5548ce25-125d-4cb9-9faa-4ba74d657fd1"
                   },
                   "product-attribute-definition" : {
-                    "href" : "https://yourshop.api.urn/product-attribute-definitions/ce18f556-85d1-4ff2-a291-e08f02d7edbe"
+                    "href" : "https://yourshop.api.urn/product-attribute-definitions/8f7b3de5-2f27-4851-8625-e81d5af36399"
                   }
                 }
               }
@@ -13261,8 +13302,9 @@ paths:
     delete:
       tags:
       - products
-      summary: Delete Custom Product Attribute
-      description: ""
+      summary: Delete product attribute
+      description: Deletes a product attribute by `key` for the product identified
+        by {productId}.
       operationId: product-attribute-delete
       parameters:
       - name: productId
@@ -13288,8 +13330,8 @@ paths:
     post:
       tags:
       - products
-      summary: Adjust Stock Level
-      description: ""
+      summary: Adjust stock level
+      description: Adjusts the available stock of the product identified by {productId}.
       operationId: product-availability-adjust-available-stock
       consumes:
       - application/json
@@ -13320,22 +13362,22 @@ paths:
                 "purchasable" : true,
                 "_links" : {
                   "product" : {
-                    "href" : "https://yourshop.api.urn/products/ddba6c33-b53f-4140-8560-84135c473378"
+                    "href" : "https://yourshop.api.urn/products/1d4790d6-7bfa-4e5f-8203-ace9e0f17446"
                   },
                   "self" : {
-                    "href" : "https://yourshop.api.urn/products/ddba6c33-b53f-4140-8560-84135c473378/availability"
+                    "href" : "https://yourshop.api.urn/products/1d4790d6-7bfa-4e5f-8203-ace9e0f17446/availability"
                   },
                   "disable-purchasability" : {
-                    "href" : "https://yourshop.api.urn/products/ddba6c33-b53f-4140-8560-84135c473378/availability/disable-purchasability"
+                    "href" : "https://yourshop.api.urn/products/1d4790d6-7bfa-4e5f-8203-ace9e0f17446/availability/disable-purchasability"
                   },
                   "adjust-available-stock" : {
-                    "href" : "https://yourshop.api.urn/products/ddba6c33-b53f-4140-8560-84135c473378/availability/adjust-available-stock"
+                    "href" : "https://yourshop.api.urn/products/1d4790d6-7bfa-4e5f-8203-ace9e0f17446/availability/adjust-available-stock"
                   },
                   "update-stock-threshold" : {
-                    "href" : "https://yourshop.api.urn/products/ddba6c33-b53f-4140-8560-84135c473378/availability/update-stock-threshold"
+                    "href" : "https://yourshop.api.urn/products/1d4790d6-7bfa-4e5f-8203-ace9e0f17446/availability/update-stock-threshold"
                   },
                   "disable-stock-management" : {
-                    "href" : "https://yourshop.api.urn/products/ddba6c33-b53f-4140-8560-84135c473378/availability/disable-stock-management"
+                    "href" : "https://yourshop.api.urn/products/1d4790d6-7bfa-4e5f-8203-ace9e0f17446/availability/disable-stock-management"
                   }
                 }
               }
@@ -13348,8 +13390,8 @@ paths:
     post:
       tags:
       - products
-      summary: Disable Purchasability
-      description: ""
+      summary: Disable purchasability
+      description: Disables the purchasability for the product identified by {productId}.
       operationId: product-availability-disable-purchasability
       produces:
       - application/hal+json
@@ -13371,16 +13413,16 @@ paths:
                 "purchasable" : false,
                 "_links" : {
                   "product" : {
-                    "href" : "https://yourshop.api.urn/products/3686781d-879b-4365-9c5f-3bc7872f8d25"
+                    "href" : "https://yourshop.api.urn/products/8de964d1-120f-46f6-bde1-08b1b365320f"
                   },
                   "self" : {
-                    "href" : "https://yourshop.api.urn/products/3686781d-879b-4365-9c5f-3bc7872f8d25/availability"
+                    "href" : "https://yourshop.api.urn/products/8de964d1-120f-46f6-bde1-08b1b365320f/availability"
                   },
                   "enable-purchasability" : {
-                    "href" : "https://yourshop.api.urn/products/3686781d-879b-4365-9c5f-3bc7872f8d25/availability/enable-purchasability"
+                    "href" : "https://yourshop.api.urn/products/8de964d1-120f-46f6-bde1-08b1b365320f/availability/enable-purchasability"
                   },
                   "enable-stock-management" : {
-                    "href" : "https://yourshop.api.urn/products/3686781d-879b-4365-9c5f-3bc7872f8d25/availability/enable-stock-management"
+                    "href" : "https://yourshop.api.urn/products/8de964d1-120f-46f6-bde1-08b1b365320f/availability/enable-stock-management"
                   }
                 }
               }
@@ -13393,8 +13435,8 @@ paths:
     post:
       tags:
       - products
-      summary: Disable Stock Management
-      description: ""
+      summary: Disable stock management
+      description: Disables the stock management for the product identified by {productId}.
       operationId: product-availability-disable-stock-management
       produces:
       - application/hal+json
@@ -13416,16 +13458,16 @@ paths:
                 "purchasable" : true,
                 "_links" : {
                   "product" : {
-                    "href" : "https://yourshop.api.urn/products/bc194789-eca0-4c3d-99e2-9b3b8e3576fe"
+                    "href" : "https://yourshop.api.urn/products/3f8b0375-baa5-4d25-becf-c7673a54bc9a"
                   },
                   "self" : {
-                    "href" : "https://yourshop.api.urn/products/bc194789-eca0-4c3d-99e2-9b3b8e3576fe/availability"
+                    "href" : "https://yourshop.api.urn/products/3f8b0375-baa5-4d25-becf-c7673a54bc9a/availability"
                   },
                   "disable-purchasability" : {
-                    "href" : "https://yourshop.api.urn/products/bc194789-eca0-4c3d-99e2-9b3b8e3576fe/availability/disable-purchasability"
+                    "href" : "https://yourshop.api.urn/products/3f8b0375-baa5-4d25-becf-c7673a54bc9a/availability/disable-purchasability"
                   },
                   "enable-stock-management" : {
-                    "href" : "https://yourshop.api.urn/products/bc194789-eca0-4c3d-99e2-9b3b8e3576fe/availability/enable-stock-management"
+                    "href" : "https://yourshop.api.urn/products/3f8b0375-baa5-4d25-becf-c7673a54bc9a/availability/enable-stock-management"
                   }
                 }
               }
@@ -13438,8 +13480,8 @@ paths:
     post:
       tags:
       - products
-      summary: Enable Purchasability
-      description: ""
+      summary: Enable purchasability
+      description: Enables the purchasability for the product identified by {productId}.
       operationId: product-availability-enable-purchasability
       produces:
       - application/hal+json
@@ -13461,16 +13503,16 @@ paths:
                 "purchasable" : true,
                 "_links" : {
                   "product" : {
-                    "href" : "https://yourshop.api.urn/products/8fe49545-5fcc-411f-8f3c-9fe4fb3f8820"
+                    "href" : "https://yourshop.api.urn/products/6d8c54ef-0c2c-4248-bf59-8742acc88968"
                   },
                   "self" : {
-                    "href" : "https://yourshop.api.urn/products/8fe49545-5fcc-411f-8f3c-9fe4fb3f8820/availability"
+                    "href" : "https://yourshop.api.urn/products/6d8c54ef-0c2c-4248-bf59-8742acc88968/availability"
                   },
                   "disable-purchasability" : {
-                    "href" : "https://yourshop.api.urn/products/8fe49545-5fcc-411f-8f3c-9fe4fb3f8820/availability/disable-purchasability"
+                    "href" : "https://yourshop.api.urn/products/6d8c54ef-0c2c-4248-bf59-8742acc88968/availability/disable-purchasability"
                   },
                   "enable-stock-management" : {
-                    "href" : "https://yourshop.api.urn/products/8fe49545-5fcc-411f-8f3c-9fe4fb3f8820/availability/enable-stock-management"
+                    "href" : "https://yourshop.api.urn/products/6d8c54ef-0c2c-4248-bf59-8742acc88968/availability/enable-stock-management"
                   }
                 }
               }
@@ -13483,8 +13525,8 @@ paths:
     post:
       tags:
       - products
-      summary: Enable Stock Management
-      description: ""
+      summary: Enable stock management
+      description: Enables the stock management for the product identified by {productId}.
       operationId: product-availability-enable-stock-management
       consumes:
       - application/json
@@ -13516,22 +13558,22 @@ paths:
                 "purchasable" : true,
                 "_links" : {
                   "product" : {
-                    "href" : "https://yourshop.api.urn/products/d08c8670-1bcf-4db1-90cb-6bcb54607f88"
+                    "href" : "https://yourshop.api.urn/products/6a4db0ea-621e-48b6-8cf9-89f7e073b4db"
                   },
                   "self" : {
-                    "href" : "https://yourshop.api.urn/products/d08c8670-1bcf-4db1-90cb-6bcb54607f88/availability"
+                    "href" : "https://yourshop.api.urn/products/6a4db0ea-621e-48b6-8cf9-89f7e073b4db/availability"
                   },
                   "disable-purchasability" : {
-                    "href" : "https://yourshop.api.urn/products/d08c8670-1bcf-4db1-90cb-6bcb54607f88/availability/disable-purchasability"
+                    "href" : "https://yourshop.api.urn/products/6a4db0ea-621e-48b6-8cf9-89f7e073b4db/availability/disable-purchasability"
                   },
                   "adjust-available-stock" : {
-                    "href" : "https://yourshop.api.urn/products/d08c8670-1bcf-4db1-90cb-6bcb54607f88/availability/adjust-available-stock"
+                    "href" : "https://yourshop.api.urn/products/6a4db0ea-621e-48b6-8cf9-89f7e073b4db/availability/adjust-available-stock"
                   },
                   "update-stock-threshold" : {
-                    "href" : "https://yourshop.api.urn/products/d08c8670-1bcf-4db1-90cb-6bcb54607f88/availability/update-stock-threshold"
+                    "href" : "https://yourshop.api.urn/products/6a4db0ea-621e-48b6-8cf9-89f7e073b4db/availability/update-stock-threshold"
                   },
                   "disable-stock-management" : {
-                    "href" : "https://yourshop.api.urn/products/d08c8670-1bcf-4db1-90cb-6bcb54607f88/availability/disable-stock-management"
+                    "href" : "https://yourshop.api.urn/products/6a4db0ea-621e-48b6-8cf9-89f7e073b4db/availability/disable-stock-management"
                   }
                 }
               }
@@ -13544,8 +13586,10 @@ paths:
     post:
       tags:
       - products
-      summary: Update Reserve Stock
-      description: ""
+      summary: Update reserve stock
+      description: Updates the reserve stock by amending the `stockThreshold` value
+        of a product. Reserve stock refers to an inventory level that indicates that
+        a product needs to be reordered.
       operationId: product-availability-update-stock-threshold
       consumes:
       - application/json
@@ -13576,22 +13620,22 @@ paths:
                 "purchasable" : true,
                 "_links" : {
                   "product" : {
-                    "href" : "https://yourshop.api.urn/products/10b910c8-6287-4239-bf14-2fcfdf2cd7d5"
+                    "href" : "https://yourshop.api.urn/products/05ac6d59-9204-4cac-8e16-75cfd80d9e0e"
                   },
                   "self" : {
-                    "href" : "https://yourshop.api.urn/products/10b910c8-6287-4239-bf14-2fcfdf2cd7d5/availability"
+                    "href" : "https://yourshop.api.urn/products/05ac6d59-9204-4cac-8e16-75cfd80d9e0e/availability"
                   },
                   "disable-purchasability" : {
-                    "href" : "https://yourshop.api.urn/products/10b910c8-6287-4239-bf14-2fcfdf2cd7d5/availability/disable-purchasability"
+                    "href" : "https://yourshop.api.urn/products/05ac6d59-9204-4cac-8e16-75cfd80d9e0e/availability/disable-purchasability"
                   },
                   "adjust-available-stock" : {
-                    "href" : "https://yourshop.api.urn/products/10b910c8-6287-4239-bf14-2fcfdf2cd7d5/availability/adjust-available-stock"
+                    "href" : "https://yourshop.api.urn/products/05ac6d59-9204-4cac-8e16-75cfd80d9e0e/availability/adjust-available-stock"
                   },
                   "update-stock-threshold" : {
-                    "href" : "https://yourshop.api.urn/products/10b910c8-6287-4239-bf14-2fcfdf2cd7d5/availability/update-stock-threshold"
+                    "href" : "https://yourshop.api.urn/products/05ac6d59-9204-4cac-8e16-75cfd80d9e0e/availability/update-stock-threshold"
                   },
                   "disable-stock-management" : {
-                    "href" : "https://yourshop.api.urn/products/10b910c8-6287-4239-bf14-2fcfdf2cd7d5/availability/disable-stock-management"
+                    "href" : "https://yourshop.api.urn/products/05ac6d59-9204-4cac-8e16-75cfd80d9e0e/availability/disable-stock-management"
                   }
                 }
               }
@@ -13604,8 +13648,9 @@ paths:
     get:
       tags:
       - products
-      summary: Get Product Image
-      description: ""
+      summary: Show product image details
+      description: Returns details for the image identified by {imageId} of the product
+        identified by {productId}.
       operationId: product-image-get
       produces:
       - application/hal+json
@@ -13626,10 +13671,10 @@ paths:
           examples:
             application/hal+json: |-
               {
-                "_id" : "c7c9c046-78f4-4723-ae8c-99414f3a7bfe",
+                "_id" : "4d192a61-c443-4b3f-87d7-07edb5fdd260",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/products/cfbe0e47-57ce-4d54-bd2c-a0f978d329e7/images/c7c9c046-78f4-4723-ae8c-99414f3a7bfe"
+                    "href" : "https://yourshop.api.urn/products/ffde7324-6b81-4909-8575-bd54e570c997/images/4d192a61-c443-4b3f-87d7-07edb5fdd260"
                   },
                   "data" : {
                     "href" : "https://yourshop.api.urn/api/core-storage/images/photostore-2.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225998{&width,height,upscale}",
@@ -13639,7 +13684,7 @@ paths:
                     "href" : "https://yourshop.api.urn/api/core-storage/images/photostore-2.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225998&download=no"
                   },
                   "image" : {
-                    "href" : "https://yourshop.api.urn/products/cfbe0e47-57ce-4d54-bd2c-a0f978d329e7/images/c7c9c046-78f4-4723-ae8c-99414f3a7bfe"
+                    "href" : "https://yourshop.api.urn/products/ffde7324-6b81-4909-8575-bd54e570c997/images/4d192a61-c443-4b3f-87d7-07edb5fdd260"
                   }
                 }
               }
@@ -13653,8 +13698,9 @@ paths:
     delete:
       tags:
       - products
-      summary: Delete Product Image
-      description: ""
+      summary: Delete product image
+      description: Deletes the image identified by {imageId} of the product identified
+        by {productId}.
       operationId: product-image-delete
       parameters:
       - name: productId
@@ -14580,8 +14626,8 @@ paths:
     get:
       tags:
       - shop
-      summary: Get Shop
-      description: ""
+      summary: Show shop details
+      description: Returns the details of the current shop.
       operationId: merchant-shop-get
       produces:
       - application/hal+json
@@ -14600,13 +14646,13 @@ paths:
                   "vatExempted" : false,
                   "country" : "GB"
                 },
-                "currencies" : [ "EUR", "GBP" ],
+                "currencies" : [ "GBP", "EUR" ],
                 "defaultCurrency" : "EUR",
-                "locales" : [ "de-DE", "en-GB" ],
+                "locales" : [ "en-GB", "de-DE" ],
                 "defaultLocale" : "en-GB",
                 "closedByMerchant" : false,
                 "resellerName" : "epages",
-                "_id" : "9b0c12cd-6bc1-4523-b1f8-5dc6c44a7043",
+                "_id" : "501ad398-005b-47dd-a29b-444736c68fb2",
                 "_links" : {
                   "self" : {
                     "href" : "https://yourshop.api.urn/shop"
@@ -14636,8 +14682,8 @@ paths:
     patch:
       tags:
       - shop
-      summary: Update Shop
-      description: ""
+      summary: Update shop
+      description: Changes attributes of the current shop.
       operationId: merchant-shop-update
       consumes:
       - application/json
@@ -14649,7 +14695,7 @@ paths:
         name: ""
         required: false
         schema:
-          $ref: '#/definitions/shop-1182683528'
+          $ref: '#/definitions/shop-1300333684'
         x-examples:
           application/json: |-
             {
@@ -14661,9 +14707,9 @@ paths:
                 "taxModel" : "GROSS",
                 "vatExempted" : false
               },
-              "currencies" : [ "EUR", "USD", "GBP" ],
+              "currencies" : [ "GBP", "EUR", "USD" ],
               "defaultCurrency" : "USD",
-              "locales" : [ "de-DE", "en-GB" ],
+              "locales" : [ "en-GB", "de-DE" ],
               "defaultLocale" : "en-GB",
               "closedByMerchant" : false
             }
@@ -14688,13 +14734,13 @@ paths:
                   "vatExempted" : false,
                   "country" : null
                 },
-                "currencies" : [ "EUR", "USD", "GBP" ],
+                "currencies" : [ "GBP", "EUR", "USD" ],
                 "defaultCurrency" : "USD",
-                "locales" : [ "de-DE", "en-GB" ],
+                "locales" : [ "en-GB", "de-DE" ],
                 "defaultLocale" : "en-GB",
                 "closedByMerchant" : false,
                 "resellerName" : "epages",
-                "_id" : "19eea044-e666-48b8-931d-3185890bc496",
+                "_id" : "2ddd807a-fedf-4a27-bbfa-d001192d938a",
                 "_links" : {
                   "self" : {
                     "href" : "https://yourshop.api.urn/shop"
@@ -14728,8 +14774,8 @@ paths:
     get:
       tags:
       - shop
-      summary: Get Merchant Address
-      description: ""
+      summary: Show address details
+      description: Returns the details of the current shop address.
       operationId: merchant-address-get
       produces:
       - application/hal+json
@@ -14773,8 +14819,9 @@ paths:
     patch:
       tags:
       - shop
-      summary: Update Merchant Address
-      description: ""
+      summary: Update address partially with tenant context (JSON patch)
+      description: Updates the current shop address partially with `application/json-patch`
+        content type.
       operationId: merchant-address-jsonpatch
       consumes:
       - application/json-patch+json
@@ -14839,8 +14886,8 @@ paths:
     get:
       tags:
       - shop
-      summary: List Merchant Shop Attributes
-      description: ""
+      summary: List shop attributes
+      description: Returns a list of all attributes of the current shop.
       operationId: merchant-shop-attribute-get-list
       produces:
       - application/hal+json
@@ -14888,8 +14935,8 @@ paths:
     post:
       tags:
       - shop
-      summary: Create Merchant Shop Attribute
-      description: ""
+      summary: Create shop attribute
+      description: Creates a shop attribute for the current shop.
       operationId: merchant-shop-attribute-create
       consumes:
       - application/json
@@ -14936,8 +14983,8 @@ paths:
     post:
       tags:
       - shop
-      summary: Close Shop
-      description: ""
+      summary: Close shop
+      description: Closes the current shop.
       operationId: merchant-shop-close
       responses:
         204:
@@ -14952,8 +14999,8 @@ paths:
     get:
       tags:
       - shop
-      summary: List Shop Features
-      description: ""
+      summary: List shop features
+      description: Returns a list of the features of the current shop.
       operationId: shop-feature-get-list
       produces:
       - application/hal+json
@@ -14982,6 +15029,21 @@ paths:
                       }
                     }
                   }, {
+                    "name" : "add-on.custom-apps",
+                    "details" : { },
+                    "type" : "TOGGLE",
+                    "_links" : {
+                      "self" : {
+                        "href" : "https://yourshop.api.urn/shop/features/add-on.custom-apps"
+                      },
+                      "owner" : {
+                        "href" : "https://yourshop.api.urn/shop"
+                      },
+                      "feature-definition" : {
+                        "href" : "https://yourshop.api.urn/feature-definitions/add-on.custom-apps"
+                      }
+                    }
+                  }, {
                     "name" : "domain-management.custom-domains",
                     "details" : {
                       "maxValue" : 10,
@@ -14997,21 +15059,6 @@ paths:
                       },
                       "feature-definition" : {
                         "href" : "https://yourshop.api.urn/feature-definitions/domain-management.custom-domains"
-                      }
-                    }
-                  }, {
-                    "name" : "add-on.custom-apps",
-                    "details" : { },
-                    "type" : "TOGGLE",
-                    "_links" : {
-                      "self" : {
-                        "href" : "https://yourshop.api.urn/shop/features/add-on.custom-apps"
-                      },
-                      "owner" : {
-                        "href" : "https://yourshop.api.urn/shop"
-                      },
-                      "feature-definition" : {
-                        "href" : "https://yourshop.api.urn/feature-definitions/add-on.custom-apps"
                       }
                     }
                   } ]
@@ -15042,8 +15089,8 @@ paths:
     get:
       tags:
       - shop
-      summary: List Shop Images
-      description: ""
+      summary: List shop images
+      description: Returns a list of all images of the current shop.
       operationId: merchant-images-list
       produces:
       - application/hal+json
@@ -15056,13 +15103,13 @@ paths:
                 "_embedded" : {
                   "images" : [ {
                     "label" : "logo",
-                    "_id" : "9b19ae3e-9f48-47a5-affb-3c42e678fe92",
+                    "_id" : "414b0093-7bdc-494d-bd06-e09b4ff37e69",
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/shop/images/9b19ae3e-9f48-47a5-affb-3c42e678fe92"
+                        "href" : "https://yourshop.api.urn/shop/images/414b0093-7bdc-494d-bd06-e09b4ff37e69"
                       },
                       "image" : {
-                        "href" : "https://yourshop.api.urn/shop/images/9b19ae3e-9f48-47a5-affb-3c42e678fe92"
+                        "href" : "https://yourshop.api.urn/shop/images/414b0093-7bdc-494d-bd06-e09b4ff37e69"
                       },
                       "data" : {
                         "href" : "https://yourshop.api.urn/api/core-storage/images/file.png?hash=212-2323-4343{&width,height,upscale}",
@@ -15091,8 +15138,8 @@ paths:
     post:
       tags:
       - shop
-      summary: Create Image
-      description: ""
+      summary: Create shop image
+      description: Creates a shop image for the current shop.
       operationId: merchant-images-create
       consumes:
       - application/json
@@ -15121,8 +15168,8 @@ paths:
     get:
       tags:
       - shop
-      summary: Shop legal details
-      description: ""
+      summary: Show legal details
+      description: Returns the details of the legal resource for the current shop.
       operationId: merchant-legal-get
       produces:
       - application/hal+json
@@ -15158,8 +15205,9 @@ paths:
     patch:
       tags:
       - shop
-      summary: Update Legal Resource
-      description: ""
+      summary: Update legal resource partially (JSON patch)
+      description: Updates a legal resource partially with `application/json-patch`
+        content type.
       operationId: merchant-legal-jsonpatch
       consumes:
       - application/json-patch+json
@@ -15216,8 +15264,8 @@ paths:
     post:
       tags:
       - shop
-      summary: Open Shop
-      description: ""
+      summary: Open shop
+      description: Opens the current shop.
       operationId: merchant-shop-open
       responses:
         204:
@@ -15232,8 +15280,8 @@ paths:
     get:
       tags:
       - shop
-      summary: Get Merchant Shop Attribute
-      description: ""
+      summary: Show shop attribute details
+      description: Returns a particular attribute of the current shop by its `key`.
       operationId: merchant-shop-attribute-get
       produces:
       - application/hal+json
@@ -15272,8 +15320,9 @@ paths:
     put:
       tags:
       - shop
-      summary: Update Merchant Shop Attribute
-      description: ""
+      summary: Update shop attribute
+      description: Updates a shop attribute by `key`. This operation is idempotent
+        and will create a new shop attribute if required.
       operationId: merchant-shop-attribute-update
       consumes:
       - application/json
@@ -15325,8 +15374,8 @@ paths:
     delete:
       tags:
       - shop
-      summary: Delete Merchant Shop Attribute
-      description: ""
+      summary: Delete shop attribute
+      description: Deletes a shop attribute by `key`.
       operationId: merchant-shop-attribute-delete
       parameters:
       - name: name
@@ -15347,8 +15396,8 @@ paths:
     get:
       tags:
       - shop
-      summary: Get Shop Feature
-      description: ""
+      summary: Show shop feature details
+      description: Returns the details of the feature identified by {featureName}.
       operationId: shop-feature-get
       produces:
       - application/hal+json
@@ -15393,8 +15442,8 @@ paths:
     get:
       tags:
       - shop
-      summary: Get Shop Image
-      description: ""
+      summary: Show shop image details
+      description: Returns the details for an image of the current shop.
       operationId: merchant-image-get
       produces:
       - application/hal+json
@@ -15411,13 +15460,13 @@ paths:
             application/hal+json: |-
               {
                 "label" : "logo",
-                "_id" : "2a483570-9b80-4be9-9585-ded4bd7eda14",
+                "_id" : "07dd621d-16d9-479c-b07b-49eef892d9d0",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/shop/images/2a483570-9b80-4be9-9585-ded4bd7eda14"
+                    "href" : "https://yourshop.api.urn/shop/images/07dd621d-16d9-479c-b07b-49eef892d9d0"
                   },
                   "image" : {
-                    "href" : "https://yourshop.api.urn/shop/images/2a483570-9b80-4be9-9585-ded4bd7eda14"
+                    "href" : "https://yourshop.api.urn/shop/images/07dd621d-16d9-479c-b07b-49eef892d9d0"
                   },
                   "data" : {
                     "href" : "https://yourshop.api.urn/api/core-storage/images/file.png?hash=212-2323-4343{&width,height,upscale}",
@@ -15433,8 +15482,9 @@ paths:
     delete:
       tags:
       - shop
-      summary: Delete Image
-      description: ""
+      summary: Delete shop image
+      description: Deletes the shop image identified by {imageId} for the current
+        shop.
       operationId: merchant-image-delete
       parameters:
       - name: imageId
@@ -15455,8 +15505,8 @@ paths:
     get:
       tags:
       - shop
-      summary: Find Image by Label
-      description: ""
+      summary: Find shop images by label
+      description: Searches for a shop image by label (passed as a request parameter).
       operationId: merchant-images-search-find-by-label
       produces:
       - application/hal+json
@@ -15475,13 +15525,13 @@ paths:
                 "_embedded" : {
                   "images" : [ {
                     "label" : "logo",
-                    "_id" : "3dc38951-481b-4887-ae69-5db6c4329d5f",
+                    "_id" : "13099dfb-c2ad-41d9-be59-a9e0950b7f66",
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/shop/images/3dc38951-481b-4887-ae69-5db6c4329d5f"
+                        "href" : "https://yourshop.api.urn/shop/images/13099dfb-c2ad-41d9-be59-a9e0950b7f66"
                       },
                       "image" : {
-                        "href" : "https://yourshop.api.urn/shop/images/3dc38951-481b-4887-ae69-5db6c4329d5f"
+                        "href" : "https://yourshop.api.urn/shop/images/13099dfb-c2ad-41d9-be59-a9e0950b7f66"
                       },
                       "data" : {
                         "href" : "https://yourshop.api.urn/api/core-storage/images/file.png?hash=212-2323-4343{&width,height,upscale}",
@@ -15522,7 +15572,7 @@ paths:
           examples:
             application/hal+json: |-
               {
-                "shopId" : "d82c1d2b-ab48-4a85-add0-4def4e6e77e6"
+                "shopId" : "885e2840-a013-4a03-b3fb-62c73f876c1d"
               }
           schema:
             $ref: '#/definitions/shop-id927029385'
@@ -17318,6 +17368,36 @@ definitions:
           currency:
             type: string
             description: The currency of the initial total tax amount.
+  products_productId_attributes-365070028:
+    type: object
+    properties:
+      value:
+        description: The value of the product attribute.
+      key:
+        type: string
+        description: The key of the product attribute definition.
+    example: |-
+      {
+        "key" : "colour",
+        "value" : "Yellow"
+      }
+  signers1038188776:
+    type: object
+    required:
+    - sharedSecret
+    properties:
+      _links:
+        type: object
+        description: See <<hypermedia,Hypermedia>>
+        properties: {}
+      _id:
+        type: string
+        description: The immutable, unique identifier of the requested resource.
+      sharedSecret:
+        type: string
+        description: The shared secret that is used to sign the request.
+        minLength: 1
+        maxLength: 256
   shop_features_featureName1747195181:
     type: object
     required:
@@ -17340,36 +17420,6 @@ definitions:
         type: string
         description: The type of the feature. Can be `TOGGLE`, `COUNTER`, or `APP`.
         minLength: 1
-  signers1038188776:
-    type: object
-    required:
-    - sharedSecret
-    properties:
-      _links:
-        type: object
-        description: See <<hypermedia,Hypermedia>>
-        properties: {}
-      _id:
-        type: string
-        description: The immutable, unique identifier of the requested resource.
-      sharedSecret:
-        type: string
-        description: The shared secret that is used to sign the request.
-        minLength: 1
-        maxLength: 256
-  products_productId_attributes-365070028:
-    type: object
-    properties:
-      value:
-        description: The value of the product attribute.
-      key:
-        type: string
-        description: The key of the product attribute definition.
-    example: |-
-      {
-        "key" : "colour",
-        "value" : "Yellow"
-      }
   product-view_products_search_find-by-query-815094681:
     type: object
     properties:
@@ -18231,7 +18281,7 @@ definitions:
         "productIdentifiers" : null,
         "manufacturer" : "patched manufacturer"
       }
-  products_productId_attachments884805373:
+  products_productId_images884805373:
     type: object
     properties:
       _links:
@@ -19791,7 +19841,7 @@ definitions:
         "nextNumericSuffix" : 10000,
         "numericSuffixLength" : 4
       }
-  products_productId-1659560350:
+  products_search_find-by-sku-1659560350:
     type: object
     required:
     - sku
@@ -20036,6 +20086,12 @@ definitions:
         "marketingSubchannel" : "Search page 2",
         "testOrder" : false
       }
+  categories_id-596922385:
+    type: array
+    items:
+      type: object
+      properties: {}
+    example: '{"name":"patched name","type":"MANUAL","query":{"bool":{"filter":[{"terms":{"id":["6c449297-65fc-41aa-a49c-68a3561b33e5","6c449297-65fc-41aa-a49c-68a3561b33e6"]}}]}}}'
   product-attribute-definitions_productAttributeDefinitionKey-688969365:
     type: object
     required:
@@ -20068,12 +20124,6 @@ definitions:
           from `displayName` if not provided.
         minLength: 0
         maxLength: 50
-  categories_id-596922385:
-    type: array
-    items:
-      type: object
-      properties: {}
-    example: '{"name":"patched name","type":"MANUAL","query":{"bool":{"filter":[{"terms":{"id":["6c449297-65fc-41aa-a49c-68a3561b33e5","6c449297-65fc-41aa-a49c-68a3561b33e6"]}}]}}}'
   legal-content-841656496:
     type: object
     properties:
@@ -20695,6 +20745,25 @@ definitions:
         maxLength: 200
     example: '{"salutation":"Mrs","gender":"FEMALE","title":"","firstName":"Astrid","middleName":"Agnes","lastName":"Alster","street":"Alsterwasserweg","houseNumber":"2","street2":"Erdgeschoss","doorCode":"0185","addressExtension":"Hinterhof","postalCode":"20999","dependentLocality":"Seevetal","city":"Alsterwasser","country":"DE","state":"Hamburg","email":"a.alsterh@example.com","phone":"(800)
       555-0102","mobile":"(800) 555-0103","vatId":"123456789","taxNumber":"123-34-6789","birthDate":"1985-03-20"}'
+  shop_images_imageId-12542474:
+    type: object
+    required:
+    - label
+    properties:
+      _links:
+        type: object
+        description: See <<hypermedia,Hypermedia>>
+        properties: {}
+      label:
+        type: string
+        description: The label of the image that is used to state the purpose of the
+          image. The labels 'logo' and 'fav-icon' can only be assigned once, and have
+          a special meaning. The image with label 'logo' is used as the shop logo.
+          The image with label 'fav-icon' is used as the fav icon of the shop.
+        minLength: 1
+      _id:
+        type: string
+        description: The unique identifier of the image (cannot be changed).
   orders_order-id_processes_refunds_active_mark-paid833139486:
     type: object
     properties:
@@ -20723,25 +20792,6 @@ definitions:
           }
         }
       }
-  shop_images_imageId-12542474:
-    type: object
-    required:
-    - label
-    properties:
-      _links:
-        type: object
-        description: See <<hypermedia,Hypermedia>>
-        properties: {}
-      label:
-        type: string
-        description: The label of the image that is used to state the purpose of the
-          image. The labels 'logo' and 'fav-icon' can only be assigned once, and have
-          a special meaning. The image with label 'logo' is used as the shop logo.
-          The image with label 'fav-icon' is used as the fav icon of the shop.
-        minLength: 1
-      _id:
-        type: string
-        description: The unique identifier of the image (cannot be changed).
   products_productId_attachments_attachmentId-897355724:
     type: object
     properties:
@@ -20782,8 +20832,6 @@ definitions:
         description: the length of the numeric part of the order number. If the numeric
           value is shorter, the value is padded with zeros to the left. If the value
           is longer the numericSuffixLength is extended
-  products_productId_default-image818678903:
-    example: http://localhost/products/images/0c02f626-27b0-4eb8-bc9c-76737995f535
   carts_cartId_order1787038009:
     type: object
     properties:
@@ -20858,29 +20906,6 @@ definitions:
           "callbackUri":"http://example.com/test/updated",
           "eventTypes": ["product.updated"]
       }
-  orders_order-id_processes_shippings_shipping-process-id710385301:
-    type: object
-    properties:
-      lineItems:
-        type: array
-        description: The line items that are included in this shipping process.
-      trackingLink:
-        type: string
-        description: The tracking link for this shipping process.
-      _links:
-        type: object
-        description: See <<hypermedia,Hypermedia>>
-        properties: {}
-      trackingCode:
-        type: string
-        description: The tracking code for this shipping process.
-      _id:
-        type: string
-        description: The ID of the shipping process.
-      status:
-        type: string
-        description: The status of the shipping process. Can be `UNSHIPPED`, `PARTIALLY_SHIPPED`,
-          or `SHIPPED`.
   categories1077708286:
     type: object
     required:
@@ -20907,6 +20932,29 @@ definitions:
         type: string
         description: The type of the product collection. Can be `SMART` or `MANUAL`.
     example: '{"name":"Power Bars","label":"power-bar","type":"SMART","query":{"bool":{"filter":{"term":{"tags":"power-bar"}}}}}'
+  orders_order-id_processes_shippings_shipping-process-id710385301:
+    type: object
+    properties:
+      lineItems:
+        type: array
+        description: The line items that are included in this shipping process.
+      trackingLink:
+        type: string
+        description: The tracking link for this shipping process.
+      _links:
+        type: object
+        description: See <<hypermedia,Hypermedia>>
+        properties: {}
+      trackingCode:
+        type: string
+        description: The tracking code for this shipping process.
+      _id:
+        type: string
+        description: The ID of the shipping process.
+      status:
+        type: string
+        description: The status of the shipping process. Can be `UNSHIPPED`, `PARTIALLY_SHIPPED`,
+          or `SHIPPED`.
   checkout-settings1206643501:
     type: object
     properties:
@@ -20941,14 +20989,6 @@ definitions:
       {
         "comment" : "comment"
       }
-  payment-signup_referrals_paymentMethodDefinition80330500:
-    type: object
-    properties:
-      referralReturnUri:
-        type: string
-        description: The URI to which the customer will be redirected after the referral
-          process.
-    example: '{ "referralReturnUri": "http://example.com/take-me-home" }'
   categories_id-565740918:
     type: object
     required:
@@ -20981,6 +21021,16 @@ definitions:
       type:
         type: string
         description: The type of the product collection. Can be `SMART` or `MANUAL`.
+  products_productId_default-image950672999:
+    example: http://localhost/products/images/ba36acb4-30b3-4278-a513-428aeaf43e80
+  payment-signup_referrals_paymentMethodDefinition80330500:
+    type: object
+    properties:
+      referralReturnUri:
+        type: string
+        description: The URI to which the customer will be redirected after the referral
+          process.
+    example: '{ "referralReturnUri": "http://example.com/take-me-home" }'
   orders_order-id_order-note1411559407:
     type: object
     properties:
@@ -21457,31 +21507,6 @@ definitions:
         description: The text that comes along with the list price. Can be either
           labeling the original price, or deviations from that, such as e.g. a discount
           treatment or the recommended retail price.
-  users_verify-password-2034533541:
-    type: object
-    properties:
-      password:
-        type: string
-        description: The password that needs to be verified.
-    example: |-
-      {
-        "password" : "ValidPassword!"
-      }
-  shop_images918748962:
-    type: object
-    properties:
-      _links:
-        type: object
-        description: See <<hypermedia,Hypermedia>>
-        properties: {}
-      _embedded:
-        type: object
-        description: List of <<resources-image-get,images>>
-        properties: {}
-      page:
-        type: object
-        description: See <<pagination,Pagination>>
-        properties: {}
   shop_attributes_name-2078543109:
     type: object
     properties:
@@ -21504,6 +21529,31 @@ definitions:
         type: string
         description: The value of the shop attribute. Assuming the attribute name
           to be `default-sorting-products`, the value can be e.g. `asc`.
+  shop_images918748962:
+    type: object
+    properties:
+      _links:
+        type: object
+        description: See <<hypermedia,Hypermedia>>
+        properties: {}
+      _embedded:
+        type: object
+        description: List of <<resources-image-get,images>>
+        properties: {}
+      page:
+        type: object
+        description: See <<pagination,Pagination>>
+        properties: {}
+  users_verify-password-2034533541:
+    type: object
+    properties:
+      password:
+        type: string
+        description: The password that needs to be verified.
+    example: |-
+      {
+        "password" : "ValidPassword!"
+      }
   shop_images1022155789:
     type: object
     required:
@@ -21737,42 +21787,7 @@ definitions:
               description: The fixed price for the shipping method irrespective of
                 weight, dimensions, etc.
               properties: {}
-  signers-663923302:
-    type: object
-    properties:
-      _embedded:
-        type: object
-        properties:
-          signers:
-            type: array
-            items:
-              type: object
-              properties:
-                createdAt:
-                  type: string
-                  description: The date and time the signer was created. According
-                    to ISO 8601.
-                _links:
-                  type: object
-                  description: See <<hypermedia,Hypermedia>>
-                  properties: {}
-                _id:
-                  type: string
-                  description: The immutable, unique identifier of the requested resource.
-  products_productId_attributes_productAttributeName-1919261341:
-    type: object
-    properties:
-      _links:
-        type: object
-        description: See <<hypermedia,Hypermedia>>
-        properties: {}
-      value:
-        type: number
-        description: The value of the product attribute.
-      key:
-        type: string
-        description: The key of the product attribute definition.
-  shop-1182683528:
+  shop-1300333684:
     type: object
     required:
     - currencies
@@ -21841,12 +21856,47 @@ definitions:
           "taxModel" : "GROSS",
           "vatExempted" : false
         },
-        "currencies" : [ "EUR", "USD", "GBP" ],
+        "currencies" : [ "GBP", "EUR", "USD" ],
         "defaultCurrency" : "USD",
-        "locales" : [ "de-DE", "en-GB" ],
+        "locales" : [ "en-GB", "de-DE" ],
         "defaultLocale" : "en-GB",
         "closedByMerchant" : false
       }
+  signers-663923302:
+    type: object
+    properties:
+      _embedded:
+        type: object
+        properties:
+          signers:
+            type: array
+            items:
+              type: object
+              properties:
+                createdAt:
+                  type: string
+                  description: The date and time the signer was created. According
+                    to ISO 8601.
+                _links:
+                  type: object
+                  description: See <<hypermedia,Hypermedia>>
+                  properties: {}
+                _id:
+                  type: string
+                  description: The immutable, unique identifier of the requested resource.
+  products_productId_attributes_productAttributeName-1919261341:
+    type: object
+    properties:
+      _links:
+        type: object
+        description: See <<hypermedia,Hypermedia>>
+        properties: {}
+      value:
+        type: number
+        description: The value of the product attribute.
+      key:
+        type: string
+        description: The key of the product attribute definition.
   payment-methods_paymentMethodId-482487356:
     type: object
     required:
