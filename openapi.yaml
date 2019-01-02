@@ -14646,13 +14646,13 @@ paths:
                   "vatExempted" : false,
                   "country" : "GB"
                 },
-                "currencies" : [ "GBP", "EUR" ],
+                "currencies" : [ "EUR", "GBP" ],
                 "defaultCurrency" : "EUR",
                 "locales" : [ "en-GB", "de-DE" ],
                 "defaultLocale" : "en-GB",
                 "closedByMerchant" : false,
                 "resellerName" : "epages",
-                "_id" : "501ad398-005b-47dd-a29b-444736c68fb2",
+                "_id" : "ed2ccd33-b06d-49e5-bbcf-d4677b8c9daf",
                 "_links" : {
                   "self" : {
                     "href" : "https://yourshop.api.urn/shop"
@@ -14695,7 +14695,7 @@ paths:
         name: ""
         required: false
         schema:
-          $ref: '#/definitions/shop-1300333684'
+          $ref: '#/definitions/shop-583187124'
         x-examples:
           application/json: |-
             {
@@ -14707,7 +14707,7 @@ paths:
                 "taxModel" : "GROSS",
                 "vatExempted" : false
               },
-              "currencies" : [ "GBP", "EUR", "USD" ],
+              "currencies" : [ "USD", "EUR", "GBP" ],
               "defaultCurrency" : "USD",
               "locales" : [ "en-GB", "de-DE" ],
               "defaultLocale" : "en-GB",
@@ -14734,13 +14734,13 @@ paths:
                   "vatExempted" : false,
                   "country" : null
                 },
-                "currencies" : [ "GBP", "EUR", "USD" ],
+                "currencies" : [ "USD", "EUR", "GBP" ],
                 "defaultCurrency" : "USD",
                 "locales" : [ "en-GB", "de-DE" ],
                 "defaultLocale" : "en-GB",
                 "closedByMerchant" : false,
                 "resellerName" : "epages",
-                "_id" : "2ddd807a-fedf-4a27-bbfa-d001192d938a",
+                "_id" : "15b43e4f-01f4-406c-9057-46ede609590e",
                 "_links" : {
                   "self" : {
                     "href" : "https://yourshop.api.urn/shop"
@@ -15103,13 +15103,13 @@ paths:
                 "_embedded" : {
                   "images" : [ {
                     "label" : "logo",
-                    "_id" : "414b0093-7bdc-494d-bd06-e09b4ff37e69",
+                    "_id" : "bf13caff-4eb7-42f0-8dc2-eea0b9d29e9b",
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/shop/images/414b0093-7bdc-494d-bd06-e09b4ff37e69"
+                        "href" : "https://yourshop.api.urn/shop/images/bf13caff-4eb7-42f0-8dc2-eea0b9d29e9b"
                       },
                       "image" : {
-                        "href" : "https://yourshop.api.urn/shop/images/414b0093-7bdc-494d-bd06-e09b4ff37e69"
+                        "href" : "https://yourshop.api.urn/shop/images/bf13caff-4eb7-42f0-8dc2-eea0b9d29e9b"
                       },
                       "data" : {
                         "href" : "https://yourshop.api.urn/api/core-storage/images/file.png?hash=212-2323-4343{&width,height,upscale}",
@@ -15134,7 +15134,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/shop_images918748962'
+            $ref: '#/definitions/shop_images_search_find-by-label918748962'
     post:
       tags:
       - shop
@@ -15460,13 +15460,13 @@ paths:
             application/hal+json: |-
               {
                 "label" : "logo",
-                "_id" : "07dd621d-16d9-479c-b07b-49eef892d9d0",
+                "_id" : "cfc3a9e5-524b-4fbd-8bdb-6d19d6412182",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/shop/images/07dd621d-16d9-479c-b07b-49eef892d9d0"
+                    "href" : "https://yourshop.api.urn/shop/images/cfc3a9e5-524b-4fbd-8bdb-6d19d6412182"
                   },
                   "image" : {
-                    "href" : "https://yourshop.api.urn/shop/images/07dd621d-16d9-479c-b07b-49eef892d9d0"
+                    "href" : "https://yourshop.api.urn/shop/images/cfc3a9e5-524b-4fbd-8bdb-6d19d6412182"
                   },
                   "data" : {
                     "href" : "https://yourshop.api.urn/api/core-storage/images/file.png?hash=212-2323-4343{&width,height,upscale}",
@@ -15525,13 +15525,13 @@ paths:
                 "_embedded" : {
                   "images" : [ {
                     "label" : "logo",
-                    "_id" : "13099dfb-c2ad-41d9-be59-a9e0950b7f66",
+                    "_id" : "6d212ba1-aa4a-4fbb-aefe-8d9d9c86bc59",
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/shop/images/13099dfb-c2ad-41d9-be59-a9e0950b7f66"
+                        "href" : "https://yourshop.api.urn/shop/images/6d212ba1-aa4a-4fbb-aefe-8d9d9c86bc59"
                       },
                       "image" : {
-                        "href" : "https://yourshop.api.urn/shop/images/13099dfb-c2ad-41d9-be59-a9e0950b7f66"
+                        "href" : "https://yourshop.api.urn/shop/images/6d212ba1-aa4a-4fbb-aefe-8d9d9c86bc59"
                       },
                       "data" : {
                         "href" : "https://yourshop.api.urn/api/core-storage/images/file.png?hash=212-2323-4343{&width,height,upscale}",
@@ -15556,7 +15556,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/shop_images918748962'
+            $ref: '#/definitions/shop_images_search_find-by-label918748962'
   /shop-id:
     get:
       tags:
@@ -19743,6 +19743,81 @@ definitions:
       stockThreshold:
         type: number
         description: Inventory level that indicates that the product needs to be reordered.
+  shop-583187124:
+    type: object
+    required:
+    - currencies
+    - defaultCurrency
+    - defaultLocale
+    - fallbackHostname
+    - locales
+    - name
+    - primaryHostname
+    properties:
+      defaultLocale:
+        type: string
+        description: The default locale of the shop (cannot be changed).
+      closedShopMessage:
+        type: string
+        description: A message that is shown when the shop is closed by its owner.
+        minLength: 0
+        maxLength: 65536
+      locales:
+        type: array
+        description: List of locales that are supported by this shop. Defaults to
+          `defaultLocale`. The `defaultLocale` is always included in this list.
+      closedByMerchant:
+        type: boolean
+        description: Indicates if the shop is closed by its owner. Can be `true` or
+          `false`.
+      defaultCurrency:
+        type: string
+        description: The default currency of the shop.
+      primaryHostname:
+        type: string
+        description: The primary hostname of the shop.
+        minLength: 1
+        maxLength: 255
+      name:
+        type: string
+        description: The name of the shop.
+        minLength: 1
+        maxLength: 255
+      tax:
+        type: object
+        properties:
+          taxModel:
+            type: string
+            description: The tax model used for all product prices in this shop.
+          vatExempted:
+            type: boolean
+            description: Indicates if the merchant is exempted to declare VAT. Can
+              be `true` or `false`.
+      fallbackHostname:
+        type: string
+        description: The unchangeable, fallback hostname of the shop.
+        minLength: 1
+        maxLength: 255
+      currencies:
+        type: array
+        description: List of currencies that are supported by this shop. Defaults
+          to `defaultCurrency`. The `defaultCurrency` is always included in this list.
+    example: |-
+      {
+        "name" : "anotherName",
+        "closedShopMessage" : "Sorry, this shop is closed.",
+        "primaryHostname" : "cornershop.amazingdiscounts.xyz",
+        "fallbackHostname" : "cornershop.beyondshop.cloud",
+        "tax" : {
+          "taxModel" : "GROSS",
+          "vatExempted" : false
+        },
+        "currencies" : [ "USD", "EUR", "GBP" ],
+        "defaultCurrency" : "USD",
+        "locales" : [ "en-GB", "de-DE" ],
+        "defaultLocale" : "en-GB",
+        "closedByMerchant" : false
+      }
   configuration_invoice-number1858015181:
     type: object
     required:
@@ -20686,25 +20761,6 @@ definitions:
         maxLength: 200
     example: '{"salutation":"Mrs","gender":"FEMALE","title":"","firstName":"Astrid","middleName":"Agnes","lastName":"Alster","street":"Alsterwasserweg","houseNumber":"2","street2":"Erdgeschoss","doorCode":"0185","addressExtension":"Hinterhof","postalCode":"20999","dependentLocality":"Seevetal","city":"Alsterwasser","country":"DE","state":"Hamburg","email":"a.alsterh@example.com","phone":"(800)
       555-0102","mobile":"(800) 555-0103","vatId":"123456789","taxNumber":"123-34-6789","birthDate":"1985-03-20"}'
-  shop_images_imageId-12542474:
-    type: object
-    required:
-    - label
-    properties:
-      _links:
-        type: object
-        description: See <<hypermedia,Hypermedia>>
-        properties: {}
-      label:
-        type: string
-        description: The label of the image that is used to state the purpose of the
-          image. The labels 'logo' and 'fav-icon' can only be assigned once, and have
-          a special meaning. The image with label 'logo' is used as the shop logo.
-          The image with label 'fav-icon' is used as the fav icon of the shop.
-        minLength: 1
-      _id:
-        type: string
-        description: The unique identifier of the image (cannot be changed).
   orders_order-id_processes_refunds_active_mark-paid833139486:
     type: object
     properties:
@@ -20733,6 +20789,25 @@ definitions:
           }
         }
       }
+  shop_images_imageId-12542474:
+    type: object
+    required:
+    - label
+    properties:
+      _links:
+        type: object
+        description: See <<hypermedia,Hypermedia>>
+        properties: {}
+      label:
+        type: string
+        description: The label of the image that is used to state the purpose of the
+          image. The labels 'logo' and 'fav-icon' can only be assigned once, and have
+          a special meaning. The image with label 'logo' is used as the shop logo.
+          The image with label 'fav-icon' is used as the fav icon of the shop.
+        minLength: 1
+      _id:
+        type: string
+        description: The unique identifier of the image (cannot be changed).
   products_productId_attachments_attachmentId-897355724:
     type: object
     properties:
@@ -21506,21 +21581,6 @@ definitions:
         type: string
         description: The value of the shop attribute. Assuming the attribute name
           to be `default-sorting-products`, the value can be e.g. `asc`.
-  shop_images918748962:
-    type: object
-    properties:
-      _links:
-        type: object
-        description: See <<hypermedia,Hypermedia>>
-        properties: {}
-      _embedded:
-        type: object
-        description: List of <<resources-image-get,images>>
-        properties: {}
-      page:
-        type: object
-        description: See <<pagination,Pagination>>
-        properties: {}
   users_verify-password-2034533541:
     type: object
     properties:
@@ -21531,6 +21591,21 @@ definitions:
       {
         "password" : "ValidPassword!"
       }
+  shop_images_search_find-by-label918748962:
+    type: object
+    properties:
+      _embedded:
+        type: object
+        description: List of <<resources-image-get,images>>
+        properties: {}
+      _links:
+        type: object
+        description: See <<hypermedia,Hypermedia>>
+        properties: {}
+      page:
+        type: object
+        description: See <<pagination,Pagination>>
+        properties: {}
   shop_images1022155789:
     type: object
     required:
@@ -21786,81 +21861,6 @@ definitions:
       https://yourshop.api.urn/payment-methods/b67eb6c9-d76e-4e6f-b052-36d4d5893bcb
       https://yourshop.api.urn/payment-methods/77d97f5e-b2d6-47d8-85a7-20e0a9fe9031
       https://yourshop.api.urn/payment-methods/25daacc9-70d5-478b-a599-2035852c2136
-  shop-1300333684:
-    type: object
-    required:
-    - currencies
-    - defaultCurrency
-    - defaultLocale
-    - fallbackHostname
-    - locales
-    - name
-    - primaryHostname
-    properties:
-      defaultLocale:
-        type: string
-        description: The default locale of the shop (cannot be changed).
-      closedShopMessage:
-        type: string
-        description: A message that is shown when the shop is closed by its owner.
-        minLength: 0
-        maxLength: 65536
-      locales:
-        type: array
-        description: List of locales that are supported by this shop. Defaults to
-          `defaultLocale`. The `defaultLocale` is always included in this list.
-      closedByMerchant:
-        type: boolean
-        description: Indicates if the shop is closed by its owner. Can be `true` or
-          `false`.
-      defaultCurrency:
-        type: string
-        description: The default currency of the shop.
-      primaryHostname:
-        type: string
-        description: The primary hostname of the shop.
-        minLength: 1
-        maxLength: 255
-      name:
-        type: string
-        description: The name of the shop.
-        minLength: 1
-        maxLength: 255
-      tax:
-        type: object
-        properties:
-          taxModel:
-            type: string
-            description: The tax model used for all product prices in this shop.
-          vatExempted:
-            type: boolean
-            description: Indicates if the merchant is exempted to declare VAT. Can
-              be `true` or `false`.
-      fallbackHostname:
-        type: string
-        description: The unchangeable, fallback hostname of the shop.
-        minLength: 1
-        maxLength: 255
-      currencies:
-        type: array
-        description: List of currencies that are supported by this shop. Defaults
-          to `defaultCurrency`. The `defaultCurrency` is always included in this list.
-    example: |-
-      {
-        "name" : "anotherName",
-        "closedShopMessage" : "Sorry, this shop is closed.",
-        "primaryHostname" : "cornershop.amazingdiscounts.xyz",
-        "fallbackHostname" : "cornershop.beyondshop.cloud",
-        "tax" : {
-          "taxModel" : "GROSS",
-          "vatExempted" : false
-        },
-        "currencies" : [ "GBP", "EUR", "USD" ],
-        "defaultCurrency" : "USD",
-        "locales" : [ "en-GB", "de-DE" ],
-        "defaultLocale" : "en-GB",
-        "closedByMerchant" : false
-      }
   carts_cartId_payment-methods-663923302:
     type: object
     properties:
