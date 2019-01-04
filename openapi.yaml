@@ -7,19 +7,6 @@ basePath: /api
 schemes:
 - https
 paths:
-  /:
-    get:
-      summary: Index unauthorized
-      description: ""
-      operationId: index-unauthorized
-      produces:
-      - application/json
-      responses:
-        401:
-          description: ""
-          examples:
-            application/json: '{"errorId":"unauthorized","details":{},"message":"Full
-              authentication is required to access this resource","traceId":null}'
   /carts:
     post:
       tags:
@@ -35,7 +22,7 @@ paths:
           examples:
             application/hal+json: |-
               {
-                "_id" : "2945baab-1407-4d45-a0af-e83718ebf785",
+                "_id" : "234f3c75-1abd-457b-8871-86eab9c54cb9",
                 "lineItems" : [ ],
                 "shippingLineItem" : {
                   "lineItemPrice" : {
@@ -46,7 +33,7 @@ paths:
                   "lineItemTaxes" : [ ],
                   "_embedded" : {
                     "shipping-method" : {
-                      "_id" : "57b219ff-7701-4bed-af68-a5631ed387a8",
+                      "_id" : "3945ef42-0dc1-4fbd-aca4-1dd545b11160",
                       "name" : "Standard Shipping 2",
                       "description" : "Standard Shipping",
                       "taxClass" : "REGULAR",
@@ -60,7 +47,7 @@ paths:
                       "weightBasedPrice" : null,
                       "_links" : {
                         "self" : {
-                          "href" : "https://yourshop.api.urn/shipping-zones/0713bac1-f9b7-4e35-a2f3-2dc1695ded43/shipping-methods/57b219ff-7701-4bed-af68-a5631ed387a8"
+                          "href" : "https://yourshop.api.urn/shipping-zones/1036d4c3-bffe-4ac2-a71e-27c5d4ec6a2f/shipping-methods/3945ef42-0dc1-4fbd-aca4-1dd545b11160"
                         }
                       }
                     }
@@ -75,7 +62,7 @@ paths:
                   "lineItemTaxes" : [ ],
                   "_embedded" : {
                     "payment-method" : {
-                      "_id" : "02ae7fca-7b6f-4efd-836c-2f77e2f85b74",
+                      "_id" : "468b1cc1-39fd-46db-bcd9-f6bef70d012f",
                       "name" : "Converge",
                       "description" : "Pay with Converge",
                       "officialName" : "Converge",
@@ -98,16 +85,16 @@ paths:
                       "onlinePayment" : false,
                       "_links" : {
                         "self" : {
-                          "href" : "https://yourshop.api.urn/payment-methods/02ae7fca-7b6f-4efd-836c-2f77e2f85b74"
+                          "href" : "https://yourshop.api.urn/payment-methods/468b1cc1-39fd-46db-bcd9-f6bef70d012f"
                         },
                         "payment-method" : {
-                          "href" : "https://yourshop.api.urn/payment-methods/02ae7fca-7b6f-4efd-836c-2f77e2f85b74"
+                          "href" : "https://yourshop.api.urn/payment-methods/468b1cc1-39fd-46db-bcd9-f6bef70d012f"
                         },
                         "deactivate-payment-method" : {
-                          "href" : "https://yourshop.api.urn/payment-methods/02ae7fca-7b6f-4efd-836c-2f77e2f85b74/deactivate"
+                          "href" : "https://yourshop.api.urn/payment-methods/468b1cc1-39fd-46db-bcd9-f6bef70d012f/deactivate"
                         },
                         "payment-method-definition" : {
-                          "href" : "https://yourshop.api.urn/payment-methods/02ae7fca-7b6f-4efd-836c-2f77e2f85b74/payment-method-definition"
+                          "href" : "https://yourshop.api.urn/payment-methods/468b1cc1-39fd-46db-bcd9-f6bef70d012f/payment-method-definition"
                         }
                       }
                     }
@@ -155,34 +142,34 @@ paths:
                 },
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/carts/2945baab-1407-4d45-a0af-e83718ebf785"
+                    "href" : "https://yourshop.api.urn/carts/234f3c75-1abd-457b-8871-86eab9c54cb9"
                   },
                   "line-items" : {
-                    "href" : "https://yourshop.api.urn/carts/2945baab-1407-4d45-a0af-e83718ebf785/line-items"
+                    "href" : "https://yourshop.api.urn/carts/234f3c75-1abd-457b-8871-86eab9c54cb9/line-items"
                   },
                   "shipping-method-available" : {
-                    "href" : "https://yourshop.api.urn/carts/2945baab-1407-4d45-a0af-e83718ebf785/shipping-methods"
+                    "href" : "https://yourshop.api.urn/carts/234f3c75-1abd-457b-8871-86eab9c54cb9/shipping-methods"
                   },
                   "shipping-method-default" : {
-                    "href" : "https://yourshop.api.urn/carts/2945baab-1407-4d45-a0af-e83718ebf785/shipping-methods/default"
+                    "href" : "https://yourshop.api.urn/carts/234f3c75-1abd-457b-8871-86eab9c54cb9/shipping-methods/default"
                   },
                   "shipping-method-current" : {
-                    "href" : "https://yourshop.api.urn/carts/2945baab-1407-4d45-a0af-e83718ebf785/shipping-methods/current"
+                    "href" : "https://yourshop.api.urn/carts/234f3c75-1abd-457b-8871-86eab9c54cb9/shipping-methods/current"
                   },
                   "payment-method-available" : {
-                    "href" : "https://yourshop.api.urn/carts/2945baab-1407-4d45-a0af-e83718ebf785/payment-methods"
+                    "href" : "https://yourshop.api.urn/carts/234f3c75-1abd-457b-8871-86eab9c54cb9/payment-methods"
                   },
                   "payment-method-default" : {
-                    "href" : "https://yourshop.api.urn/carts/2945baab-1407-4d45-a0af-e83718ebf785/payment-methods/default"
+                    "href" : "https://yourshop.api.urn/carts/234f3c75-1abd-457b-8871-86eab9c54cb9/payment-methods/default"
                   },
                   "payment-method-current" : {
-                    "href" : "https://yourshop.api.urn/carts/2945baab-1407-4d45-a0af-e83718ebf785/payment-methods/current"
+                    "href" : "https://yourshop.api.urn/carts/234f3c75-1abd-457b-8871-86eab9c54cb9/payment-methods/current"
                   },
                   "billing-address" : {
-                    "href" : "https://yourshop.api.urn/carts/2945baab-1407-4d45-a0af-e83718ebf785/billing-address"
+                    "href" : "https://yourshop.api.urn/carts/234f3c75-1abd-457b-8871-86eab9c54cb9/billing-address"
                   },
                   "shipping-address" : {
-                    "href" : "https://yourshop.api.urn/carts/2945baab-1407-4d45-a0af-e83718ebf785/shipping-address"
+                    "href" : "https://yourshop.api.urn/carts/234f3c75-1abd-457b-8871-86eab9c54cb9/shipping-address"
                   }
                 }
               }
@@ -207,11 +194,11 @@ paths:
           examples:
             application/hal+json: |-
               {
-                "_id" : "4a58a417-5151-4782-9c69-ffd25bd7f919",
+                "_id" : "d20f7031-fbd6-4c08-bf04-d761074a3151",
                 "lineItems" : [ {
                   "_type" : "PRODUCT",
-                  "_id" : "4d7318b8-8458-4be0-a717-22ef30deaf95",
-                  "_ref" : "03db4f29-b10e-4ac7-be2f-1d7346bdc986",
+                  "_id" : "9a82c126-d201-4277-ae0a-fa0c150f3342",
+                  "_ref" : "0804e1a6-5ab7-4206-bd15-303b9b4b4c86",
                   "name" : "Power & Vanilla Coconut Protein Bar (Pack of 5)",
                   "quantity" : 1,
                   "singleItemPrice" : {
@@ -232,12 +219,12 @@ paths:
                   },
                   "_embedded" : {
                     "product" : {
-                      "_id" : "03db4f29-b10e-4ac7-be2f-1d7346bdc986",
+                      "_id" : "0804e1a6-5ab7-4206-bd15-303b9b4b4c86",
                       "sku" : "EB001",
                       "essentialFeatures" : "Preservative-free. No added sweeteners. Vegan.",
                       "_links" : {
                         "product" : {
-                          "href" : "https://yourshop.api.urn/product-view/products/03db4f29-b10e-4ac7-be2f-1d7346bdc986?locale=de-DE"
+                          "href" : "https://yourshop.api.urn/product-view/products/0804e1a6-5ab7-4206-bd15-303b9b4b4c86?locale=de-DE"
                         },
                         "default-image-data" : {
                           "href" : "https://yourshop.api.urn/http:/your.image.hoster.com/randomimage.png"
@@ -247,7 +234,7 @@ paths:
                   },
                   "_links" : {
                     "self" : {
-                      "href" : "https://yourshop.api.urn/carts/4a58a417-5151-4782-9c69-ffd25bd7f919/line-items/4d7318b8-8458-4be0-a717-22ef30deaf95"
+                      "href" : "https://yourshop.api.urn/carts/d20f7031-fbd6-4c08-bf04-d761074a3151/line-items/9a82c126-d201-4277-ae0a-fa0c150f3342"
                     }
                   }
                 } ],
@@ -265,7 +252,7 @@ paths:
                   } ],
                   "_embedded" : {
                     "shipping-method" : {
-                      "_id" : "0dfaf591-a03e-45d5-8a07-1ff4dbcd106b",
+                      "_id" : "58ba8342-21f9-477a-aa9d-2589cb98a6b6",
                       "name" : "Standard Shipping 2",
                       "description" : "Standard Shipping",
                       "taxClass" : "REGULAR",
@@ -279,7 +266,7 @@ paths:
                       "weightBasedPrice" : null,
                       "_links" : {
                         "self" : {
-                          "href" : "https://yourshop.api.urn/shipping-zones/6c074aa7-6cc6-4a94-aec6-8a1adf228666/shipping-methods/0dfaf591-a03e-45d5-8a07-1ff4dbcd106b"
+                          "href" : "https://yourshop.api.urn/shipping-zones/a46d9e1a-683d-46c0-90ab-881336e2b028/shipping-methods/58ba8342-21f9-477a-aa9d-2589cb98a6b6"
                         }
                       }
                     }
@@ -299,7 +286,7 @@ paths:
                   } ],
                   "_embedded" : {
                     "payment-method" : {
-                      "_id" : "5c99848e-dce1-4ed9-8d24-f2cc3d157539",
+                      "_id" : "15bc4619-9024-4e81-9adc-a67822626097",
                       "name" : "Converge",
                       "description" : "Pay with Converge",
                       "officialName" : "Converge",
@@ -322,16 +309,16 @@ paths:
                       "onlinePayment" : false,
                       "_links" : {
                         "self" : {
-                          "href" : "https://yourshop.api.urn/payment-methods/5c99848e-dce1-4ed9-8d24-f2cc3d157539"
+                          "href" : "https://yourshop.api.urn/payment-methods/15bc4619-9024-4e81-9adc-a67822626097"
                         },
                         "payment-method" : {
-                          "href" : "https://yourshop.api.urn/payment-methods/5c99848e-dce1-4ed9-8d24-f2cc3d157539"
+                          "href" : "https://yourshop.api.urn/payment-methods/15bc4619-9024-4e81-9adc-a67822626097"
                         },
                         "deactivate-payment-method" : {
-                          "href" : "https://yourshop.api.urn/payment-methods/5c99848e-dce1-4ed9-8d24-f2cc3d157539/deactivate"
+                          "href" : "https://yourshop.api.urn/payment-methods/15bc4619-9024-4e81-9adc-a67822626097/deactivate"
                         },
                         "payment-method-definition" : {
-                          "href" : "https://yourshop.api.urn/payment-methods/5c99848e-dce1-4ed9-8d24-f2cc3d157539/payment-method-definition"
+                          "href" : "https://yourshop.api.urn/payment-methods/15bc4619-9024-4e81-9adc-a67822626097/payment-method-definition"
                         }
                       }
                     }
@@ -430,37 +417,37 @@ paths:
                 },
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/carts/4a58a417-5151-4782-9c69-ffd25bd7f919"
+                    "href" : "https://yourshop.api.urn/carts/d20f7031-fbd6-4c08-bf04-d761074a3151"
                   },
                   "line-items" : {
-                    "href" : "https://yourshop.api.urn/carts/4a58a417-5151-4782-9c69-ffd25bd7f919/line-items"
+                    "href" : "https://yourshop.api.urn/carts/d20f7031-fbd6-4c08-bf04-d761074a3151/line-items"
                   },
                   "shipping-method-available" : {
-                    "href" : "https://yourshop.api.urn/carts/4a58a417-5151-4782-9c69-ffd25bd7f919/shipping-methods"
+                    "href" : "https://yourshop.api.urn/carts/d20f7031-fbd6-4c08-bf04-d761074a3151/shipping-methods"
                   },
                   "shipping-method-default" : {
-                    "href" : "https://yourshop.api.urn/carts/4a58a417-5151-4782-9c69-ffd25bd7f919/shipping-methods/default"
+                    "href" : "https://yourshop.api.urn/carts/d20f7031-fbd6-4c08-bf04-d761074a3151/shipping-methods/default"
                   },
                   "shipping-method-current" : {
-                    "href" : "https://yourshop.api.urn/carts/4a58a417-5151-4782-9c69-ffd25bd7f919/shipping-methods/current"
+                    "href" : "https://yourshop.api.urn/carts/d20f7031-fbd6-4c08-bf04-d761074a3151/shipping-methods/current"
                   },
                   "payment-method-available" : {
-                    "href" : "https://yourshop.api.urn/carts/4a58a417-5151-4782-9c69-ffd25bd7f919/payment-methods"
+                    "href" : "https://yourshop.api.urn/carts/d20f7031-fbd6-4c08-bf04-d761074a3151/payment-methods"
                   },
                   "payment-method-default" : {
-                    "href" : "https://yourshop.api.urn/carts/4a58a417-5151-4782-9c69-ffd25bd7f919/payment-methods/default"
+                    "href" : "https://yourshop.api.urn/carts/d20f7031-fbd6-4c08-bf04-d761074a3151/payment-methods/default"
                   },
                   "payment-method-current" : {
-                    "href" : "https://yourshop.api.urn/carts/4a58a417-5151-4782-9c69-ffd25bd7f919/payment-methods/current"
+                    "href" : "https://yourshop.api.urn/carts/d20f7031-fbd6-4c08-bf04-d761074a3151/payment-methods/current"
                   },
                   "billing-address" : {
-                    "href" : "https://yourshop.api.urn/carts/4a58a417-5151-4782-9c69-ffd25bd7f919/billing-address"
+                    "href" : "https://yourshop.api.urn/carts/d20f7031-fbd6-4c08-bf04-d761074a3151/billing-address"
                   },
                   "shipping-address" : {
-                    "href" : "https://yourshop.api.urn/carts/4a58a417-5151-4782-9c69-ffd25bd7f919/shipping-address"
+                    "href" : "https://yourshop.api.urn/carts/d20f7031-fbd6-4c08-bf04-d761074a3151/shipping-address"
                   },
                   "place-order" : {
-                    "href" : "https://yourshop.api.urn/carts/4a58a417-5151-4782-9c69-ffd25bd7f919/order"
+                    "href" : "https://yourshop.api.urn/carts/d20f7031-fbd6-4c08-bf04-d761074a3151/order"
                   }
                 }
               }
@@ -514,7 +501,7 @@ paths:
           examples:
             application/hal+json: |-
               {
-                "_id" : "720abca6-3f5d-418e-9507-282af2e5fc94",
+                "_id" : "09948ad3-c614-429e-ae37-16fbf052b53f",
                 "lineItems" : [ ],
                 "shippingLineItem" : {
                   "lineItemPrice" : {
@@ -525,7 +512,7 @@ paths:
                   "lineItemTaxes" : [ ],
                   "_embedded" : {
                     "shipping-method" : {
-                      "_id" : "44a56070-1a46-4d4d-ab37-ea92a893351b",
+                      "_id" : "be9234d2-da18-4092-a50e-38c63db06c03",
                       "name" : "Standard Shipping 2",
                       "description" : "Standard Shipping",
                       "taxClass" : "REGULAR",
@@ -539,7 +526,7 @@ paths:
                       "weightBasedPrice" : null,
                       "_links" : {
                         "self" : {
-                          "href" : "https://yourshop.api.urn/shipping-zones/1a6c85bb-331b-4ee1-9bfd-df4ae37cfa6c/shipping-methods/44a56070-1a46-4d4d-ab37-ea92a893351b"
+                          "href" : "https://yourshop.api.urn/shipping-zones/d37bffd9-f032-4bb1-ac95-0a2d67dc61a0/shipping-methods/be9234d2-da18-4092-a50e-38c63db06c03"
                         }
                       }
                     }
@@ -554,7 +541,7 @@ paths:
                   "lineItemTaxes" : [ ],
                   "_embedded" : {
                     "payment-method" : {
-                      "_id" : "9ed4c1db-e40e-4b7f-ba1b-40f96a8ff4e4",
+                      "_id" : "d86c5204-70a9-4f7d-89a0-eda221dcc3be",
                       "name" : "Converge",
                       "description" : "Pay with Converge",
                       "officialName" : "Converge",
@@ -577,16 +564,16 @@ paths:
                       "onlinePayment" : false,
                       "_links" : {
                         "self" : {
-                          "href" : "https://yourshop.api.urn/payment-methods/9ed4c1db-e40e-4b7f-ba1b-40f96a8ff4e4"
+                          "href" : "https://yourshop.api.urn/payment-methods/d86c5204-70a9-4f7d-89a0-eda221dcc3be"
                         },
                         "payment-method" : {
-                          "href" : "https://yourshop.api.urn/payment-methods/9ed4c1db-e40e-4b7f-ba1b-40f96a8ff4e4"
+                          "href" : "https://yourshop.api.urn/payment-methods/d86c5204-70a9-4f7d-89a0-eda221dcc3be"
                         },
                         "deactivate-payment-method" : {
-                          "href" : "https://yourshop.api.urn/payment-methods/9ed4c1db-e40e-4b7f-ba1b-40f96a8ff4e4/deactivate"
+                          "href" : "https://yourshop.api.urn/payment-methods/d86c5204-70a9-4f7d-89a0-eda221dcc3be/deactivate"
                         },
                         "payment-method-definition" : {
-                          "href" : "https://yourshop.api.urn/payment-methods/9ed4c1db-e40e-4b7f-ba1b-40f96a8ff4e4/payment-method-definition"
+                          "href" : "https://yourshop.api.urn/payment-methods/d86c5204-70a9-4f7d-89a0-eda221dcc3be/payment-method-definition"
                         }
                       }
                     }
@@ -658,37 +645,37 @@ paths:
                 },
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/carts/720abca6-3f5d-418e-9507-282af2e5fc94"
+                    "href" : "https://yourshop.api.urn/carts/09948ad3-c614-429e-ae37-16fbf052b53f"
                   },
                   "line-items" : {
-                    "href" : "https://yourshop.api.urn/carts/720abca6-3f5d-418e-9507-282af2e5fc94/line-items"
+                    "href" : "https://yourshop.api.urn/carts/09948ad3-c614-429e-ae37-16fbf052b53f/line-items"
                   },
                   "shipping-method-available" : {
-                    "href" : "https://yourshop.api.urn/carts/720abca6-3f5d-418e-9507-282af2e5fc94/shipping-methods"
+                    "href" : "https://yourshop.api.urn/carts/09948ad3-c614-429e-ae37-16fbf052b53f/shipping-methods"
                   },
                   "shipping-method-default" : {
-                    "href" : "https://yourshop.api.urn/carts/720abca6-3f5d-418e-9507-282af2e5fc94/shipping-methods/default"
+                    "href" : "https://yourshop.api.urn/carts/09948ad3-c614-429e-ae37-16fbf052b53f/shipping-methods/default"
                   },
                   "shipping-method-current" : {
-                    "href" : "https://yourshop.api.urn/carts/720abca6-3f5d-418e-9507-282af2e5fc94/shipping-methods/current"
+                    "href" : "https://yourshop.api.urn/carts/09948ad3-c614-429e-ae37-16fbf052b53f/shipping-methods/current"
                   },
                   "payment-method-available" : {
-                    "href" : "https://yourshop.api.urn/carts/720abca6-3f5d-418e-9507-282af2e5fc94/payment-methods"
+                    "href" : "https://yourshop.api.urn/carts/09948ad3-c614-429e-ae37-16fbf052b53f/payment-methods"
                   },
                   "payment-method-default" : {
-                    "href" : "https://yourshop.api.urn/carts/720abca6-3f5d-418e-9507-282af2e5fc94/payment-methods/default"
+                    "href" : "https://yourshop.api.urn/carts/09948ad3-c614-429e-ae37-16fbf052b53f/payment-methods/default"
                   },
                   "payment-method-current" : {
-                    "href" : "https://yourshop.api.urn/carts/720abca6-3f5d-418e-9507-282af2e5fc94/payment-methods/current"
+                    "href" : "https://yourshop.api.urn/carts/09948ad3-c614-429e-ae37-16fbf052b53f/payment-methods/current"
                   },
                   "billing-address" : {
-                    "href" : "https://yourshop.api.urn/carts/720abca6-3f5d-418e-9507-282af2e5fc94/billing-address"
+                    "href" : "https://yourshop.api.urn/carts/09948ad3-c614-429e-ae37-16fbf052b53f/billing-address"
                   },
                   "shipping-address" : {
-                    "href" : "https://yourshop.api.urn/carts/720abca6-3f5d-418e-9507-282af2e5fc94/shipping-address"
+                    "href" : "https://yourshop.api.urn/carts/09948ad3-c614-429e-ae37-16fbf052b53f/shipping-address"
                   },
                   "place-order" : {
-                    "href" : "https://yourshop.api.urn/carts/720abca6-3f5d-418e-9507-282af2e5fc94/order"
+                    "href" : "https://yourshop.api.urn/carts/09948ad3-c614-429e-ae37-16fbf052b53f/order"
                   }
                 }
               }
@@ -799,20 +786,20 @@ paths:
         name: ""
         required: false
         schema:
-          $ref: '#/definitions/carts_cartId_line-items638006167'
+          $ref: '#/definitions/carts_cartId_line-items492267487'
         x-examples:
-          application/json: '{"_type":"PRODUCT","_ref":"6c93025c-dbba-4c08-8bf8-a3766c87bb22","quantity":1}'
+          application/json: '{"_type":"PRODUCT","_ref":"47ba9c5e-b9c4-4ae7-b353-6827992e698a","quantity":1}'
       responses:
         200:
           description: ""
           examples:
             application/hal+json: |-
               {
-                "_id" : "763a517c-c44b-4e95-b233-0e815b563170",
+                "_id" : "34a02d64-f958-452b-be0d-f8ae8b7f8cce",
                 "lineItems" : [ {
                   "_type" : "PRODUCT",
-                  "_id" : "9f675767-b7a7-4e20-92f2-4241d1983e22",
-                  "_ref" : "6c93025c-dbba-4c08-8bf8-a3766c87bb22",
+                  "_id" : "1f746346-6186-48dd-b27a-364021b320be",
+                  "_ref" : "47ba9c5e-b9c4-4ae7-b353-6827992e698a",
                   "name" : "Power & Vanilla Coconut Protein Bar (Pack of 5)",
                   "quantity" : 1,
                   "singleItemPrice" : {
@@ -833,12 +820,12 @@ paths:
                   },
                   "_embedded" : {
                     "product" : {
-                      "_id" : "6c93025c-dbba-4c08-8bf8-a3766c87bb22",
+                      "_id" : "47ba9c5e-b9c4-4ae7-b353-6827992e698a",
                       "sku" : "EB001",
                       "essentialFeatures" : "Preservative-free. No added sweeteners. Vegan.",
                       "_links" : {
                         "product" : {
-                          "href" : "https://yourshop.api.urn/product-view/products/6c93025c-dbba-4c08-8bf8-a3766c87bb22?locale=de-DE"
+                          "href" : "https://yourshop.api.urn/product-view/products/47ba9c5e-b9c4-4ae7-b353-6827992e698a?locale=de-DE"
                         },
                         "default-image-data" : {
                           "href" : "https://yourshop.api.urn/http:/your.image.hoster.com/randomimage.png"
@@ -848,7 +835,7 @@ paths:
                   },
                   "_links" : {
                     "self" : {
-                      "href" : "https://yourshop.api.urn/carts/763a517c-c44b-4e95-b233-0e815b563170/line-items/9f675767-b7a7-4e20-92f2-4241d1983e22"
+                      "href" : "https://yourshop.api.urn/carts/34a02d64-f958-452b-be0d-f8ae8b7f8cce/line-items/1f746346-6186-48dd-b27a-364021b320be"
                     }
                   }
                 } ],
@@ -866,7 +853,7 @@ paths:
                   } ],
                   "_embedded" : {
                     "shipping-method" : {
-                      "_id" : "98348bd9-9f91-48dc-b698-2beff180cdee",
+                      "_id" : "5ecf0b16-339e-4af1-9b8e-3f4698b8e204",
                       "name" : "Standard Shipping 2",
                       "description" : "Standard Shipping",
                       "taxClass" : "REGULAR",
@@ -880,7 +867,7 @@ paths:
                       "weightBasedPrice" : null,
                       "_links" : {
                         "self" : {
-                          "href" : "https://yourshop.api.urn/shipping-zones/76631b98-68cb-4066-bf34-587fcbb9f259/shipping-methods/98348bd9-9f91-48dc-b698-2beff180cdee"
+                          "href" : "https://yourshop.api.urn/shipping-zones/cf41f75f-a1f2-453c-a618-088915f70d3f/shipping-methods/5ecf0b16-339e-4af1-9b8e-3f4698b8e204"
                         }
                       }
                     }
@@ -900,7 +887,7 @@ paths:
                   } ],
                   "_embedded" : {
                     "payment-method" : {
-                      "_id" : "04fd30a0-e5c8-4d70-b611-cbb1220dfaf7",
+                      "_id" : "1b42175a-24af-48b3-843b-01f9e3e8a8ae",
                       "name" : "Converge",
                       "description" : "Pay with Converge",
                       "officialName" : "Converge",
@@ -923,16 +910,16 @@ paths:
                       "onlinePayment" : false,
                       "_links" : {
                         "self" : {
-                          "href" : "https://yourshop.api.urn/payment-methods/04fd30a0-e5c8-4d70-b611-cbb1220dfaf7"
+                          "href" : "https://yourshop.api.urn/payment-methods/1b42175a-24af-48b3-843b-01f9e3e8a8ae"
                         },
                         "payment-method" : {
-                          "href" : "https://yourshop.api.urn/payment-methods/04fd30a0-e5c8-4d70-b611-cbb1220dfaf7"
+                          "href" : "https://yourshop.api.urn/payment-methods/1b42175a-24af-48b3-843b-01f9e3e8a8ae"
                         },
                         "deactivate-payment-method" : {
-                          "href" : "https://yourshop.api.urn/payment-methods/04fd30a0-e5c8-4d70-b611-cbb1220dfaf7/deactivate"
+                          "href" : "https://yourshop.api.urn/payment-methods/1b42175a-24af-48b3-843b-01f9e3e8a8ae/deactivate"
                         },
                         "payment-method-definition" : {
-                          "href" : "https://yourshop.api.urn/payment-methods/04fd30a0-e5c8-4d70-b611-cbb1220dfaf7/payment-method-definition"
+                          "href" : "https://yourshop.api.urn/payment-methods/1b42175a-24af-48b3-843b-01f9e3e8a8ae/payment-method-definition"
                         }
                       }
                     }
@@ -985,34 +972,34 @@ paths:
                 },
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/carts/763a517c-c44b-4e95-b233-0e815b563170"
+                    "href" : "https://yourshop.api.urn/carts/34a02d64-f958-452b-be0d-f8ae8b7f8cce"
                   },
                   "line-items" : {
-                    "href" : "https://yourshop.api.urn/carts/763a517c-c44b-4e95-b233-0e815b563170/line-items"
+                    "href" : "https://yourshop.api.urn/carts/34a02d64-f958-452b-be0d-f8ae8b7f8cce/line-items"
                   },
                   "shipping-method-available" : {
-                    "href" : "https://yourshop.api.urn/carts/763a517c-c44b-4e95-b233-0e815b563170/shipping-methods"
+                    "href" : "https://yourshop.api.urn/carts/34a02d64-f958-452b-be0d-f8ae8b7f8cce/shipping-methods"
                   },
                   "shipping-method-default" : {
-                    "href" : "https://yourshop.api.urn/carts/763a517c-c44b-4e95-b233-0e815b563170/shipping-methods/default"
+                    "href" : "https://yourshop.api.urn/carts/34a02d64-f958-452b-be0d-f8ae8b7f8cce/shipping-methods/default"
                   },
                   "shipping-method-current" : {
-                    "href" : "https://yourshop.api.urn/carts/763a517c-c44b-4e95-b233-0e815b563170/shipping-methods/current"
+                    "href" : "https://yourshop.api.urn/carts/34a02d64-f958-452b-be0d-f8ae8b7f8cce/shipping-methods/current"
                   },
                   "payment-method-available" : {
-                    "href" : "https://yourshop.api.urn/carts/763a517c-c44b-4e95-b233-0e815b563170/payment-methods"
+                    "href" : "https://yourshop.api.urn/carts/34a02d64-f958-452b-be0d-f8ae8b7f8cce/payment-methods"
                   },
                   "payment-method-default" : {
-                    "href" : "https://yourshop.api.urn/carts/763a517c-c44b-4e95-b233-0e815b563170/payment-methods/default"
+                    "href" : "https://yourshop.api.urn/carts/34a02d64-f958-452b-be0d-f8ae8b7f8cce/payment-methods/default"
                   },
                   "payment-method-current" : {
-                    "href" : "https://yourshop.api.urn/carts/763a517c-c44b-4e95-b233-0e815b563170/payment-methods/current"
+                    "href" : "https://yourshop.api.urn/carts/34a02d64-f958-452b-be0d-f8ae8b7f8cce/payment-methods/current"
                   },
                   "billing-address" : {
-                    "href" : "https://yourshop.api.urn/carts/763a517c-c44b-4e95-b233-0e815b563170/billing-address"
+                    "href" : "https://yourshop.api.urn/carts/34a02d64-f958-452b-be0d-f8ae8b7f8cce/billing-address"
                   },
                   "shipping-address" : {
-                    "href" : "https://yourshop.api.urn/carts/763a517c-c44b-4e95-b233-0e815b563170/shipping-address"
+                    "href" : "https://yourshop.api.urn/carts/34a02d64-f958-452b-be0d-f8ae8b7f8cce/shipping-address"
                   }
                 }
               }
@@ -1037,20 +1024,20 @@ paths:
         name: ""
         required: false
         schema:
-          $ref: '#/definitions/carts_cartId_line-items-511500465'
+          $ref: '#/definitions/carts_cartId_line-items-1352533602'
         x-examples:
-          application/json: '[{"_type":"PRODUCT","_ref":"e6a21d3d-697e-47e3-a2f2-8500f09819e2","quantity":1}]'
+          application/json: '[{"_type":"PRODUCT","_ref":"789d1f01-4ef2-4cf1-87d6-9d2b3d70ffee","quantity":1}]'
       responses:
         200:
           description: ""
           examples:
             application/hal+json: |-
               {
-                "_id" : "7e1b155d-163c-47cd-9ced-aed003235c24",
+                "_id" : "30a9dbd5-935a-4a11-9051-32299d9d6a3e",
                 "lineItems" : [ {
                   "_type" : "PRODUCT",
-                  "_id" : "21d913b7-f622-4312-ba60-4a0a9a723d93",
-                  "_ref" : "e6a21d3d-697e-47e3-a2f2-8500f09819e2",
+                  "_id" : "cadb47d7-8d2d-42ab-8901-d90a1197ab56",
+                  "_ref" : "789d1f01-4ef2-4cf1-87d6-9d2b3d70ffee",
                   "name" : "Power & Vanilla Coconut Protein Bar (Pack of 5)",
                   "quantity" : 1,
                   "singleItemPrice" : {
@@ -1071,12 +1058,12 @@ paths:
                   },
                   "_embedded" : {
                     "product" : {
-                      "_id" : "e6a21d3d-697e-47e3-a2f2-8500f09819e2",
+                      "_id" : "789d1f01-4ef2-4cf1-87d6-9d2b3d70ffee",
                       "sku" : "EB001",
                       "essentialFeatures" : "Preservative-free. No added sweeteners. Vegan.",
                       "_links" : {
                         "product" : {
-                          "href" : "https://yourshop.api.urn/product-view/products/e6a21d3d-697e-47e3-a2f2-8500f09819e2?locale=de-DE"
+                          "href" : "https://yourshop.api.urn/product-view/products/789d1f01-4ef2-4cf1-87d6-9d2b3d70ffee?locale=de-DE"
                         },
                         "default-image-data" : {
                           "href" : "https://yourshop.api.urn/http:/your.image.hoster.com/randomimage.png"
@@ -1086,7 +1073,7 @@ paths:
                   },
                   "_links" : {
                     "self" : {
-                      "href" : "https://yourshop.api.urn/carts/7e1b155d-163c-47cd-9ced-aed003235c24/line-items/21d913b7-f622-4312-ba60-4a0a9a723d93"
+                      "href" : "https://yourshop.api.urn/carts/30a9dbd5-935a-4a11-9051-32299d9d6a3e/line-items/cadb47d7-8d2d-42ab-8901-d90a1197ab56"
                     }
                   }
                 } ],
@@ -1104,7 +1091,7 @@ paths:
                   } ],
                   "_embedded" : {
                     "shipping-method" : {
-                      "_id" : "6e73f905-de10-4cb4-8d4d-8e75b4a17304",
+                      "_id" : "faacbb8a-824b-4d86-9b9b-f6c5516f5f9f",
                       "name" : "Standard Shipping 2",
                       "description" : "Standard Shipping",
                       "taxClass" : "REGULAR",
@@ -1118,7 +1105,7 @@ paths:
                       "weightBasedPrice" : null,
                       "_links" : {
                         "self" : {
-                          "href" : "https://yourshop.api.urn/shipping-zones/425e69c2-be4e-4f34-a751-2295f60a2ac6/shipping-methods/6e73f905-de10-4cb4-8d4d-8e75b4a17304"
+                          "href" : "https://yourshop.api.urn/shipping-zones/d27ed368-378c-4e93-ae28-c08f29427458/shipping-methods/faacbb8a-824b-4d86-9b9b-f6c5516f5f9f"
                         }
                       }
                     }
@@ -1138,7 +1125,7 @@ paths:
                   } ],
                   "_embedded" : {
                     "payment-method" : {
-                      "_id" : "ae04131b-7146-4a6a-a18b-80b72b3b2800",
+                      "_id" : "c7432f4a-bfab-4586-8d25-50da7df51c7f",
                       "name" : "Converge",
                       "description" : "Pay with Converge",
                       "officialName" : "Converge",
@@ -1161,16 +1148,16 @@ paths:
                       "onlinePayment" : false,
                       "_links" : {
                         "self" : {
-                          "href" : "https://yourshop.api.urn/payment-methods/ae04131b-7146-4a6a-a18b-80b72b3b2800"
+                          "href" : "https://yourshop.api.urn/payment-methods/c7432f4a-bfab-4586-8d25-50da7df51c7f"
                         },
                         "payment-method" : {
-                          "href" : "https://yourshop.api.urn/payment-methods/ae04131b-7146-4a6a-a18b-80b72b3b2800"
+                          "href" : "https://yourshop.api.urn/payment-methods/c7432f4a-bfab-4586-8d25-50da7df51c7f"
                         },
                         "deactivate-payment-method" : {
-                          "href" : "https://yourshop.api.urn/payment-methods/ae04131b-7146-4a6a-a18b-80b72b3b2800/deactivate"
+                          "href" : "https://yourshop.api.urn/payment-methods/c7432f4a-bfab-4586-8d25-50da7df51c7f/deactivate"
                         },
                         "payment-method-definition" : {
-                          "href" : "https://yourshop.api.urn/payment-methods/ae04131b-7146-4a6a-a18b-80b72b3b2800/payment-method-definition"
+                          "href" : "https://yourshop.api.urn/payment-methods/c7432f4a-bfab-4586-8d25-50da7df51c7f/payment-method-definition"
                         }
                       }
                     }
@@ -1223,34 +1210,34 @@ paths:
                 },
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/carts/7e1b155d-163c-47cd-9ced-aed003235c24"
+                    "href" : "https://yourshop.api.urn/carts/30a9dbd5-935a-4a11-9051-32299d9d6a3e"
                   },
                   "line-items" : {
-                    "href" : "https://yourshop.api.urn/carts/7e1b155d-163c-47cd-9ced-aed003235c24/line-items"
+                    "href" : "https://yourshop.api.urn/carts/30a9dbd5-935a-4a11-9051-32299d9d6a3e/line-items"
                   },
                   "shipping-method-available" : {
-                    "href" : "https://yourshop.api.urn/carts/7e1b155d-163c-47cd-9ced-aed003235c24/shipping-methods"
+                    "href" : "https://yourshop.api.urn/carts/30a9dbd5-935a-4a11-9051-32299d9d6a3e/shipping-methods"
                   },
                   "shipping-method-default" : {
-                    "href" : "https://yourshop.api.urn/carts/7e1b155d-163c-47cd-9ced-aed003235c24/shipping-methods/default"
+                    "href" : "https://yourshop.api.urn/carts/30a9dbd5-935a-4a11-9051-32299d9d6a3e/shipping-methods/default"
                   },
                   "shipping-method-current" : {
-                    "href" : "https://yourshop.api.urn/carts/7e1b155d-163c-47cd-9ced-aed003235c24/shipping-methods/current"
+                    "href" : "https://yourshop.api.urn/carts/30a9dbd5-935a-4a11-9051-32299d9d6a3e/shipping-methods/current"
                   },
                   "payment-method-available" : {
-                    "href" : "https://yourshop.api.urn/carts/7e1b155d-163c-47cd-9ced-aed003235c24/payment-methods"
+                    "href" : "https://yourshop.api.urn/carts/30a9dbd5-935a-4a11-9051-32299d9d6a3e/payment-methods"
                   },
                   "payment-method-default" : {
-                    "href" : "https://yourshop.api.urn/carts/7e1b155d-163c-47cd-9ced-aed003235c24/payment-methods/default"
+                    "href" : "https://yourshop.api.urn/carts/30a9dbd5-935a-4a11-9051-32299d9d6a3e/payment-methods/default"
                   },
                   "payment-method-current" : {
-                    "href" : "https://yourshop.api.urn/carts/7e1b155d-163c-47cd-9ced-aed003235c24/payment-methods/current"
+                    "href" : "https://yourshop.api.urn/carts/30a9dbd5-935a-4a11-9051-32299d9d6a3e/payment-methods/current"
                   },
                   "billing-address" : {
-                    "href" : "https://yourshop.api.urn/carts/7e1b155d-163c-47cd-9ced-aed003235c24/billing-address"
+                    "href" : "https://yourshop.api.urn/carts/30a9dbd5-935a-4a11-9051-32299d9d6a3e/billing-address"
                   },
                   "shipping-address" : {
-                    "href" : "https://yourshop.api.urn/carts/7e1b155d-163c-47cd-9ced-aed003235c24/shipping-address"
+                    "href" : "https://yourshop.api.urn/carts/30a9dbd5-935a-4a11-9051-32299d9d6a3e/shipping-address"
                   }
                 }
               }
@@ -1330,7 +1317,7 @@ paths:
                     "selectable" : true,
                     "_embedded" : {
                       "payment-method" : {
-                        "_id" : "69ca8681-928a-4893-a38f-b34c29b55523",
+                        "_id" : "9aeeba01-38fc-432b-b5df-8e97dcf5f77b",
                         "name" : "Converge",
                         "description" : "Pay with Converge",
                         "officialName" : "Converge",
@@ -1353,16 +1340,16 @@ paths:
                         "onlinePayment" : false,
                         "_links" : {
                           "self" : {
-                            "href" : "https://yourshop.api.urn/payment-methods/69ca8681-928a-4893-a38f-b34c29b55523"
+                            "href" : "https://yourshop.api.urn/payment-methods/9aeeba01-38fc-432b-b5df-8e97dcf5f77b"
                           },
                           "payment-method" : {
-                            "href" : "https://yourshop.api.urn/payment-methods/69ca8681-928a-4893-a38f-b34c29b55523"
+                            "href" : "https://yourshop.api.urn/payment-methods/9aeeba01-38fc-432b-b5df-8e97dcf5f77b"
                           },
                           "deactivate-payment-method" : {
-                            "href" : "https://yourshop.api.urn/payment-methods/69ca8681-928a-4893-a38f-b34c29b55523/deactivate"
+                            "href" : "https://yourshop.api.urn/payment-methods/9aeeba01-38fc-432b-b5df-8e97dcf5f77b/deactivate"
                           },
                           "payment-method-definition" : {
-                            "href" : "https://yourshop.api.urn/payment-methods/69ca8681-928a-4893-a38f-b34c29b55523/payment-method-definition"
+                            "href" : "https://yourshop.api.urn/payment-methods/9aeeba01-38fc-432b-b5df-8e97dcf5f77b/payment-method-definition"
                           }
                         }
                       }
@@ -1371,12 +1358,12 @@ paths:
                 },
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/carts/bfaa0f34-5a7b-43b4-a977-f18ee46cc088/payment-methods"
+                    "href" : "https://yourshop.api.urn/carts/5b5ed4fe-5cdc-4600-b1c3-cfe2d322de17/payment-methods"
                   }
                 }
               }
           schema:
-            $ref: '#/definitions/carts_cartId_payment-methods-663923302'
+            $ref: '#/definitions/signers-663923302'
   /carts/{cartId}/shipping-address:
     put:
       tags:
@@ -1409,7 +1396,7 @@ paths:
           examples:
             application/hal+json: |-
               {
-                "_id" : "68b8f423-f019-4681-b5c2-0b2e5269cb8f",
+                "_id" : "e8bbc5d7-0a88-44e0-8cb1-d7ccce776167",
                 "lineItems" : [ ],
                 "shippingLineItem" : {
                   "lineItemPrice" : {
@@ -1420,7 +1407,7 @@ paths:
                   "lineItemTaxes" : [ ],
                   "_embedded" : {
                     "shipping-method" : {
-                      "_id" : "dcf5c621-7a5a-44ea-8511-b9d01c98aed7",
+                      "_id" : "84ba4cd6-44ce-4c11-a9c0-3c43306a9766",
                       "name" : "Standard Shipping 2",
                       "description" : "Standard Shipping",
                       "taxClass" : "REGULAR",
@@ -1434,7 +1421,7 @@ paths:
                       "weightBasedPrice" : null,
                       "_links" : {
                         "self" : {
-                          "href" : "https://yourshop.api.urn/shipping-zones/b7f12c03-1a2c-42a9-b670-cfacd5cb46a3/shipping-methods/dcf5c621-7a5a-44ea-8511-b9d01c98aed7"
+                          "href" : "https://yourshop.api.urn/shipping-zones/8241ce7b-3a40-4b2b-b359-c1a942cc6848/shipping-methods/84ba4cd6-44ce-4c11-a9c0-3c43306a9766"
                         }
                       }
                     }
@@ -1449,7 +1436,7 @@ paths:
                   "lineItemTaxes" : [ ],
                   "_embedded" : {
                     "payment-method" : {
-                      "_id" : "1a0d12cd-5edc-453e-a871-758ffbf9a85e",
+                      "_id" : "26239b18-4fd4-40d6-87b3-45218b3e22d7",
                       "name" : "Converge",
                       "description" : "Pay with Converge",
                       "officialName" : "Converge",
@@ -1472,16 +1459,16 @@ paths:
                       "onlinePayment" : false,
                       "_links" : {
                         "self" : {
-                          "href" : "https://yourshop.api.urn/payment-methods/1a0d12cd-5edc-453e-a871-758ffbf9a85e"
+                          "href" : "https://yourshop.api.urn/payment-methods/26239b18-4fd4-40d6-87b3-45218b3e22d7"
                         },
                         "payment-method" : {
-                          "href" : "https://yourshop.api.urn/payment-methods/1a0d12cd-5edc-453e-a871-758ffbf9a85e"
+                          "href" : "https://yourshop.api.urn/payment-methods/26239b18-4fd4-40d6-87b3-45218b3e22d7"
                         },
                         "deactivate-payment-method" : {
-                          "href" : "https://yourshop.api.urn/payment-methods/1a0d12cd-5edc-453e-a871-758ffbf9a85e/deactivate"
+                          "href" : "https://yourshop.api.urn/payment-methods/26239b18-4fd4-40d6-87b3-45218b3e22d7/deactivate"
                         },
                         "payment-method-definition" : {
-                          "href" : "https://yourshop.api.urn/payment-methods/1a0d12cd-5edc-453e-a871-758ffbf9a85e/payment-method-definition"
+                          "href" : "https://yourshop.api.urn/payment-methods/26239b18-4fd4-40d6-87b3-45218b3e22d7/payment-method-definition"
                         }
                       }
                     }
@@ -1551,34 +1538,34 @@ paths:
                 },
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/carts/68b8f423-f019-4681-b5c2-0b2e5269cb8f"
+                    "href" : "https://yourshop.api.urn/carts/e8bbc5d7-0a88-44e0-8cb1-d7ccce776167"
                   },
                   "line-items" : {
-                    "href" : "https://yourshop.api.urn/carts/68b8f423-f019-4681-b5c2-0b2e5269cb8f/line-items"
+                    "href" : "https://yourshop.api.urn/carts/e8bbc5d7-0a88-44e0-8cb1-d7ccce776167/line-items"
                   },
                   "shipping-method-available" : {
-                    "href" : "https://yourshop.api.urn/carts/68b8f423-f019-4681-b5c2-0b2e5269cb8f/shipping-methods"
+                    "href" : "https://yourshop.api.urn/carts/e8bbc5d7-0a88-44e0-8cb1-d7ccce776167/shipping-methods"
                   },
                   "shipping-method-default" : {
-                    "href" : "https://yourshop.api.urn/carts/68b8f423-f019-4681-b5c2-0b2e5269cb8f/shipping-methods/default"
+                    "href" : "https://yourshop.api.urn/carts/e8bbc5d7-0a88-44e0-8cb1-d7ccce776167/shipping-methods/default"
                   },
                   "shipping-method-current" : {
-                    "href" : "https://yourshop.api.urn/carts/68b8f423-f019-4681-b5c2-0b2e5269cb8f/shipping-methods/current"
+                    "href" : "https://yourshop.api.urn/carts/e8bbc5d7-0a88-44e0-8cb1-d7ccce776167/shipping-methods/current"
                   },
                   "payment-method-available" : {
-                    "href" : "https://yourshop.api.urn/carts/68b8f423-f019-4681-b5c2-0b2e5269cb8f/payment-methods"
+                    "href" : "https://yourshop.api.urn/carts/e8bbc5d7-0a88-44e0-8cb1-d7ccce776167/payment-methods"
                   },
                   "payment-method-default" : {
-                    "href" : "https://yourshop.api.urn/carts/68b8f423-f019-4681-b5c2-0b2e5269cb8f/payment-methods/default"
+                    "href" : "https://yourshop.api.urn/carts/e8bbc5d7-0a88-44e0-8cb1-d7ccce776167/payment-methods/default"
                   },
                   "payment-method-current" : {
-                    "href" : "https://yourshop.api.urn/carts/68b8f423-f019-4681-b5c2-0b2e5269cb8f/payment-methods/current"
+                    "href" : "https://yourshop.api.urn/carts/e8bbc5d7-0a88-44e0-8cb1-d7ccce776167/payment-methods/current"
                   },
                   "billing-address" : {
-                    "href" : "https://yourshop.api.urn/carts/68b8f423-f019-4681-b5c2-0b2e5269cb8f/billing-address"
+                    "href" : "https://yourshop.api.urn/carts/e8bbc5d7-0a88-44e0-8cb1-d7ccce776167/billing-address"
                   },
                   "shipping-address" : {
-                    "href" : "https://yourshop.api.urn/carts/68b8f423-f019-4681-b5c2-0b2e5269cb8f/shipping-address"
+                    "href" : "https://yourshop.api.urn/carts/e8bbc5d7-0a88-44e0-8cb1-d7ccce776167/shipping-address"
                   }
                 }
               }
@@ -1603,7 +1590,7 @@ paths:
           examples:
             application/hal+json: |-
               {
-                "_id" : "60ed9ea1-4bfd-4771-a4d3-1605dae7fbca",
+                "_id" : "487bbd64-ea3b-4c75-a372-0966cab52e79",
                 "lineItems" : [ ],
                 "shippingLineItem" : {
                   "lineItemPrice" : {
@@ -1614,7 +1601,7 @@ paths:
                   "lineItemTaxes" : [ ],
                   "_embedded" : {
                     "shipping-method" : {
-                      "_id" : "7a0b467d-26ed-40be-a955-9e4c8d4b3a8d",
+                      "_id" : "0249422e-a0bd-4c2b-8abd-1974a8d4458c",
                       "name" : "Standard Shipping 2",
                       "description" : "Standard Shipping",
                       "taxClass" : "REGULAR",
@@ -1628,7 +1615,7 @@ paths:
                       "weightBasedPrice" : null,
                       "_links" : {
                         "self" : {
-                          "href" : "https://yourshop.api.urn/shipping-zones/97beffe6-5f91-4e48-8b6e-a9d910223177/shipping-methods/7a0b467d-26ed-40be-a955-9e4c8d4b3a8d"
+                          "href" : "https://yourshop.api.urn/shipping-zones/c170ffc5-d98a-474e-9a46-c8aa9ffb93df/shipping-methods/0249422e-a0bd-4c2b-8abd-1974a8d4458c"
                         }
                       }
                     }
@@ -1643,7 +1630,7 @@ paths:
                   "lineItemTaxes" : [ ],
                   "_embedded" : {
                     "payment-method" : {
-                      "_id" : "3d90981f-56f6-408d-93ed-24f18826c948",
+                      "_id" : "437c23a8-3d21-4939-9904-e9d00933463b",
                       "name" : "Converge",
                       "description" : "Pay with Converge",
                       "officialName" : "Converge",
@@ -1666,16 +1653,16 @@ paths:
                       "onlinePayment" : false,
                       "_links" : {
                         "self" : {
-                          "href" : "https://yourshop.api.urn/payment-methods/3d90981f-56f6-408d-93ed-24f18826c948"
+                          "href" : "https://yourshop.api.urn/payment-methods/437c23a8-3d21-4939-9904-e9d00933463b"
                         },
                         "payment-method" : {
-                          "href" : "https://yourshop.api.urn/payment-methods/3d90981f-56f6-408d-93ed-24f18826c948"
+                          "href" : "https://yourshop.api.urn/payment-methods/437c23a8-3d21-4939-9904-e9d00933463b"
                         },
                         "deactivate-payment-method" : {
-                          "href" : "https://yourshop.api.urn/payment-methods/3d90981f-56f6-408d-93ed-24f18826c948/deactivate"
+                          "href" : "https://yourshop.api.urn/payment-methods/437c23a8-3d21-4939-9904-e9d00933463b/deactivate"
                         },
                         "payment-method-definition" : {
-                          "href" : "https://yourshop.api.urn/payment-methods/3d90981f-56f6-408d-93ed-24f18826c948/payment-method-definition"
+                          "href" : "https://yourshop.api.urn/payment-methods/437c23a8-3d21-4939-9904-e9d00933463b/payment-method-definition"
                         }
                       }
                     }
@@ -1723,34 +1710,34 @@ paths:
                 },
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/carts/60ed9ea1-4bfd-4771-a4d3-1605dae7fbca"
+                    "href" : "https://yourshop.api.urn/carts/487bbd64-ea3b-4c75-a372-0966cab52e79"
                   },
                   "line-items" : {
-                    "href" : "https://yourshop.api.urn/carts/60ed9ea1-4bfd-4771-a4d3-1605dae7fbca/line-items"
+                    "href" : "https://yourshop.api.urn/carts/487bbd64-ea3b-4c75-a372-0966cab52e79/line-items"
                   },
                   "shipping-method-available" : {
-                    "href" : "https://yourshop.api.urn/carts/60ed9ea1-4bfd-4771-a4d3-1605dae7fbca/shipping-methods"
+                    "href" : "https://yourshop.api.urn/carts/487bbd64-ea3b-4c75-a372-0966cab52e79/shipping-methods"
                   },
                   "shipping-method-default" : {
-                    "href" : "https://yourshop.api.urn/carts/60ed9ea1-4bfd-4771-a4d3-1605dae7fbca/shipping-methods/default"
+                    "href" : "https://yourshop.api.urn/carts/487bbd64-ea3b-4c75-a372-0966cab52e79/shipping-methods/default"
                   },
                   "shipping-method-current" : {
-                    "href" : "https://yourshop.api.urn/carts/60ed9ea1-4bfd-4771-a4d3-1605dae7fbca/shipping-methods/current"
+                    "href" : "https://yourshop.api.urn/carts/487bbd64-ea3b-4c75-a372-0966cab52e79/shipping-methods/current"
                   },
                   "payment-method-available" : {
-                    "href" : "https://yourshop.api.urn/carts/60ed9ea1-4bfd-4771-a4d3-1605dae7fbca/payment-methods"
+                    "href" : "https://yourshop.api.urn/carts/487bbd64-ea3b-4c75-a372-0966cab52e79/payment-methods"
                   },
                   "payment-method-default" : {
-                    "href" : "https://yourshop.api.urn/carts/60ed9ea1-4bfd-4771-a4d3-1605dae7fbca/payment-methods/default"
+                    "href" : "https://yourshop.api.urn/carts/487bbd64-ea3b-4c75-a372-0966cab52e79/payment-methods/default"
                   },
                   "payment-method-current" : {
-                    "href" : "https://yourshop.api.urn/carts/60ed9ea1-4bfd-4771-a4d3-1605dae7fbca/payment-methods/current"
+                    "href" : "https://yourshop.api.urn/carts/487bbd64-ea3b-4c75-a372-0966cab52e79/payment-methods/current"
                   },
                   "billing-address" : {
-                    "href" : "https://yourshop.api.urn/carts/60ed9ea1-4bfd-4771-a4d3-1605dae7fbca/billing-address"
+                    "href" : "https://yourshop.api.urn/carts/487bbd64-ea3b-4c75-a372-0966cab52e79/billing-address"
                   },
                   "shipping-address" : {
-                    "href" : "https://yourshop.api.urn/carts/60ed9ea1-4bfd-4771-a4d3-1605dae7fbca/shipping-address"
+                    "href" : "https://yourshop.api.urn/carts/487bbd64-ea3b-4c75-a372-0966cab52e79/shipping-address"
                   }
                 }
               }
@@ -1788,7 +1775,7 @@ paths:
                     "selectable" : true,
                     "_embedded" : {
                       "shipping-method" : {
-                        "_id" : "53126dae-1141-4ee6-b4db-0ad877304bd2",
+                        "_id" : "ececfcc4-81d5-438e-a218-9f1f0a30daa6",
                         "name" : "Standard Shipping 2",
                         "description" : "Standard Shipping",
                         "taxClass" : "REGULAR",
@@ -1802,7 +1789,7 @@ paths:
                         "weightBasedPrice" : null,
                         "_links" : {
                           "self" : {
-                            "href" : "https://yourshop.api.urn/shipping-zones/1c26a93f-f8e3-46a0-9fff-501aff86c2b8/shipping-methods/53126dae-1141-4ee6-b4db-0ad877304bd2"
+                            "href" : "https://yourshop.api.urn/shipping-zones/8ade9089-b31a-4948-b26d-2d6c9bd93d2d/shipping-methods/ececfcc4-81d5-438e-a218-9f1f0a30daa6"
                           }
                         }
                       }
@@ -1811,12 +1798,12 @@ paths:
                 },
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/carts/2e2c0af9-f47c-4863-9e7a-c22085f30d39/shipping-methods"
+                    "href" : "https://yourshop.api.urn/carts/5cebc23e-6bb8-44c3-beae-dc87878bfe9a/shipping-methods"
                   }
                 }
               }
           schema:
-            $ref: '#/definitions/carts_cartId_shipping-methods-309252030'
+            $ref: '#/definitions/users_id_roles-309252030'
   /carts/{cartId}/line-items/{lineItemId}:
     put:
       tags:
@@ -1843,20 +1830,20 @@ paths:
         name: ""
         required: false
         schema:
-          $ref: '#/definitions/carts_cartId_line-items_lineItemId-83820059'
+          $ref: '#/definitions/carts_cartId_line-items_lineItemId1227620660'
         x-examples:
-          application/json: '{"_type":"PRODUCT","_ref":"b1b5b8cf-5229-4d66-b4b4-ed1513f2a880","quantity":2}'
+          application/json: '{"_type":"PRODUCT","_ref":"565e2ed2-4e2a-4ff2-b434-256a2b6bc242","quantity":2}'
       responses:
         200:
           description: ""
           examples:
             application/hal+json: |-
               {
-                "_id" : "24404724-6191-40a6-ab50-e72e45ff625f",
+                "_id" : "480b2ba9-aa59-4427-a295-1b92acd81cfc",
                 "lineItems" : [ {
                   "_type" : "PRODUCT",
-                  "_id" : "55a589ca-4087-438a-a806-a713474f361b",
-                  "_ref" : "b1b5b8cf-5229-4d66-b4b4-ed1513f2a880",
+                  "_id" : "028399d9-d5e4-4fd2-af1a-3c23f14b0974",
+                  "_ref" : "565e2ed2-4e2a-4ff2-b434-256a2b6bc242",
                   "name" : "Power & Vanilla Coconut Protein Bar (Pack of 5)",
                   "quantity" : 2,
                   "singleItemPrice" : {
@@ -1877,12 +1864,12 @@ paths:
                   },
                   "_embedded" : {
                     "product" : {
-                      "_id" : "b1b5b8cf-5229-4d66-b4b4-ed1513f2a880",
+                      "_id" : "565e2ed2-4e2a-4ff2-b434-256a2b6bc242",
                       "sku" : "EB001",
                       "essentialFeatures" : "Preservative-free. No added sweeteners. Vegan.",
                       "_links" : {
                         "product" : {
-                          "href" : "https://yourshop.api.urn/product-view/products/b1b5b8cf-5229-4d66-b4b4-ed1513f2a880?locale=de-DE"
+                          "href" : "https://yourshop.api.urn/product-view/products/565e2ed2-4e2a-4ff2-b434-256a2b6bc242?locale=de-DE"
                         },
                         "default-image-data" : {
                           "href" : "https://yourshop.api.urn/http:/your.image.hoster.com/randomimage.png"
@@ -1892,7 +1879,7 @@ paths:
                   },
                   "_links" : {
                     "self" : {
-                      "href" : "https://yourshop.api.urn/carts/24404724-6191-40a6-ab50-e72e45ff625f/line-items/55a589ca-4087-438a-a806-a713474f361b"
+                      "href" : "https://yourshop.api.urn/carts/480b2ba9-aa59-4427-a295-1b92acd81cfc/line-items/028399d9-d5e4-4fd2-af1a-3c23f14b0974"
                     }
                   }
                 } ],
@@ -1910,7 +1897,7 @@ paths:
                   } ],
                   "_embedded" : {
                     "shipping-method" : {
-                      "_id" : "dd0587ec-5df4-4635-95da-d61f8b169604",
+                      "_id" : "9332b351-3004-478a-a1ba-51f546a40a27",
                       "name" : "Standard Shipping 2",
                       "description" : "Standard Shipping",
                       "taxClass" : "REGULAR",
@@ -1924,7 +1911,7 @@ paths:
                       "weightBasedPrice" : null,
                       "_links" : {
                         "self" : {
-                          "href" : "https://yourshop.api.urn/shipping-zones/346c3ec6-0d05-4f7a-8d24-f57457f08b7b/shipping-methods/dd0587ec-5df4-4635-95da-d61f8b169604"
+                          "href" : "https://yourshop.api.urn/shipping-zones/8564eecb-b559-4f28-942b-7d797e4f5309/shipping-methods/9332b351-3004-478a-a1ba-51f546a40a27"
                         }
                       }
                     }
@@ -1944,7 +1931,7 @@ paths:
                   } ],
                   "_embedded" : {
                     "payment-method" : {
-                      "_id" : "fd3fa08f-aa4b-4e6c-a4d3-fc5d3bfbfaea",
+                      "_id" : "65582dfe-bed1-4c85-b2aa-ec9af6cfb57f",
                       "name" : "Converge",
                       "description" : "Pay with Converge",
                       "officialName" : "Converge",
@@ -1967,16 +1954,16 @@ paths:
                       "onlinePayment" : false,
                       "_links" : {
                         "self" : {
-                          "href" : "https://yourshop.api.urn/payment-methods/fd3fa08f-aa4b-4e6c-a4d3-fc5d3bfbfaea"
+                          "href" : "https://yourshop.api.urn/payment-methods/65582dfe-bed1-4c85-b2aa-ec9af6cfb57f"
                         },
                         "payment-method" : {
-                          "href" : "https://yourshop.api.urn/payment-methods/fd3fa08f-aa4b-4e6c-a4d3-fc5d3bfbfaea"
+                          "href" : "https://yourshop.api.urn/payment-methods/65582dfe-bed1-4c85-b2aa-ec9af6cfb57f"
                         },
                         "deactivate-payment-method" : {
-                          "href" : "https://yourshop.api.urn/payment-methods/fd3fa08f-aa4b-4e6c-a4d3-fc5d3bfbfaea/deactivate"
+                          "href" : "https://yourshop.api.urn/payment-methods/65582dfe-bed1-4c85-b2aa-ec9af6cfb57f/deactivate"
                         },
                         "payment-method-definition" : {
-                          "href" : "https://yourshop.api.urn/payment-methods/fd3fa08f-aa4b-4e6c-a4d3-fc5d3bfbfaea/payment-method-definition"
+                          "href" : "https://yourshop.api.urn/payment-methods/65582dfe-bed1-4c85-b2aa-ec9af6cfb57f/payment-method-definition"
                         }
                       }
                     }
@@ -2029,34 +2016,34 @@ paths:
                 },
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/carts/24404724-6191-40a6-ab50-e72e45ff625f"
+                    "href" : "https://yourshop.api.urn/carts/480b2ba9-aa59-4427-a295-1b92acd81cfc"
                   },
                   "line-items" : {
-                    "href" : "https://yourshop.api.urn/carts/24404724-6191-40a6-ab50-e72e45ff625f/line-items"
+                    "href" : "https://yourshop.api.urn/carts/480b2ba9-aa59-4427-a295-1b92acd81cfc/line-items"
                   },
                   "shipping-method-available" : {
-                    "href" : "https://yourshop.api.urn/carts/24404724-6191-40a6-ab50-e72e45ff625f/shipping-methods"
+                    "href" : "https://yourshop.api.urn/carts/480b2ba9-aa59-4427-a295-1b92acd81cfc/shipping-methods"
                   },
                   "shipping-method-default" : {
-                    "href" : "https://yourshop.api.urn/carts/24404724-6191-40a6-ab50-e72e45ff625f/shipping-methods/default"
+                    "href" : "https://yourshop.api.urn/carts/480b2ba9-aa59-4427-a295-1b92acd81cfc/shipping-methods/default"
                   },
                   "shipping-method-current" : {
-                    "href" : "https://yourshop.api.urn/carts/24404724-6191-40a6-ab50-e72e45ff625f/shipping-methods/current"
+                    "href" : "https://yourshop.api.urn/carts/480b2ba9-aa59-4427-a295-1b92acd81cfc/shipping-methods/current"
                   },
                   "payment-method-available" : {
-                    "href" : "https://yourshop.api.urn/carts/24404724-6191-40a6-ab50-e72e45ff625f/payment-methods"
+                    "href" : "https://yourshop.api.urn/carts/480b2ba9-aa59-4427-a295-1b92acd81cfc/payment-methods"
                   },
                   "payment-method-default" : {
-                    "href" : "https://yourshop.api.urn/carts/24404724-6191-40a6-ab50-e72e45ff625f/payment-methods/default"
+                    "href" : "https://yourshop.api.urn/carts/480b2ba9-aa59-4427-a295-1b92acd81cfc/payment-methods/default"
                   },
                   "payment-method-current" : {
-                    "href" : "https://yourshop.api.urn/carts/24404724-6191-40a6-ab50-e72e45ff625f/payment-methods/current"
+                    "href" : "https://yourshop.api.urn/carts/480b2ba9-aa59-4427-a295-1b92acd81cfc/payment-methods/current"
                   },
                   "billing-address" : {
-                    "href" : "https://yourshop.api.urn/carts/24404724-6191-40a6-ab50-e72e45ff625f/billing-address"
+                    "href" : "https://yourshop.api.urn/carts/480b2ba9-aa59-4427-a295-1b92acd81cfc/billing-address"
                   },
                   "shipping-address" : {
-                    "href" : "https://yourshop.api.urn/carts/24404724-6191-40a6-ab50-e72e45ff625f/shipping-address"
+                    "href" : "https://yourshop.api.urn/carts/480b2ba9-aa59-4427-a295-1b92acd81cfc/shipping-address"
                   }
                 }
               }
@@ -2086,7 +2073,7 @@ paths:
           examples:
             application/hal+json: |-
               {
-                "_id" : "d381f9db-d630-401c-868f-ebf1018ab889",
+                "_id" : "191dba3f-24ca-4236-9b3a-be2c8ba9d82e",
                 "lineItems" : [ ],
                 "shippingLineItem" : {
                   "lineItemPrice" : {
@@ -2097,7 +2084,7 @@ paths:
                   "lineItemTaxes" : [ ],
                   "_embedded" : {
                     "shipping-method" : {
-                      "_id" : "c129605b-1971-4f0a-9398-ee412fb8aa8d",
+                      "_id" : "ba72865b-b3c3-4512-a5ef-d93e56b1cc4c",
                       "name" : "Standard Shipping 2",
                       "description" : "Standard Shipping",
                       "taxClass" : "REGULAR",
@@ -2111,7 +2098,7 @@ paths:
                       "weightBasedPrice" : null,
                       "_links" : {
                         "self" : {
-                          "href" : "https://yourshop.api.urn/shipping-zones/5acee025-7ba6-45a8-8b8d-e162b5e57f03/shipping-methods/c129605b-1971-4f0a-9398-ee412fb8aa8d"
+                          "href" : "https://yourshop.api.urn/shipping-zones/d601e3cb-dac9-4f98-9f19-cc2775f019ab/shipping-methods/ba72865b-b3c3-4512-a5ef-d93e56b1cc4c"
                         }
                       }
                     }
@@ -2126,7 +2113,7 @@ paths:
                   "lineItemTaxes" : [ ],
                   "_embedded" : {
                     "payment-method" : {
-                      "_id" : "89eb68b0-1bf7-41a9-8e03-7481d205c9e8",
+                      "_id" : "e9791cfa-d7d6-4282-b5c0-91dd7bbf6063",
                       "name" : "Converge",
                       "description" : "Pay with Converge",
                       "officialName" : "Converge",
@@ -2149,16 +2136,16 @@ paths:
                       "onlinePayment" : false,
                       "_links" : {
                         "self" : {
-                          "href" : "https://yourshop.api.urn/payment-methods/89eb68b0-1bf7-41a9-8e03-7481d205c9e8"
+                          "href" : "https://yourshop.api.urn/payment-methods/e9791cfa-d7d6-4282-b5c0-91dd7bbf6063"
                         },
                         "payment-method" : {
-                          "href" : "https://yourshop.api.urn/payment-methods/89eb68b0-1bf7-41a9-8e03-7481d205c9e8"
+                          "href" : "https://yourshop.api.urn/payment-methods/e9791cfa-d7d6-4282-b5c0-91dd7bbf6063"
                         },
                         "deactivate-payment-method" : {
-                          "href" : "https://yourshop.api.urn/payment-methods/89eb68b0-1bf7-41a9-8e03-7481d205c9e8/deactivate"
+                          "href" : "https://yourshop.api.urn/payment-methods/e9791cfa-d7d6-4282-b5c0-91dd7bbf6063/deactivate"
                         },
                         "payment-method-definition" : {
-                          "href" : "https://yourshop.api.urn/payment-methods/89eb68b0-1bf7-41a9-8e03-7481d205c9e8/payment-method-definition"
+                          "href" : "https://yourshop.api.urn/payment-methods/e9791cfa-d7d6-4282-b5c0-91dd7bbf6063/payment-method-definition"
                         }
                       }
                     }
@@ -2206,34 +2193,34 @@ paths:
                 },
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/carts/d381f9db-d630-401c-868f-ebf1018ab889"
+                    "href" : "https://yourshop.api.urn/carts/191dba3f-24ca-4236-9b3a-be2c8ba9d82e"
                   },
                   "line-items" : {
-                    "href" : "https://yourshop.api.urn/carts/d381f9db-d630-401c-868f-ebf1018ab889/line-items"
+                    "href" : "https://yourshop.api.urn/carts/191dba3f-24ca-4236-9b3a-be2c8ba9d82e/line-items"
                   },
                   "shipping-method-available" : {
-                    "href" : "https://yourshop.api.urn/carts/d381f9db-d630-401c-868f-ebf1018ab889/shipping-methods"
+                    "href" : "https://yourshop.api.urn/carts/191dba3f-24ca-4236-9b3a-be2c8ba9d82e/shipping-methods"
                   },
                   "shipping-method-default" : {
-                    "href" : "https://yourshop.api.urn/carts/d381f9db-d630-401c-868f-ebf1018ab889/shipping-methods/default"
+                    "href" : "https://yourshop.api.urn/carts/191dba3f-24ca-4236-9b3a-be2c8ba9d82e/shipping-methods/default"
                   },
                   "shipping-method-current" : {
-                    "href" : "https://yourshop.api.urn/carts/d381f9db-d630-401c-868f-ebf1018ab889/shipping-methods/current"
+                    "href" : "https://yourshop.api.urn/carts/191dba3f-24ca-4236-9b3a-be2c8ba9d82e/shipping-methods/current"
                   },
                   "payment-method-available" : {
-                    "href" : "https://yourshop.api.urn/carts/d381f9db-d630-401c-868f-ebf1018ab889/payment-methods"
+                    "href" : "https://yourshop.api.urn/carts/191dba3f-24ca-4236-9b3a-be2c8ba9d82e/payment-methods"
                   },
                   "payment-method-default" : {
-                    "href" : "https://yourshop.api.urn/carts/d381f9db-d630-401c-868f-ebf1018ab889/payment-methods/default"
+                    "href" : "https://yourshop.api.urn/carts/191dba3f-24ca-4236-9b3a-be2c8ba9d82e/payment-methods/default"
                   },
                   "payment-method-current" : {
-                    "href" : "https://yourshop.api.urn/carts/d381f9db-d630-401c-868f-ebf1018ab889/payment-methods/current"
+                    "href" : "https://yourshop.api.urn/carts/191dba3f-24ca-4236-9b3a-be2c8ba9d82e/payment-methods/current"
                   },
                   "billing-address" : {
-                    "href" : "https://yourshop.api.urn/carts/d381f9db-d630-401c-868f-ebf1018ab889/billing-address"
+                    "href" : "https://yourshop.api.urn/carts/191dba3f-24ca-4236-9b3a-be2c8ba9d82e/billing-address"
                   },
                   "shipping-address" : {
-                    "href" : "https://yourshop.api.urn/carts/d381f9db-d630-401c-868f-ebf1018ab889/shipping-address"
+                    "href" : "https://yourshop.api.urn/carts/191dba3f-24ca-4236-9b3a-be2c8ba9d82e/shipping-address"
                   }
                 }
               }
@@ -2259,7 +2246,7 @@ paths:
           examples:
             application/hal+json: |-
               {
-                "_id" : "57847512-72b1-4b8e-8bbb-08ef3954b0aa",
+                "_id" : "ffb59dcd-f68d-4f60-a86a-bf003aec0bae",
                 "name" : "Converge",
                 "description" : "Pay with Converge",
                 "officialName" : "Converge",
@@ -2282,16 +2269,16 @@ paths:
                 "onlinePayment" : false,
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/payment-methods/57847512-72b1-4b8e-8bbb-08ef3954b0aa"
+                    "href" : "https://yourshop.api.urn/payment-methods/ffb59dcd-f68d-4f60-a86a-bf003aec0bae"
                   },
                   "payment-method" : {
-                    "href" : "https://yourshop.api.urn/payment-methods/57847512-72b1-4b8e-8bbb-08ef3954b0aa"
+                    "href" : "https://yourshop.api.urn/payment-methods/ffb59dcd-f68d-4f60-a86a-bf003aec0bae"
                   },
                   "deactivate-payment-method" : {
-                    "href" : "https://yourshop.api.urn/payment-methods/57847512-72b1-4b8e-8bbb-08ef3954b0aa/deactivate"
+                    "href" : "https://yourshop.api.urn/payment-methods/ffb59dcd-f68d-4f60-a86a-bf003aec0bae/deactivate"
                   },
                   "payment-method-definition" : {
-                    "href" : "https://yourshop.api.urn/payment-methods/57847512-72b1-4b8e-8bbb-08ef3954b0aa/payment-method-definition"
+                    "href" : "https://yourshop.api.urn/payment-methods/ffb59dcd-f68d-4f60-a86a-bf003aec0bae/payment-method-definition"
                   }
                 }
               }
@@ -2315,20 +2302,20 @@ paths:
         name: ""
         required: false
         schema:
-          $ref: '#/definitions/carts_cartId_payment-methods_current126202579'
+          $ref: '#/definitions/carts_cartId_payment-methods_current-1737229400'
         x-examples:
-          text/uri-list: https://yourshop.api.urn/payment-methods/0c7d91b1-ce82-46f3-b50b-4f6775b1e842
+          text/uri-list: https://yourshop.api.urn/payment-methods/2b00bd84-5bb0-42c3-b0dd-ba2777e95c79
       responses:
         200:
           description: ""
           examples:
             application/json: |-
               {
-                "_id" : "6b9a99f2-0cac-478a-b669-830dad7c6629",
+                "_id" : "7573e1f4-ef8b-44b6-85e5-32fb6792b631",
                 "lineItems" : [ {
                   "_type" : "PRODUCT",
-                  "_id" : "a210891c-9f2b-4dbe-afe6-0d29bd3c2073",
-                  "_ref" : "895f2298-6078-45a1-ac13-f9146a6793f6",
+                  "_id" : "4fd99727-a509-431e-b8fa-2334596f28cb",
+                  "_ref" : "f0071a66-5614-4253-860a-e9852155b736",
                   "name" : "Power & Vanilla Coconut Protein Bar (Pack of 5)",
                   "quantity" : 1,
                   "singleItemPrice" : {
@@ -2349,12 +2336,12 @@ paths:
                   },
                   "_embedded" : {
                     "product" : {
-                      "_id" : "895f2298-6078-45a1-ac13-f9146a6793f6",
+                      "_id" : "f0071a66-5614-4253-860a-e9852155b736",
                       "sku" : "EB001",
                       "essentialFeatures" : "Preservative-free. No added sweeteners. Vegan.",
                       "_links" : {
                         "product" : {
-                          "href" : "https://yourshop.api.urn/product-view/products/895f2298-6078-45a1-ac13-f9146a6793f6?locale=de-DE"
+                          "href" : "https://yourshop.api.urn/product-view/products/f0071a66-5614-4253-860a-e9852155b736?locale=de-DE"
                         },
                         "default-image-data" : {
                           "href" : "https://yourshop.api.urn/http:/your.image.hoster.com/randomimage.png"
@@ -2364,7 +2351,7 @@ paths:
                   },
                   "_links" : {
                     "self" : {
-                      "href" : "https://yourshop.api.urn/carts/6b9a99f2-0cac-478a-b669-830dad7c6629/line-items/a210891c-9f2b-4dbe-afe6-0d29bd3c2073"
+                      "href" : "https://yourshop.api.urn/carts/7573e1f4-ef8b-44b6-85e5-32fb6792b631/line-items/4fd99727-a509-431e-b8fa-2334596f28cb"
                     }
                   }
                 } ],
@@ -2382,7 +2369,7 @@ paths:
                   } ],
                   "_embedded" : {
                     "shipping-method" : {
-                      "_id" : "3b6d870a-f4fb-4121-a36e-2c26077c4b12",
+                      "_id" : "09010d59-4087-495f-9136-3233a5c4b63b",
                       "name" : "Standard Shipping 2",
                       "description" : "Standard Shipping",
                       "taxClass" : "REGULAR",
@@ -2396,7 +2383,7 @@ paths:
                       "weightBasedPrice" : null,
                       "_links" : {
                         "self" : {
-                          "href" : "https://yourshop.api.urn/shipping-zones/2324b543-7556-4d72-9758-2fad7df79880/shipping-methods/3b6d870a-f4fb-4121-a36e-2c26077c4b12"
+                          "href" : "https://yourshop.api.urn/shipping-zones/6139ecc6-8817-4c0a-9cb9-c2c8c20e9d78/shipping-methods/09010d59-4087-495f-9136-3233a5c4b63b"
                         }
                       }
                     }
@@ -2416,7 +2403,7 @@ paths:
                   } ],
                   "_embedded" : {
                     "payment-method" : {
-                      "_id" : "0c7d91b1-ce82-46f3-b50b-4f6775b1e842",
+                      "_id" : "2b00bd84-5bb0-42c3-b0dd-ba2777e95c79",
                       "name" : "Credit Card",
                       "description" : "Pay with CreditCard",
                       "officialName" : "Credit Card",
@@ -2428,7 +2415,7 @@ paths:
                         "percentageValue" : 0.02
                       },
                       "position" : 2,
-                      "serviceableCountries" : [ "GB", "DE" ],
+                      "serviceableCountries" : [ "DE", "GB" ],
                       "minimumOrderValue" : {
                         "currency" : "EUR",
                         "amount" : 20
@@ -2438,16 +2425,16 @@ paths:
                       "onlinePayment" : false,
                       "_links" : {
                         "self" : {
-                          "href" : "https://yourshop.api.urn/payment-methods/0c7d91b1-ce82-46f3-b50b-4f6775b1e842"
+                          "href" : "https://yourshop.api.urn/payment-methods/2b00bd84-5bb0-42c3-b0dd-ba2777e95c79"
                         },
                         "payment-method" : {
-                          "href" : "https://yourshop.api.urn/payment-methods/0c7d91b1-ce82-46f3-b50b-4f6775b1e842"
+                          "href" : "https://yourshop.api.urn/payment-methods/2b00bd84-5bb0-42c3-b0dd-ba2777e95c79"
                         },
                         "deactivate-payment-method" : {
-                          "href" : "https://yourshop.api.urn/payment-methods/0c7d91b1-ce82-46f3-b50b-4f6775b1e842/deactivate"
+                          "href" : "https://yourshop.api.urn/payment-methods/2b00bd84-5bb0-42c3-b0dd-ba2777e95c79/deactivate"
                         },
                         "payment-method-definition" : {
-                          "href" : "https://yourshop.api.urn/payment-methods/0c7d91b1-ce82-46f3-b50b-4f6775b1e842/payment-method-definition"
+                          "href" : "https://yourshop.api.urn/payment-methods/2b00bd84-5bb0-42c3-b0dd-ba2777e95c79/payment-method-definition"
                         }
                       }
                     }
@@ -2500,34 +2487,34 @@ paths:
                 },
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/carts/6b9a99f2-0cac-478a-b669-830dad7c6629"
+                    "href" : "https://yourshop.api.urn/carts/7573e1f4-ef8b-44b6-85e5-32fb6792b631"
                   },
                   "line-items" : {
-                    "href" : "https://yourshop.api.urn/carts/6b9a99f2-0cac-478a-b669-830dad7c6629/line-items"
+                    "href" : "https://yourshop.api.urn/carts/7573e1f4-ef8b-44b6-85e5-32fb6792b631/line-items"
                   },
                   "shipping-method-available" : {
-                    "href" : "https://yourshop.api.urn/carts/6b9a99f2-0cac-478a-b669-830dad7c6629/shipping-methods"
+                    "href" : "https://yourshop.api.urn/carts/7573e1f4-ef8b-44b6-85e5-32fb6792b631/shipping-methods"
                   },
                   "shipping-method-default" : {
-                    "href" : "https://yourshop.api.urn/carts/6b9a99f2-0cac-478a-b669-830dad7c6629/shipping-methods/default"
+                    "href" : "https://yourshop.api.urn/carts/7573e1f4-ef8b-44b6-85e5-32fb6792b631/shipping-methods/default"
                   },
                   "shipping-method-current" : {
-                    "href" : "https://yourshop.api.urn/carts/6b9a99f2-0cac-478a-b669-830dad7c6629/shipping-methods/current"
+                    "href" : "https://yourshop.api.urn/carts/7573e1f4-ef8b-44b6-85e5-32fb6792b631/shipping-methods/current"
                   },
                   "payment-method-available" : {
-                    "href" : "https://yourshop.api.urn/carts/6b9a99f2-0cac-478a-b669-830dad7c6629/payment-methods"
+                    "href" : "https://yourshop.api.urn/carts/7573e1f4-ef8b-44b6-85e5-32fb6792b631/payment-methods"
                   },
                   "payment-method-default" : {
-                    "href" : "https://yourshop.api.urn/carts/6b9a99f2-0cac-478a-b669-830dad7c6629/payment-methods/default"
+                    "href" : "https://yourshop.api.urn/carts/7573e1f4-ef8b-44b6-85e5-32fb6792b631/payment-methods/default"
                   },
                   "payment-method-current" : {
-                    "href" : "https://yourshop.api.urn/carts/6b9a99f2-0cac-478a-b669-830dad7c6629/payment-methods/current"
+                    "href" : "https://yourshop.api.urn/carts/7573e1f4-ef8b-44b6-85e5-32fb6792b631/payment-methods/current"
                   },
                   "billing-address" : {
-                    "href" : "https://yourshop.api.urn/carts/6b9a99f2-0cac-478a-b669-830dad7c6629/billing-address"
+                    "href" : "https://yourshop.api.urn/carts/7573e1f4-ef8b-44b6-85e5-32fb6792b631/billing-address"
                   },
                   "shipping-address" : {
-                    "href" : "https://yourshop.api.urn/carts/6b9a99f2-0cac-478a-b669-830dad7c6629/shipping-address"
+                    "href" : "https://yourshop.api.urn/carts/7573e1f4-ef8b-44b6-85e5-32fb6792b631/shipping-address"
                   }
                 }
               }
@@ -2554,7 +2541,7 @@ paths:
           examples:
             application/json: |-
               {
-                "_id" : "f5999ebc-652b-4427-8319-d76d87e24178",
+                "_id" : "e688eb9e-6bff-4374-a038-e47711f8c679",
                 "lineItems" : [ ],
                 "shippingLineItem" : {
                   "lineItemPrice" : {
@@ -2565,7 +2552,7 @@ paths:
                   "lineItemTaxes" : [ ],
                   "_embedded" : {
                     "shipping-method" : {
-                      "_id" : "2bc39755-874e-475f-9697-d08707245f70",
+                      "_id" : "7753a717-bd8d-4953-80d3-10e7209ef972",
                       "name" : "Standard Shipping 2",
                       "description" : "Standard Shipping",
                       "taxClass" : "REGULAR",
@@ -2579,7 +2566,7 @@ paths:
                       "weightBasedPrice" : null,
                       "_links" : {
                         "self" : {
-                          "href" : "https://yourshop.api.urn/shipping-zones/5f22f23d-fd89-4dc1-a80f-7960310851ff/shipping-methods/2bc39755-874e-475f-9697-d08707245f70"
+                          "href" : "https://yourshop.api.urn/shipping-zones/16169bf3-2d78-49d3-b844-ffce2c8634d1/shipping-methods/7753a717-bd8d-4953-80d3-10e7209ef972"
                         }
                       }
                     }
@@ -2594,7 +2581,7 @@ paths:
                   "lineItemTaxes" : [ ],
                   "_embedded" : {
                     "payment-method" : {
-                      "_id" : "d9a8f923-28ff-4ab5-835a-7baaba9de2da",
+                      "_id" : "d9a609ed-5578-4798-ade1-fab553796f7e",
                       "name" : "Converge",
                       "description" : "Pay with Converge",
                       "officialName" : "Converge",
@@ -2617,16 +2604,16 @@ paths:
                       "onlinePayment" : false,
                       "_links" : {
                         "self" : {
-                          "href" : "https://yourshop.api.urn/payment-methods/d9a8f923-28ff-4ab5-835a-7baaba9de2da"
+                          "href" : "https://yourshop.api.urn/payment-methods/d9a609ed-5578-4798-ade1-fab553796f7e"
                         },
                         "payment-method" : {
-                          "href" : "https://yourshop.api.urn/payment-methods/d9a8f923-28ff-4ab5-835a-7baaba9de2da"
+                          "href" : "https://yourshop.api.urn/payment-methods/d9a609ed-5578-4798-ade1-fab553796f7e"
                         },
                         "deactivate-payment-method" : {
-                          "href" : "https://yourshop.api.urn/payment-methods/d9a8f923-28ff-4ab5-835a-7baaba9de2da/deactivate"
+                          "href" : "https://yourshop.api.urn/payment-methods/d9a609ed-5578-4798-ade1-fab553796f7e/deactivate"
                         },
                         "payment-method-definition" : {
-                          "href" : "https://yourshop.api.urn/payment-methods/d9a8f923-28ff-4ab5-835a-7baaba9de2da/payment-method-definition"
+                          "href" : "https://yourshop.api.urn/payment-methods/d9a609ed-5578-4798-ade1-fab553796f7e/payment-method-definition"
                         }
                       }
                     }
@@ -2674,34 +2661,34 @@ paths:
                 },
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/carts/f5999ebc-652b-4427-8319-d76d87e24178"
+                    "href" : "https://yourshop.api.urn/carts/e688eb9e-6bff-4374-a038-e47711f8c679"
                   },
                   "line-items" : {
-                    "href" : "https://yourshop.api.urn/carts/f5999ebc-652b-4427-8319-d76d87e24178/line-items"
+                    "href" : "https://yourshop.api.urn/carts/e688eb9e-6bff-4374-a038-e47711f8c679/line-items"
                   },
                   "shipping-method-available" : {
-                    "href" : "https://yourshop.api.urn/carts/f5999ebc-652b-4427-8319-d76d87e24178/shipping-methods"
+                    "href" : "https://yourshop.api.urn/carts/e688eb9e-6bff-4374-a038-e47711f8c679/shipping-methods"
                   },
                   "shipping-method-default" : {
-                    "href" : "https://yourshop.api.urn/carts/f5999ebc-652b-4427-8319-d76d87e24178/shipping-methods/default"
+                    "href" : "https://yourshop.api.urn/carts/e688eb9e-6bff-4374-a038-e47711f8c679/shipping-methods/default"
                   },
                   "shipping-method-current" : {
-                    "href" : "https://yourshop.api.urn/carts/f5999ebc-652b-4427-8319-d76d87e24178/shipping-methods/current"
+                    "href" : "https://yourshop.api.urn/carts/e688eb9e-6bff-4374-a038-e47711f8c679/shipping-methods/current"
                   },
                   "payment-method-available" : {
-                    "href" : "https://yourshop.api.urn/carts/f5999ebc-652b-4427-8319-d76d87e24178/payment-methods"
+                    "href" : "https://yourshop.api.urn/carts/e688eb9e-6bff-4374-a038-e47711f8c679/payment-methods"
                   },
                   "payment-method-default" : {
-                    "href" : "https://yourshop.api.urn/carts/f5999ebc-652b-4427-8319-d76d87e24178/payment-methods/default"
+                    "href" : "https://yourshop.api.urn/carts/e688eb9e-6bff-4374-a038-e47711f8c679/payment-methods/default"
                   },
                   "payment-method-current" : {
-                    "href" : "https://yourshop.api.urn/carts/f5999ebc-652b-4427-8319-d76d87e24178/payment-methods/current"
+                    "href" : "https://yourshop.api.urn/carts/e688eb9e-6bff-4374-a038-e47711f8c679/payment-methods/current"
                   },
                   "billing-address" : {
-                    "href" : "https://yourshop.api.urn/carts/f5999ebc-652b-4427-8319-d76d87e24178/billing-address"
+                    "href" : "https://yourshop.api.urn/carts/e688eb9e-6bff-4374-a038-e47711f8c679/billing-address"
                   },
                   "shipping-address" : {
-                    "href" : "https://yourshop.api.urn/carts/f5999ebc-652b-4427-8319-d76d87e24178/shipping-address"
+                    "href" : "https://yourshop.api.urn/carts/e688eb9e-6bff-4374-a038-e47711f8c679/shipping-address"
                   }
                 }
               }
@@ -2727,7 +2714,7 @@ paths:
           examples:
             application/hal+json: |-
               {
-                "_id" : "0a1ce7ab-5b2f-4730-afef-d2cbd43ceeae",
+                "_id" : "0b59bb46-ade7-439b-a4fc-8d0656ea0556",
                 "name" : "Standard Shipping 2",
                 "description" : "Standard Shipping",
                 "taxClass" : "REGULAR",
@@ -2741,7 +2728,7 @@ paths:
                 "weightBasedPrice" : null,
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/shipping-zones/5852d80d-2536-48a7-90dd-6d4772929d39/shipping-methods/0a1ce7ab-5b2f-4730-afef-d2cbd43ceeae"
+                    "href" : "https://yourshop.api.urn/shipping-zones/c6f8bf45-c17b-4ed7-ac17-5a8006323b88/shipping-methods/0b59bb46-ade7-439b-a4fc-8d0656ea0556"
                   }
                 }
               }
@@ -2765,16 +2752,16 @@ paths:
         name: ""
         required: false
         schema:
-          $ref: '#/definitions/carts_cartId_shipping-methods_current1224003889'
+          $ref: '#/definitions/carts_cartId_shipping-methods_current-520929856'
         x-examples:
-          text/uri-list: https://yourshop.api.urn/shipping-zones/12753226-3e40-4a2c-8491-66e577d6cbd1/shipping-methods/223784d2-8260-42ca-a923-90760cad5eed
+          text/uri-list: https://yourshop.api.urn/shipping-zones/18981c42-709a-4ed9-b1e7-5821bd98f7f2/shipping-methods/9134a890-fcb7-4591-9c7b-6b60b12d4272
       responses:
         200:
           description: ""
           examples:
             application/json: |-
               {
-                "_id" : "06ed1840-45b7-4fb2-ab6d-d90d1d0b2e06",
+                "_id" : "1d2e935c-37be-4759-8cdd-5f44bf678dfa",
                 "lineItems" : [ ],
                 "shippingLineItem" : {
                   "lineItemPrice" : {
@@ -2785,7 +2772,7 @@ paths:
                   "lineItemTaxes" : [ ],
                   "_embedded" : {
                     "shipping-method" : {
-                      "_id" : "223784d2-8260-42ca-a923-90760cad5eed",
+                      "_id" : "9134a890-fcb7-4591-9c7b-6b60b12d4272",
                       "name" : "Express",
                       "description" : "Shipping overnight, delivery on the next day.",
                       "taxClass" : "REGULAR",
@@ -2802,7 +2789,7 @@ paths:
                       "weightBasedPrice" : null,
                       "_links" : {
                         "self" : {
-                          "href" : "https://yourshop.api.urn/shipping-zones/12753226-3e40-4a2c-8491-66e577d6cbd1/shipping-methods/223784d2-8260-42ca-a923-90760cad5eed"
+                          "href" : "https://yourshop.api.urn/shipping-zones/18981c42-709a-4ed9-b1e7-5821bd98f7f2/shipping-methods/9134a890-fcb7-4591-9c7b-6b60b12d4272"
                         }
                       }
                     }
@@ -2817,7 +2804,7 @@ paths:
                   "lineItemTaxes" : [ ],
                   "_embedded" : {
                     "payment-method" : {
-                      "_id" : "6fde9c21-f92d-4537-a636-58d70b217825",
+                      "_id" : "1f50517f-f2f2-4602-a924-b3d20d5f9071",
                       "name" : "Converge",
                       "description" : "Pay with Converge",
                       "officialName" : "Converge",
@@ -2840,16 +2827,16 @@ paths:
                       "onlinePayment" : false,
                       "_links" : {
                         "self" : {
-                          "href" : "https://yourshop.api.urn/payment-methods/6fde9c21-f92d-4537-a636-58d70b217825"
+                          "href" : "https://yourshop.api.urn/payment-methods/1f50517f-f2f2-4602-a924-b3d20d5f9071"
                         },
                         "payment-method" : {
-                          "href" : "https://yourshop.api.urn/payment-methods/6fde9c21-f92d-4537-a636-58d70b217825"
+                          "href" : "https://yourshop.api.urn/payment-methods/1f50517f-f2f2-4602-a924-b3d20d5f9071"
                         },
                         "deactivate-payment-method" : {
-                          "href" : "https://yourshop.api.urn/payment-methods/6fde9c21-f92d-4537-a636-58d70b217825/deactivate"
+                          "href" : "https://yourshop.api.urn/payment-methods/1f50517f-f2f2-4602-a924-b3d20d5f9071/deactivate"
                         },
                         "payment-method-definition" : {
-                          "href" : "https://yourshop.api.urn/payment-methods/6fde9c21-f92d-4537-a636-58d70b217825/payment-method-definition"
+                          "href" : "https://yourshop.api.urn/payment-methods/1f50517f-f2f2-4602-a924-b3d20d5f9071/payment-method-definition"
                         }
                       }
                     }
@@ -2943,37 +2930,37 @@ paths:
                 },
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/carts/06ed1840-45b7-4fb2-ab6d-d90d1d0b2e06"
+                    "href" : "https://yourshop.api.urn/carts/1d2e935c-37be-4759-8cdd-5f44bf678dfa"
                   },
                   "line-items" : {
-                    "href" : "https://yourshop.api.urn/carts/06ed1840-45b7-4fb2-ab6d-d90d1d0b2e06/line-items"
+                    "href" : "https://yourshop.api.urn/carts/1d2e935c-37be-4759-8cdd-5f44bf678dfa/line-items"
                   },
                   "shipping-method-available" : {
-                    "href" : "https://yourshop.api.urn/carts/06ed1840-45b7-4fb2-ab6d-d90d1d0b2e06/shipping-methods"
+                    "href" : "https://yourshop.api.urn/carts/1d2e935c-37be-4759-8cdd-5f44bf678dfa/shipping-methods"
                   },
                   "shipping-method-default" : {
-                    "href" : "https://yourshop.api.urn/carts/06ed1840-45b7-4fb2-ab6d-d90d1d0b2e06/shipping-methods/default"
+                    "href" : "https://yourshop.api.urn/carts/1d2e935c-37be-4759-8cdd-5f44bf678dfa/shipping-methods/default"
                   },
                   "shipping-method-current" : {
-                    "href" : "https://yourshop.api.urn/carts/06ed1840-45b7-4fb2-ab6d-d90d1d0b2e06/shipping-methods/current"
+                    "href" : "https://yourshop.api.urn/carts/1d2e935c-37be-4759-8cdd-5f44bf678dfa/shipping-methods/current"
                   },
                   "payment-method-available" : {
-                    "href" : "https://yourshop.api.urn/carts/06ed1840-45b7-4fb2-ab6d-d90d1d0b2e06/payment-methods"
+                    "href" : "https://yourshop.api.urn/carts/1d2e935c-37be-4759-8cdd-5f44bf678dfa/payment-methods"
                   },
                   "payment-method-default" : {
-                    "href" : "https://yourshop.api.urn/carts/06ed1840-45b7-4fb2-ab6d-d90d1d0b2e06/payment-methods/default"
+                    "href" : "https://yourshop.api.urn/carts/1d2e935c-37be-4759-8cdd-5f44bf678dfa/payment-methods/default"
                   },
                   "payment-method-current" : {
-                    "href" : "https://yourshop.api.urn/carts/06ed1840-45b7-4fb2-ab6d-d90d1d0b2e06/payment-methods/current"
+                    "href" : "https://yourshop.api.urn/carts/1d2e935c-37be-4759-8cdd-5f44bf678dfa/payment-methods/current"
                   },
                   "billing-address" : {
-                    "href" : "https://yourshop.api.urn/carts/06ed1840-45b7-4fb2-ab6d-d90d1d0b2e06/billing-address"
+                    "href" : "https://yourshop.api.urn/carts/1d2e935c-37be-4759-8cdd-5f44bf678dfa/billing-address"
                   },
                   "shipping-address" : {
-                    "href" : "https://yourshop.api.urn/carts/06ed1840-45b7-4fb2-ab6d-d90d1d0b2e06/shipping-address"
+                    "href" : "https://yourshop.api.urn/carts/1d2e935c-37be-4759-8cdd-5f44bf678dfa/shipping-address"
                   },
                   "place-order" : {
-                    "href" : "https://yourshop.api.urn/carts/06ed1840-45b7-4fb2-ab6d-d90d1d0b2e06/order"
+                    "href" : "https://yourshop.api.urn/carts/1d2e935c-37be-4759-8cdd-5f44bf678dfa/order"
                   }
                 }
               }
@@ -3000,7 +2987,7 @@ paths:
           examples:
             application/json: |-
               {
-                "_id" : "b43da04c-0466-41f9-8c60-bf136b0bfa7b",
+                "_id" : "93e4ac90-c417-406e-a83b-7507441fad54",
                 "lineItems" : [ ],
                 "shippingLineItem" : {
                   "lineItemPrice" : {
@@ -3011,7 +2998,7 @@ paths:
                   "lineItemTaxes" : [ ],
                   "_embedded" : {
                     "shipping-method" : {
-                      "_id" : "aede33ce-cac5-4813-9c00-dc54f4ca55b3",
+                      "_id" : "5d86e6e2-bec5-4130-a982-d56b578631c2",
                       "name" : "Standard Shipping 2",
                       "description" : "Standard Shipping",
                       "taxClass" : "REGULAR",
@@ -3025,7 +3012,7 @@ paths:
                       "weightBasedPrice" : null,
                       "_links" : {
                         "self" : {
-                          "href" : "https://yourshop.api.urn/shipping-zones/435c8398-d867-4a09-90e3-9e653074ac4e/shipping-methods/aede33ce-cac5-4813-9c00-dc54f4ca55b3"
+                          "href" : "https://yourshop.api.urn/shipping-zones/7dc8d02e-5164-4e72-bd6a-c0e1348b468b/shipping-methods/5d86e6e2-bec5-4130-a982-d56b578631c2"
                         }
                       }
                     }
@@ -3040,7 +3027,7 @@ paths:
                   "lineItemTaxes" : [ ],
                   "_embedded" : {
                     "payment-method" : {
-                      "_id" : "c8366645-07cf-41e1-a7cc-3792b5bed3f1",
+                      "_id" : "4fb9c30c-3c1d-48ea-8a13-d981b1651590",
                       "name" : "Converge",
                       "description" : "Pay with Converge",
                       "officialName" : "Converge",
@@ -3063,16 +3050,16 @@ paths:
                       "onlinePayment" : false,
                       "_links" : {
                         "self" : {
-                          "href" : "https://yourshop.api.urn/payment-methods/c8366645-07cf-41e1-a7cc-3792b5bed3f1"
+                          "href" : "https://yourshop.api.urn/payment-methods/4fb9c30c-3c1d-48ea-8a13-d981b1651590"
                         },
                         "payment-method" : {
-                          "href" : "https://yourshop.api.urn/payment-methods/c8366645-07cf-41e1-a7cc-3792b5bed3f1"
+                          "href" : "https://yourshop.api.urn/payment-methods/4fb9c30c-3c1d-48ea-8a13-d981b1651590"
                         },
                         "deactivate-payment-method" : {
-                          "href" : "https://yourshop.api.urn/payment-methods/c8366645-07cf-41e1-a7cc-3792b5bed3f1/deactivate"
+                          "href" : "https://yourshop.api.urn/payment-methods/4fb9c30c-3c1d-48ea-8a13-d981b1651590/deactivate"
                         },
                         "payment-method-definition" : {
-                          "href" : "https://yourshop.api.urn/payment-methods/c8366645-07cf-41e1-a7cc-3792b5bed3f1/payment-method-definition"
+                          "href" : "https://yourshop.api.urn/payment-methods/4fb9c30c-3c1d-48ea-8a13-d981b1651590/payment-method-definition"
                         }
                       }
                     }
@@ -3120,34 +3107,34 @@ paths:
                 },
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/carts/b43da04c-0466-41f9-8c60-bf136b0bfa7b"
+                    "href" : "https://yourshop.api.urn/carts/93e4ac90-c417-406e-a83b-7507441fad54"
                   },
                   "line-items" : {
-                    "href" : "https://yourshop.api.urn/carts/b43da04c-0466-41f9-8c60-bf136b0bfa7b/line-items"
+                    "href" : "https://yourshop.api.urn/carts/93e4ac90-c417-406e-a83b-7507441fad54/line-items"
                   },
                   "shipping-method-available" : {
-                    "href" : "https://yourshop.api.urn/carts/b43da04c-0466-41f9-8c60-bf136b0bfa7b/shipping-methods"
+                    "href" : "https://yourshop.api.urn/carts/93e4ac90-c417-406e-a83b-7507441fad54/shipping-methods"
                   },
                   "shipping-method-default" : {
-                    "href" : "https://yourshop.api.urn/carts/b43da04c-0466-41f9-8c60-bf136b0bfa7b/shipping-methods/default"
+                    "href" : "https://yourshop.api.urn/carts/93e4ac90-c417-406e-a83b-7507441fad54/shipping-methods/default"
                   },
                   "shipping-method-current" : {
-                    "href" : "https://yourshop.api.urn/carts/b43da04c-0466-41f9-8c60-bf136b0bfa7b/shipping-methods/current"
+                    "href" : "https://yourshop.api.urn/carts/93e4ac90-c417-406e-a83b-7507441fad54/shipping-methods/current"
                   },
                   "payment-method-available" : {
-                    "href" : "https://yourshop.api.urn/carts/b43da04c-0466-41f9-8c60-bf136b0bfa7b/payment-methods"
+                    "href" : "https://yourshop.api.urn/carts/93e4ac90-c417-406e-a83b-7507441fad54/payment-methods"
                   },
                   "payment-method-default" : {
-                    "href" : "https://yourshop.api.urn/carts/b43da04c-0466-41f9-8c60-bf136b0bfa7b/payment-methods/default"
+                    "href" : "https://yourshop.api.urn/carts/93e4ac90-c417-406e-a83b-7507441fad54/payment-methods/default"
                   },
                   "payment-method-current" : {
-                    "href" : "https://yourshop.api.urn/carts/b43da04c-0466-41f9-8c60-bf136b0bfa7b/payment-methods/current"
+                    "href" : "https://yourshop.api.urn/carts/93e4ac90-c417-406e-a83b-7507441fad54/payment-methods/current"
                   },
                   "billing-address" : {
-                    "href" : "https://yourshop.api.urn/carts/b43da04c-0466-41f9-8c60-bf136b0bfa7b/billing-address"
+                    "href" : "https://yourshop.api.urn/carts/93e4ac90-c417-406e-a83b-7507441fad54/billing-address"
                   },
                   "shipping-address" : {
-                    "href" : "https://yourshop.api.urn/carts/b43da04c-0466-41f9-8c60-bf136b0bfa7b/shipping-address"
+                    "href" : "https://yourshop.api.urn/carts/93e4ac90-c417-406e-a83b-7507441fad54/shipping-address"
                   }
                 }
               }
@@ -4006,16 +3993,16 @@ paths:
           examples:
             application/json: |-
               {
-                "access_token" : "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjEifQ.eyJ1c2VyX25hbWUiOiJ1c2VyIiwic2NvcGUiOlsicHJvZDpyYyJdLCJ0ZW5hbnRJZCI6MTQzOCwiZXhwIjoxNTQ1MzAyNzQ0LCJpYXQiOjE1NDUwNDM1NDQsInVzZXJJZCI6IjRhN2FiYmFkLTI4YjItNDM0Ni1iNDcyLTc3MGNmNWM2ZGQxNSIsImp0aSI6IjAwNTcwODY4LWFkMTQtNDM5MC1iOTczLTQ3NmE3MzNjZjIzYyIsImNsaWVudF9pZCI6InNhbXBsZS1jbGllbnQiLCJ1c2VybmFtZSI6InVzZXIifQ.AKBnELPGFxTScX4UswnLTKKqIEbinOzrLr7TtlJQwRfkLYokVbRfadU_abnztOjX6lvuZzcBJ-guDHmXxWDHQWdYT_UJGuL3aqv8vloEALmx-IfalGX7wfx5vxp39r4-a1SZZ9eDu03j7QL5VoJzx0C8I0FyFbLaEys_RvVEPDLMkhjlOXOUkFbAMHHJjlfzr_BdlODF0HlDbLSc_MX9I7GEE5KPIli6RTd4UarxKowWiRQchwIlLbNnIbA6ua_-EtNsQ3Im6va_n1kKDrX3fA-yX-h8qi7zKbjH_0fcSituPCweqlxcPhdCpQykcZu6ofSy-7Bov-u3Z-iwXzgxaw",
+                "access_token" : "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjEifQ.eyJ1c2VyX25hbWUiOiJ1c2VyIiwic2NvcGUiOlsicHJvZDpyYyJdLCJ0ZW5hbnRJZCI6MTQzOCwiZXhwIjoxNTQ2ODY0ODQ4LCJpYXQiOjE1NDY2MDU2NDgsInVzZXJJZCI6IjM0NzIwNGFkLWZlMTktNDhhOC1iNmQ5LTkyMWM1ODE5MDdkMSIsImp0aSI6IjUyNTQ4MjkzLWM1OTktNDQ5OC04YmVkLWI2M2Q4NzdmNjFlOCIsImNsaWVudF9pZCI6InNhbXBsZS1jbGllbnQiLCJ1c2VybmFtZSI6InVzZXIifQ.i7uLnKfJkjxmL-8yVMaPx_JY6VcaZge3A24Un__Ef0plkTANbooazMxYcaTP5QYI7lbelT7ge97_5dmm-SVcxxArGog-ssUujUHxgUhVF8bXZAAgLv6-R_FOnapHaeLePNCZg8EamlBJysfaVG6hwWFfQL50p-oNjPwv3fgBSms_goZPH2Fe7TS38d4ajS9WGdygu9evULAOM-q_YJDuTfeVFtS7AGjuQ9pd0oZ3AjVbyvqBAOmgkoyYjzt9vOWVpoc2z4uk7bmCUSBeM1Qi5SnRNCdu4JCiTS-jV4tbtaCqdVUqoP1vcrwXZg6YPVit8cpjdcK8_krEkJeAWugj6g",
                 "token_type" : "bearer",
-                "refresh_token" : "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjEifQ.eyJ1c2VyX25hbWUiOiJ1c2VyIiwic2NvcGUiOlsicHJvZDpyYyJdLCJhdGkiOiIwMDU3MDg2OC1hZDE0LTQzOTAtYjk3My00NzZhNzMzY2YyM2MiLCJ0ZW5hbnRJZCI6MTQzOCwiZXhwIjoxNTQ3NjM1NTQ0LCJpYXQiOjE1NDUwNDM1NDQsInVzZXJJZCI6IjRhN2FiYmFkLTI4YjItNDM0Ni1iNDcyLTc3MGNmNWM2ZGQxNSIsImp0aSI6ImVhNzk1NDkwLWM4ZmQtNGEzYi05OWQ0LWQ3YTM1ODNhZmZlYSIsImNsaWVudF9pZCI6InNhbXBsZS1jbGllbnQiLCJ1c2VybmFtZSI6InVzZXIifQ.AIdb0q4mQ6UJXi4HZBj0rWSrI9Qn_btXIDZxHTOm41kmnc3SZTpU-KXNltHyRwaNv1b38vivz_WXbseWpXoS1Mgi9x_SyuNYdKLIt4nJl0IHpJ2gwR5tVXNWVbnbqy9BoKF4uoblTFPSo6oj2U0voYDkHeKxaAOxLb362b0smzYEZh16THM-LroDYYgKJptAFAzkprF0le4zhYalFRl4PGnSZsPfvmygjO3Vw3LExupg_NS1KwSZ14dGAdc7kZJVebdSaz7KTU4Tu5_v3wJUQyLOKBuGc4AQr1HAe9Gx3WZYPtToirqTuGEpvLA79saMUc6T_mMIdIIxmwS5JkXd3Q",
+                "refresh_token" : "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjEifQ.eyJ1c2VyX25hbWUiOiJ1c2VyIiwic2NvcGUiOlsicHJvZDpyYyJdLCJhdGkiOiI1MjU0ODI5My1jNTk5LTQ0OTgtOGJlZC1iNjNkODc3ZjYxZTgiLCJ0ZW5hbnRJZCI6MTQzOCwiZXhwIjoxNTQ5MTk3NjQ4LCJpYXQiOjE1NDY2MDU2NDgsInVzZXJJZCI6IjM0NzIwNGFkLWZlMTktNDhhOC1iNmQ5LTkyMWM1ODE5MDdkMSIsImp0aSI6IjdkYmE4MDdhLWI2YjgtNDA3Yi1iYmZmLTU2OTJmZWE1MTE4MiIsImNsaWVudF9pZCI6InNhbXBsZS1jbGllbnQiLCJ1c2VybmFtZSI6InVzZXIifQ.ScjRVFoSutXGblvNzPM3lqfvWJVWchrS934xrC1_EIY00wiffbPwX_4cU8eFwq8Oa3Fn5SEc4SpxSviN7O5zF4OeW-yxumL-W7miAJ4vq_RxtppDI1n9S13Njfcqa9nOuDEH0Br_DvGh8Fi7sSsMfjLIdU8e79l_onAsUbIsZGfV1m0Y0WyDDAOJDy6nMfEG8ibIqC6BxnvmQl3EyTOnw825p4zWwzTZDT2F6yqGLqv-SuQud72vWNK6xO34Y80Jdb8nQRR-yFEPGMHyn8x5lPGBAKiPZwPJBXj8rd5dLy7_6Lcqcf7sp8UO117j_LpJqIDi34pbNSrOtyELjO5tfQ",
                 "expires_in" : 259199,
                 "scope" : "prod:rc",
                 "tenantId" : 1438,
-                "iat" : 1545043544,
-                "userId" : "4a7abbad-28b2-4346-b472-770cf5c6dd15",
+                "iat" : 1546605648,
+                "userId" : "347204ad-fe19-48a8-b6d9-921c581907d1",
                 "username" : "user",
-                "jti" : "00570868-ad14-4390-b973-476a733cf23c"
+                "jti" : "52548293-c599-4498-8bed-b63d877f61e8"
               }
           schema:
             $ref: '#/definitions/oauth_token-1631874687'
@@ -6999,7 +6986,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/carts_cartId_shipping-methods-309252030'
+            $ref: '#/definitions/users_id_roles-309252030'
       security:
       - oauth2_accessCode:
         - ordp:r
@@ -8600,7 +8587,7 @@ paths:
               {
                 "_embedded" : {
                   "payment-methods" : [ {
-                    "_id" : "877fb890-2fff-4585-9d00-9390196cf2f1",
+                    "_id" : "dceb9f45-02ad-463b-a7ff-6ac5016a62db",
                     "name" : "A Payment Method",
                     "description" : "Description of A Payment Method",
                     "officialName" : "Percentage Pay",
@@ -8612,7 +8599,7 @@ paths:
                       "percentageValue" : 0.1212
                     },
                     "position" : 1,
-                    "serviceableCountries" : [ "GB", "DE" ],
+                    "serviceableCountries" : [ "DE", "GB" ],
                     "minimumOrderValue" : {
                       "currency" : "EUR",
                       "amount" : 19.99
@@ -8622,16 +8609,16 @@ paths:
                     "onlinePayment" : false,
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/payment-methods/877fb890-2fff-4585-9d00-9390196cf2f1"
+                        "href" : "https://yourshop.api.urn/payment-methods/dceb9f45-02ad-463b-a7ff-6ac5016a62db"
                       },
                       "payment-method" : {
-                        "href" : "https://yourshop.api.urn/payment-methods/877fb890-2fff-4585-9d00-9390196cf2f1"
+                        "href" : "https://yourshop.api.urn/payment-methods/dceb9f45-02ad-463b-a7ff-6ac5016a62db"
                       },
                       "activate-payment-method" : {
-                        "href" : "https://yourshop.api.urn/payment-methods/877fb890-2fff-4585-9d00-9390196cf2f1/activate"
+                        "href" : "https://yourshop.api.urn/payment-methods/dceb9f45-02ad-463b-a7ff-6ac5016a62db/activate"
                       },
                       "payment-method-definition" : {
-                        "href" : "https://yourshop.api.urn/payment-methods/877fb890-2fff-4585-9d00-9390196cf2f1/payment-method-definition"
+                        "href" : "https://yourshop.api.urn/payment-methods/dceb9f45-02ad-463b-a7ff-6ac5016a62db/payment-method-definition"
                       }
                     }
                   } ]
@@ -8698,7 +8685,7 @@ paths:
           examples:
             application/json: |-
               {
-                "_id" : "351e4d68-20db-41ec-a6cd-a9e27e2cc8bb",
+                "_id" : "f5908290-2eaa-4c51-bcb8-c1fb0f766a77",
                 "name" : "A Payment Method",
                 "description" : "Description of A Payment Method",
                 "officialName" : "Percentage Pay",
@@ -8710,7 +8697,7 @@ paths:
                   "percentageValue" : 0.1212
                 },
                 "position" : 1,
-                "serviceableCountries" : [ "GB", "DE" ],
+                "serviceableCountries" : [ "DE", "GB" ],
                 "minimumOrderValue" : {
                   "currency" : "EUR",
                   "amount" : 19.99
@@ -8720,16 +8707,16 @@ paths:
                 "onlinePayment" : false,
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/payment-methods/351e4d68-20db-41ec-a6cd-a9e27e2cc8bb"
+                    "href" : "https://yourshop.api.urn/payment-methods/f5908290-2eaa-4c51-bcb8-c1fb0f766a77"
                   },
                   "payment-method" : {
-                    "href" : "https://yourshop.api.urn/payment-methods/351e4d68-20db-41ec-a6cd-a9e27e2cc8bb"
+                    "href" : "https://yourshop.api.urn/payment-methods/f5908290-2eaa-4c51-bcb8-c1fb0f766a77"
                   },
                   "activate-payment-method" : {
-                    "href" : "https://yourshop.api.urn/payment-methods/351e4d68-20db-41ec-a6cd-a9e27e2cc8bb/activate"
+                    "href" : "https://yourshop.api.urn/payment-methods/f5908290-2eaa-4c51-bcb8-c1fb0f766a77/activate"
                   },
                   "payment-method-definition" : {
-                    "href" : "https://yourshop.api.urn/payment-methods/351e4d68-20db-41ec-a6cd-a9e27e2cc8bb/payment-method-definition"
+                    "href" : "https://yourshop.api.urn/payment-methods/f5908290-2eaa-4c51-bcb8-c1fb0f766a77/payment-method-definition"
                   }
                 }
               }
@@ -8751,13 +8738,13 @@ paths:
         name: ""
         required: false
         schema:
-          $ref: '#/definitions/payment-methods-881423975'
+          $ref: '#/definitions/payment-methods717745105'
         x-examples:
           text/uri-list: |-
-            https://yourshop.api.urn/payment-methods/95d3774c-da2d-4124-b828-4968e32a3ad5
-            https://yourshop.api.urn/payment-methods/b67eb6c9-d76e-4e6f-b052-36d4d5893bcb
-            https://yourshop.api.urn/payment-methods/77d97f5e-b2d6-47d8-85a7-20e0a9fe9031
-            https://yourshop.api.urn/payment-methods/25daacc9-70d5-478b-a599-2035852c2136
+            https://yourshop.api.urn/payment-methods/35aa5491-822d-46bc-8fbb-828811e2b4d3
+            https://yourshop.api.urn/payment-methods/2c623903-e9b6-4e29-ba69-2ea5bf3b3834
+            https://yourshop.api.urn/payment-methods/77a6fef4-f348-46e2-9b80-9269b638eece
+            https://yourshop.api.urn/payment-methods/7c48f585-ee70-487a-9594-a1520ef5774c
       responses:
         204:
           description: ""
@@ -8788,7 +8775,7 @@ paths:
           examples:
             application/hal+json: |-
               {
-                "_id" : "fafe235e-22f9-4e22-a185-4043540b24b2",
+                "_id" : "09958ec9-fb7f-412e-9098-46f334f7147d",
                 "name" : "Converge",
                 "description" : "Pay with Converge",
                 "officialName" : "Converge",
@@ -8814,22 +8801,16 @@ paths:
                 "onlinePayment" : true,
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/payment-methods/fafe235e-22f9-4e22-a185-4043540b24b2"
+                    "href" : "https://yourshop.api.urn/payment-methods/09958ec9-fb7f-412e-9098-46f334f7147d"
                   },
                   "payment-method" : {
-                    "href" : "https://yourshop.api.urn/payment-methods/fafe235e-22f9-4e22-a185-4043540b24b2"
+                    "href" : "https://yourshop.api.urn/payment-methods/09958ec9-fb7f-412e-9098-46f334f7147d"
                   },
                   "payment-method-definition-status" : {
                     "href" : "https://yourshop.api.urn/payment-signup/merchant-accounts/converge-sandbox"
                   },
                   "deactivate-payment-method" : {
-                    "href" : "https://yourshop.api.urn/payment-methods/fafe235e-22f9-4e22-a185-4043540b24b2/deactivate"
-                  },
-                  "logo-list" : {
-                    "href" : "http://list-logo.com"
-                  },
-                  "logo-storefront" : {
-                    "href" : "http://storefront-logo.com"
+                    "href" : "https://yourshop.api.urn/payment-methods/09958ec9-fb7f-412e-9098-46f334f7147d/deactivate"
                   },
                   "logo-details" : {
                     "href" : "http://details-logo.com"
@@ -8837,13 +8818,19 @@ paths:
                   "logo-tile" : {
                     "href" : "http://tile-logo.com"
                   },
+                  "logo-list" : {
+                    "href" : "http://list-logo.com"
+                  },
+                  "logo-storefront" : {
+                    "href" : "http://storefront-logo.com"
+                  },
                   "payment-method-definition" : {
-                    "href" : "https://yourshop.api.urn/payment-methods/fafe235e-22f9-4e22-a185-4043540b24b2/payment-method-definition"
+                    "href" : "https://yourshop.api.urn/payment-methods/09958ec9-fb7f-412e-9098-46f334f7147d/payment-method-definition"
                   }
                 }
               }
           schema:
-            $ref: '#/definitions/payment-methods_paymentMethodId-1004862728'
+            $ref: '#/definitions/payment-methods_paymentMethodId_activate-1004862728'
       security:
       - oauth2_accessCode:
         - pymt:r
@@ -8896,7 +8883,7 @@ paths:
           examples:
             application/hal+json: |-
               {
-                "_id" : "c8e1ecb1-0ae7-4bbe-9218-d6d46ccbcf47",
+                "_id" : "422eef58-616a-44d0-90ba-b3329110c6a3",
                 "name" : "Another name",
                 "description" : "Pay with Converge",
                 "officialName" : "Converge",
@@ -8922,16 +8909,16 @@ paths:
                 "onlinePayment" : false,
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/payment-methods/c8e1ecb1-0ae7-4bbe-9218-d6d46ccbcf47"
+                    "href" : "https://yourshop.api.urn/payment-methods/422eef58-616a-44d0-90ba-b3329110c6a3"
                   },
                   "payment-method" : {
-                    "href" : "https://yourshop.api.urn/payment-methods/c8e1ecb1-0ae7-4bbe-9218-d6d46ccbcf47"
+                    "href" : "https://yourshop.api.urn/payment-methods/422eef58-616a-44d0-90ba-b3329110c6a3"
                   },
                   "deactivate-payment-method" : {
-                    "href" : "https://yourshop.api.urn/payment-methods/c8e1ecb1-0ae7-4bbe-9218-d6d46ccbcf47/deactivate"
+                    "href" : "https://yourshop.api.urn/payment-methods/422eef58-616a-44d0-90ba-b3329110c6a3/deactivate"
                   },
                   "payment-method-definition" : {
-                    "href" : "https://yourshop.api.urn/payment-methods/c8e1ecb1-0ae7-4bbe-9218-d6d46ccbcf47/payment-method-definition"
+                    "href" : "https://yourshop.api.urn/payment-methods/422eef58-616a-44d0-90ba-b3329110c6a3/payment-method-definition"
                   }
                 }
               }
@@ -8982,7 +8969,7 @@ paths:
           examples:
             application/hal+json: |-
               {
-                "_id" : "1bb8be1f-7289-4bb6-b63f-29a4bf53afd3",
+                "_id" : "4e3d20ff-dd1f-4e40-92a5-60f7c6c5f343",
                 "name" : "A Payment Method",
                 "description" : "Description of A Payment Method",
                 "officialName" : "Official Name",
@@ -8998,7 +8985,7 @@ paths:
                   "percentageValue" : null
                 },
                 "position" : 1,
-                "serviceableCountries" : [ "GB", "DE" ],
+                "serviceableCountries" : [ "DE", "GB" ],
                 "minimumOrderValue" : {
                   "currency" : "EUR",
                   "amount" : 19.99
@@ -9008,21 +8995,21 @@ paths:
                 "onlinePayment" : false,
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/payment-methods/1bb8be1f-7289-4bb6-b63f-29a4bf53afd3"
+                    "href" : "https://yourshop.api.urn/payment-methods/4e3d20ff-dd1f-4e40-92a5-60f7c6c5f343"
                   },
                   "payment-method" : {
-                    "href" : "https://yourshop.api.urn/payment-methods/1bb8be1f-7289-4bb6-b63f-29a4bf53afd3"
+                    "href" : "https://yourshop.api.urn/payment-methods/4e3d20ff-dd1f-4e40-92a5-60f7c6c5f343"
                   },
                   "deactivate-payment-method" : {
-                    "href" : "https://yourshop.api.urn/payment-methods/1bb8be1f-7289-4bb6-b63f-29a4bf53afd3/deactivate"
+                    "href" : "https://yourshop.api.urn/payment-methods/4e3d20ff-dd1f-4e40-92a5-60f7c6c5f343/deactivate"
                   },
                   "payment-method-definition" : {
-                    "href" : "https://yourshop.api.urn/payment-methods/1bb8be1f-7289-4bb6-b63f-29a4bf53afd3/payment-method-definition"
+                    "href" : "https://yourshop.api.urn/payment-methods/4e3d20ff-dd1f-4e40-92a5-60f7c6c5f343/payment-method-definition"
                   }
                 }
               }
           schema:
-            $ref: '#/definitions/payment-methods_paymentMethodId-1004862728'
+            $ref: '#/definitions/payment-methods_paymentMethodId_activate-1004862728'
       security:
       - oauth2_accessCode:
         - pymt:u
@@ -9049,7 +9036,7 @@ paths:
           examples:
             application/hal+json: |-
               {
-                "_id" : "3d0cb99e-2261-47ed-aa96-b8762cc81959",
+                "_id" : "f3689b78-336d-4f2b-889d-d4da6bc20281",
                 "name" : "The second Payment Method",
                 "description" : "Description of The second Payment Method",
                 "officialName" : "Official Name",
@@ -9065,7 +9052,7 @@ paths:
                   "percentageValue" : null
                 },
                 "position" : 2,
-                "serviceableCountries" : [ "GB", "DE" ],
+                "serviceableCountries" : [ "DE", "GB" ],
                 "minimumOrderValue" : {
                   "currency" : "EUR",
                   "amount" : 19.99
@@ -9075,21 +9062,21 @@ paths:
                 "onlinePayment" : false,
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/payment-methods/3d0cb99e-2261-47ed-aa96-b8762cc81959"
+                    "href" : "https://yourshop.api.urn/payment-methods/f3689b78-336d-4f2b-889d-d4da6bc20281"
                   },
                   "payment-method" : {
-                    "href" : "https://yourshop.api.urn/payment-methods/3d0cb99e-2261-47ed-aa96-b8762cc81959"
+                    "href" : "https://yourshop.api.urn/payment-methods/f3689b78-336d-4f2b-889d-d4da6bc20281"
                   },
                   "activate-payment-method" : {
-                    "href" : "https://yourshop.api.urn/payment-methods/3d0cb99e-2261-47ed-aa96-b8762cc81959/activate"
+                    "href" : "https://yourshop.api.urn/payment-methods/f3689b78-336d-4f2b-889d-d4da6bc20281/activate"
                   },
                   "payment-method-definition" : {
-                    "href" : "https://yourshop.api.urn/payment-methods/3d0cb99e-2261-47ed-aa96-b8762cc81959/payment-method-definition"
+                    "href" : "https://yourshop.api.urn/payment-methods/f3689b78-336d-4f2b-889d-d4da6bc20281/payment-method-definition"
                   }
                 }
               }
           schema:
-            $ref: '#/definitions/payment-methods_paymentMethodId-1004862728'
+            $ref: '#/definitions/payment-methods_paymentMethodId_activate-1004862728'
       security:
       - oauth2_accessCode:
         - pymt:u
@@ -10154,7 +10141,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/carts_cartId_shipping-methods-309252030'
+            $ref: '#/definitions/users_id_roles-309252030'
   /product-view/products/search/find-by-category:
     get:
       tags:
@@ -13739,24 +13726,13 @@ paths:
               {
                 "_embedded" : {
                   "scopes" : [ {
-                    "name" : "ordr:u",
-                    "_links" : {
-                      "self" : {
-                        "href" : "https://yourshop.api.urn/scopes/6e1c774a-25f4-489e-8f60-f280a8c4b0e0"
-                      },
-                      "scope" : {
-                        "href" : "https://yourshop.api.urn/scopes/6e1c774a-25f4-489e-8f60-f280a8c4b0e0{?projection}",
-                        "templated" : true
-                      }
-                    }
-                  }, {
                     "name" : "prod:c",
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/scopes/bdf258e8-ac7b-4cfa-8f65-53e0fcb030f9"
+                        "href" : "https://yourshop.api.urn/scopes/04dc3ac6-5eb3-4b38-9e2a-36fb950aa931"
                       },
                       "scope" : {
-                        "href" : "https://yourshop.api.urn/scopes/bdf258e8-ac7b-4cfa-8f65-53e0fcb030f9{?projection}",
+                        "href" : "https://yourshop.api.urn/scopes/04dc3ac6-5eb3-4b38-9e2a-36fb950aa931{?projection}",
                         "templated" : true
                       }
                     }
@@ -13764,10 +13740,21 @@ paths:
                     "name" : "ordr:r",
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/scopes/d7ed53eb-6a0b-498c-8570-cc894a1e519d"
+                        "href" : "https://yourshop.api.urn/scopes/19a1bb19-6f85-4c1d-8136-4c2433acc805"
                       },
                       "scope" : {
-                        "href" : "https://yourshop.api.urn/scopes/d7ed53eb-6a0b-498c-8570-cc894a1e519d{?projection}",
+                        "href" : "https://yourshop.api.urn/scopes/19a1bb19-6f85-4c1d-8136-4c2433acc805{?projection}",
+                        "templated" : true
+                      }
+                    }
+                  }, {
+                    "name" : "ordr:u",
+                    "_links" : {
+                      "self" : {
+                        "href" : "https://yourshop.api.urn/scopes/6f558288-462c-4903-b962-6ecd1e0228a1"
+                      },
+                      "scope" : {
+                        "href" : "https://yourshop.api.urn/scopes/6f558288-462c-4903-b962-6ecd1e0228a1{?projection}",
                         "templated" : true
                       }
                     }
@@ -13814,12 +13801,12 @@ paths:
               {
                 "_embedded" : {
                   "shipping-zones" : [ {
-                    "_id" : "f2f29cea-37db-43e9-b9ff-4d7e0aed202b",
+                    "_id" : "76803b60-7882-4728-85d2-e586925a8884",
                     "name" : "DE",
                     "serviceableCountries" : [ "DE" ],
                     "position" : 1,
                     "shippingMethods" : [ {
-                      "_id" : "7b3c302a-ba64-4ec3-abca-c1e49ebc7104",
+                      "_id" : "a8f7c887-9c8f-403b-a897-514e6023a33c",
                       "name" : "Standard Shipping 2",
                       "description" : "Standard Shipping",
                       "taxClass" : "REGULAR",
@@ -13833,25 +13820,25 @@ paths:
                       "weightBasedPrice" : null,
                       "_links" : {
                         "self" : {
-                          "href" : "https://yourshop.api.urn/shipping-zones/f2f29cea-37db-43e9-b9ff-4d7e0aed202b/shipping-methods/7b3c302a-ba64-4ec3-abca-c1e49ebc7104"
+                          "href" : "https://yourshop.api.urn/shipping-zones/76803b60-7882-4728-85d2-e586925a8884/shipping-methods/a8f7c887-9c8f-403b-a897-514e6023a33c"
                         }
                       }
                     } ],
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/shipping-zones/f2f29cea-37db-43e9-b9ff-4d7e0aed202b"
+                        "href" : "https://yourshop.api.urn/shipping-zones/76803b60-7882-4728-85d2-e586925a8884"
                       },
                       "shipping-methods" : {
-                        "href" : "https://yourshop.api.urn/shipping-zones/f2f29cea-37db-43e9-b9ff-4d7e0aed202b/shipping-methods"
+                        "href" : "https://yourshop.api.urn/shipping-zones/76803b60-7882-4728-85d2-e586925a8884/shipping-methods"
                       }
                     }
                   }, {
-                    "_id" : "107bfc76-68f3-44c6-943f-7bc34e5c3407",
+                    "_id" : "198da5b9-67dd-4d0e-acfe-561d70aff6c9",
                     "name" : "BE-NL-LU",
-                    "serviceableCountries" : [ "BE", "LU", "NL" ],
+                    "serviceableCountries" : [ "LU", "NL", "BE" ],
                     "position" : 2,
                     "shippingMethods" : [ {
-                      "_id" : "c5d59243-856a-4613-8944-bc9fd6e8100f",
+                      "_id" : "373d817f-2515-43fc-8283-3036578f348c",
                       "name" : "Standard Shipping 2",
                       "description" : "Standard Shipping",
                       "taxClass" : "REGULAR",
@@ -13868,16 +13855,16 @@ paths:
                       "weightBasedPrice" : null,
                       "_links" : {
                         "self" : {
-                          "href" : "https://yourshop.api.urn/shipping-zones/107bfc76-68f3-44c6-943f-7bc34e5c3407/shipping-methods/c5d59243-856a-4613-8944-bc9fd6e8100f"
+                          "href" : "https://yourshop.api.urn/shipping-zones/198da5b9-67dd-4d0e-acfe-561d70aff6c9/shipping-methods/373d817f-2515-43fc-8283-3036578f348c"
                         }
                       }
                     } ],
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/shipping-zones/107bfc76-68f3-44c6-943f-7bc34e5c3407"
+                        "href" : "https://yourshop.api.urn/shipping-zones/198da5b9-67dd-4d0e-acfe-561d70aff6c9"
                       },
                       "shipping-methods" : {
-                        "href" : "https://yourshop.api.urn/shipping-zones/107bfc76-68f3-44c6-943f-7bc34e5c3407/shipping-methods"
+                        "href" : "https://yourshop.api.urn/shipping-zones/198da5b9-67dd-4d0e-acfe-561d70aff6c9/shipping-methods"
                       }
                     }
                   } ]
@@ -13929,17 +13916,17 @@ paths:
           examples:
             application/hal+json: |-
               {
-                "_id" : "456cca9a-05df-4b85-9b31-76420bdf31af",
+                "_id" : "0ea5d526-c28c-4db4-869a-87231ef7632e",
                 "name" : "BE-NL-LU",
-                "serviceableCountries" : [ "BE", "LU", "NL" ],
+                "serviceableCountries" : [ "LU", "BE", "NL" ],
                 "position" : 2,
                 "shippingMethods" : [ ],
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/shipping-zones/456cca9a-05df-4b85-9b31-76420bdf31af"
+                    "href" : "https://yourshop.api.urn/shipping-zones/0ea5d526-c28c-4db4-869a-87231ef7632e"
                   },
                   "shipping-methods" : {
-                    "href" : "https://yourshop.api.urn/shipping-zones/456cca9a-05df-4b85-9b31-76420bdf31af/shipping-methods"
+                    "href" : "https://yourshop.api.urn/shipping-zones/0ea5d526-c28c-4db4-869a-87231ef7632e/shipping-methods"
                   }
                 }
               }
@@ -13963,12 +13950,12 @@ paths:
         name: ""
         required: false
         schema:
-          $ref: '#/definitions/shipping-zones-1504572870'
+          $ref: '#/definitions/shipping-zones-1284098042'
         x-examples:
           text/uri-list: |-
-            https://yourshop.api.urn/shipping-zones/9be774e7-a572-4161-908d-736a9bb5394b
-            https://yourshop.api.urn/shipping-zones/f4a6e00e-746f-4d9d-922e-3c599cc1ccf0
-            https://yourshop.api.urn/shipping-zones/abdbcbd7-d289-45ab-8b63-66f514936ec9
+            https://yourshop.api.urn/shipping-zones/4e876e1e-9b4f-4d36-96c1-d0808df0e628
+            https://yourshop.api.urn/shipping-zones/d250bfcc-583d-4235-9e6e-d82873a88464
+            https://yourshop.api.urn/shipping-zones/f074b19f-e826-456c-8bf1-bece6dc48c28
       responses:
         204:
           description: ""
@@ -13999,12 +13986,12 @@ paths:
           examples:
             application/hal+json: |-
               {
-                "_id" : "7b095d08-e0bb-4a8b-ab8c-8a0316f300f3",
+                "_id" : "07cbdd07-3fd6-4292-be02-5eab5c9e389a",
                 "name" : "BE-NL-LU",
-                "serviceableCountries" : [ "BE", "LU", "NL" ],
+                "serviceableCountries" : [ "LU", "NL", "BE" ],
                 "position" : 2,
                 "shippingMethods" : [ {
-                  "_id" : "ef58f151-8c61-4b30-aae4-4eb7de19af43",
+                  "_id" : "1f2f8f3f-654a-4d55-9602-43ad7bca4601",
                   "name" : "Standard Shipping 2",
                   "description" : "Standard Shipping",
                   "taxClass" : "REGULAR",
@@ -14021,16 +14008,16 @@ paths:
                   "weightBasedPrice" : null,
                   "_links" : {
                     "self" : {
-                      "href" : "https://yourshop.api.urn/shipping-zones/7b095d08-e0bb-4a8b-ab8c-8a0316f300f3/shipping-methods/ef58f151-8c61-4b30-aae4-4eb7de19af43"
+                      "href" : "https://yourshop.api.urn/shipping-zones/07cbdd07-3fd6-4292-be02-5eab5c9e389a/shipping-methods/1f2f8f3f-654a-4d55-9602-43ad7bca4601"
                     }
                   }
                 } ],
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/shipping-zones/7b095d08-e0bb-4a8b-ab8c-8a0316f300f3"
+                    "href" : "https://yourshop.api.urn/shipping-zones/07cbdd07-3fd6-4292-be02-5eab5c9e389a"
                   },
                   "shipping-methods" : {
-                    "href" : "https://yourshop.api.urn/shipping-zones/7b095d08-e0bb-4a8b-ab8c-8a0316f300f3/shipping-methods"
+                    "href" : "https://yourshop.api.urn/shipping-zones/07cbdd07-3fd6-4292-be02-5eab5c9e389a/shipping-methods"
                   }
                 }
               }
@@ -14074,12 +14061,12 @@ paths:
           examples:
             application/hal+json: |-
               {
-                "_id" : "21d3bd81-7d61-4f2f-b438-9692eb060c24",
+                "_id" : "7d5e7b66-f095-4b7b-9c29-ef8262744b76",
                 "name" : "BENELUX region",
-                "serviceableCountries" : [ "BE", "LU", "DE", "NL" ],
+                "serviceableCountries" : [ "LU", "DE", "BE", "NL" ],
                 "position" : 2,
                 "shippingMethods" : [ {
-                  "_id" : "c7ae8422-694c-4ef6-98bd-def54827536e",
+                  "_id" : "66d3c8ae-9e8c-487b-a0e5-9f3077b094fb",
                   "name" : "Standard Shipping 2",
                   "description" : "Standard Shipping",
                   "taxClass" : "REGULAR",
@@ -14096,16 +14083,16 @@ paths:
                   "weightBasedPrice" : null,
                   "_links" : {
                     "self" : {
-                      "href" : "https://yourshop.api.urn/shipping-zones/21d3bd81-7d61-4f2f-b438-9692eb060c24/shipping-methods/c7ae8422-694c-4ef6-98bd-def54827536e"
+                      "href" : "https://yourshop.api.urn/shipping-zones/7d5e7b66-f095-4b7b-9c29-ef8262744b76/shipping-methods/66d3c8ae-9e8c-487b-a0e5-9f3077b094fb"
                     }
                   }
                 } ],
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/shipping-zones/21d3bd81-7d61-4f2f-b438-9692eb060c24"
+                    "href" : "https://yourshop.api.urn/shipping-zones/7d5e7b66-f095-4b7b-9c29-ef8262744b76"
                   },
                   "shipping-methods" : {
-                    "href" : "https://yourshop.api.urn/shipping-zones/21d3bd81-7d61-4f2f-b438-9692eb060c24/shipping-methods"
+                    "href" : "https://yourshop.api.urn/shipping-zones/7d5e7b66-f095-4b7b-9c29-ef8262744b76/shipping-methods"
                   }
                 }
               }
@@ -14202,8 +14189,8 @@ paths:
               {
                 "_embedded" : {
                   "shipping-methods" : [ {
-                    "_id" : "4480a4a3-0fc9-4ce4-8db5-940c8f0aeb87",
-                    "name" : "Standard Shipping 2-1",
+                    "_id" : "425a683e-1914-43e0-8a76-fcbcdaa030a1",
+                    "name" : "Standard Shipping 2-4",
                     "description" : "Standard Shipping",
                     "taxClass" : "REGULAR",
                     "position" : 0,
@@ -14219,12 +14206,12 @@ paths:
                     "weightBasedPrice" : null,
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/shipping-zones/db47ebd3-14c3-48a3-a734-92c09568e143/shipping-methods/4480a4a3-0fc9-4ce4-8db5-940c8f0aeb87"
+                        "href" : "https://yourshop.api.urn/shipping-zones/466e7708-81bc-43da-9373-16f127d526ef/shipping-methods/425a683e-1914-43e0-8a76-fcbcdaa030a1"
                       }
                     }
                   }, {
-                    "_id" : "863c6be3-2040-4e07-a833-cb188d3bac4c",
-                    "name" : "Standard Shipping 2-0",
+                    "_id" : "258b4429-1fc5-4b56-9159-91750835cd6f",
+                    "name" : "Standard Shipping 2-2",
                     "description" : "Standard Shipping",
                     "taxClass" : "REGULAR",
                     "position" : 1,
@@ -14240,12 +14227,12 @@ paths:
                     "weightBasedPrice" : null,
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/shipping-zones/db47ebd3-14c3-48a3-a734-92c09568e143/shipping-methods/863c6be3-2040-4e07-a833-cb188d3bac4c"
+                        "href" : "https://yourshop.api.urn/shipping-zones/466e7708-81bc-43da-9373-16f127d526ef/shipping-methods/258b4429-1fc5-4b56-9159-91750835cd6f"
                       }
                     }
                   }, {
-                    "_id" : "1e7eaaa5-2a64-41f9-a6fb-208594ed4718",
-                    "name" : "Standard Shipping 2-2",
+                    "_id" : "5ad23623-86b5-4dcf-a1b0-6fdcaf9f6f5a",
+                    "name" : "Standard Shipping 2-0",
                     "description" : "Standard Shipping",
                     "taxClass" : "REGULAR",
                     "position" : 2,
@@ -14261,12 +14248,12 @@ paths:
                     "weightBasedPrice" : null,
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/shipping-zones/db47ebd3-14c3-48a3-a734-92c09568e143/shipping-methods/1e7eaaa5-2a64-41f9-a6fb-208594ed4718"
+                        "href" : "https://yourshop.api.urn/shipping-zones/466e7708-81bc-43da-9373-16f127d526ef/shipping-methods/5ad23623-86b5-4dcf-a1b0-6fdcaf9f6f5a"
                       }
                     }
                   }, {
-                    "_id" : "6af62c16-188e-40a5-ab1b-b4b3a4e6f62b",
-                    "name" : "Standard Shipping 2-4",
+                    "_id" : "cba25590-ce85-482e-975d-64598fd71f7c",
+                    "name" : "Standard Shipping 2-1",
                     "description" : "Standard Shipping",
                     "taxClass" : "REGULAR",
                     "position" : 3,
@@ -14282,11 +14269,11 @@ paths:
                     "weightBasedPrice" : null,
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/shipping-zones/db47ebd3-14c3-48a3-a734-92c09568e143/shipping-methods/6af62c16-188e-40a5-ab1b-b4b3a4e6f62b"
+                        "href" : "https://yourshop.api.urn/shipping-zones/466e7708-81bc-43da-9373-16f127d526ef/shipping-methods/cba25590-ce85-482e-975d-64598fd71f7c"
                       }
                     }
                   }, {
-                    "_id" : "e1717a71-f45b-48dc-8359-c3129c8a7d8e",
+                    "_id" : "1f477e7d-39c9-421b-b9b4-6382e7e64544",
                     "name" : "Standard Shipping 2-3",
                     "description" : "Standard Shipping",
                     "taxClass" : "REGULAR",
@@ -14303,14 +14290,14 @@ paths:
                     "weightBasedPrice" : null,
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/shipping-zones/db47ebd3-14c3-48a3-a734-92c09568e143/shipping-methods/e1717a71-f45b-48dc-8359-c3129c8a7d8e"
+                        "href" : "https://yourshop.api.urn/shipping-zones/466e7708-81bc-43da-9373-16f127d526ef/shipping-methods/1f477e7d-39c9-421b-b9b4-6382e7e64544"
                       }
                     }
                   } ]
                 },
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/shipping-zones/db47ebd3-14c3-48a3-a734-92c09568e143/shipping-methods"
+                    "href" : "https://yourshop.api.urn/shipping-zones/466e7708-81bc-43da-9373-16f127d526ef/shipping-methods"
                   }
                 }
               }
@@ -14364,12 +14351,12 @@ paths:
           examples:
             application/hal+json: |-
               {
-                "_id" : "58b5310b-cdeb-4871-af7e-9095e8b214c7",
+                "_id" : "47257524-7102-456b-924b-810bfe14af01",
                 "name" : "DE",
                 "serviceableCountries" : [ "DE" ],
                 "position" : 1,
                 "shippingMethods" : [ {
-                  "_id" : "55a33cc4-2d22-49f0-8412-2adf39142c7a",
+                  "_id" : "49010ab4-90d2-4b24-97ee-2775201bfab9",
                   "name" : "Standard Shipping 2",
                   "description" : "Standard Shipping",
                   "taxClass" : "REGULAR",
@@ -14383,11 +14370,11 @@ paths:
                   "weightBasedPrice" : null,
                   "_links" : {
                     "self" : {
-                      "href" : "https://yourshop.api.urn/shipping-zones/58b5310b-cdeb-4871-af7e-9095e8b214c7/shipping-methods/55a33cc4-2d22-49f0-8412-2adf39142c7a"
+                      "href" : "https://yourshop.api.urn/shipping-zones/47257524-7102-456b-924b-810bfe14af01/shipping-methods/49010ab4-90d2-4b24-97ee-2775201bfab9"
                     }
                   }
                 }, {
-                  "_id" : "ce168c93-9a03-470e-928c-8b779648f720",
+                  "_id" : "097a87b9-1ff9-4a74-b7c1-778005f5af43",
                   "name" : "Standard Shipping 2",
                   "description" : "Standard Shipping",
                   "taxClass" : "REGULAR",
@@ -14421,16 +14408,16 @@ paths:
                   },
                   "_links" : {
                     "self" : {
-                      "href" : "https://yourshop.api.urn/shipping-zones/58b5310b-cdeb-4871-af7e-9095e8b214c7/shipping-methods/ce168c93-9a03-470e-928c-8b779648f720"
+                      "href" : "https://yourshop.api.urn/shipping-zones/47257524-7102-456b-924b-810bfe14af01/shipping-methods/097a87b9-1ff9-4a74-b7c1-778005f5af43"
                     }
                   }
                 } ],
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/shipping-zones/58b5310b-cdeb-4871-af7e-9095e8b214c7"
+                    "href" : "https://yourshop.api.urn/shipping-zones/47257524-7102-456b-924b-810bfe14af01"
                   },
                   "shipping-methods" : {
-                    "href" : "https://yourshop.api.urn/shipping-zones/58b5310b-cdeb-4871-af7e-9095e8b214c7/shipping-methods"
+                    "href" : "https://yourshop.api.urn/shipping-zones/47257524-7102-456b-924b-810bfe14af01/shipping-methods"
                   }
                 }
               }
@@ -14461,7 +14448,7 @@ paths:
           examples:
             application/hal+json: |-
               {
-                "_id" : "686d8d4f-e3e8-46dc-a4f9-ca4be612b7e3",
+                "_id" : "846faf50-5890-40c0-8d94-a15d3cc2c142",
                 "name" : "Standard Shipping 2",
                 "description" : "Standard Shipping",
                 "taxClass" : "REGULAR",
@@ -14475,7 +14462,7 @@ paths:
                 "weightBasedPrice" : null,
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/shipping-zones/c9df75fa-8c17-4937-887f-ee310bb71508/shipping-methods/686d8d4f-e3e8-46dc-a4f9-ca4be612b7e3"
+                    "href" : "https://yourshop.api.urn/shipping-zones/2b013753-0c21-40b6-93c2-dd317648b300/shipping-methods/846faf50-5890-40c0-8d94-a15d3cc2c142"
                   }
                 }
               }
@@ -14536,12 +14523,12 @@ paths:
           examples:
             application/hal+json: |-
               {
-                "_id" : "26700e97-7a68-43b2-9239-7e920d6bc57f",
+                "_id" : "9aeda297-324d-446e-acc6-4e06084266b6",
                 "name" : "BE-NL-LU",
-                "serviceableCountries" : [ "BE", "LU", "NL" ],
+                "serviceableCountries" : [ "LU", "NL", "BE" ],
                 "position" : 2,
                 "shippingMethods" : [ {
-                  "_id" : "b278a856-d06b-46aa-afd2-ffb836244a64",
+                  "_id" : "a2f234ef-7aa4-4c02-b7e7-f0cea4c94924",
                   "name" : "Standard Shipping 2",
                   "description" : "Standard Shipping",
                   "taxClass" : "REGULAR",
@@ -14558,16 +14545,16 @@ paths:
                   "weightBasedPrice" : null,
                   "_links" : {
                     "self" : {
-                      "href" : "https://yourshop.api.urn/shipping-zones/26700e97-7a68-43b2-9239-7e920d6bc57f/shipping-methods/b278a856-d06b-46aa-afd2-ffb836244a64"
+                      "href" : "https://yourshop.api.urn/shipping-zones/9aeda297-324d-446e-acc6-4e06084266b6/shipping-methods/a2f234ef-7aa4-4c02-b7e7-f0cea4c94924"
                     }
                   }
                 } ],
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/shipping-zones/26700e97-7a68-43b2-9239-7e920d6bc57f"
+                    "href" : "https://yourshop.api.urn/shipping-zones/9aeda297-324d-446e-acc6-4e06084266b6"
                   },
                   "shipping-methods" : {
-                    "href" : "https://yourshop.api.urn/shipping-zones/26700e97-7a68-43b2-9239-7e920d6bc57f/shipping-methods"
+                    "href" : "https://yourshop.api.urn/shipping-zones/9aeda297-324d-446e-acc6-4e06084266b6/shipping-methods"
                   }
                 }
               }
@@ -14603,17 +14590,17 @@ paths:
           examples:
             application/hal+json: |-
               {
-                "_id" : "0f26a89a-e3e7-46d6-a21e-0b73fec50a77",
+                "_id" : "c9ec034a-6310-4808-8ea7-ca19fc17793f",
                 "name" : "BE-NL-LU",
-                "serviceableCountries" : [ "BE", "LU", "NL" ],
+                "serviceableCountries" : [ "LU", "NL", "BE" ],
                 "position" : 2,
                 "shippingMethods" : [ ],
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/shipping-zones/0f26a89a-e3e7-46d6-a21e-0b73fec50a77"
+                    "href" : "https://yourshop.api.urn/shipping-zones/c9ec034a-6310-4808-8ea7-ca19fc17793f"
                   },
                   "shipping-methods" : {
-                    "href" : "https://yourshop.api.urn/shipping-zones/0f26a89a-e3e7-46d6-a21e-0b73fec50a77/shipping-methods"
+                    "href" : "https://yourshop.api.urn/shipping-zones/c9ec034a-6310-4808-8ea7-ca19fc17793f/shipping-methods"
                   }
                 }
               }
@@ -15598,26 +15585,26 @@ paths:
               {
                 "_embedded" : {
                   "signers" : [ {
-                    "_id" : "016f5910-3a17-419d-97d3-e1222fa1050f",
-                    "createdAt" : "2018-12-17T10:45:09.118",
+                    "_id" : "06fe1aa4-b4bc-49ff-ba9b-c8d6f5fdfd13",
+                    "createdAt" : "2019-01-04T12:40:10.732",
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/signers/016f5910-3a17-419d-97d3-e1222fa1050f"
+                        "href" : "https://yourshop.api.urn/signers/06fe1aa4-b4bc-49ff-ba9b-c8d6f5fdfd13"
                       }
                     }
                   }, {
-                    "_id" : "b568e592-93bd-4436-9a95-75ae3c0c7488",
-                    "createdAt" : "2018-12-17T10:45:09.074",
+                    "_id" : "789b3101-9ef8-49bc-bd28-eec745fb8070",
+                    "createdAt" : "2019-01-04T12:40:10.7",
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/signers/b568e592-93bd-4436-9a95-75ae3c0c7488"
+                        "href" : "https://yourshop.api.urn/signers/789b3101-9ef8-49bc-bd28-eec745fb8070"
                       }
                     }
                   } ]
                 }
               }
           schema:
-            $ref: '#/definitions/carts_cartId_payment-methods-663923302'
+            $ref: '#/definitions/signers-663923302'
     post:
       tags:
       - signers
@@ -15632,11 +15619,11 @@ paths:
           examples:
             application/hal+json: |-
               {
-                "_id" : "8a76b5f5-e425-4b0e-bf6b-ea006ec51287",
-                "sharedSecret" : "irm2v30tfcero6k6n2p88r7mk2",
+                "_id" : "534504f0-8968-4498-900b-94934fb23abd",
+                "sharedSecret" : "5ssbkvr3ttodg1s1fg9kr2lfme",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/signers/8a76b5f5-e425-4b0e-bf6b-ea006ec51287"
+                    "href" : "https://yourshop.api.urn/signers/534504f0-8968-4498-900b-94934fb23abd"
                   }
                 }
               }
@@ -15680,22 +15667,22 @@ paths:
                     "username" : "username",
                     "email" : "baxter@example.org",
                     "enabled" : true,
-                    "_id" : "c2562c55-d032-432a-9e2b-772c37c6fd5f",
+                    "_id" : "21de52e5-f1c0-4c69-8b18-30174cfdcb99",
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/users/c2562c55-d032-432a-9e2b-772c37c6fd5f"
+                        "href" : "https://yourshop.api.urn/users/21de52e5-f1c0-4c69-8b18-30174cfdcb99"
                       },
                       "user" : {
-                        "href" : "https://yourshop.api.urn/users/c2562c55-d032-432a-9e2b-772c37c6fd5f"
+                        "href" : "https://yourshop.api.urn/users/21de52e5-f1c0-4c69-8b18-30174cfdcb99"
                       },
                       "change-password" : {
-                        "href" : "https://yourshop.api.urn/users/c2562c55-d032-432a-9e2b-772c37c6fd5f/change-password"
+                        "href" : "https://yourshop.api.urn/users/21de52e5-f1c0-4c69-8b18-30174cfdcb99/change-password"
                       },
                       "change-email-request" : {
-                        "href" : "https://yourshop.api.urn/users/c2562c55-d032-432a-9e2b-772c37c6fd5f/change-email-request"
+                        "href" : "https://yourshop.api.urn/users/21de52e5-f1c0-4c69-8b18-30174cfdcb99/change-email-request"
                       },
                       "roles" : {
-                        "href" : "https://yourshop.api.urn/users/c2562c55-d032-432a-9e2b-772c37c6fd5f/roles"
+                        "href" : "https://yourshop.api.urn/users/21de52e5-f1c0-4c69-8b18-30174cfdcb99/roles"
                       }
                     }
                   } ]
@@ -15749,22 +15736,22 @@ paths:
                 "username" : "user",
                 "email" : "baxter@example.org",
                 "enabled" : true,
-                "_id" : "05f4b142-6456-475b-b6b2-310548f8bf4d",
+                "_id" : "bc4630cc-d87b-4be7-a9e6-d04695399373",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/users/05f4b142-6456-475b-b6b2-310548f8bf4d"
+                    "href" : "https://yourshop.api.urn/users/bc4630cc-d87b-4be7-a9e6-d04695399373"
                   },
                   "user" : {
-                    "href" : "https://yourshop.api.urn/users/05f4b142-6456-475b-b6b2-310548f8bf4d"
+                    "href" : "https://yourshop.api.urn/users/bc4630cc-d87b-4be7-a9e6-d04695399373"
                   },
                   "change-password" : {
-                    "href" : "https://yourshop.api.urn/users/05f4b142-6456-475b-b6b2-310548f8bf4d/change-password"
+                    "href" : "https://yourshop.api.urn/users/bc4630cc-d87b-4be7-a9e6-d04695399373/change-password"
                   },
                   "change-email-request" : {
-                    "href" : "https://yourshop.api.urn/users/05f4b142-6456-475b-b6b2-310548f8bf4d/change-email-request"
+                    "href" : "https://yourshop.api.urn/users/bc4630cc-d87b-4be7-a9e6-d04695399373/change-email-request"
                   },
                   "roles" : {
-                    "href" : "https://yourshop.api.urn/users/05f4b142-6456-475b-b6b2-310548f8bf4d/roles"
+                    "href" : "https://yourshop.api.urn/users/bc4630cc-d87b-4be7-a9e6-d04695399373/roles"
                   }
                 }
               }
@@ -15949,22 +15936,22 @@ paths:
                 "username" : "username",
                 "email" : "baxter@example.org",
                 "enabled" : true,
-                "_id" : "e4178b64-a212-4693-a814-a58ccdec5c7b",
+                "_id" : "b013a818-f843-4fd4-bfda-d23af0d14e63",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/users/e4178b64-a212-4693-a814-a58ccdec5c7b"
+                    "href" : "https://yourshop.api.urn/users/b013a818-f843-4fd4-bfda-d23af0d14e63"
                   },
                   "user" : {
-                    "href" : "https://yourshop.api.urn/users/e4178b64-a212-4693-a814-a58ccdec5c7b"
+                    "href" : "https://yourshop.api.urn/users/b013a818-f843-4fd4-bfda-d23af0d14e63"
                   },
                   "change-password" : {
-                    "href" : "https://yourshop.api.urn/users/e4178b64-a212-4693-a814-a58ccdec5c7b/change-password"
+                    "href" : "https://yourshop.api.urn/users/b013a818-f843-4fd4-bfda-d23af0d14e63/change-password"
                   },
                   "change-email-request" : {
-                    "href" : "https://yourshop.api.urn/users/e4178b64-a212-4693-a814-a58ccdec5c7b/change-email-request"
+                    "href" : "https://yourshop.api.urn/users/b013a818-f843-4fd4-bfda-d23af0d14e63/change-email-request"
                   },
                   "roles" : {
-                    "href" : "https://yourshop.api.urn/users/e4178b64-a212-4693-a814-a58ccdec5c7b/roles"
+                    "href" : "https://yourshop.api.urn/users/b013a818-f843-4fd4-bfda-d23af0d14e63/roles"
                   }
                 }
               }
@@ -15993,16 +15980,16 @@ paths:
                 "username" : "username",
                 "email" : "baxter@example.org",
                 "enabled" : true,
-                "_id" : "ec956dd5-deca-4340-9156-7fb77f183a21",
+                "_id" : "dc0063d7-df3f-4e9a-9a54-d1ab3f56fbfe",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/users/ec956dd5-deca-4340-9156-7fb77f183a21"
+                    "href" : "https://yourshop.api.urn/users/dc0063d7-df3f-4e9a-9a54-d1ab3f56fbfe"
                   },
                   "user" : {
-                    "href" : "https://yourshop.api.urn/users/ec956dd5-deca-4340-9156-7fb77f183a21"
+                    "href" : "https://yourshop.api.urn/users/dc0063d7-df3f-4e9a-9a54-d1ab3f56fbfe"
                   },
                   "roles" : {
-                    "href" : "https://yourshop.api.urn/users/ec956dd5-deca-4340-9156-7fb77f183a21/roles"
+                    "href" : "https://yourshop.api.urn/users/dc0063d7-df3f-4e9a-9a54-d1ab3f56fbfe/roles"
                   }
                 }
               }
@@ -16085,16 +16072,16 @@ paths:
                 "username" : "user",
                 "email" : "baxter@example.org",
                 "enabled" : true,
-                "_id" : "f7bc50ea-eb83-44de-9a07-067b87c763bc",
+                "_id" : "58242c14-2269-4731-9d34-9ec1bfaae582",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/users/f7bc50ea-eb83-44de-9a07-067b87c763bc"
+                    "href" : "https://yourshop.api.urn/users/58242c14-2269-4731-9d34-9ec1bfaae582"
                   },
                   "user" : {
-                    "href" : "https://yourshop.api.urn/users/f7bc50ea-eb83-44de-9a07-067b87c763bc"
+                    "href" : "https://yourshop.api.urn/users/58242c14-2269-4731-9d34-9ec1bfaae582"
                   },
                   "roles" : {
-                    "href" : "https://yourshop.api.urn/users/f7bc50ea-eb83-44de-9a07-067b87c763bc/roles"
+                    "href" : "https://yourshop.api.urn/users/58242c14-2269-4731-9d34-9ec1bfaae582/roles"
                   }
                 }
               }
@@ -16134,22 +16121,22 @@ paths:
                 "username" : "new username",
                 "email" : "baxter@example.org",
                 "enabled" : true,
-                "_id" : "e514238c-6798-4c2e-8c7f-ae3852eb628c",
+                "_id" : "26b873d5-205c-4aa3-b88e-889c6edf9b65",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/users/e514238c-6798-4c2e-8c7f-ae3852eb628c"
+                    "href" : "https://yourshop.api.urn/users/26b873d5-205c-4aa3-b88e-889c6edf9b65"
                   },
                   "user" : {
-                    "href" : "https://yourshop.api.urn/users/e514238c-6798-4c2e-8c7f-ae3852eb628c"
+                    "href" : "https://yourshop.api.urn/users/26b873d5-205c-4aa3-b88e-889c6edf9b65"
                   },
                   "change-password" : {
-                    "href" : "https://yourshop.api.urn/users/e514238c-6798-4c2e-8c7f-ae3852eb628c/change-password"
+                    "href" : "https://yourshop.api.urn/users/26b873d5-205c-4aa3-b88e-889c6edf9b65/change-password"
                   },
                   "change-email-request" : {
-                    "href" : "https://yourshop.api.urn/users/e514238c-6798-4c2e-8c7f-ae3852eb628c/change-email-request"
+                    "href" : "https://yourshop.api.urn/users/26b873d5-205c-4aa3-b88e-889c6edf9b65/change-email-request"
                   },
                   "roles" : {
-                    "href" : "https://yourshop.api.urn/users/e514238c-6798-4c2e-8c7f-ae3852eb628c/roles"
+                    "href" : "https://yourshop.api.urn/users/26b873d5-205c-4aa3-b88e-889c6edf9b65/roles"
                   }
                 }
               }
@@ -16185,7 +16172,7 @@ paths:
                         "name" : "prda:r",
                         "_links" : {
                           "self" : {
-                            "href" : "https://yourshop.api.urn/scopes/8a4bde75-d5a8-426b-b3d0-43e9e3b5c917{?projection}",
+                            "href" : "https://yourshop.api.urn/scopes/3a77bcc4-846a-42ad-a08d-82dd805ec772{?projection}",
                             "templated" : true
                           }
                         }
@@ -16193,7 +16180,7 @@ paths:
                         "name" : "prod:c",
                         "_links" : {
                           "self" : {
-                            "href" : "https://yourshop.api.urn/scopes/21410d3f-2f1e-4b6f-b7ed-91feb85cd0e7{?projection}",
+                            "href" : "https://yourshop.api.urn/scopes/4aa49407-7a7d-41dc-8b2b-f47c7b0359bd{?projection}",
                             "templated" : true
                           }
                         }
@@ -16201,7 +16188,7 @@ paths:
                         "name" : "prod:r",
                         "_links" : {
                           "self" : {
-                            "href" : "https://yourshop.api.urn/scopes/4ffb5d3f-2c24-415a-8ec3-893af3540fdc{?projection}",
+                            "href" : "https://yourshop.api.urn/scopes/800daad9-f9ef-49d6-afa1-85287af8d7b0{?projection}",
                             "templated" : true
                           }
                         }
@@ -16209,13 +16196,13 @@ paths:
                     },
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/roles/bcbfd859-9566-4e2b-b9f3-8194a83f5444"
+                        "href" : "https://yourshop.api.urn/roles/f1d17987-ca69-48f6-abde-c276b15fd5af"
                       },
                       "role" : {
-                        "href" : "https://yourshop.api.urn/roles/bcbfd859-9566-4e2b-b9f3-8194a83f5444"
+                        "href" : "https://yourshop.api.urn/roles/f1d17987-ca69-48f6-abde-c276b15fd5af"
                       },
                       "scopes" : {
-                        "href" : "https://yourshop.api.urn/roles/bcbfd859-9566-4e2b-b9f3-8194a83f5444/scopes{?projection}",
+                        "href" : "https://yourshop.api.urn/roles/f1d17987-ca69-48f6-abde-c276b15fd5af/scopes{?projection}",
                         "templated" : true
                       }
                     }
@@ -16223,12 +16210,12 @@ paths:
                 },
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/users/d891415e-a3f9-46ad-a24e-06d0c4d62d8c/roles"
+                    "href" : "https://yourshop.api.urn/users/49507626-ab21-4bde-9c8e-a73baf8ae445/roles"
                   }
                 }
               }
           schema:
-            $ref: '#/definitions/carts_cartId_shipping-methods-309252030'
+            $ref: '#/definitions/users_id_roles-309252030'
       security:
       - oauth2_accessCode:
         - user:r
@@ -16252,9 +16239,9 @@ paths:
         name: ""
         required: false
         schema:
-          $ref: '#/definitions/users_id_roles1678963209'
+          $ref: '#/definitions/users_id_roles766918873'
         x-examples:
-          text/uri-list: https://yourshop.api.urn/roles/dfec18b4-7733-440c-a5fa-e3a5da5535e5
+          text/uri-list: https://yourshop.api.urn/roles/2e3f19f6-41b7-4951-8d66-ed31824e06d3
       responses:
         204:
           description: ""
@@ -16284,9 +16271,9 @@ paths:
         name: ""
         required: false
         schema:
-          $ref: '#/definitions/users_id_roles-2096762225'
+          $ref: '#/definitions/users_id_roles726700184'
         x-examples:
-          text/uri-list: https://yourshop.api.urn/roles/cb1222ba-6fca-42cb-82af-e0e0209c858b
+          text/uri-list: https://yourshop.api.urn/roles/658abb22-2569-4878-ab31-88c3a555763e
       responses:
         204:
           description: ""
@@ -17590,6 +17577,12 @@ definitions:
           "en-US" : "Paymenator"
         },
         "defaultDescription": {"de-DE" : "Wunderschöne Erklärung","en-US" : "The best explanation"}}
+  payment-methods717745105:
+    example: |-
+      https://yourshop.api.urn/payment-methods/35aa5491-822d-46bc-8fbb-828811e2b4d3
+      https://yourshop.api.urn/payment-methods/2c623903-e9b6-4e29-ba69-2ea5bf3b3834
+      https://yourshop.api.urn/payment-methods/77a6fef4-f348-46e2-9b80-9269b638eece
+      https://yourshop.api.urn/payment-methods/7c48f585-ee70-487a-9594-a1520ef5774c
   carts_cartId_create-payment1879371795:
     type: object
     properties:
@@ -17605,6 +17598,22 @@ definitions:
         "returnUri" : "http://some.com/return",
         "cancelUri" : "http://some.com/cancel"
       }
+  carts_cartId_line-items_lineItemId1227620660:
+    type: object
+    properties:
+      quantity:
+        type: number
+        description: The quantity for the line item to be set. If the line item is
+          already in the cart, the quantity is added. Defaults to one.
+      _ref:
+        type: string
+        description: The ID of the associated item (in case of `_type=PRODUCT` the
+          product ID).
+      _type:
+        type: string
+        description: The type of the line item (always `PRODUCT` for product line
+          items).
+    example: '{"_type":"PRODUCT","_ref":"565e2ed2-4e2a-4ff2-b434-256a2b6bc242","quantity":2}'
   configuration_order-number-1814832181:
     type: object
     required:
@@ -17638,8 +17647,6 @@ definitions:
       {
         "email" : "baxter@example.org"
       }
-  users_id_roles1678963209:
-    example: https://yourshop.api.urn/roles/dfec18b4-7733-440c-a5fa-e3a5da5535e5
   legal-content_name-1812633368:
     type: object
     properties:
@@ -17781,6 +17788,8 @@ definitions:
         },
         "comment" : "Updated shipping address"
       }
+  carts_cartId_shipping-methods_current-520929856:
+    example: https://yourshop.api.urn/shipping-zones/18981c42-709a-4ed9-b1e7-5821bd98f7f2/shipping-methods/9134a890-fcb7-4591-9c7b-6b60b12d4272
   webhook-subscriptions1499914335:
     type: object
     required:
@@ -19525,8 +19534,6 @@ definitions:
           "productLineItemId" : "b6d70649-72b6-47ff-bcef-3a5bc7be11f3"
         } ]
       }
-  carts_cartId_payment-methods_current126202579:
-    example: https://yourshop.api.urn/payment-methods/0c7d91b1-ce82-46f3-b50b-4f6775b1e842
   shop-146961561:
     type: object
     required:
@@ -19675,11 +19682,6 @@ definitions:
           `CANCELED`, `CAPTURED`, `CAPTURE_PENDING`, `PAID`, `UNDERPAID`, `OVERPAID`,
           or `FAILED`, depending on the former status of the payment.
     example: '{"paymentStatus":"APPROVED"}'
-  shipping-zones-1504572870:
-    example: |-
-      https://yourshop.api.urn/shipping-zones/9be774e7-a572-4161-908d-736a9bb5394b
-      https://yourshop.api.urn/shipping-zones/f4a6e00e-746f-4d9d-922e-3c599cc1ccf0
-      https://yourshop.api.urn/shipping-zones/abdbcbd7-d289-45ab-8b63-66f514936ec9
   orders_order-id_billing-address-1507564979:
     type: object
     properties:
@@ -19743,6 +19745,13 @@ definitions:
       stockThreshold:
         type: number
         description: Inventory level that indicates that the product needs to be reordered.
+  users_id_roles766918873:
+    example: https://yourshop.api.urn/roles/2e3f19f6-41b7-4951-8d66-ed31824e06d3
+  shipping-zones-1284098042:
+    example: |-
+      https://yourshop.api.urn/shipping-zones/4e876e1e-9b4f-4d36-96c1-d0808df0e628
+      https://yourshop.api.urn/shipping-zones/d250bfcc-583d-4235-9e6e-d82873a88464
+      https://yourshop.api.urn/shipping-zones/f074b19f-e826-456c-8bf1-bece6dc48c28
   shop-583187124:
     type: object
     required:
@@ -19840,44 +19849,6 @@ definitions:
         "stringPrefix" : "2017-shop-",
         "nextNumericSuffix" : 10000,
         "numericSuffixLength" : 4
-      }
-  shipping-zones_shippingZoneId_shipping-methods_shippingMethodId-741870160:
-    type: object
-    properties:
-      taxClass:
-        type: string
-        description: The tax class. Can be `REGULAR`, `REDUCED`, or `EXEMPT`.
-      freeShippingValue:
-        type: object
-        description: Once a customer reaches this amount (excluding payment fee) this
-          shipping method is free of charge.
-        properties: {}
-      name:
-        type: string
-        description: The name of the shipping method.
-      description:
-        type: string
-        description: The description of the shipping method.
-      fixedPrice:
-        type: object
-        description: The fixed price for the shipping method irrespective of weight,
-          dimensions, etc.
-        properties: {}
-    example: |-
-      {
-        "name" : "Standard Shipping 2",
-        "taxClass" : "REGULAR",
-        "description" : "Standard Shipping",
-        "fixedPrice" : {
-          "taxModel" : "GROSS",
-          "currency" : "EUR",
-          "amount" : 20
-        },
-        "freeShippingValue" : {
-          "taxModel" : "GROSS",
-          "currency" : "EUR",
-          "amount" : 200
-        }
       }
   products_search_find-by-sku-1659560350:
     type: object
@@ -20047,6 +20018,44 @@ definitions:
           currency:
             type: string
             description: The currency of the list price.
+  shipping-zones_shippingZoneId_shipping-methods_shippingMethodId-741870160:
+    type: object
+    properties:
+      taxClass:
+        type: string
+        description: The tax class. Can be `REGULAR`, `REDUCED`, or `EXEMPT`.
+      freeShippingValue:
+        type: object
+        description: Once a customer reaches this amount (excluding payment fee) this
+          shipping method is free of charge.
+        properties: {}
+      name:
+        type: string
+        description: The name of the shipping method.
+      description:
+        type: string
+        description: The description of the shipping method.
+      fixedPrice:
+        type: object
+        description: The fixed price for the shipping method irrespective of weight,
+          dimensions, etc.
+        properties: {}
+    example: |-
+      {
+        "name" : "Standard Shipping 2",
+        "taxClass" : "REGULAR",
+        "description" : "Standard Shipping",
+        "fixedPrice" : {
+          "taxModel" : "GROSS",
+          "currency" : "EUR",
+          "amount" : 20
+        },
+        "freeShippingValue" : {
+          "taxModel" : "GROSS",
+          "currency" : "EUR",
+          "amount" : 200
+        }
+      }
   carts_cartId_create-payment-and-order1431792943:
     type: object
     properties:
@@ -20305,8 +20314,22 @@ definitions:
         maxLength: 200
     example: '{"salutation":"Mrs","gender":"FEMALE","title":"","firstName":"Astrid","middleName":"Agnes","lastName":"Alster","street":"Alsterwasserweg","houseNumber":"2","street2":"Erdgeschoss","doorCode":"0185","addressExtension":"Hinterhof","postalCode":"20999","dependentLocality":"Seevetal","city":"Alsterwasser","country":"DE","state":"Hamburg","email":"a.alsterh@example.com","phone":"(800)
       555-0102","mobile":"(800) 555-0103"}'
-  users_id_roles-2096762225:
-    example: https://yourshop.api.urn/roles/cb1222ba-6fca-42cb-82af-e0e0209c858b
+  carts_cartId_line-items492267487:
+    type: object
+    properties:
+      quantity:
+        type: number
+        description: The quantity for the line item to be set. If the line item is
+          already in the cart, the quantity is added. Defaults to one.
+      _ref:
+        type: string
+        description: The ID of the associated item (in case of `_type=PRODUCT` the
+          product ID).
+      _type:
+        type: string
+        description: The type of the line item (always `PRODUCT` for product line
+          items).
+    example: '{"_type":"PRODUCT","_ref":"47ba9c5e-b9c4-4ae7-b353-6827992e698a","quantity":1}'
   shop_attributes_name-945554648:
     type: object
     required:
@@ -20327,22 +20350,6 @@ definitions:
         "value" : "new-value",
         "public" : false
       }
-  carts_cartId_line-items638006167:
-    type: object
-    properties:
-      quantity:
-        type: number
-        description: The quantity for the line item to be set. If the line item is
-          already in the cart, the quantity is added. Defaults to one.
-      _ref:
-        type: string
-        description: The ID of the associated item (in case of `_type=PRODUCT` the
-          product ID).
-      _type:
-        type: string
-        description: The type of the line item (always `PRODUCT` for product line
-          items).
-    example: '{"_type":"PRODUCT","_ref":"6c93025c-dbba-4c08-8bf8-a3766c87bb22","quantity":1}'
   product-view_categories_search_find-by-label-1017888571:
     type: object
     properties:
@@ -20379,6 +20386,20 @@ definitions:
         description: The status of the payment. Can be one of `PENDING`, `APPROVED`,
           `CANCELED`, `CAPTURED`, `CAPTURE_PENDING`, `PAID`, `UNDERPAID`, `OVERPAID`,
           or `FAILED`, depending on the former status of the payment.
+  users_id_change-email-request-980210677:
+    type: object
+    properties:
+      newEmail:
+        type: string
+        description: The new email address for the user to set.
+      currentPassword:
+        type: string
+        description: The current password of the user account.
+    example: |-
+      {
+        "currentPassword" : "GoodPassword01!;)",
+        "newEmail" : "newEmail@Gmail.com"
+      }
   shipping-zones_shippingZoneId_shipping-methods_shippingMethodId1520760380:
     type: object
     properties:
@@ -20407,20 +20428,6 @@ definitions:
         description: The fixed price for the shipping method irrespective of weight,
           dimensions, etc.
         properties: {}
-  users_id_change-email-request-980210677:
-    type: object
-    properties:
-      newEmail:
-        type: string
-        description: The new email address for the user to set.
-      currentPassword:
-        type: string
-        description: The current password of the user account.
-    example: |-
-      {
-        "currentPassword" : "GoodPassword01!;)",
-        "newEmail" : "newEmail@Gmail.com"
-      }
   shop_attributes847708956:
     type: object
     required:
@@ -20971,8 +20978,6 @@ definitions:
         type: string
         description: The type of the product collection. Can be `SMART` or `MANUAL`.
     example: '{"name":"Power Bars","label":"power-bar","type":"SMART","query":{"bool":{"filter":{"term":{"tags":"power-bar"}}}}}'
-  carts_cartId_shipping-methods_current1224003889:
-    example: https://yourshop.api.urn/shipping-zones/12753226-3e40-4a2c-8491-66e577d6cbd1/shipping-methods/223784d2-8260-42ca-a923-90760cad5eed
   checkout-settings1206643501:
     type: object
     properties:
@@ -20991,6 +20996,8 @@ definitions:
           and conditions before buying something. Can be `true` or `false`.
     example: " { \n   \"minimumOrderValue\" : {\n     \"currency\" : \"EUR\",\n  \
       \   \"amount\" : 50\n   },\n   \"mustAcceptTermsAndConditions\" : true\n }"
+  users_id_roles726700184:
+    example: https://yourshop.api.urn/roles/658abb22-2569-4878-ab31-88c3a555763e
   shop-id927029385:
     type: object
     properties:
@@ -21051,12 +21058,6 @@ definitions:
       {
         "comment" : "comment"
       }
-  carts_cartId_line-items-511500465:
-    type: array
-    items:
-      type: object
-      properties: {}
-    example: '[{"_type":"PRODUCT","_ref":"e6a21d3d-697e-47e3-a2f2-8500f09819e2","quantity":1}]'
   categories_id-565740918:
     type: object
     required:
@@ -21430,63 +21431,19 @@ definitions:
           "en-US" : "The best explanation"
         }
       }
-  carts_cartId_shipping-methods-309252030:
+  users_id_roles-309252030:
     type: object
     properties:
-      _embedded:
-        type: object
-        properties:
-          shipping-methods:
-            type: array
-            items:
-              type: object
-              properties:
-                lineItemPrice:
-                  type: object
-                  description: The calculated price for this shipping method on the
-                    current cart.
-                  properties: {}
-                _embedded:
-                  type: object
-                  properties:
-                    shipping-method:
-                      type: object
-                      properties:
-                        taxClass:
-                          type: string
-                          description: The tax class. Can be `REGULAR`, `REDUCED`,
-                            or `EXEMPT`.
-                        name:
-                          type: string
-                          description: The name of the shipping method.
-                        description:
-                          type: string
-                          description: The description of the shipping method.
-                        position:
-                          type: number
-                          description: The sorting position of the shipping method
-                            in the Commerce Cockpit in relation to other shipping
-                            methods.
-                        _id:
-                          type: string
-                          description: The immutable, unique identifier of the requested
-                            resource.
-                        fixedPrice:
-                          type: object
-                          description: The fixed price for the shipping method irrespective
-                            of weight, dimensions, etc.
-                          properties: {}
-                selectable:
-                  type: boolean
-                  description: Indicates if the shipping method can be selected for
-                    the current cart. A shipping method can be become non-selectable
-                    if the cart is modified, so that the maximum weight for weight
-                    based price is exceeded. A cart with a non-selectable shipping
-                    method cannot be ordered.
       _links:
         type: object
         description: See <<hypermedia,Hypermedia>>
         properties: {}
+      _embedded:
+        type: object
+        properties:
+          roles:
+            type: array
+            description: The roles of the user.
   users-615951201:
     type: object
     required:
@@ -21547,6 +21504,8 @@ definitions:
           "trackingLink" : "http://tracking.is/fun?code=lookAtMyTrackingCodeWow"
         }
       }
+  carts_cartId_payment-methods_current-1737229400:
+    example: https://yourshop.api.urn/payment-methods/2b00bd84-5bb0-42c3-b0dd-ba2777e95c79
   product-settings1479860459:
     type: object
     properties:
@@ -21638,7 +21597,7 @@ definitions:
         "path" : "/listPriceText",
         "value" : "Original Price"
       } ]
-  payment-methods_paymentMethodId-1004862728:
+  payment-methods_paymentMethodId_activate-1004862728:
     type: object
     properties:
       taxClass:
@@ -21713,22 +21672,6 @@ definitions:
         description: Gives information about the account that is connected to the
           payment app.
         properties: {}
-  carts_cartId_line-items_lineItemId-83820059:
-    type: object
-    properties:
-      quantity:
-        type: number
-        description: The quantity for the line item to be set. If the line item is
-          already in the cart, the quantity is added. Defaults to one.
-      _ref:
-        type: string
-        description: The ID of the associated item (in case of `_type=PRODUCT` the
-          product ID).
-      _type:
-        type: string
-        description: The type of the line item (always `PRODUCT` for product line
-          items).
-    example: '{"_type":"PRODUCT","_ref":"b1b5b8cf-5229-4d66-b4b4-ed1513f2a880","quantity":2}'
   shop_address-271885012:
     type: object
     required:
@@ -21855,94 +21798,28 @@ definitions:
               description: The fixed price for the shipping method irrespective of
                 weight, dimensions, etc.
               properties: {}
-  payment-methods-881423975:
-    example: |-
-      https://yourshop.api.urn/payment-methods/95d3774c-da2d-4124-b828-4968e32a3ad5
-      https://yourshop.api.urn/payment-methods/b67eb6c9-d76e-4e6f-b052-36d4d5893bcb
-      https://yourshop.api.urn/payment-methods/77d97f5e-b2d6-47d8-85a7-20e0a9fe9031
-      https://yourshop.api.urn/payment-methods/25daacc9-70d5-478b-a599-2035852c2136
-  carts_cartId_payment-methods-663923302:
+  signers-663923302:
     type: object
     properties:
       _embedded:
         type: object
         properties:
-          payment-methods:
+          signers:
             type: array
             items:
               type: object
               properties:
-                lineItemPrice:
+                createdAt:
+                  type: string
+                  description: The date and time the signer was created. According
+                    to ISO 8601.
+                _links:
                   type: object
-                  description: The calculated price for this payment on the current
-                    cart.
+                  description: See <<hypermedia,Hypermedia>>
                   properties: {}
-                _embedded:
-                  type: object
-                  properties:
-                    payment-method:
-                      type: object
-                      properties:
-                        taxClass:
-                          type: string
-                          description: The tax class. Can be `REGULAR`, `REDUCED`,
-                            or `EXEMPT`.
-                        onlinePayment:
-                          type: boolean
-                          description: Indicates if the payment method is an online
-                            payment. Can be `true` or `false`.
-                        description:
-                          type: string
-                          description: Description of the payment method that is used
-                            during checkout.
-                        officialName:
-                          type: string
-                          description: The official name of the payment method chosen
-                            by the merchant during setup.
-                        serviceableCountries:
-                          type: array
-                          description: The list of target countries this payment method
-                            can be used in.
-                        discountOrFee:
-                          type: object
-                          description: The details about the fee to be payed or discount
-                            to be granted for this payment method.
-                          properties:
-                            type:
-                              type: string
-                              description: The discount or fee can be an absolute
-                                or a percentage based value. Can be one of `PERCENTAGE`
-                                or `ABSOLUTE`. `ABSOLUTE` contains another attribute
-                                `absoluteValue` with a positive or negative `price`.
-                                `PERCENTAGE` contains another attribute `percentageValue`
-                                with a negative or positive percentage value.
-                        name:
-                          type: string
-                          description: The name of the payment method that is used
-                            during checkout.
-                        officialDescription:
-                          type: string
-                          description: The official description of the payment method
-                            chosen by the merchant during setup.
-                        position:
-                          type: number
-                          description: The sorting position of the payment method
-                            in the Commerce Cockpit in relation to other payment methods.
-                        _id:
-                          type: string
-                          description: The immutable, unique identifier of the requested
-                            resource.
-                        activated:
-                          type: boolean
-                          description: Indicates if a payment method is active. Can
-                            be `true` or `false`.
-                selectable:
-                  type: boolean
-                  description: Indicates if the payment method can be selected for
-                    the current cart. A payment method can be become non-selectable
-                    if the cart is modified, so that the `minimumOrderValue` is no
-                    longer reached. A cart with an non-selectable payment method cannot
-                    be ordered.
+                _id:
+                  type: string
+                  description: The immutable, unique identifier of the requested resource.
   products_productId_attributes_productAttributeName-1919261341:
     type: object
     properties:
@@ -22060,3 +21937,9 @@ definitions:
           username change.
         minLength: 1
     example: '{"currentPassword":"GoodPassword01!;)","newUsername":"new username"}'
+  carts_cartId_line-items-1352533602:
+    type: array
+    items:
+      type: object
+      properties: {}
+    example: '[{"_type":"PRODUCT","_ref":"789d1f01-4ef2-4cf1-87d6-9d2b3d70ffee","quantity":1}]'
