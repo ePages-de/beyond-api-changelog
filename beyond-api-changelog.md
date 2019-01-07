@@ -2,7 +2,6 @@
 
 ## 2019-01-04
 
--XX:InitialHeapSize=527058816 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
 ### What's New
 ---
 
