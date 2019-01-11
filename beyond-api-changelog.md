@@ -1,5 +1,31 @@
 # Beyond API Changelog
 
+## 2019-01-11
+
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `POST` /payment-method-definitions Create payment method definition  
+    Parameter
+
+        Add .captureWorkflow //Indicates how and when the capturing of an authorized payment should take place. Can be one of `CAPTURE_ON_ORDER` or `CAPTURE_ON_DEMAND`.
+* `GET` /payment-method-definitions/{paymentMethodDefinitionName} Show payment method definition details  
+    Return Type
+
+        Add captureWorkflow //Indicates how and when the capturing of an authorized payment should take place. Can be one of `CAPTURE_ON_ORDER` or `CAPTURE_ON_DEMAND`.
+* `PUT` /payment-method-definitions/{paymentMethodDefinitionName} Modify payment method definition  
+    Parameter
+
+        Add .captureWorkflow //Indicates how and when the capturing of an authorized payment should take place. Can be one of `CAPTURE_ON_ORDER` or `CAPTURE_ON_DEMAND`.
+    Return Type
+
+        Add captureWorkflow //Indicates how and when the capturing of an authorized payment should take place. Can be one of `CAPTURE_ON_ORDER` or `CAPTURE_ON_DEMAND`.
+
 ## 2019-01-10
 
 -XX:InitialHeapSize=527058816 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
