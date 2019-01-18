@@ -8333,7 +8333,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/payment-method-definitions-165014951'
+            $ref: '#/definitions/payment-method-definitions_paymentMethodDefinitionName-165014951'
       security:
       - oauth2_accessCode:
         - paym:m
@@ -8343,10 +8343,11 @@ paths:
     get:
       tags:
       - payment-method-definitions
-      summary: Show payment method definition details
+      summary: Show payment method definition details in the shop context
       description: Returns the details of the payment method definition identified
-        by {paymentMethodDefinitionId}.
-      operationId: get-payment-method-definition
+        by {paymentMethodDefinitionId}. Response includes a link to create a payment
+        method or delete, if it already exists.
+      operationId: get-payment-method-definition-shop-context
       produces:
       - application/hal+json
       parameters:
@@ -8397,11 +8398,14 @@ paths:
                 "_links" : {
                   "self" : {
                     "href" : "https://yourshop.api.urn/payment-method-definitions/testPMD"
+                  },
+                  "create-payment-method" : {
+                    "href" : "https://yourshop.api.urn/payment-method-definitions/testPMD/payment-method"
                   }
                 }
               }
           schema:
-            $ref: '#/definitions/payment-method-definitions-165014951'
+            $ref: '#/definitions/payment-method-definitions_paymentMethodDefinitionName-165014951'
       security:
       - oauth2_accessCode:
         - paym:m
@@ -8509,7 +8513,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/payment-method-definitions-165014951'
+            $ref: '#/definitions/payment-method-definitions_paymentMethodDefinitionName-165014951'
       security:
       - oauth2_accessCode:
         - paym:m
@@ -15628,7 +15632,7 @@ paths:
           examples:
             application/hal+json: |-
               {
-                "shopId" : "ce4632a1-3671-4f47-b776-d1d36093f7aa"
+                "shopId" : "fa4f6b86-290f-43cf-9d1e-fd19ec21905c"
               }
           schema:
             $ref: '#/definitions/shop-id927029385'
@@ -19791,7 +19795,7 @@ definitions:
         "nextNumericSuffix" : 10000,
         "numericSuffixLength" : 4
       }
-  payment-method-definitions-165014951:
+  payment-method-definitions_paymentMethodDefinitionName-165014951:
     type: object
     properties:
       captureWorkflow:
