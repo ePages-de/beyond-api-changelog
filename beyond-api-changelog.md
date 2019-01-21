@@ -28,7 +28,7 @@
 
 ## 2019-01-10
 
--XX:InitialHeapSize=527058816 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+
 ### What's New
 ---
 * `PUT` /products/{productId}/attributes/{productAttributeName} Update product attribute, or create if product attribute doesn't exist
