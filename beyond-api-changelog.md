@@ -1,5 +1,24 @@
 # Beyond API Changelog
 
+## 2019-01-23
+
+### What's New
+---
+
+### What's Deprecated
+---
+* `GET` /product-view/categories/{categoryId} Show enhanced view of category
+
+### What's Changed
+---
+* `GET` /product-view/products/{productId} Show product details  
+    Parameter
+
+        Delete projection //The projection to apply in order to show an enhanced view of product details. Use `enhancedProductProjection`.
+    Return Type
+
+        Delete _indexedAt //The time of storing this document in the search index.
+
 ## 2019-01-11
 
 ### What's New
