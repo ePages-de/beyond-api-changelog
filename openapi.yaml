@@ -8254,7 +8254,7 @@ paths:
         name: ""
         required: false
         schema:
-          $ref: '#/definitions/payment-method-definitions406679235'
+          $ref: '#/definitions/payment-method-definitions655026946'
         x-examples:
           application/json: |-
             {
@@ -8333,7 +8333,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/payment-method-definitions_paymentMethodDefinitionName-165014951'
+            $ref: '#/definitions/payment-method-definitions_paymentMethodDefinitionName83332760'
       security:
       - oauth2_accessCode:
         - paym:m
@@ -8343,10 +8343,10 @@ paths:
     get:
       tags:
       - payment-method-definitions
-      summary: Show payment method definition details in the shop context
+      summary: Show payment method definition details on shop level
       description: Returns the details of the payment method definition identified
-        by {paymentMethodDefinitionId}. Response includes a link to create a payment
-        method or delete, if it already exists.
+        by {paymentMethodDefinitionId}. Gives information if a shop has a payment
+        method derived from the payment method definition.
       operationId: get-payment-method-definition-shop-context
       produces:
       - application/hal+json
@@ -8405,7 +8405,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/payment-method-definitions_paymentMethodDefinitionName-165014951'
+            $ref: '#/definitions/payment-method-definitions_paymentMethodDefinitionName83332760'
       security:
       - oauth2_accessCode:
         - paym:m
@@ -8431,7 +8431,7 @@ paths:
         name: ""
         required: false
         schema:
-          $ref: '#/definitions/payment-method-definitions_paymentMethodDefinitionName-214076610'
+          $ref: '#/definitions/payment-method-definitions_paymentMethodDefinitionName34271101'
         x-examples:
           application/json: |-
             {
@@ -8513,7 +8513,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/payment-method-definitions_paymentMethodDefinitionName-165014951'
+            $ref: '#/definitions/payment-method-definitions_paymentMethodDefinitionName83332760'
       security:
       - oauth2_accessCode:
         - paym:m
@@ -9322,7 +9322,7 @@ paths:
       tags:
       - payments
       summary: Set payment status with amount
-      description: Sets the `paymentStatus` and `amountPaid` of the payment identified
+      description: Sets the `paymentStatus` and the `amountPaid` of the payment identified
         by {paymentId}.
       operationId: set-payment-status-with-amount
       consumes:
@@ -9339,7 +9339,7 @@ paths:
         name: ""
         required: false
         schema:
-          $ref: '#/definitions/payments_paymentId_status-1672489687'
+          $ref: '#/definitions/payments_paymentId_status-631714533'
         x-examples:
           application/json: '{"paymentStatus":"APPROVED"}'
       responses:
@@ -9615,7 +9615,68 @@ paths:
               {
                 "_embedded" : {
                   "products" : [ {
-                    "_id" : "89cd4ef7-5c8d-44ed-b1a3-2e896ced4c4e",
+                    "_id" : "2122ebea-57b4-49da-b1b2-dc6b7439de04",
+                    "sku" : "sh-001",
+                    "name" : "Soft Walk Ultra - Nibok Men's",
+                    "salesPrice" : {
+                      "amount" : 89.0,
+                      "currency" : "EUR"
+                    },
+                    "listPrice" : {
+                      "amount" : 99.99,
+                      "currency" : "EUR"
+                    },
+                    "manufacturerPrice" : null,
+                    "onSale" : true,
+                    "listPriceText" : "Old Price",
+                    "shippingDimension" : {
+                      "length" : 80,
+                      "width" : 80,
+                      "height" : 40
+                    },
+                    "refPrice" : null,
+                    "availabilityState" : "IN_STOCK",
+                    "_links" : {
+                      "default-image-data" : {
+                        "href" : "https://yourshop.api.urn/storage-api/images/nibok-men.jpg?hash=e9a1ce5c0c6abfebec8fb1f6faf77dca7e699999{&width,height,upscale}",
+                        "templated" : true
+                      },
+                      "self" : {
+                        "href" : "https://yourshop.api.urn/product-view/products/2122ebea-57b4-49da-b1b2-dc6b7439de04"
+                      },
+                      "product" : {
+                        "href" : "https://yourshop.api.urn/product-view/products/2122ebea-57b4-49da-b1b2-dc6b7439de04"
+                      }
+                    }
+                  }, {
+                    "_id" : "5e3536ec-5877-4c92-843e-c272263bd1fc",
+                    "sku" : "EB001",
+                    "name" : "Power & Vanilla Coconut Protein Bar (Pack of 5)",
+                    "salesPrice" : {
+                      "amount" : 4.95,
+                      "currency" : "EUR"
+                    },
+                    "listPrice" : null,
+                    "manufacturerPrice" : null,
+                    "onSale" : false,
+                    "listPriceText" : "Old Price",
+                    "shippingDimension" : {
+                      "length" : 19,
+                      "width" : 18,
+                      "height" : 17
+                    },
+                    "refPrice" : null,
+                    "availabilityState" : "IN_STOCK",
+                    "_links" : {
+                      "self" : {
+                        "href" : "https://yourshop.api.urn/product-view/products/5e3536ec-5877-4c92-843e-c272263bd1fc"
+                      },
+                      "product" : {
+                        "href" : "https://yourshop.api.urn/product-view/products/5e3536ec-5877-4c92-843e-c272263bd1fc"
+                      }
+                    }
+                  }, {
+                    "_id" : "7bd7c146-3fc5-46e8-93ff-5dc2cfadb797",
                     "sku" : "vino020",
                     "name" : "Rioja Castillo de Puerto (2013)",
                     "salesPrice" : {
@@ -9653,74 +9714,10 @@ paths:
                         "templated" : true
                       },
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/89cd4ef7-5c8d-44ed-b1a3-2e896ced4c4e"
+                        "href" : "https://yourshop.api.urn/product-view/products/7bd7c146-3fc5-46e8-93ff-5dc2cfadb797"
                       },
                       "product" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/89cd4ef7-5c8d-44ed-b1a3-2e896ced4c4e{?projection}",
-                        "templated" : true
-                      }
-                    }
-                  }, {
-                    "_id" : "2816f508-2025-4a34-b444-b53ce103e42f",
-                    "sku" : "EB001",
-                    "name" : "Power & Vanilla Coconut Protein Bar (Pack of 5)",
-                    "salesPrice" : {
-                      "amount" : 4.95,
-                      "currency" : "EUR"
-                    },
-                    "listPrice" : null,
-                    "manufacturerPrice" : null,
-                    "onSale" : false,
-                    "listPriceText" : "Old Price",
-                    "shippingDimension" : {
-                      "length" : 19,
-                      "width" : 18,
-                      "height" : 17
-                    },
-                    "refPrice" : null,
-                    "availabilityState" : "IN_STOCK",
-                    "_links" : {
-                      "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/2816f508-2025-4a34-b444-b53ce103e42f"
-                      },
-                      "product" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/2816f508-2025-4a34-b444-b53ce103e42f{?projection}",
-                        "templated" : true
-                      }
-                    }
-                  }, {
-                    "_id" : "d16c3399-91e3-45fb-ac78-fb568f937b1b",
-                    "sku" : "sh-001",
-                    "name" : "Soft Walk Ultra - Nibok Men's",
-                    "salesPrice" : {
-                      "amount" : 89.0,
-                      "currency" : "EUR"
-                    },
-                    "listPrice" : {
-                      "amount" : 99.99,
-                      "currency" : "EUR"
-                    },
-                    "manufacturerPrice" : null,
-                    "onSale" : true,
-                    "listPriceText" : "Old Price",
-                    "shippingDimension" : {
-                      "length" : 80,
-                      "width" : 80,
-                      "height" : 40
-                    },
-                    "refPrice" : null,
-                    "availabilityState" : "IN_STOCK",
-                    "_links" : {
-                      "default-image-data" : {
-                        "href" : "https://yourshop.api.urn/storage-api/images/nibok-men.jpg?hash=e9a1ce5c0c6abfebec8fb1f6faf77dca7e699999{&width,height,upscale}",
-                        "templated" : true
-                      },
-                      "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/d16c3399-91e3-45fb-ac78-fb568f937b1b"
-                      },
-                      "product" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/d16c3399-91e3-45fb-ac78-fb568f937b1b{?projection}",
-                        "templated" : true
+                        "href" : "https://yourshop.api.urn/product-view/products/7bd7c146-3fc5-46e8-93ff-5dc2cfadb797"
                       }
                     }
                   } ]
@@ -9739,62 +9736,13 @@ paths:
               }
           schema:
             $ref: '#/definitions/shop_attributes-1206450827'
-  /product-view/categories/{categoryId}:
-    get:
-      tags:
-      - product-view
-      summary: Show enhanced view of category
-      description: |-
-        Returns an enhanced view of the product category identified by {categoryId}.
-        Note that a `category` is referred to as `collection` in the cockpit.
-      operationId: category-get-enhanced
-      produces:
-      - application/hal+json
-      parameters:
-      - name: categoryId
-        in: path
-        description: ""
-        required: true
-        type: string
-      - name: projection
-        in: query
-        description: The projection to apply in order to show an enhanced view of
-          category details. Use `enhancedCategoryProjection`.
-        required: false
-        type: string
-      responses:
-        200:
-          description: ""
-          examples:
-            application/hal+json: |-
-              {
-                "_id" : "de4d4a38-ec37-410b-b302-b68c14fb643b",
-                "_indexedAt" : "2019-01-09T12:36:54.087",
-                "type" : "SMART",
-                "name" : "Power Bars",
-                "label" : "power-bar",
-                "_links" : {
-                  "self" : {
-                    "href" : "https://yourshop.api.urn/product-view/categories/de4d4a38-ec37-410b-b302-b68c14fb643b"
-                  },
-                  "category" : {
-                    "href" : "https://yourshop.api.urn/product-view/categories/de4d4a38-ec37-410b-b302-b68c14fb643b{?projection}",
-                    "templated" : true
-                  },
-                  "products" : {
-                    "href" : "https://yourshop.api.urn/product-view/categories/de4d4a38-ec37-410b-b302-b68c14fb643b/products"
-                  }
-                }
-              }
-          schema:
-            $ref: '#/definitions/product-view_categories_categoryId1092984037'
   /product-view/products/{productId}:
     get:
       tags:
       - product-view
-      summary: Show enhanced view of product details
-      description: Returns enhanced details of the product identified by {productId}.
-      operationId: product-view-find-by-id-enhanced
+      summary: Show product details
+      description: Returns the details of the product identified by {productId}.
+      operationId: product-view-find-by-id
       produces:
       - application/hal+json
       parameters:
@@ -9803,20 +9751,13 @@ paths:
         description: ""
         required: true
         type: string
-      - name: projection
-        in: query
-        description: The projection to apply in order to show an enhanced view of
-          product details. Use `enhancedProductProjection`.
-        required: true
-        type: string
       responses:
         200:
           description: ""
           examples:
             application/hal+json: |-
               {
-                "_id" : "94c618db-e52c-445c-b8f4-1b0727c20680",
-                "_indexedAt" : "2019-01-09T12:36:07.611",
+                "_id" : "8ded0927-6c41-469b-a25c-93c963d2fca4",
                 "sku" : "vino020",
                 "name" : "Rioja Castillo de Puerto (2013)",
                 "salesPrice" : {
@@ -9882,11 +9823,10 @@ paths:
                     "templated" : true
                   },
                   "self" : {
-                    "href" : "https://yourshop.api.urn/product-view/products/94c618db-e52c-445c-b8f4-1b0727c20680"
+                    "href" : "https://yourshop.api.urn/product-view/products/8ded0927-6c41-469b-a25c-93c963d2fca4"
                   },
                   "product" : {
-                    "href" : "https://yourshop.api.urn/product-view/products/94c618db-e52c-445c-b8f4-1b0727c20680{?projection}",
-                    "templated" : true
+                    "href" : "https://yourshop.api.urn/product-view/products/8ded0927-6c41-469b-a25c-93c963d2fca4"
                   },
                   "additional-image-data" : [ {
                     "href" : "https://yourshop.api.urn/storage-api/images/rioja-02.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225998{&width,height,upscale}",
@@ -9901,7 +9841,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_productId-552645877'
+            $ref: '#/definitions/product-view_products_productId-1125906324'
   /product-view/categories/search/find-by-label:
     get:
       tags:
@@ -9928,17 +9868,16 @@ paths:
                 "type" : "SMART",
                 "name" : "Power Bars",
                 "label" : "power-bar",
-                "_id" : "dbf4c73b-dc23-4d4e-ade8-06ff14e5a127",
+                "_id" : "a1703d3e-351e-47b4-8f9d-7a382522a10c",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/product-view/categories/dbf4c73b-dc23-4d4e-ade8-06ff14e5a127"
+                    "href" : "https://yourshop.api.urn/product-view/categories/a1703d3e-351e-47b4-8f9d-7a382522a10c"
                   },
                   "category" : {
-                    "href" : "https://yourshop.api.urn/product-view/categories/dbf4c73b-dc23-4d4e-ade8-06ff14e5a127{?projection}",
-                    "templated" : true
+                    "href" : "https://yourshop.api.urn/product-view/categories/a1703d3e-351e-47b4-8f9d-7a382522a10c"
                   },
                   "products" : {
-                    "href" : "https://yourshop.api.urn/product-view/categories/dbf4c73b-dc23-4d4e-ade8-06ff14e5a127/products"
+                    "href" : "https://yourshop.api.urn/product-view/categories/a1703d3e-351e-47b4-8f9d-7a382522a10c/products"
                   }
                 }
               }
@@ -9972,34 +9911,32 @@ paths:
                     "type" : "SMART",
                     "name" : "category that loves everyone",
                     "label" : null,
-                    "_id" : "33ae415c-3513-485d-b2db-bd2b7e0a6fb2",
+                    "_id" : "dcb0b62b-d77c-49a8-8e0e-d3199f0a91e8",
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/categories/33ae415c-3513-485d-b2db-bd2b7e0a6fb2"
+                        "href" : "https://yourshop.api.urn/product-view/categories/dcb0b62b-d77c-49a8-8e0e-d3199f0a91e8"
                       },
                       "category" : {
-                        "href" : "https://yourshop.api.urn/product-view/categories/33ae415c-3513-485d-b2db-bd2b7e0a6fb2{?projection}",
-                        "templated" : true
+                        "href" : "https://yourshop.api.urn/product-view/categories/dcb0b62b-d77c-49a8-8e0e-d3199f0a91e8"
                       },
                       "products" : {
-                        "href" : "https://yourshop.api.urn/product-view/categories/33ae415c-3513-485d-b2db-bd2b7e0a6fb2/products"
+                        "href" : "https://yourshop.api.urn/product-view/categories/dcb0b62b-d77c-49a8-8e0e-d3199f0a91e8/products"
                       }
                     }
                   }, {
                     "type" : "MANUAL",
                     "name" : "category that matches product 1 in a complicated way",
                     "label" : null,
-                    "_id" : "03f2c610-8c62-461b-9cd6-a62e3840ca3b",
+                    "_id" : "c3805430-49d0-466c-be8c-3cf25c19b8f1",
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/categories/03f2c610-8c62-461b-9cd6-a62e3840ca3b"
+                        "href" : "https://yourshop.api.urn/product-view/categories/c3805430-49d0-466c-be8c-3cf25c19b8f1"
                       },
                       "category" : {
-                        "href" : "https://yourshop.api.urn/product-view/categories/03f2c610-8c62-461b-9cd6-a62e3840ca3b{?projection}",
-                        "templated" : true
+                        "href" : "https://yourshop.api.urn/product-view/categories/c3805430-49d0-466c-be8c-3cf25c19b8f1"
                       },
                       "products" : {
-                        "href" : "https://yourshop.api.urn/product-view/categories/03f2c610-8c62-461b-9cd6-a62e3840ca3b/products"
+                        "href" : "https://yourshop.api.urn/product-view/categories/c3805430-49d0-466c-be8c-3cf25c19b8f1/products"
                       }
                     }
                   } ]
@@ -10041,7 +9978,7 @@ paths:
               {
                 "_embedded" : {
                   "products" : [ {
-                    "_id" : "99ce2bae-cba5-4584-8504-b1a644535322",
+                    "_id" : "75dbfd86-5a1b-44f3-83ab-973baa684d25",
                     "sku" : "vino020",
                     "name" : "Rioja Castillo de Puerto (2013)",
                     "salesPrice" : {
@@ -10079,18 +10016,17 @@ paths:
                         "templated" : true
                       },
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/99ce2bae-cba5-4584-8504-b1a644535322"
+                        "href" : "https://yourshop.api.urn/product-view/products/75dbfd86-5a1b-44f3-83ab-973baa684d25"
                       },
                       "product" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/99ce2bae-cba5-4584-8504-b1a644535322{?projection}",
-                        "templated" : true
+                        "href" : "https://yourshop.api.urn/product-view/products/75dbfd86-5a1b-44f3-83ab-973baa684d25"
                       }
                     }
                   } ]
                 },
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/product-view/categories/7d505803-ccb9-4850-ad02-b99fa5e5f2dd/products?page=0&size=40"
+                    "href" : "https://yourshop.api.urn/product-view/categories/06a745b2-15b1-4a9c-b0f9-b63a05b871a2/products?page=0&size=40"
                   }
                 },
                 "page" : {
@@ -10182,7 +10118,7 @@ paths:
               {
                 "_embedded" : {
                   "products" : [ {
-                    "_id" : "88684073-ae37-45b8-8d4b-858d5de53ace",
+                    "_id" : "1d0ccf53-7821-410e-94ad-905728e333f8",
                     "sku" : "vino020",
                     "name" : "Rioja Castillo de Puerto (2013)",
                     "salesPrice" : {
@@ -10220,18 +10156,17 @@ paths:
                         "templated" : true
                       },
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/88684073-ae37-45b8-8d4b-858d5de53ace"
+                        "href" : "https://yourshop.api.urn/product-view/products/1d0ccf53-7821-410e-94ad-905728e333f8"
                       },
                       "product" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/88684073-ae37-45b8-8d4b-858d5de53ace{?projection}",
-                        "templated" : true
+                        "href" : "https://yourshop.api.urn/product-view/products/1d0ccf53-7821-410e-94ad-905728e333f8"
                       }
                     }
                   } ]
                 },
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/product-view/products/search/find-by-category?categoryId=a5b350f4-8a04-4f7e-9ad7-f67d88b0b593&page=0&size=40"
+                    "href" : "https://yourshop.api.urn/product-view/products/search/find-by-category?categoryId=0fd0177e-3e2d-458e-9575-b763f123f913&page=0&size=40"
                   }
                 },
                 "page" : {
@@ -10259,10 +10194,10 @@ paths:
         name: ""
         required: false
         schema:
-          $ref: '#/definitions/product-view_products_search_find-by-query-815094681'
+          $ref: '#/definitions/product-view_products_search_find-by-query1193686370'
         x-examples:
           application/json: '{ "query": {"bool":{"filter":[{"term":{"tags":"number0"}},{"range":{"salesPrice.amount":{"lte":8.7}}},{"range":{"createdAt":{"gte":"now-1h"}}}]}},
-            "sort": "name"}'
+            "sort": "name.keyword"}'
       responses:
         200:
           description: ""
@@ -10271,7 +10206,7 @@ paths:
               {
                 "_embedded" : {
                   "products" : [ {
-                    "_id" : "0cbf98d9-d473-4c9f-b649-3e9d3d35d00a",
+                    "_id" : "3f61144f-e215-475e-92c9-06eceba1b9a0",
                     "sku" : "vino020",
                     "name" : "Rioja Castillo de Puerto (2013)",
                     "salesPrice" : {
@@ -10309,11 +10244,10 @@ paths:
                         "templated" : true
                       },
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/0cbf98d9-d473-4c9f-b649-3e9d3d35d00a"
+                        "href" : "https://yourshop.api.urn/product-view/products/3f61144f-e215-475e-92c9-06eceba1b9a0"
                       },
                       "product" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/0cbf98d9-d473-4c9f-b649-3e9d3d35d00a{?projection}",
-                        "templated" : true
+                        "href" : "https://yourshop.api.urn/product-view/products/3f61144f-e215-475e-92c9-06eceba1b9a0"
                       }
                     }
                   } ]
@@ -10356,42 +10290,7 @@ paths:
               {
                 "_embedded" : {
                   "products" : [ {
-                    "_id" : "b5212542-6636-415c-ab0b-281aeb1b1314",
-                    "sku" : "sh-001",
-                    "name" : "Soft Walk Ultra - Nibok Men's",
-                    "salesPrice" : {
-                      "amount" : 89.0,
-                      "currency" : "EUR"
-                    },
-                    "listPrice" : {
-                      "amount" : 99.99,
-                      "currency" : "EUR"
-                    },
-                    "manufacturerPrice" : null,
-                    "onSale" : true,
-                    "listPriceText" : "Old Price",
-                    "shippingDimension" : {
-                      "length" : 80,
-                      "width" : 80,
-                      "height" : 40
-                    },
-                    "refPrice" : null,
-                    "availabilityState" : "IN_STOCK",
-                    "_links" : {
-                      "default-image-data" : {
-                        "href" : "https://yourshop.api.urn/storage-api/images/nibok-men.jpg?hash=e9a1ce5c0c6abfebec8fb1f6faf77dca7e699999{&width,height,upscale}",
-                        "templated" : true
-                      },
-                      "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/b5212542-6636-415c-ab0b-281aeb1b1314"
-                      },
-                      "product" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/b5212542-6636-415c-ab0b-281aeb1b1314{?projection}",
-                        "templated" : true
-                      }
-                    }
-                  }, {
-                    "_id" : "b8deb329-2a4c-452a-b199-b334aab3bcb9",
+                    "_id" : "0972467f-cb4a-4e22-8464-bdf2ec0d7111",
                     "sku" : "vino020",
                     "name" : "Rioja Castillo de Puerto (2013)",
                     "salesPrice" : {
@@ -10429,11 +10328,44 @@ paths:
                         "templated" : true
                       },
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/b8deb329-2a4c-452a-b199-b334aab3bcb9"
+                        "href" : "https://yourshop.api.urn/product-view/products/0972467f-cb4a-4e22-8464-bdf2ec0d7111"
                       },
                       "product" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/b8deb329-2a4c-452a-b199-b334aab3bcb9{?projection}",
+                        "href" : "https://yourshop.api.urn/product-view/products/0972467f-cb4a-4e22-8464-bdf2ec0d7111"
+                      }
+                    }
+                  }, {
+                    "_id" : "fbe2c28a-97b3-4f76-be0f-2195dc6d2d02",
+                    "sku" : "sh-001",
+                    "name" : "Soft Walk Ultra - Nibok Men's",
+                    "salesPrice" : {
+                      "amount" : 89.0,
+                      "currency" : "EUR"
+                    },
+                    "listPrice" : {
+                      "amount" : 99.99,
+                      "currency" : "EUR"
+                    },
+                    "manufacturerPrice" : null,
+                    "onSale" : true,
+                    "listPriceText" : "Old Price",
+                    "shippingDimension" : {
+                      "length" : 80,
+                      "width" : 80,
+                      "height" : 40
+                    },
+                    "refPrice" : null,
+                    "availabilityState" : "IN_STOCK",
+                    "_links" : {
+                      "default-image-data" : {
+                        "href" : "https://yourshop.api.urn/storage-api/images/nibok-men.jpg?hash=e9a1ce5c0c6abfebec8fb1f6faf77dca7e699999{&width,height,upscale}",
                         "templated" : true
+                      },
+                      "self" : {
+                        "href" : "https://yourshop.api.urn/product-view/products/fbe2c28a-97b3-4f76-be0f-2195dc6d2d02"
+                      },
+                      "product" : {
+                        "href" : "https://yourshop.api.urn/product-view/products/fbe2c28a-97b3-4f76-be0f-2195dc6d2d02"
                       }
                     }
                   } ]
@@ -10478,7 +10410,7 @@ paths:
               {
                 "_embedded" : {
                   "products" : [ {
-                    "_id" : "abcb6eab-e492-445c-97da-02633cbd3c2a",
+                    "_id" : "66de6bbe-29f3-4fe7-9459-fe3f55963412",
                     "sku" : "vino020",
                     "name" : "Rioja Castillo de Puerto (2013)",
                     "salesPrice" : {
@@ -10516,11 +10448,10 @@ paths:
                         "templated" : true
                       },
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/abcb6eab-e492-445c-97da-02633cbd3c2a"
+                        "href" : "https://yourshop.api.urn/product-view/products/66de6bbe-29f3-4fe7-9459-fe3f55963412"
                       },
                       "product" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/abcb6eab-e492-445c-97da-02633cbd3c2a{?projection}",
-                        "templated" : true
+                        "href" : "https://yourshop.api.urn/product-view/products/66de6bbe-29f3-4fe7-9459-fe3f55963412"
                       }
                     }
                   } ]
@@ -15632,7 +15563,7 @@ paths:
           examples:
             application/hal+json: |-
               {
-                "shopId" : "6c16b470-f10a-4a36-9016-f941e0c946ca"
+                "shopId" : "c94544b7-c821-4abd-8a49-483116c5f4f6"
               }
           schema:
             $ref: '#/definitions/shop-id927029385'
@@ -16796,216 +16727,6 @@ definitions:
         type: string
         description: The URI used to approve the payment (optional). If present, the
           client has to redirect to this URI to initiate the approval.
-  payment-method-definitions_paymentMethodDefinitionName-214076610:
-    type: object
-    properties:
-      captureWorkflow:
-        type: string
-        description: Indicates how and when the capturing of an authorized payment
-          should take place. Can be one of `CAPTURE_ON_ORDER` or `CAPTURE_ON_DEMAND`.
-      createPaymentUriTemplate:
-        type: string
-        description: The URI template for the endpoint for the creation of individual
-          payments. Can optionally take a `paymentID` as parameter.
-      workflow:
-        type: string
-        description: Indicates the workflow of the payment method. Can be one of `PAYMENT_ON_SELECTION`,
-          `PAYMENT_ON_BUY`, or `EMBEDDED_ON_BUY`.
-      referralUriTemplate:
-        type: string
-        description: The URI template for the endpoint that generates a reference
-          to the site where the merchant can connect their shop with their payment
-          app account.
-      officialName:
-        type: object
-        description: The name of the payment method that will be displayed to the
-          merchant. Needs to be translated for each supported language.
-        properties: {}
-      refundPaymentUriTemplate:
-        type: string
-        description: The URI template for the endpoint to process refunds. Takes a
-          `paymentID` as parameter to refer to an individual payment.
-      disconnectUriTemplate:
-        type: string
-        description: The URI template for the endpoint to unlink a payment app account
-          from a shop. Takes the `shopID` as parameter to refer to an individual shop.
-      logos:
-        type: array
-        items:
-          type: object
-          properties:
-            setName:
-              type: string
-              description: The set name of the logo. The default is `official`.
-            variant:
-              type: string
-              description: The variant of the logo. Can be one of `TILE`, `DETAILS`,
-                `LIST`, or `STOREFRONT`, depending on the location of the logo.
-            uri:
-              type: string
-              description: The URI of the logo.
-      capturePaymentUriTemplate:
-        type: string
-        description: The URI template for the endpoint to capture the payment after
-          creation and approval have been successful. Takes a `paymentID` as parameter
-          to refer to an individual payment.
-      statusUriTemplate:
-        type: string
-        description: The URI template for the endpoint for the app’s integration status.
-          Takes the `shopID` as parameter to refer to an individual shop.
-      name:
-        type: string
-        description: The name of a payment method definition.
-      officialDescription:
-        type: object
-        description: The description of the payment method that will be displayed
-          to the merchant. Needs to be translated for each supported language.
-        properties: {}
-      defaultName:
-        type: object
-        description: The default name of the payment method that will be displayed
-          to the customer. Can be edited by the merchant and needs to be translated
-          for each supported language.
-        properties: {}
-      defaultDescription:
-        type: object
-        description: Optional default description of the payment method that will
-          be displayed to the customer. Can be edited by the merchant and needs to
-          be translated for each supported language.
-        properties: {}
-      refund:
-        type: string
-        description: Gives information about the refund capabilities of the payment
-          method. Can be one of `NO_REFUND`, `FULL_REFUND_ONLY`, or `PARTIAL_REFUND`.
-    example: |-
-      {
-        "name": "New Payment Method Definition Name",
-        "referralUriTemplate": "http://ref.uri.de",
-        "statusUriTemplate": "http://status.uri.de",
-        "disconnectUriTemplate": "http://disconnect.uri.de",
-        "createPaymentUriTemplate": "http://create.payment.de",
-        "capturePaymentUriTemplate": "http://capture.payment.de",
-        "refundPaymentUriTemplate": "http://refund.payment.de",
-        "workflow": "PAYMENT_ON_SELECTION",
-        "captureWorkflow": "CAPTURE_ON_ORDER",
-        "refund": "NO_REFUND",
-        "logos": [{
-          "setName" : "official",
-          "variant" : "STOREFRONT",
-          "uri" : "http://example.com/somewhere"
-        }],
-        "officialName": {
-          "de-DE" : "Test",
-          "en-US" : "Trial"
-        },
-        "officialDescription": {
-          "de-DE" : "Das ist ein Test",
-          "en-US" : "This is a test"
-        },
-        "defaultName": {
-          "de-DE" : "Supergute Bezahlmethode",
-          "en-US" : "Paymenator"
-        },
-        "defaultDescription": {
-          "de-DE" : "Wunderschöne Erzählung",
-          "en-US" : "The best explanation"
-        }
-      }
-  product-view_products_productId-552645877:
-    type: object
-    properties:
-      _indexedAt:
-        type: string
-        description: The time of storing this document in the search index.
-      essentialFeatures:
-        type: string
-        description: The essential features of the product. Shown in the cart and
-          checkout. In Germany mandatory field in online shops according to §312j
-          Abs. 2 BGB (German Civil Code).
-      _links:
-        type: object
-        description: See <<hypermedia,Hypermedia>>
-        properties: {}
-      salesPrice:
-        type: object
-        description: The price of the product.
-        properties: {}
-      description:
-        type: string
-        description: The description of the product.
-      shippingPeriod:
-        type: object
-        description: The shipping period for this particular product.
-        properties: {}
-      tags:
-        type: array
-        description: The tags assigned to a product.
-      manufacturer:
-        type: string
-        description: The manufacturer of the product.
-      refPrice:
-        type: object
-        description: The price information scaled to a standardised base unit.
-        properties:
-          unit:
-            type: string
-            description: The unit corresponding to the quanity.
-          quantity:
-            type: number
-            description: The actual quantity in the product.
-          price:
-            type: object
-            description: The actual reference price.
-            properties: {}
-          refQuantity:
-            type: number
-            description: The reference quantity the product's reference price is calculated
-              on.
-      availabilityState:
-        type: string
-        description: The current availability state for the product. Can be `IN_STOCK`,
-          `LOW_STOCK`, or `OUT_OF_STOCK`.
-      name:
-        type: string
-        description: The name of the product.
-      onSale:
-        type: boolean
-        description: Indicates if the product is on offer. Can be `true` or `false`.
-      manufacturerPrice:
-        type: object
-        description: The list price of the product, also known as the manufacturer's
-          suggested retail price or recommended retail price.
-        properties: {}
-      attributes:
-        type: array
-        description: The product properties.
-      _id:
-        type: string
-        description: The unique identifier of the product.
-      listPriceText:
-        type: string
-        description: The text that comes along with the list price.
-      sku:
-        type: string
-        description: The stock keeping unit (SKU) corresponding to the product.
-      shippingDimension:
-        type: object
-        description: The shipping dimensions of the product displayed in mm.
-        properties:
-          width:
-            type: number
-            description: The width of the product including packaging in mm.
-          length:
-            type: number
-            description: The length of the product including packaging in mm.
-          height:
-            type: number
-            description: The height of the product including packaging in mm.
-      listPrice:
-        type: object
-        description: The list price of the product, also known as the manufacturer's
-          suggested retail price or recommended retail price.
-        properties: {}
   shop_address-345128085:
     example: |-
       {
@@ -17545,6 +17266,122 @@ definitions:
           currency:
             type: string
             description: The currency of the initial total tax amount.
+  payment-method-definitions655026946:
+    type: object
+    properties:
+      captureWorkflow:
+        type: string
+        description: Indicates how and when to capture an authorized payment. Can
+          be one of `CAPTURE_ON_ORDER` or `CAPTURE_ON_DEMAND`.
+      createPaymentUriTemplate:
+        type: string
+        description: The URI template for the endpoint for the creation of individual
+          payments. Can optionally take a `paymentID` as parameter.
+      workflow:
+        type: string
+        description: Indicates the workflow of the payment method. Can be one of `PAYMENT_ON_SELECTION`,
+          `PAYMENT_ON_BUY`, or `EMBEDDED_ON_BUY`.
+      sandbox:
+        type: string
+        description: Indicates if the payment method is using a sandbox environment.
+          Can be true or false.
+      referralUriTemplate:
+        type: string
+        description: The URI template for the endpoint that generates a reference
+          to the site where the merchant can connect their shop with their payment
+          app account.
+      officialName:
+        type: object
+        description: The name of the payment method that will be displayed to the
+          merchant. Needs to be translated for each supported language.
+        properties: {}
+      refundPaymentUriTemplate:
+        type: string
+        description: The URI template for the endpoint to process refunds. Takes a
+          `paymentID` as parameter to refer to an individual payment.
+      disconnectUriTemplate:
+        type: string
+        description: The URI template for the endpoint to unlink a payment app account
+          from a shop. Takes the `shopID` as parameter to refer to an individual shop.
+      logos:
+        type: array
+        items:
+          type: object
+          properties:
+            setName:
+              type: string
+              description: The set name of the logo. The default is `official`.
+            variant:
+              type: string
+              description: The variant of the logo. Can be one of `TILE`, `DETAILS`,
+                `LIST`, or `STOREFRONT`, depending on the location of the logo.
+            uri:
+              type: string
+              description: The URI of the logo.
+      capturePaymentUriTemplate:
+        type: string
+        description: The URI template for the endpoint to capture the payment after
+          creation and approval have been successful. Takes a `paymentID` as parameter
+          to refer to an individual payment.
+      statusUriTemplate:
+        type: string
+        description: The URI template for the endpoint for the app’s integration status.
+          Takes the `shopID` as parameter to refer to an individual shop.
+      name:
+        type: string
+        description: The name of a payment method definition.
+      officialDescription:
+        type: object
+        description: The description of the payment method that will be displayed
+          to the merchant. Needs to be translated for each supported language.
+        properties: {}
+      defaultName:
+        type: object
+        description: The default name of the payment method that will be displayed
+          to the customer. Can be edited by the merchant and needs to be translated
+          for each supported language.
+        properties: {}
+      defaultDescription:
+        type: object
+        description: Optional default description of the payment method that will
+          be displayed to the customer. Can be edited by the merchant and needs to
+          be translated for each supported language.
+        properties: {}
+      refund:
+        type: string
+        description: Gives information about the refund capabilities of the payment
+          method. Can be one of `NO_REFUND`, `FULL_REFUND_ONLY`, or `PARTIAL_REFUND`.
+    example: |-
+      {
+        "name": "testPMD",
+        "referralUriTemplate": "http://ref.uri.de",
+        "statusUriTemplate": "http://status.uri.de",
+        "disconnectUriTemplate": "http://disconnect.uri.de",
+        "createPaymentUriTemplate": "http://create.payment.de",
+        "capturePaymentUriTemplate": "http://capture.payment.de",
+        "refundPaymentUriTemplate": "http://refund.payment.de",
+        "sandbox": "true",
+        "workflow": "PAYMENT_ON_BUY",
+        "captureWorkflow": "CAPTURE_ON_ORDER",
+        "refund": "NO_REFUND",
+        "logos": [{
+          "setName" : "official",
+          "variant" : "STOREFRONT",
+          "uri" : "http://example.com/somewhere"
+        }],
+        "officialName": {
+          "de-DE" : "Test",
+          "en-US" : "Trial"
+        },
+        "officialDescription": {
+          "de-DE" : "Das ist ein Test",
+          "en-US" : "This is a test"
+        },
+        "defaultName": {
+          "de-DE" : "Supergute Bezahlmethode",
+          "en-US" : "Paymenator"
+        },
+        "defaultDescription": {"de-DE" : "Wunderschöne Erklärung","en-US" : "The best explanation"}}
   signers1038188776:
     type: object
     required:
@@ -17597,20 +17434,6 @@ definitions:
         type: string
         description: The type of the feature. Can be `TOGGLE`, `COUNTER`, or `APP`.
         minLength: 1
-  product-view_products_search_find-by-query-815094681:
-    type: object
-    properties:
-      query:
-        type: object
-        description: The Elasticsearch query, see https://www.elastic.co/guide/en/elasticsearch/reference/2.3/search-request-query.html[Search
-          Request Query].
-        properties: {}
-      sort:
-        type: string
-        description: The Elasticsearch sort, see https://www.elastic.co/guide/en/elasticsearch/reference/2.3/search-request-sort.html[Search
-          Request Sort].
-    example: '{ "query": {"bool":{"filter":[{"term":{"tags":"number0"}},{"range":{"salesPrice.amount":{"lte":8.7}}},{"range":{"createdAt":{"gte":"now-1h"}}}]}},
-      "sort": "name"}'
   product-attribute-definitions-905233915:
     type: object
     required:
@@ -19533,6 +19356,34 @@ definitions:
       ����u���)�����\x7ff߀~&���'��\"�\x16���\0\x1e��S����:_\x0fX�k\x7f\x11u�2=\x17\
       U����\x11�w\x17�/�x�J��%��j�i�K#y�ie����j��t��\x12��|\x19�o�[|\x06�y�\rY�>\x12\
       ���\x1f��\\��m?�\"6:}�����,�pb��D5\x05�T\b5( ��\x03��"
+  payments_paymentId_status-631714533:
+    type: object
+    properties:
+      amount:
+        type: number
+        description: Optional amount that has been paid so far. Defaults to the total
+          amount. Only recommended for status transitions towards `PAID`, `UNDERPAID`
+          or `OVERPAID`.
+      paymentStatus:
+        type: string
+        description: The status of the payment. Can be one of `PENDING`, `APPROVED`,
+          `CANCELED`, `CAPTURED`, `CAPTURE_PENDING`, `PAID`, `UNDERPAID`, `OVERPAID`,
+          or `FAILED`, depending on the former status of the payment.
+    example: '{"paymentStatus":"APPROVED"}'
+  product-view_products_search_find-by-query1193686370:
+    type: object
+    properties:
+      query:
+        type: object
+        description: The Elasticsearch query, see https://www.elastic.co/guide/en/elasticsearch/reference/2.3/search-request-query.html[Search
+          Request Query].
+        properties: {}
+      sort:
+        type: string
+        description: The Elasticsearch sort, see https://www.elastic.co/guide/en/elasticsearch/reference/2.3/search-request-sort.html[Search
+          Request Sort].
+    example: '{ "query": {"bool":{"filter":[{"term":{"tags":"number0"}},{"range":{"salesPrice.amount":{"lte":8.7}}},{"range":{"createdAt":{"gte":"now-1h"}}}]}},
+      "sort": "name.keyword"}'
   products_productId_images_imageId-365295234:
     type: object
     properties:
@@ -19695,20 +19546,6 @@ definitions:
       {
         "vatId" : "GB 111111111"
       }
-  payments_paymentId_status-1672489687:
-    type: object
-    properties:
-      amount:
-        type: number
-        description: Optional absolute amount that has been paid so far. If not set,
-          the full amount is assumed. Explicitly passing the amount only makes for
-          status transitions towards `PAID`, `UNDERPAID` or `OVERPAID`.
-      paymentStatus:
-        type: string
-        description: The status of the payment. Can be one of `PENDING`, `APPROVED`,
-          `CANCELED`, `CAPTURED`, `CAPTURE_PENDING`, `PAID`, `UNDERPAID`, `OVERPAID`,
-          or `FAILED`, depending on the former status of the payment.
-    example: '{"paymentStatus":"APPROVED"}'
   orders_order-id_billing-address-1507564979:
     type: object
     properties:
@@ -19772,36 +19609,13 @@ definitions:
       stockThreshold:
         type: number
         description: Inventory level that indicates that the product needs to be reordered.
-  configuration_invoice-number1858015181:
-    type: object
-    required:
-    - stringPrefix
-    properties:
-      nextNumericSuffix:
-        type: number
-        description: the next numeric suffix used for the next invoice. This value
-          is incremented after each invoice creation
-      stringPrefix:
-        type: string
-        description: prefix attached to all invoice numbers
-      numericSuffixLength:
-        type: number
-        description: the length of the numeric part of the invoice number. If the
-          numeric value is shorter, the value is padded with zeros to the left. If
-          the value is longer the numericSuffixLength is extended
-    example: |-
-      {
-        "stringPrefix" : "2017-shop-",
-        "nextNumericSuffix" : 10000,
-        "numericSuffixLength" : 4
-      }
-  payment-method-definitions_paymentMethodDefinitionName-165014951:
+  payment-method-definitions_paymentMethodDefinitionName83332760:
     type: object
     properties:
       captureWorkflow:
         type: string
-        description: Indicates how and when the capturing of an authorized payment
-          should take place. Can be one of `CAPTURE_ON_ORDER` or `CAPTURE_ON_DEMAND`.
+        description: Indicates how and when to capture an authorized payment. Can
+          be one of `CAPTURE_ON_ORDER` or `CAPTURE_ON_DEMAND`.
       createPaymentUriTemplate:
         type: string
         description: The URI template for the endpoint for the creation of individual
@@ -19887,6 +19701,144 @@ definitions:
         type: string
         description: Gives information about the refund capabilities of the payment
           method. Can be one of `NO_REFUND`, `FULL_REFUND_ONLY`, or `PARTIAL_REFUND`.
+  configuration_invoice-number1858015181:
+    type: object
+    required:
+    - stringPrefix
+    properties:
+      nextNumericSuffix:
+        type: number
+        description: the next numeric suffix used for the next invoice. This value
+          is incremented after each invoice creation
+      stringPrefix:
+        type: string
+        description: prefix attached to all invoice numbers
+      numericSuffixLength:
+        type: number
+        description: the length of the numeric part of the invoice number. If the
+          numeric value is shorter, the value is padded with zeros to the left. If
+          the value is longer the numericSuffixLength is extended
+    example: |-
+      {
+        "stringPrefix" : "2017-shop-",
+        "nextNumericSuffix" : 10000,
+        "numericSuffixLength" : 4
+      }
+  payment-method-definitions_paymentMethodDefinitionName34271101:
+    type: object
+    properties:
+      captureWorkflow:
+        type: string
+        description: Indicates how and when to capture an authorized payment. Can
+          be one of `CAPTURE_ON_ORDER` or `CAPTURE_ON_DEMAND`.
+      createPaymentUriTemplate:
+        type: string
+        description: The URI template for the endpoint for the creation of individual
+          payments. Can optionally take a `paymentID` as parameter.
+      workflow:
+        type: string
+        description: Indicates the workflow of the payment method. Can be one of `PAYMENT_ON_SELECTION`,
+          `PAYMENT_ON_BUY`, or `EMBEDDED_ON_BUY`.
+      referralUriTemplate:
+        type: string
+        description: The URI template for the endpoint that generates a reference
+          to the site where the merchant can connect their shop with their payment
+          app account.
+      officialName:
+        type: object
+        description: The name of the payment method that will be displayed to the
+          merchant. Needs to be translated for each supported language.
+        properties: {}
+      refundPaymentUriTemplate:
+        type: string
+        description: The URI template for the endpoint to process refunds. Takes a
+          `paymentID` as parameter to refer to an individual payment.
+      disconnectUriTemplate:
+        type: string
+        description: The URI template for the endpoint to unlink a payment app account
+          from a shop. Takes the `shopID` as parameter to refer to an individual shop.
+      logos:
+        type: array
+        items:
+          type: object
+          properties:
+            setName:
+              type: string
+              description: The set name of the logo. The default is `official`.
+            variant:
+              type: string
+              description: The variant of the logo. Can be one of `TILE`, `DETAILS`,
+                `LIST`, or `STOREFRONT`, depending on the location of the logo.
+            uri:
+              type: string
+              description: The URI of the logo.
+      capturePaymentUriTemplate:
+        type: string
+        description: The URI template for the endpoint to capture the payment after
+          creation and approval have been successful. Takes a `paymentID` as parameter
+          to refer to an individual payment.
+      statusUriTemplate:
+        type: string
+        description: The URI template for the endpoint for the app’s integration status.
+          Takes the `shopID` as parameter to refer to an individual shop.
+      name:
+        type: string
+        description: The name of a payment method definition.
+      officialDescription:
+        type: object
+        description: The description of the payment method that will be displayed
+          to the merchant. Needs to be translated for each supported language.
+        properties: {}
+      defaultName:
+        type: object
+        description: The default name of the payment method that will be displayed
+          to the customer. Can be edited by the merchant and needs to be translated
+          for each supported language.
+        properties: {}
+      defaultDescription:
+        type: object
+        description: Optional default description of the payment method that will
+          be displayed to the customer. Can be edited by the merchant and needs to
+          be translated for each supported language.
+        properties: {}
+      refund:
+        type: string
+        description: Gives information about the refund capabilities of the payment
+          method. Can be one of `NO_REFUND`, `FULL_REFUND_ONLY`, or `PARTIAL_REFUND`.
+    example: |-
+      {
+        "name": "New Payment Method Definition Name",
+        "referralUriTemplate": "http://ref.uri.de",
+        "statusUriTemplate": "http://status.uri.de",
+        "disconnectUriTemplate": "http://disconnect.uri.de",
+        "createPaymentUriTemplate": "http://create.payment.de",
+        "capturePaymentUriTemplate": "http://capture.payment.de",
+        "refundPaymentUriTemplate": "http://refund.payment.de",
+        "workflow": "PAYMENT_ON_SELECTION",
+        "captureWorkflow": "CAPTURE_ON_ORDER",
+        "refund": "NO_REFUND",
+        "logos": [{
+          "setName" : "official",
+          "variant" : "STOREFRONT",
+          "uri" : "http://example.com/somewhere"
+        }],
+        "officialName": {
+          "de-DE" : "Test",
+          "en-US" : "Trial"
+        },
+        "officialDescription": {
+          "de-DE" : "Das ist ein Test",
+          "en-US" : "This is a test"
+        },
+        "defaultName": {
+          "de-DE" : "Supergute Bezahlmethode",
+          "en-US" : "Paymenator"
+        },
+        "defaultDescription": {
+          "de-DE" : "Wunderschöne Erzählung",
+          "en-US" : "The best explanation"
+        }
+      }
   shipping-zones_shippingZoneId_shipping-methods_shippingMethodId-741870160:
     type: object
     properties:
@@ -20359,6 +20311,111 @@ definitions:
         maxLength: 200
     example: '{"salutation":"Mrs","gender":"FEMALE","title":"","firstName":"Astrid","middleName":"Agnes","lastName":"Alster","street":"Alsterwasserweg","houseNumber":"2","street2":"Erdgeschoss","doorCode":"0185","addressExtension":"Hinterhof","postalCode":"20999","dependentLocality":"Seevetal","city":"Alsterwasser","country":"DE","state":"Hamburg","email":"a.alsterh@example.com","phone":"(800)
       555-0102","mobile":"(800) 555-0103"}'
+  product-view_products_productId-1125906324:
+    type: object
+    properties:
+      essentialFeatures:
+        type: string
+        description: The essential features of the product. Shown in the cart and
+          checkout. In Germany mandatory field in online shops according to §312j
+          Abs. 2 BGB (German Civil Code).
+      _links:
+        type: object
+        description: See <<hypermedia,Hypermedia>>
+        properties: {}
+      salesPrice:
+        type: object
+        description: The price of the product.
+        properties: {}
+      description:
+        type: string
+        description: The description of the product.
+      shippingPeriod:
+        type: object
+        description: The shipping period for this particular product.
+        properties: {}
+      tags:
+        type: array
+        description: The tags assigned to a product.
+      manufacturer:
+        type: string
+        description: The manufacturer of the product.
+      refPrice:
+        type: object
+        description: The price information scaled to a standardised base unit.
+        properties:
+          unit:
+            type: string
+            description: The unit corresponding to the quanity.
+          quantity:
+            type: number
+            description: The actual quantity in the product.
+          price:
+            type: object
+            description: The actual reference price.
+            properties: {}
+          refQuantity:
+            type: number
+            description: The reference quantity the product's reference price is calculated
+              on.
+      availabilityState:
+        type: string
+        description: The current availability state for the product. Can be `IN_STOCK`,
+          `LOW_STOCK`, or `OUT_OF_STOCK`.
+      name:
+        type: string
+        description: The name of the product.
+      onSale:
+        type: boolean
+        description: Indicates if the product is on offer. Can be `true` or `false`.
+      manufacturerPrice:
+        type: object
+        description: The list price of the product, also known as the manufacturer's
+          suggested retail price or recommended retail price.
+        properties: {}
+      attributes:
+        type: array
+        description: The product properties.
+        items:
+          type: object
+          properties:
+            displayName:
+              type: string
+              description: The displayed name of the product property.
+            formattedValue:
+              description: The formatted value of the product property.
+            value:
+              description: The value of the product property.
+            key:
+              type: string
+              description: The unique identifier of the product property.
+      _id:
+        type: string
+        description: The unique identifier of the product.
+      listPriceText:
+        type: string
+        description: The text that comes along with the list price.
+      sku:
+        type: string
+        description: The stock keeping unit (SKU) corresponding to the product.
+      shippingDimension:
+        type: object
+        description: The shipping dimensions of the product displayed in mm.
+        properties:
+          width:
+            type: number
+            description: The width of the product including packaging in mm.
+          length:
+            type: number
+            description: The length of the product including packaging in mm.
+          height:
+            type: number
+            description: The height of the product including packaging in mm.
+      listPrice:
+        type: object
+        description: The list price of the product, also known as the manufacturer's
+          suggested retail price or recommended retail price.
+        properties: {}
   orders_order-id_processes_shippings-655516826:
     type: object
     properties:
@@ -20449,14 +20506,6 @@ definitions:
     example: https://yourshop.api.urn/shipping-zones/8f6a2bba-46be-40d0-a980-4495acd53433/shipping-methods/61e197f8-f40a-4821-8000-389db982a2e5
   products_productId_availability_update-stock-threshold-412357891:
     example: '{ "stockThreshold" : 5 }'
-  payments_paymentId_status1696780730:
-    type: object
-    properties:
-      paymentStatus:
-        type: string
-        description: The status of the payment. Can be one of `PENDING`, `APPROVED`,
-          `CANCELED`, `CAPTURED`, `CAPTURE_PENDING`, `PAID`, `UNDERPAID`, `OVERPAID`,
-          or `FAILED`, depending on the former status of the payment.
   shipping-zones_shippingZoneId_shipping-methods_shippingMethodId1520760380:
     type: object
     properties:
@@ -20499,6 +20548,14 @@ definitions:
         "currentPassword" : "GoodPassword01!;)",
         "newEmail" : "newEmail@Gmail.com"
       }
+  payments_paymentId_status1696780730:
+    type: object
+    properties:
+      paymentStatus:
+        type: string
+        description: The status of the payment. Can be one of `PENDING`, `APPROVED`,
+          `CANCELED`, `CAPTURED`, `CAPTURE_PENDING`, `PAID`, `UNDERPAID`, `OVERPAID`,
+          or `FAILED`, depending on the former status of the payment.
   shop_attributes847708956:
     type: object
     required:
@@ -20978,28 +21035,6 @@ definitions:
           "callbackUri":"http://example.com/test/updated",
           "eventTypes": ["product.updated"]
       }
-  product-view_categories_categoryId1092984037:
-    type: object
-    properties:
-      _indexedAt:
-        type: string
-        description: The time of storing this document in the search index.
-      _links:
-        type: object
-        description: See <<hypermedia,Hypermedia>>
-        properties: {}
-      name:
-        type: string
-        description: The name of the category.
-      label:
-        type: string
-        description: The label of the category.
-      _id:
-        type: string
-        description: The unique identifier of the category.
-      type:
-        type: string
-        description: The type of the category. Can be `SMART` or `MANUAL`.
   orders_order-id_processes_shippings_shipping-process-id710385301:
     type: object
     properties:
@@ -21939,122 +21974,6 @@ definitions:
           username change.
         minLength: 1
     example: '{"currentPassword":"GoodPassword01!;)","newUsername":"new username"}'
-  payment-method-definitions406679235:
-    type: object
-    properties:
-      captureWorkflow:
-        type: string
-        description: Indicates how and when the capturing of an authorized payment
-          should take place. Can be one of `CAPTURE_ON_ORDER` or `CAPTURE_ON_DEMAND`.
-      createPaymentUriTemplate:
-        type: string
-        description: The URI template for the endpoint for the creation of individual
-          payments. Can optionally take a `paymentID` as parameter.
-      workflow:
-        type: string
-        description: Indicates the workflow of the payment method. Can be one of `PAYMENT_ON_SELECTION`,
-          `PAYMENT_ON_BUY`, or `EMBEDDED_ON_BUY`.
-      sandbox:
-        type: string
-        description: Indicates if the payment method is using a sandbox environment.
-          Can be true or false.
-      referralUriTemplate:
-        type: string
-        description: The URI template for the endpoint that generates a reference
-          to the site where the merchant can connect their shop with their payment
-          app account.
-      officialName:
-        type: object
-        description: The name of the payment method that will be displayed to the
-          merchant. Needs to be translated for each supported language.
-        properties: {}
-      refundPaymentUriTemplate:
-        type: string
-        description: The URI template for the endpoint to process refunds. Takes a
-          `paymentID` as parameter to refer to an individual payment.
-      disconnectUriTemplate:
-        type: string
-        description: The URI template for the endpoint to unlink a payment app account
-          from a shop. Takes the `shopID` as parameter to refer to an individual shop.
-      logos:
-        type: array
-        items:
-          type: object
-          properties:
-            setName:
-              type: string
-              description: The set name of the logo. The default is `official`.
-            variant:
-              type: string
-              description: The variant of the logo. Can be one of `TILE`, `DETAILS`,
-                `LIST`, or `STOREFRONT`, depending on the location of the logo.
-            uri:
-              type: string
-              description: The URI of the logo.
-      capturePaymentUriTemplate:
-        type: string
-        description: The URI template for the endpoint to capture the payment after
-          creation and approval have been successful. Takes a `paymentID` as parameter
-          to refer to an individual payment.
-      statusUriTemplate:
-        type: string
-        description: The URI template for the endpoint for the app’s integration status.
-          Takes the `shopID` as parameter to refer to an individual shop.
-      name:
-        type: string
-        description: The name of a payment method definition.
-      officialDescription:
-        type: object
-        description: The description of the payment method that will be displayed
-          to the merchant. Needs to be translated for each supported language.
-        properties: {}
-      defaultName:
-        type: object
-        description: The default name of the payment method that will be displayed
-          to the customer. Can be edited by the merchant and needs to be translated
-          for each supported language.
-        properties: {}
-      defaultDescription:
-        type: object
-        description: Optional default description of the payment method that will
-          be displayed to the customer. Can be edited by the merchant and needs to
-          be translated for each supported language.
-        properties: {}
-      refund:
-        type: string
-        description: Gives information about the refund capabilities of the payment
-          method. Can be one of `NO_REFUND`, `FULL_REFUND_ONLY`, or `PARTIAL_REFUND`.
-    example: |-
-      {
-        "name": "testPMD",
-        "referralUriTemplate": "http://ref.uri.de",
-        "statusUriTemplate": "http://status.uri.de",
-        "disconnectUriTemplate": "http://disconnect.uri.de",
-        "createPaymentUriTemplate": "http://create.payment.de",
-        "capturePaymentUriTemplate": "http://capture.payment.de",
-        "refundPaymentUriTemplate": "http://refund.payment.de",
-        "sandbox": "true",
-        "workflow": "PAYMENT_ON_BUY",
-        "captureWorkflow": "CAPTURE_ON_ORDER",
-        "refund": "NO_REFUND",
-        "logos": [{
-          "setName" : "official",
-          "variant" : "STOREFRONT",
-          "uri" : "http://example.com/somewhere"
-        }],
-        "officialName": {
-          "de-DE" : "Test",
-          "en-US" : "Trial"
-        },
-        "officialDescription": {
-          "de-DE" : "Das ist ein Test",
-          "en-US" : "This is a test"
-        },
-        "defaultName": {
-          "de-DE" : "Supergute Bezahlmethode",
-          "en-US" : "Paymenator"
-        },
-        "defaultDescription": {"de-DE" : "Wunderschöne Erklärung","en-US" : "The best explanation"}}
   shipping-zones2094449448:
     example: |-
       https://yourshop.api.urn/shipping-zones/1b8b8b8f-0c5a-408a-b718-8d329e6e5be9
