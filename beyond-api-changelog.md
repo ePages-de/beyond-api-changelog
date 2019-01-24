@@ -1,5 +1,28 @@
 # Beyond API Changelog
 
+## 2019-01-24
+
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `POST` /products Create variation product  
+    Parameter
+
+        Add .variationAttributes //The variation attributes with its values.
+* `GET` /products/{productId} Show product details  
+    Return Type
+
+        Add variationAttributes //The variation attributes with its values.
+* `GET` /products/search/find-by-sku Find a product by SKU  
+    Return Type
+
+        Add variationAttributes //The variation attributes with its values.
+
 ## 2019-01-23
 
 ### What's New
