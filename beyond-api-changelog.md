@@ -1,5 +1,17 @@
 # Beyond API Changelog
 
+## 2019-01-31
+
+### What's New
+---
+* `GET` /products/{productId}/variations list variations
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+
 ## 2019-01-24
 
 ### What's New
