@@ -9612,7 +9612,68 @@ paths:
               {
                 "_embedded" : {
                   "products" : [ {
-                    "_id" : "762cfa71-8238-4ee0-a70a-7455dd257ccb",
+                    "_id" : "0b5905ac-c9f5-4a8a-af17-abb2642f4639",
+                    "sku" : "EB001",
+                    "name" : "Power & Vanilla Coconut Protein Bar (Pack of 5)",
+                    "salesPrice" : {
+                      "amount" : 4.95,
+                      "currency" : "EUR"
+                    },
+                    "listPrice" : null,
+                    "manufacturerPrice" : null,
+                    "onSale" : false,
+                    "listPriceText" : "Old Price",
+                    "shippingDimension" : {
+                      "length" : 19,
+                      "width" : 18,
+                      "height" : 17
+                    },
+                    "refPrice" : null,
+                    "availabilityState" : "IN_STOCK",
+                    "_links" : {
+                      "self" : {
+                        "href" : "https://yourshop.api.urn/product-view/products/0b5905ac-c9f5-4a8a-af17-abb2642f4639"
+                      },
+                      "product" : {
+                        "href" : "https://yourshop.api.urn/product-view/products/0b5905ac-c9f5-4a8a-af17-abb2642f4639"
+                      }
+                    }
+                  }, {
+                    "_id" : "d42f1d39-032e-4e0b-8d39-f0134d8627a2",
+                    "sku" : "sh-001",
+                    "name" : "Soft Walk Ultra - Nibok Men's",
+                    "salesPrice" : {
+                      "amount" : 89.0,
+                      "currency" : "EUR"
+                    },
+                    "listPrice" : {
+                      "amount" : 99.99,
+                      "currency" : "EUR"
+                    },
+                    "manufacturerPrice" : null,
+                    "onSale" : true,
+                    "listPriceText" : "Old Price",
+                    "shippingDimension" : {
+                      "length" : 80,
+                      "width" : 80,
+                      "height" : 40
+                    },
+                    "refPrice" : null,
+                    "availabilityState" : "IN_STOCK",
+                    "_links" : {
+                      "default-image-data" : {
+                        "href" : "https://yourshop.api.urn/storage-api/images/nibok-men.jpg?hash=e9a1ce5c0c6abfebec8fb1f6faf77dca7e699999{&width,height,upscale}",
+                        "templated" : true
+                      },
+                      "self" : {
+                        "href" : "https://yourshop.api.urn/product-view/products/d42f1d39-032e-4e0b-8d39-f0134d8627a2"
+                      },
+                      "product" : {
+                        "href" : "https://yourshop.api.urn/product-view/products/d42f1d39-032e-4e0b-8d39-f0134d8627a2"
+                      }
+                    }
+                  }, {
+                    "_id" : "dbd2b139-ce34-402a-a9c8-aedefd6fa458",
                     "sku" : "vino020",
                     "name" : "Rioja Castillo de Puerto (2013)",
                     "salesPrice" : {
@@ -9650,71 +9711,10 @@ paths:
                         "templated" : true
                       },
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/762cfa71-8238-4ee0-a70a-7455dd257ccb"
+                        "href" : "https://yourshop.api.urn/product-view/products/dbd2b139-ce34-402a-a9c8-aedefd6fa458"
                       },
                       "product" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/762cfa71-8238-4ee0-a70a-7455dd257ccb"
-                      }
-                    }
-                  }, {
-                    "_id" : "81480446-9dc1-40da-a50b-e094ce9fb1eb",
-                    "sku" : "sh-001",
-                    "name" : "Soft Walk Ultra - Nibok Men's",
-                    "salesPrice" : {
-                      "amount" : 89.0,
-                      "currency" : "EUR"
-                    },
-                    "listPrice" : {
-                      "amount" : 99.99,
-                      "currency" : "EUR"
-                    },
-                    "manufacturerPrice" : null,
-                    "onSale" : true,
-                    "listPriceText" : "Old Price",
-                    "shippingDimension" : {
-                      "length" : 80,
-                      "width" : 80,
-                      "height" : 40
-                    },
-                    "refPrice" : null,
-                    "availabilityState" : "IN_STOCK",
-                    "_links" : {
-                      "default-image-data" : {
-                        "href" : "https://yourshop.api.urn/storage-api/images/nibok-men.jpg?hash=e9a1ce5c0c6abfebec8fb1f6faf77dca7e699999{&width,height,upscale}",
-                        "templated" : true
-                      },
-                      "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/81480446-9dc1-40da-a50b-e094ce9fb1eb"
-                      },
-                      "product" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/81480446-9dc1-40da-a50b-e094ce9fb1eb"
-                      }
-                    }
-                  }, {
-                    "_id" : "ce5e07a6-7b6d-4dd7-ae75-91b57122b192",
-                    "sku" : "EB001",
-                    "name" : "Power & Vanilla Coconut Protein Bar (Pack of 5)",
-                    "salesPrice" : {
-                      "amount" : 4.95,
-                      "currency" : "EUR"
-                    },
-                    "listPrice" : null,
-                    "manufacturerPrice" : null,
-                    "onSale" : false,
-                    "listPriceText" : "Old Price",
-                    "shippingDimension" : {
-                      "length" : 19,
-                      "width" : 18,
-                      "height" : 17
-                    },
-                    "refPrice" : null,
-                    "availabilityState" : "IN_STOCK",
-                    "_links" : {
-                      "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/ce5e07a6-7b6d-4dd7-ae75-91b57122b192"
-                      },
-                      "product" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/ce5e07a6-7b6d-4dd7-ae75-91b57122b192"
+                        "href" : "https://yourshop.api.urn/product-view/products/dbd2b139-ce34-402a-a9c8-aedefd6fa458"
                       }
                     }
                   } ]
@@ -9754,7 +9754,7 @@ paths:
           examples:
             application/hal+json: |-
               {
-                "_id" : "cd2d82e1-6898-4692-a8bb-c4b22ef55364",
+                "_id" : "737edd3d-1bfb-4ec7-a066-c0824dd30ade",
                 "sku" : "vino020",
                 "name" : "Rioja Castillo de Puerto (2013)",
                 "salesPrice" : {
@@ -9820,16 +9820,16 @@ paths:
                     "templated" : true
                   },
                   "self" : {
-                    "href" : "https://yourshop.api.urn/product-view/products/cd2d82e1-6898-4692-a8bb-c4b22ef55364"
+                    "href" : "https://yourshop.api.urn/product-view/products/737edd3d-1bfb-4ec7-a066-c0824dd30ade"
                   },
                   "product" : {
-                    "href" : "https://yourshop.api.urn/product-view/products/cd2d82e1-6898-4692-a8bb-c4b22ef55364"
+                    "href" : "https://yourshop.api.urn/product-view/products/737edd3d-1bfb-4ec7-a066-c0824dd30ade"
                   },
                   "additional-image-data" : [ {
-                    "href" : "https://yourshop.api.urn/storage-api/images/rioja-02.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225998{&width,height,upscale}",
+                    "href" : "https://yourshop.api.urn/storage-api/images/rioja-03.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225999{&width,height,upscale}",
                     "templated" : true
                   }, {
-                    "href" : "https://yourshop.api.urn/storage-api/images/rioja-03.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225999{&width,height,upscale}",
+                    "href" : "https://yourshop.api.urn/storage-api/images/rioja-02.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225998{&width,height,upscale}",
                     "templated" : true
                   }, {
                     "href" : "https://yourshop.api.urn/storage-api/images/rioja-04.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281226000{&width,height,upscale}",
@@ -9865,18 +9865,18 @@ paths:
                 "type" : "SMART",
                 "name" : "Power Bars",
                 "label" : "power-bar",
-                "_id" : "bfc6331e-e0bb-49d6-9eef-224acf1de3cf",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/product-view/categories/bfc6331e-e0bb-49d6-9eef-224acf1de3cf"
+                    "href" : "https://yourshop.api.urn/product-view/categories/92528041-e1b4-4c8c-bf86-444c4f405e90"
                   },
                   "category" : {
-                    "href" : "https://yourshop.api.urn/product-view/categories/bfc6331e-e0bb-49d6-9eef-224acf1de3cf"
+                    "href" : "https://yourshop.api.urn/product-view/categories/92528041-e1b4-4c8c-bf86-444c4f405e90"
                   },
                   "products" : {
-                    "href" : "https://yourshop.api.urn/product-view/categories/bfc6331e-e0bb-49d6-9eef-224acf1de3cf/products"
+                    "href" : "https://yourshop.api.urn/product-view/categories/92528041-e1b4-4c8c-bf86-444c4f405e90/products"
                   }
-                }
+                },
+                "_id" : "92528041-e1b4-4c8c-bf86-444c4f405e90"
               }
           schema:
             $ref: '#/definitions/product-view_categories_search_find-by-label-1017888571'
@@ -9908,34 +9908,34 @@ paths:
                     "type" : "SMART",
                     "name" : "category that loves everyone",
                     "label" : null,
-                    "_id" : "712f7bee-76ef-45a7-a9b4-5cfd57199e82",
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/categories/712f7bee-76ef-45a7-a9b4-5cfd57199e82"
+                        "href" : "https://yourshop.api.urn/product-view/categories/c14df9dd-5d13-4c92-8018-69b25c6688be"
                       },
                       "category" : {
-                        "href" : "https://yourshop.api.urn/product-view/categories/712f7bee-76ef-45a7-a9b4-5cfd57199e82"
+                        "href" : "https://yourshop.api.urn/product-view/categories/c14df9dd-5d13-4c92-8018-69b25c6688be"
                       },
                       "products" : {
-                        "href" : "https://yourshop.api.urn/product-view/categories/712f7bee-76ef-45a7-a9b4-5cfd57199e82/products"
+                        "href" : "https://yourshop.api.urn/product-view/categories/c14df9dd-5d13-4c92-8018-69b25c6688be/products"
                       }
-                    }
+                    },
+                    "_id" : "c14df9dd-5d13-4c92-8018-69b25c6688be"
                   }, {
                     "type" : "MANUAL",
                     "name" : "category that matches product 1 in a complicated way",
                     "label" : null,
-                    "_id" : "e2361eef-f28d-43c8-b780-51628da17586",
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/categories/e2361eef-f28d-43c8-b780-51628da17586"
+                        "href" : "https://yourshop.api.urn/product-view/categories/fd579b52-58c5-4161-9d0e-b8ed715763ab"
                       },
                       "category" : {
-                        "href" : "https://yourshop.api.urn/product-view/categories/e2361eef-f28d-43c8-b780-51628da17586"
+                        "href" : "https://yourshop.api.urn/product-view/categories/fd579b52-58c5-4161-9d0e-b8ed715763ab"
                       },
                       "products" : {
-                        "href" : "https://yourshop.api.urn/product-view/categories/e2361eef-f28d-43c8-b780-51628da17586/products"
+                        "href" : "https://yourshop.api.urn/product-view/categories/fd579b52-58c5-4161-9d0e-b8ed715763ab/products"
                       }
-                    }
+                    },
+                    "_id" : "fd579b52-58c5-4161-9d0e-b8ed715763ab"
                   } ]
                 },
                 "_links" : {
@@ -9975,7 +9975,7 @@ paths:
               {
                 "_embedded" : {
                   "products" : [ {
-                    "_id" : "b346a477-4cdd-4739-8e78-509a7bcec71f",
+                    "_id" : "39c3123c-dbdc-45ce-a984-30daf5a17075",
                     "sku" : "vino020",
                     "name" : "Rioja Castillo de Puerto (2013)",
                     "salesPrice" : {
@@ -10013,17 +10013,17 @@ paths:
                         "templated" : true
                       },
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/b346a477-4cdd-4739-8e78-509a7bcec71f"
+                        "href" : "https://yourshop.api.urn/product-view/products/39c3123c-dbdc-45ce-a984-30daf5a17075"
                       },
                       "product" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/b346a477-4cdd-4739-8e78-509a7bcec71f"
+                        "href" : "https://yourshop.api.urn/product-view/products/39c3123c-dbdc-45ce-a984-30daf5a17075"
                       }
                     }
                   } ]
                 },
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/product-view/categories/bd9c45b4-2555-4eb3-9b36-e9071d2277ab/products?page=0&size=40"
+                    "href" : "https://yourshop.api.urn/product-view/categories/a5f91558-665b-425d-b3eb-97b036344689/products?page=0&size=40"
                   }
                 },
                 "page" : {
@@ -10115,7 +10115,7 @@ paths:
               {
                 "_embedded" : {
                   "products" : [ {
-                    "_id" : "1109e915-565c-45e9-80c9-45f379f0441a",
+                    "_id" : "158e5a02-5218-4bb1-b709-9804e409dffd",
                     "sku" : "vino020",
                     "name" : "Rioja Castillo de Puerto (2013)",
                     "salesPrice" : {
@@ -10153,17 +10153,17 @@ paths:
                         "templated" : true
                       },
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/1109e915-565c-45e9-80c9-45f379f0441a"
+                        "href" : "https://yourshop.api.urn/product-view/products/158e5a02-5218-4bb1-b709-9804e409dffd"
                       },
                       "product" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/1109e915-565c-45e9-80c9-45f379f0441a"
+                        "href" : "https://yourshop.api.urn/product-view/products/158e5a02-5218-4bb1-b709-9804e409dffd"
                       }
                     }
                   } ]
                 },
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/product-view/products/search/find-by-category?categoryId=c929311f-7a5c-4364-8e27-fd576872b149&page=0&size=40"
+                    "href" : "https://yourshop.api.urn/product-view/products/search/find-by-category?categoryId=9f1e7da4-45ff-4592-a7f1-62d275907752&page=0&size=40"
                   }
                 },
                 "page" : {
@@ -10203,7 +10203,7 @@ paths:
               {
                 "_embedded" : {
                   "products" : [ {
-                    "_id" : "f16e8e9d-2135-4c6a-b06d-0caf63f48b3f",
+                    "_id" : "ad8d4aa9-ea5c-41f6-b25b-3c0edbae435b",
                     "sku" : "vino020",
                     "name" : "Rioja Castillo de Puerto (2013)",
                     "salesPrice" : {
@@ -10241,10 +10241,10 @@ paths:
                         "templated" : true
                       },
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/f16e8e9d-2135-4c6a-b06d-0caf63f48b3f"
+                        "href" : "https://yourshop.api.urn/product-view/products/ad8d4aa9-ea5c-41f6-b25b-3c0edbae435b"
                       },
                       "product" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/f16e8e9d-2135-4c6a-b06d-0caf63f48b3f"
+                        "href" : "https://yourshop.api.urn/product-view/products/ad8d4aa9-ea5c-41f6-b25b-3c0edbae435b"
                       }
                     }
                   } ]
@@ -10287,7 +10287,7 @@ paths:
               {
                 "_embedded" : {
                   "products" : [ {
-                    "_id" : "628aeca5-64ea-4d21-8b12-245e70b8dee4",
+                    "_id" : "96571fe8-b4d4-4d79-9650-4224d9d668c5",
                     "sku" : "vino020",
                     "name" : "Rioja Castillo de Puerto (2013)",
                     "salesPrice" : {
@@ -10325,14 +10325,14 @@ paths:
                         "templated" : true
                       },
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/628aeca5-64ea-4d21-8b12-245e70b8dee4"
+                        "href" : "https://yourshop.api.urn/product-view/products/96571fe8-b4d4-4d79-9650-4224d9d668c5"
                       },
                       "product" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/628aeca5-64ea-4d21-8b12-245e70b8dee4"
+                        "href" : "https://yourshop.api.urn/product-view/products/96571fe8-b4d4-4d79-9650-4224d9d668c5"
                       }
                     }
                   }, {
-                    "_id" : "3398dcef-9327-4a7f-b646-2148d51a7a92",
+                    "_id" : "e7f5b05e-f7c3-498c-8a93-e497b81133ea",
                     "sku" : "sh-001",
                     "name" : "Soft Walk Ultra - Nibok Men's",
                     "salesPrice" : {
@@ -10359,10 +10359,10 @@ paths:
                         "templated" : true
                       },
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/3398dcef-9327-4a7f-b646-2148d51a7a92"
+                        "href" : "https://yourshop.api.urn/product-view/products/e7f5b05e-f7c3-498c-8a93-e497b81133ea"
                       },
                       "product" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/3398dcef-9327-4a7f-b646-2148d51a7a92"
+                        "href" : "https://yourshop.api.urn/product-view/products/e7f5b05e-f7c3-498c-8a93-e497b81133ea"
                       }
                     }
                   } ]
@@ -10407,7 +10407,7 @@ paths:
               {
                 "_embedded" : {
                   "products" : [ {
-                    "_id" : "d5839017-9033-46b4-999a-887234b0456d",
+                    "_id" : "21950cc9-395e-44e6-a9a2-5f3fe399bb4a",
                     "sku" : "vino020",
                     "name" : "Rioja Castillo de Puerto (2013)",
                     "salesPrice" : {
@@ -10445,10 +10445,10 @@ paths:
                         "templated" : true
                       },
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/d5839017-9033-46b4-999a-887234b0456d"
+                        "href" : "https://yourshop.api.urn/product-view/products/21950cc9-395e-44e6-a9a2-5f3fe399bb4a"
                       },
                       "product" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/d5839017-9033-46b4-999a-887234b0456d"
+                        "href" : "https://yourshop.api.urn/product-view/products/21950cc9-395e-44e6-a9a2-5f3fe399bb4a"
                       }
                     }
                   } ]
@@ -19476,6 +19476,16 @@ definitions:
           `CANCELED`, `CAPTURED`, `CAPTURE_PENDING`, `PAID`, `UNDERPAID`, `OVERPAID`,
           or `FAILED`, depending on the former status of the payment.
     example: '{"paymentStatus":"APPROVED"}'
+  products_productId_images_imageId-365295234:
+    type: object
+    properties:
+      _links:
+        type: object
+        description: See <<hypermedia,Hypermedia>>
+        properties: {}
+      _id:
+        type: string
+        description: The immutable, unique identifier of the requested resource.
   product-view_products_search_find-by-query1193686370:
     type: object
     properties:
@@ -19490,16 +19500,6 @@ definitions:
           Request Sort].
     example: '{ "query": {"bool":{"filter":[{"term":{"tags":"number0"}},{"range":{"salesPrice.amount":{"lte":8.7}}},{"range":{"createdAt":{"gte":"now-1h"}}}]}},
       "sort": "name.keyword"}'
-  products_productId_images_imageId-365295234:
-    type: object
-    properties:
-      _links:
-        type: object
-        description: See <<hypermedia,Hypermedia>>
-        properties: {}
-      _id:
-        type: string
-        description: The immutable, unique identifier of the requested resource.
   users_id_roles-1498545950:
     example: https://yourshop.api.urn/roles/f37e90cb-d66f-4e81-8dc3-08bc2ec47ff4
   users_id_change-password466429056:
