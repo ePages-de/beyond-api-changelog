@@ -1,5 +1,20 @@
 # Beyond API Changelog
 
+## 2019-02-06
+
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `GET` /orders/{order-id} Show order details  
+    Return Type
+
+        Add backgroundJobs //The asychronous actions which are not yet completed.
+
 ## 2019-01-31
 
 ### What's New
