@@ -3161,13 +3161,13 @@ paths:
                     "label" : "corner-shop",
                     "type" : "MANUAL",
                     "query" : {"bool":{"filter":[{"terms":{"id":["6c449297-65fc-41aa-a49c-68a3561b33e5","6c449297-65fc-41aa-a49c-68a3561b33e6"]}}]}},
-                    "_id" : "c8c2a1e6-a219-4e1a-9a81-1db7592d7c31",
+                    "_id" : "c0a35336-9462-4fac-91a4-1415f92b2a26",
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/categories/c8c2a1e6-a219-4e1a-9a81-1db7592d7c31"
+                        "href" : "https://yourshop.api.urn/categories/c0a35336-9462-4fac-91a4-1415f92b2a26"
                       },
                       "category" : {
-                        "href" : "https://yourshop.api.urn/categories/c8c2a1e6-a219-4e1a-9a81-1db7592d7c31"
+                        "href" : "https://yourshop.api.urn/categories/c0a35336-9462-4fac-91a4-1415f92b2a26"
                       }
                     }
                   }, {
@@ -3175,13 +3175,13 @@ paths:
                     "label" : "power-bar",
                     "type" : "SMART",
                     "query" : { "bool": { "filter": { "term": { "tags": "power-bar" }}}},
-                    "_id" : "28129439-060d-4cb1-abf3-e792e89ff1a0",
+                    "_id" : "cc9391de-7e8a-4aee-8bba-155481c8502e",
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/categories/28129439-060d-4cb1-abf3-e792e89ff1a0"
+                        "href" : "https://yourshop.api.urn/categories/cc9391de-7e8a-4aee-8bba-155481c8502e"
                       },
                       "category" : {
-                        "href" : "https://yourshop.api.urn/categories/28129439-060d-4cb1-abf3-e792e89ff1a0"
+                        "href" : "https://yourshop.api.urn/categories/cc9391de-7e8a-4aee-8bba-155481c8502e"
                       }
                     }
                   } ]
@@ -3199,7 +3199,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-search-term-1206450827'
+            $ref: '#/definitions/product-view_products_search_find-by-category-1206450827'
       security:
       - oauth2_accessCode:
         - catg:r
@@ -3235,13 +3235,13 @@ paths:
                 "label" : "power-bar",
                 "type" : "SMART",
                 "query" : {"bool":{"filter":{"term":{"tags":"power-bar"}}}},
-                "_id" : "432baa6a-f60d-413a-9ee9-ae8ad5631e65",
+                "_id" : "5bd0bf6b-405e-4b73-a8ff-74ce44c14e18",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/categories/432baa6a-f60d-413a-9ee9-ae8ad5631e65"
+                    "href" : "https://yourshop.api.urn/categories/5bd0bf6b-405e-4b73-a8ff-74ce44c14e18"
                   },
                   "category" : {
-                    "href" : "https://yourshop.api.urn/categories/432baa6a-f60d-413a-9ee9-ae8ad5631e65"
+                    "href" : "https://yourshop.api.urn/categories/5bd0bf6b-405e-4b73-a8ff-74ce44c14e18"
                   }
                 }
               }
@@ -3277,13 +3277,13 @@ paths:
                 "label" : "power-bar",
                 "type" : "SMART",
                 "query" : { "bool": { "filter": { "term": { "tags": "power-bar" }}}},
-                "_id" : "4f509df1-d637-4d63-ab1e-bf3e7bf688d0",
+                "_id" : "8a14ed3a-8ff6-4536-a5a4-50fbf5712aa5",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/categories/4f509df1-d637-4d63-ab1e-bf3e7bf688d0"
+                    "href" : "https://yourshop.api.urn/categories/8a14ed3a-8ff6-4536-a5a4-50fbf5712aa5"
                   },
                   "category" : {
-                    "href" : "https://yourshop.api.urn/categories/4f509df1-d637-4d63-ab1e-bf3e7bf688d0"
+                    "href" : "https://yourshop.api.urn/categories/8a14ed3a-8ff6-4536-a5a4-50fbf5712aa5"
                   }
                 }
               }
@@ -3329,13 +3329,13 @@ paths:
                 "label" : "updated-name",
                 "type" : "MANUAL",
                 "query" : {"bool":{"filter":[{"terms":{"id":["6c449297-65fc-41aa-a49c-68a3561b33e5","6c449297-65fc-41aa-a49c-68a3561b33e6"]}}]}},
-                "_id" : "eb564ed7-a85f-4112-aa90-af7903f82053",
+                "_id" : "2b9671ca-75ab-429d-aebd-fe30a048be0e",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/categories/eb564ed7-a85f-4112-aa90-af7903f82053"
+                    "href" : "https://yourshop.api.urn/categories/2b9671ca-75ab-429d-aebd-fe30a048be0e"
                   },
                   "category" : {
-                    "href" : "https://yourshop.api.urn/categories/eb564ed7-a85f-4112-aa90-af7903f82053"
+                    "href" : "https://yourshop.api.urn/categories/2b9671ca-75ab-429d-aebd-fe30a048be0e"
                   }
                 }
               }
@@ -3407,13 +3407,13 @@ paths:
                 "label" : "power-bar",
                 "type" : "MANUAL",
                 "query" : {"bool":{"filter":[{"terms":{"id":["6c449297-65fc-41aa-a49c-68a3561b33e5","6c449297-65fc-41aa-a49c-68a3561b33e6"]}}]}},
-                "_id" : "7882eefd-36f2-4400-ac1d-ee17a67fb058",
+                "_id" : "7fa652fb-f8ec-4771-9380-5761c237ff86",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/categories/7882eefd-36f2-4400-ac1d-ee17a67fb058"
+                    "href" : "https://yourshop.api.urn/categories/7fa652fb-f8ec-4771-9380-5761c237ff86"
                   },
                   "category" : {
-                    "href" : "https://yourshop.api.urn/categories/7882eefd-36f2-4400-ac1d-ee17a67fb058"
+                    "href" : "https://yourshop.api.urn/categories/7fa652fb-f8ec-4771-9380-5761c237ff86"
                   }
                 }
               }
@@ -4404,7 +4404,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-search-term-1206450827'
+            $ref: '#/definitions/product-view_products_search_find-by-category-1206450827'
       security:
       - oauth2_accessCode:
         - ordr:r
@@ -6517,7 +6517,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-search-term-1206450827'
+            $ref: '#/definitions/product-view_products_search_find-by-category-1206450827'
       security:
       - oauth2_accessCode:
         - orde:r
@@ -7495,7 +7495,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-search-term-1206450827'
+            $ref: '#/definitions/product-view_products_search_find-by-category-1206450827'
       security:
       - oauth2_accessCode:
         - rfpr:r
@@ -7561,7 +7561,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-search-term-1206450827'
+            $ref: '#/definitions/product-view_products_search_find-by-category-1206450827'
       security:
       - oauth2_accessCode:
         - rtpr:r
@@ -7697,7 +7697,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-search-term-1206450827'
+            $ref: '#/definitions/product-view_products_search_find-by-category-1206450827'
       security:
       - oauth2_accessCode:
         - shpr:r
@@ -8241,7 +8241,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-search-term-1206450827'
+            $ref: '#/definitions/product-view_products_search_find-by-category-1206450827'
       security:
       - oauth2_accessCode:
         - paym:m
@@ -9410,7 +9410,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-search-term-1206450827'
+            $ref: '#/definitions/product-view_products_search_find-by-category-1206450827'
       security:
       - oauth2_accessCode:
         - prad:r
@@ -9623,7 +9623,41 @@ paths:
               {
                 "_embedded" : {
                   "products" : [ {
-                    "_id" : "61333168-756f-4470-adaa-33778c6d6cc4",
+                    "_id" : "4f863edc-5607-4309-b513-674c3d749946",
+                    "sku" : "sh-001",
+                    "name" : "Soft Walk Ultra - Nibok Men's",
+                    "salesPrice" : {
+                      "amount" : 89.0,
+                      "currency" : "EUR"
+                    },
+                    "listPrice" : {
+                      "amount" : 99.99,
+                      "currency" : "EUR"
+                    },
+                    "manufacturerPrice" : null,
+                    "onSale" : true,
+                    "listPriceText" : "Old Price",
+                    "shippingDimension" : {
+                      "length" : 80,
+                      "width" : 80,
+                      "height" : 40
+                    },
+                    "refPrice" : null,
+                    "availabilityState" : "IN_STOCK",
+                    "_links" : {
+                      "default-image-data" : {
+                        "href" : "https://yourshop.api.urn/storage-api/images/nibok-men.jpg?hash=e9a1ce5c0c6abfebec8fb1f6faf77dca7e699999{&width,height,upscale}",
+                        "templated" : true
+                      },
+                      "self" : {
+                        "href" : "https://yourshop.api.urn/product-view/products/4f863edc-5607-4309-b513-674c3d749946"
+                      },
+                      "product" : {
+                        "href" : "https://yourshop.api.urn/product-view/products/4f863edc-5607-4309-b513-674c3d749946"
+                      }
+                    }
+                  }, {
+                    "_id" : "a0033c98-6075-4903-81a5-90c56a064d86",
                     "sku" : "EB001",
                     "name" : "Power & Vanilla Coconut Protein Bar (Pack of 5)",
                     "salesPrice" : {
@@ -9643,14 +9677,14 @@ paths:
                     "availabilityState" : "IN_STOCK",
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/61333168-756f-4470-adaa-33778c6d6cc4"
+                        "href" : "https://yourshop.api.urn/product-view/products/a0033c98-6075-4903-81a5-90c56a064d86"
                       },
                       "product" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/61333168-756f-4470-adaa-33778c6d6cc4"
+                        "href" : "https://yourshop.api.urn/product-view/products/a0033c98-6075-4903-81a5-90c56a064d86"
                       }
                     }
                   }, {
-                    "_id" : "db2d960e-7a50-43ac-907e-a89fd256c612",
+                    "_id" : "ef8ae9d8-c5de-4f82-9c0d-6e02f6fe8e06",
                     "sku" : "vino020",
                     "name" : "Rioja Castillo de Puerto (2013)",
                     "salesPrice" : {
@@ -9688,44 +9722,10 @@ paths:
                         "templated" : true
                       },
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/db2d960e-7a50-43ac-907e-a89fd256c612"
+                        "href" : "https://yourshop.api.urn/product-view/products/ef8ae9d8-c5de-4f82-9c0d-6e02f6fe8e06"
                       },
                       "product" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/db2d960e-7a50-43ac-907e-a89fd256c612"
-                      }
-                    }
-                  }, {
-                    "_id" : "ffe57f97-dac5-40b1-a879-67dc842eebf3",
-                    "sku" : "sh-001",
-                    "name" : "Soft Walk Ultra - Nibok Men's",
-                    "salesPrice" : {
-                      "amount" : 89.0,
-                      "currency" : "EUR"
-                    },
-                    "listPrice" : {
-                      "amount" : 99.99,
-                      "currency" : "EUR"
-                    },
-                    "manufacturerPrice" : null,
-                    "onSale" : true,
-                    "listPriceText" : "Old Price",
-                    "shippingDimension" : {
-                      "length" : 80,
-                      "width" : 80,
-                      "height" : 40
-                    },
-                    "refPrice" : null,
-                    "availabilityState" : "IN_STOCK",
-                    "_links" : {
-                      "default-image-data" : {
-                        "href" : "https://yourshop.api.urn/storage-api/images/nibok-men.jpg?hash=e9a1ce5c0c6abfebec8fb1f6faf77dca7e699999{&width,height,upscale}",
-                        "templated" : true
-                      },
-                      "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/ffe57f97-dac5-40b1-a879-67dc842eebf3"
-                      },
-                      "product" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/ffe57f97-dac5-40b1-a879-67dc842eebf3"
+                        "href" : "https://yourshop.api.urn/product-view/products/ef8ae9d8-c5de-4f82-9c0d-6e02f6fe8e06"
                       }
                     }
                   } ]
@@ -9743,7 +9743,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-search-term-1206450827'
+            $ref: '#/definitions/product-view_products_search_find-by-category-1206450827'
   /product-view/products/{productId}:
     get:
       tags:
@@ -9765,7 +9765,7 @@ paths:
           examples:
             application/hal+json: |-
               {
-                "_id" : "75831193-0fd4-4a96-ba59-e1815e3fd8e0",
+                "_id" : "19248af8-238b-404c-9ad3-44ed5a8d2878",
                 "sku" : "vino020",
                 "name" : "Rioja Castillo de Puerto (2013)",
                 "salesPrice" : {
@@ -9831,19 +9831,19 @@ paths:
                     "templated" : true
                   },
                   "self" : {
-                    "href" : "https://yourshop.api.urn/product-view/products/75831193-0fd4-4a96-ba59-e1815e3fd8e0"
+                    "href" : "https://yourshop.api.urn/product-view/products/19248af8-238b-404c-9ad3-44ed5a8d2878"
                   },
                   "product" : {
-                    "href" : "https://yourshop.api.urn/product-view/products/75831193-0fd4-4a96-ba59-e1815e3fd8e0"
+                    "href" : "https://yourshop.api.urn/product-view/products/19248af8-238b-404c-9ad3-44ed5a8d2878"
                   },
                   "additional-image-data" : [ {
                     "href" : "https://yourshop.api.urn/storage-api/images/rioja-02.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225998{&width,height,upscale}",
                     "templated" : true
                   }, {
-                    "href" : "https://yourshop.api.urn/storage-api/images/rioja-03.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225999{&width,height,upscale}",
+                    "href" : "https://yourshop.api.urn/storage-api/images/rioja-04.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281226000{&width,height,upscale}",
                     "templated" : true
                   }, {
-                    "href" : "https://yourshop.api.urn/storage-api/images/rioja-04.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281226000{&width,height,upscale}",
+                    "href" : "https://yourshop.api.urn/storage-api/images/rioja-03.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225999{&width,height,upscale}",
                     "templated" : true
                   } ]
                 }
@@ -9878,16 +9878,16 @@ paths:
                 "label" : "power-bar",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/product-view/categories/965dd309-467b-4d26-83b6-b20531de99ae"
+                    "href" : "https://yourshop.api.urn/product-view/categories/1435c6a1-d164-4513-aedf-1ba1cec3f27b"
                   },
                   "category" : {
-                    "href" : "https://yourshop.api.urn/product-view/categories/965dd309-467b-4d26-83b6-b20531de99ae"
+                    "href" : "https://yourshop.api.urn/product-view/categories/1435c6a1-d164-4513-aedf-1ba1cec3f27b"
                   },
                   "products" : {
-                    "href" : "https://yourshop.api.urn/product-view/categories/965dd309-467b-4d26-83b6-b20531de99ae/products"
+                    "href" : "https://yourshop.api.urn/product-view/categories/1435c6a1-d164-4513-aedf-1ba1cec3f27b/products"
                   }
                 },
-                "_id" : "965dd309-467b-4d26-83b6-b20531de99ae"
+                "_id" : "1435c6a1-d164-4513-aedf-1ba1cec3f27b"
               }
           schema:
             $ref: '#/definitions/product-view_categories_search_find-by-label-1017888571'
@@ -9921,32 +9921,32 @@ paths:
                     "label" : null,
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/categories/a13b63ce-227e-4382-989c-31d5c3a654d6"
+                        "href" : "https://yourshop.api.urn/product-view/categories/fe1ff7aa-2e19-4469-8500-b7d7abe8b4d4"
                       },
                       "category" : {
-                        "href" : "https://yourshop.api.urn/product-view/categories/a13b63ce-227e-4382-989c-31d5c3a654d6"
+                        "href" : "https://yourshop.api.urn/product-view/categories/fe1ff7aa-2e19-4469-8500-b7d7abe8b4d4"
                       },
                       "products" : {
-                        "href" : "https://yourshop.api.urn/product-view/categories/a13b63ce-227e-4382-989c-31d5c3a654d6/products"
+                        "href" : "https://yourshop.api.urn/product-view/categories/fe1ff7aa-2e19-4469-8500-b7d7abe8b4d4/products"
                       }
                     },
-                    "_id" : "a13b63ce-227e-4382-989c-31d5c3a654d6"
+                    "_id" : "fe1ff7aa-2e19-4469-8500-b7d7abe8b4d4"
                   }, {
                     "type" : "MANUAL",
                     "name" : "category that matches product 1 in a complicated way",
                     "label" : null,
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/categories/850b69f8-0c68-4386-a6d4-8cc81955bc19"
+                        "href" : "https://yourshop.api.urn/product-view/categories/49ff1e41-8223-4557-879e-0de02036da4c"
                       },
                       "category" : {
-                        "href" : "https://yourshop.api.urn/product-view/categories/850b69f8-0c68-4386-a6d4-8cc81955bc19"
+                        "href" : "https://yourshop.api.urn/product-view/categories/49ff1e41-8223-4557-879e-0de02036da4c"
                       },
                       "products" : {
-                        "href" : "https://yourshop.api.urn/product-view/categories/850b69f8-0c68-4386-a6d4-8cc81955bc19/products"
+                        "href" : "https://yourshop.api.urn/product-view/categories/49ff1e41-8223-4557-879e-0de02036da4c/products"
                       }
                     },
-                    "_id" : "850b69f8-0c68-4386-a6d4-8cc81955bc19"
+                    "_id" : "49ff1e41-8223-4557-879e-0de02036da4c"
                   } ]
                 },
                 "_links" : {
@@ -9986,7 +9986,7 @@ paths:
               {
                 "_embedded" : {
                   "products" : [ {
-                    "_id" : "0c576ab7-8f89-4f8b-b0b9-b7dfc48ff43b",
+                    "_id" : "aa2376b6-5a58-43a6-9c99-6c9ad1a1b402",
                     "sku" : "vino020",
                     "name" : "Rioja Castillo de Puerto (2013)",
                     "salesPrice" : {
@@ -10024,17 +10024,17 @@ paths:
                         "templated" : true
                       },
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/0c576ab7-8f89-4f8b-b0b9-b7dfc48ff43b"
+                        "href" : "https://yourshop.api.urn/product-view/products/aa2376b6-5a58-43a6-9c99-6c9ad1a1b402"
                       },
                       "product" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/0c576ab7-8f89-4f8b-b0b9-b7dfc48ff43b"
+                        "href" : "https://yourshop.api.urn/product-view/products/aa2376b6-5a58-43a6-9c99-6c9ad1a1b402"
                       }
                     }
                   } ]
                 },
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/product-view/categories/7418eca7-1527-4942-bfe0-de648dd577b9/products?page=0&size=40"
+                    "href" : "https://yourshop.api.urn/product-view/categories/6a4ca440-8973-43cb-9e81-2cdd7e282f36/products?page=0&size=40"
                   }
                 },
                 "page" : {
@@ -10126,7 +10126,7 @@ paths:
               {
                 "_embedded" : {
                   "products" : [ {
-                    "_id" : "c1e62240-67f0-4747-903d-c10e20086aed",
+                    "_id" : "c1ea30f1-24c2-4f0c-ab51-507b0ccf37f4",
                     "sku" : "vino020",
                     "name" : "Rioja Castillo de Puerto (2013)",
                     "salesPrice" : {
@@ -10164,17 +10164,17 @@ paths:
                         "templated" : true
                       },
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/c1e62240-67f0-4747-903d-c10e20086aed"
+                        "href" : "https://yourshop.api.urn/product-view/products/c1ea30f1-24c2-4f0c-ab51-507b0ccf37f4"
                       },
                       "product" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/c1e62240-67f0-4747-903d-c10e20086aed"
+                        "href" : "https://yourshop.api.urn/product-view/products/c1ea30f1-24c2-4f0c-ab51-507b0ccf37f4"
                       }
                     }
                   } ]
                 },
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/product-view/products/search/find-by-category?categoryId=861dd4cd-35e3-4e79-927c-9822eac27df2&page=0&size=40"
+                    "href" : "https://yourshop.api.urn/product-view/products/search/find-by-category?categoryId=c03750cd-1cbc-4460-a115-afba9555dda8&page=0&size=40"
                   }
                 },
                 "page" : {
@@ -10185,7 +10185,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-search-term-1206450827'
+            $ref: '#/definitions/product-view_products_search_find-by-category-1206450827'
   /product-view/products/search/find-by-query:
     post:
       tags:
@@ -10214,7 +10214,7 @@ paths:
               {
                 "_embedded" : {
                   "products" : [ {
-                    "_id" : "81d6f2d1-fa0f-4023-a3a4-6a414ff3e03d",
+                    "_id" : "4006be8c-634d-4a98-8c0b-e73c349712fa",
                     "sku" : "vino020",
                     "name" : "Rioja Castillo de Puerto (2013)",
                     "salesPrice" : {
@@ -10252,10 +10252,10 @@ paths:
                         "templated" : true
                       },
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/81d6f2d1-fa0f-4023-a3a4-6a414ff3e03d"
+                        "href" : "https://yourshop.api.urn/product-view/products/4006be8c-634d-4a98-8c0b-e73c349712fa"
                       },
                       "product" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/81d6f2d1-fa0f-4023-a3a4-6a414ff3e03d"
+                        "href" : "https://yourshop.api.urn/product-view/products/4006be8c-634d-4a98-8c0b-e73c349712fa"
                       }
                     }
                   } ]
@@ -10273,7 +10273,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-search-term-1206450827'
+            $ref: '#/definitions/product-view_products_search_find-by-category-1206450827'
   /product-view/products/search/find-by-search-term:
     get:
       tags:
@@ -10298,7 +10298,7 @@ paths:
               {
                 "_embedded" : {
                   "products" : [ {
-                    "_id" : "44008cea-754b-498c-88cd-4ba2efdd3d9d",
+                    "_id" : "9bb4b7d8-318e-41ad-9e2c-63c6a2eb1b72",
                     "sku" : "vino020",
                     "name" : "Rioja Castillo de Puerto (2013)",
                     "salesPrice" : {
@@ -10336,14 +10336,14 @@ paths:
                         "templated" : true
                       },
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/44008cea-754b-498c-88cd-4ba2efdd3d9d"
+                        "href" : "https://yourshop.api.urn/product-view/products/9bb4b7d8-318e-41ad-9e2c-63c6a2eb1b72"
                       },
                       "product" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/44008cea-754b-498c-88cd-4ba2efdd3d9d"
+                        "href" : "https://yourshop.api.urn/product-view/products/9bb4b7d8-318e-41ad-9e2c-63c6a2eb1b72"
                       }
                     }
                   }, {
-                    "_id" : "a72a3997-be81-4b50-82f0-0278b230d777",
+                    "_id" : "7f7bac89-0997-4695-b41b-34d366c38bc5",
                     "sku" : "sh-001",
                     "name" : "Soft Walk Ultra - Nibok Men's",
                     "salesPrice" : {
@@ -10370,10 +10370,10 @@ paths:
                         "templated" : true
                       },
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/a72a3997-be81-4b50-82f0-0278b230d777"
+                        "href" : "https://yourshop.api.urn/product-view/products/7f7bac89-0997-4695-b41b-34d366c38bc5"
                       },
                       "product" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/a72a3997-be81-4b50-82f0-0278b230d777"
+                        "href" : "https://yourshop.api.urn/product-view/products/7f7bac89-0997-4695-b41b-34d366c38bc5"
                       }
                     }
                   } ]
@@ -10391,7 +10391,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-search-term-1206450827'
+            $ref: '#/definitions/product-view_products_search_find-by-category-1206450827'
   /product-view/products/search/find-by-tags:
     get:
       tags:
@@ -10418,7 +10418,7 @@ paths:
               {
                 "_embedded" : {
                   "products" : [ {
-                    "_id" : "e488d49e-a6ed-44a3-9b81-f73720f60593",
+                    "_id" : "7b81bd7f-f153-4e96-88be-060e204ecd62",
                     "sku" : "vino020",
                     "name" : "Rioja Castillo de Puerto (2013)",
                     "salesPrice" : {
@@ -10456,10 +10456,10 @@ paths:
                         "templated" : true
                       },
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/e488d49e-a6ed-44a3-9b81-f73720f60593"
+                        "href" : "https://yourshop.api.urn/product-view/products/7b81bd7f-f153-4e96-88be-060e204ecd62"
                       },
                       "product" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/e488d49e-a6ed-44a3-9b81-f73720f60593"
+                        "href" : "https://yourshop.api.urn/product-view/products/7b81bd7f-f153-4e96-88be-060e204ecd62"
                       }
                     }
                   } ]
@@ -10477,7 +10477,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-search-term-1206450827'
+            $ref: '#/definitions/product-view_products_search_find-by-category-1206450827'
   /products:
     get:
       tags:
@@ -10505,7 +10505,7 @@ paths:
                         "purchasable" : true,
                         "_links" : {
                           "self" : {
-                            "href" : "https://yourshop.api.urn/products/a442f5a7-b899-43fb-891f-9a2283e3948d/availability"
+                            "href" : "https://yourshop.api.urn/products/8c01cd65-e154-4e45-9cb1-75d4b79b9426/availability"
                           }
                         }
                       }
@@ -10585,34 +10585,34 @@ paths:
                     "manufacturer" : "Grape Vineyard",
                     "essentialFeatures" : "Dry. 12% alcohol. Best vine variety.",
                     "variationAttributes" : [ ],
-                    "_id" : "a442f5a7-b899-43fb-891f-9a2283e3948d",
+                    "_id" : "8c01cd65-e154-4e45-9cb1-75d4b79b9426",
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/products/a442f5a7-b899-43fb-891f-9a2283e3948d"
+                        "href" : "https://yourshop.api.urn/products/8c01cd65-e154-4e45-9cb1-75d4b79b9426"
                       },
                       "product" : {
-                        "href" : "https://yourshop.api.urn/products/a442f5a7-b899-43fb-891f-9a2283e3948d"
+                        "href" : "https://yourshop.api.urn/products/8c01cd65-e154-4e45-9cb1-75d4b79b9426"
                       },
                       "availability" : {
-                        "href" : "https://yourshop.api.urn/products/a442f5a7-b899-43fb-891f-9a2283e3948d/availability"
+                        "href" : "https://yourshop.api.urn/products/8c01cd65-e154-4e45-9cb1-75d4b79b9426/availability"
                       },
                       "attributes" : {
-                        "href" : "https://yourshop.api.urn/products/a442f5a7-b899-43fb-891f-9a2283e3948d/attributes"
+                        "href" : "https://yourshop.api.urn/products/8c01cd65-e154-4e45-9cb1-75d4b79b9426/attributes"
                       },
                       "attachments" : {
-                        "href" : "https://yourshop.api.urn/products/a442f5a7-b899-43fb-891f-9a2283e3948d/attachments"
+                        "href" : "https://yourshop.api.urn/products/8c01cd65-e154-4e45-9cb1-75d4b79b9426/attachments"
                       },
                       "images" : {
-                        "href" : "https://yourshop.api.urn/products/a442f5a7-b899-43fb-891f-9a2283e3948d/images"
+                        "href" : "https://yourshop.api.urn/products/8c01cd65-e154-4e45-9cb1-75d4b79b9426/images"
                       },
                       "amazon" : {
-                        "href" : "http://amazon/amazon-products/a442f5a7-b899-43fb-891f-9a2283e3948d"
+                        "href" : "http://amazon/amazon-products/8c01cd65-e154-4e45-9cb1-75d4b79b9426"
                       },
                       "google-shopping" : {
-                        "href" : "http://google-shopping/google-products/a442f5a7-b899-43fb-891f-9a2283e3948d"
+                        "href" : "http://google-shopping/google-products/8c01cd65-e154-4e45-9cb1-75d4b79b9426"
                       },
                       "default-image" : {
-                        "href" : "https://yourshop.api.urn/products/a442f5a7-b899-43fb-891f-9a2283e3948d/default-image"
+                        "href" : "https://yourshop.api.urn/products/8c01cd65-e154-4e45-9cb1-75d4b79b9426/default-image"
                       },
                       "default-image-data" : {
                         "href" : "https://yourshop.api.urn/api/core-storage/images/photostore-2.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225998{&width,height,upscale}",
@@ -10640,7 +10640,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-search-term-1206450827'
+            $ref: '#/definitions/product-view_products_search_find-by-category-1206450827'
       security:
       - oauth2_accessCode:
         - prod:r
@@ -10726,7 +10726,7 @@ paths:
                     "purchasable" : true,
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/products/1e9b5ac3-ca86-4566-b2bb-726e922f4f51/availability"
+                        "href" : "https://yourshop.api.urn/products/5a2169bf-cbef-4053-85fa-f1f5769e9644/availability"
                       }
                     }
                   }
@@ -10815,31 +10815,31 @@ paths:
                   "displayName" : "material",
                   "values" : [ "wool", "leather" ]
                 } ],
-                "_id" : "1e9b5ac3-ca86-4566-b2bb-726e922f4f51",
+                "_id" : "5a2169bf-cbef-4053-85fa-f1f5769e9644",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/products/1e9b5ac3-ca86-4566-b2bb-726e922f4f51"
+                    "href" : "https://yourshop.api.urn/products/5a2169bf-cbef-4053-85fa-f1f5769e9644"
                   },
                   "product" : {
-                    "href" : "https://yourshop.api.urn/products/1e9b5ac3-ca86-4566-b2bb-726e922f4f51"
+                    "href" : "https://yourshop.api.urn/products/5a2169bf-cbef-4053-85fa-f1f5769e9644"
                   },
                   "availability" : {
-                    "href" : "https://yourshop.api.urn/products/1e9b5ac3-ca86-4566-b2bb-726e922f4f51/availability"
+                    "href" : "https://yourshop.api.urn/products/5a2169bf-cbef-4053-85fa-f1f5769e9644/availability"
                   },
                   "attributes" : {
-                    "href" : "https://yourshop.api.urn/products/1e9b5ac3-ca86-4566-b2bb-726e922f4f51/attributes"
+                    "href" : "https://yourshop.api.urn/products/5a2169bf-cbef-4053-85fa-f1f5769e9644/attributes"
                   },
                   "attachments" : {
-                    "href" : "https://yourshop.api.urn/products/1e9b5ac3-ca86-4566-b2bb-726e922f4f51/attachments"
+                    "href" : "https://yourshop.api.urn/products/5a2169bf-cbef-4053-85fa-f1f5769e9644/attachments"
                   },
                   "images" : {
-                    "href" : "https://yourshop.api.urn/products/1e9b5ac3-ca86-4566-b2bb-726e922f4f51/images"
+                    "href" : "https://yourshop.api.urn/products/5a2169bf-cbef-4053-85fa-f1f5769e9644/images"
                   },
                   "default-image" : {
-                    "href" : "https://yourshop.api.urn/products/1e9b5ac3-ca86-4566-b2bb-726e922f4f51/default-image"
+                    "href" : "https://yourshop.api.urn/products/5a2169bf-cbef-4053-85fa-f1f5769e9644/default-image"
                   },
                   "variations" : {
-                    "href" : "https://yourshop.api.urn/products/1e9b5ac3-ca86-4566-b2bb-726e922f4f51/variations"
+                    "href" : "https://yourshop.api.urn/products/5a2169bf-cbef-4053-85fa-f1f5769e9644/variations"
                   }
                 }
               }
@@ -10877,7 +10877,7 @@ paths:
                     "purchasable" : true,
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/products/a1af4148-4ed7-46c8-95cb-8c807abc4d3f/availability"
+                        "href" : "https://yourshop.api.urn/products/de5d9315-d734-4463-9275-6c4354ee4800/availability"
                       }
                     }
                   }
@@ -10957,34 +10957,34 @@ paths:
                 "manufacturer" : "Grape Vineyard",
                 "essentialFeatures" : "Dry. 12% alcohol. Best vine variety.",
                 "variationAttributes" : [ ],
-                "_id" : "a1af4148-4ed7-46c8-95cb-8c807abc4d3f",
+                "_id" : "de5d9315-d734-4463-9275-6c4354ee4800",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/products/a1af4148-4ed7-46c8-95cb-8c807abc4d3f"
+                    "href" : "https://yourshop.api.urn/products/de5d9315-d734-4463-9275-6c4354ee4800"
                   },
                   "product" : {
-                    "href" : "https://yourshop.api.urn/products/a1af4148-4ed7-46c8-95cb-8c807abc4d3f"
+                    "href" : "https://yourshop.api.urn/products/de5d9315-d734-4463-9275-6c4354ee4800"
                   },
                   "availability" : {
-                    "href" : "https://yourshop.api.urn/products/a1af4148-4ed7-46c8-95cb-8c807abc4d3f/availability"
+                    "href" : "https://yourshop.api.urn/products/de5d9315-d734-4463-9275-6c4354ee4800/availability"
                   },
                   "attributes" : {
-                    "href" : "https://yourshop.api.urn/products/a1af4148-4ed7-46c8-95cb-8c807abc4d3f/attributes"
+                    "href" : "https://yourshop.api.urn/products/de5d9315-d734-4463-9275-6c4354ee4800/attributes"
                   },
                   "attachments" : {
-                    "href" : "https://yourshop.api.urn/products/a1af4148-4ed7-46c8-95cb-8c807abc4d3f/attachments"
+                    "href" : "https://yourshop.api.urn/products/de5d9315-d734-4463-9275-6c4354ee4800/attachments"
                   },
                   "images" : {
-                    "href" : "https://yourshop.api.urn/products/a1af4148-4ed7-46c8-95cb-8c807abc4d3f/images"
+                    "href" : "https://yourshop.api.urn/products/de5d9315-d734-4463-9275-6c4354ee4800/images"
                   },
                   "amazon" : {
-                    "href" : "http://amazon/amazon-products/a1af4148-4ed7-46c8-95cb-8c807abc4d3f"
+                    "href" : "http://amazon/amazon-products/de5d9315-d734-4463-9275-6c4354ee4800"
                   },
                   "google-shopping" : {
-                    "href" : "http://google-shopping/google-products/a1af4148-4ed7-46c8-95cb-8c807abc4d3f"
+                    "href" : "http://google-shopping/google-products/de5d9315-d734-4463-9275-6c4354ee4800"
                   },
                   "default-image" : {
-                    "href" : "https://yourshop.api.urn/products/a1af4148-4ed7-46c8-95cb-8c807abc4d3f/default-image"
+                    "href" : "https://yourshop.api.urn/products/de5d9315-d734-4463-9275-6c4354ee4800/default-image"
                   },
                   "default-image-data" : {
                     "href" : "https://yourshop.api.urn/api/core-storage/images/photostore-2.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225998{&width,height,upscale}",
@@ -11097,7 +11097,7 @@ paths:
                     "purchasable" : true,
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/products/673136ac-1af8-4c39-9a52-c1d9838e62e8/availability"
+                        "href" : "https://yourshop.api.urn/products/c10a84cc-526a-4264-86ec-e0eaf5cde390/availability"
                       }
                     }
                   }
@@ -11174,28 +11174,28 @@ paths:
                 "manufacturer" : "patched manufacturer",
                 "essentialFeatures" : "Dry. 12% alcohol. Best vine variety.",
                 "variationAttributes" : [ ],
-                "_id" : "673136ac-1af8-4c39-9a52-c1d9838e62e8",
+                "_id" : "c10a84cc-526a-4264-86ec-e0eaf5cde390",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/products/673136ac-1af8-4c39-9a52-c1d9838e62e8"
+                    "href" : "https://yourshop.api.urn/products/c10a84cc-526a-4264-86ec-e0eaf5cde390"
                   },
                   "product" : {
-                    "href" : "https://yourshop.api.urn/products/673136ac-1af8-4c39-9a52-c1d9838e62e8"
+                    "href" : "https://yourshop.api.urn/products/c10a84cc-526a-4264-86ec-e0eaf5cde390"
                   },
                   "availability" : {
-                    "href" : "https://yourshop.api.urn/products/673136ac-1af8-4c39-9a52-c1d9838e62e8/availability"
+                    "href" : "https://yourshop.api.urn/products/c10a84cc-526a-4264-86ec-e0eaf5cde390/availability"
                   },
                   "attributes" : {
-                    "href" : "https://yourshop.api.urn/products/673136ac-1af8-4c39-9a52-c1d9838e62e8/attributes"
+                    "href" : "https://yourshop.api.urn/products/c10a84cc-526a-4264-86ec-e0eaf5cde390/attributes"
                   },
                   "attachments" : {
-                    "href" : "https://yourshop.api.urn/products/673136ac-1af8-4c39-9a52-c1d9838e62e8/attachments"
+                    "href" : "https://yourshop.api.urn/products/c10a84cc-526a-4264-86ec-e0eaf5cde390/attachments"
                   },
                   "images" : {
-                    "href" : "https://yourshop.api.urn/products/673136ac-1af8-4c39-9a52-c1d9838e62e8/images"
+                    "href" : "https://yourshop.api.urn/products/c10a84cc-526a-4264-86ec-e0eaf5cde390/images"
                   },
                   "default-image" : {
-                    "href" : "https://yourshop.api.urn/products/673136ac-1af8-4c39-9a52-c1d9838e62e8/default-image"
+                    "href" : "https://yourshop.api.urn/products/c10a84cc-526a-4264-86ec-e0eaf5cde390/default-image"
                   }
                 }
               }
@@ -11235,7 +11235,7 @@ paths:
                     "purchasable" : true,
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/products/1102fd7a-3ea0-4b56-bf99-675e7a2d2850/availability"
+                        "href" : "https://yourshop.api.urn/products/69466555-273c-4558-9bf9-c11dcf27bdbd/availability"
                       }
                     }
                   }
@@ -11315,34 +11315,34 @@ paths:
                 "manufacturer" : "Grape Vineyard",
                 "essentialFeatures" : "Dry. 12% alcohol. Best vine variety.",
                 "variationAttributes" : [ ],
-                "_id" : "1102fd7a-3ea0-4b56-bf99-675e7a2d2850",
+                "_id" : "69466555-273c-4558-9bf9-c11dcf27bdbd",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/products/1102fd7a-3ea0-4b56-bf99-675e7a2d2850"
+                    "href" : "https://yourshop.api.urn/products/69466555-273c-4558-9bf9-c11dcf27bdbd"
                   },
                   "product" : {
-                    "href" : "https://yourshop.api.urn/products/1102fd7a-3ea0-4b56-bf99-675e7a2d2850"
+                    "href" : "https://yourshop.api.urn/products/69466555-273c-4558-9bf9-c11dcf27bdbd"
                   },
                   "availability" : {
-                    "href" : "https://yourshop.api.urn/products/1102fd7a-3ea0-4b56-bf99-675e7a2d2850/availability"
+                    "href" : "https://yourshop.api.urn/products/69466555-273c-4558-9bf9-c11dcf27bdbd/availability"
                   },
                   "attributes" : {
-                    "href" : "https://yourshop.api.urn/products/1102fd7a-3ea0-4b56-bf99-675e7a2d2850/attributes"
+                    "href" : "https://yourshop.api.urn/products/69466555-273c-4558-9bf9-c11dcf27bdbd/attributes"
                   },
                   "attachments" : {
-                    "href" : "https://yourshop.api.urn/products/1102fd7a-3ea0-4b56-bf99-675e7a2d2850/attachments"
+                    "href" : "https://yourshop.api.urn/products/69466555-273c-4558-9bf9-c11dcf27bdbd/attachments"
                   },
                   "images" : {
-                    "href" : "https://yourshop.api.urn/products/1102fd7a-3ea0-4b56-bf99-675e7a2d2850/images"
+                    "href" : "https://yourshop.api.urn/products/69466555-273c-4558-9bf9-c11dcf27bdbd/images"
                   },
                   "amazon" : {
-                    "href" : "http://amazon/amazon-products/1102fd7a-3ea0-4b56-bf99-675e7a2d2850"
+                    "href" : "http://amazon/amazon-products/69466555-273c-4558-9bf9-c11dcf27bdbd"
                   },
                   "google-shopping" : {
-                    "href" : "http://google-shopping/google-products/1102fd7a-3ea0-4b56-bf99-675e7a2d2850"
+                    "href" : "http://google-shopping/google-products/69466555-273c-4558-9bf9-c11dcf27bdbd"
                   },
                   "default-image" : {
-                    "href" : "https://yourshop.api.urn/products/1102fd7a-3ea0-4b56-bf99-675e7a2d2850/default-image"
+                    "href" : "https://yourshop.api.urn/products/69466555-273c-4558-9bf9-c11dcf27bdbd/default-image"
                   },
                   "default-image-data" : {
                     "href" : "https://yourshop.api.urn/api/core-storage/images/photostore-2.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225998{&width,height,upscale}",
@@ -11405,7 +11405,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-search-term-1206450827'
+            $ref: '#/definitions/product-view_products_search_find-by-category-1206450827'
       security:
       - oauth2_accessCode:
         - prod:r
@@ -11437,10 +11437,10 @@ paths:
                     "mimeType" : "application/pdf",
                     "length" : 1,
                     "label" : "Handbuch",
-                    "_id" : "bd7fc451-d874-466a-8561-c8a74ae0b596",
+                    "_id" : "b6b308db-36f1-4f48-a442-0a7cd123fb80",
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/products/c5a9e1ac-a8b7-4637-8480-ccdffebe9280/attachments/bd7fc451-d874-466a-8561-c8a74ae0b596"
+                        "href" : "https://yourshop.api.urn/products/8a02b9c3-be4c-44d9-8230-d4619be4b18c/attachments/b6b308db-36f1-4f48-a442-0a7cd123fb80"
                       },
                       "data" : {
                         "href" : "https://yourshop.api.urn/api/core-storage/attachments/1_my_attachment.pdf?hash=8a627f655c68f56dfbbf217ab7d5563281225801"
@@ -11449,17 +11449,17 @@ paths:
                         "href" : "https://yourshop.api.urn/api/core-storage/attachments/1_my_attachment.pdf?hash=8a627f655c68f56dfbbf217ab7d5563281225801&download=no"
                       },
                       "attachment" : {
-                        "href" : "https://yourshop.api.urn/products/c5a9e1ac-a8b7-4637-8480-ccdffebe9280/attachments/bd7fc451-d874-466a-8561-c8a74ae0b596"
+                        "href" : "https://yourshop.api.urn/products/8a02b9c3-be4c-44d9-8230-d4619be4b18c/attachments/b6b308db-36f1-4f48-a442-0a7cd123fb80"
                       }
                     }
                   }, {
                     "mimeType" : "application/pdf",
                     "length" : 1,
                     "label" : "Handbuch",
-                    "_id" : "4fb496bd-1169-4f5f-b148-35ff1b6063f6",
+                    "_id" : "fb526bc7-5a4f-4cb1-8097-8c939f1726f0",
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/products/c5a9e1ac-a8b7-4637-8480-ccdffebe9280/attachments/4fb496bd-1169-4f5f-b148-35ff1b6063f6"
+                        "href" : "https://yourshop.api.urn/products/8a02b9c3-be4c-44d9-8230-d4619be4b18c/attachments/fb526bc7-5a4f-4cb1-8097-8c939f1726f0"
                       },
                       "data" : {
                         "href" : "https://yourshop.api.urn/api/core-storage/attachments/2_my_attachment.pdf?hash=8a627f655c68f56dfbbf217ab7d5563281225802"
@@ -11468,14 +11468,14 @@ paths:
                         "href" : "https://yourshop.api.urn/api/core-storage/attachments/2_my_attachment.pdf?hash=8a627f655c68f56dfbbf217ab7d5563281225802&download=no"
                       },
                       "attachment" : {
-                        "href" : "https://yourshop.api.urn/products/c5a9e1ac-a8b7-4637-8480-ccdffebe9280/attachments/4fb496bd-1169-4f5f-b148-35ff1b6063f6"
+                        "href" : "https://yourshop.api.urn/products/8a02b9c3-be4c-44d9-8230-d4619be4b18c/attachments/fb526bc7-5a4f-4cb1-8097-8c939f1726f0"
                       }
                     }
                   } ]
                 },
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/products/c5a9e1ac-a8b7-4637-8480-ccdffebe9280/attachments?page=0&size=20"
+                    "href" : "https://yourshop.api.urn/products/8a02b9c3-be4c-44d9-8230-d4619be4b18c/attachments?page=0&size=20"
                   }
                 },
                 "page" : {
@@ -11531,10 +11531,10 @@ paths:
                 "mimeType" : "application/pdf",
                 "length" : 1,
                 "label" : "Handbuch",
-                "_id" : "51eeb427-5c20-48a0-ad58-ec559b8f0730",
+                "_id" : "ead4a134-c0b0-4b5f-9516-d82f275db53a",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/products/ec396b7b-6994-4fe5-8f94-b0a25dec3e39/attachments/51eeb427-5c20-48a0-ad58-ec559b8f0730"
+                    "href" : "https://yourshop.api.urn/products/756661cc-81e8-4737-bb8c-18e5b84ed614/attachments/ead4a134-c0b0-4b5f-9516-d82f275db53a"
                   },
                   "data" : {
                     "href" : "https://yourshop.api.urn/api/core-storage/attachments/my_document_1.pdf?hash=8a627f655c68f56dfbbf217ab7d5563281225666"
@@ -11543,7 +11543,7 @@ paths:
                     "href" : "https://yourshop.api.urn/api/core-storage/attachments/my_document_1.pdf?hash=8a627f655c68f56dfbbf217ab7d5563281225666&download=no"
                   },
                   "attachment" : {
-                    "href" : "https://yourshop.api.urn/products/ec396b7b-6994-4fe5-8f94-b0a25dec3e39/attachments/51eeb427-5c20-48a0-ad58-ec559b8f0730"
+                    "href" : "https://yourshop.api.urn/products/756661cc-81e8-4737-bb8c-18e5b84ed614/attachments/ead4a134-c0b0-4b5f-9516-d82f275db53a"
                   }
                 }
               }
@@ -11575,38 +11575,38 @@ paths:
               {
                 "_embedded" : {
                   "attributes" : [ {
-                    "value" : "Jazz",
-                    "key" : "genre",
-                    "_links" : {
-                      "self" : {
-                        "href" : "https://yourshop.api.urn/products/904ee84d-2004-4d59-bb11-7130fb3085f1/attributes/genre"
-                      },
-                      "product" : {
-                        "href" : "https://yourshop.api.urn/products/904ee84d-2004-4d59-bb11-7130fb3085f1"
-                      },
-                      "product-attribute-definition" : {
-                        "href" : "https://yourshop.api.urn/product-attribute-definitions/5443c8bf-2fe2-4db5-9046-846b3725be4e"
-                      }
-                    }
-                  }, {
                     "value" : "red",
                     "key" : "colour",
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/products/904ee84d-2004-4d59-bb11-7130fb3085f1/attributes/colour"
+                        "href" : "https://yourshop.api.urn/products/0a7cbaf2-2223-460f-bc7d-c376358dd98f/attributes/colour"
                       },
                       "product" : {
-                        "href" : "https://yourshop.api.urn/products/904ee84d-2004-4d59-bb11-7130fb3085f1"
+                        "href" : "https://yourshop.api.urn/products/0a7cbaf2-2223-460f-bc7d-c376358dd98f"
                       },
                       "product-attribute-definition" : {
-                        "href" : "https://yourshop.api.urn/product-attribute-definitions/d24fc945-8930-4715-80bc-2575504e4e21"
+                        "href" : "https://yourshop.api.urn/product-attribute-definitions/638ded64-4cf1-4bf5-8f2f-2abb3f789840"
+                      }
+                    }
+                  }, {
+                    "value" : "Jazz",
+                    "key" : "genre",
+                    "_links" : {
+                      "self" : {
+                        "href" : "https://yourshop.api.urn/products/0a7cbaf2-2223-460f-bc7d-c376358dd98f/attributes/genre"
+                      },
+                      "product" : {
+                        "href" : "https://yourshop.api.urn/products/0a7cbaf2-2223-460f-bc7d-c376358dd98f"
+                      },
+                      "product-attribute-definition" : {
+                        "href" : "https://yourshop.api.urn/product-attribute-definitions/d2a82f8d-74ac-4d29-8008-a9531c2b2922"
                       }
                     }
                   } ]
                 },
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/products/904ee84d-2004-4d59-bb11-7130fb3085f1/attributes?page=0&size=20"
+                    "href" : "https://yourshop.api.urn/products/0a7cbaf2-2223-460f-bc7d-c376358dd98f/attributes?page=0&size=20"
                   }
                 },
                 "page" : {
@@ -11661,13 +11661,13 @@ paths:
                 "key" : "filling_capacity",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/products/33e22c97-7339-4bc6-acb8-45685f7802a6/attributes/filling_capacity"
+                    "href" : "https://yourshop.api.urn/products/a1b901d0-4682-4db8-b2e5-2f4118e978d4/attributes/filling_capacity"
                   },
                   "product" : {
-                    "href" : "https://yourshop.api.urn/products/33e22c97-7339-4bc6-acb8-45685f7802a6"
+                    "href" : "https://yourshop.api.urn/products/a1b901d0-4682-4db8-b2e5-2f4118e978d4"
                   },
                   "product-attribute-definition" : {
-                    "href" : "https://yourshop.api.urn/product-attribute-definitions/3c4d1aaf-04b2-45fc-91e4-31273631f238"
+                    "href" : "https://yourshop.api.urn/product-attribute-definitions/ac85ca64-fe86-4b10-bdf3-ab2b806ba326"
                   }
                 }
               }
@@ -11703,22 +11703,22 @@ paths:
                 "purchasable" : true,
                 "_links" : {
                   "product" : {
-                    "href" : "https://yourshop.api.urn/products/65e68112-f992-491b-83b7-12220fd176e4"
+                    "href" : "https://yourshop.api.urn/products/b3b5383a-c7b2-4398-adce-4934f2413f2c"
                   },
                   "self" : {
-                    "href" : "https://yourshop.api.urn/products/65e68112-f992-491b-83b7-12220fd176e4/availability"
+                    "href" : "https://yourshop.api.urn/products/b3b5383a-c7b2-4398-adce-4934f2413f2c/availability"
                   },
                   "disable-purchasability" : {
-                    "href" : "https://yourshop.api.urn/products/65e68112-f992-491b-83b7-12220fd176e4/availability/disable-purchasability"
+                    "href" : "https://yourshop.api.urn/products/b3b5383a-c7b2-4398-adce-4934f2413f2c/availability/disable-purchasability"
                   },
                   "adjust-available-stock" : {
-                    "href" : "https://yourshop.api.urn/products/65e68112-f992-491b-83b7-12220fd176e4/availability/adjust-available-stock"
+                    "href" : "https://yourshop.api.urn/products/b3b5383a-c7b2-4398-adce-4934f2413f2c/availability/adjust-available-stock"
                   },
                   "update-stock-threshold" : {
-                    "href" : "https://yourshop.api.urn/products/65e68112-f992-491b-83b7-12220fd176e4/availability/update-stock-threshold"
+                    "href" : "https://yourshop.api.urn/products/b3b5383a-c7b2-4398-adce-4934f2413f2c/availability/update-stock-threshold"
                   },
                   "disable-stock-management" : {
-                    "href" : "https://yourshop.api.urn/products/65e68112-f992-491b-83b7-12220fd176e4/availability/disable-stock-management"
+                    "href" : "https://yourshop.api.urn/products/b3b5383a-c7b2-4398-adce-4934f2413f2c/availability/disable-stock-management"
                   }
                 }
               }
@@ -11749,9 +11749,9 @@ paths:
         name: ""
         required: false
         schema:
-          $ref: '#/definitions/products_productId_default-image1406085685'
+          $ref: '#/definitions/products_productId_default-image-860579177'
         x-examples:
-          text/uri-list: http://localhost/products/images/bff0d4de-1ec8-4f7a-8492-5995f516937f
+          text/uri-list: http://localhost/products/images/2cc2b7ad-4cd6-4a30-a799-565bf11bde06
       responses:
         204:
           description: ""
@@ -11784,10 +11784,10 @@ paths:
               {
                 "_embedded" : {
                   "images" : [ {
-                    "_id" : "bb0b9e1d-2af0-4784-93bd-2e75df987173",
+                    "_id" : "a4b74c2e-0a79-42ae-bae1-2dd1ac3283c5",
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/products/3ceaecbd-21e3-43dd-910d-b0409a80f5b7/images/bb0b9e1d-2af0-4784-93bd-2e75df987173"
+                        "href" : "https://yourshop.api.urn/products/144d4653-adad-4180-89fc-43bbd4e611ad/images/a4b74c2e-0a79-42ae-bae1-2dd1ac3283c5"
                       },
                       "data" : {
                         "href" : "https://yourshop.api.urn/api/core-storage/images/photostore-2.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225998{&width,height,upscale}",
@@ -11797,14 +11797,14 @@ paths:
                         "href" : "https://yourshop.api.urn/api/core-storage/images/photostore-2.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225998&download=no"
                       },
                       "image" : {
-                        "href" : "https://yourshop.api.urn/products/3ceaecbd-21e3-43dd-910d-b0409a80f5b7/images/bb0b9e1d-2af0-4784-93bd-2e75df987173"
+                        "href" : "https://yourshop.api.urn/products/144d4653-adad-4180-89fc-43bbd4e611ad/images/a4b74c2e-0a79-42ae-bae1-2dd1ac3283c5"
                       }
                     }
                   }, {
-                    "_id" : "490f22b9-93cc-418b-b45c-b4bf1ace147e",
+                    "_id" : "ab0bfe15-01d0-4ad3-bb42-5b0ca3685b83",
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/products/3ceaecbd-21e3-43dd-910d-b0409a80f5b7/images/490f22b9-93cc-418b-b45c-b4bf1ace147e"
+                        "href" : "https://yourshop.api.urn/products/144d4653-adad-4180-89fc-43bbd4e611ad/images/ab0bfe15-01d0-4ad3-bb42-5b0ca3685b83"
                       },
                       "data" : {
                         "href" : "https://yourshop.api.urn/api/core-storage/images/photostore-3.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225999{&width,height,upscale}",
@@ -11814,14 +11814,14 @@ paths:
                         "href" : "https://yourshop.api.urn/api/core-storage/images/photostore-3.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225999&download=no"
                       },
                       "image" : {
-                        "href" : "https://yourshop.api.urn/products/3ceaecbd-21e3-43dd-910d-b0409a80f5b7/images/490f22b9-93cc-418b-b45c-b4bf1ace147e"
+                        "href" : "https://yourshop.api.urn/products/144d4653-adad-4180-89fc-43bbd4e611ad/images/ab0bfe15-01d0-4ad3-bb42-5b0ca3685b83"
                       }
                     }
                   } ]
                 },
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/products/3ceaecbd-21e3-43dd-910d-b0409a80f5b7/images?page=0&size=20"
+                    "href" : "https://yourshop.api.urn/products/144d4653-adad-4180-89fc-43bbd4e611ad/images?page=0&size=20"
                   }
                 },
                 "page" : {
@@ -13106,10 +13106,10 @@ paths:
           examples:
             application/hal+json: |-
               {
-                "_id" : "01f21cac-a8cd-470a-9899-3cc9fe53c29e",
+                "_id" : "41db87a8-e94a-4a68-a7a3-3991ec1203a4",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/products/96395ba3-4b89-4d92-b6fe-d72cd9217cec/images/01f21cac-a8cd-470a-9899-3cc9fe53c29e"
+                    "href" : "https://yourshop.api.urn/products/9fdc3cac-44f4-4d02-9a0d-c352675368b4/images/41db87a8-e94a-4a68-a7a3-3991ec1203a4"
                   },
                   "data" : {
                     "href" : "https://yourshop.api.urn/api/core-storage/images/photostore-2.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225998{&width,height,upscale}",
@@ -13119,7 +13119,7 @@ paths:
                     "href" : "https://yourshop.api.urn/api/core-storage/images/photostore-2.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225998&download=no"
                   },
                   "image" : {
-                    "href" : "https://yourshop.api.urn/products/96395ba3-4b89-4d92-b6fe-d72cd9217cec/images/01f21cac-a8cd-470a-9899-3cc9fe53c29e"
+                    "href" : "https://yourshop.api.urn/products/9fdc3cac-44f4-4d02-9a0d-c352675368b4/images/41db87a8-e94a-4a68-a7a3-3991ec1203a4"
                   }
                 }
               }
@@ -13132,7 +13132,7 @@ paths:
     get:
       tags:
       - products
-      summary: list variations
+      summary: List variations
       description: Returns a list of the variations for the product identified by
         {productId}.
       operationId: product-variations-list
@@ -13152,28 +13152,6 @@ paths:
               {
                 "_embedded" : {
                   "variations" : [ {
-                    "sku" : "1001",
-                    "variationAttributeValues" : [ {
-                      "displayName" : "size",
-                      "value" : "s"
-                    } ],
-                    "_links" : {
-                      "product" : {
-                        "href" : "https://yourshop.api.urn/products/75d8074a-d852-4925-9e54-e2c1ce3efb67"
-                      }
-                    }
-                  }, {
-                    "sku" : "1000",
-                    "variationAttributeValues" : [ {
-                      "displayName" : "size",
-                      "value" : "xs"
-                    } ],
-                    "_links" : {
-                      "product" : {
-                        "href" : "https://yourshop.api.urn/products/75d8074a-d852-4925-9e54-e2c1ce3efb67"
-                      }
-                    }
-                  }, {
                     "sku" : "1004",
                     "variationAttributeValues" : [ {
                       "displayName" : "size",
@@ -13181,7 +13159,7 @@ paths:
                     } ],
                     "_links" : {
                       "product" : {
-                        "href" : "https://yourshop.api.urn/products/75d8074a-d852-4925-9e54-e2c1ce3efb67"
+                        "href" : "https://yourshop.api.urn/products/b38226f5-325b-4b68-8fb2-1c0c1dd1c842"
                       }
                     }
                   }, {
@@ -13192,7 +13170,18 @@ paths:
                     } ],
                     "_links" : {
                       "product" : {
-                        "href" : "https://yourshop.api.urn/products/75d8074a-d852-4925-9e54-e2c1ce3efb67"
+                        "href" : "https://yourshop.api.urn/products/b38226f5-325b-4b68-8fb2-1c0c1dd1c842"
+                      }
+                    }
+                  }, {
+                    "sku" : "1001",
+                    "variationAttributeValues" : [ {
+                      "displayName" : "size",
+                      "value" : "s"
+                    } ],
+                    "_links" : {
+                      "product" : {
+                        "href" : "https://yourshop.api.urn/products/b38226f5-325b-4b68-8fb2-1c0c1dd1c842"
                       }
                     }
                   }, {
@@ -13203,14 +13192,25 @@ paths:
                     } ],
                     "_links" : {
                       "product" : {
-                        "href" : "https://yourshop.api.urn/products/75d8074a-d852-4925-9e54-e2c1ce3efb67"
+                        "href" : "https://yourshop.api.urn/products/b38226f5-325b-4b68-8fb2-1c0c1dd1c842"
+                      }
+                    }
+                  }, {
+                    "sku" : "1000",
+                    "variationAttributeValues" : [ {
+                      "displayName" : "size",
+                      "value" : "xs"
+                    } ],
+                    "_links" : {
+                      "product" : {
+                        "href" : "https://yourshop.api.urn/products/b38226f5-325b-4b68-8fb2-1c0c1dd1c842"
                       }
                     }
                   } ]
                 },
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/products/75d8074a-d852-4925-9e54-e2c1ce3efb67/variations?page=0&size=20"
+                    "href" : "https://yourshop.api.urn/products/b38226f5-325b-4b68-8fb2-1c0c1dd1c842/variations?page=0&size=20"
                   }
                 },
                 "page" : {
@@ -13221,7 +13221,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/products_productId_images884805373'
+            $ref: '#/definitions/product-view_products_search_find-by-category-1206450827'
       security:
       - oauth2_accessCode:
         - prod:r
@@ -13257,10 +13257,10 @@ paths:
                 "mimeType" : "application/pdf",
                 "length" : 1,
                 "label" : "Handbuch",
-                "_id" : "dec1ae16-78c2-48d8-9825-b766a0623433",
+                "_id" : "7d3e13df-e312-451c-9cc4-b35c447ac12b",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/products/00754e7a-d8cd-433c-b809-917477f6e762/attachments/dec1ae16-78c2-48d8-9825-b766a0623433"
+                    "href" : "https://yourshop.api.urn/products/10629967-3dff-4706-92c9-eff812ac4028/attachments/7d3e13df-e312-451c-9cc4-b35c447ac12b"
                   },
                   "data" : {
                     "href" : "https://yourshop.api.urn/api/core-storage/attachments/1_my_attachment.pdf?hash=8a627f655c68f56dfbbf217ab7d5563281225801"
@@ -13269,7 +13269,7 @@ paths:
                     "href" : "https://yourshop.api.urn/api/core-storage/attachments/1_my_attachment.pdf?hash=8a627f655c68f56dfbbf217ab7d5563281225801&download=no"
                   },
                   "attachment" : {
-                    "href" : "https://yourshop.api.urn/products/00754e7a-d8cd-433c-b809-917477f6e762/attachments/dec1ae16-78c2-48d8-9825-b766a0623433"
+                    "href" : "https://yourshop.api.urn/products/10629967-3dff-4706-92c9-eff812ac4028/attachments/7d3e13df-e312-451c-9cc4-b35c447ac12b"
                   }
                 }
               }
@@ -13338,13 +13338,13 @@ paths:
                 "key" : "size",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/products/fa2843ac-f99a-45f8-a7fb-cbd912de2b17/attributes/size"
+                    "href" : "https://yourshop.api.urn/products/7a277edb-d466-4b94-83ba-ce57568e2269/attributes/size"
                   },
                   "product" : {
-                    "href" : "https://yourshop.api.urn/products/fa2843ac-f99a-45f8-a7fb-cbd912de2b17"
+                    "href" : "https://yourshop.api.urn/products/7a277edb-d466-4b94-83ba-ce57568e2269"
                   },
                   "product-attribute-definition" : {
-                    "href" : "https://yourshop.api.urn/product-attribute-definitions/9c27ab28-1e53-4690-a9ce-ec9a1fe034bc"
+                    "href" : "https://yourshop.api.urn/product-attribute-definitions/ba9ebcf9-a6c1-4cb9-b7c2-7c0169bdc04c"
                   }
                 }
               }
@@ -13397,13 +13397,13 @@ paths:
                 "key" : "key",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/products/9414b0c6-562f-4449-8949-cf67b75387f6/attributes/key"
+                    "href" : "https://yourshop.api.urn/products/36ce224c-a444-492d-afd6-f8df02174a6f/attributes/key"
                   },
                   "product" : {
-                    "href" : "https://yourshop.api.urn/products/9414b0c6-562f-4449-8949-cf67b75387f6"
+                    "href" : "https://yourshop.api.urn/products/36ce224c-a444-492d-afd6-f8df02174a6f"
                   },
                   "product-attribute-definition" : {
-                    "href" : "https://yourshop.api.urn/product-attribute-definitions/69216bbc-1b40-45dd-920a-10cfadb4bcf4"
+                    "href" : "https://yourshop.api.urn/product-attribute-definitions/9a263e99-e959-4b14-87d4-0796c5dcc8a9"
                   }
                 }
               }
@@ -13477,22 +13477,22 @@ paths:
                 "purchasable" : true,
                 "_links" : {
                   "product" : {
-                    "href" : "https://yourshop.api.urn/products/67450fd5-38c6-4b6d-b651-3ab57c9946aa"
+                    "href" : "https://yourshop.api.urn/products/e33d5740-7f30-4ddb-a6e7-b27990fca294"
                   },
                   "self" : {
-                    "href" : "https://yourshop.api.urn/products/67450fd5-38c6-4b6d-b651-3ab57c9946aa/availability"
+                    "href" : "https://yourshop.api.urn/products/e33d5740-7f30-4ddb-a6e7-b27990fca294/availability"
                   },
                   "disable-purchasability" : {
-                    "href" : "https://yourshop.api.urn/products/67450fd5-38c6-4b6d-b651-3ab57c9946aa/availability/disable-purchasability"
+                    "href" : "https://yourshop.api.urn/products/e33d5740-7f30-4ddb-a6e7-b27990fca294/availability/disable-purchasability"
                   },
                   "adjust-available-stock" : {
-                    "href" : "https://yourshop.api.urn/products/67450fd5-38c6-4b6d-b651-3ab57c9946aa/availability/adjust-available-stock"
+                    "href" : "https://yourshop.api.urn/products/e33d5740-7f30-4ddb-a6e7-b27990fca294/availability/adjust-available-stock"
                   },
                   "update-stock-threshold" : {
-                    "href" : "https://yourshop.api.urn/products/67450fd5-38c6-4b6d-b651-3ab57c9946aa/availability/update-stock-threshold"
+                    "href" : "https://yourshop.api.urn/products/e33d5740-7f30-4ddb-a6e7-b27990fca294/availability/update-stock-threshold"
                   },
                   "disable-stock-management" : {
-                    "href" : "https://yourshop.api.urn/products/67450fd5-38c6-4b6d-b651-3ab57c9946aa/availability/disable-stock-management"
+                    "href" : "https://yourshop.api.urn/products/e33d5740-7f30-4ddb-a6e7-b27990fca294/availability/disable-stock-management"
                   }
                 }
               }
@@ -13528,16 +13528,16 @@ paths:
                 "purchasable" : false,
                 "_links" : {
                   "product" : {
-                    "href" : "https://yourshop.api.urn/products/5f4398ba-595a-4acc-beb5-bbfa1bcc437c"
+                    "href" : "https://yourshop.api.urn/products/d0e41056-38a1-44f6-b9dc-20e5736b4954"
                   },
                   "self" : {
-                    "href" : "https://yourshop.api.urn/products/5f4398ba-595a-4acc-beb5-bbfa1bcc437c/availability"
+                    "href" : "https://yourshop.api.urn/products/d0e41056-38a1-44f6-b9dc-20e5736b4954/availability"
                   },
                   "enable-purchasability" : {
-                    "href" : "https://yourshop.api.urn/products/5f4398ba-595a-4acc-beb5-bbfa1bcc437c/availability/enable-purchasability"
+                    "href" : "https://yourshop.api.urn/products/d0e41056-38a1-44f6-b9dc-20e5736b4954/availability/enable-purchasability"
                   },
                   "enable-stock-management" : {
-                    "href" : "https://yourshop.api.urn/products/5f4398ba-595a-4acc-beb5-bbfa1bcc437c/availability/enable-stock-management"
+                    "href" : "https://yourshop.api.urn/products/d0e41056-38a1-44f6-b9dc-20e5736b4954/availability/enable-stock-management"
                   }
                 }
               }
@@ -13573,16 +13573,16 @@ paths:
                 "purchasable" : true,
                 "_links" : {
                   "product" : {
-                    "href" : "https://yourshop.api.urn/products/899d1122-0ae4-4b03-9483-dd24b7aea54a"
+                    "href" : "https://yourshop.api.urn/products/7cfc2d47-1f53-4eb1-8d23-06d6b01b3d67"
                   },
                   "self" : {
-                    "href" : "https://yourshop.api.urn/products/899d1122-0ae4-4b03-9483-dd24b7aea54a/availability"
+                    "href" : "https://yourshop.api.urn/products/7cfc2d47-1f53-4eb1-8d23-06d6b01b3d67/availability"
                   },
                   "disable-purchasability" : {
-                    "href" : "https://yourshop.api.urn/products/899d1122-0ae4-4b03-9483-dd24b7aea54a/availability/disable-purchasability"
+                    "href" : "https://yourshop.api.urn/products/7cfc2d47-1f53-4eb1-8d23-06d6b01b3d67/availability/disable-purchasability"
                   },
                   "enable-stock-management" : {
-                    "href" : "https://yourshop.api.urn/products/899d1122-0ae4-4b03-9483-dd24b7aea54a/availability/enable-stock-management"
+                    "href" : "https://yourshop.api.urn/products/7cfc2d47-1f53-4eb1-8d23-06d6b01b3d67/availability/enable-stock-management"
                   }
                 }
               }
@@ -13618,16 +13618,16 @@ paths:
                 "purchasable" : true,
                 "_links" : {
                   "product" : {
-                    "href" : "https://yourshop.api.urn/products/e2d0bc2a-3d36-4896-a065-dd4cf675d32c"
+                    "href" : "https://yourshop.api.urn/products/bc4c51a8-d855-4b9e-97ab-92414ab00248"
                   },
                   "self" : {
-                    "href" : "https://yourshop.api.urn/products/e2d0bc2a-3d36-4896-a065-dd4cf675d32c/availability"
+                    "href" : "https://yourshop.api.urn/products/bc4c51a8-d855-4b9e-97ab-92414ab00248/availability"
                   },
                   "disable-purchasability" : {
-                    "href" : "https://yourshop.api.urn/products/e2d0bc2a-3d36-4896-a065-dd4cf675d32c/availability/disable-purchasability"
+                    "href" : "https://yourshop.api.urn/products/bc4c51a8-d855-4b9e-97ab-92414ab00248/availability/disable-purchasability"
                   },
                   "enable-stock-management" : {
-                    "href" : "https://yourshop.api.urn/products/e2d0bc2a-3d36-4896-a065-dd4cf675d32c/availability/enable-stock-management"
+                    "href" : "https://yourshop.api.urn/products/bc4c51a8-d855-4b9e-97ab-92414ab00248/availability/enable-stock-management"
                   }
                 }
               }
@@ -13673,22 +13673,22 @@ paths:
                 "purchasable" : true,
                 "_links" : {
                   "product" : {
-                    "href" : "https://yourshop.api.urn/products/a95106cf-aef8-41c2-9f3d-3cc10e669a1b"
+                    "href" : "https://yourshop.api.urn/products/64f8457e-25e0-4b05-8742-a9c888826a69"
                   },
                   "self" : {
-                    "href" : "https://yourshop.api.urn/products/a95106cf-aef8-41c2-9f3d-3cc10e669a1b/availability"
+                    "href" : "https://yourshop.api.urn/products/64f8457e-25e0-4b05-8742-a9c888826a69/availability"
                   },
                   "disable-purchasability" : {
-                    "href" : "https://yourshop.api.urn/products/a95106cf-aef8-41c2-9f3d-3cc10e669a1b/availability/disable-purchasability"
+                    "href" : "https://yourshop.api.urn/products/64f8457e-25e0-4b05-8742-a9c888826a69/availability/disable-purchasability"
                   },
                   "adjust-available-stock" : {
-                    "href" : "https://yourshop.api.urn/products/a95106cf-aef8-41c2-9f3d-3cc10e669a1b/availability/adjust-available-stock"
+                    "href" : "https://yourshop.api.urn/products/64f8457e-25e0-4b05-8742-a9c888826a69/availability/adjust-available-stock"
                   },
                   "update-stock-threshold" : {
-                    "href" : "https://yourshop.api.urn/products/a95106cf-aef8-41c2-9f3d-3cc10e669a1b/availability/update-stock-threshold"
+                    "href" : "https://yourshop.api.urn/products/64f8457e-25e0-4b05-8742-a9c888826a69/availability/update-stock-threshold"
                   },
                   "disable-stock-management" : {
-                    "href" : "https://yourshop.api.urn/products/a95106cf-aef8-41c2-9f3d-3cc10e669a1b/availability/disable-stock-management"
+                    "href" : "https://yourshop.api.urn/products/64f8457e-25e0-4b05-8742-a9c888826a69/availability/disable-stock-management"
                   }
                 }
               }
@@ -13735,22 +13735,22 @@ paths:
                 "purchasable" : true,
                 "_links" : {
                   "product" : {
-                    "href" : "https://yourshop.api.urn/products/e8f3ebe4-0f19-4b65-a194-264a2243bb9d"
+                    "href" : "https://yourshop.api.urn/products/f600488b-7934-44fe-8e96-4a45b413a49b"
                   },
                   "self" : {
-                    "href" : "https://yourshop.api.urn/products/e8f3ebe4-0f19-4b65-a194-264a2243bb9d/availability"
+                    "href" : "https://yourshop.api.urn/products/f600488b-7934-44fe-8e96-4a45b413a49b/availability"
                   },
                   "disable-purchasability" : {
-                    "href" : "https://yourshop.api.urn/products/e8f3ebe4-0f19-4b65-a194-264a2243bb9d/availability/disable-purchasability"
+                    "href" : "https://yourshop.api.urn/products/f600488b-7934-44fe-8e96-4a45b413a49b/availability/disable-purchasability"
                   },
                   "adjust-available-stock" : {
-                    "href" : "https://yourshop.api.urn/products/e8f3ebe4-0f19-4b65-a194-264a2243bb9d/availability/adjust-available-stock"
+                    "href" : "https://yourshop.api.urn/products/f600488b-7934-44fe-8e96-4a45b413a49b/availability/adjust-available-stock"
                   },
                   "update-stock-threshold" : {
-                    "href" : "https://yourshop.api.urn/products/e8f3ebe4-0f19-4b65-a194-264a2243bb9d/availability/update-stock-threshold"
+                    "href" : "https://yourshop.api.urn/products/f600488b-7934-44fe-8e96-4a45b413a49b/availability/update-stock-threshold"
                   },
                   "disable-stock-management" : {
-                    "href" : "https://yourshop.api.urn/products/e8f3ebe4-0f19-4b65-a194-264a2243bb9d/availability/disable-stock-management"
+                    "href" : "https://yourshop.api.urn/products/f600488b-7934-44fe-8e96-4a45b413a49b/availability/disable-stock-management"
                   }
                 }
               }
@@ -13786,10 +13786,10 @@ paths:
           examples:
             application/hal+json: |-
               {
-                "_id" : "81372ff7-f42f-494a-adea-aa018f2c06cc",
+                "_id" : "a379e6af-4e48-4f8e-8187-02067efa7eaf",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/products/de7393c6-a8c0-4905-a67f-681cc402d43c/images/81372ff7-f42f-494a-adea-aa018f2c06cc"
+                    "href" : "https://yourshop.api.urn/products/1b84fbfe-7bb5-481b-947c-ee6bb07d3dcc/images/a379e6af-4e48-4f8e-8187-02067efa7eaf"
                   },
                   "data" : {
                     "href" : "https://yourshop.api.urn/api/core-storage/images/photostore-2.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225998{&width,height,upscale}",
@@ -13799,7 +13799,7 @@ paths:
                     "href" : "https://yourshop.api.urn/api/core-storage/images/photostore-2.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225998&download=no"
                   },
                   "image" : {
-                    "href" : "https://yourshop.api.urn/products/de7393c6-a8c0-4905-a67f-681cc402d43c/images/81372ff7-f42f-494a-adea-aa018f2c06cc"
+                    "href" : "https://yourshop.api.urn/products/1b84fbfe-7bb5-481b-947c-ee6bb07d3dcc/images/a379e6af-4e48-4f8e-8187-02067efa7eaf"
                   }
                 }
               }
@@ -13905,7 +13905,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-search-term-1206450827'
+            $ref: '#/definitions/product-view_products_search_find-by-category-1206450827'
       security:
       - oauth2_accessCode:
         - scop:r
@@ -14010,7 +14010,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-search-term-1206450827'
+            $ref: '#/definitions/product-view_products_search_find-by-category-1206450827'
       security:
       - oauth2_accessCode:
         - shpz:r
@@ -14290,7 +14290,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-search-term-1206450827'
+            $ref: '#/definitions/product-view_products_search_find-by-category-1206450827'
   /shipping-zones/{shippingZoneId}/shipping-methods:
     get:
       tags:
@@ -15041,7 +15041,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-search-term-1206450827'
+            $ref: '#/definitions/product-view_products_search_find-by-category-1206450827'
       security:
       - oauth2_accessCode:
         - shat:r
@@ -15194,7 +15194,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-search-term-1206450827'
+            $ref: '#/definitions/product-view_products_search_find-by-category-1206450827'
       security:
       - oauth2_accessCode:
         - feat:r
@@ -15831,7 +15831,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-search-term-1206450827'
+            $ref: '#/definitions/product-view_products_search_find-by-category-1206450827'
       security:
       - oauth2_accessCode:
         - user:r
@@ -16456,7 +16456,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-search-term-1206450827'
+            $ref: '#/definitions/product-view_products_search_find-by-category-1206450827'
     post:
       tags:
       - webhook-subscriptions
@@ -17239,6 +17239,8 @@ definitions:
       {
         "value" : "green"
       }
+  products_productId_default-image-860579177:
+    example: http://localhost/products/images/2cc2b7ad-4cd6-4a30-a799-565bf11bde06
   legal-content_name245086908:
     example: |-
       {
@@ -17271,17 +17273,6 @@ definitions:
         description: The VAT identifier of the shop.
         minLength: 0
         maxLength: 20
-  payment-signup_referrals_paymentMethodDefinition-1349782880:
-    type: object
-    properties:
-      _links:
-        type: object
-        description: See <<hypermedia,Hypermedia>>
-        properties: {}
-      referralUri:
-        type: string
-        description: The endpoint that generates a reference to the site where the
-          merchant can connect their shop with their payment app account.
   products_productId_attachments-1788385972:
     type: object
     required:
@@ -17309,6 +17300,17 @@ definitions:
         "label" : "Handbuch",
         "dataUri" : "my_document_1.pdf?hash=8a627f655c68f56dfbbf217ab7d5563281225666"
       }
+  payment-signup_referrals_paymentMethodDefinition-1349782880:
+    type: object
+    properties:
+      _links:
+        type: object
+        description: See <<hypermedia,Hypermedia>>
+        properties: {}
+      referralUri:
+        type: string
+        description: The endpoint that generates a reference to the site where the
+          merchant can connect their shop with their payment app account.
   orders_order-id_shipping-address593429613:
     type: object
     properties:
@@ -19110,10 +19112,12 @@ definitions:
           properties:
             displayName:
               type: string
-              description: The name of the variation attribute.
+              description: The name of the variation attribute defined by the merchant,
+                e.g. name, size, or color.
             values:
               type: array
-              description: The values for a variation attribute.
+              description: The values for a variation attribute defined by the merchant,
+                e.g. the detailed sizes such as S, M, L, XL.
       sku:
         type: string
         description: The stock keeping unit (SKU) corresponding to the product.
@@ -19289,7 +19293,7 @@ definitions:
         type: string
         description: Optional field. The username that identifies the user. If no
           username is passed, the email address is set as the username.
-  product-view_products_search_find-by-search-term-1206450827:
+  product-view_products_search_find-by-category-1206450827:
     type: object
     properties:
       _links:
@@ -22118,19 +22122,6 @@ definitions:
                     if the cart is modified, so that the `minimumOrderValue` is no
                     longer reached. A cart with an non-selectable payment method cannot
                     be ordered.
-  products_productId_attributes_productAttributeName-1919261341:
-    type: object
-    properties:
-      _links:
-        type: object
-        description: See <<hypermedia,Hypermedia>>
-        properties: {}
-      value:
-        type: number
-        description: The value of the product attribute.
-      key:
-        type: string
-        description: The key of the product attribute definition.
   payment-methods_paymentMethodId-482487356:
     type: object
     required:
@@ -22192,8 +22183,19 @@ definitions:
           "amount" : 10.0
         }
       }
-  products_productId_default-image1406085685:
-    example: http://localhost/products/images/bff0d4de-1ec8-4f7a-8492-5995f516937f
+  products_productId_attributes_productAttributeName-1919261341:
+    type: object
+    properties:
+      _links:
+        type: object
+        description: See <<hypermedia,Hypermedia>>
+        properties: {}
+      value:
+        type: number
+        description: The value of the product attribute.
+      key:
+        type: string
+        description: The key of the product attribute definition.
   orders_order-id_processes_refunds_id-1056864005:
     type: object
     properties:
