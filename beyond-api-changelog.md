@@ -1,5 +1,20 @@
 # Beyond API Changelog
 
+## 2019-02-12
+
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `GET` /products/{productId}/variations List variations  
+    Return Type
+
+        Add _embedded
+
 ## 2019-02-06
 
 ### What's New
