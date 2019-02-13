@@ -3199,7 +3199,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-category-1206450827'
+            $ref: '#/definitions/product-view_categories_search_find-by-product-1206450827'
       security:
       - oauth2_accessCode:
         - catg:r
@@ -4404,7 +4404,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-category-1206450827'
+            $ref: '#/definitions/product-view_categories_search_find-by-product-1206450827'
       security:
       - oauth2_accessCode:
         - ordr:r
@@ -6517,7 +6517,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-category-1206450827'
+            $ref: '#/definitions/product-view_categories_search_find-by-product-1206450827'
       security:
       - oauth2_accessCode:
         - orde:r
@@ -7495,7 +7495,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-category-1206450827'
+            $ref: '#/definitions/product-view_categories_search_find-by-product-1206450827'
       security:
       - oauth2_accessCode:
         - rfpr:r
@@ -7561,7 +7561,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-category-1206450827'
+            $ref: '#/definitions/product-view_categories_search_find-by-product-1206450827'
       security:
       - oauth2_accessCode:
         - rtpr:r
@@ -7697,7 +7697,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-category-1206450827'
+            $ref: '#/definitions/product-view_categories_search_find-by-product-1206450827'
       security:
       - oauth2_accessCode:
         - shpr:r
@@ -8241,7 +8241,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-category-1206450827'
+            $ref: '#/definitions/product-view_categories_search_find-by-product-1206450827'
       security:
       - oauth2_accessCode:
         - paym:m
@@ -9410,7 +9410,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-category-1206450827'
+            $ref: '#/definitions/product-view_categories_search_find-by-product-1206450827'
       security:
       - oauth2_accessCode:
         - prad:r
@@ -9623,7 +9623,7 @@ paths:
               {
                 "_embedded" : {
                   "products" : [ {
-                    "_id" : "4f863edc-5607-4309-b513-674c3d749946",
+                    "_id" : "300b803a-0fad-4115-a3cc-2bee62bb8dc1",
                     "sku" : "sh-001",
                     "name" : "Soft Walk Ultra - Nibok Men's",
                     "salesPrice" : {
@@ -9650,14 +9650,14 @@ paths:
                         "templated" : true
                       },
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/4f863edc-5607-4309-b513-674c3d749946"
+                        "href" : "https://yourshop.api.urn/product-view/products/300b803a-0fad-4115-a3cc-2bee62bb8dc1"
                       },
                       "product" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/4f863edc-5607-4309-b513-674c3d749946"
+                        "href" : "https://yourshop.api.urn/product-view/products/300b803a-0fad-4115-a3cc-2bee62bb8dc1"
                       }
                     }
                   }, {
-                    "_id" : "a0033c98-6075-4903-81a5-90c56a064d86",
+                    "_id" : "8b0172a7-6443-47b8-a597-99b36826d9cb",
                     "sku" : "EB001",
                     "name" : "Power & Vanilla Coconut Protein Bar (Pack of 5)",
                     "salesPrice" : {
@@ -9677,14 +9677,14 @@ paths:
                     "availabilityState" : "IN_STOCK",
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/a0033c98-6075-4903-81a5-90c56a064d86"
+                        "href" : "https://yourshop.api.urn/product-view/products/8b0172a7-6443-47b8-a597-99b36826d9cb"
                       },
                       "product" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/a0033c98-6075-4903-81a5-90c56a064d86"
+                        "href" : "https://yourshop.api.urn/product-view/products/8b0172a7-6443-47b8-a597-99b36826d9cb"
                       }
                     }
                   }, {
-                    "_id" : "ef8ae9d8-c5de-4f82-9c0d-6e02f6fe8e06",
+                    "_id" : "a8d2ea3f-e95d-4ab6-b492-1913534e6550",
                     "sku" : "vino020",
                     "name" : "Rioja Castillo de Puerto (2013)",
                     "salesPrice" : {
@@ -9722,10 +9722,10 @@ paths:
                         "templated" : true
                       },
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/ef8ae9d8-c5de-4f82-9c0d-6e02f6fe8e06"
+                        "href" : "https://yourshop.api.urn/product-view/products/a8d2ea3f-e95d-4ab6-b492-1913534e6550"
                       },
                       "product" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/ef8ae9d8-c5de-4f82-9c0d-6e02f6fe8e06"
+                        "href" : "https://yourshop.api.urn/product-view/products/a8d2ea3f-e95d-4ab6-b492-1913534e6550"
                       }
                     }
                   } ]
@@ -9743,7 +9743,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-category-1206450827'
+            $ref: '#/definitions/product-view_categories_search_find-by-product-1206450827'
   /product-view/products/{productId}:
     get:
       tags:
@@ -9765,7 +9765,7 @@ paths:
           examples:
             application/hal+json: |-
               {
-                "_id" : "19248af8-238b-404c-9ad3-44ed5a8d2878",
+                "_id" : "0565b575-247c-4505-b5a4-e38bb169e9a0",
                 "sku" : "vino020",
                 "name" : "Rioja Castillo de Puerto (2013)",
                 "salesPrice" : {
@@ -9831,19 +9831,19 @@ paths:
                     "templated" : true
                   },
                   "self" : {
-                    "href" : "https://yourshop.api.urn/product-view/products/19248af8-238b-404c-9ad3-44ed5a8d2878"
+                    "href" : "https://yourshop.api.urn/product-view/products/0565b575-247c-4505-b5a4-e38bb169e9a0"
                   },
                   "product" : {
-                    "href" : "https://yourshop.api.urn/product-view/products/19248af8-238b-404c-9ad3-44ed5a8d2878"
+                    "href" : "https://yourshop.api.urn/product-view/products/0565b575-247c-4505-b5a4-e38bb169e9a0"
                   },
                   "additional-image-data" : [ {
-                    "href" : "https://yourshop.api.urn/storage-api/images/rioja-02.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225998{&width,height,upscale}",
-                    "templated" : true
-                  }, {
                     "href" : "https://yourshop.api.urn/storage-api/images/rioja-04.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281226000{&width,height,upscale}",
                     "templated" : true
                   }, {
                     "href" : "https://yourshop.api.urn/storage-api/images/rioja-03.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225999{&width,height,upscale}",
+                    "templated" : true
+                  }, {
+                    "href" : "https://yourshop.api.urn/storage-api/images/rioja-02.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225998{&width,height,upscale}",
                     "templated" : true
                   } ]
                 }
@@ -9878,16 +9878,16 @@ paths:
                 "label" : "power-bar",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/product-view/categories/1435c6a1-d164-4513-aedf-1ba1cec3f27b"
+                    "href" : "https://yourshop.api.urn/product-view/categories/8d9972e6-3ac8-4636-9521-d2646935eac1"
                   },
                   "category" : {
-                    "href" : "https://yourshop.api.urn/product-view/categories/1435c6a1-d164-4513-aedf-1ba1cec3f27b"
+                    "href" : "https://yourshop.api.urn/product-view/categories/8d9972e6-3ac8-4636-9521-d2646935eac1"
                   },
                   "products" : {
-                    "href" : "https://yourshop.api.urn/product-view/categories/1435c6a1-d164-4513-aedf-1ba1cec3f27b/products"
+                    "href" : "https://yourshop.api.urn/product-view/categories/8d9972e6-3ac8-4636-9521-d2646935eac1/products"
                   }
                 },
-                "_id" : "1435c6a1-d164-4513-aedf-1ba1cec3f27b"
+                "_id" : "8d9972e6-3ac8-4636-9521-d2646935eac1"
               }
           schema:
             $ref: '#/definitions/product-view_categories_search_find-by-label-1017888571'
@@ -9899,7 +9899,7 @@ paths:
       description: "Returns a list of all product categories the product identified\
         \ by `productId` (which is passed as a request parameter) is part of. \nNote\
         \ that a `category` is referred to as `collection` in the cockpit."
-      operationId: product-view-find-categories-by-product
+      operationId: product-view-find-categories-by-product-id
       produces:
       - application/hal+json
       parameters:
@@ -9921,32 +9921,32 @@ paths:
                     "label" : null,
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/categories/fe1ff7aa-2e19-4469-8500-b7d7abe8b4d4"
+                        "href" : "https://yourshop.api.urn/product-view/categories/610f48ee-dca1-4263-b5fb-2242a5a0bb9c"
                       },
                       "category" : {
-                        "href" : "https://yourshop.api.urn/product-view/categories/fe1ff7aa-2e19-4469-8500-b7d7abe8b4d4"
+                        "href" : "https://yourshop.api.urn/product-view/categories/610f48ee-dca1-4263-b5fb-2242a5a0bb9c"
                       },
                       "products" : {
-                        "href" : "https://yourshop.api.urn/product-view/categories/fe1ff7aa-2e19-4469-8500-b7d7abe8b4d4/products"
+                        "href" : "https://yourshop.api.urn/product-view/categories/610f48ee-dca1-4263-b5fb-2242a5a0bb9c/products"
                       }
                     },
-                    "_id" : "fe1ff7aa-2e19-4469-8500-b7d7abe8b4d4"
+                    "_id" : "610f48ee-dca1-4263-b5fb-2242a5a0bb9c"
                   }, {
                     "type" : "MANUAL",
                     "name" : "category that matches product 1 in a complicated way",
                     "label" : null,
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/categories/49ff1e41-8223-4557-879e-0de02036da4c"
+                        "href" : "https://yourshop.api.urn/product-view/categories/32060a62-046f-4e8f-a35d-3c4ddeb2fdbb"
                       },
                       "category" : {
-                        "href" : "https://yourshop.api.urn/product-view/categories/49ff1e41-8223-4557-879e-0de02036da4c"
+                        "href" : "https://yourshop.api.urn/product-view/categories/32060a62-046f-4e8f-a35d-3c4ddeb2fdbb"
                       },
                       "products" : {
-                        "href" : "https://yourshop.api.urn/product-view/categories/49ff1e41-8223-4557-879e-0de02036da4c/products"
+                        "href" : "https://yourshop.api.urn/product-view/categories/32060a62-046f-4e8f-a35d-3c4ddeb2fdbb/products"
                       }
                     },
-                    "_id" : "49ff1e41-8223-4557-879e-0de02036da4c"
+                    "_id" : "32060a62-046f-4e8f-a35d-3c4ddeb2fdbb"
                   } ]
                 },
                 "_links" : {
@@ -9961,6 +9961,73 @@ paths:
                   "number" : 0
                 }
               }
+    post:
+      tags:
+      - product-view
+      summary: List categories assigned to product
+      description: "Returns a list of all product categories the product (which is\
+        \ passed as a request body) is part of. \nNote that a `category` is referred\
+        \ to as `collection` in the cockpit."
+      operationId: product-view-find-categories-by-product
+      consumes:
+      - application/json
+      produces:
+      - application/hal+json
+      parameters:
+      - in: body
+        name: ""
+        required: false
+        schema:
+          $ref: '#/definitions/product-view_categories_search_find-by-product1953991639'
+        x-examples:
+          application/json: |-
+            {
+              "tags" : [ "books" ],
+              "manufacturer" : "The Standard Manufacturer",
+              "salesPrice" : {
+                "amount" : 10.0,
+                "currency" : "EUR"
+              }
+            }
+      responses:
+        200:
+          description: ""
+          examples:
+            application/hal+json: |-
+              {
+                "_embedded" : {
+                  "categories" : [ {
+                    "type" : "SMART",
+                    "name" : "Books",
+                    "label" : "books",
+                    "_links" : {
+                      "self" : {
+                        "href" : "https://yourshop.api.urn/product-view/categories/6e06802d-9ac0-4156-bddc-e6e1d356c650"
+                      },
+                      "category" : {
+                        "href" : "https://yourshop.api.urn/product-view/categories/6e06802d-9ac0-4156-bddc-e6e1d356c650"
+                      },
+                      "products" : {
+                        "href" : "https://yourshop.api.urn/product-view/categories/6e06802d-9ac0-4156-bddc-e6e1d356c650/products"
+                      }
+                    },
+                    "_id" : "6e06802d-9ac0-4156-bddc-e6e1d356c650"
+                  } ]
+                },
+                "_links" : {
+                  "self" : {
+                    "href" : "https://yourshop.api.urn/product-view/categories/search/find-by-product?page=0&size=40"
+                  }
+                },
+                "page" : {
+                  "size" : 40,
+                  "totalElements" : 1,
+                  "totalPages" : 1,
+                  "number" : 0
+                }
+              }
+          schema:
+            $ref: '#/definitions/product-view_categories_search_find-by-product-1206450827'
   /product-view/categories/{categoryId}/products:
     get:
       tags:
@@ -9986,7 +10053,7 @@ paths:
               {
                 "_embedded" : {
                   "products" : [ {
-                    "_id" : "aa2376b6-5a58-43a6-9c99-6c9ad1a1b402",
+                    "_id" : "6463a60c-e036-48b2-bab7-5c37812ec341",
                     "sku" : "vino020",
                     "name" : "Rioja Castillo de Puerto (2013)",
                     "salesPrice" : {
@@ -10024,17 +10091,17 @@ paths:
                         "templated" : true
                       },
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/aa2376b6-5a58-43a6-9c99-6c9ad1a1b402"
+                        "href" : "https://yourshop.api.urn/product-view/products/6463a60c-e036-48b2-bab7-5c37812ec341"
                       },
                       "product" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/aa2376b6-5a58-43a6-9c99-6c9ad1a1b402"
+                        "href" : "https://yourshop.api.urn/product-view/products/6463a60c-e036-48b2-bab7-5c37812ec341"
                       }
                     }
                   } ]
                 },
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/product-view/categories/6a4ca440-8973-43cb-9e81-2cdd7e282f36/products?page=0&size=40"
+                    "href" : "https://yourshop.api.urn/product-view/categories/8e048b42-9aaa-480b-9b30-3ded22fb67c3/products?page=0&size=40"
                   }
                 },
                 "page" : {
@@ -10126,7 +10193,7 @@ paths:
               {
                 "_embedded" : {
                   "products" : [ {
-                    "_id" : "c1ea30f1-24c2-4f0c-ab51-507b0ccf37f4",
+                    "_id" : "e5014a4b-406e-41a7-b70a-f320c5b73878",
                     "sku" : "vino020",
                     "name" : "Rioja Castillo de Puerto (2013)",
                     "salesPrice" : {
@@ -10164,17 +10231,17 @@ paths:
                         "templated" : true
                       },
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/c1ea30f1-24c2-4f0c-ab51-507b0ccf37f4"
+                        "href" : "https://yourshop.api.urn/product-view/products/e5014a4b-406e-41a7-b70a-f320c5b73878"
                       },
                       "product" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/c1ea30f1-24c2-4f0c-ab51-507b0ccf37f4"
+                        "href" : "https://yourshop.api.urn/product-view/products/e5014a4b-406e-41a7-b70a-f320c5b73878"
                       }
                     }
                   } ]
                 },
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/product-view/products/search/find-by-category?categoryId=c03750cd-1cbc-4460-a115-afba9555dda8&page=0&size=40"
+                    "href" : "https://yourshop.api.urn/product-view/products/search/find-by-category?categoryId=34f5e3fa-3fc9-411c-a13c-e9f3f8667d35&page=0&size=40"
                   }
                 },
                 "page" : {
@@ -10185,7 +10252,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-category-1206450827'
+            $ref: '#/definitions/product-view_categories_search_find-by-product-1206450827'
   /product-view/products/search/find-by-query:
     post:
       tags:
@@ -10214,7 +10281,7 @@ paths:
               {
                 "_embedded" : {
                   "products" : [ {
-                    "_id" : "4006be8c-634d-4a98-8c0b-e73c349712fa",
+                    "_id" : "60d3fa5e-ab25-4eab-9891-d3b719b006d8",
                     "sku" : "vino020",
                     "name" : "Rioja Castillo de Puerto (2013)",
                     "salesPrice" : {
@@ -10252,10 +10319,10 @@ paths:
                         "templated" : true
                       },
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/4006be8c-634d-4a98-8c0b-e73c349712fa"
+                        "href" : "https://yourshop.api.urn/product-view/products/60d3fa5e-ab25-4eab-9891-d3b719b006d8"
                       },
                       "product" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/4006be8c-634d-4a98-8c0b-e73c349712fa"
+                        "href" : "https://yourshop.api.urn/product-view/products/60d3fa5e-ab25-4eab-9891-d3b719b006d8"
                       }
                     }
                   } ]
@@ -10273,7 +10340,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-category-1206450827'
+            $ref: '#/definitions/product-view_categories_search_find-by-product-1206450827'
   /product-view/products/search/find-by-search-term:
     get:
       tags:
@@ -10298,7 +10365,7 @@ paths:
               {
                 "_embedded" : {
                   "products" : [ {
-                    "_id" : "9bb4b7d8-318e-41ad-9e2c-63c6a2eb1b72",
+                    "_id" : "67c0a331-b0db-4606-8525-e5d035c30093",
                     "sku" : "vino020",
                     "name" : "Rioja Castillo de Puerto (2013)",
                     "salesPrice" : {
@@ -10336,14 +10403,14 @@ paths:
                         "templated" : true
                       },
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/9bb4b7d8-318e-41ad-9e2c-63c6a2eb1b72"
+                        "href" : "https://yourshop.api.urn/product-view/products/67c0a331-b0db-4606-8525-e5d035c30093"
                       },
                       "product" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/9bb4b7d8-318e-41ad-9e2c-63c6a2eb1b72"
+                        "href" : "https://yourshop.api.urn/product-view/products/67c0a331-b0db-4606-8525-e5d035c30093"
                       }
                     }
                   }, {
-                    "_id" : "7f7bac89-0997-4695-b41b-34d366c38bc5",
+                    "_id" : "a99c9a5c-1a18-46c0-8eed-d6a8709bd8c4",
                     "sku" : "sh-001",
                     "name" : "Soft Walk Ultra - Nibok Men's",
                     "salesPrice" : {
@@ -10370,10 +10437,10 @@ paths:
                         "templated" : true
                       },
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/7f7bac89-0997-4695-b41b-34d366c38bc5"
+                        "href" : "https://yourshop.api.urn/product-view/products/a99c9a5c-1a18-46c0-8eed-d6a8709bd8c4"
                       },
                       "product" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/7f7bac89-0997-4695-b41b-34d366c38bc5"
+                        "href" : "https://yourshop.api.urn/product-view/products/a99c9a5c-1a18-46c0-8eed-d6a8709bd8c4"
                       }
                     }
                   } ]
@@ -10391,7 +10458,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-category-1206450827'
+            $ref: '#/definitions/product-view_categories_search_find-by-product-1206450827'
   /product-view/products/search/find-by-tags:
     get:
       tags:
@@ -10418,7 +10485,7 @@ paths:
               {
                 "_embedded" : {
                   "products" : [ {
-                    "_id" : "7b81bd7f-f153-4e96-88be-060e204ecd62",
+                    "_id" : "28d03125-9403-4387-9ffd-d7c3046fb6ca",
                     "sku" : "vino020",
                     "name" : "Rioja Castillo de Puerto (2013)",
                     "salesPrice" : {
@@ -10456,10 +10523,10 @@ paths:
                         "templated" : true
                       },
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/7b81bd7f-f153-4e96-88be-060e204ecd62"
+                        "href" : "https://yourshop.api.urn/product-view/products/28d03125-9403-4387-9ffd-d7c3046fb6ca"
                       },
                       "product" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/7b81bd7f-f153-4e96-88be-060e204ecd62"
+                        "href" : "https://yourshop.api.urn/product-view/products/28d03125-9403-4387-9ffd-d7c3046fb6ca"
                       }
                     }
                   } ]
@@ -10477,7 +10544,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-category-1206450827'
+            $ref: '#/definitions/product-view_categories_search_find-by-product-1206450827'
   /products:
     get:
       tags:
@@ -10640,7 +10707,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-category-1206450827'
+            $ref: '#/definitions/product-view_categories_search_find-by-product-1206450827'
       security:
       - oauth2_accessCode:
         - prod:r
@@ -11405,7 +11472,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-category-1206450827'
+            $ref: '#/definitions/product-view_categories_search_find-by-product-1206450827'
       security:
       - oauth2_accessCode:
         - prod:r
@@ -13221,7 +13288,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-category-1206450827'
+            $ref: '#/definitions/product-view_categories_search_find-by-product-1206450827'
       security:
       - oauth2_accessCode:
         - prod:r
@@ -13905,7 +13972,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-category-1206450827'
+            $ref: '#/definitions/product-view_categories_search_find-by-product-1206450827'
       security:
       - oauth2_accessCode:
         - scop:r
@@ -14010,7 +14077,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-category-1206450827'
+            $ref: '#/definitions/product-view_categories_search_find-by-product-1206450827'
       security:
       - oauth2_accessCode:
         - shpz:r
@@ -14290,7 +14357,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-category-1206450827'
+            $ref: '#/definitions/product-view_categories_search_find-by-product-1206450827'
   /shipping-zones/{shippingZoneId}/shipping-methods:
     get:
       tags:
@@ -15041,7 +15108,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-category-1206450827'
+            $ref: '#/definitions/product-view_categories_search_find-by-product-1206450827'
       security:
       - oauth2_accessCode:
         - shat:r
@@ -15194,7 +15261,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-category-1206450827'
+            $ref: '#/definitions/product-view_categories_search_find-by-product-1206450827'
       security:
       - oauth2_accessCode:
         - feat:r
@@ -15831,7 +15898,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-category-1206450827'
+            $ref: '#/definitions/product-view_categories_search_find-by-product-1206450827'
       security:
       - oauth2_accessCode:
         - user:r
@@ -16456,7 +16523,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-category-1206450827'
+            $ref: '#/definitions/product-view_categories_search_find-by-product-1206450827'
     post:
       tags:
       - webhook-subscriptions
@@ -18955,6 +19022,16 @@ definitions:
           `CANCELED`, `CAPTURED`, `CAPTURE_PENDING`, `PAID`, `UNDERPAID`, `OVERPAID`,
           or `FAILED`, depending on the former status of the payment.
     example: '{"paymentStatus":"APPROVED"}'
+  products_productId_images_imageId-365295234:
+    type: object
+    properties:
+      _links:
+        type: object
+        description: See <<hypermedia,Hypermedia>>
+        properties: {}
+      _id:
+        type: string
+        description: The immutable, unique identifier of the requested resource.
   product-view_products_search_find-by-query1193686370:
     type: object
     properties:
@@ -18969,16 +19046,6 @@ definitions:
           Request Sort].
     example: '{ "query": {"bool":{"filter":[{"term":{"tags":"number0"}},{"range":{"salesPrice.amount":{"lte":8.7}}},{"range":{"createdAt":{"gte":"now-1h"}}}]}},
       "sort": "name.keyword"}'
-  products_productId_images_imageId-365295234:
-    type: object
-    properties:
-      _links:
-        type: object
-        description: See <<hypermedia,Hypermedia>>
-        properties: {}
-      _id:
-        type: string
-        description: The immutable, unique identifier of the requested resource.
   users_id_roles-1498545950:
     example: https://yourshop.api.urn/roles/f37e90cb-d66f-4e81-8dc3-08bc2ec47ff4
   users_id_change-password466429056:
@@ -19293,7 +19360,7 @@ definitions:
         type: string
         description: Optional field. The username that identifies the user. If no
           username is passed, the email address is set as the username.
-  product-view_products_search_find-by-category-1206450827:
+  product-view_categories_search_find-by-product-1206450827:
     type: object
     properties:
       _links:
@@ -19303,91 +19370,28 @@ definitions:
       _embedded:
         type: object
         properties:
-          products:
+          categories:
             type: array
             items:
               type: object
               properties:
-                refPrice:
-                  type: object
-                  description: The price information scaled to a standardised base
-                    unit.
-                  properties:
-                    unit:
-                      type: string
-                      description: The unit corresponding to the quanity.
-                    quantity:
-                      type: number
-                      description: The actual quantity in the product.
-                    price:
-                      type: object
-                      description: The actual reference price.
-                      properties: {}
-                    refQuantity:
-                      type: number
-                      description: The reference quantity the product's reference
-                        price is calculated on.
-                availabilityState:
-                  type: string
-                  description: The current availability state for the product. Can
-                    be `IN_STOCK`, `LOW_STOCK`, or `OUT_OF_STOCK`.
                 _links:
                   type: object
                   description: The links to receive further information related to
-                    the product.
-                  properties:
-                    default-image-data:
-                      type: object
-                      properties:
-                        href:
-                          type: string
-                          description: A link relation to the default image URL. See
-                            also <<about-the-api-api-basics-hypermedia,Hypermedia>>.
-                salesPrice:
-                  type: object
-                  description: The price of the product.
+                    this category.
                   properties: {}
                 name:
                   type: string
-                  description: The name of the product.
-                onSale:
-                  type: boolean
-                  description: Indicates if the product is on offer. Can be `true`
-                    or `false`.
-                manufacturerPrice:
-                  type: object
-                  description: The list price of the product, also known as the manufacturer's
-                    suggested retail price or recommended retail price.
-                  properties: {}
+                  description: The name of the category.
+                label:
+                  type: string
+                  description: The label of the category.
                 _id:
                   type: string
-                  description: The unique identifier of the product.
-                listPriceText:
+                  description: The unique identifier of the category.
+                type:
                   type: string
-                  description: The text that comes along with the list price.
-                sku:
-                  type: string
-                  description: The stock keeping unit (SKU) corresponding to the product.
-                shippingDimension:
-                  type: object
-                  properties:
-                    width:
-                      type: number
-                      description: The width of the product including packaging in
-                        mm.
-                    length:
-                      type: number
-                      description: The length of the product including packaging in
-                        mm.
-                    height:
-                      type: number
-                      description: The height of the product including packaging in
-                        mm.
-                listPrice:
-                  type: object
-                  description: The list price of the product, also known as the manufacturer's
-                    suggested retail price or recommended retail price.
-                  properties: {}
+                  description: The type of the category. Can be `SMART` or `MANUAL`.
       page:
         type: object
         description: See <<pagination,Pagination>>
@@ -20257,6 +20261,34 @@ definitions:
         "name" : "second-unknown-attribute-name",
         "value" : "correct-value",
         "public" : false
+      }
+  product-view_categories_search_find-by-product1953991639:
+    type: object
+    properties:
+      salesPrice:
+        type: object
+        description: The price of the product.
+        properties:
+          amount:
+            type: number
+            description: The amount of the offer price.
+          currency:
+            type: string
+            description: The currency of the offer price.
+      manufacturer:
+        type: string
+        description: The manufacturer of the product.
+      tags:
+        type: array
+        description: The tags assigned to a product.
+    example: |-
+      {
+        "tags" : [ "books" ],
+        "manufacturer" : "The Standard Manufacturer",
+        "salesPrice" : {
+          "amount" : 10.0,
+          "currency" : "EUR"
+        }
       }
   carts_cartId_line-items-630998845:
     type: object
