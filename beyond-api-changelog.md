@@ -1,5 +1,21 @@
 # Beyond API Changelog
 
+## 2019-02-14
+
+-XX:InitialHeapSize=527059072 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `GET` /products/{productId} Show variation product details  
+    Return Type
+
+        Delete sku //The stock keeping unit (SKU) corresponding to the product.
+
 ## 2019-02-13
 
 -XX:InitialHeapSize=527059072 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
