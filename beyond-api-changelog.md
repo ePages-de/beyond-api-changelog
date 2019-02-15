@@ -1,5 +1,21 @@
 # Beyond API Changelog
 
+## 2019-02-15
+
+-XX:InitialHeapSize=527059072 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `POST` /carts/{cartId}/create-payment-and-order Create payment and order  
+    Parameter
+
+        Add .termsAndConditionsExplicitlyAccepted //Indicates if the shop's terms and conditions have been explicitly accepted. If explicit consent is required (see checkout settings) and not given, trying to order the cart will fail. Can be `true` or `false`.
+
 ## 2019-02-14
 
 -XX:InitialHeapSize=527059072 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
