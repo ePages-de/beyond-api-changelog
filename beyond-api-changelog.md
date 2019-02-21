@@ -1,5 +1,18 @@
 # Beyond API Changelog
 
+## 2019-02-21
+
+### What's New
+---
+* `GET` /product-view/products/0b284289-ade3-477d-baf4-7c58c673356f Show variation product details
+* `GET` /product-view/products/be30bd85-706d-4d44-8a5d-df28b93484aa Show variation product details
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+
 ## 2019-02-15
 
 -XX:InitialHeapSize=527059072 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
