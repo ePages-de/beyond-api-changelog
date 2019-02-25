@@ -15,7 +15,6 @@
 
 ## 2019-02-15
 
--XX:InitialHeapSize=527059072 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
 ### What's New
 ---
 
@@ -31,7 +30,6 @@
 
 ## 2019-02-14
 
--XX:InitialHeapSize=527059072 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
 ### What's New
 ---
 
@@ -47,7 +45,6 @@
 
 ## 2019-02-13
 
--XX:InitialHeapSize=527059072 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
 ### What's New
 ---
 * `POST` /product-view/categories/search/find-by-product List categories assigned to product
