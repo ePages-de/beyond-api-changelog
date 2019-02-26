@@ -1,5 +1,24 @@
 # Beyond API Changelog
 
+## 2019-02-26
+
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `POST` /carts/{cartId}/create-payment Create payment  
+    Return Type
+
+        Add embeddedApprovalUri //The optional URI to the iframe that will be embedded in the checkout UI.
+* `POST` /carts/{cartId}/create-payment-and-order Create payment and order  
+    Return Type
+
+        Add embeddedApprovalUri //The optional URI to the iframe that will be embedded in the checkout UI.
+
 ## 2019-02-21
 
 ### What's New
