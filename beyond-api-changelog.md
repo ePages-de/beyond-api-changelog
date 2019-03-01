@@ -1,5 +1,21 @@
 # Beyond API Changelog
 
+## 2019-03-01
+
+-XX:InitialHeapSize=527038208 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+* `GET` /product-view/products/23c8cb5f-3e55-4a4c-9d97-ff247d5cea7b Show variation product details
+* `GET` /product-view/products/43f3aa40-ac08-4302-aeba-fbbd0a2cf418 Show variation product details
+
+### What's Deprecated
+---
+* `GET` /product-view/products/65240637-51f8-4666-8f9d-febbe1948e03 Show variation product details
+* `GET` /product-view/products/66ad0034-fefd-4b81-a835-79ddb58bf426 Show variation product details
+
+### What's Changed
+---
+
 ## 2019-02-28
 
 ### What's New
