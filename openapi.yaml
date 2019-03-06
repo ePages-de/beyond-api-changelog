@@ -3219,7 +3219,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-tags-1206450827'
+            $ref: '#/definitions/shop_attributes-1206450827'
       security:
       - oauth2_accessCode:
         - catg:r
@@ -4046,18 +4046,18 @@ paths:
               {
                 "_embedded" : {
                   "orders" : [ {
-                    "_id" : "08f549aa-ff88-497d-bff0-50b5a6298ebd",
-                    "createdAt" : "2019-03-04T08:51:39.897",
-                    "cartId" : "0a7ee3fd-eee3-44fe-965f-8171a064ebc9",
+                    "_id" : "ddf51eae-7a1c-481e-819c-e1fe0a091774",
+                    "createdAt" : "2019-03-06T14:16:25.417",
+                    "cartId" : "e00efe54-cccd-4a20-a00d-43f2e7ed6662",
                     "currency" : "EUR",
                     "taxModel" : "GROSS",
                     "taxable" : false,
                     "testOrder" : false,
                     "termsAndConditionsExplicitlyAccepted" : false,
                     "productLineItems" : [ {
-                      "_id" : "8d58694c-4b06-486f-ab41-503c95840445",
+                      "_id" : "449e00c9-b5ae-43fc-b8af-7efa3dd74edc",
                       "product" : {
-                        "_id" : "b6b4d318-2fa6-4163-a5ae-998b2b9d7f5f",
+                        "_id" : "22c7e898-154e-499e-a7c9-a1a2747ecdf2",
                         "sku" : "vino020",
                         "name" : "Rioja Castillo de Puerto (2013)",
                         "essentialFeatures" : "Dry. 12% alcohol. Best vine variety.",
@@ -4133,9 +4133,9 @@ paths:
                         }
                       }
                     }, {
-                      "_id" : "b2032ccc-4627-48ac-beed-92b4240b838e",
+                      "_id" : "63833a34-f8aa-4435-883f-72ad184ed7b1",
                       "product" : {
-                        "_id" : "918fc3c1-ff96-46c7-842e-83769cc0d3fd",
+                        "_id" : "40876dac-93e7-4702-858b-c73e06b1984b",
                         "sku" : "EB001",
                         "name" : "Power & Vanilla Coconut Protein Bar (Pack of 5)",
                         "essentialFeatures" : "Preservative-free. No added sweeteners. Vegan.",
@@ -4153,7 +4153,7 @@ paths:
                             "href" : "https://yourshop.api.urn/http:/your.image.hoster.com/randomimage.png"
                           },
                           "variation-product" : {
-                            "href" : "https://yourshop.api.urn/api/products/a0305115-67dc-46fe-aa7f-e51864594643"
+                            "href" : "https://yourshop.api.urn/api/products/16568f1e-c1de-426d-a3c0-33ca63d788be"
                           }
                         }
                       },
@@ -4383,7 +4383,7 @@ paths:
                     "paymentNote" : "Please transfer the money using the reference ABC123XYZ to the bank account IBAN!",
                     "externalPaymentId" : null,
                     "externalPaymentUri" : null,
-                    "entryDate" : "2019-03-04T08:51:39.892",
+                    "entryDate" : "2019-03-06T14:16:25.408",
                     "totalReceived" : {
                       "currency" : "EUR",
                       "amount" : 0
@@ -4401,31 +4401,31 @@ paths:
                     "salesChannel" : "Storefront",
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/orders/08f549aa-ff88-497d-bff0-50b5a6298ebd"
+                        "href" : "https://yourshop.api.urn/orders/ddf51eae-7a1c-481e-819c-e1fe0a091774"
                       },
                       "order" : {
-                        "href" : "https://yourshop.api.urn/orders/08f549aa-ff88-497d-bff0-50b5a6298ebd"
+                        "href" : "https://yourshop.api.urn/orders/ddf51eae-7a1c-481e-819c-e1fe0a091774"
                       },
                       "order-note" : {
-                        "href" : "https://yourshop.api.urn/orders/08f549aa-ff88-497d-bff0-50b5a6298ebd/order-note"
+                        "href" : "https://yourshop.api.urn/orders/ddf51eae-7a1c-481e-819c-e1fe0a091774/order-note"
                       },
                       "processes" : {
-                        "href" : "https://yourshop.api.urn/orders/08f549aa-ff88-497d-bff0-50b5a6298ebd/processes"
+                        "href" : "https://yourshop.api.urn/orders/ddf51eae-7a1c-481e-819c-e1fe0a091774/processes"
                       },
                       "events" : {
-                        "href" : "https://yourshop.api.urn/orders/08f549aa-ff88-497d-bff0-50b5a6298ebd/events"
+                        "href" : "https://yourshop.api.urn/orders/ddf51eae-7a1c-481e-819c-e1fe0a091774/events"
                       },
                       "cancel" : {
-                        "href" : "https://yourshop.api.urn/orders/08f549aa-ff88-497d-bff0-50b5a6298ebd/cancel"
+                        "href" : "https://yourshop.api.urn/orders/ddf51eae-7a1c-481e-819c-e1fe0a091774/cancel"
                       },
                       "create-invoice" : {
-                        "href" : "https://yourshop.api.urn/orders/08f549aa-ff88-497d-bff0-50b5a6298ebd/create-invoice"
-                      },
-                      "terms-and-conditions-pdf" : {
-                        "href" : "https://yourshop.api.urn/pdf-storage/attachments/terms-and-conditions.pdf?hash=238734684735643875634578213"
+                        "href" : "https://yourshop.api.urn/orders/ddf51eae-7a1c-481e-819c-e1fe0a091774/create-invoice"
                       },
                       "right-of-withdrawal-pdf" : {
                         "href" : "https://yourshop.api.urn/pdf-storage/attachments/right-of-withdrawal.pdf?hash=647563475863487"
+                      },
+                      "terms-and-conditions-pdf" : {
+                        "href" : "https://yourshop.api.urn/pdf-storage/attachments/terms-and-conditions.pdf?hash=238734684735643875634578213"
                       }
                     }
                   } ]
@@ -4443,7 +4443,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-tags-1206450827'
+            $ref: '#/definitions/shop_attributes-1206450827'
       security:
       - oauth2_accessCode:
         - ordr:r
@@ -4470,18 +4470,18 @@ paths:
           examples:
             application/hal+json: |-
               {
-                "_id" : "50d5c410-711e-461d-b4cf-0a23005ef298",
-                "createdAt" : "2019-03-04T08:51:39.385",
-                "cartId" : "a3cf5e14-6fec-4c22-878a-0df58e406017",
+                "_id" : "078aa565-7afc-4088-8e4d-dac1f99e8779",
+                "createdAt" : "2019-03-06T14:16:24.806",
+                "cartId" : "5cce203c-e3df-442e-9d66-2b893270f357",
                 "currency" : "EUR",
                 "taxModel" : "GROSS",
                 "taxable" : false,
                 "testOrder" : false,
                 "termsAndConditionsExplicitlyAccepted" : false,
                 "productLineItems" : [ {
-                  "_id" : "1295aa44-aa3f-48ad-a5d0-720ec899e874",
+                  "_id" : "1132b882-3de2-4921-833e-64f8060e6da5",
                   "product" : {
-                    "_id" : "238c1f30-7596-4539-91e2-243b74f8b80b",
+                    "_id" : "b3e92dcb-ab3b-4bf0-bc5d-8a80c65adecc",
                     "sku" : "vino020",
                     "name" : "Rioja Castillo de Puerto (2013)",
                     "essentialFeatures" : "Dry. 12% alcohol. Best vine variety.",
@@ -4557,9 +4557,9 @@ paths:
                     }
                   }
                 }, {
-                  "_id" : "f1918029-32c5-4444-8a61-7796fd0def6b",
+                  "_id" : "ca0228ba-c3c8-452a-85eb-6c4251e82ca7",
                   "product" : {
-                    "_id" : "f955967e-6578-46f1-a587-f8e9dae950a4",
+                    "_id" : "b272e9b9-488f-4d5d-83c4-cc1fa53593d4",
                     "sku" : "EB001",
                     "name" : "Power & Vanilla Coconut Protein Bar (Pack of 5)",
                     "essentialFeatures" : "Preservative-free. No added sweeteners. Vegan.",
@@ -4577,7 +4577,7 @@ paths:
                         "href" : "https://yourshop.api.urn/http:/your.image.hoster.com/randomimage.png"
                       },
                       "variation-product" : {
-                        "href" : "https://yourshop.api.urn/api/products/15075442-beb1-4f33-8ee6-d3ce400ef585"
+                        "href" : "https://yourshop.api.urn/api/products/dde2b27f-f5cf-455b-b0b2-656950cd9b09"
                       }
                     }
                   },
@@ -4807,7 +4807,7 @@ paths:
                 "paymentNote" : "Please transfer the money using the reference ABC123XYZ to the bank account IBAN!",
                 "externalPaymentId" : null,
                 "externalPaymentUri" : null,
-                "entryDate" : "2019-03-04T08:51:39.381",
+                "entryDate" : "2019-03-06T14:16:24.8",
                 "totalReceived" : {
                   "currency" : "EUR",
                   "amount" : 0
@@ -4826,25 +4826,25 @@ paths:
                 "backgroundJobs" : [ ],
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/orders/50d5c410-711e-461d-b4cf-0a23005ef298"
+                    "href" : "https://yourshop.api.urn/orders/078aa565-7afc-4088-8e4d-dac1f99e8779"
                   },
                   "order" : {
-                    "href" : "https://yourshop.api.urn/orders/50d5c410-711e-461d-b4cf-0a23005ef298"
+                    "href" : "https://yourshop.api.urn/orders/078aa565-7afc-4088-8e4d-dac1f99e8779"
                   },
                   "order-note" : {
-                    "href" : "https://yourshop.api.urn/orders/50d5c410-711e-461d-b4cf-0a23005ef298/order-note"
+                    "href" : "https://yourshop.api.urn/orders/078aa565-7afc-4088-8e4d-dac1f99e8779/order-note"
                   },
                   "processes" : {
-                    "href" : "https://yourshop.api.urn/orders/50d5c410-711e-461d-b4cf-0a23005ef298/processes"
+                    "href" : "https://yourshop.api.urn/orders/078aa565-7afc-4088-8e4d-dac1f99e8779/processes"
                   },
                   "events" : {
-                    "href" : "https://yourshop.api.urn/orders/50d5c410-711e-461d-b4cf-0a23005ef298/events"
+                    "href" : "https://yourshop.api.urn/orders/078aa565-7afc-4088-8e4d-dac1f99e8779/events"
                   },
                   "cancel" : {
-                    "href" : "https://yourshop.api.urn/orders/50d5c410-711e-461d-b4cf-0a23005ef298/cancel"
+                    "href" : "https://yourshop.api.urn/orders/078aa565-7afc-4088-8e4d-dac1f99e8779/cancel"
                   },
                   "create-invoice" : {
-                    "href" : "https://yourshop.api.urn/orders/50d5c410-711e-461d-b4cf-0a23005ef298/create-invoice"
+                    "href" : "https://yourshop.api.urn/orders/078aa565-7afc-4088-8e4d-dac1f99e8779/create-invoice"
                   },
                   "terms-and-conditions-pdf" : {
                     "href" : "https://yourshop.api.urn/pdf-storage/attachments/terms-and-conditions.pdf?hash=238734684735643875634578213"
@@ -4855,7 +4855,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/orders_order-id1624691353'
+            $ref: '#/definitions/orders_order-id-853166963'
       security:
       - oauth2_accessCode:
         - ordr:r
@@ -4877,18 +4877,99 @@ paths:
           examples:
             application/hal+json: |-
               {
-                "_id" : "2ef61dce-a3da-40b7-90bb-e2648cb42625",
-                "createdAt" : "2019-03-04T08:51:35.209",
-                "cartId" : "caaab150-54e1-4715-a90a-99290b63c0d9",
+                "_id" : "1e51c759-17e0-44e3-91e2-ba8e519402e5",
+                "createdAt" : "2019-03-06T14:16:22.331",
+                "cartId" : "ac072703-b3d3-40a7-b9b1-13995a90f4ee",
                 "currency" : "EUR",
                 "taxModel" : "GROSS",
                 "taxable" : false,
                 "testOrder" : false,
                 "termsAndConditionsExplicitlyAccepted" : false,
                 "productLineItems" : [ {
-                  "_id" : "b09b1760-437e-4763-a210-11db5f40911d",
+                  "_id" : "c6705302-3193-48d8-9735-5193676a752f",
                   "product" : {
-                    "_id" : "29589bba-4e98-42cf-8d21-1319c3da2a97",
+                    "_id" : "93820663-dde1-41dd-81e6-97371d9a15ef",
+                    "sku" : "EB001",
+                    "name" : "Power & Vanilla Coconut Protein Bar (Pack of 5)",
+                    "essentialFeatures" : "Preservative-free. No added sweeteners. Vegan.",
+                    "shippingWeight" : 190,
+                    "defaultImageDataUri" : "http://your.image.hoster.com/randomimage.png",
+                    "variationAttributeValues" : [ {
+                      "displayName" : "color",
+                      "value" : "green"
+                    }, {
+                      "displayName" : "size",
+                      "value" : "big"
+                    } ],
+                    "_links" : {
+                      "default-image-data" : {
+                        "href" : "https://yourshop.api.urn/http:/your.image.hoster.com/randomimage.png"
+                      },
+                      "variation-product" : {
+                        "href" : "https://yourshop.api.urn/api/products/3388219f-534e-4a97-a9d3-16a7118210d1"
+                      }
+                    }
+                  },
+                  "quantity" : 5,
+                  "initialQuantity" : 5,
+                  "unitPrice" : {
+                    "taxModel" : "GROSS",
+                    "currency" : "EUR",
+                    "amount" : 9.99
+                  },
+                  "lineItemPrice" : {
+                    "taxModel" : "GROSS",
+                    "currency" : "EUR",
+                    "amount" : 49.95
+                  },
+                  "initialLineItemPrice" : {
+                    "taxModel" : "GROSS",
+                    "currency" : "EUR",
+                    "amount" : 49.95
+                  },
+                  "lineItemTax" : {
+                    "taxClass" : "REGULAR",
+                    "taxRate" : 0.19,
+                    "currency" : "EUR",
+                    "amount" : 7.9743
+                  },
+                  "unshipped" : {
+                    "quantity" : 5,
+                    "amount" : null
+                  },
+                  "shipped" : {
+                    "quantity" : 0,
+                    "amount" : null
+                  },
+                  "pending" : {
+                    "quantity" : 0,
+                    "amount" : null
+                  },
+                  "returned" : {
+                    "quantity" : 0,
+                    "amount" : {
+                      "currency" : "EUR",
+                      "amount" : 0
+                    }
+                  },
+                  "broken" : {
+                    "quantity" : 0,
+                    "amount" : {
+                      "currency" : "EUR",
+                      "amount" : 0
+                    }
+                  },
+                  "canceled" : {
+                    "quantity" : 0,
+                    "amount" : {
+                      "currency" : "EUR",
+                      "amount" : 0
+                    }
+                  }
+                }, {
+                  "_id" : "e1a20377-aa92-4ee4-8564-6172e94ab937",
+                  "product" : {
+                    "_id" : "8f265897-b353-483f-b785-cbd80695d4ae",
                     "sku" : "vino020",
                     "name" : "Rioja Castillo de Puerto (2013)",
                     "essentialFeatures" : "Dry. 12% alcohol. Best vine variety.",
@@ -4932,87 +5013,6 @@ paths:
                   },
                   "unshipped" : {
                     "quantity" : 3,
-                    "amount" : null
-                  },
-                  "shipped" : {
-                    "quantity" : 0,
-                    "amount" : null
-                  },
-                  "pending" : {
-                    "quantity" : 0,
-                    "amount" : null
-                  },
-                  "returned" : {
-                    "quantity" : 0,
-                    "amount" : {
-                      "currency" : "EUR",
-                      "amount" : 0
-                    }
-                  },
-                  "broken" : {
-                    "quantity" : 0,
-                    "amount" : {
-                      "currency" : "EUR",
-                      "amount" : 0
-                    }
-                  },
-                  "canceled" : {
-                    "quantity" : 0,
-                    "amount" : {
-                      "currency" : "EUR",
-                      "amount" : 0
-                    }
-                  }
-                }, {
-                  "_id" : "fb6b4cb5-b00e-44df-9883-916ad84ba553",
-                  "product" : {
-                    "_id" : "d01eeb92-fbbc-45f8-ad27-198f8c9fc081",
-                    "sku" : "EB001",
-                    "name" : "Power & Vanilla Coconut Protein Bar (Pack of 5)",
-                    "essentialFeatures" : "Preservative-free. No added sweeteners. Vegan.",
-                    "shippingWeight" : 190,
-                    "defaultImageDataUri" : "http://your.image.hoster.com/randomimage.png",
-                    "variationAttributeValues" : [ {
-                      "displayName" : "color",
-                      "value" : "green"
-                    }, {
-                      "displayName" : "size",
-                      "value" : "big"
-                    } ],
-                    "_links" : {
-                      "default-image-data" : {
-                        "href" : "https://yourshop.api.urn/http:/your.image.hoster.com/randomimage.png"
-                      },
-                      "variation-product" : {
-                        "href" : "https://yourshop.api.urn/api/products/ab82d11c-0d26-4aca-a227-f81bfbb38af7"
-                      }
-                    }
-                  },
-                  "quantity" : 5,
-                  "initialQuantity" : 5,
-                  "unitPrice" : {
-                    "taxModel" : "GROSS",
-                    "currency" : "EUR",
-                    "amount" : 9.99
-                  },
-                  "lineItemPrice" : {
-                    "taxModel" : "GROSS",
-                    "currency" : "EUR",
-                    "amount" : 49.95
-                  },
-                  "initialLineItemPrice" : {
-                    "taxModel" : "GROSS",
-                    "currency" : "EUR",
-                    "amount" : 49.95
-                  },
-                  "lineItemTax" : {
-                    "taxClass" : "REGULAR",
-                    "taxRate" : 0.19,
-                    "currency" : "EUR",
-                    "amount" : 7.9743
-                  },
-                  "unshipped" : {
-                    "quantity" : 5,
                     "amount" : null
                   },
                   "shipped" : {
@@ -5214,7 +5214,7 @@ paths:
                 "paymentNote" : "Please transfer the money using the reference ABC123XYZ to the bank account IBAN!",
                 "externalPaymentId" : null,
                 "externalPaymentUri" : null,
-                "entryDate" : "2019-03-04T08:51:35.198",
+                "entryDate" : "2019-03-06T14:16:22.326",
                 "totalReceived" : {
                   "currency" : "EUR",
                   "amount" : 0
@@ -5233,25 +5233,25 @@ paths:
                 "backgroundJobs" : [ ],
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/orders/2ef61dce-a3da-40b7-90bb-e2648cb42625"
+                    "href" : "https://yourshop.api.urn/orders/1e51c759-17e0-44e3-91e2-ba8e519402e5"
                   },
                   "order" : {
-                    "href" : "https://yourshop.api.urn/orders/2ef61dce-a3da-40b7-90bb-e2648cb42625"
+                    "href" : "https://yourshop.api.urn/orders/1e51c759-17e0-44e3-91e2-ba8e519402e5"
                   },
                   "order-note" : {
-                    "href" : "https://yourshop.api.urn/orders/2ef61dce-a3da-40b7-90bb-e2648cb42625/order-note"
+                    "href" : "https://yourshop.api.urn/orders/1e51c759-17e0-44e3-91e2-ba8e519402e5/order-note"
                   },
                   "processes" : {
-                    "href" : "https://yourshop.api.urn/orders/2ef61dce-a3da-40b7-90bb-e2648cb42625/processes"
+                    "href" : "https://yourshop.api.urn/orders/1e51c759-17e0-44e3-91e2-ba8e519402e5/processes"
                   },
                   "events" : {
-                    "href" : "https://yourshop.api.urn/orders/2ef61dce-a3da-40b7-90bb-e2648cb42625/events"
+                    "href" : "https://yourshop.api.urn/orders/1e51c759-17e0-44e3-91e2-ba8e519402e5/events"
                   },
                   "cancel" : {
-                    "href" : "https://yourshop.api.urn/orders/2ef61dce-a3da-40b7-90bb-e2648cb42625/cancel"
+                    "href" : "https://yourshop.api.urn/orders/1e51c759-17e0-44e3-91e2-ba8e519402e5/cancel"
                   },
                   "create-invoice" : {
-                    "href" : "https://yourshop.api.urn/orders/2ef61dce-a3da-40b7-90bb-e2648cb42625/create-invoice"
+                    "href" : "https://yourshop.api.urn/orders/1e51c759-17e0-44e3-91e2-ba8e519402e5/create-invoice"
                   },
                   "right-of-withdrawal-pdf" : {
                     "href" : "https://yourshop.api.urn/pdf-storage/attachments/right-of-withdrawal.pdf?hash=647563475863487"
@@ -5287,18 +5287,18 @@ paths:
           examples:
             application/hal+json: |-
               {
-                "_id" : "21cf4cbc-ae85-4160-a231-86861dc00682",
-                "createdAt" : "2019-03-04T08:51:38.865",
-                "cartId" : "1504666f-4405-4968-97d7-283127c96cfd",
+                "_id" : "98e4d9a7-03ba-429d-a7f7-9f6aa94c76cf",
+                "createdAt" : "2019-03-06T14:16:24.323",
+                "cartId" : "1961df43-554a-457c-82ec-5d05157fdc29",
                 "currency" : "EUR",
                 "taxModel" : "GROSS",
                 "taxable" : false,
                 "testOrder" : false,
                 "termsAndConditionsExplicitlyAccepted" : false,
                 "productLineItems" : [ {
-                  "_id" : "b68b9a97-3da6-4318-898d-da9c7b2010b1",
+                  "_id" : "ca8c5abc-5a85-4c77-9948-216f71088088",
                   "product" : {
-                    "_id" : "fe506107-998e-4636-b175-cb60fcd51f26",
+                    "_id" : "44f31934-d18e-4c55-a082-35459940ce8b",
                     "sku" : "vino020",
                     "name" : "Rioja Castillo de Puerto (2013)",
                     "essentialFeatures" : "Dry. 12% alcohol. Best vine variety.",
@@ -5374,9 +5374,9 @@ paths:
                     }
                   }
                 }, {
-                  "_id" : "f63ae97f-abe5-4af4-a068-e3141eb94988",
+                  "_id" : "f7e301f0-d4aa-43e1-8348-52b36f981d36",
                   "product" : {
-                    "_id" : "aae62eaa-e5fc-4da9-9345-0c90ac3f330f",
+                    "_id" : "3bb9ddc0-4db7-455f-b516-b36bb8a43030",
                     "sku" : "EB001",
                     "name" : "Power & Vanilla Coconut Protein Bar (Pack of 5)",
                     "essentialFeatures" : "Preservative-free. No added sweeteners. Vegan.",
@@ -5394,7 +5394,7 @@ paths:
                         "href" : "https://yourshop.api.urn/http:/your.image.hoster.com/randomimage.png"
                       },
                       "variation-product" : {
-                        "href" : "https://yourshop.api.urn/api/products/f8a166d0-ac16-4c0b-aba8-380b67f0c809"
+                        "href" : "https://yourshop.api.urn/api/products/e63ed7b3-be55-47d9-a821-0c2de4fb8e4b"
                       }
                     }
                   },
@@ -5624,7 +5624,7 @@ paths:
                 "paymentNote" : "Please transfer the money using the reference ABC123XYZ to the bank account IBAN!",
                 "externalPaymentId" : null,
                 "externalPaymentUri" : null,
-                "entryDate" : "2019-03-04T08:51:38.855",
+                "entryDate" : "2019-03-06T14:16:24.317",
                 "totalReceived" : {
                   "currency" : "EUR",
                   "amount" : 0
@@ -5643,34 +5643,34 @@ paths:
                 "backgroundJobs" : [ ],
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/orders/21cf4cbc-ae85-4160-a231-86861dc00682"
+                    "href" : "https://yourshop.api.urn/orders/98e4d9a7-03ba-429d-a7f7-9f6aa94c76cf"
                   },
                   "order" : {
-                    "href" : "https://yourshop.api.urn/orders/21cf4cbc-ae85-4160-a231-86861dc00682"
+                    "href" : "https://yourshop.api.urn/orders/98e4d9a7-03ba-429d-a7f7-9f6aa94c76cf"
                   },
                   "order-note" : {
-                    "href" : "https://yourshop.api.urn/orders/21cf4cbc-ae85-4160-a231-86861dc00682/order-note"
+                    "href" : "https://yourshop.api.urn/orders/98e4d9a7-03ba-429d-a7f7-9f6aa94c76cf/order-note"
                   },
                   "processes" : {
-                    "href" : "https://yourshop.api.urn/orders/21cf4cbc-ae85-4160-a231-86861dc00682/processes"
+                    "href" : "https://yourshop.api.urn/orders/98e4d9a7-03ba-429d-a7f7-9f6aa94c76cf/processes"
                   },
                   "events" : {
-                    "href" : "https://yourshop.api.urn/orders/21cf4cbc-ae85-4160-a231-86861dc00682/events"
+                    "href" : "https://yourshop.api.urn/orders/98e4d9a7-03ba-429d-a7f7-9f6aa94c76cf/events"
                   },
                   "cancel" : {
-                    "href" : "https://yourshop.api.urn/orders/21cf4cbc-ae85-4160-a231-86861dc00682/cancel"
+                    "href" : "https://yourshop.api.urn/orders/98e4d9a7-03ba-429d-a7f7-9f6aa94c76cf/cancel"
                   },
                   "invoice-pdf" : {
                     "href" : "https://yourshop.api.urn/api/pdf-storage/attachments/invoice-10003.pdf?hash=9e5e2631c6f5877d64cb3d40db46ec6eb48a3a92"
                   },
                   "send-invoice" : {
-                    "href" : "https://yourshop.api.urn/orders/21cf4cbc-ae85-4160-a231-86861dc00682/send-invoice"
-                  },
-                  "terms-and-conditions-pdf" : {
-                    "href" : "https://yourshop.api.urn/pdf-storage/attachments/terms-and-conditions.pdf?hash=238734684735643875634578213"
+                    "href" : "https://yourshop.api.urn/orders/98e4d9a7-03ba-429d-a7f7-9f6aa94c76cf/send-invoice"
                   },
                   "right-of-withdrawal-pdf" : {
                     "href" : "https://yourshop.api.urn/pdf-storage/attachments/right-of-withdrawal.pdf?hash=647563475863487"
+                  },
+                  "terms-and-conditions-pdf" : {
+                    "href" : "https://yourshop.api.urn/pdf-storage/attachments/terms-and-conditions.pdf?hash=238734684735643875634578213"
                   }
                 }
               }
@@ -5738,18 +5738,18 @@ paths:
           examples:
             application/hal+json: |-
               {
-                "_id" : "e5173830-5e4d-4de0-a8fe-4f9c24c7bbe1",
-                "createdAt" : "2019-03-04T08:51:36.296",
-                "cartId" : "3d683ea3-4cc3-405a-9560-4528c8a9a371",
+                "_id" : "5a62497c-e55a-49bc-8257-f169408abbb4",
+                "createdAt" : "2019-03-06T14:16:22.848",
+                "cartId" : "9df49c46-7cc8-4325-a79c-a0640354285c",
                 "currency" : "EUR",
                 "taxModel" : "GROSS",
                 "taxable" : false,
                 "testOrder" : false,
                 "termsAndConditionsExplicitlyAccepted" : false,
                 "productLineItems" : [ {
-                  "_id" : "74276d4d-c109-4931-90f3-ab58aa47c5c3",
+                  "_id" : "2bf6c839-5304-411b-9b79-82309118e043",
                   "product" : {
-                    "_id" : "5d48d4ef-7a44-49ea-9bf4-6289beee7b04",
+                    "_id" : "c49272d5-529d-4715-9543-233588304fa9",
                     "sku" : "EB001",
                     "name" : "Power & Vanilla Coconut Protein Bar (Pack of 5)",
                     "essentialFeatures" : "Preservative-free. No added sweeteners. Vegan.",
@@ -5767,7 +5767,7 @@ paths:
                         "href" : "https://yourshop.api.urn/http:/your.image.hoster.com/randomimage.png"
                       },
                       "variation-product" : {
-                        "href" : "https://yourshop.api.urn/api/products/2a5b25f7-1ec0-4a9c-9e16-218872267511"
+                        "href" : "https://yourshop.api.urn/api/products/5d74d252-97de-482a-b07b-83666dfe9444"
                       }
                     }
                   },
@@ -5828,9 +5828,9 @@ paths:
                     }
                   }
                 }, {
-                  "_id" : "992768a5-8641-403a-8198-a272507b72b6",
+                  "_id" : "86a7a555-e587-457b-a683-8b00467ead6c",
                   "product" : {
-                    "_id" : "7598a96d-01b4-40eb-85e8-b2c145d40731",
+                    "_id" : "e599c64b-8f05-44a1-8dce-7cb043949ecf",
                     "sku" : "vino020",
                     "name" : "Rioja Castillo de Puerto (2013)",
                     "essentialFeatures" : "Dry. 12% alcohol. Best vine variety.",
@@ -6075,7 +6075,7 @@ paths:
                 "paymentNote" : "Please transfer the money using the reference ABC123XYZ to the bank account IBAN!",
                 "externalPaymentId" : null,
                 "externalPaymentUri" : null,
-                "entryDate" : "2019-03-04T08:51:36.287",
+                "entryDate" : "2019-03-06T14:16:22.84",
                 "totalReceived" : {
                   "currency" : "EUR",
                   "amount" : 0
@@ -6094,28 +6094,28 @@ paths:
                 "backgroundJobs" : [ "render-invoice-correction-pdf" ],
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/orders/e5173830-5e4d-4de0-a8fe-4f9c24c7bbe1"
+                    "href" : "https://yourshop.api.urn/orders/5a62497c-e55a-49bc-8257-f169408abbb4"
                   },
                   "order" : {
-                    "href" : "https://yourshop.api.urn/orders/e5173830-5e4d-4de0-a8fe-4f9c24c7bbe1"
+                    "href" : "https://yourshop.api.urn/orders/5a62497c-e55a-49bc-8257-f169408abbb4"
                   },
                   "order-note" : {
-                    "href" : "https://yourshop.api.urn/orders/e5173830-5e4d-4de0-a8fe-4f9c24c7bbe1/order-note"
+                    "href" : "https://yourshop.api.urn/orders/5a62497c-e55a-49bc-8257-f169408abbb4/order-note"
                   },
                   "processes" : {
-                    "href" : "https://yourshop.api.urn/orders/e5173830-5e4d-4de0-a8fe-4f9c24c7bbe1/processes"
+                    "href" : "https://yourshop.api.urn/orders/5a62497c-e55a-49bc-8257-f169408abbb4/processes"
                   },
                   "events" : {
-                    "href" : "https://yourshop.api.urn/orders/e5173830-5e4d-4de0-a8fe-4f9c24c7bbe1/events"
+                    "href" : "https://yourshop.api.urn/orders/5a62497c-e55a-49bc-8257-f169408abbb4/events"
                   },
                   "cancel" : {
-                    "href" : "https://yourshop.api.urn/orders/e5173830-5e4d-4de0-a8fe-4f9c24c7bbe1/cancel"
+                    "href" : "https://yourshop.api.urn/orders/5a62497c-e55a-49bc-8257-f169408abbb4/cancel"
                   },
                   "invoice-pdf" : {
                     "href" : "https://yourshop.api.urn/api/pdf-storage/attachments/invoice-10003.pdf?hash=9e5e2631c6f5877d64cb3d40db46ec6eb48a3a92"
                   },
                   "send-invoice" : {
-                    "href" : "https://yourshop.api.urn/orders/e5173830-5e4d-4de0-a8fe-4f9c24c7bbe1/send-invoice"
+                    "href" : "https://yourshop.api.urn/orders/5a62497c-e55a-49bc-8257-f169408abbb4/send-invoice"
                   },
                   "terms-and-conditions-pdf" : {
                     "href" : "https://yourshop.api.urn/pdf-storage/attachments/terms-and-conditions.pdf?hash=238734684735643875634578213"
@@ -6151,18 +6151,18 @@ paths:
           examples:
             application/hal+json: |-
               {
-                "_id" : "5ac2047e-dc2c-4715-816e-eedf35c644d0",
-                "createdAt" : "2019-03-04T08:51:42.485",
-                "cartId" : "6932d89b-68b8-4d6a-ade4-376ecfa8f52c",
+                "_id" : "17a9fe4b-1635-4f2c-ae6b-12da580e1733",
+                "createdAt" : "2019-03-06T14:16:27.291",
+                "cartId" : "325996af-2a65-401e-b934-f0d7a681aa4a",
                 "currency" : "EUR",
                 "taxModel" : "GROSS",
                 "taxable" : false,
                 "testOrder" : false,
                 "termsAndConditionsExplicitlyAccepted" : false,
                 "productLineItems" : [ {
-                  "_id" : "9a36c087-2afd-4d1a-aa91-bf7e61ee977f",
+                  "_id" : "a293ba78-892f-4770-8224-7a9360552100",
                   "product" : {
-                    "_id" : "3bc36ee8-0c8c-48e0-8de7-d84c5bb083dc",
+                    "_id" : "a65e4a61-5d41-4074-bd1b-6086071d129a",
                     "sku" : "EB001",
                     "name" : "Power & Vanilla Coconut Protein Bar (Pack of 5)",
                     "essentialFeatures" : "Preservative-free. No added sweeteners. Vegan.",
@@ -6180,7 +6180,7 @@ paths:
                         "href" : "https://yourshop.api.urn/http:/your.image.hoster.com/randomimage.png"
                       },
                       "variation-product" : {
-                        "href" : "https://yourshop.api.urn/api/products/9db25065-c69c-49f5-9eae-95708e63f851"
+                        "href" : "https://yourshop.api.urn/api/products/ae9d9ecf-02ee-493e-a478-258ad4360f6d"
                       }
                     }
                   },
@@ -6241,9 +6241,9 @@ paths:
                     }
                   }
                 }, {
-                  "_id" : "ab02e968-fa1c-4301-a0c9-1a9a2fca8267",
+                  "_id" : "dba61157-7504-4777-a0ab-65fb0aae69e6",
                   "product" : {
-                    "_id" : "77cacef1-d579-4f6e-8394-6d674c95fe35",
+                    "_id" : "9d7de53e-4012-4768-a93c-5926b9b59b6a",
                     "sku" : "vino020",
                     "name" : "Rioja Castillo de Puerto (2013)",
                     "essentialFeatures" : "Dry. 12% alcohol. Best vine variety.",
@@ -6488,7 +6488,7 @@ paths:
                 "paymentNote" : "Please transfer the money using the reference ABC123XYZ to the bank account IBAN!",
                 "externalPaymentId" : null,
                 "externalPaymentUri" : null,
-                "entryDate" : "2019-03-04T08:51:42.475",
+                "entryDate" : "2019-03-06T14:16:27.284",
                 "totalReceived" : {
                   "currency" : "EUR",
                   "amount" : 0
@@ -6507,25 +6507,25 @@ paths:
                 "backgroundJobs" : [ "render-invoice-pdf" ],
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/orders/5ac2047e-dc2c-4715-816e-eedf35c644d0"
+                    "href" : "https://yourshop.api.urn/orders/17a9fe4b-1635-4f2c-ae6b-12da580e1733"
                   },
                   "order" : {
-                    "href" : "https://yourshop.api.urn/orders/5ac2047e-dc2c-4715-816e-eedf35c644d0"
+                    "href" : "https://yourshop.api.urn/orders/17a9fe4b-1635-4f2c-ae6b-12da580e1733"
                   },
                   "order-note" : {
-                    "href" : "https://yourshop.api.urn/orders/5ac2047e-dc2c-4715-816e-eedf35c644d0/order-note"
+                    "href" : "https://yourshop.api.urn/orders/17a9fe4b-1635-4f2c-ae6b-12da580e1733/order-note"
                   },
                   "processes" : {
-                    "href" : "https://yourshop.api.urn/orders/5ac2047e-dc2c-4715-816e-eedf35c644d0/processes"
+                    "href" : "https://yourshop.api.urn/orders/17a9fe4b-1635-4f2c-ae6b-12da580e1733/processes"
                   },
                   "events" : {
-                    "href" : "https://yourshop.api.urn/orders/5ac2047e-dc2c-4715-816e-eedf35c644d0/events"
+                    "href" : "https://yourshop.api.urn/orders/17a9fe4b-1635-4f2c-ae6b-12da580e1733/events"
                   },
                   "cancel" : {
-                    "href" : "https://yourshop.api.urn/orders/5ac2047e-dc2c-4715-816e-eedf35c644d0/cancel"
+                    "href" : "https://yourshop.api.urn/orders/17a9fe4b-1635-4f2c-ae6b-12da580e1733/cancel"
                   },
                   "retry-create-invoice" : {
-                    "href" : "https://yourshop.api.urn/orders/5ac2047e-dc2c-4715-816e-eedf35c644d0/create-invoice"
+                    "href" : "https://yourshop.api.urn/orders/17a9fe4b-1635-4f2c-ae6b-12da580e1733/create-invoice"
                   },
                   "right-of-withdrawal-pdf" : {
                     "href" : "https://yourshop.api.urn/pdf-storage/attachments/right-of-withdrawal.pdf?hash=647563475863487"
@@ -6566,73 +6566,73 @@ paths:
                   "order-events" : [ {
                     "triggeredBy" : "user",
                     "comment" : "comment",
-                    "createdAt" : "2019-03-04T08:49:35.049",
+                    "createdAt" : "2019-03-06T14:14:37.343",
                     "details" : {
-                      "paymentProcessId" : "df8e528f-9f67-4ec9-927b-36ef4d22893a",
+                      "paymentProcessId" : "42f12277-e64e-4f97-a876-1347804dfb83",
                       "type" : "payment-voided"
                     },
                     "_links" : {
                       "payment-process" : {
-                        "href" : "https://yourshop.api.urn/orders/82f147c0-ae82-4b66-99d4-d7031280a3c0/processes/payments/df8e528f-9f67-4ec9-927b-36ef4d22893a"
+                        "href" : "https://yourshop.api.urn/orders/f1dbdc6f-5eeb-456a-9ce4-61857c886773/processes/payments/42f12277-e64e-4f97-a876-1347804dfb83"
                       }
                     }
                   }, {
                     "triggeredBy" : null,
                     "comment" : null,
-                    "createdAt" : "2019-03-04T08:49:34.879",
+                    "createdAt" : "2019-03-06T14:14:37.274",
                     "details" : {
                       "amount" : {
                         "currency" : "EUR",
                         "amount" : 0
                       },
                       "paymentId" : null,
-                      "paymentProcessId" : "df8e528f-9f67-4ec9-927b-36ef4d22893a",
+                      "paymentProcessId" : "42f12277-e64e-4f97-a876-1347804dfb83",
                       "type" : "payment-created"
                     },
                     "_links" : {
                       "payment-process" : {
-                        "href" : "https://yourshop.api.urn/orders/82f147c0-ae82-4b66-99d4-d7031280a3c0/processes/payments/df8e528f-9f67-4ec9-927b-36ef4d22893a"
+                        "href" : "https://yourshop.api.urn/orders/f1dbdc6f-5eeb-456a-9ce4-61857c886773/processes/payments/42f12277-e64e-4f97-a876-1347804dfb83"
                       }
                     }
                   }, {
                     "triggeredBy" : "user",
                     "comment" : "customer transfer",
-                    "createdAt" : "2019-03-04T08:49:34.604",
+                    "createdAt" : "2019-03-06T14:14:37.081",
                     "details" : {
                       "amount" : {
                         "currency" : "EUR",
                         "amount" : 77.44
                       },
-                      "paymentProcessId" : "71ea4d75-7264-45e5-943c-ddafc6b38fba",
+                      "paymentProcessId" : "236a7d83-159f-4dde-a67c-ae3891bd826f",
                       "type" : "payment-paid"
                     },
                     "_links" : {
                       "payment-process" : {
-                        "href" : "https://yourshop.api.urn/orders/82f147c0-ae82-4b66-99d4-d7031280a3c0/processes/payments/71ea4d75-7264-45e5-943c-ddafc6b38fba"
+                        "href" : "https://yourshop.api.urn/orders/f1dbdc6f-5eeb-456a-9ce4-61857c886773/processes/payments/236a7d83-159f-4dde-a67c-ae3891bd826f"
                       }
                     }
                   }, {
                     "triggeredBy" : null,
                     "comment" : null,
-                    "createdAt" : "2019-03-04T08:49:34.262",
+                    "createdAt" : "2019-03-06T14:14:36.856",
                     "details" : {
                       "amount" : {
                         "currency" : "EUR",
                         "amount" : 77.44
                       },
                       "paymentId" : null,
-                      "paymentProcessId" : "71ea4d75-7264-45e5-943c-ddafc6b38fba",
+                      "paymentProcessId" : "236a7d83-159f-4dde-a67c-ae3891bd826f",
                       "type" : "payment-created"
                     },
                     "_links" : {
                       "payment-process" : {
-                        "href" : "https://yourshop.api.urn/orders/82f147c0-ae82-4b66-99d4-d7031280a3c0/processes/payments/71ea4d75-7264-45e5-943c-ddafc6b38fba"
+                        "href" : "https://yourshop.api.urn/orders/f1dbdc6f-5eeb-456a-9ce4-61857c886773/processes/payments/236a7d83-159f-4dde-a67c-ae3891bd826f"
                       }
                     }
                   }, {
                     "triggeredBy" : null,
                     "comment" : null,
-                    "createdAt" : "2019-03-04T08:49:34.102",
+                    "createdAt" : "2019-03-06T14:14:36.801",
                     "details" : {
                       "type" : "order-created"
                     }
@@ -6640,7 +6640,7 @@ paths:
                 },
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/orders/82f147c0-ae82-4b66-99d4-d7031280a3c0/events"
+                    "href" : "https://yourshop.api.urn/orders/f1dbdc6f-5eeb-456a-9ce4-61857c886773/events"
                   }
                 },
                 "page" : {
@@ -6651,7 +6651,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-tags-1206450827'
+            $ref: '#/definitions/shop_attributes-1206450827'
       security:
       - oauth2_accessCode:
         - orde:r
@@ -6690,7 +6690,7 @@ paths:
           examples:
             application/hal+json: |-
               {
-                "cartId" : "bc3dcc1e-cd43-4b30-9fea-6fe4d758a6bf",
+                "cartId" : "9131179c-03bd-439d-b75f-511ccf3207c4",
                 "currency" : "EUR",
                 "taxModel" : "GROSS",
                 "taxable" : false,
@@ -6715,7 +6715,7 @@ paths:
                     "amount" : 7.5
                   },
                   "product" : {
-                    "_id" : "e721c948-0c80-4709-90eb-5202f91da417",
+                    "_id" : "6dc88112-ccd0-43c8-8161-9cd9e682a4eb",
                     "sku" : "vino020",
                     "name" : "Rioja Castillo de Puerto (2013)",
                     "essentialFeatures" : "Dry. 12% alcohol. Best vine variety.",
@@ -6755,7 +6755,7 @@ paths:
                     "amount" : 49.95
                   },
                   "product" : {
-                    "_id" : "e3eb54b4-f9ca-4da2-9946-d57ce0f81dc2",
+                    "_id" : "a4d9f871-e2dd-4ce2-beb8-4f2d214ebf42",
                     "sku" : "EB001",
                     "name" : "Power & Vanilla Coconut Protein Bar (Pack of 5)",
                     "essentialFeatures" : "Preservative-free. No added sweeteners. Vegan.",
@@ -6768,7 +6768,7 @@ paths:
                       "displayName" : "size",
                       "value" : "big"
                     } ],
-                    "variationProductId" : "1b1ca1c9-ceba-40ab-b903-e69cb30ed66b"
+                    "variationProductId" : "12492bf0-c10f-4c8d-aa0f-9f1b8e59d3f5"
                   },
                   "lineItemTax" : {
                     "taxClass" : "REGULAR",
@@ -6947,11 +6947,11 @@ paths:
                 "externalPaymentUri" : null,
                 "invoicePdfUri" : null,
                 "invoiceCorrectionPdfUris" : [ ],
-                "entryDate" : "2019-03-04T08:51:40.319",
+                "entryDate" : "2019-03-06T14:16:25.7",
                 "marketingChannel" : "Google Shopping",
                 "marketingSubchannel" : "Some category",
                 "salesChannel" : "Storefront",
-                "createdAt" : "2019-03-04T08:51:40.329",
+                "createdAt" : "2019-03-06T14:16:25.705",
                 "shippingStatus" : "UNSHIPPED",
                 "totalReceived" : {
                   "currency" : "EUR",
@@ -6967,13 +6967,13 @@ paths:
                 },
                 "paymentStatus" : "PENDING",
                 "canceled" : false,
-                "_id" : "ee1ad7ac-a0b7-4f69-8217-e29e831a9d6d",
+                "_id" : "69905105-c918-421a-a4a5-43c88e1f5788",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/orders/ee1ad7ac-a0b7-4f69-8217-e29e831a9d6d"
+                    "href" : "https://yourshop.api.urn/orders/69905105-c918-421a-a4a5-43c88e1f5788"
                   },
                   "order" : {
-                    "href" : "https://yourshop.api.urn/orders/ee1ad7ac-a0b7-4f69-8217-e29e831a9d6d"
+                    "href" : "https://yourshop.api.urn/orders/69905105-c918-421a-a4a5-43c88e1f5788"
                   }
                 }
               }
@@ -7012,13 +7012,13 @@ paths:
                     },
                     "status" : "VOIDED",
                     "completed" : true,
-                    "_id" : "d570b699-354e-4a2b-88ba-7554d6044475",
+                    "_id" : "f0abcd8c-61e8-4c32-99da-faed8f603bd6",
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/orders/967b2bd7-980a-4543-b8e4-cedfed521256/processes/refunds/d570b699-354e-4a2b-88ba-7554d6044475"
+                        "href" : "https://yourshop.api.urn/orders/c125565c-8bfa-4061-acf2-64dc15e3bbf4/processes/refunds/f0abcd8c-61e8-4c32-99da-faed8f603bd6"
                       },
                       "refund-process" : {
-                        "href" : "https://yourshop.api.urn/orders/967b2bd7-980a-4543-b8e4-cedfed521256/processes/refunds/d570b699-354e-4a2b-88ba-7554d6044475"
+                        "href" : "https://yourshop.api.urn/orders/c125565c-8bfa-4061-acf2-64dc15e3bbf4/processes/refunds/f0abcd8c-61e8-4c32-99da-faed8f603bd6"
                       }
                     }
                   }, {
@@ -7028,31 +7028,31 @@ paths:
                     },
                     "status" : "PENDING",
                     "completed" : false,
-                    "_id" : "4aafd7f5-e2f9-4a00-bac3-f0d610e90e37",
+                    "_id" : "11ad801d-8c53-403f-9e9b-cfb6dcc84207",
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/orders/967b2bd7-980a-4543-b8e4-cedfed521256/processes/refunds/4aafd7f5-e2f9-4a00-bac3-f0d610e90e37"
+                        "href" : "https://yourshop.api.urn/orders/c125565c-8bfa-4061-acf2-64dc15e3bbf4/processes/refunds/11ad801d-8c53-403f-9e9b-cfb6dcc84207"
                       },
                       "refund-process" : {
-                        "href" : "https://yourshop.api.urn/orders/967b2bd7-980a-4543-b8e4-cedfed521256/processes/refunds/4aafd7f5-e2f9-4a00-bac3-f0d610e90e37"
+                        "href" : "https://yourshop.api.urn/orders/c125565c-8bfa-4061-acf2-64dc15e3bbf4/processes/refunds/11ad801d-8c53-403f-9e9b-cfb6dcc84207"
                       },
                       "mark-paid" : {
-                        "href" : "https://yourshop.api.urn/orders/967b2bd7-980a-4543-b8e4-cedfed521256/processes/refunds/4aafd7f5-e2f9-4a00-bac3-f0d610e90e37/mark-paid"
+                        "href" : "https://yourshop.api.urn/orders/c125565c-8bfa-4061-acf2-64dc15e3bbf4/processes/refunds/11ad801d-8c53-403f-9e9b-cfb6dcc84207/mark-paid"
                       }
                     }
                   } ],
                   "cancel-processes" : [ {
                     "lineItems" : [ {
-                      "productLineItemId" : "e85d64b6-b8bd-4a3b-a569-cce01aeeb72b",
+                      "productLineItemId" : "4da5fd77-1029-4c64-b03c-f887e676b6bd",
                       "quantity" : 2
                     } ],
-                    "_id" : "fbe27f01-28ec-40c7-a170-f192af8b3a8d",
+                    "_id" : "75dff3c1-5ceb-4755-bc51-62b642261142",
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/orders/967b2bd7-980a-4543-b8e4-cedfed521256/processes/cancelations/fbe27f01-28ec-40c7-a170-f192af8b3a8d"
+                        "href" : "https://yourshop.api.urn/orders/c125565c-8bfa-4061-acf2-64dc15e3bbf4/processes/cancelations/75dff3c1-5ceb-4755-bc51-62b642261142"
                       },
                       "cancel-process" : {
-                        "href" : "https://yourshop.api.urn/orders/967b2bd7-980a-4543-b8e4-cedfed521256/processes/cancelations/fbe27f01-28ec-40c7-a170-f192af8b3a8d"
+                        "href" : "https://yourshop.api.urn/orders/c125565c-8bfa-4061-acf2-64dc15e3bbf4/processes/cancelations/75dff3c1-5ceb-4755-bc51-62b642261142"
                       }
                     }
                   } ],
@@ -7061,19 +7061,19 @@ paths:
                     "trackingCode" : "lookAtMyTrackingCodeWow",
                     "trackingLink" : "http://tracking.is/fun?code=lookAtMyTrackingCodeWow",
                     "lineItems" : [ {
-                      "productLineItemId" : "e85d64b6-b8bd-4a3b-a569-cce01aeeb72b",
+                      "productLineItemId" : "4da5fd77-1029-4c64-b03c-f887e676b6bd",
                       "quantity" : 3
                     } ],
-                    "_id" : "0568b579-9488-49b1-a416-78dd148b7b39",
+                    "_id" : "37499461-9f1c-4cd7-913f-4667755903a2",
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/orders/967b2bd7-980a-4543-b8e4-cedfed521256/processes/shippings/0568b579-9488-49b1-a416-78dd148b7b39"
+                        "href" : "https://yourshop.api.urn/orders/c125565c-8bfa-4061-acf2-64dc15e3bbf4/processes/shippings/37499461-9f1c-4cd7-913f-4667755903a2"
                       },
                       "shipping-process" : {
-                        "href" : "https://yourshop.api.urn/orders/967b2bd7-980a-4543-b8e4-cedfed521256/processes/shippings/0568b579-9488-49b1-a416-78dd148b7b39"
+                        "href" : "https://yourshop.api.urn/orders/c125565c-8bfa-4061-acf2-64dc15e3bbf4/processes/shippings/37499461-9f1c-4cd7-913f-4667755903a2"
                       },
                       "mark-delivered" : {
-                        "href" : "https://yourshop.api.urn/orders/967b2bd7-980a-4543-b8e4-cedfed521256/processes/shippings/0568b579-9488-49b1-a416-78dd148b7b39/mark-delivered"
+                        "href" : "https://yourshop.api.urn/orders/c125565c-8bfa-4061-acf2-64dc15e3bbf4/processes/shippings/37499461-9f1c-4cd7-913f-4667755903a2/mark-delivered"
                       }
                     }
                   } ],
@@ -7086,55 +7086,55 @@ paths:
                     "paymentId" : null,
                     "captureWorkflow" : null,
                     "completed" : true,
-                    "_id" : "c8c1c5b9-954b-4ea8-ad9c-7c5988a428dc",
+                    "_id" : "48e226f1-19d4-4215-853f-d080aedf2038",
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/orders/967b2bd7-980a-4543-b8e4-cedfed521256/processes/payments/c8c1c5b9-954b-4ea8-ad9c-7c5988a428dc"
+                        "href" : "https://yourshop.api.urn/orders/c125565c-8bfa-4061-acf2-64dc15e3bbf4/processes/payments/48e226f1-19d4-4215-853f-d080aedf2038"
                       },
                       "payment-process" : {
-                        "href" : "https://yourshop.api.urn/orders/967b2bd7-980a-4543-b8e4-cedfed521256/processes/payments/c8c1c5b9-954b-4ea8-ad9c-7c5988a428dc"
+                        "href" : "https://yourshop.api.urn/orders/c125565c-8bfa-4061-acf2-64dc15e3bbf4/processes/payments/48e226f1-19d4-4215-853f-d080aedf2038"
                       }
                     }
                   } ],
                   "return-processes" : [ {
                     "lineItems" : [ {
-                      "productLineItemId" : "e85d64b6-b8bd-4a3b-a569-cce01aeeb72b",
+                      "productLineItemId" : "4da5fd77-1029-4c64-b03c-f887e676b6bd",
                       "quantity" : 2,
                       "status" : "RETURNED"
                     } ],
                     "shippingPriceRefund" : null,
-                    "_id" : "a221a907-dde7-4ec6-8420-da313753e535",
+                    "_id" : "f1039fdf-3b05-4003-8c9f-90b51477434d",
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/orders/967b2bd7-980a-4543-b8e4-cedfed521256/processes/returns/a221a907-dde7-4ec6-8420-da313753e535"
+                        "href" : "https://yourshop.api.urn/orders/c125565c-8bfa-4061-acf2-64dc15e3bbf4/processes/returns/f1039fdf-3b05-4003-8c9f-90b51477434d"
                       },
                       "return-process" : {
-                        "href" : "https://yourshop.api.urn/orders/967b2bd7-980a-4543-b8e4-cedfed521256/processes/returns/a221a907-dde7-4ec6-8420-da313753e535"
+                        "href" : "https://yourshop.api.urn/orders/c125565c-8bfa-4061-acf2-64dc15e3bbf4/processes/returns/f1039fdf-3b05-4003-8c9f-90b51477434d"
                       }
                     }
                   } ]
                 },
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/orders/967b2bd7-980a-4543-b8e4-cedfed521256/processes"
+                    "href" : "https://yourshop.api.urn/orders/c125565c-8bfa-4061-acf2-64dc15e3bbf4/processes"
                   },
                   "processes" : {
-                    "href" : "https://yourshop.api.urn/orders/967b2bd7-980a-4543-b8e4-cedfed521256/processes"
+                    "href" : "https://yourshop.api.urn/orders/c125565c-8bfa-4061-acf2-64dc15e3bbf4/processes"
                   },
                   "payment-processes" : {
-                    "href" : "https://yourshop.api.urn/orders/967b2bd7-980a-4543-b8e4-cedfed521256/processes/payments"
+                    "href" : "https://yourshop.api.urn/orders/c125565c-8bfa-4061-acf2-64dc15e3bbf4/processes/payments"
                   },
                   "shipping-processes" : {
-                    "href" : "https://yourshop.api.urn/orders/967b2bd7-980a-4543-b8e4-cedfed521256/processes/shippings"
+                    "href" : "https://yourshop.api.urn/orders/c125565c-8bfa-4061-acf2-64dc15e3bbf4/processes/shippings"
                   },
                   "return-processes" : {
-                    "href" : "https://yourshop.api.urn/orders/967b2bd7-980a-4543-b8e4-cedfed521256/processes/returns"
+                    "href" : "https://yourshop.api.urn/orders/c125565c-8bfa-4061-acf2-64dc15e3bbf4/processes/returns"
                   },
                   "cancel-processes" : {
-                    "href" : "https://yourshop.api.urn/orders/967b2bd7-980a-4543-b8e4-cedfed521256/processes/cancelations"
+                    "href" : "https://yourshop.api.urn/orders/c125565c-8bfa-4061-acf2-64dc15e3bbf4/processes/cancelations"
                   },
                   "refund-processes" : {
-                    "href" : "https://yourshop.api.urn/orders/967b2bd7-980a-4543-b8e4-cedfed521256/processes/refunds"
+                    "href" : "https://yourshop.api.urn/orders/c125565c-8bfa-4061-acf2-64dc15e3bbf4/processes/refunds"
                   }
                 }
               }
@@ -7202,18 +7202,99 @@ paths:
           examples:
             application/hal+json: |-
               {
-                "_id" : "4b15e024-8820-4b41-92ef-4e830ceb8018",
-                "createdAt" : "2019-03-04T08:51:38.185",
-                "cartId" : "2c615d39-3eb1-4a4f-b648-75ab1b73f7b8",
+                "_id" : "1f9e194b-9e84-45db-bffb-d37ee8749c6a",
+                "createdAt" : "2019-03-06T14:16:23.938",
+                "cartId" : "2f86fb96-b1ac-4d1f-9f67-011503542e01",
                 "currency" : "EUR",
                 "taxModel" : "GROSS",
                 "taxable" : false,
                 "testOrder" : false,
                 "termsAndConditionsExplicitlyAccepted" : false,
                 "productLineItems" : [ {
-                  "_id" : "1c8c9b8b-6627-4349-a993-5fcd3995ca69",
+                  "_id" : "83dfa9ad-850c-451a-a296-f8fb2bd4645e",
                   "product" : {
-                    "_id" : "1315abbf-56e2-4925-8a39-da151371e58e",
+                    "_id" : "37ee0c21-a66e-48b4-b69c-94cc03bb00ff",
+                    "sku" : "EB001",
+                    "name" : "Power & Vanilla Coconut Protein Bar (Pack of 5)",
+                    "essentialFeatures" : "Preservative-free. No added sweeteners. Vegan.",
+                    "shippingWeight" : 190,
+                    "defaultImageDataUri" : "http://your.image.hoster.com/randomimage.png",
+                    "variationAttributeValues" : [ {
+                      "displayName" : "color",
+                      "value" : "green"
+                    }, {
+                      "displayName" : "size",
+                      "value" : "big"
+                    } ],
+                    "_links" : {
+                      "default-image-data" : {
+                        "href" : "https://yourshop.api.urn/http:/your.image.hoster.com/randomimage.png"
+                      },
+                      "variation-product" : {
+                        "href" : "https://yourshop.api.urn/api/products/af5de39d-683a-4645-a035-acf6f2b9fe99"
+                      }
+                    }
+                  },
+                  "quantity" : 5,
+                  "initialQuantity" : 5,
+                  "unitPrice" : {
+                    "taxModel" : "GROSS",
+                    "currency" : "EUR",
+                    "amount" : 9.99
+                  },
+                  "lineItemPrice" : {
+                    "taxModel" : "GROSS",
+                    "currency" : "EUR",
+                    "amount" : 49.95
+                  },
+                  "initialLineItemPrice" : {
+                    "taxModel" : "GROSS",
+                    "currency" : "EUR",
+                    "amount" : 49.95
+                  },
+                  "lineItemTax" : {
+                    "taxClass" : "REGULAR",
+                    "taxRate" : 0.19,
+                    "currency" : "EUR",
+                    "amount" : 7.9743
+                  },
+                  "unshipped" : {
+                    "quantity" : 5,
+                    "amount" : null
+                  },
+                  "shipped" : {
+                    "quantity" : 0,
+                    "amount" : null
+                  },
+                  "pending" : {
+                    "quantity" : 0,
+                    "amount" : null
+                  },
+                  "returned" : {
+                    "quantity" : 0,
+                    "amount" : {
+                      "currency" : "EUR",
+                      "amount" : 0
+                    }
+                  },
+                  "broken" : {
+                    "quantity" : 0,
+                    "amount" : {
+                      "currency" : "EUR",
+                      "amount" : 0
+                    }
+                  },
+                  "canceled" : {
+                    "quantity" : 0,
+                    "amount" : {
+                      "currency" : "EUR",
+                      "amount" : 0
+                    }
+                  }
+                }, {
+                  "_id" : "efb39c87-b190-4303-95eb-bbb92a950717",
+                  "product" : {
+                    "_id" : "c01b9faf-3546-4ff6-ae14-98b1853401c4",
                     "sku" : "vino020",
                     "name" : "Rioja Castillo de Puerto (2013)",
                     "essentialFeatures" : "Dry. 12% alcohol. Best vine variety.",
@@ -7257,87 +7338,6 @@ paths:
                   },
                   "unshipped" : {
                     "quantity" : 3,
-                    "amount" : null
-                  },
-                  "shipped" : {
-                    "quantity" : 0,
-                    "amount" : null
-                  },
-                  "pending" : {
-                    "quantity" : 0,
-                    "amount" : null
-                  },
-                  "returned" : {
-                    "quantity" : 0,
-                    "amount" : {
-                      "currency" : "EUR",
-                      "amount" : 0
-                    }
-                  },
-                  "broken" : {
-                    "quantity" : 0,
-                    "amount" : {
-                      "currency" : "EUR",
-                      "amount" : 0
-                    }
-                  },
-                  "canceled" : {
-                    "quantity" : 0,
-                    "amount" : {
-                      "currency" : "EUR",
-                      "amount" : 0
-                    }
-                  }
-                }, {
-                  "_id" : "d08393aa-9bd7-4d95-9d29-c90e29e0b9c5",
-                  "product" : {
-                    "_id" : "fa6fe304-7147-4a50-9803-ccb7b9dd024c",
-                    "sku" : "EB001",
-                    "name" : "Power & Vanilla Coconut Protein Bar (Pack of 5)",
-                    "essentialFeatures" : "Preservative-free. No added sweeteners. Vegan.",
-                    "shippingWeight" : 190,
-                    "defaultImageDataUri" : "http://your.image.hoster.com/randomimage.png",
-                    "variationAttributeValues" : [ {
-                      "displayName" : "color",
-                      "value" : "green"
-                    }, {
-                      "displayName" : "size",
-                      "value" : "big"
-                    } ],
-                    "_links" : {
-                      "default-image-data" : {
-                        "href" : "https://yourshop.api.urn/http:/your.image.hoster.com/randomimage.png"
-                      },
-                      "variation-product" : {
-                        "href" : "https://yourshop.api.urn/api/products/7205b889-1be2-4a1a-bcc6-cdd0eac9e5d4"
-                      }
-                    }
-                  },
-                  "quantity" : 5,
-                  "initialQuantity" : 5,
-                  "unitPrice" : {
-                    "taxModel" : "GROSS",
-                    "currency" : "EUR",
-                    "amount" : 9.99
-                  },
-                  "lineItemPrice" : {
-                    "taxModel" : "GROSS",
-                    "currency" : "EUR",
-                    "amount" : 49.95
-                  },
-                  "initialLineItemPrice" : {
-                    "taxModel" : "GROSS",
-                    "currency" : "EUR",
-                    "amount" : 49.95
-                  },
-                  "lineItemTax" : {
-                    "taxClass" : "REGULAR",
-                    "taxRate" : 0.19,
-                    "currency" : "EUR",
-                    "amount" : 7.9743
-                  },
-                  "unshipped" : {
-                    "quantity" : 5,
                     "amount" : null
                   },
                   "shipped" : {
@@ -7539,7 +7539,7 @@ paths:
                 "paymentNote" : "Please transfer the money using the reference ABC123XYZ to the bank account IBAN!",
                 "externalPaymentId" : null,
                 "externalPaymentUri" : null,
-                "entryDate" : "2019-03-04T08:51:38.176",
+                "entryDate" : "2019-03-06T14:16:23.932",
                 "totalReceived" : {
                   "currency" : "EUR",
                   "amount" : 0
@@ -7558,31 +7558,31 @@ paths:
                 "backgroundJobs" : [ ],
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/orders/4b15e024-8820-4b41-92ef-4e830ceb8018"
+                    "href" : "https://yourshop.api.urn/orders/1f9e194b-9e84-45db-bffb-d37ee8749c6a"
                   },
                   "order" : {
-                    "href" : "https://yourshop.api.urn/orders/4b15e024-8820-4b41-92ef-4e830ceb8018"
+                    "href" : "https://yourshop.api.urn/orders/1f9e194b-9e84-45db-bffb-d37ee8749c6a"
                   },
                   "order-note" : {
-                    "href" : "https://yourshop.api.urn/orders/4b15e024-8820-4b41-92ef-4e830ceb8018/order-note"
+                    "href" : "https://yourshop.api.urn/orders/1f9e194b-9e84-45db-bffb-d37ee8749c6a/order-note"
                   },
                   "processes" : {
-                    "href" : "https://yourshop.api.urn/orders/4b15e024-8820-4b41-92ef-4e830ceb8018/processes"
+                    "href" : "https://yourshop.api.urn/orders/1f9e194b-9e84-45db-bffb-d37ee8749c6a/processes"
                   },
                   "events" : {
-                    "href" : "https://yourshop.api.urn/orders/4b15e024-8820-4b41-92ef-4e830ceb8018/events"
+                    "href" : "https://yourshop.api.urn/orders/1f9e194b-9e84-45db-bffb-d37ee8749c6a/events"
                   },
                   "cancel" : {
-                    "href" : "https://yourshop.api.urn/orders/4b15e024-8820-4b41-92ef-4e830ceb8018/cancel"
+                    "href" : "https://yourshop.api.urn/orders/1f9e194b-9e84-45db-bffb-d37ee8749c6a/cancel"
                   },
                   "create-invoice" : {
-                    "href" : "https://yourshop.api.urn/orders/4b15e024-8820-4b41-92ef-4e830ceb8018/create-invoice"
-                  },
-                  "right-of-withdrawal-pdf" : {
-                    "href" : "https://yourshop.api.urn/pdf-storage/attachments/right-of-withdrawal.pdf?hash=647563475863487"
+                    "href" : "https://yourshop.api.urn/orders/1f9e194b-9e84-45db-bffb-d37ee8749c6a/create-invoice"
                   },
                   "terms-and-conditions-pdf" : {
                     "href" : "https://yourshop.api.urn/pdf-storage/attachments/terms-and-conditions.pdf?hash=238734684735643875634578213"
+                  },
+                  "right-of-withdrawal-pdf" : {
+                    "href" : "https://yourshop.api.urn/pdf-storage/attachments/right-of-withdrawal.pdf?hash=647563475863487"
                   }
                 }
               }
@@ -7623,29 +7623,29 @@ paths:
                     },
                     "status" : "PENDING",
                     "completed" : false,
-                    "_id" : "f5f714be-195d-4326-928c-77b97ffeb81f",
+                    "_id" : "ff900954-b12c-4e4a-90ed-b6091cc798a4",
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/orders/1d82df27-6b6a-4627-83ad-7500de1611e5/processes/refunds/f5f714be-195d-4326-928c-77b97ffeb81f"
+                        "href" : "https://yourshop.api.urn/orders/bf808fb5-eaa8-4df5-8083-10e5a4ccae2a/processes/refunds/ff900954-b12c-4e4a-90ed-b6091cc798a4"
                       },
                       "refund-process" : {
-                        "href" : "https://yourshop.api.urn/orders/1d82df27-6b6a-4627-83ad-7500de1611e5/processes/refunds/f5f714be-195d-4326-928c-77b97ffeb81f"
+                        "href" : "https://yourshop.api.urn/orders/bf808fb5-eaa8-4df5-8083-10e5a4ccae2a/processes/refunds/ff900954-b12c-4e4a-90ed-b6091cc798a4"
                       },
                       "mark-paid" : {
-                        "href" : "https://yourshop.api.urn/orders/1d82df27-6b6a-4627-83ad-7500de1611e5/processes/refunds/f5f714be-195d-4326-928c-77b97ffeb81f/mark-paid"
+                        "href" : "https://yourshop.api.urn/orders/bf808fb5-eaa8-4df5-8083-10e5a4ccae2a/processes/refunds/ff900954-b12c-4e4a-90ed-b6091cc798a4/mark-paid"
                       }
                     }
                   } ]
                 },
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/orders/1d82df27-6b6a-4627-83ad-7500de1611e5/processes/refunds?page=0&size=20"
+                    "href" : "https://yourshop.api.urn/orders/bf808fb5-eaa8-4df5-8083-10e5a4ccae2a/processes/refunds?page=0&size=20"
                   },
                   "refund-processes" : {
-                    "href" : "https://yourshop.api.urn/orders/1d82df27-6b6a-4627-83ad-7500de1611e5/processes/refunds"
+                    "href" : "https://yourshop.api.urn/orders/bf808fb5-eaa8-4df5-8083-10e5a4ccae2a/processes/refunds"
                   },
                   "active" : {
-                    "href" : "https://yourshop.api.urn/orders/1d82df27-6b6a-4627-83ad-7500de1611e5/processes/refunds/active"
+                    "href" : "https://yourshop.api.urn/orders/bf808fb5-eaa8-4df5-8083-10e5a4ccae2a/processes/refunds/active"
                   }
                 },
                 "page" : {
@@ -7656,7 +7656,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-tags-1206450827'
+            $ref: '#/definitions/shop_attributes-1206450827'
       security:
       - oauth2_accessCode:
         - rfpr:r
@@ -7687,7 +7687,7 @@ paths:
                 "_embedded" : {
                   "return-processes" : [ {
                     "lineItems" : [ {
-                      "productLineItemId" : "53417afe-bfbf-4274-ad3b-1bbdb6b3558e",
+                      "productLineItemId" : "c1e12a10-5a57-43e2-8eed-c575cf6777ec",
                       "quantity" : 3,
                       "status" : "RETURNED"
                     } ],
@@ -7695,23 +7695,23 @@ paths:
                       "currency" : "EUR",
                       "amount" : 19.99
                     },
-                    "_id" : "17203d05-2f76-49ea-b1c4-fbb969c09582",
+                    "_id" : "613af33d-b548-4a23-8a97-c6c93829d1ec",
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/orders/04716f6d-2f5d-4fa9-b6a8-0a742fa680e0/processes/returns/17203d05-2f76-49ea-b1c4-fbb969c09582"
+                        "href" : "https://yourshop.api.urn/orders/65ba0a5d-367e-4080-96b1-a0c7599777e1/processes/returns/613af33d-b548-4a23-8a97-c6c93829d1ec"
                       },
                       "return-process" : {
-                        "href" : "https://yourshop.api.urn/orders/04716f6d-2f5d-4fa9-b6a8-0a742fa680e0/processes/returns/17203d05-2f76-49ea-b1c4-fbb969c09582"
+                        "href" : "https://yourshop.api.urn/orders/65ba0a5d-367e-4080-96b1-a0c7599777e1/processes/returns/613af33d-b548-4a23-8a97-c6c93829d1ec"
                       }
                     }
                   } ]
                 },
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/orders/04716f6d-2f5d-4fa9-b6a8-0a742fa680e0/processes/returns?page=0&size=20"
+                    "href" : "https://yourshop.api.urn/orders/65ba0a5d-367e-4080-96b1-a0c7599777e1/processes/returns?page=0&size=20"
                   },
                   "return-processes" : {
-                    "href" : "https://yourshop.api.urn/orders/04716f6d-2f5d-4fa9-b6a8-0a742fa680e0/processes/returns"
+                    "href" : "https://yourshop.api.urn/orders/65ba0a5d-367e-4080-96b1-a0c7599777e1/processes/returns"
                   }
                 },
                 "page" : {
@@ -7722,7 +7722,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-tags-1206450827'
+            $ref: '#/definitions/shop_attributes-1206450827'
       security:
       - oauth2_accessCode:
         - rtpr:r
@@ -7749,14 +7749,14 @@ paths:
         name: ""
         required: false
         schema:
-          $ref: '#/definitions/orders_order-id_processes_returns-613759876'
+          $ref: '#/definitions/orders_order-id_processes_returns-826927858'
         x-examples:
           application/json: |-
             {
               "comment" : "This needs to be done fast!",
               "lineItems" : [ {
                 "quantity" : 3,
-                "productLineItemId" : "e0a88a64-132d-4f25-be83-fe588d365d15",
+                "productLineItemId" : "b6d3c06d-853f-405c-99a6-0893d542ce5a",
                 "status" : "RETURNED"
               } ],
               "shippingPriceRefund" : {
@@ -7771,7 +7771,7 @@ paths:
             application/hal+json: |-
               {
                 "lineItems" : [ {
-                  "productLineItemId" : "e0a88a64-132d-4f25-be83-fe588d365d15",
+                  "productLineItemId" : "b6d3c06d-853f-405c-99a6-0893d542ce5a",
                   "quantity" : 3,
                   "status" : "RETURNED"
                 } ],
@@ -7779,13 +7779,13 @@ paths:
                   "currency" : "EUR",
                   "amount" : 19.99
                 },
-                "_id" : "d23d7bc1-a2cf-41b3-8f22-07286b9d8c09",
+                "_id" : "a1de9654-fe05-47a4-bf99-5d4b123a5d98",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/orders/82c87eb4-2f6c-4a80-9b38-1e397ad81d84/processes/returns/d23d7bc1-a2cf-41b3-8f22-07286b9d8c09"
+                    "href" : "https://yourshop.api.urn/orders/aad94816-4ec0-428d-9b9c-105a751a3ac2/processes/returns/a1de9654-fe05-47a4-bf99-5d4b123a5d98"
                   },
                   "return-process" : {
-                    "href" : "https://yourshop.api.urn/orders/82c87eb4-2f6c-4a80-9b38-1e397ad81d84/processes/returns/d23d7bc1-a2cf-41b3-8f22-07286b9d8c09"
+                    "href" : "https://yourshop.api.urn/orders/aad94816-4ec0-428d-9b9c-105a751a3ac2/processes/returns/a1de9654-fe05-47a4-bf99-5d4b123a5d98"
                   }
                 }
               }
@@ -7822,32 +7822,32 @@ paths:
                     "trackingCode" : "lookAtMyTrackingCodeWow",
                     "trackingLink" : "http://tracking.is/fun?code=lookAtMyTrackingCodeWow",
                     "lineItems" : [ {
-                      "productLineItemId" : "6038b1cc-ba74-404b-80f7-33eb630c0093",
+                      "productLineItemId" : "13149636-fea5-48f1-8c86-333ecc739a94",
                       "quantity" : 3
                     } ],
-                    "_id" : "31415148-dde5-45cd-8c6c-88246999cd29",
+                    "_id" : "317cfec1-5175-4252-8381-87d69eab9b81",
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/orders/07c199a4-d8d8-46d2-a724-282f1f15e51f/processes/shippings/31415148-dde5-45cd-8c6c-88246999cd29"
+                        "href" : "https://yourshop.api.urn/orders/a10366f5-0b9c-42f5-9d75-c01e97160d37/processes/shippings/317cfec1-5175-4252-8381-87d69eab9b81"
                       },
                       "shipping-process" : {
-                        "href" : "https://yourshop.api.urn/orders/07c199a4-d8d8-46d2-a724-282f1f15e51f/processes/shippings/31415148-dde5-45cd-8c6c-88246999cd29"
+                        "href" : "https://yourshop.api.urn/orders/a10366f5-0b9c-42f5-9d75-c01e97160d37/processes/shippings/317cfec1-5175-4252-8381-87d69eab9b81"
                       },
                       "mark-shipped" : {
-                        "href" : "https://yourshop.api.urn/orders/07c199a4-d8d8-46d2-a724-282f1f15e51f/processes/shippings/31415148-dde5-45cd-8c6c-88246999cd29/mark-shipped"
+                        "href" : "https://yourshop.api.urn/orders/a10366f5-0b9c-42f5-9d75-c01e97160d37/processes/shippings/317cfec1-5175-4252-8381-87d69eab9b81/mark-shipped"
                       },
                       "mark-delivered" : {
-                        "href" : "https://yourshop.api.urn/orders/07c199a4-d8d8-46d2-a724-282f1f15e51f/processes/shippings/31415148-dde5-45cd-8c6c-88246999cd29/mark-delivered"
+                        "href" : "https://yourshop.api.urn/orders/a10366f5-0b9c-42f5-9d75-c01e97160d37/processes/shippings/317cfec1-5175-4252-8381-87d69eab9b81/mark-delivered"
                       }
                     }
                   } ]
                 },
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/orders/07c199a4-d8d8-46d2-a724-282f1f15e51f/processes/shippings?page=0&size=20"
+                    "href" : "https://yourshop.api.urn/orders/a10366f5-0b9c-42f5-9d75-c01e97160d37/processes/shippings?page=0&size=20"
                   },
                   "shipping-processes" : {
-                    "href" : "https://yourshop.api.urn/orders/07c199a4-d8d8-46d2-a724-282f1f15e51f/processes/shippings"
+                    "href" : "https://yourshop.api.urn/orders/a10366f5-0b9c-42f5-9d75-c01e97160d37/processes/shippings"
                   }
                 },
                 "page" : {
@@ -7858,7 +7858,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-tags-1206450827'
+            $ref: '#/definitions/shop_attributes-1206450827'
       security:
       - oauth2_accessCode:
         - shpr:r
@@ -7884,7 +7884,7 @@ paths:
         name: ""
         required: false
         schema:
-          $ref: '#/definitions/orders_order-id_processes_shippings-462556680'
+          $ref: '#/definitions/orders_order-id_processes_shippings-1138841109'
         x-examples:
           application/json: |-
             {
@@ -7894,7 +7894,7 @@ paths:
               "trackingLink" : "http://tracking.is/fun?code=lookAtMyTrackingCodeWow",
               "lineItems" : [ {
                 "quantity" : 3,
-                "productLineItemId" : "de48e2db-ef9a-4268-9595-2147756d8afe"
+                "productLineItemId" : "03d39c10-8015-47b5-bde5-7cb19a6e7873"
               } ]
             }
       responses:
@@ -7907,22 +7907,22 @@ paths:
                 "trackingCode" : "lookAtMyTrackingCodeWow",
                 "trackingLink" : "http://tracking.is/fun?code=lookAtMyTrackingCodeWow",
                 "lineItems" : [ {
-                  "productLineItemId" : "de48e2db-ef9a-4268-9595-2147756d8afe",
+                  "productLineItemId" : "03d39c10-8015-47b5-bde5-7cb19a6e7873",
                   "quantity" : 3
                 } ],
-                "_id" : "9292ebdc-4646-40c7-bbae-b9ce11de6874",
+                "_id" : "c00c67dc-52e6-4cb4-ac1c-06c0cb49a957",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/orders/3b2cd0bc-b843-48fa-bf90-e1d942f6df71/processes/shippings/9292ebdc-4646-40c7-bbae-b9ce11de6874"
+                    "href" : "https://yourshop.api.urn/orders/bf9f582d-71f1-4431-a228-30539eec7bfc/processes/shippings/c00c67dc-52e6-4cb4-ac1c-06c0cb49a957"
                   },
                   "shipping-process" : {
-                    "href" : "https://yourshop.api.urn/orders/3b2cd0bc-b843-48fa-bf90-e1d942f6df71/processes/shippings/9292ebdc-4646-40c7-bbae-b9ce11de6874"
+                    "href" : "https://yourshop.api.urn/orders/bf9f582d-71f1-4431-a228-30539eec7bfc/processes/shippings/c00c67dc-52e6-4cb4-ac1c-06c0cb49a957"
                   },
                   "mark-shipped" : {
-                    "href" : "https://yourshop.api.urn/orders/3b2cd0bc-b843-48fa-bf90-e1d942f6df71/processes/shippings/9292ebdc-4646-40c7-bbae-b9ce11de6874/mark-shipped"
+                    "href" : "https://yourshop.api.urn/orders/bf9f582d-71f1-4431-a228-30539eec7bfc/processes/shippings/c00c67dc-52e6-4cb4-ac1c-06c0cb49a957/mark-shipped"
                   },
                   "mark-delivered" : {
-                    "href" : "https://yourshop.api.urn/orders/3b2cd0bc-b843-48fa-bf90-e1d942f6df71/processes/shippings/9292ebdc-4646-40c7-bbae-b9ce11de6874/mark-delivered"
+                    "href" : "https://yourshop.api.urn/orders/bf9f582d-71f1-4431-a228-30539eec7bfc/processes/shippings/c00c67dc-52e6-4cb4-ac1c-06c0cb49a957/mark-delivered"
                   }
                 }
               }
@@ -7960,16 +7960,16 @@ paths:
                 },
                 "status" : "PENDING",
                 "completed" : false,
-                "_id" : "94f22106-1ae7-4fca-a1d7-e1fdb310afe6",
+                "_id" : "e6a707a2-d61f-4b64-9746-79a8e64242a6",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/orders/0a05ed10-d3d2-48c0-8e68-5a3bdbeae51f/processes/refunds/94f22106-1ae7-4fca-a1d7-e1fdb310afe6"
+                    "href" : "https://yourshop.api.urn/orders/649eef0b-82f2-442b-b76a-2d70e3e799aa/processes/refunds/e6a707a2-d61f-4b64-9746-79a8e64242a6"
                   },
                   "refund-process" : {
-                    "href" : "https://yourshop.api.urn/orders/0a05ed10-d3d2-48c0-8e68-5a3bdbeae51f/processes/refunds/94f22106-1ae7-4fca-a1d7-e1fdb310afe6"
+                    "href" : "https://yourshop.api.urn/orders/649eef0b-82f2-442b-b76a-2d70e3e799aa/processes/refunds/e6a707a2-d61f-4b64-9746-79a8e64242a6"
                   },
                   "mark-paid" : {
-                    "href" : "https://yourshop.api.urn/orders/0a05ed10-d3d2-48c0-8e68-5a3bdbeae51f/processes/refunds/94f22106-1ae7-4fca-a1d7-e1fdb310afe6/mark-paid"
+                    "href" : "https://yourshop.api.urn/orders/649eef0b-82f2-442b-b76a-2d70e3e799aa/processes/refunds/e6a707a2-d61f-4b64-9746-79a8e64242a6/mark-paid"
                   }
                 }
               }
@@ -8010,16 +8010,16 @@ paths:
                 },
                 "status" : "PENDING",
                 "completed" : false,
-                "_id" : "481fdef8-0d9c-4682-a12e-5b0ee5197331",
+                "_id" : "f05e456c-8b9e-428c-9695-99605db3a813",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/orders/09fdc7db-79e0-40aa-b833-115f88b7cbcf/processes/refunds/481fdef8-0d9c-4682-a12e-5b0ee5197331"
+                    "href" : "https://yourshop.api.urn/orders/93358289-dae5-4f54-aa8c-14a958705c49/processes/refunds/f05e456c-8b9e-428c-9695-99605db3a813"
                   },
                   "refund-process" : {
-                    "href" : "https://yourshop.api.urn/orders/09fdc7db-79e0-40aa-b833-115f88b7cbcf/processes/refunds/481fdef8-0d9c-4682-a12e-5b0ee5197331"
+                    "href" : "https://yourshop.api.urn/orders/93358289-dae5-4f54-aa8c-14a958705c49/processes/refunds/f05e456c-8b9e-428c-9695-99605db3a813"
                   },
                   "mark-paid" : {
-                    "href" : "https://yourshop.api.urn/orders/09fdc7db-79e0-40aa-b833-115f88b7cbcf/processes/refunds/481fdef8-0d9c-4682-a12e-5b0ee5197331/mark-paid"
+                    "href" : "https://yourshop.api.urn/orders/93358289-dae5-4f54-aa8c-14a958705c49/processes/refunds/f05e456c-8b9e-428c-9695-99605db3a813/mark-paid"
                   }
                 }
               }
@@ -8058,7 +8058,7 @@ paths:
             application/hal+json: |-
               {
                 "lineItems" : [ {
-                  "productLineItemId" : "bf26f776-962e-478d-a453-6723c4ea2e97",
+                  "productLineItemId" : "4d188b23-8987-4734-b09b-5114ec09d1e4",
                   "quantity" : 3,
                   "status" : "RETURNED"
                 } ],
@@ -8066,13 +8066,13 @@ paths:
                   "currency" : "EUR",
                   "amount" : 19.99
                 },
-                "_id" : "559c871d-69f6-43a0-a080-925cfef2be7c",
+                "_id" : "b97ecef6-e685-4433-b9ff-67ab1c0631a6",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/orders/de106d59-f499-4a9e-bad6-96ed6c99b68a/processes/returns/559c871d-69f6-43a0-a080-925cfef2be7c"
+                    "href" : "https://yourshop.api.urn/orders/d7c82c56-7ecb-4cdf-8e9e-0e9c6d1ef01f/processes/returns/b97ecef6-e685-4433-b9ff-67ab1c0631a6"
                   },
                   "return-process" : {
-                    "href" : "https://yourshop.api.urn/orders/de106d59-f499-4a9e-bad6-96ed6c99b68a/processes/returns/559c871d-69f6-43a0-a080-925cfef2be7c"
+                    "href" : "https://yourshop.api.urn/orders/d7c82c56-7ecb-4cdf-8e9e-0e9c6d1ef01f/processes/returns/b97ecef6-e685-4433-b9ff-67ab1c0631a6"
                   }
                 }
               }
@@ -8114,22 +8114,22 @@ paths:
                 "trackingCode" : "lookAtMyTrackingCodeWow",
                 "trackingLink" : "http://tracking.is/fun?code=lookAtMyTrackingCodeWow",
                 "lineItems" : [ {
-                  "productLineItemId" : "acaccb22-e052-4d5f-af7c-dfc21cc75492",
+                  "productLineItemId" : "6826f4b6-9332-4f72-be02-fbdab4ef29f2",
                   "quantity" : 3
                 } ],
-                "_id" : "86d3ad77-6bb7-4396-b7f2-32a14698f804",
+                "_id" : "d686a2d9-b50c-44d7-be97-5422aeb66230",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/orders/4eb540a2-ffd9-4a46-9041-56d11945e49f/processes/shippings/86d3ad77-6bb7-4396-b7f2-32a14698f804"
+                    "href" : "https://yourshop.api.urn/orders/53333ed0-7f9f-4b5a-82cb-aff54eaaa613/processes/shippings/d686a2d9-b50c-44d7-be97-5422aeb66230"
                   },
                   "shipping-process" : {
-                    "href" : "https://yourshop.api.urn/orders/4eb540a2-ffd9-4a46-9041-56d11945e49f/processes/shippings/86d3ad77-6bb7-4396-b7f2-32a14698f804"
+                    "href" : "https://yourshop.api.urn/orders/53333ed0-7f9f-4b5a-82cb-aff54eaaa613/processes/shippings/d686a2d9-b50c-44d7-be97-5422aeb66230"
                   },
                   "mark-shipped" : {
-                    "href" : "https://yourshop.api.urn/orders/4eb540a2-ffd9-4a46-9041-56d11945e49f/processes/shippings/86d3ad77-6bb7-4396-b7f2-32a14698f804/mark-shipped"
+                    "href" : "https://yourshop.api.urn/orders/53333ed0-7f9f-4b5a-82cb-aff54eaaa613/processes/shippings/d686a2d9-b50c-44d7-be97-5422aeb66230/mark-shipped"
                   },
                   "mark-delivered" : {
-                    "href" : "https://yourshop.api.urn/orders/4eb540a2-ffd9-4a46-9041-56d11945e49f/processes/shippings/86d3ad77-6bb7-4396-b7f2-32a14698f804/mark-delivered"
+                    "href" : "https://yourshop.api.urn/orders/53333ed0-7f9f-4b5a-82cb-aff54eaaa613/processes/shippings/d686a2d9-b50c-44d7-be97-5422aeb66230/mark-delivered"
                   }
                 }
               }
@@ -8186,13 +8186,13 @@ paths:
                 },
                 "status" : "PAID",
                 "completed" : true,
-                "_id" : "a0c973b8-0ebf-4045-9052-2e5850a870ba",
+                "_id" : "378c4c66-25f5-4169-9227-f62c151417c5",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/orders/892d3748-117b-478d-8a2f-9f60e7c6dcae/processes/refunds/a0c973b8-0ebf-4045-9052-2e5850a870ba"
+                    "href" : "https://yourshop.api.urn/orders/f00a9d5c-203c-49e1-8641-dcc77a71d834/processes/refunds/378c4c66-25f5-4169-9227-f62c151417c5"
                   },
                   "refund-process" : {
-                    "href" : "https://yourshop.api.urn/orders/892d3748-117b-478d-8a2f-9f60e7c6dcae/processes/refunds/a0c973b8-0ebf-4045-9052-2e5850a870ba"
+                    "href" : "https://yourshop.api.urn/orders/f00a9d5c-203c-49e1-8641-dcc77a71d834/processes/refunds/378c4c66-25f5-4169-9227-f62c151417c5"
                   }
                 }
               }
@@ -8244,16 +8244,16 @@ paths:
                 "trackingCode" : "lookAtMyTrackingCodeWow",
                 "trackingLink" : "http://tracking.is/fun?code=lookAtMyTrackingCodeWow",
                 "lineItems" : [ {
-                  "productLineItemId" : "7758c2f6-b0e3-46db-b4c3-585d3cbb7cbb",
+                  "productLineItemId" : "9201d785-2d12-4665-a932-534ace72e2bd",
                   "quantity" : 3
                 } ],
-                "_id" : "ed9f50f5-c09a-45d1-b756-ded8a95da3cf",
+                "_id" : "254d5b29-8f00-4930-b3dc-e7b9f0535e80",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/orders/e1a638e5-80bd-400e-81eb-c127cb5a9467/processes/shippings/ed9f50f5-c09a-45d1-b756-ded8a95da3cf"
+                    "href" : "https://yourshop.api.urn/orders/37164d81-70f7-448d-bf81-30af5839447b/processes/shippings/254d5b29-8f00-4930-b3dc-e7b9f0535e80"
                   },
                   "shipping-process" : {
-                    "href" : "https://yourshop.api.urn/orders/e1a638e5-80bd-400e-81eb-c127cb5a9467/processes/shippings/ed9f50f5-c09a-45d1-b756-ded8a95da3cf"
+                    "href" : "https://yourshop.api.urn/orders/37164d81-70f7-448d-bf81-30af5839447b/processes/shippings/254d5b29-8f00-4930-b3dc-e7b9f0535e80"
                   }
                 }
               }
@@ -8310,19 +8310,19 @@ paths:
                 "trackingCode" : "lookAtMyTrackingCodeWow",
                 "trackingLink" : "http://tracking.is/fun?code=lookAtMyTrackingCodeWow",
                 "lineItems" : [ {
-                  "productLineItemId" : "a85530ed-9a8a-4ea5-8dd9-f302665cc7c2",
+                  "productLineItemId" : "88f9ee32-9407-4fdf-b918-6ab11abaa251",
                   "quantity" : 3
                 } ],
-                "_id" : "d060b768-de10-4fe0-99e4-ea8c765f528e",
+                "_id" : "7e484721-f448-4c71-ae34-879969827703",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/orders/04055205-e408-4cb5-8492-1d835e03f87b/processes/shippings/d060b768-de10-4fe0-99e4-ea8c765f528e"
+                    "href" : "https://yourshop.api.urn/orders/f09d9845-7400-42c5-bbf6-05100926226c/processes/shippings/7e484721-f448-4c71-ae34-879969827703"
                   },
                   "shipping-process" : {
-                    "href" : "https://yourshop.api.urn/orders/04055205-e408-4cb5-8492-1d835e03f87b/processes/shippings/d060b768-de10-4fe0-99e4-ea8c765f528e"
+                    "href" : "https://yourshop.api.urn/orders/f09d9845-7400-42c5-bbf6-05100926226c/processes/shippings/7e484721-f448-4c71-ae34-879969827703"
                   },
                   "mark-delivered" : {
-                    "href" : "https://yourshop.api.urn/orders/04055205-e408-4cb5-8492-1d835e03f87b/processes/shippings/d060b768-de10-4fe0-99e4-ea8c765f528e/mark-delivered"
+                    "href" : "https://yourshop.api.urn/orders/f09d9845-7400-42c5-bbf6-05100926226c/processes/shippings/7e484721-f448-4c71-ae34-879969827703/mark-delivered"
                   }
                 }
               }
@@ -8402,7 +8402,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-tags-1206450827'
+            $ref: '#/definitions/shop_attributes-1206450827'
       security:
       - oauth2_accessCode:
         - paym:m
@@ -9508,19 +9508,21 @@ paths:
         name: ""
         required: false
         schema:
-          $ref: '#/definitions/payments_paymentId_status-631714533'
+          $ref: '#/definitions/payments_paymentId_status2093475673'
         x-examples:
-          application/json: '{"paymentStatus":"APPROVED"}'
+          application/json: '{"paymentStatus":"APPROVED","externalPaymentId":"transaction123XYZ","externalPaymentUri":"https://www.example.com/transactions/transaction123XYZ"}'
       responses:
         200:
           description: ""
           examples:
             application/hal+json: |-
               {
-                "paymentStatus" : "UNDERPAID"
+                "paymentStatus" : "UNDERPAID",
+                "externalPaymentId" : null,
+                "externalPaymentUri" : null
               }
           schema:
-            $ref: '#/definitions/payments_paymentId_status1696780730'
+            $ref: '#/definitions/payments_paymentId_status-1159996581'
       security:
       - oauth2_accessCode:
         - paym:m
@@ -9571,7 +9573,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-tags-1206450827'
+            $ref: '#/definitions/shop_attributes-1206450827'
       security:
       - oauth2_accessCode:
         - prad:r
@@ -9784,7 +9786,7 @@ paths:
               {
                 "_embedded" : {
                   "products" : [ {
-                    "_id" : "4181102d-f258-4a15-846a-44bedba7e237",
+                    "_id" : "13e0f3c0-1631-4bf1-a837-0593c5bcce3f",
                     "sku" : "vino020",
                     "name" : "Rioja Castillo de Puerto (2013)",
                     "salesPrice" : {
@@ -9822,14 +9824,14 @@ paths:
                         "templated" : true
                       },
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/4181102d-f258-4a15-846a-44bedba7e237"
+                        "href" : "https://yourshop.api.urn/product-view/products/13e0f3c0-1631-4bf1-a837-0593c5bcce3f"
                       },
                       "product" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/4181102d-f258-4a15-846a-44bedba7e237"
+                        "href" : "https://yourshop.api.urn/product-view/products/13e0f3c0-1631-4bf1-a837-0593c5bcce3f"
                       }
                     }
                   }, {
-                    "_id" : "8d8ccfbb-aa2d-4ff1-b582-b10de8cd628f",
+                    "_id" : "73b184f6-14f9-4443-98b1-6d0bac38d653",
                     "sku" : "EB001",
                     "name" : "Power & Vanilla Coconut Protein Bar (Pack of 5)",
                     "salesPrice" : {
@@ -9849,14 +9851,14 @@ paths:
                     "availabilityState" : "IN_STOCK",
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/8d8ccfbb-aa2d-4ff1-b582-b10de8cd628f"
+                        "href" : "https://yourshop.api.urn/product-view/products/73b184f6-14f9-4443-98b1-6d0bac38d653"
                       },
                       "product" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/8d8ccfbb-aa2d-4ff1-b582-b10de8cd628f"
+                        "href" : "https://yourshop.api.urn/product-view/products/73b184f6-14f9-4443-98b1-6d0bac38d653"
                       }
                     }
                   }, {
-                    "_id" : "a539e2d0-7d65-471f-a0c1-bba754f3f983",
+                    "_id" : "ad1764a7-c524-4409-a540-ca8461c61471",
                     "sku" : "sh-001",
                     "name" : "Soft Walk Ultra - Nibok Men's",
                     "salesPrice" : {
@@ -9883,10 +9885,10 @@ paths:
                         "templated" : true
                       },
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/a539e2d0-7d65-471f-a0c1-bba754f3f983"
+                        "href" : "https://yourshop.api.urn/product-view/products/ad1764a7-c524-4409-a540-ca8461c61471"
                       },
                       "product" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/a539e2d0-7d65-471f-a0c1-bba754f3f983"
+                        "href" : "https://yourshop.api.urn/product-view/products/ad1764a7-c524-4409-a540-ca8461c61471"
                       }
                     }
                   } ]
@@ -9904,8 +9906,8 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-tags-1206450827'
-  /product-view/products/97c6e6a4-6b11-4682-af73-bda4ca7fbb14:
+            $ref: '#/definitions/shop_attributes-1206450827'
+  /product-view/products/eaf0e2bf-5e7a-4a43-b6f2-9c62c4f72740:
     get:
       tags:
       - product-view
@@ -9920,7 +9922,7 @@ paths:
           examples:
             application/hal+json: |-
               {
-                "_id" : "97c6e6a4-6b11-4682-af73-bda4ca7fbb14",
+                "_id" : "eaf0e2bf-5e7a-4a43-b6f2-9c62c4f72740",
                 "name" : "Rioja Castillo de Puerto (2013)",
                 "salesPrice" : {
                   "amount" : 8.7,
@@ -9952,19 +9954,19 @@ paths:
                   }
                 },
                 "variations" : [ {
-                  "_id" : "1172ac56-705e-4130-9928-0a8f95964f66",
+                  "_id" : "74a43845-a406-41bb-8ebb-bb97f4db99c7",
                   "variationAttributeValues" : [ {
                     "displayName" : "Volume",
                     "value" : "1.5l"
                   } ]
                 }, {
-                  "_id" : "dcc5a3c3-b0bc-4d43-ae50-27a66a45e57c",
+                  "_id" : "7cd26836-8dcb-479b-b60f-2a48c5628b13",
                   "variationAttributeValues" : [ {
                     "displayName" : "Volume",
                     "value" : "0.7l"
                   } ]
                 }, {
-                  "_id" : "f98df4e1-516a-43ab-9b4d-a0ce5b2d6bf3",
+                  "_id" : "efdcb764-9d3a-45a0-8751-8583b03fc1cb",
                   "variationAttributeValues" : [ {
                     "displayName" : "Volume",
                     "value" : "0.2l"
@@ -10008,16 +10010,16 @@ paths:
                     "templated" : true
                   },
                   "self" : {
-                    "href" : "https://yourshop.api.urn/product-view/products/97c6e6a4-6b11-4682-af73-bda4ca7fbb14"
+                    "href" : "https://yourshop.api.urn/product-view/products/eaf0e2bf-5e7a-4a43-b6f2-9c62c4f72740"
                   },
                   "product" : {
-                    "href" : "https://yourshop.api.urn/product-view/products/97c6e6a4-6b11-4682-af73-bda4ca7fbb14"
+                    "href" : "https://yourshop.api.urn/product-view/products/eaf0e2bf-5e7a-4a43-b6f2-9c62c4f72740"
                   }
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_97c6e6a4-6b11-4682-af73-bda4ca7fbb14-209432195'
-  /product-view/products/9883fb19-9cea-48d3-a0c5-0ea9a01e42d9:
+            $ref: '#/definitions/product-view_products_eaf0e2bf-5e7a-4a43-b6f2-9c62c4f72740-209432195'
+  /product-view/products/efc38dc7-4d83-475c-86b6-c93bfd69d6be:
     get:
       tags:
       - product-view
@@ -10032,8 +10034,8 @@ paths:
           examples:
             application/hal+json: |-
               {
-                "_id" : "9883fb19-9cea-48d3-a0c5-0ea9a01e42d9",
-                "sku" : "33bf78e4-9662-499b-b1c7-5bec237853ac",
+                "_id" : "efc38dc7-4d83-475c-86b6-c93bfd69d6be",
+                "sku" : "7fe81e4b-f0a9-4a2f-b145-c61159033427",
                 "name" : "Rioja Castillo de Puerto (2013)",
                 "salesPrice" : {
                   "amount" : 8.7,
@@ -10065,19 +10067,19 @@ paths:
                   }
                 },
                 "variations" : [ {
-                  "_id" : "9883fb19-9cea-48d3-a0c5-0ea9a01e42d9",
+                  "_id" : "efc38dc7-4d83-475c-86b6-c93bfd69d6be",
                   "variationAttributeValues" : [ {
                     "displayName" : "Volume",
                     "value" : "0.2l"
                   } ]
                 }, {
-                  "_id" : "28df1f42-8e27-4ea3-88a6-e2a5f6580cd7",
+                  "_id" : "275bf9a7-67bc-48c4-9425-62d8615be92a",
                   "variationAttributeValues" : [ {
                     "displayName" : "Volume",
                     "value" : "0.7l"
                   } ]
                 }, {
-                  "_id" : "9c84883b-7879-4bbb-b924-a9cf7c207aca",
+                  "_id" : "971cc57f-45be-4c1a-aa28-9c796fd2bab8",
                   "variationAttributeValues" : [ {
                     "displayName" : "Volume",
                     "value" : "1.5l"
@@ -10125,18 +10127,18 @@ paths:
                     "templated" : true
                   },
                   "self" : {
-                    "href" : "https://yourshop.api.urn/product-view/products/9883fb19-9cea-48d3-a0c5-0ea9a01e42d9"
+                    "href" : "https://yourshop.api.urn/product-view/products/efc38dc7-4d83-475c-86b6-c93bfd69d6be"
                   },
                   "product" : {
-                    "href" : "https://yourshop.api.urn/product-view/products/9883fb19-9cea-48d3-a0c5-0ea9a01e42d9"
+                    "href" : "https://yourshop.api.urn/product-view/products/efc38dc7-4d83-475c-86b6-c93bfd69d6be"
                   },
                   "variation-product" : {
-                    "href" : "https://yourshop.api.urn/product-view/products/bf58c605-4907-4c12-8716-1c9bc097d101"
+                    "href" : "https://yourshop.api.urn/product-view/products/e6055280-5bcb-46b6-b14c-6a1268b9a6f4"
                   }
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_9883fb19-9cea-48d3-a0c5-0ea9a01e42d9-1208810194'
+            $ref: '#/definitions/product-view_products_efc38dc7-4d83-475c-86b6-c93bfd69d6be-1208810194'
   /product-view/products/{productId}:
     get:
       tags:
@@ -10158,7 +10160,7 @@ paths:
           examples:
             application/hal+json: |-
               {
-                "_id" : "55a53cda-9c44-433e-8e38-8ad5be5eac96",
+                "_id" : "fb537d58-3396-400a-8b9b-20dc465a6375",
                 "sku" : "vino020",
                 "name" : "Rioja Castillo de Puerto (2013)",
                 "salesPrice" : {
@@ -10224,19 +10226,19 @@ paths:
                     "templated" : true
                   },
                   "self" : {
-                    "href" : "https://yourshop.api.urn/product-view/products/55a53cda-9c44-433e-8e38-8ad5be5eac96"
+                    "href" : "https://yourshop.api.urn/product-view/products/fb537d58-3396-400a-8b9b-20dc465a6375"
                   },
                   "product" : {
-                    "href" : "https://yourshop.api.urn/product-view/products/55a53cda-9c44-433e-8e38-8ad5be5eac96"
+                    "href" : "https://yourshop.api.urn/product-view/products/fb537d58-3396-400a-8b9b-20dc465a6375"
                   },
                   "additional-image-data" : [ {
-                    "href" : "https://yourshop.api.urn/storage-api/images/rioja-04.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281226000{&width,height,upscale}",
-                    "templated" : true
-                  }, {
                     "href" : "https://yourshop.api.urn/storage-api/images/rioja-03.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225999{&width,height,upscale}",
                     "templated" : true
                   }, {
                     "href" : "https://yourshop.api.urn/storage-api/images/rioja-02.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225998{&width,height,upscale}",
+                    "templated" : true
+                  }, {
+                    "href" : "https://yourshop.api.urn/storage-api/images/rioja-04.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281226000{&width,height,upscale}",
                     "templated" : true
                   } ]
                 }
@@ -10271,16 +10273,16 @@ paths:
                 "label" : "power-bar",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/product-view/categories/83fc18d8-4eb7-4c22-96fd-9c043a0f96bb"
+                    "href" : "https://yourshop.api.urn/product-view/categories/c0a9f59a-af69-4339-864e-930a532c31fb"
                   },
                   "category" : {
-                    "href" : "https://yourshop.api.urn/product-view/categories/83fc18d8-4eb7-4c22-96fd-9c043a0f96bb"
+                    "href" : "https://yourshop.api.urn/product-view/categories/c0a9f59a-af69-4339-864e-930a532c31fb"
                   },
                   "products" : {
-                    "href" : "https://yourshop.api.urn/product-view/categories/83fc18d8-4eb7-4c22-96fd-9c043a0f96bb/products"
+                    "href" : "https://yourshop.api.urn/product-view/categories/c0a9f59a-af69-4339-864e-930a532c31fb/products"
                   }
                 },
-                "_id" : "83fc18d8-4eb7-4c22-96fd-9c043a0f96bb"
+                "_id" : "c0a9f59a-af69-4339-864e-930a532c31fb"
               }
           schema:
             $ref: '#/definitions/product-view_categories_search_find-by-label-1017888571'
@@ -10314,32 +10316,32 @@ paths:
                     "label" : null,
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/categories/8980555b-4fee-4059-9ee8-531c0aee1ad6"
+                        "href" : "https://yourshop.api.urn/product-view/categories/9f4061e2-0df2-4176-b54b-64100952a0f6"
                       },
                       "category" : {
-                        "href" : "https://yourshop.api.urn/product-view/categories/8980555b-4fee-4059-9ee8-531c0aee1ad6"
+                        "href" : "https://yourshop.api.urn/product-view/categories/9f4061e2-0df2-4176-b54b-64100952a0f6"
                       },
                       "products" : {
-                        "href" : "https://yourshop.api.urn/product-view/categories/8980555b-4fee-4059-9ee8-531c0aee1ad6/products"
+                        "href" : "https://yourshop.api.urn/product-view/categories/9f4061e2-0df2-4176-b54b-64100952a0f6/products"
                       }
                     },
-                    "_id" : "8980555b-4fee-4059-9ee8-531c0aee1ad6"
+                    "_id" : "9f4061e2-0df2-4176-b54b-64100952a0f6"
                   }, {
                     "type" : "MANUAL",
                     "name" : "category that matches product 1 in a complicated way",
                     "label" : null,
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/categories/b8d7501b-8d38-4219-8ac3-0a55e255d35e"
+                        "href" : "https://yourshop.api.urn/product-view/categories/49292db5-5542-4ba0-8ac3-aeca18253729"
                       },
                       "category" : {
-                        "href" : "https://yourshop.api.urn/product-view/categories/b8d7501b-8d38-4219-8ac3-0a55e255d35e"
+                        "href" : "https://yourshop.api.urn/product-view/categories/49292db5-5542-4ba0-8ac3-aeca18253729"
                       },
                       "products" : {
-                        "href" : "https://yourshop.api.urn/product-view/categories/b8d7501b-8d38-4219-8ac3-0a55e255d35e/products"
+                        "href" : "https://yourshop.api.urn/product-view/categories/49292db5-5542-4ba0-8ac3-aeca18253729/products"
                       }
                     },
-                    "_id" : "b8d7501b-8d38-4219-8ac3-0a55e255d35e"
+                    "_id" : "49292db5-5542-4ba0-8ac3-aeca18253729"
                   } ]
                 },
                 "_links" : {
@@ -10395,16 +10397,16 @@ paths:
                     "label" : "books",
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/categories/ba02d781-2181-433a-9bb0-e5f5ac975b13"
+                        "href" : "https://yourshop.api.urn/product-view/categories/6f8a6e55-199d-4b66-aed6-5fbdc62c31e1"
                       },
                       "category" : {
-                        "href" : "https://yourshop.api.urn/product-view/categories/ba02d781-2181-433a-9bb0-e5f5ac975b13"
+                        "href" : "https://yourshop.api.urn/product-view/categories/6f8a6e55-199d-4b66-aed6-5fbdc62c31e1"
                       },
                       "products" : {
-                        "href" : "https://yourshop.api.urn/product-view/categories/ba02d781-2181-433a-9bb0-e5f5ac975b13/products"
+                        "href" : "https://yourshop.api.urn/product-view/categories/6f8a6e55-199d-4b66-aed6-5fbdc62c31e1/products"
                       }
                     },
-                    "_id" : "ba02d781-2181-433a-9bb0-e5f5ac975b13"
+                    "_id" : "6f8a6e55-199d-4b66-aed6-5fbdc62c31e1"
                   } ]
                 },
                 "_links" : {
@@ -10420,7 +10422,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-tags-1206450827'
+            $ref: '#/definitions/shop_attributes-1206450827'
   /product-view/categories/{categoryId}/products:
     get:
       tags:
@@ -10473,7 +10475,7 @@ paths:
                       }
                     }
                   }, {
-                    "_id" : "b5f25bdc-3449-45bd-ac82-a2c213dc5c8d",
+                    "_id" : "c2db6d6f-7ebe-497c-882d-9a202c23d87e",
                     "name" : "Rioja Castillo de Puerto (2013)",
                     "salesPrice" : {
                       "amount" : 8.7,
@@ -10514,17 +10516,17 @@ paths:
                         "templated" : true
                       },
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/b5f25bdc-3449-45bd-ac82-a2c213dc5c8d"
+                        "href" : "https://yourshop.api.urn/product-view/products/c2db6d6f-7ebe-497c-882d-9a202c23d87e"
                       },
                       "product" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/b5f25bdc-3449-45bd-ac82-a2c213dc5c8d"
+                        "href" : "https://yourshop.api.urn/product-view/products/c2db6d6f-7ebe-497c-882d-9a202c23d87e"
                       }
                     }
                   } ]
                 },
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/product-view/categories/d7df7098-91af-4c4d-8dd4-76f00a506274/products?page=0&size=40"
+                    "href" : "https://yourshop.api.urn/product-view/categories/2b96bd3e-234a-4127-a18e-4ad811cc0e62/products?page=0&size=40"
                   }
                 },
                 "page" : {
@@ -10535,7 +10537,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-tags-1206450827'
+            $ref: '#/definitions/shop_attributes-1206450827'
   /product-view/products/search/find-available-tags:
     get:
       tags:
@@ -10618,7 +10620,7 @@ paths:
               {
                 "_embedded" : {
                   "products" : [ {
-                    "_id" : "e8d8a014-324f-4e3f-8399-76c0f49ebd9f",
+                    "_id" : "411e77ea-19e6-41ee-8adc-043eb468b72f",
                     "sku" : "vino020",
                     "name" : "Rioja Castillo de Puerto (2013)",
                     "salesPrice" : {
@@ -10656,17 +10658,17 @@ paths:
                         "templated" : true
                       },
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/e8d8a014-324f-4e3f-8399-76c0f49ebd9f"
+                        "href" : "https://yourshop.api.urn/product-view/products/411e77ea-19e6-41ee-8adc-043eb468b72f"
                       },
                       "product" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/e8d8a014-324f-4e3f-8399-76c0f49ebd9f"
+                        "href" : "https://yourshop.api.urn/product-view/products/411e77ea-19e6-41ee-8adc-043eb468b72f"
                       }
                     }
                   } ]
                 },
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/product-view/products/search/find-by-category?categoryId=bfc0d268-31f8-4da6-bff3-6a0723c78c38&page=0&size=40"
+                    "href" : "https://yourshop.api.urn/product-view/products/search/find-by-category?categoryId=d88e7462-1689-47c7-865e-075c49f915d5&page=0&size=40"
                   }
                 },
                 "page" : {
@@ -10677,7 +10679,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-tags-1206450827'
+            $ref: '#/definitions/shop_attributes-1206450827'
   /product-view/products/search/find-by-query:
     post:
       tags:
@@ -10706,7 +10708,7 @@ paths:
               {
                 "_embedded" : {
                   "products" : [ {
-                    "_id" : "a1981aa2-fb43-4c9b-aa92-d6fae3d805bb",
+                    "_id" : "a0ed62a0-f49c-4565-b6fe-26eaa8d78c3f",
                     "sku" : "vino020",
                     "name" : "Rioja Castillo de Puerto (2013)",
                     "salesPrice" : {
@@ -10744,10 +10746,10 @@ paths:
                         "templated" : true
                       },
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/a1981aa2-fb43-4c9b-aa92-d6fae3d805bb"
+                        "href" : "https://yourshop.api.urn/product-view/products/a0ed62a0-f49c-4565-b6fe-26eaa8d78c3f"
                       },
                       "product" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/a1981aa2-fb43-4c9b-aa92-d6fae3d805bb"
+                        "href" : "https://yourshop.api.urn/product-view/products/a0ed62a0-f49c-4565-b6fe-26eaa8d78c3f"
                       }
                     }
                   } ]
@@ -10765,7 +10767,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-tags-1206450827'
+            $ref: '#/definitions/shop_attributes-1206450827'
   /product-view/products/search/find-by-search-term:
     get:
       tags:
@@ -10790,7 +10792,7 @@ paths:
               {
                 "_embedded" : {
                   "products" : [ {
-                    "_id" : "5fe21ef2-2d11-4e35-ac76-32bb53bc3bdd",
+                    "_id" : "58fcca1a-5820-4560-914b-b8f62cce4772",
                     "sku" : "vino020",
                     "name" : "Rioja Castillo de Puerto (2013)",
                     "salesPrice" : {
@@ -10828,14 +10830,14 @@ paths:
                         "templated" : true
                       },
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/5fe21ef2-2d11-4e35-ac76-32bb53bc3bdd"
+                        "href" : "https://yourshop.api.urn/product-view/products/58fcca1a-5820-4560-914b-b8f62cce4772"
                       },
                       "product" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/5fe21ef2-2d11-4e35-ac76-32bb53bc3bdd"
+                        "href" : "https://yourshop.api.urn/product-view/products/58fcca1a-5820-4560-914b-b8f62cce4772"
                       }
                     }
                   }, {
-                    "_id" : "43ed7156-0d07-4753-9c2a-d7a4c56afca3",
+                    "_id" : "9cb1b7ef-9d67-4629-9272-d9bf0f8bb28f",
                     "sku" : "sh-001",
                     "name" : "Soft Walk Ultra - Nibok Men's",
                     "salesPrice" : {
@@ -10862,10 +10864,10 @@ paths:
                         "templated" : true
                       },
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/43ed7156-0d07-4753-9c2a-d7a4c56afca3"
+                        "href" : "https://yourshop.api.urn/product-view/products/9cb1b7ef-9d67-4629-9272-d9bf0f8bb28f"
                       },
                       "product" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/43ed7156-0d07-4753-9c2a-d7a4c56afca3"
+                        "href" : "https://yourshop.api.urn/product-view/products/9cb1b7ef-9d67-4629-9272-d9bf0f8bb28f"
                       }
                     }
                   } ]
@@ -10883,7 +10885,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-tags-1206450827'
+            $ref: '#/definitions/shop_attributes-1206450827'
   /product-view/products/search/find-by-tags:
     get:
       tags:
@@ -10910,7 +10912,7 @@ paths:
               {
                 "_embedded" : {
                   "products" : [ {
-                    "_id" : "33a92c6a-d0b3-4b39-a9aa-070d99384012",
+                    "_id" : "5f16a666-b16c-491e-b93f-99e3a3290221",
                     "sku" : "vino020",
                     "name" : "Rioja Castillo de Puerto (2013)",
                     "salesPrice" : {
@@ -10948,10 +10950,10 @@ paths:
                         "templated" : true
                       },
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/33a92c6a-d0b3-4b39-a9aa-070d99384012"
+                        "href" : "https://yourshop.api.urn/product-view/products/5f16a666-b16c-491e-b93f-99e3a3290221"
                       },
                       "product" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/33a92c6a-d0b3-4b39-a9aa-070d99384012"
+                        "href" : "https://yourshop.api.urn/product-view/products/5f16a666-b16c-491e-b93f-99e3a3290221"
                       }
                     }
                   } ]
@@ -10969,7 +10971,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-tags-1206450827'
+            $ref: '#/definitions/shop_attributes-1206450827'
   /products:
     get:
       tags:
@@ -11132,7 +11134,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-tags-1206450827'
+            $ref: '#/definitions/shop_attributes-1206450827'
       security:
       - oauth2_accessCode:
         - prod:r
@@ -11904,7 +11906,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-tags-1206450827'
+            $ref: '#/definitions/shop_attributes-1206450827'
       security:
       - oauth2_accessCode:
         - prod:r
@@ -13725,7 +13727,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-tags-1206450827'
+            $ref: '#/definitions/shop_attributes-1206450827'
       security:
       - oauth2_accessCode:
         - prod:r
@@ -14409,7 +14411,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-tags-1206450827'
+            $ref: '#/definitions/shop_attributes-1206450827'
       security:
       - oauth2_accessCode:
         - scop:r
@@ -14514,7 +14516,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-tags-1206450827'
+            $ref: '#/definitions/shop_attributes-1206450827'
       security:
       - oauth2_accessCode:
         - shpz:r
@@ -14794,7 +14796,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-tags-1206450827'
+            $ref: '#/definitions/shop_attributes-1206450827'
   /shipping-zones/{shippingZoneId}/shipping-methods:
     get:
       tags:
@@ -15545,7 +15547,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-tags-1206450827'
+            $ref: '#/definitions/shop_attributes-1206450827'
       security:
       - oauth2_accessCode:
         - shat:r
@@ -15698,7 +15700,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-tags-1206450827'
+            $ref: '#/definitions/shop_attributes-1206450827'
       security:
       - oauth2_accessCode:
         - feat:r
@@ -16191,7 +16193,7 @@ paths:
           examples:
             application/hal+json: |-
               {
-                "shopId" : "534bf59f-f6ab-4944-a7d5-32f427e37400"
+                "shopId" : "3b984289-8f91-4736-95bf-61b435434d42"
               }
           schema:
             $ref: '#/definitions/shop-id927029385'
@@ -16335,7 +16337,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-tags-1206450827'
+            $ref: '#/definitions/shop_attributes-1206450827'
       security:
       - oauth2_accessCode:
         - user:r
@@ -16960,7 +16962,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-tags-1206450827'
+            $ref: '#/definitions/shop_attributes-1206450827'
     post:
       tags:
       - webhook-subscriptions
@@ -17449,50 +17451,6 @@ definitions:
       {
         "stringPrefix" : "2017-shop-",
         "nextNumericSuffix" : 20000
-      }
-  orders_order-id_processes_returns-613759876:
-    type: object
-    properties:
-      lineItems:
-        type: array
-        items:
-          type: object
-          properties:
-            quantity:
-              type: number
-              description: The quantity of the product line item in this return process.
-            productLineItemId:
-              type: string
-              description: The ID of a specified product line item in this return
-                process.
-            status:
-              type: string
-              description: The status of the product line item in this return process.
-                Can be `RETURNED` or `BROKEN`.
-      shippingPriceRefund:
-        type: object
-        properties:
-          amount:
-            type: number
-            description: The price for the shipping line item to be refunded.
-          currency:
-            type: string
-            description: The currency of the price for the shipping line item.
-      comment:
-        type: string
-        description: The comment to this status change.
-    example: |-
-      {
-        "comment" : "This needs to be done fast!",
-        "lineItems" : [ {
-          "quantity" : 3,
-          "productLineItemId" : "e0a88a64-132d-4f25-be83-fe588d365d15",
-          "status" : "RETURNED"
-        } ],
-        "shippingPriceRefund" : {
-          "currency" : "EUR",
-          "amount" : 19.99
-        }
       }
   carts_cartId_create-payment1879371795:
     type: object
@@ -19449,20 +19407,6 @@ definitions:
       ����u���)�����\x7ff߀~&���'��\"�\x16���\0\x1e��S����:_\x0fX�k\x7f\x11u�2=\x17\
       U����\x11�w\x17�/�x�J��%��j�i�K#y�ie����j��t��\x12��|\x19�o�[|\x06�y�\rY�>\x12\
       ���\x1f��\\��m?�\"6:}�����,�pb��D5\x05�T\b5( ��\x03��"
-  payments_paymentId_status-631714533:
-    type: object
-    properties:
-      amount:
-        type: number
-        description: Optional amount that has been paid so far. Defaults to the total
-          amount. Only recommended for status transitions towards `PAID`, `UNDERPAID`
-          or `OVERPAID`.
-      paymentStatus:
-        type: string
-        description: The status of the payment. Can be one of `PENDING`, `APPROVED`,
-          `CANCELED`, `CAPTURED`, `CAPTURE_PENDING`, `PAID`, `UNDERPAID`, `OVERPAID`,
-          or `FAILED`, depending on the former status of the payment.
-    example: '{"paymentStatus":"APPROVED"}'
   product-view_products_search_find-by-query1193686370:
     type: object
     properties:
@@ -19625,571 +19569,6 @@ definitions:
     example: '{"currentPassword":"GoodPassword01!;)","newPassword":"ValidPassword123"}'
   products_productId_availability_enable-stock-management-168834398:
     example: '{ "initialAvailableStock" : 100, "stockThreshold" : 2 }'
-  orders_order-id1624691353:
-    type: object
-    properties:
-      orderNumber:
-        type: string
-        description: The automatically generated order number.
-      _links:
-        type: object
-        description: See <<hypermedia,Hypermedia>>
-        properties: {}
-      taxModel:
-        type: string
-        description: The tax model that applies for this order.
-      orderNote:
-        type: string
-        description: A merchant comment or note on the order.
-      taxTotal:
-        type: object
-        properties:
-          amount:
-            type: number
-            description: The total tax amount.
-          currency:
-            type: string
-            description: The currency of the total tax amount.
-      taxes:
-        type: array
-        items:
-          type: object
-          properties:
-            taxClass:
-              type: string
-              description: The tax class. Can be `REGULAR`, `REDUCED`, or `EXEMPT`.
-            taxRate:
-              type: number
-              description: The applied tax rate.
-            amount:
-              type: number
-              description: The tax amount.
-            currency:
-              type: string
-              description: The tax currency.
-      productLineItems:
-        type: array
-        items:
-          type: object
-          properties:
-            broken:
-              type: object
-              properties:
-                amount:
-                  type: object
-                  description: The amount of broken items of this product line item.
-                  properties: {}
-                quantity:
-                  type: number
-                  description: The quantity of broken items of this product line item.
-            unitPrice:
-              type: object
-              properties:
-                amount:
-                  type: number
-                  description: The amount of the unit price for the product line item.
-                taxModel:
-                  type: string
-                  description: The tax model of the unit price for a product line
-                    item.
-                currency:
-                  type: string
-                  description: The currency of the single product line item price.
-            product:
-              type: object
-              properties:
-                essentialFeatures:
-                  type: string
-                  description: The essential product properties of the product in
-                    this product line item.
-                _links:
-                  type: object
-                  properties:
-                    variation-product:
-                      type: object
-                      description: Optional link to the variation product, if the
-                        product in the line item is a variation.
-                      properties: {}
-                    default-image-data:
-                      type: object
-                      description: The link to the product default image.
-                      properties: {}
-                shippingWeight:
-                  type: number
-                  description: The shipping weight of the product in this product
-                    line item.
-                defaultImageDataUri:
-                  type: string
-                  description: The relative product default image URI.
-                name:
-                  type: string
-                  description: The name of the product in this product line item.
-                _id:
-                  type: string
-                  description: The ID of the product for this product line item.
-                variationAttributeValues:
-                  type: array
-                  description: The variation attributes of a product with its values.
-                  items:
-                    type: object
-                    properties:
-                      displayName:
-                        type: string
-                        description: The name of the variation attribute defined by
-                          the merchant, e.g. name, size, or color.
-                      value:
-                        type: string
-                        description: The values for a variation attribute defined
-                          by the merchant, e.g. the detailed sizes such as S, M, L,
-                          XL.
-                sku:
-                  type: string
-                  description: The stock keeping unit (SKU) corresponding to the product
-                    in this product line item.
-            lineItemPrice:
-              type: object
-              properties:
-                amount:
-                  type: number
-                  description: The amount of the line item price for a product line
-                    item.
-                taxModel:
-                  type: string
-                  description: The tax model of the line item price for a product
-                    line item.
-                currency:
-                  type: string
-                  description: The currency of the line item price for a product line
-                    item.
-            quantity:
-              type: number
-              description: The value of the quantity for the product line item.
-            initialQuantity:
-              type: number
-              description: The initial quantity for the product line item.
-            pending:
-              type: object
-              properties:
-                quantity:
-                  type: number
-                  description: The quantity of pending items of this product line
-                    item.
-            lineItemTax:
-              type: object
-              properties:
-                taxClass:
-                  type: string
-                  description: The tax class of a product line item. Can be `REGULAR`,
-                    `REDUCED`, or `EXEMPT`.
-                taxRate:
-                  type: number
-                  description: The tax rate of a product line item.
-                amount:
-                  type: number
-                  description: The tax amount of a product line item.
-                currency:
-                  type: string
-                  description: The currency of the tax for a product line item.
-            canceled:
-              type: object
-              properties:
-                amount:
-                  type: object
-                  description: The amount of canceled items of this product line item.
-                  properties: {}
-                quantity:
-                  type: number
-                  description: The quantity of canceled items of this product line
-                    item.
-            unshipped:
-              type: object
-              properties:
-                quantity:
-                  type: number
-                  description: The quantity of not yet dispatched items of this product
-                    line item.
-            shipped:
-              type: object
-              properties:
-                quantity:
-                  type: number
-                  description: The quantity of dispatched items of this product line
-                    item.
-            initialLineItemPrice:
-              type: object
-              properties:
-                amount:
-                  type: number
-                  description: The initial amount of the line item price for a product
-                    line item.
-                taxModel:
-                  type: string
-                  description: The tax model of the initial line item price for a
-                    product line item.
-                currency:
-                  type: string
-                  description: The currency of the initial line item price for a product
-                    line item.
-            _id:
-              type: string
-              description: The ID of the product line item.
-            returned:
-              type: object
-              properties:
-                amount:
-                  type: object
-                  description: The amount of returned items of this product line item.
-                  properties: {}
-                quantity:
-                  type: number
-                  description: The quantity of returned items of this product line
-                    item.
-      salesChannel:
-        type: string
-        description: The sales channel for this order, such as an online shop, point
-          of sale, or a retail store.
-      shippingStatus:
-        type: string
-        description: The current shipping status of this order. Can be `UNSHIPPED`,
-          `PARTIALLY_SHIPPED`, or `SHIPPED`.
-      createdAt:
-        type: string
-        description: The date and time the order was technically created in the system.
-          According to ISO 8601. Can deviate from `entryDate`, e.g. because the order
-          was originally created earlier or in another system.
-      termsAndConditionsExplicitlyAccepted:
-        type: boolean
-        description: Indicates if the customer explicitly accepted the shop's terms
-          and conditions before ordering. Can be `true` or `false`.
-      initialBalanceDue:
-        type: object
-        properties:
-          amount:
-            type: number
-            description: The initial due balance of the order.
-          currency:
-            type: string
-            description: The currency of the initial balance due.
-      initialGrandTotal:
-        type: object
-        properties:
-          amount:
-            type: number
-            description: The initial total amount of the order.
-          currency:
-            type: string
-            description: The currency of the initial total amount of the order.
-      externalPaymentUri:
-        type: string
-        description: Link to the payment in a payment provider's back-office, if provided
-          by the payment app.
-      externalPaymentId:
-        type: string
-        description: External payment reference, if provided by the payment app.
-      totalRefunded:
-        type: object
-        properties:
-          amount:
-            type: number
-            description: The total refunded amount.
-          currency:
-            type: string
-            description: The currency of the total refunded amount.
-      totalReceived:
-        type: object
-        properties:
-          amount:
-            type: number
-            description: The total payment amount received.
-          currency:
-            type: string
-            description: The currency of the total payment amount received.
-      testOrder:
-        type: boolean
-        description: Indicates if this order is a test order. Can be `true` or `false`.
-      currency:
-        type: string
-        description: The currency in which the order was entered.
-      marketingChannel:
-        type: string
-        description: The marketing channel for this order, such as a newsletter campaign,
-          Google Shopping, or a Buy Button that’s implemented on a blog.
-      paymentStatus:
-        type: string
-        description: The current status of the payment associated with this order.
-          Can be `PAID`, `PENDING`, or `REFUND_PENDING`.
-      paymentLineItem:
-        type: object
-        properties:
-          taxClass:
-            type: string
-            description: The tax class of a payment line item. Can be `REGULAR`, `REDUCED`,
-              or `EXEMPT`.
-          lineItemPrice:
-            type: object
-            properties:
-              amount:
-                type: number
-                description: The amount of the product line item price for the payment
-                  line item.
-              taxModel:
-                type: string
-                description: The tax model of the product line item price for the
-                  payment line item.
-              currency:
-                type: string
-                description: The currency of the payment line item price.
-          lineItemTaxes:
-            type: array
-            description: The tax information for the payment line item. The array
-              contains one item per tax class.
-          initialLineItemPrice:
-            type: object
-            properties:
-              amount:
-                type: number
-                description: The amount of the initial line item price for the payment
-                  line item.
-              taxModel:
-                type: string
-                description: The tax model of the initial line item price for the
-                  payment line item.
-              currency:
-                type: string
-                description: The currency of the initial payment line item price.
-          paymentMethod:
-            type: object
-            properties:
-              onlinePayment:
-                type: boolean
-                description: Indicates if this payment method is an online payment.
-                  Can be `true` or `false`.
-              discountOrFee:
-                type: object
-                properties:
-                  absoluteValue:
-                    type: object
-                    properties:
-                      amount:
-                        type: number
-                        description: The amount of the absolute value of `discountOrFee`
-                          of the payment method in this payment line item.
-                      taxModel:
-                        type: string
-                        description: The tax model of the absolute price of the `discountOrFee`
-                          for this payment method.
-                      currency:
-                        type: string
-                        description: The currency of the absolute price of the `discountOrFee`
-                          for this payment method.
-                  type:
-                    type: string
-                    description: The type of the `discountOrFee` for this payment
-                      method. Can be `ABSOLUTE`, `PERCENTAGE`, or `UNSUPPORTED`.
-              name:
-                type: string
-                description: The name of the payment method.
-              description:
-                type: string
-                description: The description of the payment method in this payment
-                  line item.
-      marketingSubchannel:
-        type: string
-        description: The marketing subchannel for this order, such as a specific newsletter
-          of a newsletter campaign, e.g. a Summer Sale that’s promoted on a blog,
-          or a Winter Special that’s promoted on Facebook.
-      taxable:
-        type: boolean
-        description: Indicates if a tax applies for this order. Can be `true` or `false`.
-      balanceDue:
-        type: object
-        properties:
-          amount:
-            type: number
-            description: The total amount of the order. Does not change when payments
-              come in.
-          currency:
-            type: string
-            description: The currency of the balance due.
-      grandTotal:
-        type: object
-        properties:
-          amount:
-            type: number
-            description: The total amount of the order.
-          currency:
-            type: string
-            description: The currency of the total order amount.
-      entryDate:
-        type: string
-        description: The date and time of the actual creation of this order from a
-          business perspective. Can deviate from `createdAt`.
-      cartId:
-        type: string
-        description: The ID of the cart this order has been created from (if existing).
-      openAmount:
-        type: object
-        properties:
-          amount:
-            type: number
-            description: The outstanding amount to be paid.
-          currency:
-            type: string
-            description: The currency of the open amount.
-      canceled:
-        type: boolean
-        description: The current cancelation status of this order. Can be `true` or
-          `false`.
-      paymentNote:
-        type: string
-        description: A prompt to pay the order which will be rendered in the invoice
-          order document. Requires a payment reference and the merchant's bank account
-          details.
-      backgroundJobs:
-        type: array
-        description: Pending processes initiated via the cockpit or the API that run
-          in the background, e.g. rendering an invoice document.
-      initialNetTotal:
-        type: object
-        properties:
-          amount:
-            type: number
-            description: The initial amount of net total.
-          currency:
-            type: string
-            description: The currency of the initial total net amount.
-      shippingLineItem:
-        type: object
-        properties:
-          taxClass:
-            type: string
-            description: The tax class of the shipping line item. Can be `REGULAR`,
-              `REDUCED`, or `EXEMPT`.
-          lineItemPrice:
-            type: object
-            properties:
-              amount:
-                type: number
-                description: The amount of the line item price for the shipping line
-                  item.
-              taxModel:
-                type: string
-                description: The tax model of the line item price for the shipping
-                  line item.
-              currency:
-                type: string
-                description: The currency of the price for the shipping line item.
-          lineItemTaxes:
-            type: array
-            description: The tax information for the shipping line item. The array
-              contains one item per tax class.
-          initialLineItemPrice:
-            type: object
-            properties:
-              amount:
-                type: number
-                description: The amount of the initial line item price for the shipping
-                  line item.
-              taxModel:
-                type: string
-                description: The tax model of the initial line item price for the
-                  shipping line item.
-              currency:
-                type: string
-                description: The currency of the initial price for the shipping line
-                  item.
-          shippingMethod:
-            type: object
-            properties:
-              freeShippingValue:
-                type: object
-                properties:
-                  amount:
-                    type: number
-                    description: The amount of the free shipping value of the shipping
-                      method in this shipping line item.
-                  currency:
-                    type: string
-                    description: The currency of the free shipping amount of the shipping
-                      method.
-              name:
-                type: string
-                description: The name of the shipping method in this shipping line
-                  item.
-              description:
-                type: string
-                description: The description of the shipping method in the shipping
-                  line item.
-              fixedPrice:
-                type: object
-                properties:
-                  amount:
-                    type: number
-                    description: The amount of the fixed price of the shipping method
-                      in this shipping line item (if set).
-                  taxModel:
-                    type: string
-                    description: The tax model of the fixed price of the shipping
-                      method in this shipping line item (if set).
-                  currency:
-                    type: string
-                    description: The currency of the fixed price of the shipping method.
-      subtotal:
-        type: object
-        properties:
-          amount:
-            type: number
-            description: The subtotal amount of the product line items.
-          currency:
-            type: string
-            description: The currency of the subtotal amount.
-      shippingAddress:
-        type: object
-        description: The shipping address of the cart. Defaults to billing address
-          if no shipping address is set. Refer to <<resources-cart-set-shipping-address,Set
-          cart shipping address>> for item documentation.
-        properties:
-          displayAddressLines:
-            type: array
-            description: The applicable shipping address of the cart to be displayed.
-      billingAddress:
-        type: object
-        description: The billing address of the cart. Refer to <<resources-cart-set-billing-address,Set
-          cart billing address>> for item documentation.
-        properties:
-          displayAddressLines:
-            type: array
-            description: The applicable billing address of the cart to be displayed.
-      netTotal:
-        type: object
-        properties:
-          amount:
-            type: number
-            description: The amount of net total.
-          currency:
-            type: string
-            description: The currency of the total net amount.
-      _id:
-        type: string
-        description: The unique identifier of the order.
-      initialSubtotal:
-        type: object
-        properties:
-          amount:
-            type: number
-            description: The initial subtotal amount of the product line items.
-          currency:
-            type: string
-            description: The currency of the initial subtotal amount.
-      initialTaxTotal:
-        type: object
-        properties:
-          amount:
-            type: number
-            description: The initial total tax amount.
-          currency:
-            type: string
-            description: The currency of the initial total tax amount.
   payment-method-definitions-995299357:
     type: object
     properties:
@@ -20604,7 +19983,7 @@ definitions:
         type: string
         description: Optional field. The username that identifies the user. If no
           username is passed, the email address is set as the username.
-  product-view_products_search_find-by-tags-1206450827:
+  shop_attributes-1206450827:
     type: object
     properties:
       _links:
@@ -20614,91 +19993,27 @@ definitions:
       _embedded:
         type: object
         properties:
-          products:
+          attributes:
             type: array
+            description: A collection of shop attributes.
             items:
               type: object
               properties:
-                refPrice:
-                  type: object
-                  description: The price information scaled to a standardised base
-                    unit.
-                  properties:
-                    unit:
-                      type: string
-                      description: The unit corresponding to the quanity.
-                    quantity:
-                      type: number
-                      description: The actual quantity in the product.
-                    price:
-                      type: object
-                      description: The actual reference price.
-                      properties: {}
-                    refQuantity:
-                      type: number
-                      description: The reference quantity the product's reference
-                        price is calculated on.
-                availabilityState:
-                  type: string
-                  description: The current availability state for the product. Can
-                    be `IN_STOCK`, `LOW_STOCK`, or `OUT_OF_STOCK`.
-                _links:
-                  type: object
-                  description: The links to receive further information related to
-                    the product.
-                  properties:
-                    default-image-data:
-                      type: object
-                      properties:
-                        href:
-                          type: string
-                          description: A link relation to the default image URL. See
-                            also <<about-the-api-api-basics-hypermedia,Hypermedia>>.
-                salesPrice:
-                  type: object
-                  description: The price of the product.
-                  properties: {}
+                public:
+                  type: boolean
+                  description: Indicates if the attribute can be read by other clients.
+                    Can be `true` or `false`.
                 name:
                   type: string
-                  description: The name of the product.
-                onSale:
+                  description: The name of the shop attribute, e.g. `default-sorting-products`.
+                readOnly:
                   type: boolean
-                  description: Indicates if the product is on offer. Can be `true`
-                    or `false`.
-                manufacturerPrice:
-                  type: object
-                  description: The list price of the product, also known as the manufacturer's
-                    suggested retail price or recommended retail price.
-                  properties: {}
-                _id:
+                  description: Indicates if the client interacting with the endpoint
+                    is allowed to modify the attribute. Can be `true` or `false`.
+                value:
                   type: string
-                  description: The unique identifier of the product.
-                listPriceText:
-                  type: string
-                  description: The text that comes along with the list price.
-                sku:
-                  type: string
-                  description: The stock keeping unit (SKU) corresponding to the product.
-                shippingDimension:
-                  type: object
-                  properties:
-                    width:
-                      type: number
-                      description: The width of the product including packaging in
-                        mm.
-                    length:
-                      type: number
-                      description: The length of the product including packaging in
-                        mm.
-                    height:
-                      type: number
-                      description: The height of the product including packaging in
-                        mm.
-                listPrice:
-                  type: object
-                  description: The list price of the product, also known as the manufacturer's
-                    suggested retail price or recommended retail price.
-                  properties: {}
+                  description: The value of the shop attribute. Assuming the attribute
+                    name to be `default-sorting-products`, the value can be e.g. `asc`.
       page:
         type: object
         description: See <<pagination,Pagination>>
@@ -20832,6 +20147,21 @@ definitions:
           "amount" : 200
         }
       }
+  payments_paymentId_status-1159996581:
+    type: object
+    properties:
+      externalPaymentUri:
+        type: string
+        description: Link to the payment in a payment provider's back-office (optional).
+      externalPaymentId:
+        type: string
+        description: External payment reference that might be generated by the payment
+          provider (optional).
+      paymentStatus:
+        type: string
+        description: The status of the payment. Can be one of `PENDING`, `APPROVED`,
+          `CANCELED`, `CAPTURED`, `CAPTURE_PENDING`, `PAID`, `UNDERPAID`, `OVERPAID`,
+          or `FAILED`, depending on the former status of the payment.
   categories_id-596922385:
     type: array
     items:
@@ -21220,46 +20550,6 @@ definitions:
         type: string
         description: The URI to which the app will redirect the customer after the
           approval, cancelation or failure of the payment.
-  orders_order-id_processes_shippings-462556680:
-    type: object
-    properties:
-      lineItems:
-        type: array
-        items:
-          type: object
-          properties:
-            quantity:
-              type: number
-              description: The quantity of a product line item that is marked with
-                a new status.
-            productLineItemId:
-              type: string
-              description: The ID of a product line item that is marked with a new
-                status.
-      trackingLink:
-        type: string
-        description: The tracking link for this shipping process.
-      sendMail:
-        type: boolean
-        description: Indicates if a mail is to be sent out with this shipping process
-          transition.
-      trackingCode:
-        type: string
-        description: The tracking code for this shipping process.
-      comment:
-        type: string
-        description: The comment to this status change.
-    example: |-
-      {
-        "comment" : "This needs to be done fast!",
-        "sendMail" : true,
-        "trackingCode" : "lookAtMyTrackingCodeWow",
-        "trackingLink" : "http://tracking.is/fun?code=lookAtMyTrackingCodeWow",
-        "lineItems" : [ {
-          "quantity" : 3,
-          "productLineItemId" : "de48e2db-ef9a-4268-9595-2147756d8afe"
-        } ]
-      }
   products_productId_availability_update-stock-threshold-412357891:
     example: '{ "stockThreshold" : 5 }'
   shipping-zones_shippingZoneId_shipping-methods_shippingMethodId1520760380:
@@ -21304,14 +20594,6 @@ definitions:
         "currentPassword" : "GoodPassword01!;)",
         "newEmail" : "newEmail@Gmail.com"
       }
-  payments_paymentId_status1696780730:
-    type: object
-    properties:
-      paymentStatus:
-        type: string
-        description: The status of the payment. Can be one of `PENDING`, `APPROVED`,
-          `CANCELED`, `CAPTURED`, `CAPTURE_PENDING`, `PAID`, `UNDERPAID`, `OVERPAID`,
-          or `FAILED`, depending on the former status of the payment.
   shop_attributes847708956:
     type: object
     required:
@@ -21339,6 +20621,27 @@ definitions:
         "value" : "correct-value",
         "public" : false
       }
+  payments_paymentId_status2093475673:
+    type: object
+    properties:
+      amount:
+        type: number
+        description: Optional amount that has been paid so far. Defaults to the total
+          amount. Only recommended for status transitions towards `PAID`, `UNDERPAID`
+          or `OVERPAID`.
+      externalPaymentUri:
+        type: string
+        description: Link to the payment in a payment provider's back-office (optional).
+      externalPaymentId:
+        type: string
+        description: External payment reference that might be generated by the payment
+          provider (optional).
+      paymentStatus:
+        type: string
+        description: The status of the payment. Can be one of `PENDING`, `APPROVED`,
+          `CANCELED`, `CAPTURED`, `CAPTURE_PENDING`, `PAID`, `UNDERPAID`, `OVERPAID`,
+          or `FAILED`, depending on the former status of the payment.
+    example: '{"paymentStatus":"APPROVED","externalPaymentId":"transaction123XYZ","externalPaymentUri":"https://www.example.com/transactions/transaction123XYZ"}'
   users_id_roles177392690:
     example: https://yourshop.api.urn/roles/0ef50f2a-1928-44c5-b20c-472bb2aaf660
   checkout-settings230406171:
@@ -21608,6 +20911,571 @@ definitions:
       _id:
         type: string
         description: The ID of the return process.
+  orders_order-id-853166963:
+    type: object
+    properties:
+      orderNumber:
+        type: string
+        description: The automatically generated order number.
+      _links:
+        type: object
+        description: See <<hypermedia,Hypermedia>>
+        properties: {}
+      taxModel:
+        type: string
+        description: The tax model that applies for this order.
+      orderNote:
+        type: string
+        description: A merchant comment or note on the order.
+      taxTotal:
+        type: object
+        properties:
+          amount:
+            type: number
+            description: The total tax amount.
+          currency:
+            type: string
+            description: The currency of the total tax amount.
+      taxes:
+        type: array
+        items:
+          type: object
+          properties:
+            taxClass:
+              type: string
+              description: The tax class. Can be `REGULAR`, `REDUCED`, or `EXEMPT`.
+            taxRate:
+              type: number
+              description: The applied tax rate.
+            amount:
+              type: number
+              description: The tax amount.
+            currency:
+              type: string
+              description: The tax currency.
+      productLineItems:
+        type: array
+        items:
+          type: object
+          properties:
+            broken:
+              type: object
+              properties:
+                amount:
+                  type: object
+                  description: The amount of broken items of this product line item.
+                  properties: {}
+                quantity:
+                  type: number
+                  description: The quantity of broken items of this product line item.
+            unitPrice:
+              type: object
+              properties:
+                amount:
+                  type: number
+                  description: The amount of the unit price for the product line item.
+                taxModel:
+                  type: string
+                  description: The tax model of the unit price for a product line
+                    item.
+                currency:
+                  type: string
+                  description: The currency of the single product line item price.
+            product:
+              type: object
+              properties:
+                essentialFeatures:
+                  type: string
+                  description: The essential product properties of the product in
+                    this product line item.
+                _links:
+                  type: object
+                  properties:
+                    variation-product:
+                      type: object
+                      description: The optional link to the variation product if the
+                        product line item is a variation.
+                      properties: {}
+                    default-image-data:
+                      type: object
+                      description: The link to the product default image.
+                      properties: {}
+                shippingWeight:
+                  type: number
+                  description: The shipping weight of the product in this product
+                    line item.
+                defaultImageDataUri:
+                  type: string
+                  description: The relative product default image URI.
+                name:
+                  type: string
+                  description: The name of the product in this product line item.
+                _id:
+                  type: string
+                  description: The ID of the product for this product line item.
+                variationAttributeValues:
+                  type: array
+                  description: The variation attributes of a product with its values.
+                  items:
+                    type: object
+                    properties:
+                      displayName:
+                        type: string
+                        description: The name of the variation attribute defined by
+                          the merchant, e.g. name, size, or color.
+                      value:
+                        type: string
+                        description: The values for a variation attribute defined
+                          by the merchant, e.g. the detailed sizes such as S, M, L,
+                          XL.
+                sku:
+                  type: string
+                  description: The stock keeping unit (SKU) corresponding to the product
+                    in this product line item.
+            lineItemPrice:
+              type: object
+              properties:
+                amount:
+                  type: number
+                  description: The amount of the line item price for a product line
+                    item.
+                taxModel:
+                  type: string
+                  description: The tax model of the line item price for a product
+                    line item.
+                currency:
+                  type: string
+                  description: The currency of the line item price for a product line
+                    item.
+            quantity:
+              type: number
+              description: The value of the quantity for the product line item.
+            initialQuantity:
+              type: number
+              description: The initial quantity for the product line item.
+            pending:
+              type: object
+              properties:
+                quantity:
+                  type: number
+                  description: The quantity of pending items of this product line
+                    item.
+            lineItemTax:
+              type: object
+              properties:
+                taxClass:
+                  type: string
+                  description: The tax class of a product line item. Can be `REGULAR`,
+                    `REDUCED`, or `EXEMPT`.
+                taxRate:
+                  type: number
+                  description: The tax rate of a product line item.
+                amount:
+                  type: number
+                  description: The tax amount of a product line item.
+                currency:
+                  type: string
+                  description: The currency of the tax for a product line item.
+            canceled:
+              type: object
+              properties:
+                amount:
+                  type: object
+                  description: The amount of canceled items of this product line item.
+                  properties: {}
+                quantity:
+                  type: number
+                  description: The quantity of canceled items of this product line
+                    item.
+            unshipped:
+              type: object
+              properties:
+                quantity:
+                  type: number
+                  description: The quantity of not yet dispatched items of this product
+                    line item.
+            shipped:
+              type: object
+              properties:
+                quantity:
+                  type: number
+                  description: The quantity of dispatched items of this product line
+                    item.
+            initialLineItemPrice:
+              type: object
+              properties:
+                amount:
+                  type: number
+                  description: The initial amount of the line item price for a product
+                    line item.
+                taxModel:
+                  type: string
+                  description: The tax model of the initial line item price for a
+                    product line item.
+                currency:
+                  type: string
+                  description: The currency of the initial line item price for a product
+                    line item.
+            _id:
+              type: string
+              description: The ID of the product line item.
+            returned:
+              type: object
+              properties:
+                amount:
+                  type: object
+                  description: The amount of returned items of this product line item.
+                  properties: {}
+                quantity:
+                  type: number
+                  description: The quantity of returned items of this product line
+                    item.
+      salesChannel:
+        type: string
+        description: The sales channel for this order, such as an online shop, point
+          of sale, or a retail store.
+      shippingStatus:
+        type: string
+        description: The current shipping status of this order. Can be `UNSHIPPED`,
+          `PARTIALLY_SHIPPED`, or `SHIPPED`.
+      createdAt:
+        type: string
+        description: The date and time the order was technically created in the system.
+          According to ISO 8601. Can deviate from `entryDate`, e.g. because the order
+          was originally created earlier or in another system.
+      termsAndConditionsExplicitlyAccepted:
+        type: boolean
+        description: Indicates if the customer explicitly accepted the shop's terms
+          and conditions before ordering. Can be `true` or `false`.
+      initialBalanceDue:
+        type: object
+        properties:
+          amount:
+            type: number
+            description: The initial due balance of the order.
+          currency:
+            type: string
+            description: The currency of the initial balance due.
+      initialGrandTotal:
+        type: object
+        properties:
+          amount:
+            type: number
+            description: The initial total amount of the order.
+          currency:
+            type: string
+            description: The currency of the initial total amount of the order.
+      externalPaymentUri:
+        type: string
+        description: The link to the payment in a payment provider's administration
+          if provided by the payment app.
+      externalPaymentId:
+        type: string
+        description: The external payment reference if provided by the payment app.
+      totalRefunded:
+        type: object
+        properties:
+          amount:
+            type: number
+            description: The total refunded amount.
+          currency:
+            type: string
+            description: The currency of the total refunded amount.
+      totalReceived:
+        type: object
+        properties:
+          amount:
+            type: number
+            description: The total payment amount received.
+          currency:
+            type: string
+            description: The currency of the total payment amount received.
+      testOrder:
+        type: boolean
+        description: Indicates if this order is a test order. Can be `true` or `false`.
+      currency:
+        type: string
+        description: The currency in which the order was entered.
+      marketingChannel:
+        type: string
+        description: The marketing channel for this order, such as a newsletter campaign,
+          Google Shopping, or a Buy Button that’s implemented on a blog.
+      paymentStatus:
+        type: string
+        description: The current status of the payment associated with this order.
+          Can be `PAID`, `PENDING`, or `REFUND_PENDING`.
+      paymentLineItem:
+        type: object
+        properties:
+          taxClass:
+            type: string
+            description: The tax class of a payment line item. Can be `REGULAR`, `REDUCED`,
+              or `EXEMPT`.
+          lineItemPrice:
+            type: object
+            properties:
+              amount:
+                type: number
+                description: The amount of the product line item price for the payment
+                  line item.
+              taxModel:
+                type: string
+                description: The tax model of the product line item price for the
+                  payment line item.
+              currency:
+                type: string
+                description: The currency of the payment line item price.
+          lineItemTaxes:
+            type: array
+            description: The tax information for the payment line item. The array
+              contains one item per tax class.
+          initialLineItemPrice:
+            type: object
+            properties:
+              amount:
+                type: number
+                description: The amount of the initial line item price for the payment
+                  line item.
+              taxModel:
+                type: string
+                description: The tax model of the initial line item price for the
+                  payment line item.
+              currency:
+                type: string
+                description: The currency of the initial payment line item price.
+          paymentMethod:
+            type: object
+            properties:
+              onlinePayment:
+                type: boolean
+                description: Indicates if this payment method is an online payment.
+                  Can be `true` or `false`.
+              discountOrFee:
+                type: object
+                properties:
+                  absoluteValue:
+                    type: object
+                    properties:
+                      amount:
+                        type: number
+                        description: The amount of the absolute value of `discountOrFee`
+                          of the payment method in this payment line item.
+                      taxModel:
+                        type: string
+                        description: The tax model of the absolute price of the `discountOrFee`
+                          for this payment method.
+                      currency:
+                        type: string
+                        description: The currency of the absolute price of the `discountOrFee`
+                          for this payment method.
+                  type:
+                    type: string
+                    description: The type of the `discountOrFee` for this payment
+                      method. Can be `ABSOLUTE`, `PERCENTAGE`, or `UNSUPPORTED`.
+              name:
+                type: string
+                description: The name of the payment method.
+              description:
+                type: string
+                description: The description of the payment method in this payment
+                  line item.
+      marketingSubchannel:
+        type: string
+        description: The marketing subchannel for this order, such as a specific newsletter
+          of a newsletter campaign, e.g. a Summer Sale that’s promoted on a blog,
+          or a Winter Special that’s promoted on Facebook.
+      taxable:
+        type: boolean
+        description: Indicates if a tax applies for this order. Can be `true` or `false`.
+      balanceDue:
+        type: object
+        properties:
+          amount:
+            type: number
+            description: The total amount of the order. Does not change when payments
+              come in.
+          currency:
+            type: string
+            description: The currency of the balance due.
+      grandTotal:
+        type: object
+        properties:
+          amount:
+            type: number
+            description: The total amount of the order.
+          currency:
+            type: string
+            description: The currency of the total order amount.
+      entryDate:
+        type: string
+        description: The date and time of the actual creation of this order from a
+          business perspective. Can deviate from `createdAt`.
+      cartId:
+        type: string
+        description: The ID of the cart this order has been created from (if existing).
+      openAmount:
+        type: object
+        properties:
+          amount:
+            type: number
+            description: The outstanding amount to be paid.
+          currency:
+            type: string
+            description: The currency of the open amount.
+      canceled:
+        type: boolean
+        description: The current cancelation status of this order. Can be `true` or
+          `false`.
+      paymentNote:
+        type: string
+        description: A prompt to pay the order which will be rendered in the invoice
+          order document. Requires a payment reference and the merchant's bank account
+          details.
+      backgroundJobs:
+        type: array
+        description: Pending processes initiated via the cockpit or the API that run
+          in the background, e.g. rendering an invoice document.
+      initialNetTotal:
+        type: object
+        properties:
+          amount:
+            type: number
+            description: The initial amount of net total.
+          currency:
+            type: string
+            description: The currency of the initial total net amount.
+      shippingLineItem:
+        type: object
+        properties:
+          taxClass:
+            type: string
+            description: The tax class of the shipping line item. Can be `REGULAR`,
+              `REDUCED`, or `EXEMPT`.
+          lineItemPrice:
+            type: object
+            properties:
+              amount:
+                type: number
+                description: The amount of the line item price for the shipping line
+                  item.
+              taxModel:
+                type: string
+                description: The tax model of the line item price for the shipping
+                  line item.
+              currency:
+                type: string
+                description: The currency of the price for the shipping line item.
+          lineItemTaxes:
+            type: array
+            description: The tax information for the shipping line item. The array
+              contains one item per tax class.
+          initialLineItemPrice:
+            type: object
+            properties:
+              amount:
+                type: number
+                description: The amount of the initial line item price for the shipping
+                  line item.
+              taxModel:
+                type: string
+                description: The tax model of the initial line item price for the
+                  shipping line item.
+              currency:
+                type: string
+                description: The currency of the initial price for the shipping line
+                  item.
+          shippingMethod:
+            type: object
+            properties:
+              freeShippingValue:
+                type: object
+                properties:
+                  amount:
+                    type: number
+                    description: The amount of the free shipping value of the shipping
+                      method in this shipping line item.
+                  currency:
+                    type: string
+                    description: The currency of the free shipping amount of the shipping
+                      method.
+              name:
+                type: string
+                description: The name of the shipping method in this shipping line
+                  item.
+              description:
+                type: string
+                description: The description of the shipping method in the shipping
+                  line item.
+              fixedPrice:
+                type: object
+                properties:
+                  amount:
+                    type: number
+                    description: The amount of the fixed price of the shipping method
+                      in this shipping line item (if set).
+                  taxModel:
+                    type: string
+                    description: The tax model of the fixed price of the shipping
+                      method in this shipping line item (if set).
+                  currency:
+                    type: string
+                    description: The currency of the fixed price of the shipping method.
+      subtotal:
+        type: object
+        properties:
+          amount:
+            type: number
+            description: The subtotal amount of the product line items.
+          currency:
+            type: string
+            description: The currency of the subtotal amount.
+      shippingAddress:
+        type: object
+        description: The shipping address of the cart. Defaults to billing address
+          if no shipping address is set. Refer to <<resources-cart-set-shipping-address,Set
+          cart shipping address>> for item documentation.
+        properties:
+          displayAddressLines:
+            type: array
+            description: The applicable shipping address of the cart to be displayed.
+      billingAddress:
+        type: object
+        description: The billing address of the cart. Refer to <<resources-cart-set-billing-address,Set
+          cart billing address>> for item documentation.
+        properties:
+          displayAddressLines:
+            type: array
+            description: The applicable billing address of the cart to be displayed.
+      netTotal:
+        type: object
+        properties:
+          amount:
+            type: number
+            description: The amount of net total.
+          currency:
+            type: string
+            description: The currency of the total net amount.
+      _id:
+        type: string
+        description: The unique identifier of the order.
+      initialSubtotal:
+        type: object
+        properties:
+          amount:
+            type: number
+            description: The initial subtotal amount of the product line items.
+          currency:
+            type: string
+            description: The currency of the initial subtotal amount.
+      initialTaxTotal:
+        type: object
+        properties:
+          amount:
+            type: number
+            description: The initial total tax amount.
+          currency:
+            type: string
+            description: The currency of the initial total tax amount.
   carts_cartId_order-1445122188:
     type: object
     properties:
@@ -21958,6 +21826,50 @@ definitions:
       _id:
         type: string
         description: The immutable, unique identifier of the requested resource.
+  orders_order-id_processes_returns-826927858:
+    type: object
+    properties:
+      lineItems:
+        type: array
+        items:
+          type: object
+          properties:
+            quantity:
+              type: number
+              description: The quantity of the product line item in this return process.
+            productLineItemId:
+              type: string
+              description: The ID of a specified product line item in this return
+                process.
+            status:
+              type: string
+              description: The status of the product line item in this return process.
+                Can be `RETURNED` or `BROKEN`.
+      shippingPriceRefund:
+        type: object
+        properties:
+          amount:
+            type: number
+            description: The price for the shipping line item to be refunded.
+          currency:
+            type: string
+            description: The currency of the price for the shipping line item.
+      comment:
+        type: string
+        description: The comment to this status change.
+    example: |-
+      {
+        "comment" : "This needs to be done fast!",
+        "lineItems" : [ {
+          "quantity" : 3,
+          "productLineItemId" : "b6d3c06d-853f-405c-99a6-0893d542ce5a",
+          "status" : "RETURNED"
+        } ],
+        "shippingPriceRefund" : {
+          "currency" : "EUR",
+          "amount" : 19.99
+        }
+      }
   configuration_order-number1993434986:
     type: object
     required:
@@ -22097,6 +22009,14 @@ definitions:
       }
   users_id_roles-700633359:
     example: https://yourshop.api.urn/roles/43a05a5a-9e1a-4e7c-8788-6ce3522ba93a
+  payment-signup_referrals_paymentMethodDefinition80330500:
+    type: object
+    properties:
+      referralReturnUri:
+        type: string
+        description: The URI to which the customer will be redirected after the referral
+          process.
+    example: '{ "referralReturnUri": "http://example.com/take-me-home" }'
   orders_order-id_order-note1411559407:
     type: object
     properties:
@@ -22107,14 +22027,6 @@ definitions:
       {
         "orderNote" : "not paid yet"
       }
-  payment-signup_referrals_paymentMethodDefinition80330500:
-    type: object
-    properties:
-      referralReturnUri:
-        type: string
-        description: The URI to which the customer will be redirected after the referral
-          process.
-    example: '{ "referralReturnUri": "http://example.com/take-me-home" }'
   categories_id-565740918:
     type: object
     required:
@@ -22303,7 +22215,7 @@ definitions:
           "trackingLink" : "http://tracking.is/fun?code=lookAtMyTrackingCodeWow"
         }
       }
-  product-view_products_9883fb19-9cea-48d3-a0c5-0ea9a01e42d9-1208810194:
+  product-view_products_efc38dc7-4d83-475c-86b6-c93bfd69d6be-1208810194:
     type: object
     properties:
       essentialFeatures:
@@ -23043,6 +22955,46 @@ definitions:
           "en-US" : "The best explanation"
         }
       }
+  orders_order-id_processes_shippings-1138841109:
+    type: object
+    properties:
+      lineItems:
+        type: array
+        items:
+          type: object
+          properties:
+            quantity:
+              type: number
+              description: The quantity of a product line item that is marked with
+                a new status.
+            productLineItemId:
+              type: string
+              description: The ID of a product line item that is marked with a new
+                status.
+      trackingLink:
+        type: string
+        description: The tracking link for this shipping process.
+      sendMail:
+        type: boolean
+        description: Indicates if a mail is to be sent out with this shipping process
+          transition.
+      trackingCode:
+        type: string
+        description: The tracking code for this shipping process.
+      comment:
+        type: string
+        description: The comment to this status change.
+    example: |-
+      {
+        "comment" : "This needs to be done fast!",
+        "sendMail" : true,
+        "trackingCode" : "lookAtMyTrackingCodeWow",
+        "trackingLink" : "http://tracking.is/fun?code=lookAtMyTrackingCodeWow",
+        "lineItems" : [ {
+          "quantity" : 3,
+          "productLineItemId" : "03d39c10-8015-47b5-bde5-7cb19a6e7873"
+        } ]
+      }
   signers-663923302:
     type: object
     properties:
@@ -23065,20 +23017,7 @@ definitions:
                 _id:
                   type: string
                   description: The immutable, unique identifier of the requested resource.
-  products_productId_attributes_productAttributeName-1919261341:
-    type: object
-    properties:
-      _links:
-        type: object
-        description: See <<hypermedia,Hypermedia>>
-        properties: {}
-      value:
-        type: number
-        description: The value of the product attribute.
-      key:
-        type: string
-        description: The key of the product attribute definition.
-  product-view_products_97c6e6a4-6b11-4682-af73-bda4ca7fbb14-209432195:
+  product-view_products_eaf0e2bf-5e7a-4a43-b6f2-9c62c4f72740-209432195:
     type: object
     properties:
       essentialFeatures:
@@ -23210,6 +23149,19 @@ definitions:
         description: The list price of the product, also known as the manufacturer's
           suggested retail price or recommended retail price.
         properties: {}
+  products_productId_attributes_productAttributeName-1919261341:
+    type: object
+    properties:
+      _links:
+        type: object
+        description: See <<hypermedia,Hypermedia>>
+        properties: {}
+      value:
+        type: number
+        description: The value of the product attribute.
+      key:
+        type: string
+        description: The key of the product attribute definition.
   orders_order-id_processes_refunds_id-1056864005:
     type: object
     properties:
