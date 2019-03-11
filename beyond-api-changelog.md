@@ -2,50 +2,24 @@
 
 ## 2019-03-08
 
--XX:InitialHeapSize=527038208 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
 ### What's New
 ---
-* `GET` /product-view/products/973ad704-7495-4918-8a61-2dfb85c60cce Show variation details
-* `GET` /product-view/products/e75b21eb-b30f-413a-adec-07cf4ce263b8 Show variation product details
 * `GET` /products/{productId}/variation-properties List the variation properties
 
 ### What's Deprecated
 ---
-* `GET` /product-view/products/1405828d-831d-4054-8979-c4735ac9fb4e Show variation product details
-* `GET` /product-view/products/66b3be4f-1d32-4263-adac-2f9b6fcd1294 Show variation details
 * `GET` /product-view/products/search/find-by-category List products by category
-
-### What's Changed
----
-
-## 2019-03-07
-
--XX:InitialHeapSize=527038208 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
-### What's New
----
-* `GET` /product-view/products/1405828d-831d-4054-8979-c4735ac9fb4e Show variation product details
-* `GET` /product-view/products/66b3be4f-1d32-4263-adac-2f9b6fcd1294 Show variation details
-
-### What's Deprecated
----
-* `GET` /product-view/products/eaf0e2bf-5e7a-4a43-b6f2-9c62c4f72740 Show variation product details
-* `GET` /product-view/products/efc38dc7-4d83-475c-86b6-c93bfd69d6be Show variation product details
 
 ### What's Changed
 ---
 
 ## 2019-03-06
 
--XX:InitialHeapSize=527038208 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
 ### What's New
 ---
-* `GET` /product-view/products/eaf0e2bf-5e7a-4a43-b6f2-9c62c4f72740 Show variation product details
-* `GET` /product-view/products/efc38dc7-4d83-475c-86b6-c93bfd69d6be Show variation product details
 
 ### What's Deprecated
 ---
-* `GET` /product-view/products/97c6e6a4-6b11-4682-af73-bda4ca7fbb14 Show variation product details
-* `GET` /product-view/products/9883fb19-9cea-48d3-a0c5-0ea9a01e42d9 Show variation product details
 
 ### What's Changed
 ---
