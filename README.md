@@ -18,7 +18,7 @@ git push upstream master
 export API_KEY=xxx
 export MAILBOX=xxx
 
-cat /tmp/test.html | ./send-notification.sh -F to="jdoe@example.com"
+cat /tmp/change-log.html | ./send-notification.sh -F to="jdoe@example.com"
 ```
 
 ## Dependencies

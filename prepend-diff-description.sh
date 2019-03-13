@@ -67,6 +67,18 @@ EOF
 )
 
 ################################################################################
+# Prepare change log email
+################################################################################
+CHANGE_LOG_EMAIL_BODY=$(cat <<EOF
+<pre>
+${CHANGE_LOG}
+</pre>
+
+<a href="https://beyond.docs.stoplight.io/">API Documentation</a> * <a href="https://github.com/ePages-de/beyond-api-changelog/blob/master/beyond-api-changelog.md">Complete changelog</a>
+EOF
+)
+
+################################################################################
 # Insert change log
 ################################################################################
 
@@ -76,6 +88,8 @@ if [[ $API_DIFF == *"* "* ]]; then
   CHANGE_LOG_PLACEHOLDER="###CHANGE_LOG_HERE###"
   sed -i "/# Beyond API Changelog/ a ${CHANGE_LOG_PLACEHOLDER}" ${CHANGE_LOG_FILE}
   perl -pi -e "s/${CHANGE_LOG_PLACEHOLDER}/${ESCAPED_CHANGE_LOG}/g" ${CHANGE_LOG_FILE}
+
+  echo "${CHANGE_LOG_EMAIL_BODY}" > /tmp/change-log.html
 else
   echo "No changes in the API."
 fi
