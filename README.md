@@ -12,6 +12,15 @@ script and then push the changes to GitHub.
 git push upstream master
 ```
 
+## Sending notifications
+
+```
+export API_KEY=xxx
+export MAILBOX=xxx
+
+cat /tmp/test.html | ./send-notification.sh -F to="jdoe@example.com"
+```
+
 ## Dependencies
 
 Before you do so, make sure that the following tools are installed:
