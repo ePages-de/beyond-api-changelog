@@ -1,5 +1,25 @@
 # Beyond API Changelog
 
+## 2019-03-15
+
+-XX:InitialHeapSize=527038208 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `GET` /products/{productId} Show variation product details  
+    Return Type
+
+        Add lastModifiedAt //The date and time when the product was modified.
+* `GET` /products/search/find-by-sku Find a product by SKU  
+    Return Type
+
+        Add lastModifiedAt //The date and time when the product was modified.
+
 ## 2019-03-08
 
 ### What's New
