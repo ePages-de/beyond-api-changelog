@@ -15,7 +15,7 @@ git push upstream master
 ## Sending notifications
 
 ```
-export API_KEY=xxx
+export MAILGUN_API_TOKEN=xxx
 export MAILBOX=xxx
 
 cat /tmp/change-log.html | ./send-notification.sh -F to="jdoe@example.com"
