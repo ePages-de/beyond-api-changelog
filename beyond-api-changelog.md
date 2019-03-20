@@ -1,5 +1,31 @@
 # Beyond API Changelog
 
+## 2019-03-20
+
+-XX:InitialHeapSize=527038208 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+* `GET` /newsletter-target Get a newsletter-target
+* `PUT` /newsletter-target Update a newsletter-target
+* `POST` /newsletter-target Create a newsletter-target
+* `DELETE` /newsletter-target Delete a newsletter-target
+* `GET` /script-tags List all script-tags
+* `POST` /script-tags Create a script-tag
+* `GET` /script-tags/{id} Get a script-tag
+* `PUT` /script-tags/{id} Update a script-tag
+* `DELETE` /script-tags/{id} Delete a script-tag
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `GET` /product-view/products/{id} Show variation product details  
+    Return Type
+
+        Add maxSalesPrice //The maximum price of the product.
+        Add minSalesPrice //The minimum price of the product.
+
 ## 2019-03-18
 
 -XX:InitialHeapSize=527038208 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
