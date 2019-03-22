@@ -1,5 +1,19 @@
 # Beyond API Changelog
 
+## 2019-03-22
+
+-XX:InitialHeapSize=527038208 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+* `GET` /products/{productId}/variations/{variationId} Get variation
+* `PATCH` /products/{productId}/variations/{variationId} Update variation partially (json)
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+
 ## 2019-03-20
 
 -XX:InitialHeapSize=527038208 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
