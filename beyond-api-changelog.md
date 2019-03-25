@@ -2,7 +2,6 @@
 
 ## 2019-03-22
 
--XX:InitialHeapSize=527038208 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
 ### What's New
 ---
 * `GET` /products/{productId}/variations/{variationId} Get variation
@@ -16,7 +15,6 @@
 
 ## 2019-03-20
 
--XX:InitialHeapSize=527038208 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
 ### What's New
 ---
 * `GET` /newsletter-target Get a newsletter-target
@@ -42,7 +40,6 @@
 
 ## 2019-03-18
 
--XX:InitialHeapSize=527038208 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
 ### What's New
 ---
 * `PATCH` /products/{productId}/variation-properties Update variation property states
@@ -55,7 +52,6 @@
 
 ## 2019-03-15
 
--XX:InitialHeapSize=527038208 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
 ### What's New
 ---
 
