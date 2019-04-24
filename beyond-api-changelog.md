@@ -1,5 +1,27 @@
 # Beyond API Changelog
 
+## 2019-04-24
+
+-XX:InitialHeapSize=527021312 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+* `POST` /blacklisted-clients Create a blacklisted-client
+* `DELETE` /blacklisted-clients/{clientId} Delete a blacklisted-client
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `GET` /products/{productId}/variations/{variationId} Show variation details  
+    Return Type
+
+        Add productIdentifiers //List of identifiers for variations of the product. Can be `EAN`, `UPC`, `ISBN`, or `MPN`
+* `PATCH` /products/{productId}/variations/{variationId} Update variation partially (json)  
+    Return Type
+
+        Add productIdentifiers
+
 ## 2019-03-22
 
 ### What's New
