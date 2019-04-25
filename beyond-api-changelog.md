@@ -2,7 +2,6 @@
 
 ## 2019-04-24
 
--XX:InitialHeapSize=527021312 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
 ### What's New
 ---
 * `POST` /blacklisted-clients Create a blacklisted-client
