@@ -1,5 +1,21 @@
 # Beyond API Changelog
 
+## 2019-04-26
+
+-XX:InitialHeapSize=527021312 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `GET` /payment-methods/{paymentMethodId} Show payment method details  
+    Return Type
+
+        Add workflow //The payment workflow for the current payment. Can be one of `PAYMENT_ON_SELECTION`, `EMBEDDED_ON_SELECTION`, `PAYMENT_ON_BUY`, or `EMBEDDED_ON_BUY`.
+
 ## 2019-04-24
 
 ### What's New
