@@ -1,5 +1,26 @@
 # Beyond API Changelog
 
+## 2019-04-29
+
+-XX:InitialHeapSize=527021312 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `POST` /oauth/token Create a JSON Web Token with a refresh token  
+    Parameter
+
+        Add code //The authorization code. Required for the `authorization_code` grant type.
+* `POST` /products/{productId}/images Add product image  
+    Parameter
+
+        Add fileName //The file name of the image.
+        Add Content-Type //The content type of the image. Can be `image/png`, `image/jpeg`, or `image/gif`.
+
 ## 2019-04-26
 
 -XX:InitialHeapSize=527021312 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
