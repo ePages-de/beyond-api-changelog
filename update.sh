@@ -3,7 +3,7 @@
 ################################################################################
 # Update API spec
 ################################################################################
-API_SPEC_URL='http://docs.beyondshop.cloud/openapi.yaml'
+API_SPEC_URL='http://docs.beyondshop.cloud/openapi-public.yaml'
 API_SPEC_FILE=openapi.yaml
 CHANGE_LOG_FILE=beyond-api-changelog.md
 

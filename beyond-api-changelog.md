@@ -1,5 +1,39 @@
 # Beyond API Changelog
 
+## 2019-05-10
+
+### What's New
+---
+* `GET` /products/{productId}/variations/{variationId}/availability Show product availability details
+* `POST` /products/{productId}/variations/{variationId}/availability/disable-purchasability Disable purchasability
+* `POST` /products/{productId}/variations/{variationId}/availability/enable-purchasability Enable purchasability
+
+### What's Deprecated
+---
+* `POST` /blacklisted-clients Create a blacklisted-client
+* `DELETE` /blacklisted-clients/{clientId} Delete a blacklisted-client
+
+### What's Changed
+---
+* `POST` /orders/{order-id}/processes/returns Create return process  
+    Parameter
+
+        Add .sendMail //Indicates if a mail is to be sent out with this return process transition.
+* `DELETE` /product-attribute-definitions/{productAttributeDefinitionKey} Delete a product attribute definition  
+    Parameter
+
+        force Notes (Optional) cascade delete attributes of this definition change into The (optional) cascade delete attributes of this definition.
+* `GET` /shop/legal Show legal details  
+    Return Type
+
+        Add customLegalData //The custom legal date of the shop.
+        Add bankData
+* `PATCH` /shop/legal Update legal resource partially (JSON patch)  
+    Return Type
+
+        Add customLegalData //The custom legal date of the shop.
+        Add bankData
+
 ## 2019-04-29
 
 ### What's New
