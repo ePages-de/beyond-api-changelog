@@ -1,5 +1,18 @@
 # Beyond API Changelog
 
+## 2019-05-13
+
+-XX:InitialHeapSize=527021312 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+* `POST` /products/{productId}/publish Publish product
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+
 ## 2019-05-10
 
 ### What's Changed
