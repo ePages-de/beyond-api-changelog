@@ -2,13 +2,6 @@
 
 ## 2019-05-10
 
--XX:InitialHeapSize=527021312 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
-### What's New
----
-
-### What's Deprecated
----
-
 ### What's Changed
 ---
 * `PATCH` /products/{productId}/variations/{variationId} Update variation partially (json)  
