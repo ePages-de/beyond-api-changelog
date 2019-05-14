@@ -1,5 +1,30 @@
 # Beyond API Changelog
 
+## 2019-05-14
+
+-XX:InitialHeapSize=527021312 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+* `POST` /orders/{order-id}/cancel Cancel order
+* `GET` /orders/{order-id}/processes/cancelations List cancelation processes
+* `POST` /orders/{order-id}/processes/cancelations Create cancelation process
+* `GET` /orders/{order-id}/processes/payments List payment processes
+* `GET` /orders/{order-id}/processes/cancelations/{cancelation-process-id} Show cancelation process details
+* `GET` /orders/{order-id}/processes/payments/active Show active payment process details
+* `GET` /orders/{order-id}/processes/payments/{payment-process-id} Show payment process details
+* `POST` /orders/{order-id}/processes/payments/active/mark-paid Mark active payment process as paid
+* `POST` /orders/{order-id}/processes/payments/active/mark-voided Mark active payment process as voided
+* `POST` /orders/{order-id}/processes/payments/{payment-process-id}/capture Capture payment
+* `POST` /orders/{order-id}/processes/payments/{payment-process-id}/mark-paid Mark payment process as paid
+* `POST` /orders/{order-id}/processes/payments/{payment-process-id}/mark-voided Mark payment process as voided
+* `POST` /products/{productId}/variations/{variationId}/availability/adjust-available-stock Adjust stock level
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+
 ## 2019-05-10
 
 ### What's Changed
