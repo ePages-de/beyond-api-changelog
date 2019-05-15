@@ -1,5 +1,24 @@
 # Beyond API Changelog
 
+## 2019-05-15
+
+-XX:InitialHeapSize=527021312 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+* `GET` /configuration/invoice-number Show invoice number configuration details
+* `PUT` /configuration/invoice-number Modify complete invoice number configuration
+* `PATCH` /configuration/invoice-number Update invoice number configuration partially (JSON)
+* `GET` /configuration/order-number Show order number configuration details
+* `PUT` /configuration/order-number Modify complete order number configuration
+* `PATCH` /configuration/order-number Update order number configuration partially (JSON)
+* `POST` /products/{productId}/publish Publish product
+
+### What's Changed
+---
+
 ## 2019-05-14
 
 ### What's New
