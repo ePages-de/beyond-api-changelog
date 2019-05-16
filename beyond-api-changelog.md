@@ -2,7 +2,6 @@
 
 ## 2019-05-15
 
--XX:InitialHeapSize=527021312 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
 ### What's New
 ---
 
@@ -14,7 +13,6 @@
 * `GET` /configuration/order-number Show order number configuration details
 * `PUT` /configuration/order-number Modify complete order number configuration
 * `PATCH` /configuration/order-number Update order number configuration partially (JSON)
-* `POST` /products/{productId}/publish Publish product
 
 ### What's Changed
 ---
