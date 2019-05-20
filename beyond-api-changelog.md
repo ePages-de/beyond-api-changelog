@@ -1,5 +1,34 @@
 # Beyond API Changelog
 
+## 2019-05-20
+
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `POST` /products Create variation product  
+    Parameter
+
+        Delete .essentialFeatures //The essential product properties of the product. Shown in the cart and checkout. In Germany mandatory field in online shops according to ?312j Abs. 2 BGB (German Civil Code).
+        Delete .shippingWeight //The weight of the product including packaging in g.
+        Delete .maxOrderQuantity //Displays how often this product can be ordered at maximum in one order.
+* `GET` /products/{productId} Show variation product details  
+    Return Type
+
+        Delete essentialFeatures //The essential product properties of the product. Shown in the cart and checkout. In Germany mandatory field in online shops according to ?312j Abs. 2 BGB (German Civil Code).
+        Delete shippingWeight //The weight of the product including packaging in g.
+        Delete maxOrderQuantity //Displays how often this product can be ordered at maximum in one order.
+* `POST` /shop/images Upload shop image  
+    Parameter
+
+        Add fileName //The file name of the uploaded image.
+        Add label //The label of the uploaded image.
+        Add Content-Type //The content type of the image. Can be `image/png`, `image/jpeg`, or `image/gif`.
+
 ## 2019-05-15
 
 ### What's New
