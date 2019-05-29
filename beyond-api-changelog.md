@@ -1,5 +1,34 @@
 # Beyond API Changelog
 
+## 2019-05-29
+
+### What's New
+---
+
+### What's Deprecated
+---
+* `POST` /payment-methods Create charged payment method
+
+### What's Changed
+---
+* `GET` /payment-methods/{paymentMethodId} Show charged payment method details  
+    Return Type
+
+        Delete taxClass //The tax class. Can be `REGULAR`, `REDUCED`, or `EXEMPT`.
+        Delete onlinePayment //Indicates if the payment method is an online payment. Can be `true` or `false`.
+        Delete workflow //The payment workflow for the current payment. Can be one of `PAYMENT_ON_SELECTION`, `EMBEDDED_ON_SELECTION`, `PAYMENT_ON_BUY`, or `EMBEDDED_ON_BUY`.
+        Delete _links //See [Hypermedia](https://beyond.docs.stoplight.io/about/hypermedia)
+        Delete description //Description of the payment method that is used during checkout.
+        Delete officialName //The official name of the payment method chosen by the merchant during setup.
+        Delete serviceableCountries //The list of target countries this payment method can be used in.
+        Delete minimumOrderValue //The minimum value of the cart so that this payment method can be used.
+        Delete discountOrFee //The details about the fee to be payed or discount to be granted for this payment method.
+        Delete name //The name of the payment method that is used during checkout.
+        Delete officialDescription //The official description of the payment method chosen by the merchant during setup.
+        Delete position //The sorting position of the payment method in the Commerce Cockpit in relation to other payment methods.
+        Delete _id //The immutable, unique identifier of the requested resource.
+        Delete activated //Indicates if a payment method is active. Can be `true` or `false`.
+
 ## 2019-05-23
 
 ### What's New
