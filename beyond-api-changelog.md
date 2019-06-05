@@ -1,5 +1,17 @@
 # Beyond API Changelog
 
+## 2019-06-05
+
+### What's New
+---
+* `GET` /products/search List product search meta-information
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+
 ## 2019-05-23
 
 ### What's New
