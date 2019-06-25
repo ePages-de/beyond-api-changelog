@@ -1,5 +1,17 @@
 # Beyond API Changelog
 
+## 2019-06-25
+
+### What's New
+---
+* `GET` /customers/{id} Show customer details
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+
 ## 2019-06-05
 
 ### What's New
