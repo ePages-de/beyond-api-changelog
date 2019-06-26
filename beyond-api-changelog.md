@@ -1,5 +1,26 @@
 # Beyond API Changelog
 
+## 2019-06-26
+
+### What's New
+---
+* `POST` /customers Create customer
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `PATCH` /categories/{id} Update category partially  
+    Return Type
+
+        Add _links //See [Hypermedia](https://beyond.docs.stoplight.io/about/hypermedia)
+        Add query //The JSON query to retrieve products according to https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl.html[Elasticsearch Query DSL].
+        Add name //The name of the product collection.
+        Add _id //The immutable, unique identifier of the requested resource.
+        Add label //The label of the product collection.
+        Add type //The type of the product collection. Can be `SMART` or `MANUAL`.
+
 ## 2019-06-25
 
 ### What's New
