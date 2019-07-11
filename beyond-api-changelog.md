@@ -1,5 +1,31 @@
 # Beyond API Changelog
 
+## 2019-07-11
+
+-XX:InitialHeapSize=527012544 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `PUT` /order-settings Update order settings  
+    Parameter
+
+        Add .orderNumberConfiguration
+        Add .invoiceNumberConfiguration
+    Return Type
+
+        Add orderNumberConfiguration
+        Add invoiceNumberConfiguration
+* `GET` /order-settings List order settings  
+    Return Type
+
+        Add orderNumberConfiguration
+        Add invoiceNumberConfiguration
+
 ## 2019-06-28
 
 ### What's New
