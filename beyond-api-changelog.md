@@ -1,5 +1,25 @@
 # Beyond API Changelog
 
+## 2019-07-18
+
+-XX:InitialHeapSize=527012544 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `GET` /product-view/products/{id} Show variation product details  
+    Return Type
+
+        Add shippingWeight //The weight of the product including packaging in g.
+* `GET` /product-view/products/{productId} Show product details  
+    Return Type
+
+        Add shippingWeight //The weight of the product including packaging in g.
+
 ## 2019-07-11
 
 ### What's Changed
