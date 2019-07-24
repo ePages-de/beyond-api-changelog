@@ -1,5 +1,21 @@
 # Beyond API Changelog
 
+## 2019-07-24
+
+-XX:InitialHeapSize=527012544 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `POST` /orders/{order-id}/processes/shippings Create shipping process  
+    Parameter
+
+        Add .sendDeliveryNote //Indicates if the delivery note pdf is to be sent out to the customer.
+
 ## 2019-07-18
 
 ### What's Changed
