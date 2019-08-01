@@ -1,5 +1,21 @@
 # Beyond API Changelog
 
+## 2019-08-01
+
+-XX:InitialHeapSize=527012544 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `POST` /payments/{paymentId}/status Set payment status  
+    Parameter
+
+        Delete .amount //(Deprecated) Optional amount that has been paid so far. Defaults to the total amount. Only recommended for status transitions towards `PAID`, `UNDERPAID` or `OVERPAID`.
+
 ## 2019-07-31
 
 -XX:InitialHeapSize=527012544 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
