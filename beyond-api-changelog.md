@@ -1,5 +1,18 @@
 # Beyond API Changelog
 
+## 2019-08-07
+
+-XX:InitialHeapSize=527012288 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+* `GET` /orders/search/find-order-number-by-cart-id Show order number by cart ID
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+
 ## 2019-08-01
 
 -XX:InitialHeapSize=527012544 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
