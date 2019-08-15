@@ -1,5 +1,28 @@
 # Beyond API Changelog
 
+## 2019-08-15
+
+-XX:InitialHeapSize=527012288 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `GET` /order-settings List order settings  
+    Return Type
+
+        Add invoiceCancelationNote //The invoice cancelation note to be printed on invoice cancelation documents.
+* `PUT` /order-settings Update order settings  
+    Parameter
+
+        Add .invoiceCancelationNote //The invoice cancelation note to be printed on invoice cancelation documents.
+    Return Type
+
+        Add invoiceCancelationNote //The invoice cancelation note to be printed on invoice cancelation documents.
+
 ## 2019-08-07
 
 -XX:InitialHeapSize=527012288 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
