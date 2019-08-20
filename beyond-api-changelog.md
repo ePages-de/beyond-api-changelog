@@ -1,5 +1,18 @@
 # Beyond API Changelog
 
+## 2019-08-20
+
+-XX:InitialHeapSize=527012288 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+* `POST` /carts/{cart_id}/customer Register a customer during a purchase
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+
 ## 2019-08-15
 
 -XX:InitialHeapSize=527012288 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
