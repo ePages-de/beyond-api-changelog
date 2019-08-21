@@ -2,25 +2,13 @@
 
 ## 2019-08-20
 
--XX:InitialHeapSize=527012288 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
 ### What's New
 ---
 * `POST` /carts/{cart_id}/customer Register a customer during a purchase
 
-### What's Deprecated
----
-
-### What's Changed
----
 
 ## 2019-08-15
 
--XX:InitialHeapSize=527012288 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
-### What's New
----
-
-### What's Deprecated
----
 
 ### What's Changed
 ---
@@ -38,25 +26,13 @@
 
 ## 2019-08-07
 
--XX:InitialHeapSize=527012288 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
 ### What's New
 ---
 * `GET` /orders/search/find-order-number-by-cart-id Show order number by cart ID
 
-### What's Deprecated
----
-
-### What's Changed
----
 
 ## 2019-08-01
 
--XX:InitialHeapSize=527012544 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
-### What's New
----
-
-### What's Deprecated
----
 
 ### What's Changed
 ---
@@ -67,13 +43,6 @@
 
 ## 2019-07-31
 
--XX:InitialHeapSize=527012544 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
-### What's New
----
-
-### What's Deprecated
----
-
 ### What's Changed
 ---
 * `POST` /orders/{order-id}/processes/shippings Create shipping process  
@@ -83,13 +52,6 @@
         Delete .sendDeliveryNote //Indicates if the delivery note pdf is to be sent out to the customer.
 
 ## 2019-07-24
-
--XX:InitialHeapSize=527012544 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
-### What's New
----
-
-### What's Deprecated
----
 
 ### What's Changed
 ---
@@ -136,11 +98,6 @@
 ---
 * `GET` /customers List customers
 
-### What's Deprecated
----
-
-### What's Changed
----
 
 ## 2019-06-26
 
