@@ -1,5 +1,17 @@
 # Beyond API Changelog
 
+## 2019-08-26
+
+### What's New
+---
+* `GET` /product-view/categories List categories
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+
 ## 2019-08-20
 
 ### What's New
