@@ -1,5 +1,40 @@
 # Beyond API Changelog
 
+## 2019-09-03
+
+-XX:InitialHeapSize=527025088 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `POST` /customers Create customer  
+    Parameter
+
+        Add .email //The unique customer email.
+* `GET` /customers/{id} Show customer details  
+    Return Type
+
+        Add email //The unique customer email.
+* `POST` /webhook-subscriptions Create webhook subscription  
+    Parameter
+
+        Add .subscriptionApps //List of apps the webhook subscribed to.
+* `PUT` /webhook-subscriptions/{id} Update webhook subscription  
+    Parameter
+
+        Add .subscriptionApps //List of apps the webhook subscribed to.
+    Return Type
+
+        Add subscriptionApps //List of apps the webhook subscribed to.
+* `GET` /webhook-subscriptions/{id} Show webhook subscription details  
+    Return Type
+
+        Add subscriptionApps //List of apps the webhook subscribed to.
+
 ## 2019-08-28
 
 ### What's New
