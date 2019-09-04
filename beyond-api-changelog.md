@@ -19,21 +19,7 @@
     Return Type
 
         Add email //The unique customer email.
-* `POST` /webhook-subscriptions Create webhook subscription  
-    Parameter
 
-        Add .subscriptionApps //List of apps the webhook subscribed to.
-* `PUT` /webhook-subscriptions/{id} Update webhook subscription  
-    Parameter
-
-        Add .subscriptionApps //List of apps the webhook subscribed to.
-    Return Type
-
-        Add subscriptionApps //List of apps the webhook subscribed to.
-* `GET` /webhook-subscriptions/{id} Show webhook subscription details  
-    Return Type
-
-        Add subscriptionApps //List of apps the webhook subscribed to.
 
 ## 2019-08-28
 
