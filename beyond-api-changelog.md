@@ -1,5 +1,21 @@
 # Beyond API Changelog
 
+## 2019-09-04
+
+-XX:InitialHeapSize=527025088 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `POST` /carts/{cart_id}/customer Register a customer during a purchase  
+    Parameter
+
+        Add .email //The customer email.
+
 ## 2019-09-03
 
 ### What's Changed
