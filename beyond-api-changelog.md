@@ -1,5 +1,31 @@
 # Beyond API Changelog
 
+## 2019-09-05
+
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `POST` /webhook-subscriptions Create webhook subscription  
+    Parameter
+
+        Delete .subscriptionApps //List of apps the webhook subscribed to.
+* `PUT` /webhook-subscriptions/{id} Update webhook subscription  
+    Parameter
+
+        Delete .subscriptionApps //List of apps the webhook subscribed to.
+    Return Type
+
+        Delete subscriptionApps //List of apps the webhook subscribed to.
+* `GET` /webhook-subscriptions/{id} Show webhook subscription details  
+    Return Type
+
+        Delete subscriptionApps //List of apps the webhook subscribed to.
+
 ## 2019-09-04
 
 -XX:InitialHeapSize=527025088 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 

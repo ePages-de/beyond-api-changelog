@@ -20993,13 +20993,13 @@ paths:
                     "callbackUri" : "http://example.com/test",
                     "eventTypes" : [ "order.created", "product.created" ],
                     "active" : true,
-                    "_id" : "a169ad50-a205-4f82-8955-5ddac3f0d9d5",
+                    "_id" : "b96b3f73-b992-4777-965e-e55f5fe60a86",
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/webhook-subscriptions/a169ad50-a205-4f82-8955-5ddac3f0d9d5"
+                        "href" : "https://yourshop.api.urn/webhook-subscriptions/b96b3f73-b992-4777-965e-e55f5fe60a86"
                       },
                       "deactivate" : {
-                        "href" : "https://yourshop.api.urn/webhook-subscriptions/a169ad50-a205-4f82-8955-5ddac3f0d9d5/deactivate"
+                        "href" : "https://yourshop.api.urn/webhook-subscriptions/b96b3f73-b992-4777-965e-e55f5fe60a86/deactivate"
                       }
                     }
                   } ]
@@ -21017,7 +21017,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/webhook-subscriptions993017521'
+            $ref: '#/definitions/webhook-subscriptions583850493'
     post:
       tags:
       - webhook-subscriptions
@@ -21036,7 +21036,7 @@ paths:
         name: ""
         required: false
         schema:
-          $ref: '#/definitions/webhook-subscriptions1885484843'
+          $ref: '#/definitions/webhook-subscriptions1499914335'
         x-examples:
           application/json: |-
             {
@@ -21052,18 +21052,18 @@ paths:
                 "callbackUri" : "http://example.com/test",
                 "eventTypes" : [ "order.created", "product.created" ],
                 "active" : true,
-                "_id" : "5ba3ccd4-d363-4cde-831a-4a923eb61adb",
+                "_id" : "53669bc5-08b0-4821-83e0-f1e4c735fe21",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/webhook-subscriptions/5ba3ccd4-d363-4cde-831a-4a923eb61adb"
+                    "href" : "https://yourshop.api.urn/webhook-subscriptions/53669bc5-08b0-4821-83e0-f1e4c735fe21"
                   },
                   "deactivate" : {
-                    "href" : "https://yourshop.api.urn/webhook-subscriptions/5ba3ccd4-d363-4cde-831a-4a923eb61adb/deactivate"
+                    "href" : "https://yourshop.api.urn/webhook-subscriptions/53669bc5-08b0-4821-83e0-f1e4c735fe21/deactivate"
                   }
                 }
               }
           schema:
-            $ref: '#/definitions/webhook-subscriptions_id-1984783987'
+            $ref: '#/definitions/webhook-subscriptions_id1924612801'
       security:
       - oauth2_application:
         - ordr:r
@@ -21092,18 +21092,18 @@ paths:
                 "callbackUri" : "http://example.com/test",
                 "eventTypes" : [ "order.created", "product.created" ],
                 "active" : true,
-                "_id" : "146e33e9-2133-4c43-bdaf-88a09887c33d",
+                "_id" : "279f9d31-8de5-422c-b5d6-5f8c7bf7cdc8",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/webhook-subscriptions/146e33e9-2133-4c43-bdaf-88a09887c33d"
+                    "href" : "https://yourshop.api.urn/webhook-subscriptions/279f9d31-8de5-422c-b5d6-5f8c7bf7cdc8"
                   },
                   "deactivate" : {
-                    "href" : "https://yourshop.api.urn/webhook-subscriptions/146e33e9-2133-4c43-bdaf-88a09887c33d/deactivate"
+                    "href" : "https://yourshop.api.urn/webhook-subscriptions/279f9d31-8de5-422c-b5d6-5f8c7bf7cdc8/deactivate"
                   }
                 }
               }
           schema:
-            $ref: '#/definitions/webhook-subscriptions_id-1984783987'
+            $ref: '#/definitions/webhook-subscriptions_id1924612801'
     put:
       tags:
       - webhook-subscriptions
@@ -21127,7 +21127,7 @@ paths:
         name: ""
         required: false
         schema:
-          $ref: '#/definitions/webhook-subscriptions_id-485362782'
+          $ref: '#/definitions/webhook-subscriptions_id-870933290'
         x-examples:
           application/json: |-
             {
@@ -21143,18 +21143,18 @@ paths:
                 "callbackUri" : "http://example.com/test/updated",
                 "eventTypes" : [ "product.updated" ],
                 "active" : true,
-                "_id" : "5bbea0d0-95a6-4a27-ac59-a09ce0775038",
+                "_id" : "373bafe3-6a39-4ec2-9def-cf92843aaa7c",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/webhook-subscriptions/5bbea0d0-95a6-4a27-ac59-a09ce0775038"
+                    "href" : "https://yourshop.api.urn/webhook-subscriptions/373bafe3-6a39-4ec2-9def-cf92843aaa7c"
                   },
                   "deactivate" : {
-                    "href" : "https://yourshop.api.urn/webhook-subscriptions/5bbea0d0-95a6-4a27-ac59-a09ce0775038/deactivate"
+                    "href" : "https://yourshop.api.urn/webhook-subscriptions/373bafe3-6a39-4ec2-9def-cf92843aaa7c/deactivate"
                   }
                 }
               }
           schema:
-            $ref: '#/definitions/webhook-subscriptions_id-1984783987'
+            $ref: '#/definitions/webhook-subscriptions_id1924612801'
       security:
       - oauth2_application:
         - ordr:r
@@ -21199,13 +21199,13 @@ paths:
                 "callbackUri" : "http://example.com/test",
                 "eventTypes" : [ "order.created", "product.created" ],
                 "active" : true,
-                "_id" : "28247fb4-d52f-42fe-bb77-7ca22988b675",
+                "_id" : "646e6831-209e-451c-97ea-06fc3929d186",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/webhook-subscriptions/28247fb4-d52f-42fe-bb77-7ca22988b675"
+                    "href" : "https://yourshop.api.urn/webhook-subscriptions/646e6831-209e-451c-97ea-06fc3929d186"
                   },
                   "deactivate" : {
-                    "href" : "https://yourshop.api.urn/webhook-subscriptions/28247fb4-d52f-42fe-bb77-7ca22988b675/deactivate"
+                    "href" : "https://yourshop.api.urn/webhook-subscriptions/646e6831-209e-451c-97ea-06fc3929d186/deactivate"
                   }
                 }
               }
@@ -21233,13 +21233,13 @@ paths:
                 "callbackUri" : "http://example.com/test",
                 "eventTypes" : [ "order.created", "product.created" ],
                 "active" : false,
-                "_id" : "8246c95b-a6d2-4330-91ee-d740b4f2a566",
+                "_id" : "1ba60e79-92cf-4ce3-a516-37882f8b7f02",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/webhook-subscriptions/8246c95b-a6d2-4330-91ee-d740b4f2a566"
+                    "href" : "https://yourshop.api.urn/webhook-subscriptions/1ba60e79-92cf-4ce3-a516-37882f8b7f02"
                   },
                   "activate" : {
-                    "href" : "https://yourshop.api.urn/webhook-subscriptions/8246c95b-a6d2-4330-91ee-d740b4f2a566/activate"
+                    "href" : "https://yourshop.api.urn/webhook-subscriptions/1ba60e79-92cf-4ce3-a516-37882f8b7f02/activate"
                   }
                 }
               }
@@ -23591,6 +23591,42 @@ definitions:
         type: string
         description: The type of the product collection. Can be `SMART` or `MANUAL`.
     example: '{"name":"updated name","label":"updated-name","type":"MANUAL","query":{"bool":{"filter":[{"terms":{"id":["6c449297-65fc-41aa-a49c-68a3561b33e5","6c449297-65fc-41aa-a49c-68a3561b33e6"]}}]}}}'
+  webhook-subscriptions583850493:
+    type: object
+    properties:
+      _embedded:
+        type: object
+        properties:
+          subscriptions:
+            type: array
+            items:
+              type: object
+              properties:
+                callbackUri:
+                  type: string
+                  description: The callback URI of the webhook.
+                active:
+                  type: boolean
+                  description: Indicates if this subscription is active. Can be `true`
+                    or `false`.
+                _id:
+                  type: string
+                  description: The immutable, unique identifier of the requested resource.
+                eventTypes:
+                  type: array
+                  description: The event type names the webhook listens to.
+                  items: {}
+              required:
+              - callbackUri
+              - eventTypes
+      _links:
+        type: object
+        description: See <<hypermedia,Hypermedia>>
+        properties: {}
+      page:
+        type: object
+        description: See <<pagination,Pagination>>
+        properties: {}
   product-view_categories_search_find-by-label1116459449:
     type: object
     properties:
@@ -23650,6 +23686,24 @@ definitions:
         type: string
         description: The type of the feature. Can be `TOGGLE`, `COUNTER`, or `APP`.
         minLength: 1
+  webhook-subscriptions1499914335:
+    type: object
+    required:
+    - callbackUri
+    - eventTypes
+    properties:
+      callbackUri:
+        type: string
+        description: The callback URI of the webhook.
+      eventTypes:
+        type: array
+        description: The event type names the webhook listens to.
+        items: {}
+    example: |-
+      {
+          "callbackUri":"http://example.com/test",
+          "eventTypes": ["order.created", "product.created"]
+      }
   oauth_token-1631874687:
     type: object
     properties:
@@ -23687,33 +23741,6 @@ definitions:
       username:
         type: string
         description: The username that identifies the user the token was issued for.
-  webhook-subscriptions_id-1984783987:
-    type: object
-    required:
-    - callbackUri
-    - eventTypes
-    properties:
-      _links:
-        type: object
-        description: See <<hypermedia,Hypermedia>>
-        properties: {}
-      subscriptionApps:
-        type: array
-        description: List of apps the webhook subscribed to.
-        items: {}
-      callbackUri:
-        type: string
-        description: The callback URI of the webhook.
-      active:
-        type: boolean
-        description: Indicates if this subscription is active. Can be `true` or `false`.
-      _id:
-        type: string
-        description: The immutable, unique identifier of the requested resource.
-      eventTypes:
-        type: array
-        description: The event type names the webhook listens to.
-        items: {}
   payments_paymentId_status1401946287:
     type: object
     properties:
@@ -25027,28 +25054,6 @@ definitions:
                 tag:
                   type: string
                   description: The name of the tag.
-  webhook-subscriptions1885484843:
-    type: object
-    required:
-    - callbackUri
-    - eventTypes
-    properties:
-      subscriptionApps:
-        type: array
-        description: List of apps the webhook subscribed to.
-        items: {}
-      callbackUri:
-        type: string
-        description: The callback URI of the webhook.
-      eventTypes:
-        type: array
-        description: The event type names the webhook listens to.
-        items: {}
-    example: |-
-      {
-          "callbackUri":"http://example.com/test",
-          "eventTypes": ["order.created", "product.created"]
-      }
   carts_cartId_line-items1797629801:
     type: array
     items:
@@ -25606,6 +25611,29 @@ definitions:
         "testOrder" : false,
         "termsAndConditionsExplicitlyAccepted" : false
       }
+  webhook-subscriptions_id1924612801:
+    type: object
+    required:
+    - callbackUri
+    - eventTypes
+    properties:
+      _links:
+        type: object
+        description: See <<hypermedia,Hypermedia>>
+        properties: {}
+      callbackUri:
+        type: string
+        description: The callback URI of the webhook.
+      active:
+        type: boolean
+        description: Indicates if this subscription is active. Can be `true` or `false`.
+      _id:
+        type: string
+        description: The immutable, unique identifier of the requested resource.
+      eventTypes:
+        type: array
+        description: The event type names the webhook listens to.
+        items: {}
   orders_order-id_billing-address295553515:
     type: object
     properties:
@@ -26105,46 +26133,6 @@ definitions:
         type: object
         description: The list price of the product, also known as the manufacturer's
           suggested retail price or recommended retail price.
-        properties: {}
-  webhook-subscriptions993017521:
-    type: object
-    properties:
-      _embedded:
-        type: object
-        properties:
-          subscriptions:
-            type: array
-            items:
-              type: object
-              properties:
-                subscriptionApps:
-                  type: array
-                  description: List of apps the webhook subscribed to.
-                  items: {}
-                callbackUri:
-                  type: string
-                  description: The callback URI of the webhook.
-                active:
-                  type: boolean
-                  description: Indicates if this subscription is active. Can be `true`
-                    or `false`.
-                _id:
-                  type: string
-                  description: The immutable, unique identifier of the requested resource.
-                eventTypes:
-                  type: array
-                  description: The event type names the webhook listens to.
-                  items: {}
-              required:
-              - callbackUri
-              - eventTypes
-      _links:
-        type: object
-        description: See <<hypermedia,Hypermedia>>
-        properties: {}
-      page:
-        type: object
-        description: See <<pagination,Pagination>>
         properties: {}
   orders_order-id_processes_refunds_active_mark-paid-1098495227:
     type: object
@@ -27267,28 +27255,6 @@ definitions:
         items: {}
   products_productId_default-image614679825:
     example: http://localhost/products/images/8ef3591c-d05f-4aa1-acf6-950ba51ec4f7
-  webhook-subscriptions_id-485362782:
-    type: object
-    required:
-    - callbackUri
-    - eventTypes
-    properties:
-      subscriptionApps:
-        type: array
-        description: List of apps the webhook subscribed to.
-        items: {}
-      callbackUri:
-        type: string
-        description: The callback URI of the webhook.
-      eventTypes:
-        type: array
-        description: The event type names the webhook listens to.
-        items: {}
-    example: |-
-      {
-          "callbackUri":"http://example.com/test/updated",
-          "eventTypes": ["product.updated"]
-      }
   product-settings-680758817:
     type: object
     properties:
@@ -27815,6 +27781,24 @@ definitions:
       stockThreshold:
         type: number
         description: Inventory level that indicates that the product needs to be reordered.
+  webhook-subscriptions_id-870933290:
+    type: object
+    required:
+    - callbackUri
+    - eventTypes
+    properties:
+      callbackUri:
+        type: string
+        description: The callback URI of the webhook.
+      eventTypes:
+        type: array
+        description: The event type names the webhook listens to.
+        items: {}
+    example: |-
+      {
+          "callbackUri":"http://example.com/test/updated",
+          "eventTypes": ["product.updated"]
+      }
   orders_order-id_processes1845454654:
     type: object
     properties:
