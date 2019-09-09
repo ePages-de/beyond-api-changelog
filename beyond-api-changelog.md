@@ -1,5 +1,25 @@
 # Beyond API Changelog
 
+## 2019-09-09
+
+### What's New
+---
+* `PUT` /customers/{customerId} Update customer
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `POST` /customers Create customer  
+    Parameter
+
+        Add .initialPassword //The customer password.
+* `GET` /customers/{id} Show customer details  
+    Return Type
+
+        Delete createdAt //The date and time the customer was technically created in the system.
+
 ## 2019-09-06
 
 ### What's New
