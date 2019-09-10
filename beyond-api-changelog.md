@@ -6,8 +6,6 @@
 ---
 * `PUT` /customers/{customerId} Update customer
 
-### What's Deprecated
----
 
 ### What's Changed
 ---
@@ -21,12 +19,6 @@
         Delete createdAt //The date and time the customer was technically created in the system.
 
 ## 2019-09-06
-
-### What's New
----
-
-### What's Deprecated
----
 
 ### What's Changed
 ---
