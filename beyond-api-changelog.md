@@ -18,14 +18,6 @@
 
         Delete createdAt //The date and time the customer was technically created in the system.
 
-## 2019-09-06
-
-### What's Changed
----
-* `PATCH` /products/{productId}/variations/{variationId} Update variation partially  
-    Return Type
-
-        Delete refPrice //The reference price of a variation product's variation.
 
 ## 2019-09-04
 
