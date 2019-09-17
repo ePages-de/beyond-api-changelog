@@ -1,5 +1,21 @@
 # Beyond API Changelog
 
+## 2019-09-17
+
+### What's New
+---
+* `PUT` /carts/{cardId}/customer Assign a customer to the cart
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `PATCH` /products/{productId}/variations/{variationId} Update variation partially  
+    Return Type
+
+        Add refPrice //The reference price of a variation product's variation.
+
 ## 2019-09-09
 
 ### What's New
