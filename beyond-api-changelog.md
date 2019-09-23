@@ -1,5 +1,24 @@
 # Beyond API Changelog
 
+## 2019-09-23
+
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `GET` /shop/legal Show legal details  
+    Return Type
+
+        Delete customLegalData //The custom legal date of the shop.
+* `PATCH` /shop/legal Update legal resource partially  
+    Return Type
+
+        Delete customLegalData //The custom legal date of the shop.
+
 ## 2019-09-17
 
 ### What's New
