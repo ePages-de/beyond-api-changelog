@@ -1,5 +1,45 @@
 # Beyond API Changelog
 
+## 2019-09-25
+
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `PUT` /order-settings Update order settings  
+    Parameter
+
+        Add .customOrderCanceledMailText //A customizable text of Order Cancelation Mail.
+        Add .customOrderOpenMailText //A customizable text of Order Open Customer Mail.
+        Add .customInvoiceCanceledMailText //A customizable text of Invoice Cancelation Mail.
+        Add .customOrderPendingMailText //A customizable text of Started Shipping Mail.
+        Add .customInvoiceCustomerMailText //A customizable text of Invoice Mail.
+        Add .customOrderReturnedMailText //A customizable text of Received Returned Order Mail.
+        Add .customOrderShippedMailText //A customizable text of Shipped Order Mail.
+    Return Type
+
+        Add customOrderCanceledMailText //A customizable text of Order Cancelation Mail.
+        Add customOrderOpenMailText //A customizable text of Order Open Customer Mail.
+        Add customInvoiceCanceledMailText //A customizable text of Invoice Cancelation Mail.
+        Add customOrderPendingMailText //A customizable text of Started Shipping Mail.
+        Add customInvoiceCustomerMailText //A customizable text of Invoice Mail.
+        Add customOrderReturnedMailText //A customizable text of Received Returned Order Mail.
+        Add customOrderShippedMailText //A customizable text of Shipped Order Mail.
+* `GET` /order-settings List order settings  
+    Return Type
+
+        Add customOrderCanceledMailText //A customizable text of Order Cancelation Mail.
+        Add customOrderOpenMailText //A customizable text of Order Open Customer Mail.
+        Add customInvoiceCanceledMailText //A customizable text of Invoice Cancelation Mail.
+        Add customOrderPendingMailText //A customizable text of Started Shipping Mail.
+        Add customInvoiceCustomerMailText //A customizable text of Invoice Mail.
+        Add customOrderReturnedMailText //A customizable text of Received Returned Order Mail.
+        Add customOrderShippedMailText //A customizable text of Shipped Order Mail.
+
 ## 2019-09-23
 
 ### What's New
