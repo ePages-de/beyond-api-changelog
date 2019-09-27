@@ -2,12 +2,6 @@
 
 ## 2019-09-25
 
-### What's New
----
-
-### What's Deprecated
----
-
 ### What's Changed
 ---
 * `PUT` /order-settings Update order settings  
