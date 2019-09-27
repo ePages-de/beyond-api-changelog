@@ -40,24 +40,6 @@
         Add customOrderReturnedMailText //A customizable text of Received Returned Order Mail.
         Add customOrderShippedMailText //A customizable text of Shipped Order Mail.
 
-## 2019-09-23
-
-### What's New
----
-
-### What's Deprecated
----
-
-### What's Changed
----
-* `GET` /shop/legal Show legal details  
-    Return Type
-
-        Delete customLegalData //The custom legal date of the shop.
-* `PATCH` /shop/legal Update legal resource partially  
-    Return Type
-
-        Delete customLegalData //The custom legal date of the shop.
 
 ## 2019-09-17
 
@@ -65,15 +47,6 @@
 ---
 * `PUT` /carts/{cardId}/customer Assign a customer to the cart
 
-### What's Deprecated
----
-
-### What's Changed
----
-* `PATCH` /products/{productId}/variations/{variationId} Update variation partially  
-    Return Type
-
-        Add refPrice //The reference price of a variation product's variation.
 
 ## 2019-09-09
 
