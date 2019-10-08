@@ -2,13 +2,6 @@
 
 ## 2019-10-07
 
--XX:InitialHeapSize=527023232 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
-### What's New
----
-
-### What's Deprecated
----
-
 ### What's Changed
 ---
 * `GET` /orders/{order-id} Show order details  
@@ -21,12 +14,6 @@
         Add userRole //The type of user. Must be one of [customer, merchant]
 
 ## 2019-09-27
-
-### What's New
----
-
-### What's Deprecated
----
 
 ### What's Changed
 ---
