@@ -1,5 +1,25 @@
 # Beyond API Changelog
 
+## 2019-10-08
+
+-XX:InitialHeapSize=527023232 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `PATCH` /shop/address Update address partially with tenant context  
+    Return Type
+
+        Add dependentLocality //Additional locality information such as a village or suburb name, giving a more specific location.
+* `GET` /shop/address Show address details  
+    Return Type
+
+        Add dependentLocality //Additional locality information such as a village or suburb name, giving a more specific location.
+
 ## 2019-10-07
 
 ### What's Changed
