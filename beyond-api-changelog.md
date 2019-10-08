@@ -13,15 +13,6 @@
 
         Add userRole //The type of user. Must be one of [customer, merchant]
 
-## 2019-09-27
-
-### What's Changed
----
-* `GET` /shipping-zones/{shippingZoneId}/shipping-methods/{shippingMethodId} Show details of shipping method with weight-based price in shipping zone  
-    Return Type
-
-        Add freeShippingValue //Once a customer reaches this amount (excluding payment fee) this shipping method is free of charge.
-        Add weightBasedPrice //The price depending on the package weight (optional).
 
 ## 2019-09-25
 
