@@ -1,5 +1,18 @@
 # Beyond API Changelog
 
+## 2019-10-16
+
+-XX:InitialHeapSize=527023232 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+* `POST` /orders/{id}/send-order-document Send order document
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+
 ## 2019-10-14
 
 ### What's Changed
