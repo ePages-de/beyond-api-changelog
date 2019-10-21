@@ -1,5 +1,24 @@
 # Beyond API Changelog
 
+## 2019-10-21
+
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `POST` /products/{productId}/images Add product image  
+    Parameter
+
+        Content-Type Notes The content type of the image. Can be `image/png`, `image/jpeg`, or `image/gif`. change into The content type of the image. Can be one of `image/png`, `image/jpeg`, or `image/gif`.
+* `POST` /shop/images Upload shop image  
+    Parameter
+
+        Content-Type Notes The content type of the image. Can be `image/png`, `image/jpeg`, or `image/gif`. change into The content type of the image. Can be one of `image/png`, `image/jpeg`, or `image/gif`.
+
 ## 2019-10-16
 
 -XX:InitialHeapSize=527023232 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
