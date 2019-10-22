@@ -1,5 +1,21 @@
 # Beyond API Changelog
 
+## 2019-10-22
+
+### What's New
+---
+* `PUT` /products/{productId}/images Sort product image
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `GET` /products/{productId}/images/{imageId} Show product image details  
+    Return Type
+
+        Add position //The sorting position of the image in relation to other images.
+
 ## 2019-10-16
 
 ### What's New
