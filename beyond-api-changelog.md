@@ -6,8 +6,6 @@
 ---
 * `PUT` /products/{productId}/images Sort product image
 
-### What's Deprecated
----
 
 ### What's Changed
 ---
