@@ -1,5 +1,17 @@
 # Beyond API Changelog
 
+## 2019-10-24
+
+### What's New
+---
+* `DELETE` /customers/{id} Delete customer
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+
 ## 2019-10-22
 
 ### What's New
