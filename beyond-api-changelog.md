@@ -6,11 +6,6 @@
 ---
 * `DELETE` /customers/{id} Delete customer
 
-### What's Deprecated
----
-
-### What's Changed
----
 
 ## 2019-10-22
 
