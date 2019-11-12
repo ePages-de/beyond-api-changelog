@@ -39,9 +39,132 @@ paths:
         name: ""
         required: false
         schema:
-          $ref: '#/definitions/callback1173613549'
+          $ref: '#/definitions/callback-683650111'
         x-examples:
-          application/json: <payload>
+          application/json: |-
+            {
+              "_payloadType" : "product",
+              "_id" : "b781be0c-19e0-47e9-aba6-1742586c1873",
+              "name" : "Rioja Castillo de Puerto (2013)",
+              "description" : "Spain\nRioja Tempranillo",
+              "manufacturer" : "Grape Vineyard",
+              "essentialFeatures" : "Dry. 12% alcohol. Best vine variety.",
+              "sku" : "8e19cf00-27bc-45bf-a675-d93b011278ac",
+              "salesPrice" : {
+                "taxModel" : "GROSS",
+                "currency" : "EUR",
+                "amount" : 8.7,
+                "derivedPrice" : {
+                  "taxModel" : "NET",
+                  "currency" : "EUR",
+                  "amount" : 7.05,
+                  "taxRate" : 0.19
+                }
+              },
+              "listPrice" : {
+                "taxModel" : "GROSS",
+                "currency" : "EUR",
+                "amount" : 10.95,
+                "derivedPrice" : {
+                  "taxModel" : "NET",
+                  "currency" : "EUR",
+                  "amount" : 8.87,
+                  "taxRate" : 0.19
+                }
+              },
+              "manufacturerPrice" : {
+                "taxModel" : "GROSS",
+                "currency" : "EUR",
+                "amount" : 99.95,
+                "derivedPrice" : {
+                  "taxModel" : "NET",
+                  "currency" : "EUR",
+                  "amount" : 80.96,
+                  "taxRate" : 0.19
+                }
+              },
+              "tags" : [ "Bestseller", "Red Wine", "Sale" ],
+              "productIdentifiers" : [ {
+                "type" : "EAN",
+                "value" : "9780134308135"
+              } ],
+              "taxClass" : "REGULAR",
+              "shippingWeight" : 100,
+              "maxOrderQuantity" : 6,
+              "shippingDimension" : {
+                "length" : 1500,
+                "width" : 1000,
+                "height" : 2000
+              },
+              "visible" : true,
+              "onSale" : true,
+              "refPrice" : {
+                "refQuantity" : 1,
+                "unit" : "LITER",
+                "quantity" : 0.75,
+                "price" : {
+                  "taxModel" : "GROSS",
+                  "currency" : "EUR",
+                  "amount" : 11.6,
+                  "derivedPrice" : {
+                    "taxModel" : "NET",
+                    "currency" : "EUR",
+                    "amount" : 9.4,
+                    "taxRate" : 0.19
+                  }
+                }
+              },
+              "shippingPeriod" : {
+                "minDays" : 2,
+                "maxDays" : 4,
+                "displayUnit" : "WEEKS"
+              },
+              "defaultImageDataUri" : "/api/core-storage/images/P7120104.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225998{&width,height,upscale}",
+              "variationAttributeValues" : [ {
+                "displayName" : "color",
+                "value" : "red"
+              }, {
+                "displayName" : "size",
+                "value" : "s"
+              } ],
+              "variationAttributes" : [ {
+                "displayName" : "color",
+                "values" : [ "red", "green" ]
+              }, {
+                "displayName" : "size",
+                "values" : [ "xs", "s", "m", "l", "xl" ]
+              } ],
+              "variationProperties" : [ {
+                "property" : "sku",
+                "enabled" : true
+              }, {
+                "property" : "salesPrice",
+                "enabled" : false
+              }, {
+                "property" : "listPrice",
+                "enabled" : false
+              }, {
+                "property" : "refPrice",
+                "enabled" : false
+              }, {
+                "property" : "manufacturerPrice",
+                "enabled" : false
+              }, {
+                "property" : "productIdentifiers",
+                "enabled" : false
+              } ],
+              "_refs" : {
+                "variationProduct" : "5fec71e5-3b6e-49ad-a4ed-21f56731b86e"
+              },
+              "_context" : {
+                "locale" : "en-GB",
+                "shopTaxModel" : "GROSS",
+                "entity" : "Product",
+                "optLock" : 1,
+                "createdAt" : "2019-10-29T14:09:08.255",
+                "lastModifiedAt" : "2019-10-29T14:09:08.464"
+              }
+            }
       responses:
         404:
           description: ""
@@ -3707,12 +3830,12 @@ paths:
       - categories
       summary: Update category partially
       description: |-
-        Updates the properties of the category identified by {categoryId} partially with `application/json` content type.
+        Updates the properties of the category identified by {categoryId} partially with `application/json-patch+json` content type.
         Note that a `category` is referred to as `collection` in the cockpit.
-      operationId: category-patch-json
+      operationId: category-patch-jsonpatch
       consumes:
-      - application/json
       - application/json-patch+json
+      - application/json
       produces:
       - application/hal+json
       parameters:
@@ -3727,9 +3850,9 @@ paths:
         schema:
           $ref: '#/definitions/categories_categoryId-226982251'
         x-examples:
-          application/json: '{"name":"High Protein Power Bars","type":"MANUAL","query":{"bool":{"filter":[{"term":{"tasks":"power-bar"}}]}}}'
           application/json-patch+json: '[{"op":"test","path":"/name","value":"Power
             Bars"},{"op":"replace","path":"/name","value":"High Protein Power Bars"},{"op":"replace","path":"/type","value":"MANUAL"},{"op":"replace","path":"/query","value":{"bool":{"filter":[{"term":{"tasks":"power-bar"}}]}}}]'
+          application/json: '{"name":"High Protein Power Bars","type":"MANUAL","query":{"bool":{"filter":[{"term":{"tasks":"power-bar"}}]}}}'
       responses:
         200:
           description: ""
@@ -3740,13 +3863,13 @@ paths:
                 "label" : "power-bar",
                 "type" : "MANUAL",
                 "query" : {"bool":{"filter":[{"term":{"tasks":"power-bar"}}]}},
-                "_id" : "1de25e78-f35d-4464-8033-306f05107dbf",
+                "_id" : "b04b7950-dc32-42c8-9457-9b4ebb3a6ea4",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/categories/1de25e78-f35d-4464-8033-306f05107dbf"
+                    "href" : "https://yourshop.api.urn/categories/b04b7950-dc32-42c8-9457-9b4ebb3a6ea4"
                   },
                   "category" : {
-                    "href" : "https://yourshop.api.urn/categories/1de25e78-f35d-4464-8033-306f05107dbf"
+                    "href" : "https://yourshop.api.urn/categories/b04b7950-dc32-42c8-9457-9b4ebb3a6ea4"
                   }
                 }
               }
@@ -4747,11 +4870,11 @@ paths:
     post:
       tags:
       - oauth
-      summary: Create a JSON Web Token with client credentials
+      summary: Create a JSON Web Token with a refresh token
       description: |-
-        Creates a JSON Web Token which is valid for 12 hours for the current shop. The other available flows are `authorization_code` and `refresh_token`.
+        Creates a JSON Web Token which is valid for 12 hours for the current shop. The other available flows are `client_credentials` and `authorization_code`.
         The token grants access to all resources which correspond to the scopes the respective client has.
-      operationId: oauth2-token-client-credentials
+      operationId: oauth2-token-refresh
       produces:
       - application/json
       parameters:
@@ -4762,16 +4885,16 @@ paths:
           to refresh an access token.
         required: false
         type: string
-      - name: code
-        in: query
-        description: The authorization code. Required for the `authorization_code`
-          grant type.
-        required: false
-        type: string
       - name: refresh_token
         in: query
         description: The token that can be used to obtain a renewed access token when
           the current token has expired. Required for the `refresh_token` grant type.
+        required: false
+        type: string
+      - name: code
+        in: query
+        description: The authorization code. Required for the `authorization_code`
+          grant type.
         required: false
         type: string
       - name: Authorization
@@ -4786,16 +4909,19 @@ paths:
           examples:
             application/json: |-
               {
-                "access_token" : "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjEifQ.eyJzY29wZSI6WyJwcm9kOmNyIl0sInRlbmFudElkIjoxNDM4LCJleHAiOjE1NzM1MDcyODMsImlhdCI6MTU3MzQ2NDA4MywianRpIjoiNmM0M2MwN2MtNDk5ZS00NTEzLTkwZjgtZGU2YTNkNWZmMTE5IiwiY2xpZW50X2lkIjoiY2xpZW50SWQtMSJ9.B_99lYxpHjh2cB6TShukvJnZyw4VIpc68qvshxdN4_zkK2SoehOQ3j9XlPUjan4X0szKDWTBob2ZDJb5su8rBeWu0MQljc5fVEwbc-IQbjnxC1D5NMyGSIKWkTWszTHiHCBhcUHONhJRmnKTbq5CpbYfj000sgjgmnj_G5FTOoxzSXw5ybc36OjdHCkO5ymX-nZ4O8AQJzotqRwS1kf6X6o_Hr8mw5ZguMk3Wt6d1JExgT0J_wF65PamYsOsf5xQ9-foPxij_Xu6pAt5VbWv03UsrTTLl8zry4IccJ0Tc-jxJJGwU-oOM1b1Pl_a8ODpRR4Buti1O4JA5VDR6krpyw",
+                "access_token" : "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjEifQ.eyJ1c2VyX25hbWUiOiJ1c2VyIiwic2NvcGUiOlsicHJvZDpyYyJdLCJ0ZW5hbnRJZCI6MTQzOCwiZXhwIjoxNTczNzIzMjgxLCJpYXQiOjE1NzM0NjQwODEsInVzZXJJZCI6ImZkMzNmM2MzLTBlNmMtNDIxOS05MGI3LTU0ZDNkZGM4MDIyYSIsImp0aSI6IjExODZhMWJlLThhNjItNDU3Ny1hMjU4LTJjOGRhM2JiODE3YyIsImNsaWVudF9pZCI6InNhbXBsZS1jbGllbnQiLCJ1c2VybmFtZSI6InVzZXIifQ.IuBQSBiYM3is_QCJ1nRZsF85sUUQx1gyXEYAJVxfEMjlJd-gHh6xJAzEeFZn2b57UY9ouDTF2Y8nGupnj-HmHYFoiWWJWKB4pEcEEY8AuJMiUm6ONTbsmLcDY2zicu87M7uhJ3rlfO9hhQgvjELdEhUMvmZAuqkyCk9ACPYNGbEsY_mFNLS9LefL9Td91CumfTEpR9MgNvUKfPjPSWQNBsMIhUaK18nqROf2A6MsGSsOdXeEWxWAP9UUUWnsGbxiHkoAz2TFj8LRYhAnyu548Cm9Qv59L3ASbdxkNvvlZTDqK9d8aiA9ykK_6WnqnNfqQ9lwIyo-i2EhyR3ewy9l5A",
                 "token_type" : "bearer",
-                "expires_in" : 43199,
-                "scope" : "prod:cr",
+                "refresh_token" : "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjEifQ.eyJ1c2VyX25hbWUiOiJ1c2VyIiwic2NvcGUiOlsicHJvZDpyYyJdLCJhdGkiOiIxMTg2YTFiZS04YTYyLTQ1NzctYTI1OC0yYzhkYTNiYjgxN2MiLCJ0ZW5hbnRJZCI6MTQzOCwiZXhwIjoxNTc2MDU2MDgxLCJpYXQiOjE1NzM0NjQwODEsInVzZXJJZCI6ImZkMzNmM2MzLTBlNmMtNDIxOS05MGI3LTU0ZDNkZGM4MDIyYSIsImp0aSI6ImI0MTRlYzdjLTAyODAtNDZhMy1iM2Y2LTRjMmY0OWE3YTI4NyIsImNsaWVudF9pZCI6InNhbXBsZS1jbGllbnQiLCJ1c2VybmFtZSI6InVzZXIifQ.Z47b65A3Gy3R_1GR3tqRb2qulgz9Fs0JUBtT-BcyuslfHMGNHIO_tfgUrQGMQl5XFU55xAjy9xkuObFWfEZ9zzSfBaOBz9ptf6vOY0nTQRABdjtH5IG9-2cSZBa7nPEXHFMzV9Aw0gYYHltKqNu7lvnuApv95idMsmwyEpRfNXMDHBqUpOfGYfi1R34lRrrIZD22rk4BPbcuo4jn3Yzw9YxHbnl0uYQXAFPBRsV34QUdUkSKxMXdEfp6Pz4ivhbDlmxiojEYH3TNmBo4bOstwsD2x0wxKMYIMKHyxspt4iVzsFpcvbAfwYMqfjVrkzglpNBpaGDiSboY5sPZn9qOzQ",
+                "expires_in" : 259199,
+                "scope" : "prod:rc",
                 "tenantId" : 1438,
-                "iat" : 1573464083,
-                "jti" : "6c43c07c-499e-4513-90f8-de6a3d5ff119"
+                "iat" : 1573464081,
+                "userId" : "fd33f3c3-0e6c-4219-90b7-54d3ddc8022a",
+                "username" : "user",
+                "jti" : "1186a1be-8a62-4577-a258-2c8da3bb817c"
               }
           schema:
-            $ref: '#/definitions/oauth_token-150032152'
+            $ref: '#/definitions/oauth_token-1631874687'
       security:
       - basic: []
   /order-settings:
@@ -10989,10 +11115,11 @@ paths:
     get:
       tags:
       - payment-method-definitions
-      summary: Show payment method definition details on system level
+      summary: Show payment method definition details on shop level
       description: Returns the details of the payment method definition identified
-        by {paymentMethodDefinitionId}.
-      operationId: get-payment-method-definition
+        by {paymentMethodDefinitionId}. Gives information if a shop has a payment
+        method derived from the payment method definition.
+      operationId: get-payment-method-definition-shop-context
       produces:
       - application/hal+json
       parameters:
@@ -11007,8 +11134,8 @@ paths:
           examples:
             application/hal+json: |-
               {
-                "_id" : "credit-card",
-                "name" : "credit-card",
+                "_id" : "testPMD",
+                "name" : "testPMD",
                 "referralUriTemplate" : "https://example.com/merchants",
                 "statusUriTemplate" : "https://example.com/merchants/{shopId}/status",
                 "disconnectUriTemplate" : "https://example.com/merchants/{shopId}/disconnect",
@@ -11042,7 +11169,10 @@ paths:
                 },
                 "_links" : {
                   "self" : {
-                    "href" : "https://system.api.urn/payment-method-definitions/credit-card"
+                    "href" : "https://yourshop.api.urn/payment-method-definitions/testPMD"
+                  },
+                  "create-payment-method" : {
+                    "href" : "https://yourshop.api.urn/payment-method-definitions/testPMD/payment-method"
                   }
                 }
               }
@@ -11348,9 +11478,10 @@ paths:
     get:
       tags:
       - payment-methods
-      summary: Show payment method details
-      description: Returns the details of the payment method identified by {paymentMethodId}.
-      operationId: payment-method-get
+      summary: Show charged payment method details
+      description: Returns the details of the charged payment method identified by
+        {paymentMethodId}.
+      operationId: payment-method-percentage-get
       produces:
       - application/hal+json
       parameters:
@@ -11365,63 +11496,42 @@ paths:
           examples:
             application/hal+json: |-
               {
-                "_id" : "0238d732-092f-4a6a-ba29-bc8af0a22007",
-                "name" : "Converge",
-                "description" : "Pay by Converge.",
-                "officialName" : "Converge",
-                "officialDescription" : "Pay by Converge.",
+                "_id" : "e8876800-fb6b-488a-b94c-ca37c24a2d8b",
+                "name" : "Credit card",
+                "description" : "Pay by credit card.",
+                "officialName" : "Credit card",
+                "officialDescription" : "Pay by credit card.",
                 "taxClass" : "REGULAR",
                 "discountOrFee" : {
-                  "type" : "ABSOLUTE",
-                  "absoluteValue" : {
-                    "taxModel" : "GROSS",
-                    "currency" : "EUR",
-                    "amount" : 2
-                  },
-                  "percentageValue" : null
+                  "type" : "PERCENTAGE",
+                  "absoluteValue" : null,
+                  "percentageValue" : 0.02
                 },
                 "position" : 1,
-                "serviceableCountries" : [ "DE" ],
+                "serviceableCountries" : [ "GB", "DE" ],
                 "minimumOrderValue" : {
                   "currency" : "EUR",
-                  "amount" : 10
+                  "amount" : 20
                 },
-                "activated" : true,
+                "activated" : false,
                 "activeLogoSet" : null,
-                "onlinePayment" : true,
-                "workflow" : "PAYMENT_ON_SELECTION",
+                "onlinePayment" : false,
+                "workflow" : null,
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/payment-methods/0238d732-092f-4a6a-ba29-bc8af0a22007"
+                    "href" : "https://yourshop.api.urn/payment-methods/e8876800-fb6b-488a-b94c-ca37c24a2d8b"
                   },
                   "payment-method" : {
-                    "href" : "https://yourshop.api.urn/payment-methods/0238d732-092f-4a6a-ba29-bc8af0a22007"
+                    "href" : "https://yourshop.api.urn/payment-methods/e8876800-fb6b-488a-b94c-ca37c24a2d8b"
                   },
-                  "payment-method-definition-status" : {
-                    "href" : "https://yourshop.api.urn/payment-signup/merchant-accounts/converge-sandbox"
-                  },
-                  "deactivate-payment-method" : {
-                    "href" : "https://yourshop.api.urn/payment-methods/0238d732-092f-4a6a-ba29-bc8af0a22007/deactivate"
-                  },
-                  "logo-list" : {
-                    "href" : "http://list-logo.com"
-                  },
-                  "logo-storefront" : {
-                    "href" : "http://storefront-logo.com"
-                  },
-                  "logo-tile" : {
-                    "href" : "http://tile-logo.com"
-                  },
-                  "logo-details" : {
-                    "href" : "http://details-logo.com"
+                  "activate-payment-method" : {
+                    "href" : "https://yourshop.api.urn/payment-methods/e8876800-fb6b-488a-b94c-ca37c24a2d8b/activate"
                   },
                   "payment-method-definition" : {
-                    "href" : "https://yourshop.api.urn/payment-methods/0238d732-092f-4a6a-ba29-bc8af0a22007/payment-method-definition"
+                    "href" : "https://yourshop.api.urn/payment-methods/e8876800-fb6b-488a-b94c-ca37c24a2d8b/payment-method-definition"
                   }
                 }
               }
-          schema:
-            $ref: '#/definitions/payment-methods_paymentMethodId175199840'
       security:
       - oauth2_application:
         - pymt:r
@@ -12399,9 +12509,9 @@ paths:
     get:
       tags:
       - product-view
-      summary: Show product details
-      description: Returns the details of the product identified by {productId}.
-      operationId: product-view-find-by-id
+      summary: Show variation product details
+      description: Returns the details of the variation product identified by {productId}.
+      operationId: find-variation-product-by-id
       produces:
       - application/hal+json
       parameters:
@@ -12416,11 +12526,18 @@ paths:
           examples:
             application/hal+json: |-
               {
-                "_id" : "15d77e95-a9a7-4cd4-a65b-b1412bb57fab",
-                "sku" : "vino020",
+                "_id" : "41de7694-57a4-4e37-a38d-5a7cd72ae59d",
                 "name" : "Rioja Castillo de Puerto (2013)",
                 "manufacturer" : "Grape Vineyard",
                 "salesPrice" : {
+                  "amount" : 8.7,
+                  "currency" : "EUR"
+                },
+                "minSalesPrice" : {
+                  "amount" : 8.7,
+                  "currency" : "EUR"
+                },
+                "maxSalesPrice" : {
                   "amount" : 8.7,
                   "currency" : "EUR"
                 },
@@ -12429,7 +12546,7 @@ paths:
                   "amount" : 10.95,
                   "currency" : "EUR"
                 },
-                "listPriceText" : "Old Price",
+                "listPriceText" : null,
                 "manufacturerPrice" : {
                   "amount" : 99.95,
                   "currency" : "EUR"
@@ -12450,6 +12567,29 @@ paths:
                   "width" : 1000,
                   "height" : 2000
                 },
+                "variations" : [ {
+                  "_id" : "029ef713-0544-4dc4-8400-fa47eb15caa4",
+                  "variationAttributeValues" : [ {
+                    "displayName" : "Volume",
+                    "value" : "1.5l"
+                  } ]
+                }, {
+                  "_id" : "14a0901d-6235-4765-b952-00effa012f0a",
+                  "variationAttributeValues" : [ {
+                    "displayName" : "Volume",
+                    "value" : "0.7l"
+                  } ]
+                }, {
+                  "_id" : "551e7c5b-b16f-4d2c-973a-e3ff6a29ff8a",
+                  "variationAttributeValues" : [ {
+                    "displayName" : "Volume",
+                    "value" : "0.2l"
+                  } ]
+                } ],
+                "variationAttributes" : [ {
+                  "displayName" : "Volume",
+                  "values" : [ "0.2l", "0.7l", "1.5l" ]
+                } ],
                 "productIdentifiers" : [ {
                   "type" : "EAN",
                   "value" : "501234567890"
@@ -12459,7 +12599,7 @@ paths:
                 } ],
                 "description" : "Spain\nRioja Tempranillo",
                 "essentialFeatures" : "Dry. 12% alcohol. Best vine variety.",
-                "tags" : [ "Bestseller", "Red Wine", "Sale" ],
+                "tags" : [ "Bestseller", "High Protein", "Power Bar" ],
                 "attributes" : [ {
                   "key" : "origin",
                   "value" : "La Rioja",
@@ -12480,9 +12620,9 @@ paths:
                   "formattedValue" : 2013.0
                 } ],
                 "shippingPeriod" : {
-                  "minDays" : null,
-                  "maxDays" : 4,
-                  "displayUnit" : "WEEKS"
+                  "minDays" : 2,
+                  "maxDays" : 10,
+                  "displayUnit" : "days"
                 },
                 "_links" : {
                   "default-image-data" : {
@@ -12490,25 +12630,18 @@ paths:
                     "templated" : true
                   },
                   "self" : {
-                    "href" : "https://yourshop.api.urn/product-view/products/15d77e95-a9a7-4cd4-a65b-b1412bb57fab"
+                    "href" : "https://yourshop.api.urn/product-view/products/41de7694-57a4-4e37-a38d-5a7cd72ae59d"
                   },
                   "product" : {
-                    "href" : "https://yourshop.api.urn/product-view/products/15d77e95-a9a7-4cd4-a65b-b1412bb57fab"
+                    "href" : "https://yourshop.api.urn/product-view/products/41de7694-57a4-4e37-a38d-5a7cd72ae59d"
                   },
-                  "additional-image-data" : [ {
-                    "href" : "https://yourshop.api.urn/storage-api/images/rioja-03.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225999{&width,height,upscale}",
-                    "templated" : true
-                  }, {
-                    "href" : "https://yourshop.api.urn/storage-api/images/rioja-04.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281226000{&width,height,upscale}",
-                    "templated" : true
-                  }, {
-                    "href" : "https://yourshop.api.urn/storage-api/images/rioja-02.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225998{&width,height,upscale}",
-                    "templated" : true
-                  } ]
+                  "additional-image-data" : {
+                    "href" : "https://yourshop.api.urn/testUri"
+                  }
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_productId-1722264914'
+            $ref: '#/definitions/product-view_products_productId-865569917'
   /product-view/categories/search/find-by-label:
     get:
       tags:
@@ -12691,11 +12824,11 @@ paths:
     get:
       tags:
       - product-view
-      summary: List products of category
+      summary: List products by category
       description: |-
-        Returns a list of all products in the category identified by {categoryId}.
+        Searches for products using a `categoryId` passed as a request parameter.
         Note that a `category` is referred to as `collection` in the cockpit.
-      operationId: category-products
+      operationId: categories-products
       produces:
       - application/hal+json
       parameters:
@@ -12712,11 +12845,48 @@ paths:
               {
                 "_embedded" : {
                   "products" : [ {
-                    "_id" : "22134a57-deb9-4ef4-be17-cdef035fbfe2",
-                    "sku" : "vino020",
+                    "_id" : "00000000-0000-0000-0000-000000000001",
+                    "sku" : "EB001",
+                    "name" : "High Protein Power Bar (Pack of 5)",
+                    "manufacturer" : "Protein Bar Makers",
+                    "salesPrice" : {
+                      "amount" : 4.95,
+                      "currency" : "EUR"
+                    },
+                    "onSale" : false,
+                    "listPrice" : null,
+                    "listPriceText" : null,
+                    "manufacturerPrice" : null,
+                    "refPrice" : null,
+                    "availabilityState" : "LOW_STOCK",
+                    "shippingWeight" : 190,
+                    "shippingDimension" : {
+                      "length" : 19,
+                      "width" : 18,
+                      "height" : 17
+                    },
+                    "productIdentifiers" : [ ],
+                    "_links" : {
+                      "self" : {
+                        "href" : "https://yourshop.api.urn/product-view/products/00000000-0000-0000-0000-000000000001"
+                      },
+                      "product" : {
+                        "href" : "https://yourshop.api.urn/product-view/products/00000000-0000-0000-0000-000000000001"
+                      }
+                    }
+                  }, {
+                    "_id" : "fbc0368a-4130-48a8-bdfb-7e7ca6f49640",
                     "name" : "Rioja Castillo de Puerto (2013)",
                     "manufacturer" : "Grape Vineyard",
                     "salesPrice" : {
+                      "amount" : 8.7,
+                      "currency" : "EUR"
+                    },
+                    "minSalesPrice" : {
+                      "amount" : 8.7,
+                      "currency" : "EUR"
+                    },
+                    "maxSalesPrice" : {
                       "amount" : 8.7,
                       "currency" : "EUR"
                     },
@@ -12746,6 +12916,10 @@ paths:
                       "width" : 1000,
                       "height" : 2000
                     },
+                    "variationAttributes" : [ {
+                      "displayName" : "Volume",
+                      "values" : [ "0.2l", "0.7l", "1.5l" ]
+                    } ],
                     "productIdentifiers" : [ {
                       "type" : "EAN",
                       "value" : "501234567890"
@@ -12759,26 +12933,28 @@ paths:
                         "templated" : true
                       },
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/22134a57-deb9-4ef4-be17-cdef035fbfe2"
+                        "href" : "https://yourshop.api.urn/product-view/products/fbc0368a-4130-48a8-bdfb-7e7ca6f49640"
                       },
                       "product" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/22134a57-deb9-4ef4-be17-cdef035fbfe2"
+                        "href" : "https://yourshop.api.urn/product-view/products/fbc0368a-4130-48a8-bdfb-7e7ca6f49640"
                       }
                     }
                   } ]
                 },
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/product-view/categories/8cfa4c2c-c504-44ff-a11e-1c7b6b0fab22/products?page=0&size=40"
+                    "href" : "https://yourshop.api.urn/product-view/categories/f89ae57b-64d6-4a54-b056-01818ebb3e6e/products?page=0&size=40"
                   }
                 },
                 "page" : {
                   "size" : 40,
-                  "totalElements" : 1,
+                  "totalElements" : 2,
                   "totalPages" : 1,
                   "number" : 0
                 }
               }
+          schema:
+            $ref: '#/definitions/product-view_categories_categoryId_products1718110432'
   /product-view/products/search/find-available-tags:
     get:
       tags:
@@ -13691,10 +13867,10 @@ paths:
     patch:
       tags:
       - products
-      summary: Update variation product partially
-      description: Updates the variation product identified by {productId} partially
-        with `application/json` content type.
-      operationId: variation-product-patch-json
+      summary: Update product partially
+      description: Updates the product identified by {productId} partially with `application/json`
+        content type. Update on `variationAttributes` is currently not allowed.
+      operationId: product-patch-json
       consumes:
       - application/json
       - application/json-patch+json
@@ -13710,13 +13886,24 @@ paths:
         name: ""
         required: false
         schema:
-          $ref: '#/definitions/products_productId960799700'
+          $ref: '#/definitions/products_productId1753442540'
         x-examples:
           application/json: |-
             {
-              "name" : "Castillo de Alba Rioja (2013)",
-              "description" : "Spain\nRioja",
-              "manufacturer" : "Mantecillia"
+              "name" : "patched name",
+              "description" : "patched description. <p><br></p><blockquote> <ol><li><strong>\n<h1></h1><h6></h6><em><a href=\"http://example.com\" target=\"_blank\"><u>this is my test html</u></a>\n</em></strong> </li></ol> </blockquote>",
+              "variationAttributes" : [ {
+                "displayName" : "size",
+                "values" : [ "35", "36", "37" ]
+              } ],
+              "productIdentifiers" : null,
+              "manufacturer" : "patched manufacturer",
+              "salesPrice" : {
+                "taxModel" : "GROSS",
+                "currency" : "EUR",
+                "amount" : 1.04,
+                "derivedPrice" : null
+              }
             }
           application/json-patch+json: |-
             [ {
@@ -13747,106 +13934,115 @@ paths:
               {
                 "_embedded" : {
                   "availability" : {
-                    "availabilityState" : "NOT_AVAILABLE",
+                    "availabilityState" : "IN_STOCK",
                     "availableStock" : null,
                     "stockThreshold" : null,
-                    "purchasable" : false,
+                    "purchasable" : true,
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/products/81e6e021-87fa-4760-8af4-6e3f3f68b9ed/availability"
+                        "href" : "https://yourshop.api.urn/products/5e4a3f17-0d5c-4084-be83-026fca56b4fa/availability"
                       }
                     }
                   }
                 },
-                "lastModifiedAt" : "2019-11-08T14:49:20.696",
-                "sku" : null,
+                "lastModifiedAt" : "2019-11-08T14:48:00.923",
+                "sku" : "vino020",
                 "salesPrice" : {
                   "taxModel" : "GROSS",
                   "currency" : "EUR",
-                  "amount" : 1.04,
+                  "amount" : 8.7,
                   "derivedPrice" : {
                     "taxModel" : "NET",
                     "currency" : "EUR",
-                    "amount" : 0.94545,
+                    "amount" : 7.9091,
                     "taxRate" : 0.1
                   }
                 },
                 "listPrice" : {
                   "taxModel" : "GROSS",
                   "currency" : "EUR",
-                  "amount" : 39.99,
+                  "amount" : 10.95,
                   "derivedPrice" : {
                     "taxModel" : "NET",
                     "currency" : "EUR",
-                    "amount" : 36.355,
+                    "amount" : 9.9545,
                     "taxRate" : 0.1
                   }
                 },
                 "manufacturerPrice" : {
                   "taxModel" : "GROSS",
                   "currency" : "EUR",
-                  "amount" : 40.99,
+                  "amount" : 99.95,
                   "derivedPrice" : {
                     "taxModel" : "NET",
                     "currency" : "EUR",
-                    "amount" : 37.264,
+                    "amount" : 90.864,
                     "taxRate" : 0.1
                   }
                 },
                 "onSale" : true,
-                "tags" : [ "Shirt", "Summer", "Sale" ],
-                "productIdentifiers" : null,
+                "tags" : [ "Bestseller", "Red Wine", "Sale" ],
+                "productIdentifiers" : [ {
+                  "type" : "EAN",
+                  "value" : "9780134308135"
+                } ],
                 "visible" : true,
                 "taxClass" : "REGULAR",
-                "shippingWeight" : null,
-                "maxOrderQuantity" : null,
+                "shippingWeight" : 100,
+                "maxOrderQuantity" : 6,
                 "shippingDimension" : {
-                  "length" : 2000,
-                  "width" : 750,
-                  "height" : 500
+                  "length" : 1500,
+                  "width" : 1000,
+                  "height" : 2000
                 },
-                "refPrice" : null,
+                "refPrice" : {
+                  "refQuantity" : 1,
+                  "unit" : "LITER",
+                  "quantity" : 0.75,
+                  "price" : {
+                    "taxModel" : "GROSS",
+                    "currency" : "EUR",
+                    "amount" : 11.6,
+                    "derivedPrice" : {
+                      "taxModel" : "NET",
+                      "currency" : "EUR",
+                      "amount" : 10.545,
+                      "taxRate" : 0.1
+                    }
+                  }
+                },
                 "shippingPeriod" : {
-                  "minDays" : 3,
-                  "maxDays" : 5,
-                  "displayUnit" : "DAYS"
+                  "minDays" : 2,
+                  "maxDays" : 4,
+                  "displayUnit" : "WEEKS"
                 },
-                "name" : "patched name",
-                "description" : "patched description. <p><br></p><blockquote> <ol><li><strong>\n<h1></h1><h6></h6><em><a href=\"http://example.com\" target=\"_blank\"><u>this is my test html</u></a>\n</em></strong> </li></ol> </blockquote>",
-                "manufacturer" : "patched manufacturer",
-                "essentialFeatures" : null,
-                "variationAttributes" : [ {
-                  "displayName" : "size",
-                  "values" : [ "S", "M", "L", "XL" ]
-                }, {
-                  "displayName" : "color",
-                  "values" : [ "Black", "White", "Grey" ]
-                } ],
-                "_id" : "81e6e021-87fa-4760-8af4-6e3f3f68b9ed",
+                "name" : "Castillo de Alba Rioja (2013)",
+                "description" : "Spain\nRioja",
+                "manufacturer" : "Mantecillia",
+                "essentialFeatures" : "Dry. 12% alcohol. Best vine variety.",
+                "variationAttributes" : [ ],
+                "_id" : "5e4a3f17-0d5c-4084-be83-026fca56b4fa",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/products/81e6e021-87fa-4760-8af4-6e3f3f68b9ed"
+                    "href" : "https://yourshop.api.urn/products/5e4a3f17-0d5c-4084-be83-026fca56b4fa"
                   },
                   "product" : {
-                    "href" : "https://yourshop.api.urn/products/81e6e021-87fa-4760-8af4-6e3f3f68b9ed"
+                    "href" : "https://yourshop.api.urn/products/5e4a3f17-0d5c-4084-be83-026fca56b4fa"
                   },
                   "availability" : {
-                    "href" : "https://yourshop.api.urn/products/81e6e021-87fa-4760-8af4-6e3f3f68b9ed/availability"
+                    "href" : "https://yourshop.api.urn/products/5e4a3f17-0d5c-4084-be83-026fca56b4fa/availability"
                   },
                   "attributes" : {
-                    "href" : "https://yourshop.api.urn/products/81e6e021-87fa-4760-8af4-6e3f3f68b9ed/attributes"
+                    "href" : "https://yourshop.api.urn/products/5e4a3f17-0d5c-4084-be83-026fca56b4fa/attributes"
                   },
                   "attachments" : {
-                    "href" : "https://yourshop.api.urn/products/81e6e021-87fa-4760-8af4-6e3f3f68b9ed/attachments"
+                    "href" : "https://yourshop.api.urn/products/5e4a3f17-0d5c-4084-be83-026fca56b4fa/attachments"
                   },
                   "images" : {
-                    "href" : "https://yourshop.api.urn/products/81e6e021-87fa-4760-8af4-6e3f3f68b9ed/images"
+                    "href" : "https://yourshop.api.urn/products/5e4a3f17-0d5c-4084-be83-026fca56b4fa/images"
                   },
                   "default-image" : {
-                    "href" : "https://yourshop.api.urn/products/81e6e021-87fa-4760-8af4-6e3f3f68b9ed/default-image"
-                  },
-                  "variations" : {
-                    "href" : "https://yourshop.api.urn/products/81e6e021-87fa-4760-8af4-6e3f3f68b9ed/variations"
+                    "href" : "https://yourshop.api.urn/products/5e4a3f17-0d5c-4084-be83-026fca56b4fa/default-image"
                   }
                 }
               }
@@ -14263,10 +14459,10 @@ paths:
     post:
       tags:
       - products
-      summary: Create product attribute of type STRING
-      description: Creates a product attribute of type STRING from an existing product
+      summary: Create product attribute of type NUMBER
+      description: Creates a product attribute of type NUMBER from an existing product
         attribute definition. The `key` of the definition needs to be specified.
-      operationId: product-attribute-create-string-with-name
+      operationId: product-attribute-create-number-with-name
       consumes:
       - application/json
       produces:
@@ -14281,12 +14477,12 @@ paths:
         name: ""
         required: false
         schema:
-          $ref: '#/definitions/products_productId_attributes1721519148'
+          $ref: '#/definitions/products_productId_attributes1062817668'
         x-examples:
           application/json: |-
             {
-              "key" : "filling_capacity",
-              "value" : 5.9
+              "key" : "color",
+              "value" : "red"
             }
       responses:
         201:
@@ -14294,17 +14490,17 @@ paths:
           examples:
             application/hal+json: |-
               {
-                "value" : "red",
-                "key" : "color",
+                "value" : 5.9,
+                "key" : "filling_capacity",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/products/beb2d2fb-69f3-4ba8-9892-074f5cd3de13/attributes/color"
+                    "href" : "https://yourshop.api.urn/products/cb4f8421-c411-48a3-a624-0ba5b6fe9bf6/attributes/filling_capacity"
                   },
                   "product" : {
-                    "href" : "https://yourshop.api.urn/products/beb2d2fb-69f3-4ba8-9892-074f5cd3de13"
+                    "href" : "https://yourshop.api.urn/products/cb4f8421-c411-48a3-a624-0ba5b6fe9bf6"
                   },
                   "product-attribute-definition" : {
-                    "href" : "https://yourshop.api.urn/product-attribute-definitions/319a6177-b0d2-439c-803f-02739b08521c"
+                    "href" : "https://yourshop.api.urn/product-attribute-definitions/eb550eba-a7f8-48d4-b40e-55c91f008ff6"
                   }
                 }
               }
@@ -16868,10 +17064,10 @@ paths:
     get:
       tags:
       - products
-      summary: Show product attribute details of type STRING
-      description: Returns a product attribute of type STRING by `key` for the product
+      summary: Show product attribute details of type NUMBER
+      description: Returns a product attribute of type NUMBER by `key` for the product
         identified by {productId}.
-      operationId: product-attribute-get-string
+      operationId: product-attribute-get-number
       produces:
       - application/hal+json
       parameters:
@@ -16891,22 +17087,22 @@ paths:
           examples:
             application/hal+json: |-
               {
-                "value" : "red",
-                "key" : "color",
+                "value" : 5.9,
+                "key" : "filling_capacity",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/products/a764dd90-1e22-477b-8056-063793eb0e16/attributes/color"
+                    "href" : "https://yourshop.api.urn/products/4d394586-64c3-44d7-ac2e-361b76181d0c/attributes/filling_capacity"
                   },
                   "product" : {
-                    "href" : "https://yourshop.api.urn/products/a764dd90-1e22-477b-8056-063793eb0e16"
+                    "href" : "https://yourshop.api.urn/products/4d394586-64c3-44d7-ac2e-361b76181d0c"
                   },
                   "product-attribute-definition" : {
-                    "href" : "https://yourshop.api.urn/product-attribute-definitions/e7c4168a-23fa-4551-9b87-8aae23d91ed0"
+                    "href" : "https://yourshop.api.urn/product-attribute-definitions/354e0be5-2030-4546-b27e-b5d8759b2e88"
                   }
                 }
               }
           schema:
-            $ref: '#/definitions/products_productId_attributes_productAttributeName-735361265'
+            $ref: '#/definitions/products_productId_attributes_productAttributeName215086679'
       security:
       - oauth2_application:
         - prat:r
@@ -18441,10 +18637,12 @@ paths:
     get:
       tags:
       - shipping-zones
-      summary: List shipping methods of shipping zone
-      description: Returns a list of all shipping methods of a shipping zone identified
-        by {shippingZoneId} in a paged manner.
-      operationId: shipping-zones-shipping-methods-list
+      summary: Sort shipping methods in shipping zone
+      description: Sorts the shipping methods inside the shipping zone identified
+        by {shippingZoneId}. This is done by passing the self-links of the shipping
+        methods in the desired order. The request must contain URIs for all shipping
+        methods of this shipping zone.
+      operationId: shipping-zones-shipping-methods-sort
       produces:
       - application/hal+json
       parameters:
@@ -18461,8 +18659,8 @@ paths:
               {
                 "_embedded" : {
                   "shipping-methods" : [ {
-                    "_id" : "b3b362a0-63ad-4d1e-aeb1-30614844eafb",
-                    "name" : "Standard Shipping 2",
+                    "_id" : "51d0b59e-1264-425f-a8c4-22b645268d85",
+                    "name" : "Standard Shipping 2-0",
                     "description" : "Standard Shipping",
                     "taxClass" : "REGULAR",
                     "position" : 0,
@@ -18473,33 +18671,116 @@ paths:
                     "fixedPrice" : {
                       "taxModel" : "GROSS",
                       "currency" : "EUR",
-                      "amount" : 19.99
+                      "amount" : 2
                     },
                     "weightBasedPrice" : null,
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/shipping-zones/14329a77-53cd-4a76-bca5-6c7823343551/shipping-methods/b3b362a0-63ad-4d1e-aeb1-30614844eafb"
+                        "href" : "https://yourshop.api.urn/shipping-zones/6ca4f26b-732f-4d4b-a443-5fa14c008d78/shipping-methods/51d0b59e-1264-425f-a8c4-22b645268d85"
+                      }
+                    }
+                  }, {
+                    "_id" : "0284b5d3-fe73-4587-b117-c1a52ea9966c",
+                    "name" : "Standard Shipping 2-2",
+                    "description" : "Standard Shipping",
+                    "taxClass" : "REGULAR",
+                    "position" : 1,
+                    "freeShippingValue" : {
+                      "currency" : "EUR",
+                      "amount" : 400
+                    },
+                    "fixedPrice" : {
+                      "taxModel" : "GROSS",
+                      "currency" : "EUR",
+                      "amount" : 2
+                    },
+                    "weightBasedPrice" : null,
+                    "_links" : {
+                      "self" : {
+                        "href" : "https://yourshop.api.urn/shipping-zones/6ca4f26b-732f-4d4b-a443-5fa14c008d78/shipping-methods/0284b5d3-fe73-4587-b117-c1a52ea9966c"
+                      }
+                    }
+                  }, {
+                    "_id" : "aed48949-a8f0-4323-b20b-5655ed7e8617",
+                    "name" : "Standard Shipping 2-1",
+                    "description" : "Standard Shipping",
+                    "taxClass" : "REGULAR",
+                    "position" : 2,
+                    "freeShippingValue" : {
+                      "currency" : "EUR",
+                      "amount" : 400
+                    },
+                    "fixedPrice" : {
+                      "taxModel" : "GROSS",
+                      "currency" : "EUR",
+                      "amount" : 2
+                    },
+                    "weightBasedPrice" : null,
+                    "_links" : {
+                      "self" : {
+                        "href" : "https://yourshop.api.urn/shipping-zones/6ca4f26b-732f-4d4b-a443-5fa14c008d78/shipping-methods/aed48949-a8f0-4323-b20b-5655ed7e8617"
+                      }
+                    }
+                  }, {
+                    "_id" : "dec9cada-31df-40eb-975c-737f2fc9848d",
+                    "name" : "Standard Shipping 2-3",
+                    "description" : "Standard Shipping",
+                    "taxClass" : "REGULAR",
+                    "position" : 3,
+                    "freeShippingValue" : {
+                      "currency" : "EUR",
+                      "amount" : 400
+                    },
+                    "fixedPrice" : {
+                      "taxModel" : "GROSS",
+                      "currency" : "EUR",
+                      "amount" : 2
+                    },
+                    "weightBasedPrice" : null,
+                    "_links" : {
+                      "self" : {
+                        "href" : "https://yourshop.api.urn/shipping-zones/6ca4f26b-732f-4d4b-a443-5fa14c008d78/shipping-methods/dec9cada-31df-40eb-975c-737f2fc9848d"
+                      }
+                    }
+                  }, {
+                    "_id" : "9c4071fc-89ce-407f-ba04-ebca3fec38ea",
+                    "name" : "Standard Shipping 2-4",
+                    "description" : "Standard Shipping",
+                    "taxClass" : "REGULAR",
+                    "position" : 4,
+                    "freeShippingValue" : {
+                      "currency" : "EUR",
+                      "amount" : 400
+                    },
+                    "fixedPrice" : {
+                      "taxModel" : "GROSS",
+                      "currency" : "EUR",
+                      "amount" : 2
+                    },
+                    "weightBasedPrice" : null,
+                    "_links" : {
+                      "self" : {
+                        "href" : "https://yourshop.api.urn/shipping-zones/6ca4f26b-732f-4d4b-a443-5fa14c008d78/shipping-methods/9c4071fc-89ce-407f-ba04-ebca3fec38ea"
                       }
                     }
                   } ]
                 },
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/shipping-zones/14329a77-53cd-4a76-bca5-6c7823343551/shipping-methods"
+                    "href" : "https://yourshop.api.urn/shipping-zones/6ca4f26b-732f-4d4b-a443-5fa14c008d78/shipping-methods"
                   }
                 }
               }
-          schema:
-            $ref: '#/definitions/shipping-zones_shippingZoneId_shipping-methods-502438760'
       security:
       - oauth2_application:
         - shpz:r
     post:
       tags:
       - shipping-zones
-      summary: Create shipping method in shipping zone
-      description: Creates a shipping method in the shipping zone identified by {shippingZoneId}.
-      operationId: shipping-zones-shipping-methods-create
+      summary: Create shipping method in shipping zone with weight-based price
+      description: Creates a shipping method with weight-based price in the shipping
+        zone identified by {shippingZoneId}.
+      operationId: shipping-zones-shipping-methods-create-with-weight-based-price
       consumes:
       - application/json
       produces:
@@ -18514,7 +18795,7 @@ paths:
         name: ""
         required: false
         schema:
-          $ref: '#/definitions/shipping-zones_shippingZoneId_shipping-methods1076529126'
+          $ref: '#/definitions/shipping-zones_shippingZoneId_shipping-methods330629904'
         x-examples:
           application/json: |-
             {
@@ -18526,27 +18807,10 @@ paths:
                 "currency" : "EUR",
                 "amount" : 400
               },
-              "weightBasedPrice" : {
-                "weightPriceThresholds" : [ {
-                  "maxWeight" : 1000,
-                  "price" : {
-                    "taxModel" : "GROSS",
-                    "currency" : "EUR",
-                    "amount" : 4
-                  }
-                }, {
-                  "maxWeight" : 5000,
-                  "price" : {
-                    "taxModel" : "GROSS",
-                    "currency" : "EUR",
-                    "amount" : 9
-                  }
-                } ],
-                "unlimitedWeightPrice" : {
-                  "taxModel" : "GROSS",
-                  "currency" : "EUR",
-                  "amount" : 34
-                }
+              "fixedPrice" : {
+                "taxModel" : "GROSS",
+                "currency" : "EUR",
+                "amount" : "19.99"
               }
             }
       responses:
@@ -18555,12 +18819,12 @@ paths:
           examples:
             application/hal+json: |-
               {
-                "_id" : "6ff1f3e9-cb28-4a25-b9cb-4f24a6c84e4f",
+                "_id" : "6f7efe50-1b34-4807-9d53-5f434cac7cfa",
                 "name" : "DE",
                 "serviceableCountries" : [ "DE" ],
                 "position" : 1,
                 "shippingMethods" : [ {
-                  "_id" : "3f75207c-d143-4f8b-9ef4-53433e678d00",
+                  "_id" : "4b46ce5e-8629-4832-8547-d3fdb9323519",
                   "name" : "Standard",
                   "description" : "Standard shipping. Delivery within 3-4 days.",
                   "taxClass" : "REGULAR",
@@ -18574,11 +18838,11 @@ paths:
                   "weightBasedPrice" : null,
                   "_links" : {
                     "self" : {
-                      "href" : "https://yourshop.api.urn/shipping-zones/6ff1f3e9-cb28-4a25-b9cb-4f24a6c84e4f/shipping-methods/3f75207c-d143-4f8b-9ef4-53433e678d00"
+                      "href" : "https://yourshop.api.urn/shipping-zones/6f7efe50-1b34-4807-9d53-5f434cac7cfa/shipping-methods/4b46ce5e-8629-4832-8547-d3fdb9323519"
                     }
                   }
                 }, {
-                  "_id" : "e5b6a39d-c8ee-47a8-a27f-e1c11e1bf1ac",
+                  "_id" : "a9ce4a90-0fa5-47ce-ad0f-3c5b2aa3e3ae",
                   "name" : "Standard Shipping 2",
                   "description" : "Standard Shipping",
                   "taxClass" : "REGULAR",
@@ -18587,24 +18851,41 @@ paths:
                     "currency" : "EUR",
                     "amount" : 400
                   },
-                  "fixedPrice" : {
-                    "taxModel" : "GROSS",
-                    "currency" : "EUR",
-                    "amount" : 19.99
+                  "fixedPrice" : null,
+                  "weightBasedPrice" : {
+                    "weightPriceThresholds" : [ {
+                      "maxWeight" : 1000,
+                      "price" : {
+                        "taxModel" : "GROSS",
+                        "currency" : "EUR",
+                        "amount" : 4
+                      }
+                    }, {
+                      "maxWeight" : 5000,
+                      "price" : {
+                        "taxModel" : "GROSS",
+                        "currency" : "EUR",
+                        "amount" : 9
+                      }
+                    } ],
+                    "unlimitedWeightPrice" : {
+                      "taxModel" : "GROSS",
+                      "currency" : "EUR",
+                      "amount" : 34
+                    }
                   },
-                  "weightBasedPrice" : null,
                   "_links" : {
                     "self" : {
-                      "href" : "https://yourshop.api.urn/shipping-zones/6ff1f3e9-cb28-4a25-b9cb-4f24a6c84e4f/shipping-methods/e5b6a39d-c8ee-47a8-a27f-e1c11e1bf1ac"
+                      "href" : "https://yourshop.api.urn/shipping-zones/6f7efe50-1b34-4807-9d53-5f434cac7cfa/shipping-methods/a9ce4a90-0fa5-47ce-ad0f-3c5b2aa3e3ae"
                     }
                   }
                 } ],
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/shipping-zones/6ff1f3e9-cb28-4a25-b9cb-4f24a6c84e4f"
+                    "href" : "https://yourshop.api.urn/shipping-zones/6f7efe50-1b34-4807-9d53-5f434cac7cfa"
                   },
                   "shipping-methods" : {
-                    "href" : "https://yourshop.api.urn/shipping-zones/6ff1f3e9-cb28-4a25-b9cb-4f24a6c84e4f/shipping-methods"
+                    "href" : "https://yourshop.api.urn/shipping-zones/6f7efe50-1b34-4807-9d53-5f434cac7cfa/shipping-methods"
                   }
                 }
               }
@@ -18615,10 +18896,11 @@ paths:
     get:
       tags:
       - shipping-zones
-      summary: Show details of shipping method in shipping zone
-      description: Shows the details of the shipping method identified by {shippingMethodId}
-        in the shipping zone identified by {shippingZoneId}.
-      operationId: shipping-zones-shipping-method-get
+      summary: Show details of shipping method with weight-based price in shipping
+        zone
+      description: Shows the details of the shipping method with weight-based price
+        identified by {shippingMethodId} in the shipping zone identified by {shippingZoneId}.
+      operationId: shipping-zones-shipping-method-get-with-weight-based-price
       produces:
       - application/hal+json
       parameters:
@@ -18638,7 +18920,7 @@ paths:
           examples:
             application/hal+json: |-
               {
-                "_id" : "3cbe2547-828e-4e18-82f0-c64c3efef25a",
+                "_id" : "b5903c00-a46e-41e6-8b90-5322f8cc91e9",
                 "name" : "Standard Shipping 2",
                 "description" : "Standard Shipping",
                 "taxClass" : "REGULAR",
@@ -18647,20 +18929,37 @@ paths:
                   "currency" : "EUR",
                   "amount" : 400
                 },
-                "fixedPrice" : {
-                  "taxModel" : "GROSS",
-                  "currency" : "EUR",
-                  "amount" : 19.99
+                "fixedPrice" : null,
+                "weightBasedPrice" : {
+                  "weightPriceThresholds" : [ {
+                    "maxWeight" : 1000,
+                    "price" : {
+                      "taxModel" : "GROSS",
+                      "currency" : "EUR",
+                      "amount" : 4
+                    }
+                  }, {
+                    "maxWeight" : 5000,
+                    "price" : {
+                      "taxModel" : "GROSS",
+                      "currency" : "EUR",
+                      "amount" : 9
+                    }
+                  } ],
+                  "unlimitedWeightPrice" : {
+                    "taxModel" : "GROSS",
+                    "currency" : "EUR",
+                    "amount" : 34
+                  }
                 },
-                "weightBasedPrice" : null,
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/shipping-zones/31906643-d7b3-42fc-8a64-93a194e808a9/shipping-methods/3cbe2547-828e-4e18-82f0-c64c3efef25a"
+                    "href" : "https://yourshop.api.urn/shipping-zones/c1caec3b-0f07-4aaa-b0d0-0c943038472b/shipping-methods/b5903c00-a46e-41e6-8b90-5322f8cc91e9"
                   }
                 }
               }
           schema:
-            $ref: '#/definitions/shipping-zones_shippingZoneId_shipping-methods_shippingMethodId-1733669215'
+            $ref: '#/definitions/shipping-zones_shippingZoneId_shipping-methods_shippingMethodId-1048624622'
       security:
       - oauth2_application:
         - shpz:r
@@ -22180,39 +22479,6 @@ definitions:
           }
         }
       }
-  shipping-zones_shippingZoneId_shipping-methods_shippingMethodId-1733669215:
-    type: object
-    properties:
-      taxClass:
-        type: string
-        description: The tax class. Can be one of `REGULAR`, `REDUCED`, or `EXEMPT`.
-      _links:
-        type: object
-        description: See <<hypermedia,Hypermedia>>
-        properties: {}
-      freeShippingValue:
-        type: object
-        description: Once a customer reaches this amount (excluding payment fee) this
-          shipping method is free of charge.
-        properties: {}
-      name:
-        type: string
-        description: The name of the shipping method.
-      description:
-        type: string
-        description: The description of the shipping method.
-      position:
-        type: number
-        description: The sorting position of the shipping method in the merchant's
-          cockpit in relation to other shipping methods.
-      _id:
-        type: string
-        description: The immutable, unique identifier of the requested resource.
-      fixedPrice:
-        type: object
-        description: The fixed price for the shipping method irrespective of weight,
-          dimensions, etc.
-        properties: {}
   shop_features530158996:
     type: object
     properties:
@@ -22532,71 +22798,6 @@ definitions:
         type: object
         description: The price of a variation product's variation without any discounts.
         properties: {}
-  payment-methods_paymentMethodId175199840:
-    type: object
-    properties:
-      taxClass:
-        type: string
-        description: The tax class. Can be one of `REGULAR`, `REDUCED`, or `EXEMPT`.
-      onlinePayment:
-        type: boolean
-        description: Indicates if the payment method is an online payment, i.e. the
-          payment is processed by an external electronic payment system. Can be `true`
-          or `false`.
-      workflow:
-        type: string
-        description: The payment workflow for the current payment. Can be one of `PAYMENT_ON_SELECTION`,
-          `EMBEDDED_ON_SELECTION`, `PAYMENT_ON_BUY`, or `EMBEDDED_ON_BUY`.
-      _links:
-        type: object
-        description: See <<hypermedia,Hypermedia>>
-        properties: {}
-      description:
-        type: string
-        description: Description of the payment method that is used during checkout.
-      officialName:
-        type: string
-        description: The official name of the payment method chosen by the merchant
-          during setup.
-      serviceableCountries:
-        type: array
-        description: The list of target countries this payment method can be used
-          in.
-        items: {}
-      minimumOrderValue:
-        type: object
-        description: The minimum value of the cart so that this payment method can
-          be used.
-        properties: {}
-      discountOrFee:
-        type: object
-        description: The details about the fee to be payed or discount to be granted
-          for this payment method.
-        properties:
-          type:
-            type: string
-            description: The discount or fee can be an absolute or a percentage based
-              value. Can be one of `PERCENTAGE` or `ABSOLUTE`. `ABSOLUTE` contains
-              another attribute `absoluteValue` with a positive or negative `price`.
-              `PERCENTAGE` contains another attribute `percentageValue` with a negative
-              or positive percentage value.
-      name:
-        type: string
-        description: The name of the payment method that is used during checkout.
-      officialDescription:
-        type: string
-        description: The official description of the payment method chosen by the
-          merchant during setup.
-      position:
-        type: number
-        description: The sorting position of the payment method in the merchant's
-          cockpit in relation to other payment methods.
-      _id:
-        type: string
-        description: The immutable, unique identifier of the requested resource.
-      activated:
-        type: boolean
-        description: Indicates if a payment method is active. Can be `true` or `false`.
   products_productId_variations-375402099:
     type: object
     properties:
@@ -22813,8 +23014,6 @@ definitions:
         "name" : "BE-NL-LU",
         "serviceableCountries" : [ "BE", "NL", "LU" ]
       }
-  callback1173613549:
-    example: <payload>
   products_productId_attributes_productAttributeName-1265974123:
     type: object
     properties:
@@ -24380,6 +24579,43 @@ definitions:
           "callbackUri":"http://example.com/test",
           "eventTypes": ["order.created", "product.created"]
       }
+  oauth_token-1631874687:
+    type: object
+    properties:
+      access_token:
+        type: string
+        description: The encoded JsonWebToken to access the resource.
+      refresh_token:
+        type: string
+        description: The token that can be used to obtain a renewed access token.
+      scope:
+        type: string
+        description: A space-delimited list of scopes the token is issued for.
+      tenantId:
+        type: number
+        description: The unique identifier of the tenant.
+      token_type:
+        type: string
+        description: Represents how an `accessToken` will be generated and presented
+          for accessing a resource. Always issued as `Bearer`.
+      expires_in:
+        type: number
+        description: The time of token expiry in seconds. Calculated from `iat`.
+      iat:
+        type: number
+        description: The timestamp when the token was created (Issued At). Displayed
+          in seconds since the start of the Epoch. Refer to https://tools.ietf.org/html/rfc7519[RFC
+          7519].
+      userId:
+        type: string
+        description: The unique identifier of the user the token was issued for.
+      jti:
+        type: string
+        description: The unique token identifier of the token. Must be unique for
+          each request. Refer to https://tools.ietf.org/html/rfc7519[RFC 7519].
+      username:
+        type: string
+        description: The username that identifies the user the token was issued for.
   payments_paymentId_status221274890:
     type: object
     properties:
@@ -26544,6 +26780,64 @@ definitions:
         minLength: 0
         maxLength: 500
     example: '{"deliveryDateNote": "Test DeliveryDateNote", "invoiceNote": "Test invoiceNote"}'
+  shipping-zones_shippingZoneId_shipping-methods_shippingMethodId-1048624622:
+    type: object
+    properties:
+      taxClass:
+        type: string
+        description: The tax class. Can be one of `REGULAR`, `REDUCED`, or `EXEMPT`.
+      _links:
+        type: object
+        description: See <<hypermedia,Hypermedia>>
+        properties: {}
+      freeShippingValue:
+        type: object
+        description: Once a customer reaches this amount (excluding payment fee) this
+          shipping method is free of charge.
+        properties: {}
+      name:
+        type: string
+        description: The name of the shipping method.
+      description:
+        type: string
+        description: The description of the shipping method.
+      weightBasedPrice:
+        type: object
+        description: The price depending on the package weight (optional).
+        properties:
+          weightPriceThresholds:
+            type: array
+            description: A list of package prices that are valid up to the respective
+              maximum weight.
+            items:
+              type: object
+              properties:
+                price:
+                  type: object
+                  description: The price for this weight range.
+                  properties: {}
+                maxWeight:
+                  type: number
+                  description: The maximum weight in gram that applies to this weight
+                    range.
+          unlimitedWeightPrice:
+            type: object
+            description: The price for the package if its weight exceeds the highest
+              weight limit. If this value is not available, the shipping method is
+              not applicable.
+            properties: {}
+      position:
+        type: number
+        description: The sorting position of the shipping method in the merchant's
+          cockpit in relation to other shipping methods.
+      _id:
+        type: string
+        description: The immutable, unique identifier of the requested resource.
+      fixedPrice:
+        type: object
+        description: The fixed price for the shipping method irrespective of weight,
+          dimensions, etc.
+        properties: {}
   product-view_products_search_find-by-tags-1621556937:
     type: object
     properties:
@@ -26662,6 +26956,28 @@ definitions:
         type: object
         description: See <<pagination,Pagination>>
         properties: {}
+  products_productId1753442540:
+    type: array
+    items:
+      type: object
+      properties: {}
+    example: |-
+      {
+        "name" : "patched name",
+        "description" : "patched description. <p><br></p><blockquote> <ol><li><strong>\n<h1></h1><h6></h6><em><a href=\"http://example.com\" target=\"_blank\"><u>this is my test html</u></a>\n</em></strong> </li></ol> </blockquote>",
+        "variationAttributes" : [ {
+          "displayName" : "size",
+          "values" : [ "35", "36", "37" ]
+        } ],
+        "productIdentifiers" : null,
+        "manufacturer" : "patched manufacturer",
+        "salesPrice" : {
+          "taxModel" : "GROSS",
+          "currency" : "EUR",
+          "amount" : 1.04,
+          "derivedPrice" : null
+        }
+      }
   carts_cartId_create-payment-and-order1178634293:
     type: object
     properties:
@@ -27015,6 +27331,131 @@ definitions:
         },
         "sku" : "1002"
       }
+  callback-683650111:
+    example: |-
+      {
+        "_payloadType" : "product",
+        "_id" : "b781be0c-19e0-47e9-aba6-1742586c1873",
+        "name" : "Rioja Castillo de Puerto (2013)",
+        "description" : "Spain\nRioja Tempranillo",
+        "manufacturer" : "Grape Vineyard",
+        "essentialFeatures" : "Dry. 12% alcohol. Best vine variety.",
+        "sku" : "8e19cf00-27bc-45bf-a675-d93b011278ac",
+        "salesPrice" : {
+          "taxModel" : "GROSS",
+          "currency" : "EUR",
+          "amount" : 8.7,
+          "derivedPrice" : {
+            "taxModel" : "NET",
+            "currency" : "EUR",
+            "amount" : 7.05,
+            "taxRate" : 0.19
+          }
+        },
+        "listPrice" : {
+          "taxModel" : "GROSS",
+          "currency" : "EUR",
+          "amount" : 10.95,
+          "derivedPrice" : {
+            "taxModel" : "NET",
+            "currency" : "EUR",
+            "amount" : 8.87,
+            "taxRate" : 0.19
+          }
+        },
+        "manufacturerPrice" : {
+          "taxModel" : "GROSS",
+          "currency" : "EUR",
+          "amount" : 99.95,
+          "derivedPrice" : {
+            "taxModel" : "NET",
+            "currency" : "EUR",
+            "amount" : 80.96,
+            "taxRate" : 0.19
+          }
+        },
+        "tags" : [ "Bestseller", "Red Wine", "Sale" ],
+        "productIdentifiers" : [ {
+          "type" : "EAN",
+          "value" : "9780134308135"
+        } ],
+        "taxClass" : "REGULAR",
+        "shippingWeight" : 100,
+        "maxOrderQuantity" : 6,
+        "shippingDimension" : {
+          "length" : 1500,
+          "width" : 1000,
+          "height" : 2000
+        },
+        "visible" : true,
+        "onSale" : true,
+        "refPrice" : {
+          "refQuantity" : 1,
+          "unit" : "LITER",
+          "quantity" : 0.75,
+          "price" : {
+            "taxModel" : "GROSS",
+            "currency" : "EUR",
+            "amount" : 11.6,
+            "derivedPrice" : {
+              "taxModel" : "NET",
+              "currency" : "EUR",
+              "amount" : 9.4,
+              "taxRate" : 0.19
+            }
+          }
+        },
+        "shippingPeriod" : {
+          "minDays" : 2,
+          "maxDays" : 4,
+          "displayUnit" : "WEEKS"
+        },
+        "defaultImageDataUri" : "/api/core-storage/images/P7120104.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225998{&width,height,upscale}",
+        "variationAttributeValues" : [ {
+          "displayName" : "color",
+          "value" : "red"
+        }, {
+          "displayName" : "size",
+          "value" : "s"
+        } ],
+        "variationAttributes" : [ {
+          "displayName" : "color",
+          "values" : [ "red", "green" ]
+        }, {
+          "displayName" : "size",
+          "values" : [ "xs", "s", "m", "l", "xl" ]
+        } ],
+        "variationProperties" : [ {
+          "property" : "sku",
+          "enabled" : true
+        }, {
+          "property" : "salesPrice",
+          "enabled" : false
+        }, {
+          "property" : "listPrice",
+          "enabled" : false
+        }, {
+          "property" : "refPrice",
+          "enabled" : false
+        }, {
+          "property" : "manufacturerPrice",
+          "enabled" : false
+        }, {
+          "property" : "productIdentifiers",
+          "enabled" : false
+        } ],
+        "_refs" : {
+          "variationProduct" : "5fec71e5-3b6e-49ad-a4ed-21f56731b86e"
+        },
+        "_context" : {
+          "locale" : "en-GB",
+          "shopTaxModel" : "GROSS",
+          "entity" : "Product",
+          "optLock" : 1,
+          "createdAt" : "2019-10-29T14:09:08.255",
+          "lastModifiedAt" : "2019-10-29T14:09:08.464"
+        }
+      }
   orders_orderId_processes_refunds_active_mark-paid-1098495227:
     type: object
     properties:
@@ -27117,6 +27558,19 @@ definitions:
           "_id" : "cab24129-ef6d-43b6-9a1b-3ae94e822031"
         }
       }
+  products_productId_attributes_productAttributeName215086679:
+    type: object
+    properties:
+      _links:
+        type: object
+        description: See <<hypermedia,Hypermedia>>
+        properties: {}
+      value:
+        type: number
+        description: The value of the product attribute.
+      key:
+        type: string
+        description: The key of the product attribute definition.
   payment-method-definitions-383111774:
     type: object
     properties:
@@ -27209,6 +27663,160 @@ definitions:
         type: string
         description: Gives information about the refund capabilities of the payment
           method. Can be one of `NO_REFUND`, `FULL_REFUND_ONLY`, or `PARTIAL_REFUND`.
+  product-view_categories_categoryId_products1718110432:
+    type: object
+    properties:
+      _links:
+        type: object
+        description: See <<hypermedia,Hypermedia>>
+        properties: {}
+      _embedded:
+        type: object
+        properties:
+          products:
+            type: array
+            items:
+              type: object
+              properties:
+                _links:
+                  type: object
+                  description: The links to receive further information related to
+                    the product.
+                  properties: {}
+                salesPrice:
+                  type: object
+                  description: The price of the product.
+                  properties:
+                    amount:
+                      type: number
+                      description: The amount of the offer price.
+                    currency:
+                      type: string
+                      description: The currency of the offer price.
+                manufacturer:
+                  type: string
+                  description: The manufacturer of the product.
+                refPrice:
+                  type: object
+                  description: The price information scaled to a standardised base
+                    unit.
+                  properties:
+                    unit:
+                      type: string
+                      description: The unit corresponding to the quanity.
+                    quantity:
+                      type: number
+                      description: The actual quantity in the product.
+                    price:
+                      type: object
+                      description: The actual reference price.
+                      properties:
+                        amount:
+                          type: number
+                          description: The amount of reference price.
+                        currency:
+                          type: string
+                          description: The currency of reference price.
+                    refQuantity:
+                      type: number
+                      description: The reference quantity the product's reference
+                        price is calculated on.
+                productIdentifiers:
+                  type: array
+                  description: The list of identifiers of the product.
+                  items:
+                    type: object
+                    properties:
+                      type:
+                        type: string
+                        description: The product code to identify and classify the
+                          product.
+                      value:
+                        type: string
+                        description: The actual value of the product identifier.
+                availabilityState:
+                  type: string
+                  description: The current availability state for the product. Can
+                    be one of `IN_STOCK`, `LOW_STOCK`, or `OUT_OF_STOCK`.
+                shippingWeight:
+                  type: number
+                  description: The weight of the product including packaging in g.
+                maxSalesPrice:
+                  type: object
+                  description: The maximum price of the product.
+                  properties: {}
+                minSalesPrice:
+                  type: object
+                  description: The minimum price of the product.
+                  properties: {}
+                name:
+                  type: string
+                  description: The name of the product.
+                variationAttributes:
+                  type: array
+                  description: The variation attributes with its values.
+                  items:
+                    type: object
+                    properties:
+                      displayName:
+                        description: The name of the variation attribute.
+                      values:
+                        description: The values of the variation attribute.
+                onSale:
+                  type: boolean
+                  description: Indicates if the product is on offer. Can be `true`
+                    or `false`.
+                manufacturerPrice:
+                  type: object
+                  description: The list price of the product, also known as the manufacturer's
+                    suggested retail price or recommended retail price.
+                  properties:
+                    amount:
+                      type: number
+                      description: The amount of the manufacturer's suggested retail
+                        price.
+                    currency:
+                      type: string
+                      description: The currency of the manufacturer's suggested retail
+                        price.
+                _id:
+                  type: string
+                  description: The unique identifier of the product.
+                sku:
+                  type: string
+                  description: The stock keeping unit (SKU) corresponding to the product.
+                shippingDimension:
+                  type: object
+                  description: The shipping dimensions of the product displayed in
+                    mm.
+                  properties:
+                    width:
+                      type: number
+                      description: The width of the product including packaging in
+                        mm.
+                    length:
+                      type: number
+                      description: The length of the product including packaging in
+                        mm.
+                    height:
+                      type: number
+                      description: The height of the product including packaging in
+                        mm.
+                listPrice:
+                  type: object
+                  description: The list price of the product, also known as the manufacturer's
+                    suggested retail price or recommended retail price.
+                  properties:
+                    amount:
+                      type: number
+                      description: The amount of the list price.
+                    currency:
+                      type: string
+                      description: The currency of the list price.
+      page:
+        type: object
+        description: See <<pagination,Pagination>>
+        properties: {}
   products_productId_images-1815101625:
     example: |-
       http://localhost/products/086c8020-d5d4-4248-bc6a-eba5b7464b29/images/d0e34930-1a0d-459a-a517-67a24dee15f9
@@ -27252,17 +27860,6 @@ definitions:
       https://yourshop.api.urn/shipping-zones/701ccad8-2c69-4d6a-ad55-9a6c408b9c2d
       https://yourshop.api.urn/shipping-zones/1edfec11-adb0-419f-9790-053709a23def
       https://yourshop.api.urn/shipping-zones/9eb8e593-5306-45c9-9c34-b34f54921914
-  products_productId960799700:
-    type: array
-    items:
-      type: object
-      properties: {}
-    example: |-
-      {
-        "name" : "Castillo de Alba Rioja (2013)",
-        "description" : "Spain\nRioja",
-        "manufacturer" : "Mantecillia"
-      }
   shop_images_imageId2121805546:
     type: object
     required:
@@ -27322,48 +27919,6 @@ definitions:
       _id:
         type: string
         description: The immutable, unique identifier of the requested resource.
-  shipping-zones_shippingZoneId_shipping-methods-502438760:
-    type: object
-    properties:
-      _embedded:
-        type: object
-        properties:
-          shipping-methods:
-            type: array
-            items:
-              type: object
-              properties:
-                taxClass:
-                  type: string
-                  description: The tax class. Can be one of `REGULAR`, `REDUCED`,
-                    or `EXEMPT`.
-                freeShippingValue:
-                  type: object
-                  description: Once a customer reaches this amount (excluding payment
-                    fee) this shipping method is free of charge.
-                  properties: {}
-                name:
-                  type: string
-                  description: The name of the shipping method.
-                description:
-                  type: string
-                  description: The description of the shipping method.
-                position:
-                  type: number
-                  description: The sorting position of the shipping method in the
-                    merchant's cockpit in relation to other shipping methods.
-                _id:
-                  type: string
-                  description: The immutable, unique identifier of the requested resource.
-                fixedPrice:
-                  type: object
-                  description: The fixed price for the shipping method irrespective
-                    of weight, dimensions, etc.
-                  properties: {}
-      _links:
-        type: object
-        description: See <<hypermedia,Hypermedia>>
-        properties: {}
   order-settings586335844:
     type: object
     properties:
@@ -27817,6 +28372,69 @@ definitions:
           "en-US" : "Credit card"
         },
         "defaultDescription": {"de-DE" : "Bezahlen Sie mit Kreditkarte.","en-US" : "Pay by credit card."}}
+  shipping-zones_shippingZoneId_shipping-methods330629904:
+    type: object
+    properties:
+      taxClass:
+        type: string
+        description: The tax class. Can be one of `REGULAR`, `REDUCED`, or `EXEMPT`.
+      freeShippingValue:
+        type: object
+        description: Once a customer reaches this amount (excluding payment fee) this
+          shipping method is free of charge.
+        properties: {}
+      name:
+        type: string
+        description: The name of the shipping method.
+      description:
+        type: string
+        description: The description of the shipping method.
+      weightBasedPrice:
+        type: object
+        description: The price depending on the package weight (optional).
+        properties:
+          weightPriceThresholds:
+            type: array
+            description: A list of package prices that are valid up to the respective
+              maximum weight.
+            items:
+              type: object
+              properties:
+                price:
+                  type: object
+                  description: The price for this weight range.
+                  properties: {}
+                maxWeight:
+                  type: number
+                  description: The maximum weight in gram that applies to this weight
+                    range.
+          unlimitedWeightPrice:
+            type: object
+            description: The price for the package if its weight exceeds the highest
+              weight limit. If this value is not available, the shipping method is
+              not applicable.
+            properties: {}
+      fixedPrice:
+        type: object
+        description: The fixed price for the shipping method irrespective of weight,
+          dimensions, etc.
+        properties: {}
+    example: |-
+      {
+        "name" : "Standard Shipping 2",
+        "description" : "Standard Shipping",
+        "taxClass" : "REGULAR",
+        "freeShippingValue" : {
+          "taxModel" : "GROSS",
+          "currency" : "EUR",
+          "amount" : 400
+        },
+        "fixedPrice" : {
+          "taxModel" : "GROSS",
+          "currency" : "EUR",
+          "amount" : "19.99"
+        }
+      }
   shop-1545766533:
     type: object
     required:
@@ -28037,19 +28655,6 @@ definitions:
           "en-US" : "Credit card"
         },
         "defaultDescription": {"de-DE" : "Bezahlen Sie mit Kreditkarte.","en-US" : "Pay by credit card."}}
-  products_productId_attributes1721519148:
-    type: object
-    properties:
-      value:
-        description: The value of the product attribute.
-      key:
-        type: string
-        description: The key of the product attribute definition.
-    example: |-
-      {
-        "key" : "filling_capacity",
-        "value" : 5.9
-      }
   newsletter-target1156789315:
     type: object
     required:
@@ -29390,86 +29995,6 @@ definitions:
           "displayUnit" : "WEEKS"
         }
       }
-  shipping-zones_shippingZoneId_shipping-methods1076529126:
-    type: object
-    properties:
-      taxClass:
-        type: string
-        description: The tax class. Can be one of `REGULAR`, `REDUCED`, or `EXEMPT`.
-      freeShippingValue:
-        type: object
-        description: Once a customer reaches this amount (excluding payment fee) this
-          shipping method is free of charge.
-        properties: {}
-      name:
-        type: string
-        description: The name of the shipping method.
-      description:
-        type: string
-        description: The description of the shipping method.
-      weightBasedPrice:
-        type: object
-        description: The price depending on the package weight (optional).
-        properties:
-          weightPriceThresholds:
-            type: array
-            description: A list of package prices that are valid up to the respective
-              maximum weight.
-            items:
-              type: object
-              properties:
-                price:
-                  type: object
-                  description: The price for this weight range.
-                  properties: {}
-                maxWeight:
-                  type: number
-                  description: The maximum weight in gram that applies to this weight
-                    range.
-          unlimitedWeightPrice:
-            type: object
-            description: The price for the package if its weight exceeds the highest
-              weight limit. If this value is not available, the shipping method is
-              not applicable.
-            properties: {}
-      fixedPrice:
-        type: object
-        description: The fixed price for the shipping method irrespective of weight,
-          dimensions, etc.
-        properties: {}
-    example: |-
-      {
-        "name" : "Standard Shipping 2",
-        "description" : "Standard Shipping",
-        "taxClass" : "REGULAR",
-        "freeShippingValue" : {
-          "taxModel" : "GROSS",
-          "currency" : "EUR",
-          "amount" : 400
-        },
-        "weightBasedPrice" : {
-          "weightPriceThresholds" : [ {
-            "maxWeight" : 1000,
-            "price" : {
-              "taxModel" : "GROSS",
-              "currency" : "EUR",
-              "amount" : 4
-            }
-          }, {
-            "maxWeight" : 5000,
-            "price" : {
-              "taxModel" : "GROSS",
-              "currency" : "EUR",
-              "amount" : 9
-            }
-          } ],
-          "unlimitedWeightPrice" : {
-            "taxModel" : "GROSS",
-            "currency" : "EUR",
-            "amount" : 34
-          }
-        }
-      }
   orders_orderId_order-note1411559407:
     type: object
     properties:
@@ -29911,6 +30436,19 @@ definitions:
           currency:
             type: string
             description: The currency of the list price.
+  products_productId_attributes1062817668:
+    type: object
+    properties:
+      value:
+        description: The value of the product attribute.
+      key:
+        type: string
+        description: The key of the product attribute definition.
+    example: |-
+      {
+        "key" : "color",
+        "value" : "red"
+      }
   users_verify-password-2034533541:
     type: object
     properties:
@@ -30314,34 +30852,6 @@ definitions:
       {
         "orderDocumentUri" : "https://myshop.com/api/pdf-storage/attachments/invoice-10003.pdf?hash=9e5e2631c6f5877d64cb3d40db46ec6eb48a3a92"
       }
-  oauth_token-150032152:
-    type: object
-    properties:
-      access_token:
-        type: string
-        description: The encoded JsonWebToken to access the resource.
-      scope:
-        type: string
-        description: A space-delimited list of scopes the token is issued for.
-      tenantId:
-        type: number
-        description: The unique identifier of the tenant.
-      token_type:
-        type: string
-        description: Represents how an `accessToken` will be generated and presented
-          for accessing a resource. Always issued as `Bearer`.
-      expires_in:
-        type: number
-        description: The time of token expiry in seconds. Calculated from `iat`.
-      iat:
-        type: number
-        description: The timestamp when the token was created (Issued At). Displayed
-          in seconds since the start of the Epoch. Refer to https://tools.ietf.org/html/rfc7519[RFC
-          7519].
-      jti:
-        type: string
-        description: The unique token identifier of the token. Must be unique for
-          each request. Refer to https://tools.ietf.org/html/rfc7519[RFC 7519].
   carts_cartId_order-474996906:
     type: object
     required:
@@ -30475,6 +30985,162 @@ definitions:
             type: array
             description: The list of all script tags.
             items: {}
+  product-view_products_productId-865569917:
+    type: object
+    properties:
+      essentialFeatures:
+        type: string
+        description: The essential features of the product. Shown in the cart and
+          checkout. In Germany mandatory field in online shops according to §312j
+          Abs. 2 BGB (German Civil Code).
+      _links:
+        type: object
+        description: See <<hypermedia,Hypermedia>>
+        properties: {}
+      salesPrice:
+        type: object
+        description: The price of the product.
+        properties: {}
+      description:
+        type: string
+        description: The description of the product.
+      shippingPeriod:
+        type: object
+        description: The shipping period for this particular product.
+        properties: {}
+      tags:
+        type: array
+        description: The tags assigned to a product.
+        items: {}
+      manufacturer:
+        type: string
+        description: The manufacturer of the product.
+      refPrice:
+        type: object
+        description: The price information scaled to a standardised base unit.
+        properties:
+          unit:
+            type: string
+            description: The unit corresponding to the quanity.
+          quantity:
+            type: number
+            description: The actual quantity in the product.
+          price:
+            type: object
+            description: The actual reference price.
+            properties: {}
+          refQuantity:
+            type: number
+            description: The reference quantity the product's reference price is calculated
+              on.
+      productIdentifiers:
+        type: array
+        items:
+          type: object
+          properties:
+            type:
+              type: string
+              description: The product code to identify and classify the product.
+            value:
+              type: string
+              description: The actual value of the product identifier.
+      availabilityState:
+        type: string
+        description: The current availability state for the product. Can be one of
+          `IN_STOCK`, `LOW_STOCK`, or `OUT_OF_STOCK`.
+      shippingWeight:
+        type: number
+        description: The weight of the product including packaging in g.
+      variations:
+        type: array
+        description: The variations of the variation product.
+        items:
+          type: object
+          properties:
+            _id:
+              type: string
+              description: The unique identifier of the variation.
+            variationAttributeValues:
+              type: array
+              description: The concrete variation attributes for the variation.
+              items:
+                type: object
+                properties:
+                  displayName:
+                    type: string
+                    description: The name of the variation attribute.
+                  value:
+                    type: string
+                    description: The value of the variation attribute.
+      maxSalesPrice:
+        type: object
+        description: The maximum price of the product.
+        properties: {}
+      minSalesPrice:
+        type: object
+        description: The minimum price of the product.
+        properties: {}
+      name:
+        type: string
+        description: The name of the product.
+      variationAttributes:
+        type: array
+        description: The variation attributes with its values.
+        items:
+          type: object
+          properties:
+            displayName:
+              type: string
+              description: The name of the variation attribute.
+            values:
+              type: array
+              description: The values of the variation attribute.
+              items: {}
+      onSale:
+        type: boolean
+        description: Indicates if the product is on offer. Can be `true` or `false`.
+      manufacturerPrice:
+        type: object
+        description: The list price of the product, also known as the manufacturer's
+          suggested retail price or recommended retail price.
+        properties: {}
+      attributes:
+        type: array
+        description: The product properties.
+        items:
+          type: object
+          properties:
+            displayName:
+              type: string
+              description: The displayed name of the product property.
+            formattedValue:
+              description: The formatted value of the product property.
+            value:
+              description: The value of the product property.
+            key:
+              type: string
+              description: The unique identifier of the product property.
+      _id:
+        type: string
+        description: The unique identifier of the product.
+      shippingDimension:
+        type: object
+        description: The shipping dimensions of the product displayed in mm.
+        properties:
+          width:
+            type: number
+            description: The width of the product including packaging in mm.
+          length:
+            type: number
+            description: The length of the product including packaging in mm.
+          height:
+            type: number
+            description: The height of the product including packaging in mm.
+      listPrice:
+        type: object
+        description: The list price of the product, also known as the manufacturer's
+          suggested retail price or recommended retail price.
+        properties: {}
   categories_categoryId-226982251:
     type: array
     items:
@@ -30623,126 +31289,6 @@ definitions:
       page:
         type: object
         description: See <<pagination,Pagination>>
-        properties: {}
-  product-view_products_productId-1722264914:
-    type: object
-    properties:
-      essentialFeatures:
-        type: string
-        description: The essential features of the product. Shown in the cart and
-          checkout. In Germany mandatory field in online shops according to §312j
-          Abs. 2 BGB (German Civil Code).
-      _links:
-        type: object
-        description: See <<hypermedia,Hypermedia>>
-        properties: {}
-      salesPrice:
-        type: object
-        description: The price of the product.
-        properties: {}
-      description:
-        type: string
-        description: The description of the product.
-      shippingPeriod:
-        type: object
-        description: The shipping period for this particular product.
-        properties: {}
-      tags:
-        type: array
-        description: The tags assigned to a product.
-        items: {}
-      manufacturer:
-        type: string
-        description: The manufacturer of the product.
-      refPrice:
-        type: object
-        description: The price information scaled to a standardised base unit.
-        properties:
-          unit:
-            type: string
-            description: The unit corresponding to the quanity.
-          quantity:
-            type: number
-            description: The actual quantity in the product.
-          price:
-            type: object
-            description: The actual reference price.
-            properties: {}
-          refQuantity:
-            type: number
-            description: The reference quantity the product's reference price is calculated
-              on.
-      productIdentifiers:
-        type: array
-        items:
-          type: object
-          properties:
-            type:
-              type: string
-              description: The product code to identify and classify the product.
-            value:
-              type: string
-              description: The actual value of the product identifier.
-      availabilityState:
-        type: string
-        description: The current availability state for the product. Can be one of
-          `IN_STOCK`, `LOW_STOCK`, or `OUT_OF_STOCK`.
-      shippingWeight:
-        type: number
-        description: The weight of the product including packaging in g.
-      name:
-        type: string
-        description: The name of the product.
-      onSale:
-        type: boolean
-        description: Indicates if the product is on offer. Can be `true` or `false`.
-      manufacturerPrice:
-        type: object
-        description: The list price of the product, also known as the manufacturer's
-          suggested retail price or recommended retail price.
-        properties: {}
-      attributes:
-        type: array
-        description: The product properties.
-        items:
-          type: object
-          properties:
-            displayName:
-              type: string
-              description: The displayed name of the product property.
-            formattedValue:
-              description: The formatted value of the product property.
-            value:
-              description: The value of the product property.
-            key:
-              type: string
-              description: The unique identifier of the product property.
-      _id:
-        type: string
-        description: The unique identifier of the product.
-      listPriceText:
-        type: string
-        description: The text that comes along with the list price.
-      sku:
-        type: string
-        description: The stock keeping unit (SKU) corresponding to the product.
-      shippingDimension:
-        type: object
-        description: The shipping dimensions of the product displayed in mm.
-        properties:
-          width:
-            type: number
-            description: The width of the product including packaging in mm.
-          length:
-            type: number
-            description: The length of the product including packaging in mm.
-          height:
-            type: number
-            description: The height of the product including packaging in mm.
-      listPrice:
-        type: object
-        description: The list price of the product, also known as the manufacturer's
-          suggested retail price or recommended retail price.
         properties: {}
   order-settings85071851:
     type: object
