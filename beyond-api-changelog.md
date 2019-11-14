@@ -1,5 +1,21 @@
 # Beyond API Changelog
 
+## 2019-11-14
+
+### What's New
+---
+* `GET` /products/{productId}/videos List product videos
+* `POST` /products/{productId}/videos Add product video
+* `GET` /products/{productId}/videos/{videoId} Show product video details
+* `PUT` /products/{productId}/videos/{videoId} Update product video
+* `DELETE` /products/{productId}/videos/{videoId} Delete product video
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+
 ## 2019-10-24
 
 ### What's New
