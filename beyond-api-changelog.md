@@ -10,11 +10,6 @@
 * `PUT` /products/{productId}/videos/{videoId} Update product video
 * `DELETE` /products/{productId}/videos/{videoId} Delete product video
 
-### What's Deprecated
----
-
-### What's Changed
----
 
 ## 2019-10-24
 
