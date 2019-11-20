@@ -1,5 +1,33 @@
 # Beyond API Changelog
 
+## 2019-11-20
+
+-XX:InitialHeapSize=527023232 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `PATCH` /shop/address Update address partially with tenant context  
+    Parameter
+
+        Add .country //The country of the shop address (cannot be changed).
+        Add .lastName //The last name of the shop owner.
+        Add .city //The city of the shop address.
+        Add .postalCode //The postal code of the shop address.
+        Add .dependentLocality //Additional locality information such as a village or suburb name, giving a more specific location.
+        Add .firstName //The first name of the shop owner.
+        Add .phone //The phone number of the shop owner.
+        Add .street //The street of the shop address.
+        Add .company //The company name related to the shop.
+        Add .state //The state of the shop address.
+        Add .street2 //Additional street field for the shop address.
+        Add .fax //The fax number of the shop owner.
+        Add .email //The email address of the shop owner.
+
 ## 2019-11-18
 
 ### What's Deprecated
