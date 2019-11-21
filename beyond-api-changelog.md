@@ -1,5 +1,18 @@
 # Beyond API Changelog
 
+## 2019-11-21
+
+-XX:InitialHeapSize=527023232 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+* `POST` /products/{productId}/variations/{variationId}/images Upload variation image
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+
 ## 2019-11-18
 
 ### What's Deprecated
