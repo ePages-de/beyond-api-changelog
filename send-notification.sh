@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 curl --user "api:${MAILGUN_API_TOKEN}" \
   https://api.mailgun.net/v3/${MAILBOX}/messages \
