@@ -1,5 +1,66 @@
 # Beyond API Changelog
 
+## 2019-12-19
+
+-XX:InitialHeapSize=527013504 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+* `GET` /products/{productId}/cross-sells List product cross-sells
+* `POST` /products/{productId}/cross-sells Create product cross-sell
+* `GET` /products/{productId}/cross-sells/{crossSellId} Show product cross-sell details
+* `PUT` /products/{productId}/cross-sells/{crossSellId} Modify product cross-sell
+* `DELETE` /products/{productId}/cross-sells/{crossSellId} Delete product cross-sell
+* `GET` /products/{productId}/variations/{variationId}/images List variation images
+* `GET` /products/{productId}/variations/{variationId}/images/{imageId} Show variation image details
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `GET` /orders List orders  
+    Parameter
+
+        Add customerEmail //Deprecated. Use `customerId` instead. The customer email address of the order.
+        Add customerId //The id of the customer that placed the order.
+        Add customerName //The customer name of the order.
+        Add orderNumber //The order number.
+        Add invoiceNumber //The invoice number for the order.
+        Add paymentMethod //The payment method used for the order.
+        Add shippingMethod //The shipping method used for the order.
+        Add orderAmountMin //The minimum total amount of an order.
+        Add orderAmountMax //The maximum total amount of an order.
+        Add trackingCode //The tracking code of one of the shipments.
+        Add productId //The immutable, unique identifier of the product contained in the order.
+        Add shippingAddressCountry //The two-letter country code according to ISO 3166-1 of the shipping address, e.g. "US". Only officially assigned country codes.
+        Add marketingChannel //The marketing channel for the order.
+        Add marketingSubchannel //The marketing subchannel for the order.
+        Add salesChannel //The sales channel for the order.
+        Add createdAfter //The date/time of orders created after this timestamp. Expressed according to ISO 8601. Example&#58; `2019-11-29T11:32:00`.
+        Add createdBefore //The date/time of orders created before this timestamp. Expressed according to ISO 8601. Example&#58; `2019-11-29T11:32:00`.
+        Add paymentStatus //The shipping status of an order.
+        Add shippingStatus //The shipping status of an order.
+* `POST` /products/{productId}/images Add product image  
+    Parameter
+
+        Add .width //The width of the product image.
+        Add .height //The height of the product image.
+* `POST` /products/{productId}/variations/{variationId}/images Upload variation image  
+    Parameter
+
+        Add .width //The width of the variation image.
+        Add .height //The height of the variation image.
+* `POST` /shop/images Upload shop image  
+    Parameter
+
+        Add .width //The width of the image.
+        Add .height //The height of the image.
+* `GET` /shop/images/{imageId} Show shop image details  
+    Return Type
+
+        Add width //The width of the image.
+        Add height //The height of the image.
+
 ## 2019-11-27
 
 ### What's New
