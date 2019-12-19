@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 SCRIPT_DIR="$(cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
@@ -38,19 +38,19 @@ while getopts "o: n: c: e: h ?" option ; do
 done
 
 if [[ -z ${OLD_API_SPEC_FILE} ]]; then
-    echo "ERROR: parameter '-o' not set"
+    echo "ERROR: parameter '-o' not set" >&2
     usage
     exit 1
 fi
 
 if [[ -z ${NEW_API_SPEC_FILE} ]]; then
-    echo "ERROR: parameter '-n' not set"
+    echo "ERROR: parameter '-n' not set" >&2
     usage
     exit 1
 fi
 
 if [[ -z ${CHANGE_LOG_FILE} ]]; then
-    echo "ERROR: parameter '-c' not set"
+    echo "ERROR: parameter '-c' not set" >&2
     usage
     exit 1
 fi
@@ -60,7 +60,6 @@ fi
 ################################################################################
 CURRENT_DATE=$(date '+%Y-%m-%d')
 API_DIFF=$(${SCRIPT_DIR}/diff.sh ${OLD_API_SPEC_FILE} ${NEW_API_SPEC_FILE})
-
 CHANGE_LOG=$(cat <<EOF
 
 ## ${CURRENT_DATE}

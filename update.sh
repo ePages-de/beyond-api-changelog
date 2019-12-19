@@ -1,9 +1,10 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
 
 ################################################################################
 # Update API spec
 ################################################################################
-API_SPEC_URL='http://docs.beyondshop.cloud/openapi-public.yaml'
+API_SPEC_URL='https://docs.beyondshop.cloud/openapi-public.yaml'
 API_SPEC_FILE=openapi.yaml
 CHANGE_LOG_FILE=beyond-api-changelog.md
 
@@ -32,8 +33,6 @@ if [[ $? -eq 1 ]]; then
     if [[ -s ${EMAIL_BODY_FILE} ]] && [[ -n ${MAILGUN_API_TOKEN} ]] && [[ -n ${MAILBOX} ]] ; then
       echo "Sending out email with changelog"
       cat ${EMAIL_BODY_FILE} | ./send-notification.sh -F to="jan.mewes@experimental-software.com"
-    else
-      echo "Cannot send out email with changelog."
     fi
 fi
 

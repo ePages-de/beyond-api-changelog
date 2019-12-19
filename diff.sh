@@ -1,5 +1,6 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
+set -e
 
 usage () {
      cat << EOF
@@ -38,6 +39,16 @@ done
 
 SPEC_FILE_1=${@:$OPTIND:1}
 SPEC_FILE_2=${@:$OPTIND+1:1}
+
+if [[ ! -s ${SPEC_FILE_1} ]]; then
+    echo "Invalid first positional parameter for the old OpenAPI spec file: $SPEC_FILE_1" >&2
+    exit 1
+fi
+
+if [[ ! -s ${SPEC_FILE_2} ]]; then
+    echo "Invalid second positional parameter for the new OpenAPI spec file: $SPEC_FILE_2" >&2
+    exit 1
+fi
 
 if [[ "$OUTPUT_FORMAT" = "adoc" ]]; then
     OPEN_API_DIFF=$(mktemp)
