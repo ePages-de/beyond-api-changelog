@@ -1,5 +1,29 @@
 # Beyond API Changelog
 
+## 2020-01-06
+
+-XX:InitialHeapSize=527013504 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `POST` /products Create variation product  
+    Parameter
+
+        Delete .onSale //(Deprecated) Indicates if the product is on offer. Can be `true` or `false`.
+* `GET` /products/{productId} Show variation product details  
+    Return Type
+
+        Delete onSale //(Deprecated) Indicates if the product is on offer. Can be `true` or `false`.
+* `GET` /products/search/find-by-sku Find product by SKU  
+    Return Type
+
+        Delete onSale //(Deprecated) Indicates if the product is on offer. Can be `true` or `false`.
+
 ## 2019-12-19
 
 ### What's New
