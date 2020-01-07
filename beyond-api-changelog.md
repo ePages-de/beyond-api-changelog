@@ -1,5 +1,29 @@
 # Beyond API Changelog
 
+## 2020-01-07
+
+-XX:InitialHeapSize=527013504 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `GET` /orders List orders  
+    Parameter
+
+        paymentStatus Notes The shipping status of an order. change into The payment status of an order.
+* `GET` /product-view/products/{productId} Show variation product details  
+    Return Type
+
+        Delete onSale //Indicates if the product is on offer. Can be `true` or `false`.
+* `GET` /products/{productId}/variations/{variationId} Show variation details  
+    Return Type
+
+        Delete refPrice //The reference price of a variation product's variation.
+
 ## 2020-01-06
 
 ### What's Changed
