@@ -1,5 +1,18 @@
 # Beyond API Changelog
 
+## 2020-01-09
+
+-XX:InitialHeapSize=527013504 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+* `PUT` /products/{productId}/variations/{variationId}/default-image Assign variation image as default image
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+
 ## 2020-01-07
 
 
