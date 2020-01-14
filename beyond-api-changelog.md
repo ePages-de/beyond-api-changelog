@@ -1,5 +1,26 @@
 # Beyond API Changelog
 
+## 2020-01-14
+
+-XX:InitialHeapSize=527013504 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `GET` /orders List orders  
+    Parameter
+
+        Add billingAddress //Filter by a partial match with the `displayAddressLines` of the billing address of the order, e.g. the customer name.
+        Delete customerName //The customer name of the order.
+* `GET` /products/{productId}/variations/{variationId} Show variation details  
+    Return Type
+
+        Add refPrice //The reference price of a variation product's variation.
+
 ## 2020-01-13
 
 ### What's New
