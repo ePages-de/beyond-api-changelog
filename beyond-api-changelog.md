@@ -1,5 +1,41 @@
 # Beyond API Changelog
 
+## 2020-01-15
+
+-XX:InitialHeapSize=527013504 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+* `GET` /coupon-campaigns/{couponCampaignId} Show details of coupon campaign
+* `PUT` /products/{productId}/variation-images-differentiator Assign a variation images differentiator
+* `GET` /coupon-campaigns List coupon campaigns
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `GET` /orders List orders  
+    Parameter
+
+        customerId Notes The id of the customer that placed the order. change into Filters by the Id of the customer that placed the order.
+        billingAddress Notes Filter by a partial match with the `displayAddressLines` of the billing address of the order, e.g. the customer name. change into Filters by a partial match with the `displayAddressLines` of the billing address of the order, e.g. the customer name.
+        orderNumber Notes The order number. change into Filters by the order number.
+        invoiceNumber Notes The invoice number for the order. change into Filters by the invoice number for the order.
+        paymentMethod Notes The payment method used for the order. change into Filters by the payment method used for the order.
+        shippingMethod Notes The shipping method used for the order. change into Filters by the shipping method used for the order.
+        orderAmountMin Notes The minimum total amount of an order. change into Filters by the minimum total order amount.
+        orderAmountMax Notes The maximum total amount of an order. change into Filters by the maximum total order amount.
+        trackingCode Notes The tracking code of one of the shipments. change into Filters by the tracking code of one of the shipments.
+        productId Notes The immutable, unique identifier of the product contained in the order. change into Filters by the product ID contained in the order.
+        shippingAddressCountry Notes The two-letter country code according to ISO 3166-1 of the shipping address, e.g. "US". Only officially assigned country codes. change into Filters by the country of the shipping address. (Two-letter country code according to ISO 3166-1, e.g. "US". Only officially assigned country codes.)
+        marketingChannel Notes The marketing channel for the order. change into Filters by the marketing channel used for the order.
+        marketingSubchannel Notes The marketing subchannel for the order. change into Filters by the marketing subchannel used for the order.
+        salesChannel Notes The sales channel for the order. change into Filters by the sales channel used for the order.
+        createdAfter Notes The date/time of orders created after this timestamp. Expressed according to ISO 8601. Example&#58; `2019-11-29T11:32:00`. change into Filters by the date/time of orders created after this timestamp. Expressed according to ISO 8601. Example&#58; `2019-11-29T11:32:00`.
+        createdBefore Notes The date/time of orders created before this timestamp. Expressed according to ISO 8601. Example&#58; `2019-11-29T11:32:00`. change into Filters by the date/time of orders created before this timestamp. Expressed according to ISO 8601. Example&#58; `2019-11-29T11:32:00`.
+        paymentStatus Notes The payment status of an order. change into Filters by the payment status of an order.
+        shippingStatus Notes The shipping status of an order. change into Filters by the shipping status of an order.
+
 ## 2020-01-14
 
 ### What's Changed
