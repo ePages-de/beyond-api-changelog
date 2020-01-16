@@ -5,8 +5,8 @@
 ### What's New
 ---
 * `GET` /coupon-campaigns/{couponCampaignId} Show details of coupon campaign
-* `PUT` /products/{productId}/variation-images-differentiator Assign a variation images differentiator
 * `GET` /coupon-campaigns List coupon campaigns
+* `PUT` /products/{productId}/variation-images-differentiator Assign a variation images differentiator
 
 
 ## 2020-01-14
