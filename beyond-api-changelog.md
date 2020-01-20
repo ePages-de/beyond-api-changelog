@@ -1,5 +1,21 @@
 # Beyond API Changelog
 
+## 2020-01-20
+
+-XX:InitialHeapSize=527013504 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `GET` /product-view/products/{productId} Show variation product details  
+    Return Type
+
+        Add _embedded
+
 ## 2020-01-15
 
 ### What's New
