@@ -1,5 +1,24 @@
 # Beyond API Changelog
 
+## 2020-01-23
+
+-XX:InitialHeapSize=527013504 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+* `GET` /coupon-campaigns/{couponCampaignId}/coupons List coupon codes
+* `POST` /coupon-campaigns/{couponCampaignId}/coupons Create coupon code
+* `DELETE` /coupon-campaigns/{couponCampaignId} Delete coupon campaign
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `POST` /orders/{orderId}/processes/shippings Create shipping process  
+    Parameter
+
+        Delete .createDeliveryNote //Deprecated. Use `createPackingSlip` instead. Indicates if a packing slip pdf will be created as a part of the shipping process.
+
 ## 2020-01-15
 
 ### What's New
