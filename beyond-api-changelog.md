@@ -1,5 +1,23 @@
 # Beyond API Changelog
 
+## 2020-01-24
+
+-XX:InitialHeapSize=527013504 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+* `GET` /product-view/products/f7dbc820-6868-4e43-af52-4861b36f3b2b/images List product images
+* `GET` /product-view/products/a53464f6-8b1c-46a6-babc-784713693645/images/9d5aac0b-9c79-4402-b4be-f079cbad85f2 Show product image details
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `GET` /orders List orders  
+    Parameter
+
+        Add invoiceCreated //Filters by whether an invoice was already created or not yet created for the order. Can be `true` or `false`.
+
 ## 2020-01-23
 
 -XX:InitialHeapSize=527013504 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
