@@ -1,5 +1,18 @@
 # Beyond API Changelog
 
+## 2020-01-27
+
+-XX:InitialHeapSize=527013504 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+* `PUT` /coupon-campaigns/{couponCampaignId} Update coupon campaign
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+
 ## 2020-01-24
 
 -XX:InitialHeapSize=527013504 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
