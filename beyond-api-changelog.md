@@ -1,5 +1,21 @@
 # Beyond API Changelog
 
+## 2020-01-29
+
+-XX:InitialHeapSize=527013504 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `GET` /orders List orders  
+    Parameter
+
+        Add testOrder //Filters by whether order is a test order. Can be `true` or `false`.
+
 ## 2020-01-28
 
 ### What's New
