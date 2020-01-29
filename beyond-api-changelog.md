@@ -2,44 +2,24 @@
 
 ## 2020-01-28
 
--XX:InitialHeapSize=527013504 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
 ### What's New
 ---
 * `GET` /product-view/products/80a620ec-e9db-4663-95e9-e648a0a041ff/cross-sells List product cross-sells
-* `GET` /product-view/products/957bacb6-66f3-4df5-879b-037fc45b6ddf/images List product images
-* `GET` /product-view/products/32afe6a3-aea5-4fbe-9502-23347f537c2e/images/033948c8-c555-42d3-8416-1481d9df833d Show product image details
-
-### What's Deprecated
----
-* `GET` /product-view/products/f7dbc820-6868-4e43-af52-4861b36f3b2b/images List product images
-* `GET` /product-view/products/a53464f6-8b1c-46a6-babc-784713693645/images/9d5aac0b-9c79-4402-b4be-f079cbad85f2 Show product image details
-
-### What's Changed
----
 
 ## 2020-01-27
 
--XX:InitialHeapSize=527013504 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
 ### What's New
 ---
 * `PUT` /coupon-campaigns/{couponCampaignId} Update coupon campaign
 
-### What's Deprecated
----
-
-### What's Changed
----
 
 ## 2020-01-24
 
--XX:InitialHeapSize=527013504 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
 ### What's New
 ---
 * `GET` /product-view/products/f7dbc820-6868-4e43-af52-4861b36f3b2b/images List product images
 * `GET` /product-view/products/a53464f6-8b1c-46a6-babc-784713693645/images/9d5aac0b-9c79-4402-b4be-f079cbad85f2 Show product image details
 
-### What's Deprecated
----
 
 ### What's Changed
 ---
@@ -50,15 +30,12 @@
 
 ## 2020-01-23
 
--XX:InitialHeapSize=527013504 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
 ### What's New
 ---
 * `GET` /coupon-campaigns/{couponCampaignId}/coupons List coupon codes
 * `POST` /coupon-campaigns/{couponCampaignId}/coupons Create coupon code
 * `DELETE` /coupon-campaigns/{couponCampaignId} Delete coupon campaign
 
-### What's Deprecated
----
 
 ### What's Changed
 ---
