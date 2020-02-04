@@ -1,5 +1,41 @@
 # Beyond API Changelog
 
+## 2020-02-04
+
+-XX:InitialHeapSize=527013504 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `GET` /orders List orders  
+    Parameter
+
+        customerId Notes Filters by the Id of the customer that placed the order. change into Filters by the ID of the customer that placed the order.
+        invoiceCreated Notes Filters by whether an invoice was already created or not yet created for the order. Can be `true` or `false`. change into Filters by whether or not an invoice was created for the order. Can be `true` or `false`.
+        paymentStatus Notes Filters by the payment status of an order. change into Filters by the payment status of the order.
+        shippingStatus Notes Filters by the shipping status of an order. change into Filters by the shipping status of the order.
+        testOrder Notes Filters by whether order is a test order. Can be `true` or `false`. change into Filters by whether or not the order is a test order. Can be `true` or `false`.
+* `GET` /product-view/categories/{categoryId} Show category details  
+    Return Type
+
+        Add _indexedAt //The time of storing this document in the search index.
+* `GET` /product-view/products/{productId} Show variation product details  
+    Return Type
+
+        Add _indexedAt //The time of storing this document in the search index.
+* `GET` /product-view/categories/search/find-by-label Find product category by label  
+    Return Type
+
+        Add _indexedAt //The time of storing this document in the search index.
+* `GET` /product-view/products/{productId}/images/{imageId} Show product image details  
+    Return Type
+
+        Add _indexedAt //The time of storing this document in the search index.
+
 ## 2020-01-29
 
 ### What's Changed
