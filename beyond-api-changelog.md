@@ -1,5 +1,25 @@
 # Beyond API Changelog
 
+## 2020-02-05
+
+-XX:InitialHeapSize=527013504 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `GET` /orders List orders  
+    Parameter
+
+        customerEmail Notes Deprecated. Use `customerId` instead. The customer email address of the order. change into The customer email address of the order.
+* `PUT` /products/{productId}/variations/{variationId}/default-image Assign variation image as default image  
+    Parameter
+
+        Content-Type Notes The content type must be `text/uri-list`. change into The content type of the request. Must be `text/uri-list`.
+
 ## 2020-02-04
 
 ### What's Changed
