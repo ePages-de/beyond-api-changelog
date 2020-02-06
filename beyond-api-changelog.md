@@ -1,5 +1,18 @@
 # Beyond API Changelog
 
+## 2020-02-06
+
+-XX:InitialHeapSize=527013504 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+* `GET` /orders/search/find-used-shipping-countries Find used shipping countries
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+
 ## 2020-02-05
 
 ### What's Changed
