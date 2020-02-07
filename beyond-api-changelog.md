@@ -2,25 +2,10 @@
 
 ## 2020-02-06
 
--XX:InitialHeapSize=527013504 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
 ### What's New
 ---
 * `GET` /orders/search/find-used-shipping-countries Find used shipping countries
 
-### What's Deprecated
----
-
-### What's Changed
----
-
-## 2020-02-05
-
-### What's Changed
----
-* `GET` /orders List orders  
-    Parameter
-
-        customerEmail Notes Deprecated. Use `customerId` instead. The customer email address of the order. change into The customer email address of the order.
 
 ## 2020-02-04
 
