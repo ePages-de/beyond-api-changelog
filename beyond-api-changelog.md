@@ -2,13 +2,9 @@
 
 ## 2020-02-07
 
--XX:InitialHeapSize=527013504 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
 ### What's New
 ---
 * `PUT` /products/{productId}/variations/{variationId}/images Sort variation images
-
-### What's Deprecated
----
 
 ### What's Changed
 ---
