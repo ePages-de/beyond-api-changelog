@@ -1,5 +1,21 @@
 # Beyond API Changelog
 
+## 2020-02-11
+
+-XX:InitialHeapSize=527013504 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `GET` /product-view/products/{productId}/images/{imageId} Show product image details  
+    Return Type
+
+        Delete position //The sorting position of the product image in relation to other product images.
+
 ## 2020-02-07
 
 ### What's New
