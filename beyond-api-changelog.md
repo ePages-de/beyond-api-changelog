@@ -1,5 +1,22 @@
 # Beyond API Changelog
 
+## 2020-02-12
+
+-XX:InitialHeapSize=527013504 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `GET` /products/{productId}/images/{imageId} Show product image details  
+    Return Type
+
+        Add width //The width of the product image.
+        Add height //The height of the product image.
+
 ## 2020-02-11
 
 -XX:InitialHeapSize=527013504 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
