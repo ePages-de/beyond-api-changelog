@@ -1,5 +1,18 @@
 # Beyond API Changelog
 
+## 2020-02-14
+
+-XX:InitialHeapSize=527013568 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+* `POST` /orders/{orderId}/send-invoice (Deprecated) Send invoice
+
+### What's Changed
+---
+
 ## 2020-02-12
 
 -XX:InitialHeapSize=527013504 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
