@@ -2,52 +2,25 @@
 
 ## 2020-02-25
 
--XX:InitialHeapSize=527013568 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
 ### What's New
 ---
 * `GET` /product-view/products/{productId}/videos List product videos
 * `GET` /product-view/products/{productId}/videos/{videoId} Show product video details
 
-### What's Deprecated
----
-
-### What's Changed
----
 
 ## 2020-02-21
-
--XX:InitialHeapSize=527013568 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
-### What's New
----
 
 ### What's Deprecated
 ---
 * `GET` /scopes List scopes
 
-### What's Changed
----
-
 ## 2020-02-14
-
--XX:InitialHeapSize=527013568 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
-### What's New
----
 
 ### What's Deprecated
 ---
 * `POST` /orders/{orderId}/send-invoice (Deprecated) Send invoice
 
-### What's Changed
----
-
 ## 2020-02-12
-
--XX:InitialHeapSize=527013504 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
-### What's New
----
-
-### What's Deprecated
----
 
 ### What's Changed
 ---
@@ -58,13 +31,6 @@
         Add height //The height of the product image.
 
 ## 2020-02-11
-
--XX:InitialHeapSize=527013504 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
-### What's New
----
-
-### What's Deprecated
----
 
 ### What's Changed
 ---
