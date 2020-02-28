@@ -1,35 +1,5 @@
 # Beyond API Changelog
 
-## 2020-02-27
-
--XX:InitialHeapSize=527013568 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
-### What's New
----
-
-### What's Deprecated
----
-
-### What's Changed
----
-* `GET` /carts/{cartId} Show cart details  
-    Return Type
-
-        Add customerEmail //The customer's email address that is assigned to the cart.
-* `GET` /orders List orders  
-    Parameter
-
-        canceled Notes Filters by cancelation status of the order. Can be `true` or `false`. change into Filters by whether or not the order was canceled. Can be `true` or `false`.
-* `POST` /payment-methods/{paymentMethodId}/activate Activate payment method  
-    Return Type
-
-        Add workflow //The payment workflow for the current payment. Can be one of `PAYMENT_ON_SELECTION`, `EMBEDDED_ON_SELECTION`, `PAYMENT_ON_BUY`, or `EMBEDDED_ON_BUY`.
-        Add activeLogoSet //The name of the currently selected logo set. Can be one of `TILE`, `DETAILS`, `LIST`, or `STOREFRONT`. (`official` is always the fallback).
-* `POST` /payment-methods/{paymentMethodId}/deactivate Deactivate payment method  
-    Return Type
-
-        Add workflow //The payment workflow for the current payment. Can be one of `PAYMENT_ON_SELECTION`, `EMBEDDED_ON_SELECTION`, `PAYMENT_ON_BUY`, or `EMBEDDED_ON_BUY`.
-        Add activeLogoSet //The name of the currently selected logo set. Can be one of `TILE`, `DETAILS`, `LIST`, or `STOREFRONT`. (`official` is always the fallback).
-
 ## 2020-02-25
 
 ### What's New
