@@ -2,17 +2,11 @@
 
 ## 2020-03-04
 
--XX:InitialHeapSize=527013568 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
 ### What's New
 ---
 * `POST` /products/{productId}/multiple-images Add multiple product images
 * `POST` /products/{productId}/variations/{variationId}/multiple-images Add variation images
 
-### What's Deprecated
----
-
-### What's Changed
----
 
 ## 2020-03-02
 
