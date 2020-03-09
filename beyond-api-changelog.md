@@ -1,5 +1,31 @@
 # Beyond API Changelog
 
+## 2020-03-09
+
+-XX:InitialHeapSize=527028224 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+* `POST` /products/{productId}/variation-attributes/{variationAttributeId} Update the variation attribute properties
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `POST` /products Create variation product  
+    Parameter
+
+        Add .essentialFeatures //The essential product properties of the product. Shown in the cart and checkout. In Germany mandatory field in online shops according to §312j Abs. 2 BGB (German Civil Code).
+        Add .shippingWeight //The weight of the product including packaging in g.
+        Add .maxOrderQuantity //Displays how often this product can be ordered at maximum in one order.
+* `GET` /products/{productId} Show variation product details  
+    Return Type
+
+        Add essentialFeatures //The essential product properties of the product. Shown in the cart and checkout. In Germany mandatory field in online shops according to §312j Abs. 2 BGB (German Civil Code).
+        Add shippingWeight //The weight of the product including packaging in g.
+        Add sku //The stock keeping unit (SKU) corresponding to the product.
+        Add maxOrderQuantity //Displays how often this product can be ordered at maximum in one order.
+
 ## 2020-03-06
 
 -XX:InitialHeapSize=527028224 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
