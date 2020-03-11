@@ -7,16 +7,6 @@
 * `POST` /products/{productId}/variation-attributes/{variationAttributeId} Update the variation attribute properties
 
 
-## 2020-03-06
-
-### What's Changed
----
-* `POST` /products/{productId}/images Add product image  
-    Parameter
-
-        fileName Notes The file name of the image. change into The file name of the image. Should exist one for each image being uploaded.
-        Content-Type Notes The content type of the image. Can be one of `image/png`, `image/jpeg`, or `image/gif`. change into The content type for this request should be `multipart/form-data`.
-
 ## 2020-03-04
 
 ### What's New
