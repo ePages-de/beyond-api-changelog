@@ -1,5 +1,22 @@
 # Beyond API Changelog
 
+## 2020-03-12
+
+-XX:InitialHeapSize=527028224 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `POST` /products/{productId}/images Add product image  
+    Parameter
+
+        fileName Notes The file name of the image. Should exist one for each image being uploaded. change into The file name of the image. Must be provided for each image to be uploaded.
+        Content-Type Notes The content type for this request should be `multipart/form-data`. change into The content type of the request. Must be `multipart/form-data`.
+
 ## 2020-03-09
 
 ### What's New
