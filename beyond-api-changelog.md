@@ -5,6 +5,23 @@
 -XX:InitialHeapSize=527028224 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
 ### What's New
 ---
+* `PUT` /products/{productId}/variation-attributes/{variationAttributeId}/values Sort variation attribute values
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `GET` /orders List orders  
+    Parameter
+
+        Add customerName //Filters by a partial match with the customer's name (any of first name, middle name, last name, company name) used in billing address or shipping address.
+
+## 2020-03-17
+
+-XX:InitialHeapSize=527028224 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
 * `GET` /product-view/products/{productId}/cross-sells/{crossSellId} List products of a cross-sell resource
 
 ### What's Deprecated
