@@ -6,9 +6,6 @@
 ---
 * `GET` /product-view/products/{productId}/media Get product media
 
-### What's Deprecated
----
-
 ### What's Changed
 ---
 * `GET` /orders/{orderId} Show order details  
