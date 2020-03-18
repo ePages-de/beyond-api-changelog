@@ -2,13 +2,10 @@
 
 ## 2020-03-17
 
--XX:InitialHeapSize=527028224 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
 ### What's New
 ---
 * `PUT` /products/{productId}/variation-attributes/{variationAttributeId}/values Sort variation attribute values
 
-### What's Deprecated
----
 
 ### What's Changed
 ---
@@ -19,16 +16,9 @@
 
 ## 2020-03-17
 
--XX:InitialHeapSize=527028224 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
 ### What's New
 ---
 * `GET` /product-view/products/{productId}/cross-sells/{crossSellId} List products of a cross-sell resource
-
-### What's Deprecated
----
-
-### What's Changed
----
 
 ## 2020-03-16
 
