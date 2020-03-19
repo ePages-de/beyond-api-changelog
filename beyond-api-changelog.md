@@ -1,5 +1,18 @@
 # Beyond API Changelog
 
+## 2020-03-19
+
+-XX:InitialHeapSize=527028224 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+* `POST` /carts/{cartId}/coupon Redeem coupon for cart
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+
 ## 2020-03-17
 
 ### What's New
