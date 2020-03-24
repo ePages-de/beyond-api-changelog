@@ -2,16 +2,10 @@
 
 ## 2020-03-23
 
--XX:InitialHeapSize=527028224 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
 ### What's New
 ---
 * `PUT` /products/{productId}/variation-attributes Sets the order of the variation attributes of a product
 
-### What's Deprecated
----
-
-### What's Changed
----
 
 ## 2020-03-19
 
