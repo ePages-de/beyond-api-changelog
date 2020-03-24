@@ -1,5 +1,22 @@
 # Beyond API Changelog
 
+## 2020-03-24
+
+-XX:InitialHeapSize=527028224 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `GET` /orders List orders  
+    Parameter
+
+        customerEmail Notes The customer email address of the order. change into Filters by the customer email address of the order.
+        customerName Notes Filters by a partial match with the customer's name (any of first name, middle name, last name, company name) used in billing address or shipping address. change into Filters by a partial match with the customer name (first name, middle name, last name, and/or company name) used in the billing or shipping address of the order.
+
 ## 2020-03-23
 
 ### What's New
