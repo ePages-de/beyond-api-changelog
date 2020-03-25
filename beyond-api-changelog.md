@@ -1,5 +1,23 @@
 # Beyond API Changelog
 
+## 2020-03-25
+
+-XX:InitialHeapSize=527028224 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `GET` /product-view/products/{productId}/cross-sells/{crossSellId} List cross-selling products  
+    Return Type
+
+        Add _links //See <<hypermedia,Hypermedia>>
+        Add _embedded
+        Add page //See <<pagination,Pagination>>
+
 ## 2020-03-24
 
 -XX:InitialHeapSize=527028224 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
