@@ -1,5 +1,18 @@
 # Beyond API Changelog
 
+## 2020-03-26
+
+-XX:InitialHeapSize=527028224 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+* `POST` /products/{productId}/variations/images Add multiple variation images to multiple variations
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+
 ## 2020-03-25
 
 -XX:InitialHeapSize=527028224 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
