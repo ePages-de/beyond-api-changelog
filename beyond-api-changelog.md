@@ -1,5 +1,27 @@
 # Beyond API Changelog
 
+## 2020-03-27
+
+-XX:InitialHeapSize=527028224 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `GET` /orders List orders  
+    Parameter
+
+        Add shippingAddress //Filters by a partial match with the address fields of the shipping address of the order, e.g. street, city.
+        billingAddress Notes Filters by a partial match with the `displayAddressLines` of the billing address of the order, e.g. the customer name. change into Filters by a partial match with the address fields of the billing address of the order, e.g. street, city.
+* `PATCH` /shop Update shop partially  
+    Parameter
+
+        Delete .defaultCurrency //The default currency of the shop.
+        Delete .currencies //List of currencies that are supported by this shop. Defaults to `defaultCurrency`. The `defaultCurrency` is always included in this list.
+
 ## 2020-03-26
 
 ### What's New
