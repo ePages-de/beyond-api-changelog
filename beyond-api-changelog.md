@@ -1,5 +1,20 @@
 # Beyond API Changelog
 
+## 2020-03-30
+
+-XX:InitialHeapSize=527028224 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+* `PUT` /products/{productId}/availability/update-stock-threshold Update reserve stock of product
+* `PUT` /products/{productId}/variation-attributes/{variationAttributeId} Update variation attribute
+
+### What's Deprecated
+---
+* `POST` /products/{productId}/variation-attributes/{variationAttributeId} Update variation attribute
+
+### What's Changed
+---
+
 ## 2020-03-27
 
 ### What's Changed
