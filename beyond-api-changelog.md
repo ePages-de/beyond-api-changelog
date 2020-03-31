@@ -1,5 +1,24 @@
 # Beyond API Changelog
 
+## 2020-03-31
+
+-XX:InitialHeapSize=527028224 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `GET` /orders List orders  
+    Parameter
+
+        Add paymentMethodId //Filters by the ID of the payment method used for the order.
+        Add shippingMethodId //Filters by the ID of the shipping method used for the order.
+        paymentMethod Notes Filters by the payment method used for the order. change into Filters by a partial match with the payment method name used for the order.
+        shippingMethod Notes Filters by the shipping method used for the order. change into Filters by a partial match with the shipping method name used for the order.
+
 ## 2020-03-30
 
 ### What's New
