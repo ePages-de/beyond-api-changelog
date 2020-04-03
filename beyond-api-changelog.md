@@ -1,5 +1,23 @@
 # Beyond API Changelog
 
+## 2020-04-03
+
+-XX:InitialHeapSize=527028224 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+* `POST` /products/{productId}/variation-attributes/{variationAttributeId}/values Create variation attribute values
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `POST` /products/{productId}/variations/images Add multiple variation images to multiple variations  
+    Parameter
+
+        Add fileName //The file name of the image. Must be provided for each image to be uploaded.
+        Add Content-Type //The content type of the request. Must be `multipart/form-data`.
+
 ## 2020-03-31
 
 -XX:InitialHeapSize=527028224 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
