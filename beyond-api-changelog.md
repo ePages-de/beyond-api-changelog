@@ -1,5 +1,23 @@
 # Beyond API Changelog
 
+## 2020-04-06
+
+-XX:InitialHeapSize=527028224 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `GET` /orders List orders  
+    Parameter
+
+        customerEmail Notes Filters by the customer email address of the order. change into Filters by a partial match with the customer email address of the order.
+        orderNumber Notes Filters by the order number. change into Filters by a partial match with the order number.
+        invoiceNumber Notes Filters by the invoice number for the order. change into Filters by a partial match with the invoice number for the order.
+
 ## 2020-04-03
 
 -XX:InitialHeapSize=527028224 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
