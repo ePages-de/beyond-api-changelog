@@ -2,13 +2,6 @@
 
 ## 2020-04-06
 
--XX:InitialHeapSize=527028224 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
-### What's New
----
-
-### What's Deprecated
----
-
 ### What's Changed
 ---
 * `GET` /orders List orders  
@@ -20,13 +13,9 @@
 
 ## 2020-04-03
 
--XX:InitialHeapSize=527028224 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
 ### What's New
 ---
 * `POST` /products/{productId}/variation-attributes/{variationAttributeId}/values Create variation attribute values
-
-### What's Deprecated
----
 
 ### What's Changed
 ---
@@ -37,13 +26,6 @@
         Add Content-Type //The content type of the request. Must be `multipart/form-data`.
 
 ## 2020-03-31
-
--XX:InitialHeapSize=527028224 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
-### What's New
----
-
-### What's Deprecated
----
 
 ### What's Changed
 ---
