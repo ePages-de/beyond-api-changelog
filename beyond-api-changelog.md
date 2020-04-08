@@ -2,14 +2,11 @@
 
 ## 2020-04-07
 
--XX:InitialHeapSize=527028224 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
 ### What's New
 ---
 * `GET` /products/{productId}/variation-attributes List variation attributes
 * `GET` /products/{productId}/variation-attributes/{variationAttributeId} Show variation attribute details
 
-### What's Deprecated
----
 
 ### What's Changed
 ---
@@ -28,20 +25,7 @@
     Return Type
 
         Add maxNumberOfUses //The maximum number of coupon code redemptions for a campaign which is validated against the aggregated usage counter from all of its coupon codes.
-* `GET` /orders List orders  
-    Parameter
 
-        billingAddress Notes Filters by a partial match with the address fields of the billing address of the order, e.g. street, city. change into Filters by a partial match with the address fields of the billing address of the order, e.g. the street name or the city.
-        shippingAddress Notes Filters by a partial match with the address fields of the shipping address of the order, e.g. street, city. change into Filters by a partial match with the address fields of the shipping address of the order, e.g. the street name or the city.
-        paymentMethod Notes Filters by a partial match with the payment method name used for the order. change into Filters by a partial match with the name of the payment method used for the order.
-        shippingMethod Notes Filters by a partial match with the shipping method name used for the order. change into Filters by a partial match with the name of the shipping method used for the order.
-        createdAfter Notes Filters by the date/time of orders created after this timestamp. Expressed according to ISO 8601. Example&#58; `2019-11-29T11:32:00`. change into Filters by the date/time of orders created after this timestamp. Expressed according to ISO 8601. Example&#58; `2020-11-29T11:32:00`.
-        createdBefore Notes Filters by the date/time of orders created before this timestamp. Expressed according to ISO 8601. Example&#58; `2019-11-29T11:32:00`. change into Filters by the date/time of orders created before this timestamp. Expressed according to ISO 8601. Example&#58; `2020-11-29T11:32:00`.
-* `PUT` /products/{productId}/variation-attributes Sort variation attributes  
-    Return Type
-
-        Add _embedded
-        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
 
 ## 2020-04-06
 
