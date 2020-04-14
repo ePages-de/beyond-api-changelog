@@ -1,5 +1,38 @@
 # Beyond API Changelog
 
+## 2020-04-14
+
+-XX:InitialHeapSize=527028224 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `POST` /coupon-campaigns Create coupon campaign  
+    Parameter
+
+        Add .maxNumberOfRedemptions //The maximum number of coupon code redemptions for a campaign. Is validated against the aggregated redemptions counter of all coupon codes that are part of the coupon campaign.
+        Delete .maxNumberOfUses //The maximum number of coupon code redemptions for a campaign which is validated against the aggregated usage counter from all of its coupon codes.
+* `PUT` /coupon-campaigns/{couponCampaignId} Update coupon campaign  
+    Parameter
+
+        Add .maxNumberOfRedemptions //The maximum number of coupon code redemptions for a campaign. Is validated against the aggregated redemptions counter of all coupon codes that are part of the coupon campaign.
+        Delete .maxNumberOfUses //The maximum number of coupon code redemptions for a campaign which is validated against the aggregated usage counter from all of its coupon codes.
+    Return Type
+
+        Add maxNumberOfRedemptions //The maximum number of coupon code redemptions for a campaign. Is validated against the aggregated redemptions counter of all coupon codes that are part of the coupon campaign.
+        Add totalNumberOfRedemptions //The sum of the redemption counters of all coupon codes in the given campaign.
+        Delete maxNumberOfUses //The maximum number of coupon code redemptions for a campaign which is validated against the aggregated usage counter from all of its coupon codes.
+* `GET` /coupon-campaigns/{couponCampaignId} Show details of coupon campaign  
+    Return Type
+
+        Add maxNumberOfRedemptions //The maximum number of coupon code redemptions for a campaign. Is validated against the aggregated redemptions counter of all coupon codes that are part of the coupon campaign.
+        Add totalNumberOfRedemptions //The sum of the redemption counters of all coupon codes in the given campaign.
+        Delete maxNumberOfUses //The maximum number of coupon code redemptions for a campaign which is validated against the aggregated usage counter from all of its coupon codes.
+
 ## 2020-04-07
 
 ### What's New
