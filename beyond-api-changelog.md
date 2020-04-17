@@ -1,5 +1,39 @@
 # Beyond API Changelog
 
+## 2020-04-17
+
+-XX:InitialHeapSize=527028224 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+* `POST` /products/{productId}/external-images Upload external product image
+* `POST` /system/images-update Trigger resend of image updated events
+* `POST` /system/products-update Trigger resend of product updated events
+* `POST` /system/synchronize Trigger resend of product created events
+* `DELETE` /carts/{cartId}/coupon Delete coupon from cart
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `POST` /coupon-campaigns Create coupon campaign  
+    Parameter
+
+        Add .active //The field which is used for campaign activation, pausing and archiving (see <<resources-coupon-campaign-put>>).
+        Delete .status //Indicates whether the coupon campaign is active or not. Can be `DRAFT` or `ACTIVE`. By default, a campaign is a `DRAFT` upon creation.
+* `PUT` /coupon-campaigns/{couponCampaignId} Update coupon campaign  
+    Parameter
+
+        Add .active //The field which is used for campaign activation, pausing and archiving (see <<resources-coupon-campaign-put>>).
+        Delete .status //Indicates whether the coupon campaign is active or not. Can be `DRAFT` or `ACTIVE`. By default, a campaign is a `DRAFT` upon creation.
+    Return Type
+
+        Add active //The field which is used for campaign activation, pausing and archiving (see <<resources-coupon-campaign-put>>).
+* `GET` /coupon-campaigns/{couponCampaignId} Show details of coupon campaign  
+    Return Type
+
+        Add active //The field which is used for campaign activation, pausing and archiving (see <<resources-coupon-campaign-put>>).
+
 ## 2020-04-14
 
 ### What's Changed
