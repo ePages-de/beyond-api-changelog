@@ -2,7 +2,6 @@
 
 ## 2020-04-17
 
--XX:InitialHeapSize=527028224 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
 ### What's New
 ---
 * `POST` /products/{productId}/external-images Upload external product image
@@ -10,9 +9,6 @@
 * `POST` /system/products-update Trigger resend of product updated events
 * `POST` /system/synchronize Trigger resend of product created events
 * `DELETE` /carts/{cartId}/coupon Delete coupon from cart
-
-### What's Deprecated
----
 
 ### What's Changed
 ---
