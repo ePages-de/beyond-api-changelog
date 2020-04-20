@@ -5,9 +5,6 @@
 ### What's New
 ---
 * `POST` /products/{productId}/external-images Upload external product image
-* `POST` /system/images-update Trigger resend of image updated events
-* `POST` /system/products-update Trigger resend of product updated events
-* `POST` /system/synchronize Trigger resend of product created events
 * `DELETE` /carts/{cartId}/coupon Delete coupon from cart
 
 ### What's Changed
