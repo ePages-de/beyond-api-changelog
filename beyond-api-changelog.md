@@ -1,5 +1,37 @@
 # Beyond API Changelog
 
+## 2020-04-20
+
+-XX:InitialHeapSize=527028224 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+* `GET` /customers List customers
+* `POST` /customers Create customer
+* `PUT` /customers/{customerId} Update customer
+* `GET` /customers/{id} Show customer details
+* `DELETE` /customers/{id} Delete customer
+* `GET` /payment-method-definitions List payment method definitions
+* `POST` /payment-method-definitions Create payment method definition
+* `GET` /payment-method-definitions/{paymentMethodDefinitionName} Show payment method definition details on shop level
+* `PUT` /payment-method-definitions/{paymentMethodDefinitionName} Modify payment method definition
+* `DELETE` /payment-method-definitions/{paymentMethodDefinitionName} Delete payment method definition
+* `POST` /payment-method-definitions/{paymentMethodDefinitionName}/payment-method Create payment method
+* `DELETE` /payment-method-definitions/{paymentMethodDefinitionName}/payment-method Delete payment method
+* `GET` /payment-signup/merchant-accounts/{paymentMethodDefinition} Show merchant account details
+* `DELETE` /payment-signup/merchant-accounts/{paymentMethodDefinition} Disconnect merchant account
+* `POST` /payment-signup/referrals/{paymentMethodDefinition} Initiate referral
+* `POST` /payments/{paymentId}/approve Approve payment
+* `POST` /payments/{paymentId}/cancel Cancel payment
+* `POST` /payments/{paymentId}/fail Fail payment
+* `POST` /payments/{paymentId}/status Set payment status
+* `GET` /shop-id Show shop ID
+
+### What's Changed
+---
+
 ## 2020-04-17
 
 ### What's New
