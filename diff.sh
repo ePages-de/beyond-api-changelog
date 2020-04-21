@@ -8,10 +8,9 @@ DESCRIPTION:
 Generates a diff description for the given OpenAPI spec files.
 
 SYNOPSIS:
-$0 [-o output_format] file_old file_new
+$0 file_old file_new
 
 OPTIONS:
-    -o   The output format. "adoc" or "markdown" are supported. Default: markdown.
     -h   Show this message.
     -?   Show this message.
 
@@ -22,23 +21,21 @@ git show HEAD~5:openapi.yaml > ${SPEC_FILE_1}
 git show HEAD:openapi.yaml > ${SPEC_FILE_2}
 
 ./diff.sh ${SPEC_FILE_1} ${SPEC_FILE_2}
-./diff.sh -o adoc ${SPEC_FILE_1} ${SPEC_FILE_2}
 EOF
 }
 
-while getopts "o: h ?" option ; do
+while getopts ":h" option ; do
      case $option in
-          o)   OUTPUT_FORMAT="${OPTARG}"
-               ;;
           h )  usage
                exit 0;;
-          ? )  usage
+          \? )  usage
                exit 0;;
      esac
 done
 
-SPEC_FILE_1=${@:$OPTIND:1}
-SPEC_FILE_2=${@:$OPTIND+1:1}
+shift $((OPTIND -1))
+SPEC_FILE_1=$1
+SPEC_FILE_2=$2
 
 if [[ ! -s ${SPEC_FILE_1} ]]; then
     echo "Invalid first positional parameter for the old OpenAPI spec file: $SPEC_FILE_1" >&2
@@ -50,15 +47,4 @@ if [[ ! -s ${SPEC_FILE_2} ]]; then
     exit 1
 fi
 
-if [[ "$OUTPUT_FORMAT" = "adoc" ]]; then
-    OPEN_API_DIFF=$(mktemp)
-    ./node_modules/.bin/openapi-diff ${SPEC_FILE_1} ${SPEC_FILE_2} > ${OPEN_API_DIFF}
-
-    echo "|==="
-    echo "|Change |Description"
-    cat ${OPEN_API_DIFF} | tail -n +2 | jq -r 'delpaths([["breakingDifferencesFound"]]) | .[] | .[] | "\n|" + .code + "\n" + "|" + .sourceSpecEntityDetails[].location | gsub("paths."; "")'
-    echo
-    echo "|==="
-else
-    java -jar swagger-diff.jar -old ${SPEC_FILE_1} -new ${SPEC_FILE_2} -v 2.0 -output-mode markdown
-fi
+java -jar swagger-diff.jar -old "${SPEC_FILE_1}" -new "${SPEC_FILE_2}" -v 2.0 -output-mode markdown
