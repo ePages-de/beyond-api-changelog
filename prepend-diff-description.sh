@@ -78,7 +78,7 @@ CHANGE_LOG_EMAIL_BODY=$(cat <<EOF
 ${CHANGE_LOG}
 </pre>
 
-<a href="https://beyond.docs.stoplight.io/">API Documentation</a> * <a href="https://github.com/ePages-de/beyond-api-changelog/blob/master/beyond-api-changelog.md">Complete changelog</a>
+<a href="https://docs.beyondshop.cloud/">API Documentation</a> * <a href="https://github.com/ePages-de/beyond-api-changelog/blob/master/beyond-api-changelog.md">Complete changelog</a>
 EOF
 )
 
