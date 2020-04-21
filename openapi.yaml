@@ -4666,6 +4666,613 @@ paths:
       security:
       - oauth2_application:
         - ccgn:c
+  /customers:
+    get:
+      tags:
+      - customers
+      summary: List customers
+      description: Returns a list of all customers of the current shop in a paged
+        way. Each item in the response represents the customer's details.
+      operationId: customers-list
+      produces:
+      - application/hal+json
+      responses:
+        200:
+          description: ""
+          examples:
+            application/hal+json: |-
+              {
+                "_embedded" : {
+                  "customers" : [ {
+                    "email" : "ead7cbcb-483d-4dc6-bd85-1925159740e4@epages.com",
+                    "customerNumber" : "1000",
+                    "defaultShippingAddress" : {
+                      "salutation" : "Mrs",
+                      "gender" : "FEMALE",
+                      "company" : "Astrid Alster GmbH",
+                      "title" : "",
+                      "firstName" : "Astrid",
+                      "middleName" : "Agnes",
+                      "lastName" : "Alster",
+                      "street" : "Alsterwasserweg",
+                      "houseNumber" : "2",
+                      "street2" : "Erdgeschoss",
+                      "addressExtension" : "Hinterhof",
+                      "postalCode" : "20999",
+                      "dependentLocality" : "Seevetal",
+                      "city" : "Alsterwasser",
+                      "country" : "DE",
+                      "state" : "Hamburg",
+                      "email" : "a.alsterh@example.com",
+                      "phone" : "(800) 555-0102",
+                      "mobile" : "(800) 555-0103",
+                      "doorCode" : "456"
+                    },
+                    "defaultBillingAddress" : {
+                      "salutation" : "Mrs",
+                      "gender" : "FEMALE",
+                      "company" : "Astrid Alster GmbH",
+                      "title" : "",
+                      "firstName" : "Astrid",
+                      "middleName" : "Agnes",
+                      "lastName" : "Alster",
+                      "street" : "Alsterwasserweg",
+                      "houseNumber" : "2",
+                      "street2" : "Erdgeschoss",
+                      "addressExtension" : "Hinterhof",
+                      "postalCode" : "20999",
+                      "dependentLocality" : "Seevetal",
+                      "city" : "Alsterwasser",
+                      "country" : "DE",
+                      "state" : "Hamburg",
+                      "email" : "a.alsterh@example.com",
+                      "phone" : "(800) 555-0102",
+                      "mobile" : "(800) 555-0103",
+                      "vatId" : "DE123456789",
+                      "taxNumber" : "HRE 987654/32123/864516",
+                      "birthDate" : "1985-05-11"
+                    },
+                    "defaultShippingMethodId" : "a121b817-8d10-4a72-9428-63f83506706b",
+                    "defaultPaymentMethodId" : "32cc01a2-dc8d-42b2-8f90-6878531f7a21",
+                    "_links" : {
+                      "self" : {
+                        "href" : "https://yourshop.api.urn/customers/331d0884-687f-424e-9bd2-c67169185c4b"
+                      },
+                      "customer" : {
+                        "href" : "https://yourshop.api.urn/customers/331d0884-687f-424e-9bd2-c67169185c4b"
+                      }
+                    },
+                    "_id" : "331d0884-687f-424e-9bd2-c67169185c4b"
+                  }, {
+                    "email" : "bcc6932c-8b89-489d-b88e-e674abc926f6@epages.com",
+                    "customerNumber" : "1002",
+                    "defaultShippingAddress" : {
+                      "salutation" : "Mrs",
+                      "gender" : "FEMALE",
+                      "company" : "Astrid Alster GmbH",
+                      "title" : "",
+                      "firstName" : "Astrid",
+                      "middleName" : "Agnes",
+                      "lastName" : "Alster",
+                      "street" : "Alsterwasserweg",
+                      "houseNumber" : "2",
+                      "street2" : "Erdgeschoss",
+                      "addressExtension" : "Hinterhof",
+                      "postalCode" : "20999",
+                      "dependentLocality" : "Seevetal",
+                      "city" : "Alsterwasser",
+                      "country" : "DE",
+                      "state" : "Hamburg",
+                      "email" : "a.alsterh@example.com",
+                      "phone" : "(800) 555-0102",
+                      "mobile" : "(800) 555-0103",
+                      "doorCode" : "456"
+                    },
+                    "defaultBillingAddress" : {
+                      "salutation" : "Mrs",
+                      "gender" : "FEMALE",
+                      "company" : "Astrid Alster GmbH",
+                      "title" : "",
+                      "firstName" : "Astrid",
+                      "middleName" : "Agnes",
+                      "lastName" : "Alster",
+                      "street" : "Alsterwasserweg",
+                      "houseNumber" : "2",
+                      "street2" : "Erdgeschoss",
+                      "addressExtension" : "Hinterhof",
+                      "postalCode" : "20999",
+                      "dependentLocality" : "Seevetal",
+                      "city" : "Alsterwasser",
+                      "country" : "DE",
+                      "state" : "Hamburg",
+                      "email" : "a.alsterh@example.com",
+                      "phone" : "(800) 555-0102",
+                      "mobile" : "(800) 555-0103",
+                      "vatId" : "DE123456789",
+                      "taxNumber" : "HRE 987654/32123/864516",
+                      "birthDate" : "1985-05-11"
+                    },
+                    "defaultShippingMethodId" : "d8e6dd9b-96bd-49ed-af6d-9a6bb3f19b32",
+                    "defaultPaymentMethodId" : "20a73856-1568-49d1-bb73-b2cf79b1d9ce",
+                    "_links" : {
+                      "self" : {
+                        "href" : "https://yourshop.api.urn/customers/343b521d-7a74-4c2e-8f0b-86d1635d26e7"
+                      },
+                      "customer" : {
+                        "href" : "https://yourshop.api.urn/customers/343b521d-7a74-4c2e-8f0b-86d1635d26e7"
+                      }
+                    },
+                    "_id" : "343b521d-7a74-4c2e-8f0b-86d1635d26e7"
+                  }, {
+                    "email" : "84664cb2-df6b-49c8-be8f-e438a5b139ce@epages.com",
+                    "customerNumber" : "1001",
+                    "defaultShippingAddress" : {
+                      "salutation" : "Mrs",
+                      "gender" : "FEMALE",
+                      "company" : "Astrid Alster GmbH",
+                      "title" : "",
+                      "firstName" : "Astrid",
+                      "middleName" : "Agnes",
+                      "lastName" : "Alster",
+                      "street" : "Alsterwasserweg",
+                      "houseNumber" : "2",
+                      "street2" : "Erdgeschoss",
+                      "addressExtension" : "Hinterhof",
+                      "postalCode" : "20999",
+                      "dependentLocality" : "Seevetal",
+                      "city" : "Alsterwasser",
+                      "country" : "DE",
+                      "state" : "Hamburg",
+                      "email" : "a.alsterh@example.com",
+                      "phone" : "(800) 555-0102",
+                      "mobile" : "(800) 555-0103",
+                      "doorCode" : "456"
+                    },
+                    "defaultBillingAddress" : {
+                      "salutation" : "Mrs",
+                      "gender" : "FEMALE",
+                      "company" : "Astrid Alster GmbH",
+                      "title" : "",
+                      "firstName" : "Astrid",
+                      "middleName" : "Agnes",
+                      "lastName" : "Alster",
+                      "street" : "Alsterwasserweg",
+                      "houseNumber" : "2",
+                      "street2" : "Erdgeschoss",
+                      "addressExtension" : "Hinterhof",
+                      "postalCode" : "20999",
+                      "dependentLocality" : "Seevetal",
+                      "city" : "Alsterwasser",
+                      "country" : "DE",
+                      "state" : "Hamburg",
+                      "email" : "a.alsterh@example.com",
+                      "phone" : "(800) 555-0102",
+                      "mobile" : "(800) 555-0103",
+                      "vatId" : "DE123456789",
+                      "taxNumber" : "HRE 987654/32123/864516",
+                      "birthDate" : "1985-05-11"
+                    },
+                    "defaultShippingMethodId" : "af12cd85-a9a6-46aa-b658-598001ea156f",
+                    "defaultPaymentMethodId" : "b6db9318-94ee-4d23-b1f8-e8efbd1d2be1",
+                    "_links" : {
+                      "self" : {
+                        "href" : "https://yourshop.api.urn/customers/689409a4-dc69-4067-98f8-9fe813828fae"
+                      },
+                      "customer" : {
+                        "href" : "https://yourshop.api.urn/customers/689409a4-dc69-4067-98f8-9fe813828fae"
+                      }
+                    },
+                    "_id" : "689409a4-dc69-4067-98f8-9fe813828fae"
+                  } ]
+                },
+                "_links" : {
+                  "self" : {
+                    "href" : "https://yourshop.api.urn/customers?page=0&size=20"
+                  }
+                },
+                "page" : {
+                  "size" : 20,
+                  "totalElements" : 3,
+                  "totalPages" : 1,
+                  "number" : 0
+                }
+              }
+          schema:
+            $ref: '#/definitions/customers-660708321'
+      security:
+      - oauth2_application:
+        - cust:r
+    post:
+      tags:
+      - customers
+      summary: Create customer
+      description: Creates a new customer.
+      operationId: customer-create
+      consumes:
+      - application/json
+      produces:
+      - application/hal+json
+      parameters:
+      - in: body
+        name: ""
+        required: false
+        schema:
+          $ref: '#/definitions/customers-227654282'
+        x-examples:
+          application/json: |-
+            {
+              "defaultPaymentMethodId" : "b9a7f0eb-7f6c-4fb8-8779-863f2f457784",
+              "defaultShippingMethodId" : "7a2a21df-7206-4df4-beb5-b9151f54e070",
+              "shippingAddress" : {
+                "salutation" : "Mrs",
+                "gender" : "FEMALE",
+                "company" : "Astrid Alster GmbH",
+                "title" : "",
+                "firstName" : "Astrid",
+                "middleName" : "Agnes",
+                "lastName" : "Alster",
+                "street" : "Alsterwasserweg",
+                "houseNumber" : "2",
+                "street2" : "Erdgeschoss",
+                "addressExtension" : "Hinterhof",
+                "postalCode" : "20999",
+                "dependentLocality" : "Seevetal",
+                "city" : "Alsterwasser",
+                "country" : "DE",
+                "state" : "Hamburg",
+                "email" : "a.alsterh@example.com",
+                "phone" : "(800) 555-0102",
+                "mobile" : "(800) 555-0103",
+                "doorCode" : "456",
+                "_id" : null
+              },
+              "email" : "a.alsterh@example.com",
+              "initialPassword" : "MyVeryStrongPassword",
+              "billingAddress" : {
+                "salutation" : "Mrs",
+                "gender" : "FEMALE",
+                "company" : "Astrid Alster GmbH",
+                "title" : "",
+                "firstName" : "Astrid",
+                "middleName" : "Agnes",
+                "lastName" : "Alster",
+                "street" : "Alsterwasserweg",
+                "houseNumber" : "2",
+                "street2" : "Erdgeschoss",
+                "addressExtension" : "Hinterhof",
+                "postalCode" : "20999",
+                "dependentLocality" : "Seevetal",
+                "city" : "Alsterwasser",
+                "country" : "DE",
+                "state" : "Hamburg",
+                "email" : "a.alsterh@example.com",
+                "phone" : "(800) 555-0102",
+                "mobile" : "(800) 555-0103",
+                "vatId" : "DE123456789",
+                "taxNumber" : "HRE 987654/32123/864516",
+                "birthDate" : "1985-05-11",
+                "_id" : "5435967c-8f89-4b99-b707-720cf519b2c1"
+              }
+            }
+      responses:
+        201:
+          description: ""
+          examples:
+            application/hal+json: |-
+              {
+                "email" : "a.alsterh@example.com",
+                "customerNumber" : "1000",
+                "defaultShippingAddress" : {
+                  "salutation" : "Mrs",
+                  "gender" : "FEMALE",
+                  "company" : "Astrid Alster GmbH",
+                  "title" : "",
+                  "firstName" : "Astrid",
+                  "middleName" : "Agnes",
+                  "lastName" : "Alster",
+                  "street" : "Alsterwasserweg",
+                  "houseNumber" : "2",
+                  "street2" : "Erdgeschoss",
+                  "addressExtension" : "Hinterhof",
+                  "postalCode" : "20999",
+                  "dependentLocality" : "Seevetal",
+                  "city" : "Alsterwasser",
+                  "country" : "DE",
+                  "state" : "Hamburg",
+                  "email" : "a.alsterh@example.com",
+                  "phone" : "(800) 555-0102",
+                  "mobile" : "(800) 555-0103",
+                  "doorCode" : "456"
+                },
+                "defaultBillingAddress" : {
+                  "salutation" : "Mrs",
+                  "gender" : "FEMALE",
+                  "company" : "Astrid Alster GmbH",
+                  "title" : "",
+                  "firstName" : "Astrid",
+                  "middleName" : "Agnes",
+                  "lastName" : "Alster",
+                  "street" : "Alsterwasserweg",
+                  "houseNumber" : "2",
+                  "street2" : "Erdgeschoss",
+                  "addressExtension" : "Hinterhof",
+                  "postalCode" : "20999",
+                  "dependentLocality" : "Seevetal",
+                  "city" : "Alsterwasser",
+                  "country" : "DE",
+                  "state" : "Hamburg",
+                  "email" : "a.alsterh@example.com",
+                  "phone" : "(800) 555-0102",
+                  "mobile" : "(800) 555-0103",
+                  "vatId" : "DE123456789",
+                  "taxNumber" : "HRE 987654/32123/864516",
+                  "birthDate" : "1985-05-11"
+                },
+                "defaultShippingMethodId" : "7a2a21df-7206-4df4-beb5-b9151f54e070",
+                "defaultPaymentMethodId" : "b9a7f0eb-7f6c-4fb8-8779-863f2f457784",
+                "_links" : {
+                  "self" : {
+                    "href" : "https://yourshop.api.urn/customers/2c63a565-6a13-4c90-a11a-23566583b257"
+                  },
+                  "customer" : {
+                    "href" : "https://yourshop.api.urn/customers/2c63a565-6a13-4c90-a11a-23566583b257"
+                  }
+                },
+                "_id" : "2c63a565-6a13-4c90-a11a-23566583b257"
+              }
+      security:
+      - oauth2_application:
+        - cust:c
+  /customers/{customerId}:
+    put:
+      tags:
+      - customers
+      summary: Update customer
+      description: Updates an existing customer identified by {customerId}.
+      operationId: customer-update
+      consumes:
+      - application/json
+      produces:
+      - application/hal+json
+      parameters:
+      - name: customerId
+        in: path
+        description: ""
+        required: true
+        type: string
+      - in: body
+        name: ""
+        required: false
+        schema:
+          $ref: '#/definitions/customers_customerId22651477'
+        x-examples:
+          application/json: |-
+            {
+              "defaultPaymentMethodId" : "5e4e692b-9d2e-4b80-8df5-464673ca3912",
+              "defaultShippingMethodId" : "9f6958f4-4c02-499f-a31a-8da6f3b776fd",
+              "shippingAddress" : {
+                "salutation" : "Mrs",
+                "gender" : "FEMALE",
+                "company" : "Astrid Alster GmbH",
+                "title" : "",
+                "firstName" : "Astrid",
+                "middleName" : "Agnes",
+                "lastName" : "Alster",
+                "street" : "Alsterwasserweg",
+                "houseNumber" : "2",
+                "street2" : "Erdgeschoss",
+                "addressExtension" : "Hinterhof",
+                "postalCode" : "20999",
+                "dependentLocality" : "Seevetal",
+                "city" : "Alsterwasser",
+                "country" : "DE",
+                "state" : "Hamburg",
+                "email" : "a.alsterh@example.com",
+                "phone" : "(800) 555-0102",
+                "mobile" : "(800) 555-0103",
+                "doorCode" : "456",
+                "_id" : "008c3d47-b7e6-4568-b8ce-4a8eff5ca646"
+              },
+              "billingAddress" : {
+                "salutation" : "Mrs",
+                "gender" : "FEMALE",
+                "company" : "Astrid Alster GmbH",
+                "title" : "",
+                "firstName" : "Astrid",
+                "middleName" : "Agnes",
+                "lastName" : "Alster",
+                "street" : "Alsterwasserweg",
+                "houseNumber" : "2",
+                "street2" : "Erdgeschoss",
+                "addressExtension" : "Hinterhof",
+                "postalCode" : "20999",
+                "dependentLocality" : "Seevetal",
+                "city" : "Alsterwasser",
+                "country" : "DE",
+                "state" : "Hamburg",
+                "email" : "a.alsterh@example.com",
+                "phone" : "(800) 555-0102",
+                "mobile" : "(800) 555-0103",
+                "vatId" : "DE123456789",
+                "taxNumber" : "HRE 987654/32123/864516",
+                "birthDate" : "1985-05-11",
+                "_id" : "24447886-54b9-4a21-b2fc-92f40db9e5ab"
+              }
+            }
+      responses:
+        200:
+          description: ""
+          examples:
+            application/hal+json: |-
+              {
+                "email" : "2ded575a-a117-41b5-b80c-f389e3983504@epages.com",
+                "customerNumber" : "1000",
+                "defaultShippingAddress" : {
+                  "salutation" : "Mrs",
+                  "gender" : "FEMALE",
+                  "company" : "Astrid Alster GmbH",
+                  "title" : "",
+                  "firstName" : "Astrid",
+                  "middleName" : "Agnes",
+                  "lastName" : "Alster",
+                  "street" : "Alsterwasserweg",
+                  "houseNumber" : "2",
+                  "street2" : "Erdgeschoss",
+                  "addressExtension" : "Hinterhof",
+                  "postalCode" : "20999",
+                  "dependentLocality" : "Seevetal",
+                  "city" : "Alsterwasser",
+                  "country" : "DE",
+                  "state" : "Hamburg",
+                  "email" : "a.alsterh@example.com",
+                  "phone" : "(800) 555-0102",
+                  "mobile" : "(800) 555-0103",
+                  "doorCode" : "456"
+                },
+                "defaultBillingAddress" : {
+                  "salutation" : "Mrs",
+                  "gender" : "FEMALE",
+                  "company" : "Astrid Alster GmbH",
+                  "title" : "",
+                  "firstName" : "Astrid",
+                  "middleName" : "Agnes",
+                  "lastName" : "Alster",
+                  "street" : "Alsterwasserweg",
+                  "houseNumber" : "2",
+                  "street2" : "Erdgeschoss",
+                  "addressExtension" : "Hinterhof",
+                  "postalCode" : "20999",
+                  "dependentLocality" : "Seevetal",
+                  "city" : "Alsterwasser",
+                  "country" : "DE",
+                  "state" : "Hamburg",
+                  "email" : "a.alsterh@example.com",
+                  "phone" : "(800) 555-0102",
+                  "mobile" : "(800) 555-0103",
+                  "vatId" : "DE123456789",
+                  "taxNumber" : "HRE 987654/32123/864516",
+                  "birthDate" : "1985-05-11"
+                },
+                "defaultShippingMethodId" : "9f6958f4-4c02-499f-a31a-8da6f3b776fd",
+                "defaultPaymentMethodId" : "5e4e692b-9d2e-4b80-8df5-464673ca3912",
+                "_links" : {
+                  "self" : {
+                    "href" : "https://yourshop.api.urn/customers/cb02dbd0-eb3b-4ffd-98ec-7999e40f74c8"
+                  },
+                  "customer" : {
+                    "href" : "https://yourshop.api.urn/customers/cb02dbd0-eb3b-4ffd-98ec-7999e40f74c8"
+                  }
+                },
+                "_id" : "cb02dbd0-eb3b-4ffd-98ec-7999e40f74c8"
+              }
+      security:
+      - oauth2_application:
+        - cust:u
+  /customers/{id}:
+    get:
+      tags:
+      - customers
+      summary: Show customer details
+      description: Returns the details of the customer identified by {customerId}.
+      operationId: customer-get
+      produces:
+      - application/hal+json
+      parameters:
+      - name: id
+        in: path
+        description: ""
+        required: true
+        type: string
+      responses:
+        200:
+          description: ""
+          examples:
+            application/hal+json: |-
+              {
+                "email" : "71d5de90-b131-435f-a8a5-4e8a59dcef2b@epages.com",
+                "customerNumber" : "1000",
+                "defaultShippingAddress" : {
+                  "salutation" : "Mrs",
+                  "gender" : "FEMALE",
+                  "company" : "Astrid Alster GmbH",
+                  "title" : "",
+                  "firstName" : "Astrid",
+                  "middleName" : "Agnes",
+                  "lastName" : "Alster",
+                  "street" : "Alsterwasserweg",
+                  "houseNumber" : "2",
+                  "street2" : "Erdgeschoss",
+                  "addressExtension" : "Hinterhof",
+                  "postalCode" : "20999",
+                  "dependentLocality" : "Seevetal",
+                  "city" : "Alsterwasser",
+                  "country" : "DE",
+                  "state" : "Hamburg",
+                  "email" : "a.alsterh@example.com",
+                  "phone" : "(800) 555-0102",
+                  "mobile" : "(800) 555-0103",
+                  "doorCode" : "456"
+                },
+                "defaultBillingAddress" : {
+                  "salutation" : "Mrs",
+                  "gender" : "FEMALE",
+                  "company" : "Astrid Alster GmbH",
+                  "title" : "",
+                  "firstName" : "Astrid",
+                  "middleName" : "Agnes",
+                  "lastName" : "Alster",
+                  "street" : "Alsterwasserweg",
+                  "houseNumber" : "2",
+                  "street2" : "Erdgeschoss",
+                  "addressExtension" : "Hinterhof",
+                  "postalCode" : "20999",
+                  "dependentLocality" : "Seevetal",
+                  "city" : "Alsterwasser",
+                  "country" : "DE",
+                  "state" : "Hamburg",
+                  "email" : "a.alsterh@example.com",
+                  "phone" : "(800) 555-0102",
+                  "mobile" : "(800) 555-0103",
+                  "vatId" : "DE123456789",
+                  "taxNumber" : "HRE 987654/32123/864516",
+                  "birthDate" : "1985-05-11"
+                },
+                "defaultShippingMethodId" : "c3b95185-8329-4b94-b10b-0f28ec2b801c",
+                "defaultPaymentMethodId" : "457a9fd2-fbb1-4eb0-9421-125054e0bf39",
+                "_links" : {
+                  "self" : {
+                    "href" : "https://yourshop.api.urn/customers/80532782-ec28-4f6d-b163-487815cf03d3"
+                  },
+                  "customer" : {
+                    "href" : "https://yourshop.api.urn/customers/80532782-ec28-4f6d-b163-487815cf03d3"
+                  }
+                },
+                "_id" : "80532782-ec28-4f6d-b163-487815cf03d3"
+              }
+          schema:
+            $ref: '#/definitions/customers_id-442663145'
+      security:
+      - oauth2_application:
+        - cust:r
+    delete:
+      tags:
+      - customers
+      summary: Delete customer
+      description: Deletes an existing customer identified by {customerId}.
+      operationId: customer-delete
+      parameters:
+      - name: id
+        in: path
+        description: ""
+        required: true
+        type: string
+      responses:
+        204:
+          description: ""
+          examples: {}
+      security:
+      - oauth2_application:
+        - cust:d
   /legal-content:
     get:
       tags:
@@ -10863,6 +11470,407 @@ paths:
       security:
       - oauth2_application:
         - shpr:u
+  /payment-method-definitions:
+    get:
+      tags:
+      - payment-method-definitions
+      summary: List payment method definitions
+      description: Returns a list of available payment method definitions for the
+        current shop.
+      operationId: list-payment-method-definition
+      produces:
+      - application/hal+json
+      responses:
+        200:
+          description: ""
+          examples:
+            application/hal+json: |-
+              {
+                "_embedded" : {
+                  "payment-method-definitions" : [ {
+                    "_id" : "credit-card",
+                    "name" : "credit-card",
+                    "referralUriTemplate" : "https://example.com/merchants",
+                    "statusUriTemplate" : "https://example.com/merchants/{shopId}/status",
+                    "disconnectUriTemplate" : "https://example.com/merchants/{shopId}/disconnect",
+                    "createPaymentUriTemplate" : "https://example.com/payments",
+                    "capturePaymentUriTemplate" : "https://example.com/payments/{paymentId}/capture",
+                    "refundPaymentUriTemplate" : "https://example.com/payments/{paymentId}/refund",
+                    "sandbox" : true,
+                    "workflow" : "PAYMENT_ON_BUY",
+                    "captureWorkflow" : "CAPTURE_ON_ORDER",
+                    "refund" : "NO_REFUND",
+                    "logos" : [ {
+                      "setName" : "official",
+                      "variant" : "STOREFRONT",
+                      "uri" : "https://example.com/static/storefront.png"
+                    } ],
+                    "officialName" : {
+                      "de-DE" : "Ermögliche deinen Kunden, mit Kreditkarte zu bezahlen.",
+                      "en-US" : "Allow your customers to pay by credit card."
+                    },
+                    "officialDescription" : {
+                      "de-DE" : "Ermögliche deinen Kunden, mit Kreditkarte zu bezahlen.",
+                      "en-US" : "Allow your customers to pay by credit card."
+                    },
+                    "defaultDescription" : {
+                      "de-DE" : "Bezahlen Sie mit Kreditkarte.",
+                      "en-US" : "Pay by credit card."
+                    },
+                    "defaultName" : {
+                      "de-DE" : "Kreditkarte",
+                      "en-US" : "Credit card"
+                    },
+                    "_links" : {
+                      "self" : {
+                        "href" : "https://system.api.urn/payment-method-definitions/credit-card"
+                      }
+                    }
+                  } ]
+                },
+                "_links" : {
+                  "self" : {
+                    "href" : "https://system.api.urn/payment-method-definitions?page=0&size=20"
+                  }
+                },
+                "page" : {
+                  "size" : 20,
+                  "totalElements" : 1,
+                  "totalPages" : 1,
+                  "number" : 0
+                }
+              }
+          schema:
+            $ref: '#/definitions/payment-method-definitions-570184892'
+      security:
+      - oauth2_application:
+        - paym:m
+    post:
+      tags:
+      - payment-method-definitions
+      summary: Create payment method definition
+      description: Creates a payment method definition.
+      operationId: create-payment-method-definition
+      consumes:
+      - application/json
+      produces:
+      - application/hal+json
+      parameters:
+      - in: body
+        name: ""
+        required: false
+        schema:
+          $ref: '#/definitions/payment-method-definitions-1535636260'
+        x-examples:
+          application/json: |-
+            {
+              "name": "credit-card",
+              "referralUriTemplate": "https://example.com/merchants",
+              "statusUriTemplate": "https://example.com/merchants/{shopId}/status",
+              "disconnectUriTemplate": "https://example.com/merchants/{shopId}/disconnect",
+              "createPaymentUriTemplate": "https://example.com/payments",
+              "capturePaymentUriTemplate": "https://example.com/payments/{paymentId}/capture",
+              "refundPaymentUriTemplate": "https://example.com/payments/{paymentId}/refund",
+            "sandbox": "true",
+              "workflow": "PAYMENT_ON_BUY",
+              "captureWorkflow": "CAPTURE_ON_ORDER",
+              "refund": "NO_REFUND",
+              "logos": [{
+                "setName" : "official",
+                "variant" : "STOREFRONT",
+                "uri" : "https://example.com/static/storefront.png"
+              }],
+            "officialName": {"de-DE" : "Ermögliche deinen Kunden, mit Kreditkarte zu bezahlen.",
+            "en-US" : "Allow your customers to pay by credit card."
+            },
+              "officialDescription": {
+                "de-DE" : "Ermögliche deinen Kunden, mit Kreditkarte zu bezahlen.",
+                "en-US" : "Allow your customers to pay by credit card."
+              },
+              "defaultName": {
+                "de-DE" : "Kreditkarte",
+                "en-US" : "Credit card"
+              },
+              "defaultDescription": {"de-DE" : "Bezahlen Sie mit Kreditkarte.","en-US" : "Pay by credit card."}}
+      responses:
+        201:
+          description: ""
+          examples:
+            application/hal+json: |-
+              {
+                "_id" : "credit-card",
+                "name" : "credit-card",
+                "referralUriTemplate" : "https://example.com/merchants",
+                "statusUriTemplate" : "https://example.com/merchants/{shopId}/status",
+                "disconnectUriTemplate" : "https://example.com/merchants/{shopId}/disconnect",
+                "createPaymentUriTemplate" : "https://example.com/payments",
+                "capturePaymentUriTemplate" : "https://example.com/payments/{paymentId}/capture",
+                "refundPaymentUriTemplate" : "https://example.com/payments/{paymentId}/refund",
+                "sandbox" : true,
+                "workflow" : "PAYMENT_ON_BUY",
+                "captureWorkflow" : "CAPTURE_ON_ORDER",
+                "refund" : "NO_REFUND",
+                "logos" : [ {
+                  "setName" : "official",
+                  "variant" : "STOREFRONT",
+                  "uri" : "https://example.com/static/storefront.png"
+                } ],
+                "officialName" : {
+                  "de-DE" : "Ermögliche deinen Kunden, mit Kreditkarte zu bezahlen.",
+                  "en-US" : "Allow your customers to pay by credit card."
+                },
+                "officialDescription" : {
+                  "de-DE" : "Ermögliche deinen Kunden, mit Kreditkarte zu bezahlen.",
+                  "en-US" : "Allow your customers to pay by credit card."
+                },
+                "defaultDescription" : {
+                  "de-DE" : "Bezahlen Sie mit Kreditkarte.",
+                  "en-US" : "Pay by credit card."
+                },
+                "defaultName" : {
+                  "de-DE" : "Kreditkarte",
+                  "en-US" : "Credit card"
+                },
+                "_links" : {
+                  "self" : {
+                    "href" : "https://system.api.urn/payment-method-definitions/credit-card"
+                  }
+                }
+              }
+          schema:
+            $ref: '#/definitions/payment-method-definitions_paymentMethodDefinitionName1518403451'
+      security:
+      - oauth2_application:
+        - paym:m
+  /payment-method-definitions/{paymentMethodDefinitionName}:
+    get:
+      tags:
+      - payment-method-definitions
+      summary: Show payment method definition details on shop level
+      description: Returns the details of the payment method definition identified
+        by {paymentMethodDefinitionId}. Gives information if a shop has a payment
+        method derived from the payment method definition.
+      operationId: get-payment-method-definition-shop-context
+      produces:
+      - application/hal+json
+      parameters:
+      - name: paymentMethodDefinitionName
+        in: path
+        description: ""
+        required: true
+        type: string
+      responses:
+        200:
+          description: ""
+          examples:
+            application/hal+json: |-
+              {
+                "_id" : "testPMD",
+                "name" : "testPMD",
+                "referralUriTemplate" : "https://example.com/merchants",
+                "statusUriTemplate" : "https://example.com/merchants/{shopId}/status",
+                "disconnectUriTemplate" : "https://example.com/merchants/{shopId}/disconnect",
+                "createPaymentUriTemplate" : "https://example.com/payments",
+                "capturePaymentUriTemplate" : "https://example.com/payments/{paymentId}/capture",
+                "refundPaymentUriTemplate" : "https://example.com/payments/{paymentId}/refund",
+                "sandbox" : true,
+                "workflow" : "PAYMENT_ON_BUY",
+                "captureWorkflow" : "CAPTURE_ON_ORDER",
+                "refund" : "NO_REFUND",
+                "logos" : [ {
+                  "setName" : "official",
+                  "variant" : "STOREFRONT",
+                  "uri" : "https://example.com/static/storefront.png"
+                } ],
+                "officialName" : {
+                  "de-DE" : "Ermögliche deinen Kunden, mit Kreditkarte zu bezahlen.",
+                  "en-US" : "Allow your customers to pay by credit card."
+                },
+                "officialDescription" : {
+                  "de-DE" : "Ermögliche deinen Kunden, mit Kreditkarte zu bezahlen.",
+                  "en-US" : "Allow your customers to pay by credit card."
+                },
+                "defaultDescription" : {
+                  "de-DE" : "Bezahlen Sie mit Kreditkarte.",
+                  "en-US" : "Pay by credit card."
+                },
+                "defaultName" : {
+                  "de-DE" : "Kreditkarte",
+                  "en-US" : "Credit card"
+                },
+                "_links" : {
+                  "self" : {
+                    "href" : "https://yourshop.api.urn/payment-method-definitions/testPMD"
+                  },
+                  "create-payment-method" : {
+                    "href" : "https://yourshop.api.urn/payment-method-definitions/testPMD/payment-method"
+                  }
+                }
+              }
+          schema:
+            $ref: '#/definitions/payment-method-definitions_paymentMethodDefinitionName1518403451'
+      security:
+      - oauth2_application:
+        - paym:m
+    put:
+      tags:
+      - payment-method-definitions
+      summary: Modify payment method definition
+      description: Modifies the payment method definition identified by {paymentMethodDefinitionId}.
+      operationId: update-payment-method-definition
+      consumes:
+      - application/json
+      produces:
+      - application/hal+json
+      parameters:
+      - name: paymentMethodDefinitionName
+        in: path
+        description: ""
+        required: true
+        type: string
+      - in: body
+        name: ""
+        required: false
+        schema:
+          $ref: '#/definitions/payment-method-definitions_paymentMethodDefinitionName-1608465859'
+        x-examples:
+          application/json: |-
+            {
+              "name": "credit-card-updated",
+              "referralUriTemplate": "https://example.com/merchants",
+              "statusUriTemplate": "https://example.com/merchants/{shopId}/status",
+              "disconnectUriTemplate": "https://example.com/merchants/{shopId}/disconnect",
+              "createPaymentUriTemplate": "https://example.com/payments",
+              "capturePaymentUriTemplate": "https://example.com/payments/{paymentId}/capture",
+              "refundPaymentUriTemplate": "https://example.com/payments/{paymentId}/refund",
+              "workflow": "PAYMENT_ON_SELECTION",
+              "captureWorkflow": "CAPTURE_ON_DEMAND",
+              "refund": "NO_REFUND",
+              "logos": [{
+                "setName" : "official",
+                "variant" : "STOREFRONT",
+                "uri" : "https://example.com/static/storefront.png"
+              }],
+            "officialName": {"de-DE" : "Ermögliche deinen Kunden, mit Kreditkarte zu bezahlen.",
+            "en-US" : "Allow your customers to pay by credit card."
+            },
+              "officialDescription": {
+                "de-DE" : "Ermögliche deinen Kunden, mit Kreditkarte zu bezahlen.",
+                "en-US" : "Allow your customers to pay by credit card."
+              },
+              "defaultName": {
+                "de-DE" : "Kreditkarte",
+                "en-US" : "Credit card"
+              },
+              "defaultDescription": {"de-DE" : "Bezahlen Sie mit Kreditkarte.","en-US" : "Pay by credit card."}}
+      responses:
+        200:
+          description: ""
+          examples:
+            application/hal+json: |-
+              {
+                "_id" : "credit-card",
+                "name" : "credit-card",
+                "referralUriTemplate" : "https://example.com/merchants",
+                "statusUriTemplate" : "https://example.com/merchants/{shopId}/status",
+                "disconnectUriTemplate" : "https://example.com/merchants/{shopId}/disconnect",
+                "createPaymentUriTemplate" : "https://example.com/payments",
+                "capturePaymentUriTemplate" : "https://example.com/payments/{paymentId}/capture",
+                "refundPaymentUriTemplate" : "https://example.com/payments/{paymentId}/refund",
+                "sandbox" : true,
+                "workflow" : "PAYMENT_ON_SELECTION",
+                "captureWorkflow" : "CAPTURE_ON_DEMAND",
+                "refund" : "NO_REFUND",
+                "logos" : [ {
+                  "setName" : "official",
+                  "variant" : "STOREFRONT",
+                  "uri" : "https://example.com/static/storefront.png"
+                } ],
+                "officialName" : {
+                  "de-DE" : "Ermögliche deinen Kunden, mit Kreditkarte zu bezahlen.",
+                  "en-US" : "Allow your customers to pay by credit card."
+                },
+                "officialDescription" : {
+                  "de-DE" : "Ermögliche deinen Kunden, mit Kreditkarte zu bezahlen.",
+                  "en-US" : "Allow your customers to pay by credit card."
+                },
+                "defaultDescription" : {
+                  "de-DE" : "Bezahlen Sie mit Kreditkarte.",
+                  "en-US" : "Pay by credit card."
+                },
+                "defaultName" : {
+                  "de-DE" : "Kreditkarte",
+                  "en-US" : "Credit card"
+                },
+                "_links" : {
+                  "self" : {
+                    "href" : "https://system.api.urn/payment-method-definitions/credit-card"
+                  }
+                }
+              }
+          schema:
+            $ref: '#/definitions/payment-method-definitions_paymentMethodDefinitionName1518403451'
+      security:
+      - oauth2_application:
+        - paym:m
+    delete:
+      tags:
+      - payment-method-definitions
+      summary: Delete payment method definition
+      description: Deletes the payment method definition identified by {paymentMethodDefinitionId}.
+      operationId: delete-payment-method-definition
+      parameters:
+      - name: paymentMethodDefinitionName
+        in: path
+        description: ""
+        required: true
+        type: string
+      responses:
+        204:
+          description: ""
+          examples: {}
+      security:
+      - oauth2_application:
+        - paym:m
+  /payment-method-definitions/{paymentMethodDefinitionName}/payment-method:
+    post:
+      tags:
+      - payment-method-definitions
+      summary: Create payment method
+      description: Creates a payment method from a payment method definition.
+      operationId: create-payment-method
+      parameters:
+      - name: paymentMethodDefinitionName
+        in: path
+        description: ""
+        required: true
+        type: string
+      responses:
+        200:
+          description: ""
+          examples: {}
+      security:
+      - oauth2_application:
+        - paym:m
+    delete:
+      tags:
+      - payment-method-definitions
+      summary: Delete payment method
+      description: Deletes the payment method identified by {paymentMethodId}.
+      operationId: delete-payment-method
+      parameters:
+      - name: paymentMethodDefinitionName
+        in: path
+        description: ""
+        required: true
+        type: string
+      responses:
+        200:
+          description: ""
+          examples: {}
+      security:
+      - oauth2_application:
+        - paym:m
   /payment-methods:
     get:
       tags:
@@ -11291,6 +12299,254 @@ paths:
       security:
       - oauth2_application:
         - pymt:u
+  /payment-signup/merchant-accounts/{paymentMethodDefinition}:
+    get:
+      tags:
+      - payment-signup
+      summary: Show merchant account details
+      description: Returns the details of the account connected to the payment method
+        definition identified by {paymentMethodDefinitionId}.
+      operationId: merchant-account
+      produces:
+      - application/hal+json
+      parameters:
+      - name: paymentMethodDefinition
+        in: path
+        description: ""
+        required: true
+        type: string
+      responses:
+        200:
+          description: ""
+          examples:
+            application/hal+json: |-
+              {
+                "ready" : true,
+                "details" : {
+                  "accountId" : "4d99b841-0c8d-4bd5-970b-04a2910bb364"
+                },
+                "_links" : {
+                  "self" : {
+                    "href" : "https://yourshop.api.urn/payment-signup/merchant-accounts/credit-card"
+                  },
+                  "generate-referral-uri" : {
+                    "href" : "https://yourshop.api.urn/payment-signup/referrals/credit-card"
+                  },
+                  "disconnect" : {
+                    "href" : "https://yourshop.api.urn/payment-signup/merchant-accounts/credit-card"
+                  }
+                }
+              }
+          schema:
+            $ref: '#/definitions/payment-signup_merchant-accounts_paymentMethodDefinition-601839721'
+      security:
+      - oauth2_application:
+        - pymt:r
+    delete:
+      tags:
+      - payment-signup
+      summary: Disconnect merchant account
+      description: Deletes the connection between the merchant account and the payment
+        method definition identified by {paymentMethodDefinitionId}.
+      operationId: disconnect
+      parameters:
+      - name: paymentMethodDefinition
+        in: path
+        description: ""
+        required: true
+        type: string
+      responses:
+        204:
+          description: ""
+          examples: {}
+      security:
+      - oauth2_application:
+        - pymt:r
+  /payment-signup/referrals/{paymentMethodDefinition}:
+    post:
+      tags:
+      - payment-signup
+      summary: Initiate referral
+      description: Creates a connection between the merchant account and the payment
+        method definition identified by {paymentMethodDefinitionId}.
+      operationId: referrals
+      consumes:
+      - application/json
+      produces:
+      - application/hal+json
+      parameters:
+      - name: paymentMethodDefinition
+        in: path
+        description: ""
+        required: true
+        type: string
+      - in: body
+        name: ""
+        required: false
+        schema:
+          $ref: '#/definitions/payment-signup_referrals_paymentMethodDefinition-721663746'
+        x-examples:
+          application/json: '{ "referralReturnUri": "https://cornershop.beyondshop.cloud/cockpit"
+            }'
+      responses:
+        200:
+          description: ""
+          examples:
+            application/hal+json: |-
+              {
+                "referralUri" : "http://localhost/referral",
+                "_links" : {
+                  "self" : {
+                    "href" : "https://yourshop.api.urn/payment-signup/referrals/credit-card"
+                  },
+                  "referral" : {
+                    "href" : "http://localhost/referral"
+                  }
+                }
+              }
+          schema:
+            $ref: '#/definitions/payment-signup_referrals_paymentMethodDefinition-1608886931'
+      security:
+      - oauth2_application:
+        - pymt:r
+  /payments/{paymentId}/approve:
+    post:
+      tags:
+      - payments
+      summary: Approve payment
+      description: Approves the payment identified by {paymentId}.
+      operationId: payment-approve
+      produces:
+      - application/hal+json
+      parameters:
+      - name: paymentId
+        in: path
+        description: ""
+        required: true
+        type: string
+      responses:
+        200:
+          description: ""
+          examples:
+            application/hal+json: |-
+              {
+                "returnUri" : "https://api-shop.beyondshop.cloud/checkout/success"
+              }
+          schema:
+            $ref: '#/definitions/payments_paymentId_fail1598422999'
+      security:
+      - oauth2_application:
+        - paym:m
+  /payments/{paymentId}/cancel:
+    post:
+      tags:
+      - payments
+      summary: Cancel payment
+      description: Cancels the payment identified by {paymentId}.
+      operationId: payment-cancel
+      produces:
+      - application/hal+json
+      parameters:
+      - name: paymentId
+        in: path
+        description: ""
+        required: true
+        type: string
+      responses:
+        200:
+          description: ""
+          examples:
+            application/hal+json: |-
+              {
+                "returnUri" : "https://api-shop.beyondshop.cloud/checkout/cancel"
+              }
+          schema:
+            $ref: '#/definitions/payments_paymentId_fail1598422999'
+      security:
+      - oauth2_application:
+        - paym:m
+  /payments/{paymentId}/fail:
+    post:
+      tags:
+      - payments
+      summary: Fail payment
+      description: Fails the payment identified by {paymentId}.
+      operationId: payment-fail
+      consumes:
+      - application/json
+      produces:
+      - application/hal+json
+      parameters:
+      - name: paymentId
+        in: path
+        description: ""
+        required: true
+        type: string
+      - in: body
+        name: ""
+        required: false
+        schema:
+          $ref: '#/definitions/payments_paymentId_fail-217513814'
+        x-examples:
+          application/json: |-
+            {
+              "approvalFailureType": "API_FAILURE",
+              "recommendedUserAction": "RETRY",
+              "paymentErrorCode": "payment-app-specific-error-code",
+              "paymentErrorMessage": "An error message explaining the payment app specific error situation."
+            }
+      responses:
+        200:
+          description: ""
+          examples:
+            application/hal+json: |-
+              {
+                "returnUri" : "https://api-shop.beyondshop.cloud/checkout/cancel?errorType=API_FAILURE&recommendedUserAction=RETRY&paymentErrorCode=payment-app-specific-error-code&paymentErrorMessage=An%20error%20message%20explaining%20the%20payment%20app%20specific%20error%20situation."
+              }
+          schema:
+            $ref: '#/definitions/payments_paymentId_fail1598422999'
+      security:
+      - oauth2_application:
+        - paym:m
+  /payments/{paymentId}/status:
+    post:
+      tags:
+      - payments
+      summary: Set payment status
+      description: Sets the `paymentStatus` of the payment identified by {paymentId}.
+      operationId: set-payment-status
+      consumes:
+      - application/json
+      produces:
+      - application/hal+json
+      parameters:
+      - name: paymentId
+        in: path
+        description: ""
+        required: true
+        type: string
+      - in: body
+        name: ""
+        required: false
+        schema:
+          $ref: '#/definitions/payments_paymentId_status-1387501838'
+        x-examples:
+          application/json: '{"paymentStatus":"APPROVED","externalPaymentId":"transactionC487B9536D334C91A3805360B9655047","externalPaymentUri":"https://example.com/transactions/transactionC487B9536D334C91A3805360B9655047"}'
+      responses:
+        200:
+          description: ""
+          examples:
+            application/hal+json: |-
+              {
+                "paymentStatus" : "APPROVED",
+                "externalPaymentId" : "transactionC487B9536D334C91A3805360B9655047",
+                "externalPaymentUri" : "https://example.com/transactions/transactionC487B9536D334C91A3805360B9655047"
+              }
+          schema:
+            $ref: '#/definitions/payments_paymentId_status1401946287'
+      security:
+      - oauth2_application:
+        - paym:m
   /product-attribute-definitions:
     get:
       tags:
@@ -11470,37 +12726,37 @@ paths:
               {
                 "_embedded" : {
                   "categories" : [ {
-                    "_id" : "3caf81d8-489b-432f-92c9-d433ff3d95ac",
-                    "type" : "SMART",
-                    "name" : "Books",
-                    "label" : "books",
-                    "_indexedAt" : "2020-04-09T08:16:35",
-                    "_links" : {
-                      "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/categories/3caf81d8-489b-432f-92c9-d433ff3d95ac"
-                      },
-                      "category" : {
-                        "href" : "https://yourshop.api.urn/product-view/categories/3caf81d8-489b-432f-92c9-d433ff3d95ac"
-                      },
-                      "products" : {
-                        "href" : "https://yourshop.api.urn/product-view/categories/3caf81d8-489b-432f-92c9-d433ff3d95ac/products"
-                      }
-                    }
-                  }, {
-                    "_id" : "b6227a77-efd8-422f-9082-daea87588f69",
+                    "_id" : "0018b173-03ff-454d-ba72-c77dd5d0a28a",
                     "type" : "SMART",
                     "name" : "Power Bars",
                     "label" : "power-bar",
-                    "_indexedAt" : "2020-04-09T08:16:35",
+                    "_indexedAt" : "2020-04-21T16:42:08",
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/categories/b6227a77-efd8-422f-9082-daea87588f69"
+                        "href" : "https://yourshop.api.urn/product-view/categories/0018b173-03ff-454d-ba72-c77dd5d0a28a"
                       },
                       "category" : {
-                        "href" : "https://yourshop.api.urn/product-view/categories/b6227a77-efd8-422f-9082-daea87588f69"
+                        "href" : "https://yourshop.api.urn/product-view/categories/0018b173-03ff-454d-ba72-c77dd5d0a28a"
                       },
                       "products" : {
-                        "href" : "https://yourshop.api.urn/product-view/categories/b6227a77-efd8-422f-9082-daea87588f69/products"
+                        "href" : "https://yourshop.api.urn/product-view/categories/0018b173-03ff-454d-ba72-c77dd5d0a28a/products"
+                      }
+                    }
+                  }, {
+                    "_id" : "87a4ca6f-b163-4612-bf97-b3d2b000d38b",
+                    "type" : "SMART",
+                    "name" : "Books",
+                    "label" : "books",
+                    "_indexedAt" : "2020-04-21T16:42:08",
+                    "_links" : {
+                      "self" : {
+                        "href" : "https://yourshop.api.urn/product-view/categories/87a4ca6f-b163-4612-bf97-b3d2b000d38b"
+                      },
+                      "category" : {
+                        "href" : "https://yourshop.api.urn/product-view/categories/87a4ca6f-b163-4612-bf97-b3d2b000d38b"
+                      },
+                      "products" : {
+                        "href" : "https://yourshop.api.urn/product-view/categories/87a4ca6f-b163-4612-bf97-b3d2b000d38b/products"
                       }
                     }
                   } ]
@@ -11536,7 +12792,7 @@ paths:
               {
                 "_embedded" : {
                   "products" : [ {
-                    "_id" : "0c93e81e-e6bc-4c7e-9a88-e72f9891121b",
+                    "_id" : "0fea29d8-58a3-4397-95aa-1fa9391dab83",
                     "sku" : "EB001",
                     "name" : "High Protein Power Bar (Pack of 5)",
                     "manufacturer" : "Protein Bar Makers",
@@ -11557,15 +12813,15 @@ paths:
                     "productIdentifiers" : [ ],
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/0c93e81e-e6bc-4c7e-9a88-e72f9891121b"
+                        "href" : "https://yourshop.api.urn/product-view/products/0fea29d8-58a3-4397-95aa-1fa9391dab83"
                       },
                       "product" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/0c93e81e-e6bc-4c7e-9a88-e72f9891121b"
+                        "href" : "https://yourshop.api.urn/product-view/products/0fea29d8-58a3-4397-95aa-1fa9391dab83"
                       }
                     },
-                    "_indexedAt" : "2020-04-09T08:07:35"
+                    "_indexedAt" : "2020-04-21T16:31:40"
                   }, {
-                    "_id" : "62331b21-4182-46b3-aee6-43d87309eb77",
+                    "_id" : "d0400cad-59b6-4158-88ac-7d964c0759b1",
                     "sku" : "vino020",
                     "name" : "Rioja Castillo de Puerto (2013)",
                     "manufacturer" : "Grape Vineyard",
@@ -11613,19 +12869,19 @@ paths:
                     } ],
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/62331b21-4182-46b3-aee6-43d87309eb77"
+                        "href" : "https://yourshop.api.urn/product-view/products/d0400cad-59b6-4158-88ac-7d964c0759b1"
                       },
                       "product" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/62331b21-4182-46b3-aee6-43d87309eb77"
+                        "href" : "https://yourshop.api.urn/product-view/products/d0400cad-59b6-4158-88ac-7d964c0759b1"
                       },
                       "default-image-data" : {
                         "href" : "https://yourshop.api.urn/storage-api/images/rioja-01.jpg?hash=e9a1ce5c0c6abfebec8fb1f6faf77dca7e6e7777{&width,height,upscale}",
                         "templated" : true
                       }
                     },
-                    "_indexedAt" : "2020-04-09T08:07:34"
+                    "_indexedAt" : "2020-04-21T16:31:40"
                   }, {
-                    "_id" : "bad08efc-fb21-42f4-8ff1-83a3a862efff",
+                    "_id" : "d3360955-bd1c-45f3-812a-aa9f408ca5f0",
                     "sku" : "sh-001",
                     "name" : "Soft Walk Ultra - Nibok Men's",
                     "manufacturer" : "Nibok",
@@ -11656,17 +12912,17 @@ paths:
                     "productIdentifiers" : [ ],
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/bad08efc-fb21-42f4-8ff1-83a3a862efff"
+                        "href" : "https://yourshop.api.urn/product-view/products/d3360955-bd1c-45f3-812a-aa9f408ca5f0"
                       },
                       "product" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/bad08efc-fb21-42f4-8ff1-83a3a862efff"
+                        "href" : "https://yourshop.api.urn/product-view/products/d3360955-bd1c-45f3-812a-aa9f408ca5f0"
                       },
                       "default-image-data" : {
                         "href" : "https://yourshop.api.urn/storage-api/images/nibok-men.jpg?hash=e9a1ce5c0c6abfebec8fb1f6faf77dca7e699999{&width,height,upscale}",
                         "templated" : true
                       }
                     },
-                    "_indexedAt" : "2020-04-09T08:07:35"
+                    "_indexedAt" : "2020-04-21T16:31:41"
                   } ]
                 },
                 "_links" : {
@@ -11682,7 +12938,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-tags-81119657'
+            $ref: '#/definitions/product-view_products-81119657'
   /product-view/categories/{categoryId}:
     get:
       tags:
@@ -11706,25 +12962,25 @@ paths:
           examples:
             application/hal+json: |-
               {
-                "_id" : "b7d1856d-6371-4bef-aa5f-bad6f11f3e54",
+                "_id" : "96364040-c52c-4798-9e32-496a92ffbbd4",
                 "type" : "SMART",
                 "name" : "Power Bars",
                 "label" : "power-bar",
-                "_indexedAt" : "2020-04-09T08:16:12",
+                "_indexedAt" : "2020-04-21T16:41:38",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/product-view/categories/b7d1856d-6371-4bef-aa5f-bad6f11f3e54"
+                    "href" : "https://yourshop.api.urn/product-view/categories/96364040-c52c-4798-9e32-496a92ffbbd4"
                   },
                   "category" : {
-                    "href" : "https://yourshop.api.urn/product-view/categories/b7d1856d-6371-4bef-aa5f-bad6f11f3e54"
+                    "href" : "https://yourshop.api.urn/product-view/categories/96364040-c52c-4798-9e32-496a92ffbbd4"
                   },
                   "products" : {
-                    "href" : "https://yourshop.api.urn/product-view/categories/b7d1856d-6371-4bef-aa5f-bad6f11f3e54/products"
+                    "href" : "https://yourshop.api.urn/product-view/categories/96364040-c52c-4798-9e32-496a92ffbbd4/products"
                   }
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_categories_categoryId-720035829'
+            $ref: '#/definitions/product-view_categories_search_find-by-label-720035829'
   /product-view/products/{productId}:
     get:
       tags:
@@ -11746,7 +13002,7 @@ paths:
           examples:
             application/hal+json: |-
               {
-                "_id" : "d920e5f8-e907-4717-972d-253079badad6",
+                "_id" : "1bc53fea-4c76-4542-9b27-160065714c88",
                 "name" : "Rioja Castillo de Puerto (2013)",
                 "manufacturer" : "Grape Vineyard",
                 "salesPrice" : {
@@ -11786,26 +13042,26 @@ paths:
                   "height" : 2000
                 },
                 "variations" : [ {
-                  "_id" : "5ebfa7a7-82bb-41d9-8974-ee8802f7da00",
-                  "variationAttributeValues" : [ {
-                    "displayName" : "Volume",
-                    "value" : "0.2l"
-                  } ],
-                  "_indexedAt" : "2020-04-09T08:10:31"
-                }, {
-                  "_id" : "82f31ee7-d64a-42f4-8f63-a38f3e8d7f2b",
+                  "_id" : "964b4cc3-e5ab-4106-a740-12e53aefe73b",
                   "variationAttributeValues" : [ {
                     "displayName" : "Volume",
                     "value" : "0.7l"
                   } ],
-                  "_indexedAt" : "2020-04-09T08:10:31"
+                  "_indexedAt" : "2020-04-21T16:35:19"
                 }, {
-                  "_id" : "ae347c5f-adaf-4fa4-b2ba-f3b9b40243a0",
+                  "_id" : "990ac6e8-dca0-494d-8ef9-ff00404ed6ba",
                   "variationAttributeValues" : [ {
                     "displayName" : "Volume",
                     "value" : "1.5l"
                   } ],
-                  "_indexedAt" : "2020-04-09T08:10:31"
+                  "_indexedAt" : "2020-04-21T16:35:19"
+                }, {
+                  "_id" : "d99960f0-043d-4771-85a1-1e373dde6f7d",
+                  "variationAttributeValues" : [ {
+                    "displayName" : "Volume",
+                    "value" : "0.2l"
+                  } ],
+                  "_indexedAt" : "2020-04-21T16:35:19"
                 } ],
                 "variationAttributes" : [ {
                   "displayName" : "Volume",
@@ -11854,29 +13110,29 @@ paths:
                 },
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/product-view/products/d920e5f8-e907-4717-972d-253079badad6"
+                    "href" : "https://yourshop.api.urn/product-view/products/1bc53fea-4c76-4542-9b27-160065714c88"
                   },
                   "product" : {
-                    "href" : "https://yourshop.api.urn/product-view/products/d920e5f8-e907-4717-972d-253079badad6"
+                    "href" : "https://yourshop.api.urn/product-view/products/1bc53fea-4c76-4542-9b27-160065714c88"
                   },
                   "media" : {
-                    "href" : "https://yourshop.api.urn/product-view/products/d920e5f8-e907-4717-972d-253079badad6/media"
+                    "href" : "https://yourshop.api.urn/product-view/products/1bc53fea-4c76-4542-9b27-160065714c88/media"
                   },
                   "images" : {
-                    "href" : "https://yourshop.api.urn/product-view/products/d920e5f8-e907-4717-972d-253079badad6/images"
+                    "href" : "https://yourshop.api.urn/product-view/products/1bc53fea-4c76-4542-9b27-160065714c88/images"
                   },
                   "additional-image-data" : {
                     "href" : "https://yourshop.api.urn/testUri"
                   },
                   "videos" : {
-                    "href" : "https://yourshop.api.urn/product-view/products/d920e5f8-e907-4717-972d-253079badad6/videos"
+                    "href" : "https://yourshop.api.urn/product-view/products/1bc53fea-4c76-4542-9b27-160065714c88/videos"
                   },
                   "default-image-data" : {
                     "href" : "https://yourshop.api.urn/storage-api/images/rioja-01.jpg?hash=e9a1ce5c0c6abfebec8fb1f6faf77dca7e6e7777{&width,height,upscale}",
                     "templated" : true
                   }
                 },
-                "_indexedAt" : "2020-04-09T08:10:30"
+                "_indexedAt" : "2020-04-21T16:35:19"
               }
           schema:
             $ref: '#/definitions/product-view_products_productId1010467364'
@@ -11903,25 +13159,25 @@ paths:
           examples:
             application/hal+json: |-
               {
-                "_id" : "4d9fe935-0e56-4d7b-a86e-c887e6e5ec51",
+                "_id" : "d2e07b11-0de2-43c9-89ef-d408a16cd7fd",
                 "type" : "SMART",
                 "name" : "Power Bars",
                 "label" : "power-bar",
-                "_indexedAt" : "2020-04-09T08:17:16",
+                "_indexedAt" : "2020-04-21T16:42:38",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/product-view/categories/4d9fe935-0e56-4d7b-a86e-c887e6e5ec51"
+                    "href" : "https://yourshop.api.urn/product-view/categories/d2e07b11-0de2-43c9-89ef-d408a16cd7fd"
                   },
                   "category" : {
-                    "href" : "https://yourshop.api.urn/product-view/categories/4d9fe935-0e56-4d7b-a86e-c887e6e5ec51"
+                    "href" : "https://yourshop.api.urn/product-view/categories/d2e07b11-0de2-43c9-89ef-d408a16cd7fd"
                   },
                   "products" : {
-                    "href" : "https://yourshop.api.urn/product-view/categories/4d9fe935-0e56-4d7b-a86e-c887e6e5ec51/products"
+                    "href" : "https://yourshop.api.urn/product-view/categories/d2e07b11-0de2-43c9-89ef-d408a16cd7fd/products"
                   }
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_categories_categoryId-720035829'
+            $ref: '#/definitions/product-view_categories_search_find-by-label-720035829'
   /product-view/categories/search/find-by-product:
     get:
       tags:
@@ -11947,37 +13203,37 @@ paths:
               {
                 "_embedded" : {
                   "categories" : [ {
-                    "_id" : "be0ff672-ee47-4864-8478-c7e13ba67336",
+                    "_id" : "1110b3a1-188a-4fdf-940e-a5fa25936d8a",
                     "type" : "SMART",
                     "name" : "category that loves everyone",
                     "label" : null,
-                    "_indexedAt" : "2020-04-09T08:08:14",
+                    "_indexedAt" : "2020-04-21T16:32:52",
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/categories/be0ff672-ee47-4864-8478-c7e13ba67336"
+                        "href" : "https://yourshop.api.urn/product-view/categories/1110b3a1-188a-4fdf-940e-a5fa25936d8a"
                       },
                       "category" : {
-                        "href" : "https://yourshop.api.urn/product-view/categories/be0ff672-ee47-4864-8478-c7e13ba67336"
+                        "href" : "https://yourshop.api.urn/product-view/categories/1110b3a1-188a-4fdf-940e-a5fa25936d8a"
                       },
                       "products" : {
-                        "href" : "https://yourshop.api.urn/product-view/categories/be0ff672-ee47-4864-8478-c7e13ba67336/products"
+                        "href" : "https://yourshop.api.urn/product-view/categories/1110b3a1-188a-4fdf-940e-a5fa25936d8a/products"
                       }
                     }
                   }, {
-                    "_id" : "f3bdcea7-6370-430e-8339-0acd4d3e62eb",
+                    "_id" : "873929f7-f2d0-48c1-b3a1-88dfc8bda199",
                     "type" : "MANUAL",
                     "name" : "category that matches product 1 in a complicated way",
                     "label" : null,
-                    "_indexedAt" : "2020-04-09T08:08:14",
+                    "_indexedAt" : "2020-04-21T16:32:52",
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/categories/f3bdcea7-6370-430e-8339-0acd4d3e62eb"
+                        "href" : "https://yourshop.api.urn/product-view/categories/873929f7-f2d0-48c1-b3a1-88dfc8bda199"
                       },
                       "category" : {
-                        "href" : "https://yourshop.api.urn/product-view/categories/f3bdcea7-6370-430e-8339-0acd4d3e62eb"
+                        "href" : "https://yourshop.api.urn/product-view/categories/873929f7-f2d0-48c1-b3a1-88dfc8bda199"
                       },
                       "products" : {
-                        "href" : "https://yourshop.api.urn/product-view/categories/f3bdcea7-6370-430e-8339-0acd4d3e62eb/products"
+                        "href" : "https://yourshop.api.urn/product-view/categories/873929f7-f2d0-48c1-b3a1-88dfc8bda199/products"
                       }
                     }
                   } ]
@@ -12030,20 +13286,20 @@ paths:
               {
                 "_embedded" : {
                   "categories" : [ {
-                    "_id" : "00467424-6073-484f-8eba-52fd642d3df8",
+                    "_id" : "1269d013-6103-4abf-97b7-835a77dea7c4",
                     "type" : "SMART",
                     "name" : "Books",
                     "label" : "books",
-                    "_indexedAt" : "2020-04-09T08:16:56",
+                    "_indexedAt" : "2020-04-21T16:42:27",
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/categories/00467424-6073-484f-8eba-52fd642d3df8"
+                        "href" : "https://yourshop.api.urn/product-view/categories/1269d013-6103-4abf-97b7-835a77dea7c4"
                       },
                       "category" : {
-                        "href" : "https://yourshop.api.urn/product-view/categories/00467424-6073-484f-8eba-52fd642d3df8"
+                        "href" : "https://yourshop.api.urn/product-view/categories/1269d013-6103-4abf-97b7-835a77dea7c4"
                       },
                       "products" : {
-                        "href" : "https://yourshop.api.urn/product-view/categories/00467424-6073-484f-8eba-52fd642d3df8/products"
+                        "href" : "https://yourshop.api.urn/product-view/categories/1269d013-6103-4abf-97b7-835a77dea7c4/products"
                       }
                     }
                   } ]
@@ -12114,9 +13370,9 @@ paths:
                         "href" : "https://yourshop.api.urn/product-view/products/00000000-0000-0000-0000-000000000001"
                       }
                     },
-                    "_indexedAt" : "2020-04-09T08:10:41"
+                    "_indexedAt" : "2020-04-21T16:35:37"
                   }, {
-                    "_id" : "467f3e00-31c1-41fa-a8a8-12acce7d3517",
+                    "_id" : "6d23f542-eb38-469b-9250-21ddfd127476",
                     "name" : "Rioja Castillo de Puerto (2013)",
                     "manufacturer" : "Grape Vineyard",
                     "salesPrice" : {
@@ -12175,22 +13431,22 @@ paths:
                     } ],
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/467f3e00-31c1-41fa-a8a8-12acce7d3517"
+                        "href" : "https://yourshop.api.urn/product-view/products/6d23f542-eb38-469b-9250-21ddfd127476"
                       },
                       "product" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/467f3e00-31c1-41fa-a8a8-12acce7d3517"
+                        "href" : "https://yourshop.api.urn/product-view/products/6d23f542-eb38-469b-9250-21ddfd127476"
                       },
                       "default-image-data" : {
                         "href" : "https://yourshop.api.urn/storage-api/images/rioja-01.jpg?hash=e9a1ce5c0c6abfebec8fb1f6faf77dca7e6e7777{&width,height,upscale}",
                         "templated" : true
                       }
                     },
-                    "_indexedAt" : "2020-04-09T08:10:41"
+                    "_indexedAt" : "2020-04-21T16:35:37"
                   } ]
                 },
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/product-view/categories/f4b9d9e7-19c0-42f8-aa96-15df5fa327ae/products?page=0&size=40&sort=createdAt,desc"
+                    "href" : "https://yourshop.api.urn/product-view/categories/c7c06363-7414-43c0-9dad-25543f01d206/products?page=0&size=40&sort=createdAt,desc"
                   }
                 },
                 "page" : {
@@ -12287,7 +13543,7 @@ paths:
               {
                 "_embedded" : {
                   "products" : [ {
-                    "_id" : "71433102-a29f-4fd5-beb0-7ab8803bbb33",
+                    "_id" : "49a1bef2-f219-4b6c-bbc5-cd986434fb27",
                     "sku" : "vino020",
                     "name" : "Rioja Castillo de Puerto (2013)",
                     "manufacturer" : "Grape Vineyard",
@@ -12335,17 +13591,17 @@ paths:
                     } ],
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/71433102-a29f-4fd5-beb0-7ab8803bbb33"
+                        "href" : "https://yourshop.api.urn/product-view/products/49a1bef2-f219-4b6c-bbc5-cd986434fb27"
                       },
                       "product" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/71433102-a29f-4fd5-beb0-7ab8803bbb33"
+                        "href" : "https://yourshop.api.urn/product-view/products/49a1bef2-f219-4b6c-bbc5-cd986434fb27"
                       },
                       "default-image-data" : {
                         "href" : "https://yourshop.api.urn/storage-api/images/rioja-01.jpg?hash=e9a1ce5c0c6abfebec8fb1f6faf77dca7e6e7777{&width,height,upscale}",
                         "templated" : true
                       }
                     },
-                    "_indexedAt" : "2020-04-09T08:09:19"
+                    "_indexedAt" : "2020-04-21T16:34:04"
                   } ]
                 },
                 "_links" : {
@@ -12361,7 +13617,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-tags-81119657'
+            $ref: '#/definitions/product-view_products-81119657'
   /product-view/products/search/find-by-search-term:
     get:
       tags:
@@ -12387,7 +13643,7 @@ paths:
               {
                 "_embedded" : {
                   "products" : [ {
-                    "_id" : "60d4d574-a972-4e65-b12d-4db696a4610a",
+                    "_id" : "fc3dfbb0-b91f-44e6-9ad8-11e1cbcc3654",
                     "sku" : "vino020",
                     "name" : "Rioja Castillo de Puerto (2013)",
                     "manufacturer" : "Grape Vineyard",
@@ -12435,19 +13691,19 @@ paths:
                     } ],
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/60d4d574-a972-4e65-b12d-4db696a4610a"
+                        "href" : "https://yourshop.api.urn/product-view/products/fc3dfbb0-b91f-44e6-9ad8-11e1cbcc3654"
                       },
                       "product" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/60d4d574-a972-4e65-b12d-4db696a4610a"
+                        "href" : "https://yourshop.api.urn/product-view/products/fc3dfbb0-b91f-44e6-9ad8-11e1cbcc3654"
                       },
                       "default-image-data" : {
                         "href" : "https://yourshop.api.urn/storage-api/images/rioja-01.jpg?hash=e9a1ce5c0c6abfebec8fb1f6faf77dca7e6e7777{&width,height,upscale}",
                         "templated" : true
                       }
                     },
-                    "_indexedAt" : "2020-04-09T08:09:12"
+                    "_indexedAt" : "2020-04-21T16:33:56"
                   }, {
-                    "_id" : "d926e377-5bff-4137-a406-19e5ad5706a9",
+                    "_id" : "ddccae09-07bf-4ebf-b17b-f1f4f8d8d6a6",
                     "sku" : "sh-001",
                     "name" : "Soft Walk Ultra - Nibok Men's",
                     "manufacturer" : "Nibok",
@@ -12478,17 +13734,17 @@ paths:
                     "productIdentifiers" : [ ],
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/d926e377-5bff-4137-a406-19e5ad5706a9"
+                        "href" : "https://yourshop.api.urn/product-view/products/ddccae09-07bf-4ebf-b17b-f1f4f8d8d6a6"
                       },
                       "product" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/d926e377-5bff-4137-a406-19e5ad5706a9"
+                        "href" : "https://yourshop.api.urn/product-view/products/ddccae09-07bf-4ebf-b17b-f1f4f8d8d6a6"
                       },
                       "default-image-data" : {
                         "href" : "https://yourshop.api.urn/storage-api/images/nibok-men.jpg?hash=e9a1ce5c0c6abfebec8fb1f6faf77dca7e699999{&width,height,upscale}",
                         "templated" : true
                       }
                     },
-                    "_indexedAt" : "2020-04-09T08:09:13"
+                    "_indexedAt" : "2020-04-21T16:33:57"
                   } ]
                 },
                 "_links" : {
@@ -12504,7 +13760,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-tags-81119657'
+            $ref: '#/definitions/product-view_products-81119657'
   /product-view/products/search/find-by-tags:
     get:
       tags:
@@ -12530,7 +13786,7 @@ paths:
               {
                 "_embedded" : {
                   "products" : [ {
-                    "_id" : "fb86e3b7-5996-4ddf-a559-7d94259579dc",
+                    "_id" : "b39a2df1-85ea-4cb8-8199-4065216a7e28",
                     "sku" : "vino020",
                     "name" : "Rioja Castillo de Puerto (2013)",
                     "manufacturer" : "Grape Vineyard",
@@ -12578,17 +13834,17 @@ paths:
                     } ],
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/fb86e3b7-5996-4ddf-a559-7d94259579dc"
+                        "href" : "https://yourshop.api.urn/product-view/products/b39a2df1-85ea-4cb8-8199-4065216a7e28"
                       },
                       "product" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/fb86e3b7-5996-4ddf-a559-7d94259579dc"
+                        "href" : "https://yourshop.api.urn/product-view/products/b39a2df1-85ea-4cb8-8199-4065216a7e28"
                       },
                       "default-image-data" : {
                         "href" : "https://yourshop.api.urn/storage-api/images/rioja-01.jpg?hash=e9a1ce5c0c6abfebec8fb1f6faf77dca7e6e7777{&width,height,upscale}",
                         "templated" : true
                       }
                     },
-                    "_indexedAt" : "2020-04-09T08:07:53"
+                    "_indexedAt" : "2020-04-21T16:32:20"
                   } ]
                 },
                 "_links" : {
@@ -12604,7 +13860,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-tags-81119657'
+            $ref: '#/definitions/product-view_products-81119657'
   /product-view/products/{productId}/cross-sells:
     get:
       tags:
@@ -12629,18 +13885,18 @@ paths:
               {
                 "_embedded" : {
                   "cross-sells" : [ {
-                    "_id" : "b0bbf6cb-19fd-4c65-9ff1-c07310f21344",
+                    "_id" : "6982bba3-fda3-4161-b702-d79f0a4ed489",
                     "name" : "Sale white wine cross-selling",
                     "_links" : {
                       "products" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/2a6ea131-4af0-4dd0-b149-e534b279baa1/cross-sells/b0bbf6cb-19fd-4c65-9ff1-c07310f21344"
+                        "href" : "https://yourshop.api.urn/product-view/products/c4908209-5d2b-43b3-8cf5-0d48bdc51c26/cross-sells/6982bba3-fda3-4161-b702-d79f0a4ed489"
                       }
                     }
                   } ]
                 },
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/product-view/products/2a6ea131-4af0-4dd0-b149-e534b279baa1/cross-sells"
+                    "href" : "https://yourshop.api.urn/product-view/products/c4908209-5d2b-43b3-8cf5-0d48bdc51c26/cross-sells"
                   }
                 }
               }
@@ -12669,38 +13925,38 @@ paths:
               {
                 "_embedded" : {
                   "images" : [ {
-                    "_id" : "ded28276-7c52-427c-9f56-d2626e2512b8",
+                    "_id" : "528287a2-ebbf-4e14-9c8c-83a481cefc2e",
                     "dataUri" : "https://yourshop.api.urn/storage-api/images/rioja-02.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225998{&width,height,upscale}",
                     "width" : 500,
                     "height" : 200,
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/3146955d-c6bb-4e47-b5c0-afb238bb5ef7/images/ded28276-7c52-427c-9f56-d2626e2512b8"
+                        "href" : "https://yourshop.api.urn/product-view/products/fac58bdf-169d-4c5b-9a62-3ae04e6d9c65/images/528287a2-ebbf-4e14-9c8c-83a481cefc2e"
                       }
                     },
-                    "_indexedAt" : "2020-04-09T08:19:27"
+                    "_indexedAt" : "2020-04-21T16:44:52"
                   }, {
-                    "_id" : "4d3f9edd-19de-4c37-97fa-29c374b25073",
+                    "_id" : "24bf23b0-fcef-40d0-ab05-bce3e8ebc8d9",
                     "dataUri" : "https://yourshop.api.urn/storage-api/images/rioja-03.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225999{&width,height,upscale}",
                     "width" : 500,
                     "height" : 200,
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/3146955d-c6bb-4e47-b5c0-afb238bb5ef7/images/4d3f9edd-19de-4c37-97fa-29c374b25073"
+                        "href" : "https://yourshop.api.urn/product-view/products/fac58bdf-169d-4c5b-9a62-3ae04e6d9c65/images/24bf23b0-fcef-40d0-ab05-bce3e8ebc8d9"
                       }
                     },
-                    "_indexedAt" : "2020-04-09T08:19:27"
+                    "_indexedAt" : "2020-04-21T16:44:52"
                   }, {
-                    "_id" : "f33357db-55e0-44a6-8b5b-5049c2d0581e",
+                    "_id" : "274bccfa-f5fc-4c0e-9216-8922ca35a256",
                     "dataUri" : "https://yourshop.api.urn/storage-api/images/rioja-04.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281226000{&width,height,upscale}",
                     "width" : 500,
                     "height" : 200,
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/3146955d-c6bb-4e47-b5c0-afb238bb5ef7/images/f33357db-55e0-44a6-8b5b-5049c2d0581e"
+                        "href" : "https://yourshop.api.urn/product-view/products/fac58bdf-169d-4c5b-9a62-3ae04e6d9c65/images/274bccfa-f5fc-4c0e-9216-8922ca35a256"
                       }
                     },
-                    "_indexedAt" : "2020-04-09T08:19:27"
+                    "_indexedAt" : "2020-04-21T16:44:52"
                   } ]
                 }
               }
@@ -12730,76 +13986,76 @@ paths:
             application/hal+json: |-
               {
                 "images" : [ {
-                  "_id" : "471ed041-4223-467b-a26c-8697ca8522da",
+                  "_id" : "86d6a042-0bbb-4270-8a20-d4309e9e8f01",
                   "dataUri" : "https://yourshop.api.urn/storage-api/images/rioja-02.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225998{&width,height,upscale}",
                   "width" : 500,
                   "height" : 200,
                   "_links" : {
                     "self" : {
-                      "href" : "https://yourshop.api.urn/product-view/products/18d5c97a-bdd9-4ae3-ba09-f0406e2577c5/images/471ed041-4223-467b-a26c-8697ca8522da"
+                      "href" : "https://yourshop.api.urn/product-view/products/c1ab7381-d6c2-4811-be02-85205b2bac7d/images/86d6a042-0bbb-4270-8a20-d4309e9e8f01"
                     }
                   },
-                  "_indexedAt" : "2020-04-09T08:13:46"
+                  "_indexedAt" : "2020-04-21T16:39:08"
                 }, {
-                  "_id" : "0652e16a-f5c3-4109-b9ab-7b5493c4c20a",
+                  "_id" : "62d75946-f5ba-4987-ac17-b425c2248e30",
                   "dataUri" : "https://yourshop.api.urn/storage-api/images/rioja-03.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225999{&width,height,upscale}",
                   "width" : 500,
                   "height" : 200,
                   "_links" : {
                     "self" : {
-                      "href" : "https://yourshop.api.urn/product-view/products/18d5c97a-bdd9-4ae3-ba09-f0406e2577c5/images/0652e16a-f5c3-4109-b9ab-7b5493c4c20a"
+                      "href" : "https://yourshop.api.urn/product-view/products/c1ab7381-d6c2-4811-be02-85205b2bac7d/images/62d75946-f5ba-4987-ac17-b425c2248e30"
                     }
                   },
-                  "_indexedAt" : "2020-04-09T08:13:47"
+                  "_indexedAt" : "2020-04-21T16:39:08"
                 }, {
-                  "_id" : "046b9f25-4975-4f1e-8690-d9cae05542cd",
+                  "_id" : "21ff4a99-46d6-4512-afb4-05b993d57705",
                   "dataUri" : "https://yourshop.api.urn/storage-api/images/rioja-04.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281226000{&width,height,upscale}",
                   "width" : 500,
                   "height" : 200,
                   "_links" : {
                     "self" : {
-                      "href" : "https://yourshop.api.urn/product-view/products/18d5c97a-bdd9-4ae3-ba09-f0406e2577c5/images/046b9f25-4975-4f1e-8690-d9cae05542cd"
+                      "href" : "https://yourshop.api.urn/product-view/products/c1ab7381-d6c2-4811-be02-85205b2bac7d/images/21ff4a99-46d6-4512-afb4-05b993d57705"
                     }
                   },
-                  "_indexedAt" : "2020-04-09T08:13:47"
+                  "_indexedAt" : "2020-04-21T16:39:08"
                 } ],
                 "videos" : [ {
                   "source" : "ietvKQuPR-A",
                   "type" : "YOUTUBE",
                   "_links" : {
                     "self" : {
-                      "href" : "https://yourshop.api.urn/product-view/products/18d5c97a-bdd9-4ae3-ba09-f0406e2577c5/videos/1eabfc72-7aba-40f8-a125-100f5dec0c08"
+                      "href" : "https://yourshop.api.urn/product-view/products/c1ab7381-d6c2-4811-be02-85205b2bac7d/videos/59300a4e-469a-4790-a630-f8df1cd78f65"
                     }
                   },
-                  "_id" : "1eabfc72-7aba-40f8-a125-100f5dec0c08",
-                  "_indexedAt" : "2020-04-09T08:13:46"
+                  "_id" : "59300a4e-469a-4790-a630-f8df1cd78f65",
+                  "_indexedAt" : "2020-04-21T16:39:08"
                 }, {
                   "source" : "X9yMzNffUiE",
                   "type" : "YOUTUBE",
                   "_links" : {
                     "self" : {
-                      "href" : "https://yourshop.api.urn/product-view/products/18d5c97a-bdd9-4ae3-ba09-f0406e2577c5/videos/8656697a-50d4-4e21-8f66-3d423cdd2493"
+                      "href" : "https://yourshop.api.urn/product-view/products/c1ab7381-d6c2-4811-be02-85205b2bac7d/videos/9d188005-9b36-4ff4-9599-c23b3f83744c"
                     }
                   },
-                  "_id" : "8656697a-50d4-4e21-8f66-3d423cdd2493",
-                  "_indexedAt" : "2020-04-09T08:13:46"
+                  "_id" : "9d188005-9b36-4ff4-9599-c23b3f83744c",
+                  "_indexedAt" : "2020-04-21T16:39:08"
                 }, {
                   "source" : "frU0NZfAl9M",
                   "type" : "YOUTUBE",
                   "_links" : {
                     "self" : {
-                      "href" : "https://yourshop.api.urn/product-view/products/18d5c97a-bdd9-4ae3-ba09-f0406e2577c5/videos/9863ecac-914a-4b4c-bb86-d1ff481ca84b"
+                      "href" : "https://yourshop.api.urn/product-view/products/c1ab7381-d6c2-4811-be02-85205b2bac7d/videos/c8a48d18-d038-4057-afb9-ad1a6b59656b"
                     }
                   },
-                  "_id" : "9863ecac-914a-4b4c-bb86-d1ff481ca84b",
-                  "_indexedAt" : "2020-04-09T08:13:46"
+                  "_id" : "c8a48d18-d038-4057-afb9-ad1a6b59656b",
+                  "_indexedAt" : "2020-04-21T16:39:08"
                 } ],
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/product-view/products/18d5c97a-bdd9-4ae3-ba09-f0406e2577c5/media"
+                    "href" : "https://yourshop.api.urn/product-view/products/c1ab7381-d6c2-4811-be02-85205b2bac7d/media"
                   },
                   "product" : {
-                    "href" : "https://yourshop.api.urn/product-view/products/18d5c97a-bdd9-4ae3-ba09-f0406e2577c5"
+                    "href" : "https://yourshop.api.urn/product-view/products/c1ab7381-d6c2-4811-be02-85205b2bac7d"
                   }
                 }
               }
@@ -12828,35 +14084,35 @@ paths:
               {
                 "_embedded" : {
                   "videos" : [ {
+                    "source" : "ietvKQuPR-A",
+                    "type" : "YOUTUBE",
+                    "_links" : {
+                      "self" : {
+                        "href" : "https://yourshop.api.urn/product-view/products/122e8a48-423e-4b37-80e4-352afe675387/videos/202b9dc0-f8aa-48dd-9373-00caf0f4553f"
+                      }
+                    },
+                    "_id" : "202b9dc0-f8aa-48dd-9373-00caf0f4553f",
+                    "_indexedAt" : "2020-04-21T16:47:50"
+                  }, {
                     "source" : "frU0NZfAl9M",
                     "type" : "YOUTUBE",
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/526899f7-3101-4a85-949f-cf6e5f3f7dac/videos/40c3eef9-5cea-416e-889f-971401073f58"
+                        "href" : "https://yourshop.api.urn/product-view/products/122e8a48-423e-4b37-80e4-352afe675387/videos/33654904-a97c-4324-baf3-7bc0fe991486"
                       }
                     },
-                    "_id" : "40c3eef9-5cea-416e-889f-971401073f58",
-                    "_indexedAt" : "2020-04-09T08:23:11"
+                    "_id" : "33654904-a97c-4324-baf3-7bc0fe991486",
+                    "_indexedAt" : "2020-04-21T16:47:50"
                   }, {
                     "source" : "X9yMzNffUiE",
                     "type" : "YOUTUBE",
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/526899f7-3101-4a85-949f-cf6e5f3f7dac/videos/7c71344d-4769-47c2-8d14-8d3168761c00"
+                        "href" : "https://yourshop.api.urn/product-view/products/122e8a48-423e-4b37-80e4-352afe675387/videos/652e2bed-f9d9-4bc2-8650-e730553c7232"
                       }
                     },
-                    "_id" : "7c71344d-4769-47c2-8d14-8d3168761c00",
-                    "_indexedAt" : "2020-04-09T08:23:11"
-                  }, {
-                    "source" : "ietvKQuPR-A",
-                    "type" : "YOUTUBE",
-                    "_links" : {
-                      "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/526899f7-3101-4a85-949f-cf6e5f3f7dac/videos/f766f69d-0f85-4768-90da-2cd47f252c45"
-                      }
-                    },
-                    "_id" : "f766f69d-0f85-4768-90da-2cd47f252c45",
-                    "_indexedAt" : "2020-04-09T08:23:12"
+                    "_id" : "652e2bed-f9d9-4bc2-8650-e730553c7232",
+                    "_indexedAt" : "2020-04-21T16:47:50"
                   } ]
                 }
               }
@@ -12890,7 +14146,7 @@ paths:
               {
                 "_embedded" : {
                   "products" : [ {
-                    "_id" : "7beac32d-7ff8-4c51-9b50-509fef17f4c3",
+                    "_id" : "16706bac-bee4-405d-bda6-6f530f171944",
                     "sku" : "vino020",
                     "name" : "Rioja Castillo de Puerto (2013)",
                     "manufacturer" : "Grape Vineyard",
@@ -12938,25 +14194,25 @@ paths:
                     } ],
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/7beac32d-7ff8-4c51-9b50-509fef17f4c3"
+                        "href" : "https://yourshop.api.urn/product-view/products/16706bac-bee4-405d-bda6-6f530f171944"
                       },
                       "product" : {
-                        "href" : "https://yourshop.api.urn/product-view/products/7beac32d-7ff8-4c51-9b50-509fef17f4c3"
+                        "href" : "https://yourshop.api.urn/product-view/products/16706bac-bee4-405d-bda6-6f530f171944"
                       },
                       "default-image-data" : {
                         "href" : "https://yourshop.api.urn/storage-api/images/rioja-01.jpg?hash=e9a1ce5c0c6abfebec8fb1f6faf77dca7e6e7777{&width,height,upscale}",
                         "templated" : true
                       }
                     },
-                    "_indexedAt" : "2020-04-09T08:12:06"
+                    "_indexedAt" : "2020-04-21T16:37:28"
                   } ]
                 },
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/product-view/products/bb2d10ed-cf27-4629-ab46-9d381fd5323a/cross-sells/82e2354f-4a07-4ea3-a074-812483b13561?page=0&size=40"
+                    "href" : "https://yourshop.api.urn/product-view/products/c7fd4b9f-6130-430b-b341-624088bfb919/cross-sells/f9ab4b3a-0aa0-497c-ad1f-7a28084f6fff?page=0&size=40"
                   },
                   "cross-sells" : {
-                    "href" : "https://yourshop.api.urn/product-view/products/bb2d10ed-cf27-4629-ab46-9d381fd5323a/cross-sells"
+                    "href" : "https://yourshop.api.urn/product-view/products/c7fd4b9f-6130-430b-b341-624088bfb919/cross-sells"
                   }
                 },
                 "page" : {
@@ -12967,7 +14223,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-tags-81119657'
+            $ref: '#/definitions/product-view_products-81119657'
   /product-view/products/{productId}/images/{imageId}:
     get:
       tags:
@@ -12995,19 +14251,19 @@ paths:
           examples:
             application/hal+json: |-
               {
-                "_id" : "85235498-1d90-40e4-b6a3-785e10a66d53",
+                "_id" : "a13981eb-932e-4287-a319-94723da38c40",
                 "dataUri" : "https://yourshop.api.urn/random.img?hash=213213213213",
                 "width" : 500,
                 "height" : 200,
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/product-view/products/81818887-1273-4a7d-93be-5a9f23ad6a44/images/85235498-1d90-40e4-b6a3-785e10a66d53"
+                    "href" : "https://yourshop.api.urn/product-view/products/a532bb98-7010-40ff-8670-af8d058e0914/images/a13981eb-932e-4287-a319-94723da38c40"
                   },
                   "image" : {
-                    "href" : "https://yourshop.api.urn/product-view/products/81818887-1273-4a7d-93be-5a9f23ad6a44/images/85235498-1d90-40e4-b6a3-785e10a66d53"
+                    "href" : "https://yourshop.api.urn/product-view/products/a532bb98-7010-40ff-8670-af8d058e0914/images/a13981eb-932e-4287-a319-94723da38c40"
                   }
                 },
-                "_indexedAt" : "2020-04-09T08:19:22"
+                "_indexedAt" : "2020-04-21T16:44:46"
               }
           schema:
             $ref: '#/definitions/product-view_products_productId_images_imageId930052740'
@@ -13042,14 +14298,14 @@ paths:
                 "type" : "YOUTUBE",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/product-view/products/0d7cc811-b5ac-4040-ad56-058244a1f122/videos/14c42693-1291-468e-b772-7bd10d5decab"
+                    "href" : "https://yourshop.api.urn/product-view/products/8a757b40-4a09-437f-ab60-0e0734e5cde7/videos/83830ec2-ad8a-48d1-8951-bb6110728c8b"
                   },
                   "video" : {
-                    "href" : "https://yourshop.api.urn/product-view/products/0d7cc811-b5ac-4040-ad56-058244a1f122/videos/14c42693-1291-468e-b772-7bd10d5decab"
+                    "href" : "https://yourshop.api.urn/product-view/products/8a757b40-4a09-437f-ab60-0e0734e5cde7/videos/83830ec2-ad8a-48d1-8951-bb6110728c8b"
                   }
                 },
-                "_id" : "14c42693-1291-468e-b772-7bd10d5decab",
-                "_indexedAt" : "2020-04-09T08:22:50"
+                "_id" : "83830ec2-ad8a-48d1-8951-bb6110728c8b",
+                "_indexedAt" : "2020-04-21T16:47:31"
               }
           schema:
             $ref: '#/definitions/product-view_products_productId_videos_videoId1518567881'
@@ -20939,7 +22195,7 @@ paths:
                 "_embedded" : {
                   "script-tags" : [ {
                     "scriptUrl" : "https://example.com/scripts/exampleScript.js",
-                    "_id" : "664bd7a9-e778-4f72-9288-165d74690346"
+                    "_id" : "8d16cd3f-b4b8-4a35-a2ba-f26f835d644e"
                   } ]
                 },
                 "_links" : {
@@ -20986,10 +22242,10 @@ paths:
                 "scriptUrl" : "https://example.com/scripts/exampleScript.js",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/script-tags/c4298e33-97ad-4bfe-9e72-5867f1794798"
+                    "href" : "https://yourshop.api.urn/script-tags/cca5688c-c1b0-40c4-8e69-0e89e89540de"
                   }
                 },
-                "_id" : "c4298e33-97ad-4bfe-9e72-5867f1794798"
+                "_id" : "cca5688c-c1b0-40c4-8e69-0e89e89540de"
               }
           schema:
             $ref: '#/definitions/script-tags_scriptTagId-2128012835'
@@ -21020,10 +22276,10 @@ paths:
                 "scriptUrl" : "https://example.com/scripts/exampleScript.js",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/script-tags/3eb88b58-b3ca-4d98-a0ad-376734a25d6f"
+                    "href" : "https://yourshop.api.urn/script-tags/3f3c0760-71bb-4461-81bd-1e021d8f4990"
                   }
                 },
-                "_id" : "3eb88b58-b3ca-4d98-a0ad-376734a25d6f"
+                "_id" : "3f3c0760-71bb-4461-81bd-1e021d8f4990"
               }
           schema:
             $ref: '#/definitions/script-tags_scriptTagId-2128012835'
@@ -21062,10 +22318,10 @@ paths:
                 "scriptUrl" : "https://example.com/scripts/updatedExampleScript.js",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/script-tags/06e27d10-bac2-4289-959c-c5b4fed0a107"
+                    "href" : "https://yourshop.api.urn/script-tags/9688d21b-0c1f-4b7d-a09a-9c64fe556248"
                   }
                 },
-                "_id" : "06e27d10-bac2-4289-959c-c5b4fed0a107"
+                "_id" : "9688d21b-0c1f-4b7d-a09a-9c64fe556248"
               }
           schema:
             $ref: '#/definitions/script-tags_scriptTagId-2128012835'
@@ -24209,6 +25465,28 @@ paths:
               }
           schema:
             $ref: '#/definitions/shop_images_search_find-by-label1964841347'
+  /shop-id:
+    get:
+      tags:
+      - shop-id
+      summary: Show shop ID
+      description: Returns the `shopId` of the current shop.
+      operationId: shop-id-get
+      produces:
+      - application/hal+json
+      responses:
+        200:
+          description: ""
+          examples:
+            application/hal+json: |-
+              {
+                "shopId" : "ea5b98e2-bfef-4fe4-b71d-a635f8321ffc"
+              }
+          schema:
+            $ref: '#/definitions/shop-id927029385'
+      security:
+      - oauth2_application:
+        - paym:m
   /signers:
     get:
       tags:
@@ -25235,6 +26513,10 @@ securityDefinitions:
       ccgn:c: No description
       ccgn:u: No description
       ccgn:d: No description
+      cust:r: No description
+      cust:c: No description
+      cust:u: No description
+      cust:d: No description
       lcnt:u: No description
       nltg:m: No description
       oset:r: No description
@@ -25254,6 +26536,7 @@ securityDefinitions:
       pypr:u: No description
       rfpr:u: No description
       shpr:u: No description
+      paym:m: Integrate a payment solution
       pymt:r: No description
       pymt:u: No description
       pymt:d: No description
@@ -25327,6 +26610,15 @@ definitions:
                   type: string
                   description: The type of the product video. Can be one of `YOUTUBE`
                     or `VIMEO`.
+  payment-signup_referrals_paymentMethodDefinition-721663746:
+    type: object
+    properties:
+      referralReturnUri:
+        type: string
+        description: The URI to which the customer will be redirected after the referral
+          process.
+    example: '{ "referralReturnUri": "https://cornershop.beyondshop.cloud/cockpit"
+      }'
   orders_orderId_processes_refunds-906124805:
     type: object
     properties:
@@ -25521,6 +26813,123 @@ definitions:
         type: object
         description: See https://developer.epages.com/beyond-docs/#pagination[Pagination]
         properties: {}
+  payment-method-definitions_paymentMethodDefinitionName-1608465859:
+    type: object
+    required:
+    - capturePaymentUriTemplate
+    - captureWorkflow
+    - name
+    - refund
+    - statusUriTemplate
+    - workflow
+    properties:
+      captureWorkflow:
+        type: string
+        description: Indicates how and when to capture an authorized payment. Can
+          be one of `CAPTURE_ON_ORDER` or `CAPTURE_ON_DEMAND`.
+      createPaymentUriTemplate:
+        type: string
+        description: The URI template for the endpoint for the creation of individual
+          payments. Can optionally take a `paymentID` as parameter.
+      workflow:
+        type: string
+        description: Indicates the workflow of the payment method. Can be one of `PAYMENT_ON_SELECTION`,
+          `EMBEDDED_ON_SELECTION`, `PAYMENT_ON_BUY`, or `EMBEDDED_ON_BUY`.
+      referralUriTemplate:
+        type: string
+        description: The URI template for the endpoint that generates a reference
+          to the site where the merchant can connect their shop with their payment
+          app account.
+      officialName:
+        type: object
+        description: The name of the payment method that will be displayed to the
+          merchant. Needs to be translated for each supported language.
+        properties: {}
+      refundPaymentUriTemplate:
+        type: string
+        description: The URI template for the endpoint to process refunds. Takes a
+          `paymentID` as parameter to refer to an individual payment.
+      disconnectUriTemplate:
+        type: string
+        description: The URI template for the endpoint to unlink a payment app account
+          from a shop. Takes the `shopID` as parameter to refer to an individual shop.
+      logos:
+        type: array
+        items:
+          type: object
+          properties:
+            setName:
+              type: string
+              description: The set name of the logo. The default is `official`.
+            variant:
+              type: string
+              description: The variant of the logo. Can be one of `TILE`, `DETAILS`,
+                `LIST`, or `STOREFRONT`, depending on the location of the logo.
+            uri:
+              type: string
+              description: The URI of the logo.
+      capturePaymentUriTemplate:
+        type: string
+        description: The URI template for the endpoint to capture the payment after
+          creation and approval have been successful. Takes a `paymentID` as parameter
+          to refer to an individual payment.
+      statusUriTemplate:
+        type: string
+        description: The URI template for the endpoint for the app’s integration status.
+          Takes the `shopID` as parameter to refer to an individual shop.
+      name:
+        type: string
+        description: The name of a payment method definition.
+      officialDescription:
+        type: object
+        description: The description of the payment method that will be displayed
+          to the merchant. Needs to be translated for each supported language.
+        properties: {}
+      defaultName:
+        type: object
+        description: The default name of the payment method that will be displayed
+          to the customer. Can be edited by the merchant and needs to be translated
+          for each supported language.
+        properties: {}
+      defaultDescription:
+        type: object
+        description: Optional default description of the payment method that will
+          be displayed to the customer. Can be edited by the merchant and needs to
+          be translated for each supported language.
+        properties: {}
+      refund:
+        type: string
+        description: Gives information about the refund capabilities of the payment
+          method. Can be one of `NO_REFUND`, `FULL_REFUND_ONLY`, or `PARTIAL_REFUND`.
+    example: |-
+      {
+        "name": "credit-card-updated",
+        "referralUriTemplate": "https://example.com/merchants",
+        "statusUriTemplate": "https://example.com/merchants/{shopId}/status",
+        "disconnectUriTemplate": "https://example.com/merchants/{shopId}/disconnect",
+        "createPaymentUriTemplate": "https://example.com/payments",
+        "capturePaymentUriTemplate": "https://example.com/payments/{paymentId}/capture",
+        "refundPaymentUriTemplate": "https://example.com/payments/{paymentId}/refund",
+        "workflow": "PAYMENT_ON_SELECTION",
+        "captureWorkflow": "CAPTURE_ON_DEMAND",
+        "refund": "NO_REFUND",
+        "logos": [{
+          "setName" : "official",
+          "variant" : "STOREFRONT",
+          "uri" : "https://example.com/static/storefront.png"
+        }],
+      "officialName": {"de-DE" : "Ermögliche deinen Kunden, mit Kreditkarte zu bezahlen.",
+      "en-US" : "Allow your customers to pay by credit card."
+      },
+        "officialDescription": {
+          "de-DE" : "Ermögliche deinen Kunden, mit Kreditkarte zu bezahlen.",
+          "en-US" : "Allow your customers to pay by credit card."
+        },
+        "defaultName": {
+          "de-DE" : "Kreditkarte",
+          "en-US" : "Credit card"
+        },
+        "defaultDescription": {"de-DE" : "Bezahlen Sie mit Kreditkarte.","en-US" : "Pay by credit card."}}
   product-view_products_productId1010467364:
     type: object
     properties:
@@ -26066,6 +27475,27 @@ definitions:
         type: string
         description: Optional field. The username that identifies the user. If no
           username is passed, the email address is set as the username.
+  product-view_products_productId_cross-sells864847800:
+    type: object
+    properties:
+      _embedded:
+        type: object
+        properties:
+          cross-sells:
+            type: array
+            items:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: The name of the cross-sell resource.
+                _id:
+                  type: string
+                  description: The unique identifier of the product cross-sell.
+      _links:
+        type: object
+        description: See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+        properties: {}
   product-view_categories_categoryId_products-688394557:
     type: object
     properties:
@@ -26234,27 +27664,6 @@ definitions:
       page:
         type: object
         description: See https://developer.epages.com/beyond-docs/#pagination[Pagination]
-        properties: {}
-  product-view_products_productId_cross-sells864847800:
-    type: object
-    properties:
-      _embedded:
-        type: object
-        properties:
-          cross-sells:
-            type: array
-            items:
-              type: object
-              properties:
-                name:
-                  type: string
-                  description: The name of the cross-sell resource.
-                _id:
-                  type: string
-                  description: The unique identifier of the product cross-sell.
-      _links:
-        type: object
-        description: See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
         properties: {}
   shop_features-1892291840:
     type: object
@@ -29360,8 +30769,67 @@ definitions:
       ����u���)�����\x7ff߀~&���'��\"�\x16���\0\x1e��S����:_\x0fX�k\x7f\x11u�2=\x17\
       U����\x11�w\x17�/�x�J��%��j�i�K#y�ie����j��t��\x12��|\x19�o�[|\x06�y�\rY�>\x12\
       ���\x1f��\\��m?�\"6:}�����,�pb��D5\x05�T\b5( ��\x03��"
+  customers-660708321:
+    type: object
+    properties:
+      _links:
+        type: object
+        description: See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+        properties: {}
+      _embedded:
+        type: object
+        properties:
+          customers:
+            type: array
+            description: The list of customers as documented in <<resources-customer-get,Show
+              customer details>>.
+            items: {}
+      page:
+        type: object
+        description: See https://developer.epages.com/beyond-docs/#pagination[Pagination]
+        properties: {}
   products_productId_default-image-1118374447:
     example: http://localhost/products/images/051945e6-3a26-43dc-bac0-31d7140d8b16
+  customers_id-442663145:
+    type: object
+    properties:
+      defaultPaymentMethodId:
+        type: string
+        description: The identifier of the default payment method.
+      _links:
+        type: object
+        description: See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+        properties: {}
+      defaultShippingAddress:
+        type: object
+        description: The shipping address of the customer. Refer to <<resources-cart-set-shipping-address,Set
+          cart shipping address>> for item documentation.
+        properties: {}
+      defaultShippingMethodId:
+        type: string
+        description: The identifier of the default shipping method.
+      _id:
+        type: string
+        description: The immutable, unique identifier for the customer.
+      customerNumber:
+        type: string
+        description: The unique customer number.
+      defaultBillingAddress:
+        type: object
+        description: The billing address of the customer. Defaults to shipping address
+          if no billing address is set. Refer to <<resources-cart-set-billing-address,Set
+          cart billing address>> for item documentation.
+        properties: {}
+      email:
+        type: string
+        description: The unique email address of the customer.
+  payments_paymentId_fail1598422999:
+    type: object
+    properties:
+      returnUri:
+        type: string
+        description: The URI to which the app will redirect the customer after the
+          approval, cancelation or failure of the payment.
   order-settings586335844:
     type: object
     properties:
@@ -29902,6 +31370,129 @@ definitions:
       https://yourshop.api.urn/products/9907310b-3f2a-492d-82af-7a5209d16edb/variations/39184429-7931-4202-ad54-f70623212967/images/15a1b5bd-cc20-4267-b817-e0e23098357a
       https://yourshop.api.urn/products/9907310b-3f2a-492d-82af-7a5209d16edb/variations/39184429-7931-4202-ad54-f70623212967/images/0a5f7547-1541-4666-bf1a-81499cf1b438
       https://yourshop.api.urn/products/9907310b-3f2a-492d-82af-7a5209d16edb/variations/39184429-7931-4202-ad54-f70623212967/images/04643b10-192f-4be4-9ce3-bf81d174feef
+  payment-method-definitions-1535636260:
+    type: object
+    required:
+    - capturePaymentUriTemplate
+    - captureWorkflow
+    - name
+    - refund
+    - sandbox
+    - statusUriTemplate
+    - workflow
+    properties:
+      captureWorkflow:
+        type: string
+        description: Indicates how and when to capture an authorized payment. Can
+          be one of `CAPTURE_ON_ORDER` or `CAPTURE_ON_DEMAND`.
+      createPaymentUriTemplate:
+        type: string
+        description: The URI template for the endpoint for the creation of individual
+          payments. Can optionally take a `paymentID` as parameter.
+      workflow:
+        type: string
+        description: Indicates the workflow of the payment method. Can be one of `PAYMENT_ON_SELECTION`,
+          `EMBEDDED_ON_SELECTION`, `PAYMENT_ON_BUY`, or `EMBEDDED_ON_BUY`.
+      sandbox:
+        type: string
+        description: Indicates if the payment method is using a sandbox environment.
+          Can be `true` or `false`.
+      referralUriTemplate:
+        type: string
+        description: The URI template for the endpoint that generates a reference
+          to the site where the merchant can connect their shop with their payment
+          app account.
+      officialName:
+        type: object
+        description: The name of the payment method that will be displayed to the
+          merchant. Needs to be translated for each supported language.
+        properties: {}
+      refundPaymentUriTemplate:
+        type: string
+        description: The URI template for the endpoint to process refunds. Takes a
+          `paymentID` as parameter to refer to an individual payment.
+      disconnectUriTemplate:
+        type: string
+        description: The URI template for the endpoint to unlink a payment app account
+          from a shop. Takes the `shopID` as parameter to refer to an individual shop.
+      logos:
+        type: array
+        items:
+          type: object
+          properties:
+            setName:
+              type: string
+              description: The set name of the logo. The default is `official`.
+            variant:
+              type: string
+              description: The variant of the logo. Can be one of `TILE`, `DETAILS`,
+                `LIST`, or `STOREFRONT`, depending on the location of the logo.
+            uri:
+              type: string
+              description: The URI of the logo.
+      capturePaymentUriTemplate:
+        type: string
+        description: The URI template for the endpoint to capture the payment after
+          creation and approval have been successful. Takes a `paymentID` as parameter
+          to refer to an individual payment.
+      statusUriTemplate:
+        type: string
+        description: The URI template for the endpoint for the app’s integration status.
+          Takes the `shopID` as parameter to refer to an individual shop.
+      name:
+        type: string
+        description: The name of a payment method definition.
+      officialDescription:
+        type: object
+        description: The description of the payment method that will be displayed
+          to the merchant. Needs to be translated for each supported language.
+        properties: {}
+      defaultName:
+        type: object
+        description: The default name of the payment method that will be displayed
+          to the customer. Can be edited by the merchant and needs to be translated
+          for each supported language.
+        properties: {}
+      defaultDescription:
+        type: object
+        description: Optional default description of the payment method that will
+          be displayed to the customer. Can be edited by the merchant and needs to
+          be translated for each supported language.
+        properties: {}
+      refund:
+        type: string
+        description: Gives information about the refund capabilities of the payment
+          method. Can be one of `NO_REFUND`, `FULL_REFUND_ONLY`, or `PARTIAL_REFUND`.
+    example: |-
+      {
+        "name": "credit-card",
+        "referralUriTemplate": "https://example.com/merchants",
+        "statusUriTemplate": "https://example.com/merchants/{shopId}/status",
+        "disconnectUriTemplate": "https://example.com/merchants/{shopId}/disconnect",
+        "createPaymentUriTemplate": "https://example.com/payments",
+        "capturePaymentUriTemplate": "https://example.com/payments/{paymentId}/capture",
+        "refundPaymentUriTemplate": "https://example.com/payments/{paymentId}/refund",
+      "sandbox": "true",
+        "workflow": "PAYMENT_ON_BUY",
+        "captureWorkflow": "CAPTURE_ON_ORDER",
+        "refund": "NO_REFUND",
+        "logos": [{
+          "setName" : "official",
+          "variant" : "STOREFRONT",
+          "uri" : "https://example.com/static/storefront.png"
+        }],
+      "officialName": {"de-DE" : "Ermögliche deinen Kunden, mit Kreditkarte zu bezahlen.",
+      "en-US" : "Allow your customers to pay by credit card."
+      },
+        "officialDescription": {
+          "de-DE" : "Ermögliche deinen Kunden, mit Kreditkarte zu bezahlen.",
+          "en-US" : "Allow your customers to pay by credit card."
+        },
+        "defaultName": {
+          "de-DE" : "Kreditkarte",
+          "en-US" : "Credit card"
+        },
+        "defaultDescription": {"de-DE" : "Bezahlen Sie mit Kreditkarte.","en-US" : "Pay by credit card."}}
   products_productId_videos-340028130:
     type: object
     required:
@@ -32041,6 +33632,79 @@ definitions:
           }
         }
       }
+  customers_customerId22651477:
+    type: object
+    properties:
+      defaultPaymentMethodId:
+        type: string
+        description: The identifier of the default payment method.
+      defaultShippingMethodId:
+        type: string
+        description: The identifier of the default shipping method.
+      shippingAddress:
+        type: object
+        description: The shipping address of the customer. Refer to <<resources-cart-set-shipping-address,Set
+          cart shipping address>> for item documentation.
+        properties: {}
+      billingAddress:
+        type: object
+        description: The billing address of the customer. Defaults to shipping address
+          if no billing address is set. Refer to <<resources-cart-set-billing-address,Set
+          cart billing address>> for item documentation.
+        properties: {}
+    example: |-
+      {
+        "defaultPaymentMethodId" : "5e4e692b-9d2e-4b80-8df5-464673ca3912",
+        "defaultShippingMethodId" : "9f6958f4-4c02-499f-a31a-8da6f3b776fd",
+        "shippingAddress" : {
+          "salutation" : "Mrs",
+          "gender" : "FEMALE",
+          "company" : "Astrid Alster GmbH",
+          "title" : "",
+          "firstName" : "Astrid",
+          "middleName" : "Agnes",
+          "lastName" : "Alster",
+          "street" : "Alsterwasserweg",
+          "houseNumber" : "2",
+          "street2" : "Erdgeschoss",
+          "addressExtension" : "Hinterhof",
+          "postalCode" : "20999",
+          "dependentLocality" : "Seevetal",
+          "city" : "Alsterwasser",
+          "country" : "DE",
+          "state" : "Hamburg",
+          "email" : "a.alsterh@example.com",
+          "phone" : "(800) 555-0102",
+          "mobile" : "(800) 555-0103",
+          "doorCode" : "456",
+          "_id" : "008c3d47-b7e6-4568-b8ce-4a8eff5ca646"
+        },
+        "billingAddress" : {
+          "salutation" : "Mrs",
+          "gender" : "FEMALE",
+          "company" : "Astrid Alster GmbH",
+          "title" : "",
+          "firstName" : "Astrid",
+          "middleName" : "Agnes",
+          "lastName" : "Alster",
+          "street" : "Alsterwasserweg",
+          "houseNumber" : "2",
+          "street2" : "Erdgeschoss",
+          "addressExtension" : "Hinterhof",
+          "postalCode" : "20999",
+          "dependentLocality" : "Seevetal",
+          "city" : "Alsterwasser",
+          "country" : "DE",
+          "state" : "Hamburg",
+          "email" : "a.alsterh@example.com",
+          "phone" : "(800) 555-0102",
+          "mobile" : "(800) 555-0103",
+          "vatId" : "DE123456789",
+          "taxNumber" : "HRE 987654/32123/864516",
+          "birthDate" : "1985-05-11",
+          "_id" : "24447886-54b9-4a21-b2fc-92f40db9e5ab"
+        }
+      }
   products_productId_variation-attributes_variationAttributeId753841632:
     type: object
     properties:
@@ -32085,6 +33749,87 @@ definitions:
         description: The type of the product collection. Can be one of `SMART` or
           `MANUAL`.
     example: '{"name":"Power Bars","label":"power-bar","type":"SMART","query":{"bool":{"filter":{"term":{"tags":"power-bar"}}}}}'
+  customers-227654282:
+    type: object
+    properties:
+      defaultPaymentMethodId:
+        type: string
+        description: The identifier of the default payment method.
+      initialPassword:
+        type: string
+        description: The customer's password for login.
+      defaultShippingMethodId:
+        type: string
+        description: The identifier of the default shipping method.
+      shippingAddress:
+        type: object
+        description: The shipping address of the customer. Refer to <<resources-cart-set-shipping-address,Set
+          cart shipping address>> for item documentation.
+        properties: {}
+      billingAddress:
+        type: object
+        description: The billing address of the customer. Defaults to shipping address
+          if no billing address is set. Refer to <<resources-cart-set-billing-address,Set
+          cart billing address>> for item documentation.
+        properties: {}
+      email:
+        type: string
+        description: The unique email address of the customer.
+    example: |-
+      {
+        "defaultPaymentMethodId" : "b9a7f0eb-7f6c-4fb8-8779-863f2f457784",
+        "defaultShippingMethodId" : "7a2a21df-7206-4df4-beb5-b9151f54e070",
+        "shippingAddress" : {
+          "salutation" : "Mrs",
+          "gender" : "FEMALE",
+          "company" : "Astrid Alster GmbH",
+          "title" : "",
+          "firstName" : "Astrid",
+          "middleName" : "Agnes",
+          "lastName" : "Alster",
+          "street" : "Alsterwasserweg",
+          "houseNumber" : "2",
+          "street2" : "Erdgeschoss",
+          "addressExtension" : "Hinterhof",
+          "postalCode" : "20999",
+          "dependentLocality" : "Seevetal",
+          "city" : "Alsterwasser",
+          "country" : "DE",
+          "state" : "Hamburg",
+          "email" : "a.alsterh@example.com",
+          "phone" : "(800) 555-0102",
+          "mobile" : "(800) 555-0103",
+          "doorCode" : "456",
+          "_id" : null
+        },
+        "email" : "a.alsterh@example.com",
+        "initialPassword" : "MyVeryStrongPassword",
+        "billingAddress" : {
+          "salutation" : "Mrs",
+          "gender" : "FEMALE",
+          "company" : "Astrid Alster GmbH",
+          "title" : "",
+          "firstName" : "Astrid",
+          "middleName" : "Agnes",
+          "lastName" : "Alster",
+          "street" : "Alsterwasserweg",
+          "houseNumber" : "2",
+          "street2" : "Erdgeschoss",
+          "addressExtension" : "Hinterhof",
+          "postalCode" : "20999",
+          "dependentLocality" : "Seevetal",
+          "city" : "Alsterwasser",
+          "country" : "DE",
+          "state" : "Hamburg",
+          "email" : "a.alsterh@example.com",
+          "phone" : "(800) 555-0102",
+          "mobile" : "(800) 555-0103",
+          "vatId" : "DE123456789",
+          "taxNumber" : "HRE 987654/32123/864516",
+          "birthDate" : "1985-05-11",
+          "_id" : "5435967c-8f89-4b99-b707-720cf519b2c1"
+        }
+      }
   shipping-zones_shippingZoneId_shipping-methods259413103:
     type: object
     properties:
@@ -32202,7 +33947,7 @@ definitions:
         "height" : 300,
         "dataUri" : "photostore-4.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281226000"
       } ]
-  product-view_categories_categoryId-720035829:
+  product-view_categories_search_find-by-label-720035829:
     type: object
     properties:
       _indexedAt:
@@ -33148,6 +34893,21 @@ definitions:
         description: The height of the product image.
   carts_cartId_shipping-methods_current2062067669:
     example: https://yourshop.api.urn/shipping-zones/7328135f-63b1-4ba7-aeb8-0aa2ee816050/shipping-methods/b0f93adc-8ff8-4311-af6f-02c947bd4a03
+  payments_paymentId_status1401946287:
+    type: object
+    properties:
+      externalPaymentUri:
+        type: string
+        description: Link to the payment in a payment provider's back-office (optional).
+      externalPaymentId:
+        type: string
+        description: External payment reference that might be generated by the payment
+          provider (optional).
+      paymentStatus:
+        type: string
+        description: The status of the payment. Can be one of `PENDING`, `APPROVED`,
+          `CANCELED`, `CAPTURED`, `CAPTURE_PENDING`, `PAID`, or `FAILED`, depending
+          on the former status of the payment.
   product-view_products_search_find-available-tags-721680966:
     type: object
     properties:
@@ -33169,6 +34929,120 @@ definitions:
                 tag:
                   type: string
                   description: The name of the tag.
+  payment-method-definitions-570184892:
+    type: object
+    properties:
+      _links:
+        type: object
+        description: See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+        properties: {}
+      _embedded:
+        type: object
+        properties:
+          payment-method-definitions:
+            type: array
+            items:
+              type: object
+              properties:
+                captureWorkflow:
+                  type: string
+                  description: Indicates how and when to capture an authorized payment.
+                    Can be one of `CAPTURE_ON_ORDER` or `CAPTURE_ON_DEMAND`.
+                createPaymentUriTemplate:
+                  type: string
+                  description: The URI template for the endpoint for the creation
+                    of individual payments. Can optionally take a `paymentID` as parameter.
+                workflow:
+                  type: string
+                  description: Indicates the workflow of the payment method. Can be
+                    one of `PAYMENT_ON_SELECTION`, `EMBEDDED_ON_SELECTION`, `PAYMENT_ON_BUY`,
+                    or `EMBEDDED_ON_BUY`.
+                _links:
+                  type: object
+                  description: See <<hypermedia,Hypermedia>>
+                  properties: {}
+                sandbox:
+                  type: boolean
+                  description: Indicates if the payment method is using a sandbox
+                    environment. Can be `true` or `false`.
+                referralUriTemplate:
+                  type: string
+                  description: The URI template for the endpoint that generates a
+                    reference to the site where the merchant can connect their shop
+                    with their payment app account.
+                officialName:
+                  type: object
+                  description: The name of the payment method that will be displayed
+                    to the merchant. Needs to be translated for each supported language.
+                  properties: {}
+                refundPaymentUriTemplate:
+                  type: string
+                  description: The URI template for the endpoint to process refunds.
+                    Takes a `paymentID` as parameter to refer to an individual payment.
+                disconnectUriTemplate:
+                  type: string
+                  description: The URI template for the endpoint to unlink a payment
+                    app account from a shop. Takes the `shopID` as parameter to refer
+                    to an individual shop.
+                logos:
+                  type: array
+                  items:
+                    type: object
+                    properties:
+                      setName:
+                        type: string
+                        description: The set name of the logo. The default is `official`.
+                      variant:
+                        type: string
+                        description: The variant of the logo. Can be one of `TILE`,
+                          `DETAILS`, `LIST`, or `STOREFRONT`, depending on the location
+                          of the logo.
+                      uri:
+                        type: string
+                        description: The URI of the logo.
+                capturePaymentUriTemplate:
+                  type: string
+                  description: The URI template for the endpoint to capture the payment
+                    after creation and approval have been successful. Takes a `paymentID`
+                    as parameter to refer to an individual payment.
+                statusUriTemplate:
+                  type: string
+                  description: The URI template for the endpoint for the app’s integration
+                    status. Takes the `shopID` as parameter to refer to an individual
+                    shop.
+                name:
+                  type: string
+                  description: The name of a payment method definition.
+                officialDescription:
+                  type: object
+                  description: The description of the payment method that will be
+                    displayed to the merchant. Needs to be translated for each supported
+                    language.
+                  properties: {}
+                _id:
+                  type: string
+                  description: The name of a payment method definition.
+                defaultName:
+                  type: object
+                  description: The default name of the payment method that will be
+                    displayed to the customer. Can be edited by the merchant and needs
+                    to be translated for each supported language.
+                  properties: {}
+                defaultDescription:
+                  type: object
+                  description: Optional default description of the payment method
+                    that will be displayed to the customer. Can be edited by the merchant
+                    and needs to be translated for each supported language.
+                  properties: {}
+                refund:
+                  type: string
+                  description: Gives information about the refund capabilities of
+                    the payment method. Can be one of `NO_REFUND`, `FULL_REFUND_ONLY`,
+                    or `PARTIAL_REFUND`.
+      page:
+        type: object
+        description: See https://developer.epages.com/beyond-docs/#pagination[Pagination]
+        properties: {}
   orders_orderId_processes_payments_payment-process-id_capture-308399914:
     type: object
     properties:
@@ -33859,6 +35733,17 @@ definitions:
         type: object
         description: See https://developer.epages.com/beyond-docs/#pagination[Pagination]
         properties: {}
+  payment-signup_referrals_paymentMethodDefinition-1608886931:
+    type: object
+    properties:
+      _links:
+        type: object
+        description: See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+        properties: {}
+      referralUri:
+        type: string
+        description: The endpoint that generates a reference to the site where the
+          merchant can connect their shop with their payment app account.
   products_productId_multiple-images-1392208260:
     type: array
     items:
@@ -33891,7 +35776,7 @@ definitions:
         "height" : 300,
         "dataUri" : "photostore-4.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281226000"
       } ]
-  product-view_products_search_find-by-tags-81119657:
+  product-view_products-81119657:
     type: object
     properties:
       _links:
@@ -34680,6 +36565,34 @@ definitions:
           "amount" : 10.0
         }
       }
+  payments_paymentId_fail-217513814:
+    type: object
+    properties:
+      approvalFailureType:
+        type: string
+        description: The kind of error that occurred. Can be one of `API_FAILURE`
+          or `THREE_D_SECURE_FAILURE`. Defaults to `API_FAILURE`.
+      paymentErrorMessage:
+        type: string
+        description: A message to further explain the problem that occurred.
+        minLength: 0
+        maxLength: 1024
+      recommendedUserAction:
+        type: string
+        description: The recommended action for the customer. Can be one of `RETRY`
+          or `CHOOSE_DIFFERENT_PAYMENT_METHOD`. Defaults to `CHOOSE_DIFFERENT_PAYMENT_METHOD`.
+      paymentErrorCode:
+        type: string
+        description: An error code defined by the app to specify the problem.
+        minLength: 0
+        maxLength: 512
+    example: |-
+      {
+        "approvalFailureType": "API_FAILURE",
+        "recommendedUserAction": "RETRY",
+        "paymentErrorCode": "payment-app-specific-error-code",
+        "paymentErrorMessage": "An error message explaining the payment app specific error situation."
+      }
   shop_features_featureName-758018187:
     type: object
     required:
@@ -34916,6 +36829,22 @@ definitions:
         type: object
         description: See https://developer.epages.com/beyond-docs/#pagination[Pagination]
         properties: {}
+  payment-signup_merchant-accounts_paymentMethodDefinition-601839721:
+    type: object
+    properties:
+      _links:
+        type: object
+        description: See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+        properties: {}
+      ready:
+        type: boolean
+        description: Indicates if the account is properly connected to the payment
+          app.
+      details:
+        type: object
+        description: Gives information about the account that is connected to the
+          payment app.
+        properties: {}
   orders_orderId_shipping-address-1029327591:
     type: object
     properties:
@@ -34956,6 +36885,22 @@ definitions:
         },
         "comment" : "Updated shipping address"
       }
+  payments_paymentId_status-1387501838:
+    type: object
+    properties:
+      externalPaymentUri:
+        type: string
+        description: Link to the payment in a payment provider's back-office (optional).
+      externalPaymentId:
+        type: string
+        description: External payment reference that might be generated by the payment
+          provider (optional).
+      paymentStatus:
+        type: string
+        description: The status of the payment. Can be one of `PENDING`, `APPROVED`,
+          `CANCELED`, `CAPTURED`, `CAPTURE_PENDING`, `PAID`, or `FAILED`, depending
+          on the former status of the payment.
+    example: '{"paymentStatus":"APPROVED","externalPaymentId":"transactionC487B9536D334C91A3805360B9655047","externalPaymentUri":"https://example.com/transactions/transactionC487B9536D334C91A3805360B9655047"}'
   products_productId_variation-attributes_variationAttributeId_values-342730158:
     type: object
     properties:
@@ -35124,6 +37069,12 @@ definitions:
         "value" : "autogenerateSku",
         "public" : true
       }
+  shop-id927029385:
+    type: object
+    properties:
+      shopId:
+        type: string
+        description: The unique identifier of the shop.
   orders_orderId_processes_payments_payment-process-id_mark-voided-1907336295:
     type: object
     properties:
@@ -35747,28 +37698,6 @@ definitions:
             type: array
             description: The list of all script tags.
             items: {}
-  product-view_products_productId_images_imageId930052740:
-    type: object
-    properties:
-      _indexedAt:
-        type: string
-        description: The time of storing this document in the search index.
-      _links:
-        type: object
-        description: See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-        properties: {}
-      dataUri:
-        type: string
-        description: The templated relative download URL of the product image.
-      width:
-        type: number
-        description: The width of the product image.
-      _id:
-        type: string
-        description: The unique identifier of the product image.
-      height:
-        type: number
-        description: The height of the product image.
   categories1643761682:
     type: object
     properties:
@@ -35806,6 +37735,28 @@ definitions:
         type: object
         description: See https://developer.epages.com/beyond-docs/#pagination[Pagination]
         properties: {}
+  product-view_products_productId_images_imageId930052740:
+    type: object
+    properties:
+      _indexedAt:
+        type: string
+        description: The time of storing this document in the search index.
+      _links:
+        type: object
+        description: See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+        properties: {}
+      dataUri:
+        type: string
+        description: The templated relative download URL of the product image.
+      width:
+        type: number
+        description: The width of the product image.
+      _id:
+        type: string
+        description: The unique identifier of the product image.
+      height:
+        type: number
+        description: The height of the product image.
   products_productId_variation-properties-821273345:
     type: object
     properties:
@@ -35840,6 +37791,98 @@ definitions:
       _id:
         type: string
         description: The ID of the cancelation process.
+  payment-method-definitions_paymentMethodDefinitionName1518403451:
+    type: object
+    properties:
+      captureWorkflow:
+        type: string
+        description: Indicates how and when to capture an authorized payment. Can
+          be one of `CAPTURE_ON_ORDER` or `CAPTURE_ON_DEMAND`.
+      createPaymentUriTemplate:
+        type: string
+        description: The URI template for the endpoint for the creation of individual
+          payments. Can optionally take a `paymentID` as parameter.
+      workflow:
+        type: string
+        description: Indicates the workflow of the payment method. Can be one of `PAYMENT_ON_SELECTION`,
+          `EMBEDDED_ON_SELECTION`, `PAYMENT_ON_BUY`, or `EMBEDDED_ON_BUY`.
+      _links:
+        type: object
+        description: See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+        properties: {}
+      sandbox:
+        type: boolean
+        description: Indicates if the payment method is using a sandbox environment.
+          Can be `true` or `false`.
+      referralUriTemplate:
+        type: string
+        description: The URI template for the endpoint that generates a reference
+          to the site where the merchant can connect their shop with their payment
+          app account.
+      officialName:
+        type: object
+        description: The name of the payment method that will be displayed to the
+          merchant. Needs to be translated for each supported language.
+        properties: {}
+      refundPaymentUriTemplate:
+        type: string
+        description: The URI template for the endpoint to process refunds. Takes a
+          `paymentID` as parameter to refer to an individual payment.
+      disconnectUriTemplate:
+        type: string
+        description: The URI template for the endpoint to unlink a payment app account
+          from a shop. Takes the `shopID` as parameter to refer to an individual shop.
+      logos:
+        type: array
+        items:
+          type: object
+          properties:
+            setName:
+              type: string
+              description: The set name of the logo. The default is `official`.
+            variant:
+              type: string
+              description: The variant of the logo. Can be one of `TILE`, `DETAILS`,
+                `LIST`, or `STOREFRONT`, depending on the location of the logo.
+            uri:
+              type: string
+              description: The URI of the logo.
+      capturePaymentUriTemplate:
+        type: string
+        description: The URI template for the endpoint to capture the payment after
+          creation and approval have been successful. Takes a `paymentID` as parameter
+          to refer to an individual payment.
+      statusUriTemplate:
+        type: string
+        description: The URI template for the endpoint for the app’s integration status.
+          Takes the `shopID` as parameter to refer to an individual shop.
+      name:
+        type: string
+        description: The name of a payment method definition.
+      officialDescription:
+        type: object
+        description: The description of the payment method that will be displayed
+          to the merchant. Needs to be translated for each supported language.
+        properties: {}
+      _id:
+        type: string
+        description: The name of a payment method definition.
+      defaultName:
+        type: object
+        description: The default name of the payment method that will be displayed
+          to the customer. Can be edited by the merchant and needs to be translated
+          for each supported language.
+        properties: {}
+      defaultDescription:
+        type: object
+        description: Optional default description of the payment method that will
+          be displayed to the customer. Can be edited by the merchant and needs to
+          be translated for each supported language.
+        properties: {}
+      refund:
+        type: string
+        description: Gives information about the refund capabilities of the payment
+          method. Can be one of `NO_REFUND`, `FULL_REFUND_ONLY`, or `PARTIAL_REFUND`.
   shop_attributes-1971299972:
     type: object
     properties:
