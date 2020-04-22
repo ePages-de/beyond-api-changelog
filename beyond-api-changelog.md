@@ -1,5 +1,25 @@
 # Beyond API Changelog
 
+## 2020-04-22
+
+-XX:InitialHeapSize=527028224 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `POST` /coupon-campaigns Create coupon campaign  
+    Parameter
+
+        Add .status //(read only) Shows the coupon campaign status. Can be {{values}}. By default, a campaign is a `DRAFT` upon creation.
+* `PUT` /coupon-campaigns/{couponCampaignId} Update coupon campaign  
+    Parameter
+
+        Add .status //(read only) Shows the coupon campaign status. Can be {{values}}. By default, a campaign is a `DRAFT` upon creation.
+
 ## 2020-04-17
 
 ### What's New
