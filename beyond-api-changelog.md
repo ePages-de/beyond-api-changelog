@@ -2,7 +2,6 @@
 
 ## 2020-05-04
 
--XX:InitialHeapSize=527028224 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
 ### What's New
 ---
 * `POST` /products/{productId}/duplicate Duplicate product
@@ -12,8 +11,6 @@
 ---
 * `POST` /coupon-campaigns/{couponCampaignId}/coupons Create coupon code
 
-### What's Changed
----
 
 ## 2020-04-27
 
