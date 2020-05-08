@@ -1,5 +1,25 @@
 # Beyond API Changelog
 
+## 2020-05-08
+
+-XX:InitialHeapSize=527028224 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `PUT` /order-settings Update order settings  
+    Return Type
+
+        Add customInvoiceCorrectionMailText //A customizable text body for the email that is sent to the customer with the invoice correction or cancellation pdf attached. Merchants can adapt the email body to their needs in case the default text does not meet their requirements.
+* `GET` /order-settings List order settings  
+    Return Type
+
+        Add customInvoiceCorrectionMailText //A customizable text body for the email that is sent to the customer with the invoice correction or cancellation pdf attached. Merchants can adapt the email body to their needs in case the default text does not meet their requirements.
+
 ## 2020-05-04
 
 ### What's New
