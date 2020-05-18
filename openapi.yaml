@@ -5687,7 +5687,8 @@ paths:
                 "customOrderOpenMailText" : "Custom mail text.customOrderOpenMailText",
                 "customOrderCanceledMailText" : "Custom mail text.customOrderCanceledMailText",
                 "customInvoiceCustomerMailText" : "Custom mail text.customInvoiceCustomerMailText",
-                "customInvoiceCanceledMailText" : "Custom mail text.customInvoiceCanceledMailText",
+                "customInvoiceCorrectionMailText" : "Custom mail text.customInvoiceCorrectionMailText",
+                "customInvoiceCanceledMailText" : "Custom mail text.customInvoiceCorrectionMailText",
                 "customOrderShippedMailText" : "Custom mail text.customOrderShippedMailText",
                 "customOrderPendingMailText" : "Custom mail text.customOrderPendingMailText",
                 "customOrderReturnedMailText" : "Custom mail text.customOrderReturnedMailText",
@@ -5698,7 +5699,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/order-settings1986587076'
+            $ref: '#/definitions/order-settings-596857524'
       security:
       - oauth2_application:
         - oset:r
@@ -5717,7 +5718,7 @@ paths:
         name: ""
         required: false
         schema:
-          $ref: '#/definitions/order-settings586335844'
+          $ref: '#/definitions/order-settings1556746920'
         x-examples:
           application/json: |-
             {
@@ -5764,6 +5765,7 @@ paths:
                 "customOrderOpenMailText" : " Your <br /> 1",
                 "customOrderCanceledMailText" : " Your <br /> 2",
                 "customInvoiceCustomerMailText" : " Your <br /> 3",
+                "customInvoiceCorrectionMailText" : " Your <br /> 4",
                 "customInvoiceCanceledMailText" : " Your <br /> 4",
                 "customOrderShippedMailText" : " Your <br /> 5",
                 "customOrderPendingMailText" : " Your <br /> 6",
@@ -5775,7 +5777,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/order-settings1986587076'
+            $ref: '#/definitions/order-settings-596857524'
       security:
       - oauth2_application:
         - oset:u
@@ -5981,97 +5983,18 @@ paths:
           examples:
             application/hal+json: |-
               {
-                "_id" : "b9dfc0e1-722a-47b8-b3e2-bce779a32d14",
-                "createdAt" : "2020-05-15T09:55:18.797",
-                "cartId" : "3c91901c-1fa3-473b-be8f-3ebac12c59fb",
+                "_id" : "1c12cf4b-bfc6-45dd-839a-a3124a7776ab",
+                "createdAt" : "2020-05-18T12:08:43.675",
+                "cartId" : "8d370df8-2928-4757-80aa-64caceb2df69",
                 "currency" : "EUR",
                 "taxModel" : "GROSS",
                 "taxable" : false,
                 "testOrder" : false,
                 "termsAndConditionsExplicitlyAccepted" : false,
                 "productLineItems" : [ {
-                  "_id" : "b3164e48-706e-4ac4-9947-a87b80258cb6",
+                  "_id" : "31f50bb7-893b-4578-bee5-b35d8823a181",
                   "product" : {
-                    "_id" : "96071a56-de4f-4a68-987c-07fedb59540a",
-                    "sku" : "EB001",
-                    "name" : "High Protein Power Bar (Pack of 5)",
-                    "essentialFeatures" : "Preservative-free. No added sweeteners. Vegan.",
-                    "shippingWeight" : 190,
-                    "defaultImageDataUri" : "http://your.image.hoster.com/randomimage.png",
-                    "variationAttributeValues" : [ {
-                      "displayName" : "flavor",
-                      "value" : "Salted Caramel"
-                    } ],
-                    "_links" : {
-                      "default-image-data" : {
-                        "href" : "https://yourshop.api.urn/http:/your.image.hoster.com/randomimage.png"
-                      },
-                      "variation-product" : {
-                        "href" : "https://yourshop.api.urn/api/products/3b288ff7-42d6-4bbc-baa8-35d2581f1042"
-                      }
-                    }
-                  },
-                  "quantity" : 5,
-                  "initialQuantity" : 5,
-                  "unitPrice" : {
-                    "taxModel" : "GROSS",
-                    "currency" : "EUR",
-                    "amount" : 9.99
-                  },
-                  "unitDiscount" : null,
-                  "lineItemPrice" : {
-                    "taxModel" : "GROSS",
-                    "currency" : "EUR",
-                    "amount" : 49.95
-                  },
-                  "initialLineItemPrice" : {
-                    "taxModel" : "GROSS",
-                    "currency" : "EUR",
-                    "amount" : 49.95
-                  },
-                  "lineItemTax" : {
-                    "taxClass" : "REGULAR",
-                    "taxRate" : 0.19,
-                    "currency" : "EUR",
-                    "amount" : 7.9743
-                  },
-                  "unshipped" : {
-                    "quantity" : 5,
-                    "amount" : null
-                  },
-                  "shipped" : {
-                    "quantity" : 0,
-                    "amount" : null
-                  },
-                  "pending" : {
-                    "quantity" : 0,
-                    "amount" : null
-                  },
-                  "returned" : {
-                    "quantity" : 0,
-                    "amount" : {
-                      "currency" : "EUR",
-                      "amount" : 0
-                    }
-                  },
-                  "broken" : {
-                    "quantity" : 0,
-                    "amount" : {
-                      "currency" : "EUR",
-                      "amount" : 0
-                    }
-                  },
-                  "canceled" : {
-                    "quantity" : 0,
-                    "amount" : {
-                      "currency" : "EUR",
-                      "amount" : 0
-                    }
-                  }
-                }, {
-                  "_id" : "e6ca200d-eac2-4135-9d72-000cc14e10d8",
-                  "product" : {
-                    "_id" : "23f4ad1a-c622-47fb-a524-da4ba85b495c",
+                    "_id" : "af43612b-29f0-41c6-a5fd-4dc4c8b10b8f",
                     "sku" : "sh-001",
                     "name" : "Soft Walk Ultra - Nibok Men's",
                     "essentialFeatures" : "Inner Material: Synthetic. Sole: Rubber. Upper Material: Leather.",
@@ -6086,7 +6009,7 @@ paths:
                         "href" : "https://yourshop.api.urn/http:/your.image.hoster.com/randomimage.png"
                       },
                       "variation-product" : {
-                        "href" : "https://yourshop.api.urn/api/products/39a5dadc-30a4-4450-a939-b5f127674f1c"
+                        "href" : "https://yourshop.api.urn/api/products/6f2711ec-b8a2-426a-b5b4-cb2cbcf26dd8"
                       }
                     }
                   },
@@ -6147,6 +6070,85 @@ paths:
                       "amount" : 0
                     }
                   }
+                }, {
+                  "_id" : "e73697a0-3896-4dbe-8ae1-24b29b42ca62",
+                  "product" : {
+                    "_id" : "a6af3dec-9ad4-48ef-9ed0-a3309eabb03b",
+                    "sku" : "EB001",
+                    "name" : "High Protein Power Bar (Pack of 5)",
+                    "essentialFeatures" : "Preservative-free. No added sweeteners. Vegan.",
+                    "shippingWeight" : 190,
+                    "defaultImageDataUri" : "http://your.image.hoster.com/randomimage.png",
+                    "variationAttributeValues" : [ {
+                      "displayName" : "flavor",
+                      "value" : "Salted Caramel"
+                    } ],
+                    "_links" : {
+                      "default-image-data" : {
+                        "href" : "https://yourshop.api.urn/http:/your.image.hoster.com/randomimage.png"
+                      },
+                      "variation-product" : {
+                        "href" : "https://yourshop.api.urn/api/products/8d535d71-9d00-477d-bdc7-f040eb68c63a"
+                      }
+                    }
+                  },
+                  "quantity" : 5,
+                  "initialQuantity" : 5,
+                  "unitPrice" : {
+                    "taxModel" : "GROSS",
+                    "currency" : "EUR",
+                    "amount" : 9.99
+                  },
+                  "unitDiscount" : null,
+                  "lineItemPrice" : {
+                    "taxModel" : "GROSS",
+                    "currency" : "EUR",
+                    "amount" : 49.95
+                  },
+                  "initialLineItemPrice" : {
+                    "taxModel" : "GROSS",
+                    "currency" : "EUR",
+                    "amount" : 49.95
+                  },
+                  "lineItemTax" : {
+                    "taxClass" : "REGULAR",
+                    "taxRate" : 0.19,
+                    "currency" : "EUR",
+                    "amount" : 7.9743
+                  },
+                  "unshipped" : {
+                    "quantity" : 5,
+                    "amount" : null
+                  },
+                  "shipped" : {
+                    "quantity" : 0,
+                    "amount" : null
+                  },
+                  "pending" : {
+                    "quantity" : 0,
+                    "amount" : null
+                  },
+                  "returned" : {
+                    "quantity" : 0,
+                    "amount" : {
+                      "currency" : "EUR",
+                      "amount" : 0
+                    }
+                  },
+                  "broken" : {
+                    "quantity" : 0,
+                    "amount" : {
+                      "currency" : "EUR",
+                      "amount" : 0
+                    }
+                  },
+                  "canceled" : {
+                    "quantity" : 0,
+                    "amount" : {
+                      "currency" : "EUR",
+                      "amount" : 0
+                    }
+                  }
                 } ],
                 "couponLineItem" : null,
                 "shippingLineItem" : {
@@ -6162,7 +6164,7 @@ paths:
                   },
                   "taxClass" : "REGULAR",
                   "shippingMethod" : {
-                    "id" : "e1dd04fa-f989-407b-a834-3d13e169b0bb",
+                    "id" : "3feabd87-678c-48e0-a573-768b191cb3ef",
                     "name" : "Standard",
                     "description" : "Standard shipping. Delivery within 3-4 days.",
                     "freeShippingValue" : {
@@ -6196,7 +6198,7 @@ paths:
                   },
                   "taxClass" : "REGULAR",
                   "paymentMethod" : {
-                    "id" : "89c8a7f3-3c13-4cc2-82c0-ed3136e60e8a",
+                    "id" : "4fcfbcd6-d826-4297-b701-17e4b26c0154",
                     "name" : "PayPal",
                     "description" : "Pay by PayPal.",
                     "discountOrFee" : {
@@ -6322,7 +6324,7 @@ paths:
                 "paymentNote" : "Reference EDB85BEA2DAE436E90C1E2027A0F012A",
                 "externalPaymentId" : "6b2d2fg1-05c9-4159-146c-5fy2fe596z26",
                 "externalPaymentUri" : "https://example.com/referral",
-                "entryDate" : "2020-05-15T09:55:18.788",
+                "entryDate" : "2020-05-18T12:08:43.665",
                 "totalReceived" : {
                   "currency" : "EUR",
                   "amount" : 0
@@ -6341,31 +6343,31 @@ paths:
                 "backgroundJobs" : [ ],
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/orders/b9dfc0e1-722a-47b8-b3e2-bce779a32d14"
+                    "href" : "https://yourshop.api.urn/orders/1c12cf4b-bfc6-45dd-839a-a3124a7776ab"
                   },
                   "order" : {
-                    "href" : "https://yourshop.api.urn/orders/b9dfc0e1-722a-47b8-b3e2-bce779a32d14"
+                    "href" : "https://yourshop.api.urn/orders/1c12cf4b-bfc6-45dd-839a-a3124a7776ab"
                   },
                   "order-note" : {
-                    "href" : "https://yourshop.api.urn/orders/b9dfc0e1-722a-47b8-b3e2-bce779a32d14/order-note"
+                    "href" : "https://yourshop.api.urn/orders/1c12cf4b-bfc6-45dd-839a-a3124a7776ab/order-note"
                   },
                   "processes" : {
-                    "href" : "https://yourshop.api.urn/orders/b9dfc0e1-722a-47b8-b3e2-bce779a32d14/processes"
+                    "href" : "https://yourshop.api.urn/orders/1c12cf4b-bfc6-45dd-839a-a3124a7776ab/processes"
                   },
                   "events" : {
-                    "href" : "https://yourshop.api.urn/orders/b9dfc0e1-722a-47b8-b3e2-bce779a32d14/events"
+                    "href" : "https://yourshop.api.urn/orders/1c12cf4b-bfc6-45dd-839a-a3124a7776ab/events"
                   },
                   "cancel" : {
-                    "href" : "https://yourshop.api.urn/orders/b9dfc0e1-722a-47b8-b3e2-bce779a32d14/cancel"
+                    "href" : "https://yourshop.api.urn/orders/1c12cf4b-bfc6-45dd-839a-a3124a7776ab/cancel"
                   },
                   "create-invoice" : {
-                    "href" : "https://yourshop.api.urn/orders/b9dfc0e1-722a-47b8-b3e2-bce779a32d14/create-invoice"
-                  },
-                  "right-of-withdrawal-pdf" : {
-                    "href" : "https://yourshop.api.urn/pdf-storage/attachments/right-of-withdrawal.pdf?hash=647563475863487"
+                    "href" : "https://yourshop.api.urn/orders/1c12cf4b-bfc6-45dd-839a-a3124a7776ab/create-invoice"
                   },
                   "terms-and-conditions-pdf" : {
                     "href" : "https://yourshop.api.urn/pdf-storage/attachments/terms-and-conditions.pdf?hash=238734684735643875634578213"
+                  },
+                  "right-of-withdrawal-pdf" : {
+                    "href" : "https://yourshop.api.urn/pdf-storage/attachments/right-of-withdrawal.pdf?hash=647563475863487"
                   }
                 }
               }
@@ -6390,18 +6392,18 @@ paths:
           examples:
             application/hal+json: |-
               {
-                "_id" : "9bbab4f8-5aa0-4eeb-ab29-b4123d5b9b6f",
-                "createdAt" : "2020-05-15T09:55:08.743",
-                "cartId" : "acf59f33-3f58-48cb-a543-035b5f39bcc7",
+                "_id" : "dd62823d-e50e-402b-94fa-f221bdfd5149",
+                "createdAt" : "2020-05-18T12:08:34.838",
+                "cartId" : "4f1bb969-15ce-4da0-8816-164291ce42cb",
                 "currency" : "EUR",
                 "taxModel" : "GROSS",
                 "taxable" : false,
                 "testOrder" : false,
                 "termsAndConditionsExplicitlyAccepted" : false,
                 "productLineItems" : [ {
-                  "_id" : "0aaee929-787f-4e1b-bdd1-992192e95604",
+                  "_id" : "3d81182d-48e9-4cee-b912-c06f3b3bf23a",
                   "product" : {
-                    "_id" : "082d4d16-f9ac-42eb-8240-0ec3905baea5",
+                    "_id" : "12614c98-9691-43ec-afff-a07119073c36",
                     "sku" : "sh-001",
                     "name" : "Soft Walk Ultra - Nibok Men's",
                     "essentialFeatures" : "Inner Material: Synthetic. Sole: Rubber. Upper Material: Leather.",
@@ -6416,7 +6418,7 @@ paths:
                         "href" : "https://yourshop.api.urn/http:/your.image.hoster.com/randomimage.png"
                       },
                       "variation-product" : {
-                        "href" : "https://yourshop.api.urn/api/products/0d16bf3d-0ff2-4ae5-b234-d756655fd0ee"
+                        "href" : "https://yourshop.api.urn/api/products/099740eb-981d-4408-b931-91bf74b6a556"
                       }
                     }
                   },
@@ -6478,9 +6480,9 @@ paths:
                     }
                   }
                 }, {
-                  "_id" : "ca68fc91-64bf-4e72-9427-a15b834506f5",
+                  "_id" : "e6a53175-4a0c-402f-8d11-85a4070ca4f9",
                   "product" : {
-                    "_id" : "f6c49263-8c14-4baf-b41a-ef5bbdf88d27",
+                    "_id" : "79592d2e-19ad-4396-970a-896abdf741b2",
                     "sku" : "EB001",
                     "name" : "High Protein Power Bar (Pack of 5)",
                     "essentialFeatures" : "Preservative-free. No added sweeteners. Vegan.",
@@ -6495,7 +6497,7 @@ paths:
                         "href" : "https://yourshop.api.urn/http:/your.image.hoster.com/randomimage.png"
                       },
                       "variation-product" : {
-                        "href" : "https://yourshop.api.urn/api/products/5c808d36-c1ee-4c15-bdd8-15e1705c8a77"
+                        "href" : "https://yourshop.api.urn/api/products/a8db8072-51e0-4c98-ac53-1e16e71a1d2d"
                       }
                     }
                   },
@@ -6571,7 +6573,7 @@ paths:
                   },
                   "taxClass" : "REGULAR",
                   "shippingMethod" : {
-                    "id" : "306cd968-30a0-4808-af64-9bc3d6013348",
+                    "id" : "ef0dcb47-cd13-4a86-bd3e-45b961754073",
                     "name" : "Standard",
                     "description" : "Standard shipping. Delivery within 3-4 days.",
                     "freeShippingValue" : {
@@ -6605,7 +6607,7 @@ paths:
                   },
                   "taxClass" : "REGULAR",
                   "paymentMethod" : {
-                    "id" : "f68dd3b6-8710-4bbf-8b9f-9baecd15452b",
+                    "id" : "53e46e43-c979-4df4-bec7-4555050731cf",
                     "name" : "PayPal",
                     "description" : "Pay by PayPal.",
                     "discountOrFee" : {
@@ -6731,7 +6733,7 @@ paths:
                 "paymentNote" : "Reference EDB85BEA2DAE436E90C1E2027A0F012A",
                 "externalPaymentId" : "6b2d2fg1-05c9-4159-146c-5fy2fe596z26",
                 "externalPaymentUri" : "https://example.com/referral",
-                "entryDate" : "2020-05-15T09:55:08.725",
+                "entryDate" : "2020-05-18T12:08:34.829",
                 "totalReceived" : {
                   "currency" : "EUR",
                   "amount" : 0
@@ -6750,25 +6752,25 @@ paths:
                 "backgroundJobs" : [ ],
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/orders/9bbab4f8-5aa0-4eeb-ab29-b4123d5b9b6f"
+                    "href" : "https://yourshop.api.urn/orders/dd62823d-e50e-402b-94fa-f221bdfd5149"
                   },
                   "order" : {
-                    "href" : "https://yourshop.api.urn/orders/9bbab4f8-5aa0-4eeb-ab29-b4123d5b9b6f"
+                    "href" : "https://yourshop.api.urn/orders/dd62823d-e50e-402b-94fa-f221bdfd5149"
                   },
                   "order-note" : {
-                    "href" : "https://yourshop.api.urn/orders/9bbab4f8-5aa0-4eeb-ab29-b4123d5b9b6f/order-note"
+                    "href" : "https://yourshop.api.urn/orders/dd62823d-e50e-402b-94fa-f221bdfd5149/order-note"
                   },
                   "processes" : {
-                    "href" : "https://yourshop.api.urn/orders/9bbab4f8-5aa0-4eeb-ab29-b4123d5b9b6f/processes"
+                    "href" : "https://yourshop.api.urn/orders/dd62823d-e50e-402b-94fa-f221bdfd5149/processes"
                   },
                   "events" : {
-                    "href" : "https://yourshop.api.urn/orders/9bbab4f8-5aa0-4eeb-ab29-b4123d5b9b6f/events"
+                    "href" : "https://yourshop.api.urn/orders/dd62823d-e50e-402b-94fa-f221bdfd5149/events"
                   },
                   "cancel" : {
-                    "href" : "https://yourshop.api.urn/orders/9bbab4f8-5aa0-4eeb-ab29-b4123d5b9b6f/cancel"
+                    "href" : "https://yourshop.api.urn/orders/dd62823d-e50e-402b-94fa-f221bdfd5149/cancel"
                   },
                   "create-invoice" : {
-                    "href" : "https://yourshop.api.urn/orders/9bbab4f8-5aa0-4eeb-ab29-b4123d5b9b6f/create-invoice"
+                    "href" : "https://yourshop.api.urn/orders/dd62823d-e50e-402b-94fa-f221bdfd5149/create-invoice"
                   },
                   "terms-and-conditions-pdf" : {
                     "href" : "https://yourshop.api.urn/pdf-storage/attachments/terms-and-conditions.pdf?hash=238734684735643875634578213"
@@ -6798,11 +6800,11 @@ paths:
           examples:
             application/hal+json: |-
               {
-                "orderId" : "edd72cdc-b169-4b56-a7d3-045069548eb9",
+                "orderId" : "d640f8d8-2256-4540-b2cf-96d95b3859c8",
                 "orderNumber" : "10001",
                 "_links" : {
                   "order" : {
-                    "href" : "https://yourshop.api.urn/orders/edd72cdc-b169-4b56-a7d3-045069548eb9"
+                    "href" : "https://yourshop.api.urn/orders/d640f8d8-2256-4540-b2cf-96d95b3859c8"
                   }
                 }
               }
@@ -6883,18 +6885,18 @@ paths:
           examples:
             application/hal+json: |-
               {
-                "_id" : "55f827da-b75f-40d3-894f-a56cbbdd65a4",
-                "createdAt" : "2020-05-15T09:55:16.981",
-                "cartId" : "475e2281-5927-43cd-b02f-cd74bdeffe9f",
+                "_id" : "f408117b-a393-4577-b837-83942bb0bc5c",
+                "createdAt" : "2020-05-18T12:08:41.934",
+                "cartId" : "f2aaa7d0-ac16-481d-be9c-ae1ee027bbe6",
                 "currency" : "EUR",
                 "taxModel" : "GROSS",
                 "taxable" : false,
                 "testOrder" : false,
                 "termsAndConditionsExplicitlyAccepted" : false,
                 "productLineItems" : [ {
-                  "_id" : "16853a83-9d9b-4fcf-b30a-a84398ec5f50",
+                  "_id" : "1867b3ae-bb1d-4286-aa97-de6a5f408768",
                   "product" : {
-                    "_id" : "7b2ae36e-befa-4f64-90a2-6d40f4758933",
+                    "_id" : "244bf786-70d3-40dc-972a-50c00dcdb07c",
                     "sku" : "sh-001",
                     "name" : "Soft Walk Ultra - Nibok Men's",
                     "essentialFeatures" : "Inner Material: Synthetic. Sole: Rubber. Upper Material: Leather.",
@@ -6909,7 +6911,7 @@ paths:
                         "href" : "https://yourshop.api.urn/http:/your.image.hoster.com/randomimage.png"
                       },
                       "variation-product" : {
-                        "href" : "https://yourshop.api.urn/api/products/1d50b609-a57f-491d-9148-0cd5b7eb1a56"
+                        "href" : "https://yourshop.api.urn/api/products/967c7855-13f4-417c-9eea-55b0c3a6c673"
                       }
                     }
                   },
@@ -6971,9 +6973,9 @@ paths:
                     }
                   }
                 }, {
-                  "_id" : "a1e7a02c-818f-4142-b748-b3e45ffec9b4",
+                  "_id" : "9463bfc5-0212-4244-acee-54f4300ed163",
                   "product" : {
-                    "_id" : "a7ed1c86-88bb-4df6-9fa5-d360aa626afc",
+                    "_id" : "2bb4eb04-af4c-4c1f-b570-67b0d9030aae",
                     "sku" : "EB001",
                     "name" : "High Protein Power Bar (Pack of 5)",
                     "essentialFeatures" : "Preservative-free. No added sweeteners. Vegan.",
@@ -6988,7 +6990,7 @@ paths:
                         "href" : "https://yourshop.api.urn/http:/your.image.hoster.com/randomimage.png"
                       },
                       "variation-product" : {
-                        "href" : "https://yourshop.api.urn/api/products/12852b77-69ee-47b2-ab09-66f908b4aadd"
+                        "href" : "https://yourshop.api.urn/api/products/914c32a3-e8c4-425f-ba31-4e3ca36bf990"
                       }
                     }
                   },
@@ -7064,7 +7066,7 @@ paths:
                   },
                   "taxClass" : "REGULAR",
                   "shippingMethod" : {
-                    "id" : "c74024a5-9a57-40d2-b00e-a9149ea0efcc",
+                    "id" : "b702756e-3fd8-44d5-9628-a77e8c00d615",
                     "name" : "Standard",
                     "description" : "Standard shipping. Delivery within 3-4 days.",
                     "freeShippingValue" : {
@@ -7098,7 +7100,7 @@ paths:
                   },
                   "taxClass" : "REGULAR",
                   "paymentMethod" : {
-                    "id" : "d881f75e-a9e4-4cee-aaa0-ca4d580c5a1b",
+                    "id" : "b60ebe3c-e02d-4724-aa55-4444235cd1e1",
                     "name" : "PayPal",
                     "description" : "Pay by PayPal.",
                     "discountOrFee" : {
@@ -7224,7 +7226,7 @@ paths:
                 "paymentNote" : "Reference EDB85BEA2DAE436E90C1E2027A0F012A",
                 "externalPaymentId" : "6b2d2fg1-05c9-4159-146c-5fy2fe596z26",
                 "externalPaymentUri" : "https://example.com/referral",
-                "entryDate" : "2020-05-15T09:55:16.964",
+                "entryDate" : "2020-05-18T12:08:41.925",
                 "totalReceived" : {
                   "currency" : "EUR",
                   "amount" : 0
@@ -7243,34 +7245,34 @@ paths:
                 "backgroundJobs" : [ ],
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/orders/55f827da-b75f-40d3-894f-a56cbbdd65a4"
+                    "href" : "https://yourshop.api.urn/orders/f408117b-a393-4577-b837-83942bb0bc5c"
                   },
                   "order" : {
-                    "href" : "https://yourshop.api.urn/orders/55f827da-b75f-40d3-894f-a56cbbdd65a4"
+                    "href" : "https://yourshop.api.urn/orders/f408117b-a393-4577-b837-83942bb0bc5c"
                   },
                   "order-note" : {
-                    "href" : "https://yourshop.api.urn/orders/55f827da-b75f-40d3-894f-a56cbbdd65a4/order-note"
+                    "href" : "https://yourshop.api.urn/orders/f408117b-a393-4577-b837-83942bb0bc5c/order-note"
                   },
                   "processes" : {
-                    "href" : "https://yourshop.api.urn/orders/55f827da-b75f-40d3-894f-a56cbbdd65a4/processes"
+                    "href" : "https://yourshop.api.urn/orders/f408117b-a393-4577-b837-83942bb0bc5c/processes"
                   },
                   "events" : {
-                    "href" : "https://yourshop.api.urn/orders/55f827da-b75f-40d3-894f-a56cbbdd65a4/events"
+                    "href" : "https://yourshop.api.urn/orders/f408117b-a393-4577-b837-83942bb0bc5c/events"
                   },
                   "cancel" : {
-                    "href" : "https://yourshop.api.urn/orders/55f827da-b75f-40d3-894f-a56cbbdd65a4/cancel"
+                    "href" : "https://yourshop.api.urn/orders/f408117b-a393-4577-b837-83942bb0bc5c/cancel"
                   },
                   "send-order-document" : {
-                    "href" : "https://yourshop.api.urn/orders/55f827da-b75f-40d3-894f-a56cbbdd65a4/send-order-document"
+                    "href" : "https://yourshop.api.urn/orders/f408117b-a393-4577-b837-83942bb0bc5c/send-order-document"
                   },
                   "invoice-pdf" : {
                     "href" : "https://yourshop.api.urn/api/pdf-storage/attachments/invoice_10003.pdf?hash=9e5e2631c6f5877d64cb3d40db46ec6eb48a3a92"
                   },
-                  "terms-and-conditions-pdf" : {
-                    "href" : "https://yourshop.api.urn/pdf-storage/attachments/terms-and-conditions.pdf?hash=238734684735643875634578213"
-                  },
                   "right-of-withdrawal-pdf" : {
                     "href" : "https://yourshop.api.urn/pdf-storage/attachments/right-of-withdrawal.pdf?hash=647563475863487"
+                  },
+                  "terms-and-conditions-pdf" : {
+                    "href" : "https://yourshop.api.urn/pdf-storage/attachments/terms-and-conditions.pdf?hash=238734684735643875634578213"
                   }
                 }
               }
@@ -7336,18 +7338,18 @@ paths:
           examples:
             application/hal+json: |-
               {
-                "_id" : "35cbb419-5793-410e-a5a3-683803ee3efc",
-                "createdAt" : "2020-05-15T09:55:12.04",
-                "cartId" : "1069424f-3ebd-4977-bef9-50779682a2c4",
+                "_id" : "ddc97bb1-e3d4-40ba-88ef-5cb3e68c93f8",
+                "createdAt" : "2020-05-18T12:08:37.372",
+                "cartId" : "4280a3aa-80d9-419d-a6e1-4825265f825d",
                 "currency" : "EUR",
                 "taxModel" : "GROSS",
                 "taxable" : false,
                 "testOrder" : false,
                 "termsAndConditionsExplicitlyAccepted" : false,
                 "productLineItems" : [ {
-                  "_id" : "9f9311aa-5afd-4135-a5d7-ae8c5cea52be",
+                  "_id" : "35c3c522-5592-4a05-881a-12096cdf7cc6",
                   "product" : {
-                    "_id" : "66557f5a-04c3-4a1a-a28b-8c85997d775f",
+                    "_id" : "1fe4caa6-f868-4f82-8922-1d90db37baeb",
                     "sku" : "EB001",
                     "name" : "High Protein Power Bar (Pack of 5)",
                     "essentialFeatures" : "Preservative-free. No added sweeteners. Vegan.",
@@ -7362,7 +7364,7 @@ paths:
                         "href" : "https://yourshop.api.urn/http:/your.image.hoster.com/randomimage.png"
                       },
                       "variation-product" : {
-                        "href" : "https://yourshop.api.urn/api/products/dd13efc3-bd4c-4538-b23d-3386a5013311"
+                        "href" : "https://yourshop.api.urn/api/products/2cedf1f3-b3eb-4b77-b75b-de7d92d831b4"
                       }
                     }
                   },
@@ -7424,9 +7426,9 @@ paths:
                     }
                   }
                 }, {
-                  "_id" : "dc2cf14c-83d4-4c72-b47b-6d69d2d181d3",
+                  "_id" : "fdcb6141-f832-481f-b310-49c88976ecc7",
                   "product" : {
-                    "_id" : "d3dd99ab-be8f-4fe8-a873-c0fa2de88fbb",
+                    "_id" : "4bfea9b0-1488-45e5-81dd-d734b6963868",
                     "sku" : "sh-001",
                     "name" : "Soft Walk Ultra - Nibok Men's",
                     "essentialFeatures" : "Inner Material: Synthetic. Sole: Rubber. Upper Material: Leather.",
@@ -7441,7 +7443,7 @@ paths:
                         "href" : "https://yourshop.api.urn/http:/your.image.hoster.com/randomimage.png"
                       },
                       "variation-product" : {
-                        "href" : "https://yourshop.api.urn/api/products/98b398c4-13a1-42db-86bd-2c4ca73ab3d6"
+                        "href" : "https://yourshop.api.urn/api/products/ddfeb535-c4a0-4cc9-86f2-e16dd9ccfc34"
                       }
                     }
                   },
@@ -7517,7 +7519,7 @@ paths:
                   },
                   "taxClass" : "REGULAR",
                   "shippingMethod" : {
-                    "id" : "f38bb60a-5955-4bd6-815f-0e0fe32b27b3",
+                    "id" : "048daa93-c562-44f4-87f4-6ca668b10fb5",
                     "name" : "Standard",
                     "description" : "Standard shipping. Delivery within 3-4 days.",
                     "freeShippingValue" : {
@@ -7551,7 +7553,7 @@ paths:
                   },
                   "taxClass" : "REGULAR",
                   "paymentMethod" : {
-                    "id" : "9b47e6d9-9401-4c16-ad7d-d83cb16b332a",
+                    "id" : "1c3d377a-bdaf-4c8b-975f-ae99880132fd",
                     "name" : "PayPal",
                     "description" : "Pay by PayPal.",
                     "discountOrFee" : {
@@ -7677,7 +7679,7 @@ paths:
                 "paymentNote" : "Reference EDB85BEA2DAE436E90C1E2027A0F012A",
                 "externalPaymentId" : "6b2d2fg1-05c9-4159-146c-5fy2fe596z26",
                 "externalPaymentUri" : "https://example.com/referral",
-                "entryDate" : "2020-05-15T09:55:12.033",
+                "entryDate" : "2020-05-18T12:08:37.364",
                 "totalReceived" : {
                   "currency" : "EUR",
                   "amount" : 0
@@ -7696,34 +7698,34 @@ paths:
                 "backgroundJobs" : [ "render-invoice-correction-pdf" ],
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/orders/35cbb419-5793-410e-a5a3-683803ee3efc"
+                    "href" : "https://yourshop.api.urn/orders/ddc97bb1-e3d4-40ba-88ef-5cb3e68c93f8"
                   },
                   "order" : {
-                    "href" : "https://yourshop.api.urn/orders/35cbb419-5793-410e-a5a3-683803ee3efc"
+                    "href" : "https://yourshop.api.urn/orders/ddc97bb1-e3d4-40ba-88ef-5cb3e68c93f8"
                   },
                   "order-note" : {
-                    "href" : "https://yourshop.api.urn/orders/35cbb419-5793-410e-a5a3-683803ee3efc/order-note"
+                    "href" : "https://yourshop.api.urn/orders/ddc97bb1-e3d4-40ba-88ef-5cb3e68c93f8/order-note"
                   },
                   "processes" : {
-                    "href" : "https://yourshop.api.urn/orders/35cbb419-5793-410e-a5a3-683803ee3efc/processes"
+                    "href" : "https://yourshop.api.urn/orders/ddc97bb1-e3d4-40ba-88ef-5cb3e68c93f8/processes"
                   },
                   "events" : {
-                    "href" : "https://yourshop.api.urn/orders/35cbb419-5793-410e-a5a3-683803ee3efc/events"
+                    "href" : "https://yourshop.api.urn/orders/ddc97bb1-e3d4-40ba-88ef-5cb3e68c93f8/events"
                   },
                   "cancel" : {
-                    "href" : "https://yourshop.api.urn/orders/35cbb419-5793-410e-a5a3-683803ee3efc/cancel"
+                    "href" : "https://yourshop.api.urn/orders/ddc97bb1-e3d4-40ba-88ef-5cb3e68c93f8/cancel"
                   },
                   "send-order-document" : {
-                    "href" : "https://yourshop.api.urn/orders/35cbb419-5793-410e-a5a3-683803ee3efc/send-order-document"
+                    "href" : "https://yourshop.api.urn/orders/ddc97bb1-e3d4-40ba-88ef-5cb3e68c93f8/send-order-document"
                   },
                   "invoice-pdf" : {
                     "href" : "https://yourshop.api.urn/api/pdf-storage/attachments/invoice_10003.pdf?hash=9e5e2631c6f5877d64cb3d40db46ec6eb48a3a92"
                   },
-                  "terms-and-conditions-pdf" : {
-                    "href" : "https://yourshop.api.urn/pdf-storage/attachments/terms-and-conditions.pdf?hash=238734684735643875634578213"
-                  },
                   "right-of-withdrawal-pdf" : {
                     "href" : "https://yourshop.api.urn/pdf-storage/attachments/right-of-withdrawal.pdf?hash=647563475863487"
+                  },
+                  "terms-and-conditions-pdf" : {
+                    "href" : "https://yourshop.api.urn/pdf-storage/attachments/terms-and-conditions.pdf?hash=238734684735643875634578213"
                   }
                 }
               }
@@ -7760,97 +7762,18 @@ paths:
           examples:
             application/hal+json: |-
               {
-                "_id" : "d843226e-d5a6-482c-b19b-772d56c9cd86",
-                "createdAt" : "2020-05-15T09:55:50.06",
-                "cartId" : "52f82475-147c-4228-ad3f-8b5dac49cc01",
+                "_id" : "66221adf-35ed-46dd-883f-b1450ba88110",
+                "createdAt" : "2020-05-18T12:09:07.352",
+                "cartId" : "a27f1501-d9fb-4262-b27b-c683b65fbb82",
                 "currency" : "EUR",
                 "taxModel" : "GROSS",
                 "taxable" : true,
                 "testOrder" : false,
                 "termsAndConditionsExplicitlyAccepted" : false,
                 "productLineItems" : [ {
-                  "_id" : "2a2d3db8-a9d4-402c-8ae0-527cef4d1995",
+                  "_id" : "8ff9486e-89b3-4e33-a791-0adbb3ea4197",
                   "product" : {
-                    "_id" : "c2231898-230d-41c1-a28c-beac6170f8e9",
-                    "sku" : "EB001",
-                    "name" : "High Protein Power Bar (Pack of 5)",
-                    "essentialFeatures" : "Preservative-free. No added sweeteners. Vegan.",
-                    "shippingWeight" : 190,
-                    "defaultImageDataUri" : "http://your.image.hoster.com/randomimage.png",
-                    "variationAttributeValues" : [ {
-                      "displayName" : "flavor",
-                      "value" : "Salted Caramel"
-                    } ],
-                    "_links" : {
-                      "default-image-data" : {
-                        "href" : "https://yourshop.api.urn/http:/your.image.hoster.com/randomimage.png"
-                      },
-                      "variation-product" : {
-                        "href" : "https://yourshop.api.urn/api/products/36e8622c-59ff-4d02-9a9b-6d2b2ef15940"
-                      }
-                    }
-                  },
-                  "quantity" : 0,
-                  "initialQuantity" : 5,
-                  "unitPrice" : {
-                    "taxModel" : "GROSS",
-                    "currency" : "EUR",
-                    "amount" : 9.99
-                  },
-                  "unitDiscount" : null,
-                  "lineItemPrice" : {
-                    "taxModel" : "GROSS",
-                    "currency" : "EUR",
-                    "amount" : 0
-                  },
-                  "initialLineItemPrice" : {
-                    "taxModel" : "GROSS",
-                    "currency" : "EUR",
-                    "amount" : 49.95
-                  },
-                  "lineItemTax" : {
-                    "taxClass" : "REGULAR",
-                    "taxRate" : 0.19,
-                    "currency" : "EUR",
-                    "amount" : 0
-                  },
-                  "unshipped" : {
-                    "quantity" : 0,
-                    "amount" : null
-                  },
-                  "shipped" : {
-                    "quantity" : 0,
-                    "amount" : null
-                  },
-                  "pending" : {
-                    "quantity" : 0,
-                    "amount" : null
-                  },
-                  "returned" : {
-                    "quantity" : 0,
-                    "amount" : {
-                      "currency" : "EUR",
-                      "amount" : 0
-                    }
-                  },
-                  "broken" : {
-                    "quantity" : 0,
-                    "amount" : {
-                      "currency" : "EUR",
-                      "amount" : 0
-                    }
-                  },
-                  "canceled" : {
-                    "quantity" : 5,
-                    "amount" : {
-                      "currency" : "EUR",
-                      "amount" : 49.95
-                    }
-                  }
-                }, {
-                  "_id" : "815698fa-b8b6-4136-b764-1fb658681b3f",
-                  "product" : {
-                    "_id" : "7328a101-3ed1-430a-aff2-451a62ed1a5e",
+                    "_id" : "eb6609c8-8929-4398-af23-61fec3979053",
                     "sku" : "sh-001",
                     "name" : "Soft Walk Ultra - Nibok Men's",
                     "essentialFeatures" : "Inner Material: Synthetic. Sole: Rubber. Upper Material: Leather.",
@@ -7865,7 +7788,7 @@ paths:
                         "href" : "https://yourshop.api.urn/http:/your.image.hoster.com/randomimage.png"
                       },
                       "variation-product" : {
-                        "href" : "https://yourshop.api.urn/api/products/6ee36215-2f85-463a-9930-802aaa70058c"
+                        "href" : "https://yourshop.api.urn/api/products/e315cb33-c509-4558-aa2a-1d94c4aceb78"
                       }
                     }
                   },
@@ -7926,6 +7849,85 @@ paths:
                       "amount" : 7.5
                     }
                   }
+                }, {
+                  "_id" : "c13a1e35-ea68-4cd3-b48a-e8d44c0219ac",
+                  "product" : {
+                    "_id" : "d1bc35c1-c595-496b-bffd-463ddbbe0ab7",
+                    "sku" : "EB001",
+                    "name" : "High Protein Power Bar (Pack of 5)",
+                    "essentialFeatures" : "Preservative-free. No added sweeteners. Vegan.",
+                    "shippingWeight" : 190,
+                    "defaultImageDataUri" : "http://your.image.hoster.com/randomimage.png",
+                    "variationAttributeValues" : [ {
+                      "displayName" : "flavor",
+                      "value" : "Salted Caramel"
+                    } ],
+                    "_links" : {
+                      "default-image-data" : {
+                        "href" : "https://yourshop.api.urn/http:/your.image.hoster.com/randomimage.png"
+                      },
+                      "variation-product" : {
+                        "href" : "https://yourshop.api.urn/api/products/5f8d47c9-5273-4310-bc67-4c241a32d8b0"
+                      }
+                    }
+                  },
+                  "quantity" : 0,
+                  "initialQuantity" : 5,
+                  "unitPrice" : {
+                    "taxModel" : "GROSS",
+                    "currency" : "EUR",
+                    "amount" : 9.99
+                  },
+                  "unitDiscount" : null,
+                  "lineItemPrice" : {
+                    "taxModel" : "GROSS",
+                    "currency" : "EUR",
+                    "amount" : 0
+                  },
+                  "initialLineItemPrice" : {
+                    "taxModel" : "GROSS",
+                    "currency" : "EUR",
+                    "amount" : 49.95
+                  },
+                  "lineItemTax" : {
+                    "taxClass" : "REGULAR",
+                    "taxRate" : 0.19,
+                    "currency" : "EUR",
+                    "amount" : 0
+                  },
+                  "unshipped" : {
+                    "quantity" : 0,
+                    "amount" : null
+                  },
+                  "shipped" : {
+                    "quantity" : 0,
+                    "amount" : null
+                  },
+                  "pending" : {
+                    "quantity" : 0,
+                    "amount" : null
+                  },
+                  "returned" : {
+                    "quantity" : 0,
+                    "amount" : {
+                      "currency" : "EUR",
+                      "amount" : 0
+                    }
+                  },
+                  "broken" : {
+                    "quantity" : 0,
+                    "amount" : {
+                      "currency" : "EUR",
+                      "amount" : 0
+                    }
+                  },
+                  "canceled" : {
+                    "quantity" : 5,
+                    "amount" : {
+                      "currency" : "EUR",
+                      "amount" : 49.95
+                    }
+                  }
                 } ],
                 "couponLineItem" : null,
                 "shippingLineItem" : {
@@ -7941,7 +7943,7 @@ paths:
                   },
                   "taxClass" : "REGULAR",
                   "shippingMethod" : {
-                    "id" : "2c25db0e-3e92-4803-bb80-fba7c8021f54",
+                    "id" : "03c52d06-af57-4135-ae20-f050152a29bb",
                     "name" : "Standard",
                     "description" : "Standard shipping. Delivery within 3-4 days.",
                     "freeShippingValue" : {
@@ -7975,7 +7977,7 @@ paths:
                   },
                   "taxClass" : "REGULAR",
                   "paymentMethod" : {
-                    "id" : "1b1cf11d-9758-4102-b85d-4b508fc58f04",
+                    "id" : "3ca5394b-79d8-4376-b369-2f12fdf21192",
                     "name" : "PayPal",
                     "description" : "Pay by PayPal.",
                     "discountOrFee" : {
@@ -8101,7 +8103,7 @@ paths:
                 "paymentNote" : "Reference EDB85BEA2DAE436E90C1E2027A0F012A",
                 "externalPaymentId" : "6b2d2fg1-05c9-4159-146c-5fy2fe596z26",
                 "externalPaymentUri" : "https://example.com/referral",
-                "entryDate" : "2020-05-15T09:55:50.05",
+                "entryDate" : "2020-05-18T12:09:07.34",
                 "totalReceived" : {
                   "currency" : "EUR",
                   "amount" : 77.44
@@ -8120,31 +8122,31 @@ paths:
                 "backgroundJobs" : [ "render-invoice-cancelation-pdf" ],
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/orders/d843226e-d5a6-482c-b19b-772d56c9cd86"
+                    "href" : "https://yourshop.api.urn/orders/66221adf-35ed-46dd-883f-b1450ba88110"
                   },
                   "order" : {
-                    "href" : "https://yourshop.api.urn/orders/d843226e-d5a6-482c-b19b-772d56c9cd86"
+                    "href" : "https://yourshop.api.urn/orders/66221adf-35ed-46dd-883f-b1450ba88110"
                   },
                   "order-note" : {
-                    "href" : "https://yourshop.api.urn/orders/d843226e-d5a6-482c-b19b-772d56c9cd86/order-note"
+                    "href" : "https://yourshop.api.urn/orders/66221adf-35ed-46dd-883f-b1450ba88110/order-note"
                   },
                   "processes" : {
-                    "href" : "https://yourshop.api.urn/orders/d843226e-d5a6-482c-b19b-772d56c9cd86/processes"
+                    "href" : "https://yourshop.api.urn/orders/66221adf-35ed-46dd-883f-b1450ba88110/processes"
                   },
                   "events" : {
-                    "href" : "https://yourshop.api.urn/orders/d843226e-d5a6-482c-b19b-772d56c9cd86/events"
+                    "href" : "https://yourshop.api.urn/orders/66221adf-35ed-46dd-883f-b1450ba88110/events"
                   },
                   "send-order-document" : {
-                    "href" : "https://yourshop.api.urn/orders/d843226e-d5a6-482c-b19b-772d56c9cd86/send-order-document"
+                    "href" : "https://yourshop.api.urn/orders/66221adf-35ed-46dd-883f-b1450ba88110/send-order-document"
                   },
                   "invoice-pdf" : {
                     "href" : "https://yourshop.api.urn/http:/pdf-storage/invoice_1000.pdf?hash=2387463287462348762348732"
                   },
-                  "right-of-withdrawal-pdf" : {
-                    "href" : "https://yourshop.api.urn/pdf-storage/attachments/right-of-withdrawal.pdf?hash=647563475863487"
-                  },
                   "terms-and-conditions-pdf" : {
                     "href" : "https://yourshop.api.urn/pdf-storage/attachments/terms-and-conditions.pdf?hash=238734684735643875634578213"
+                  },
+                  "right-of-withdrawal-pdf" : {
+                    "href" : "https://yourshop.api.urn/pdf-storage/attachments/right-of-withdrawal.pdf?hash=647563475863487"
                   }
                 }
               }
@@ -8182,18 +8184,18 @@ paths:
           examples:
             application/hal+json: |-
               {
-                "_id" : "0347174c-db25-44a1-8df4-223a3f0f2b99",
-                "createdAt" : "2020-05-15T09:55:21.558",
-                "cartId" : "7fbd043e-2b3a-420b-bef9-74daf37c131c",
+                "_id" : "cecee7e6-7df6-4c59-830e-0f56e6ebf546",
+                "createdAt" : "2020-05-18T12:08:45.533",
+                "cartId" : "f61e4a00-ad58-41c9-a663-2c1850596b3c",
                 "currency" : "EUR",
                 "taxModel" : "GROSS",
                 "taxable" : false,
                 "testOrder" : false,
                 "termsAndConditionsExplicitlyAccepted" : false,
                 "productLineItems" : [ {
-                  "_id" : "4c6db2ed-d60d-4af1-82f9-6b7d67fe59c5",
+                  "_id" : "c2004351-39e2-4556-ad38-b021391f888b",
                   "product" : {
-                    "_id" : "00552c3d-ec00-4879-aef9-fab3c6c606f4",
+                    "_id" : "14afeb6f-f448-4d5b-8f59-d3e005c1c6a2",
                     "sku" : "sh-001",
                     "name" : "Soft Walk Ultra - Nibok Men's",
                     "essentialFeatures" : "Inner Material: Synthetic. Sole: Rubber. Upper Material: Leather.",
@@ -8208,7 +8210,7 @@ paths:
                         "href" : "https://yourshop.api.urn/http:/your.image.hoster.com/randomimage.png"
                       },
                       "variation-product" : {
-                        "href" : "https://yourshop.api.urn/api/products/b2e4ae60-fb20-4058-97c7-85b523298df1"
+                        "href" : "https://yourshop.api.urn/api/products/1dcd8736-007d-4941-9d51-0141c7e566ee"
                       }
                     }
                   },
@@ -8270,9 +8272,9 @@ paths:
                     }
                   }
                 }, {
-                  "_id" : "af0e4276-14a1-4e5a-aed1-159fb410aef3",
+                  "_id" : "d5c4a5c0-f485-4bfc-9573-fbcd225baacb",
                   "product" : {
-                    "_id" : "a5a53cfd-33b0-424a-b733-e7cc63d00958",
+                    "_id" : "d0d854de-c7ee-4ffb-834e-758bdff37450",
                     "sku" : "EB001",
                     "name" : "High Protein Power Bar (Pack of 5)",
                     "essentialFeatures" : "Preservative-free. No added sweeteners. Vegan.",
@@ -8287,7 +8289,7 @@ paths:
                         "href" : "https://yourshop.api.urn/http:/your.image.hoster.com/randomimage.png"
                       },
                       "variation-product" : {
-                        "href" : "https://yourshop.api.urn/api/products/507a3fff-15a1-473c-93cd-e54240bb3ff5"
+                        "href" : "https://yourshop.api.urn/api/products/89e215b9-6874-49cd-9dad-bd1a10d6d09c"
                       }
                     }
                   },
@@ -8363,7 +8365,7 @@ paths:
                   },
                   "taxClass" : "REGULAR",
                   "shippingMethod" : {
-                    "id" : "be9d5f3a-f094-41ed-a30f-20a817761f43",
+                    "id" : "fde51ed4-2280-4002-8fc6-f8502daf9b47",
                     "name" : "Standard",
                     "description" : "Standard shipping. Delivery within 3-4 days.",
                     "freeShippingValue" : {
@@ -8397,7 +8399,7 @@ paths:
                   },
                   "taxClass" : "REGULAR",
                   "paymentMethod" : {
-                    "id" : "e4ea7e03-cf38-42d8-8b7f-1bb48f926835",
+                    "id" : "d268e4e7-e9cf-4dab-8635-fa5494361d58",
                     "name" : "PayPal",
                     "description" : "Pay by PayPal.",
                     "discountOrFee" : {
@@ -8523,7 +8525,7 @@ paths:
                 "paymentNote" : "Reference EDB85BEA2DAE436E90C1E2027A0F012A",
                 "externalPaymentId" : "6b2d2fg1-05c9-4159-146c-5fy2fe596z26",
                 "externalPaymentUri" : "https://example.com/referral",
-                "entryDate" : "2020-05-15T09:55:21.551",
+                "entryDate" : "2020-05-18T12:08:45.522",
                 "totalReceived" : {
                   "currency" : "EUR",
                   "amount" : 0
@@ -8542,25 +8544,25 @@ paths:
                 "backgroundJobs" : [ "render-invoice-pdf" ],
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/orders/0347174c-db25-44a1-8df4-223a3f0f2b99"
+                    "href" : "https://yourshop.api.urn/orders/cecee7e6-7df6-4c59-830e-0f56e6ebf546"
                   },
                   "order" : {
-                    "href" : "https://yourshop.api.urn/orders/0347174c-db25-44a1-8df4-223a3f0f2b99"
+                    "href" : "https://yourshop.api.urn/orders/cecee7e6-7df6-4c59-830e-0f56e6ebf546"
                   },
                   "order-note" : {
-                    "href" : "https://yourshop.api.urn/orders/0347174c-db25-44a1-8df4-223a3f0f2b99/order-note"
+                    "href" : "https://yourshop.api.urn/orders/cecee7e6-7df6-4c59-830e-0f56e6ebf546/order-note"
                   },
                   "processes" : {
-                    "href" : "https://yourshop.api.urn/orders/0347174c-db25-44a1-8df4-223a3f0f2b99/processes"
+                    "href" : "https://yourshop.api.urn/orders/cecee7e6-7df6-4c59-830e-0f56e6ebf546/processes"
                   },
                   "events" : {
-                    "href" : "https://yourshop.api.urn/orders/0347174c-db25-44a1-8df4-223a3f0f2b99/events"
+                    "href" : "https://yourshop.api.urn/orders/cecee7e6-7df6-4c59-830e-0f56e6ebf546/events"
                   },
                   "cancel" : {
-                    "href" : "https://yourshop.api.urn/orders/0347174c-db25-44a1-8df4-223a3f0f2b99/cancel"
+                    "href" : "https://yourshop.api.urn/orders/cecee7e6-7df6-4c59-830e-0f56e6ebf546/cancel"
                   },
                   "retry-create-invoice" : {
-                    "href" : "https://yourshop.api.urn/orders/0347174c-db25-44a1-8df4-223a3f0f2b99/create-invoice"
+                    "href" : "https://yourshop.api.urn/orders/cecee7e6-7df6-4c59-830e-0f56e6ebf546/create-invoice"
                   },
                   "terms-and-conditions-pdf" : {
                     "href" : "https://yourshop.api.urn/pdf-storage/attachments/terms-and-conditions.pdf?hash=238734684735643875634578213"
@@ -8599,7 +8601,7 @@ paths:
                   "order-events" : [ {
                     "triggeredBy" : null,
                     "comment" : null,
-                    "createdAt" : "2020-05-15T09:57:18.648",
+                    "createdAt" : "2020-05-18T12:10:17.892",
                     "details" : {
                       "invoicePdfUri" : "/api/pdf-storage/attachments/invoice_10003.pdf?hash=9e5e2631c6f5877d64cb3d40db46ec6eb48a3a92",
                       "previousInvoiceNumber" : "10001",
@@ -8609,14 +8611,14 @@ paths:
                   }, {
                     "triggeredBy" : "user",
                     "comment" : "changed street",
-                    "createdAt" : "2020-05-15T09:57:18.605",
+                    "createdAt" : "2020-05-18T12:10:17.85",
                     "details" : {
                       "type" : "order-billing-address-changed"
                     }
                   }, {
                     "triggeredBy" : null,
                     "comment" : null,
-                    "createdAt" : "2020-05-15T09:57:18.569",
+                    "createdAt" : "2020-05-18T12:10:17.818",
                     "details" : {
                       "invoicePdfUri" : "/api/pdf-storage/attachments/invoice_10003.pdf?hash=9e5e2631c6f5877d64cb3d40db46ec6eb48a3a92",
                       "invoiceNumber" : "10001",
@@ -8625,73 +8627,73 @@ paths:
                   }, {
                     "triggeredBy" : "user",
                     "comment" : "comment",
-                    "createdAt" : "2020-05-15T09:57:18.44",
+                    "createdAt" : "2020-05-18T12:10:17.738",
                     "details" : {
-                      "paymentProcessId" : "a430ee07-d1f3-48b4-bf46-17b2a693c20d",
+                      "paymentProcessId" : "28c01019-e7b3-4295-8326-44e006bee87d",
                       "type" : "payment-voided"
                     },
                     "_links" : {
                       "payment-process" : {
-                        "href" : "https://yourshop.api.urn/orders/cca189e1-d0c0-4a65-9bd4-419ee08d77a2/processes/payments/a430ee07-d1f3-48b4-bf46-17b2a693c20d"
+                        "href" : "https://yourshop.api.urn/orders/cec81ce5-8e5c-4093-9739-aaff491e788c/processes/payments/28c01019-e7b3-4295-8326-44e006bee87d"
                       }
                     }
                   }, {
                     "triggeredBy" : null,
                     "comment" : null,
-                    "createdAt" : "2020-05-15T09:57:18.398",
+                    "createdAt" : "2020-05-18T12:10:17.714",
                     "details" : {
                       "amount" : {
                         "currency" : "EUR",
                         "amount" : 0
                       },
                       "paymentId" : null,
-                      "paymentProcessId" : "a430ee07-d1f3-48b4-bf46-17b2a693c20d",
+                      "paymentProcessId" : "28c01019-e7b3-4295-8326-44e006bee87d",
                       "type" : "payment-created"
                     },
                     "_links" : {
                       "payment-process" : {
-                        "href" : "https://yourshop.api.urn/orders/cca189e1-d0c0-4a65-9bd4-419ee08d77a2/processes/payments/a430ee07-d1f3-48b4-bf46-17b2a693c20d"
+                        "href" : "https://yourshop.api.urn/orders/cec81ce5-8e5c-4093-9739-aaff491e788c/processes/payments/28c01019-e7b3-4295-8326-44e006bee87d"
                       }
                     }
                   }, {
                     "triggeredBy" : "user",
                     "comment" : "customer transfer",
-                    "createdAt" : "2020-05-15T09:57:18.379",
+                    "createdAt" : "2020-05-18T12:10:17.681",
                     "details" : {
                       "amount" : {
                         "currency" : "EUR",
                         "amount" : 77.44
                       },
-                      "paymentProcessId" : "5626961e-bf09-4cc9-8062-56179d384cb1",
+                      "paymentProcessId" : "57be70ee-e1a3-48ae-8b65-db51aaff9e32",
                       "type" : "payment-paid"
                     },
                     "_links" : {
                       "payment-process" : {
-                        "href" : "https://yourshop.api.urn/orders/cca189e1-d0c0-4a65-9bd4-419ee08d77a2/processes/payments/5626961e-bf09-4cc9-8062-56179d384cb1"
+                        "href" : "https://yourshop.api.urn/orders/cec81ce5-8e5c-4093-9739-aaff491e788c/processes/payments/57be70ee-e1a3-48ae-8b65-db51aaff9e32"
                       }
                     }
                   }, {
                     "triggeredBy" : null,
                     "comment" : null,
-                    "createdAt" : "2020-05-15T09:57:18.344",
+                    "createdAt" : "2020-05-18T12:10:17.641",
                     "details" : {
                       "amount" : {
                         "currency" : "EUR",
                         "amount" : 77.44
                       },
                       "paymentId" : null,
-                      "paymentProcessId" : "5626961e-bf09-4cc9-8062-56179d384cb1",
+                      "paymentProcessId" : "57be70ee-e1a3-48ae-8b65-db51aaff9e32",
                       "type" : "payment-created"
                     },
                     "_links" : {
                       "payment-process" : {
-                        "href" : "https://yourshop.api.urn/orders/cca189e1-d0c0-4a65-9bd4-419ee08d77a2/processes/payments/5626961e-bf09-4cc9-8062-56179d384cb1"
+                        "href" : "https://yourshop.api.urn/orders/cec81ce5-8e5c-4093-9739-aaff491e788c/processes/payments/57be70ee-e1a3-48ae-8b65-db51aaff9e32"
                       }
                     }
                   }, {
                     "triggeredBy" : null,
                     "comment" : null,
-                    "createdAt" : "2020-05-15T09:57:18.34",
+                    "createdAt" : "2020-05-18T12:10:17.638",
                     "details" : {
                       "type" : "order-created"
                     }
@@ -8699,7 +8701,7 @@ paths:
                 },
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/orders/cca189e1-d0c0-4a65-9bd4-419ee08d77a2/events"
+                    "href" : "https://yourshop.api.urn/orders/cec81ce5-8e5c-4093-9739-aaff491e788c/events"
                   }
                 },
                 "page" : {
@@ -8747,97 +8749,18 @@ paths:
           examples:
             application/hal+json: |-
               {
-                "_id" : "43e6d520-d666-4651-9316-abcdc773287e",
-                "createdAt" : "2020-05-15T09:55:21.943",
-                "cartId" : "b788ca9e-d089-4225-a5ff-8cfff2789ea1",
+                "_id" : "a9b7303f-8571-4fe0-bd1b-87c9f84b673d",
+                "createdAt" : "2020-05-18T12:08:45.858",
+                "cartId" : "96887317-58f8-4f30-9bb6-4cd976c9bcc4",
                 "currency" : "EUR",
                 "taxModel" : "GROSS",
                 "taxable" : false,
                 "testOrder" : false,
                 "termsAndConditionsExplicitlyAccepted" : false,
                 "productLineItems" : [ {
-                  "_id" : "2f2d0781-c322-4b9c-a74a-2804ce6995ff",
+                  "_id" : "02bc6be4-4360-4298-88c6-b969dfae1d30",
                   "product" : {
-                    "_id" : "bf48517b-e0c2-47d3-bd56-a144825fe6fc",
-                    "sku" : "EB001",
-                    "name" : "High Protein Power Bar (Pack of 5)",
-                    "essentialFeatures" : "Preservative-free. No added sweeteners. Vegan.",
-                    "shippingWeight" : 190,
-                    "defaultImageDataUri" : "http://your.image.hoster.com/randomimage.png",
-                    "variationAttributeValues" : [ {
-                      "displayName" : "flavor",
-                      "value" : "Salted Caramel"
-                    } ],
-                    "_links" : {
-                      "default-image-data" : {
-                        "href" : "https://yourshop.api.urn/http:/your.image.hoster.com/randomimage.png"
-                      },
-                      "variation-product" : {
-                        "href" : "https://yourshop.api.urn/api/products/8b11049b-6dd1-4e05-b99b-96525da7f7ea"
-                      }
-                    }
-                  },
-                  "quantity" : 5,
-                  "initialQuantity" : 5,
-                  "unitPrice" : {
-                    "taxModel" : "GROSS",
-                    "currency" : "EUR",
-                    "amount" : 9.99
-                  },
-                  "unitDiscount" : null,
-                  "lineItemPrice" : {
-                    "taxModel" : "GROSS",
-                    "currency" : "EUR",
-                    "amount" : 49.95
-                  },
-                  "initialLineItemPrice" : {
-                    "taxModel" : "GROSS",
-                    "currency" : "EUR",
-                    "amount" : 49.95
-                  },
-                  "lineItemTax" : {
-                    "taxClass" : "REGULAR",
-                    "taxRate" : 0.19,
-                    "currency" : "EUR",
-                    "amount" : 7.9743
-                  },
-                  "unshipped" : {
-                    "quantity" : 5,
-                    "amount" : null
-                  },
-                  "shipped" : {
-                    "quantity" : 0,
-                    "amount" : null
-                  },
-                  "pending" : {
-                    "quantity" : 0,
-                    "amount" : null
-                  },
-                  "returned" : {
-                    "quantity" : 0,
-                    "amount" : {
-                      "currency" : "EUR",
-                      "amount" : 0
-                    }
-                  },
-                  "broken" : {
-                    "quantity" : 0,
-                    "amount" : {
-                      "currency" : "EUR",
-                      "amount" : 0
-                    }
-                  },
-                  "canceled" : {
-                    "quantity" : 0,
-                    "amount" : {
-                      "currency" : "EUR",
-                      "amount" : 0
-                    }
-                  }
-                }, {
-                  "_id" : "c11531d2-a0bd-4d0b-aff1-9e76d1f696d2",
-                  "product" : {
-                    "_id" : "3f495d7b-54f9-4306-ab41-a04247679204",
+                    "_id" : "1214a65b-911b-4e13-8b08-9c80e6a2a5d2",
                     "sku" : "sh-001",
                     "name" : "Soft Walk Ultra - Nibok Men's",
                     "essentialFeatures" : "Inner Material: Synthetic. Sole: Rubber. Upper Material: Leather.",
@@ -8852,7 +8775,7 @@ paths:
                         "href" : "https://yourshop.api.urn/http:/your.image.hoster.com/randomimage.png"
                       },
                       "variation-product" : {
-                        "href" : "https://yourshop.api.urn/api/products/7df15bb0-2e1a-4add-9522-102730d3abd6"
+                        "href" : "https://yourshop.api.urn/api/products/644ea3aa-32b5-40ae-9aae-dcfcae0cfa23"
                       }
                     }
                   },
@@ -8913,6 +8836,85 @@ paths:
                       "amount" : 0
                     }
                   }
+                }, {
+                  "_id" : "cc25c137-a8bc-4010-a67c-722b3ddd434c",
+                  "product" : {
+                    "_id" : "1967e046-0433-4023-8c9e-4a3b32ba0f24",
+                    "sku" : "EB001",
+                    "name" : "High Protein Power Bar (Pack of 5)",
+                    "essentialFeatures" : "Preservative-free. No added sweeteners. Vegan.",
+                    "shippingWeight" : 190,
+                    "defaultImageDataUri" : "http://your.image.hoster.com/randomimage.png",
+                    "variationAttributeValues" : [ {
+                      "displayName" : "flavor",
+                      "value" : "Salted Caramel"
+                    } ],
+                    "_links" : {
+                      "default-image-data" : {
+                        "href" : "https://yourshop.api.urn/http:/your.image.hoster.com/randomimage.png"
+                      },
+                      "variation-product" : {
+                        "href" : "https://yourshop.api.urn/api/products/f74b4335-196b-4224-bb95-e7dee3c96da1"
+                      }
+                    }
+                  },
+                  "quantity" : 5,
+                  "initialQuantity" : 5,
+                  "unitPrice" : {
+                    "taxModel" : "GROSS",
+                    "currency" : "EUR",
+                    "amount" : 9.99
+                  },
+                  "unitDiscount" : null,
+                  "lineItemPrice" : {
+                    "taxModel" : "GROSS",
+                    "currency" : "EUR",
+                    "amount" : 49.95
+                  },
+                  "initialLineItemPrice" : {
+                    "taxModel" : "GROSS",
+                    "currency" : "EUR",
+                    "amount" : 49.95
+                  },
+                  "lineItemTax" : {
+                    "taxClass" : "REGULAR",
+                    "taxRate" : 0.19,
+                    "currency" : "EUR",
+                    "amount" : 7.9743
+                  },
+                  "unshipped" : {
+                    "quantity" : 5,
+                    "amount" : null
+                  },
+                  "shipped" : {
+                    "quantity" : 0,
+                    "amount" : null
+                  },
+                  "pending" : {
+                    "quantity" : 0,
+                    "amount" : null
+                  },
+                  "returned" : {
+                    "quantity" : 0,
+                    "amount" : {
+                      "currency" : "EUR",
+                      "amount" : 0
+                    }
+                  },
+                  "broken" : {
+                    "quantity" : 0,
+                    "amount" : {
+                      "currency" : "EUR",
+                      "amount" : 0
+                    }
+                  },
+                  "canceled" : {
+                    "quantity" : 0,
+                    "amount" : {
+                      "currency" : "EUR",
+                      "amount" : 0
+                    }
+                  }
                 } ],
                 "couponLineItem" : null,
                 "shippingLineItem" : {
@@ -8928,7 +8930,7 @@ paths:
                   },
                   "taxClass" : "REGULAR",
                   "shippingMethod" : {
-                    "id" : "bd04f66c-e43f-4c25-b46c-4ec11822b06c",
+                    "id" : "68ca03c9-a0ef-47c8-a4c1-b9bfd78d433a",
                     "name" : "Standard",
                     "description" : "Standard shipping. Delivery within 3-4 days.",
                     "freeShippingValue" : {
@@ -8962,7 +8964,7 @@ paths:
                   },
                   "taxClass" : "REGULAR",
                   "paymentMethod" : {
-                    "id" : "0a92309f-048a-4b33-9d33-5ec055e334b8",
+                    "id" : "8a65e2da-22ea-4f3c-ae13-bd6c6bd51ebf",
                     "name" : "PayPal",
                     "description" : "Pay by PayPal.",
                     "discountOrFee" : {
@@ -9088,7 +9090,7 @@ paths:
                 "paymentNote" : "Reference EDB85BEA2DAE436E90C1E2027A0F012A",
                 "externalPaymentId" : "6b2d2fg1-05c9-4159-146c-5fy2fe596z26",
                 "externalPaymentUri" : "https://example.com/referral",
-                "entryDate" : "2020-05-15T09:55:21.936",
+                "entryDate" : "2020-05-18T12:08:45.849",
                 "totalReceived" : {
                   "currency" : "EUR",
                   "amount" : 0
@@ -9107,31 +9109,31 @@ paths:
                 "backgroundJobs" : [ ],
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/orders/43e6d520-d666-4651-9316-abcdc773287e"
+                    "href" : "https://yourshop.api.urn/orders/a9b7303f-8571-4fe0-bd1b-87c9f84b673d"
                   },
                   "order" : {
-                    "href" : "https://yourshop.api.urn/orders/43e6d520-d666-4651-9316-abcdc773287e"
+                    "href" : "https://yourshop.api.urn/orders/a9b7303f-8571-4fe0-bd1b-87c9f84b673d"
                   },
                   "order-note" : {
-                    "href" : "https://yourshop.api.urn/orders/43e6d520-d666-4651-9316-abcdc773287e/order-note"
+                    "href" : "https://yourshop.api.urn/orders/a9b7303f-8571-4fe0-bd1b-87c9f84b673d/order-note"
                   },
                   "processes" : {
-                    "href" : "https://yourshop.api.urn/orders/43e6d520-d666-4651-9316-abcdc773287e/processes"
+                    "href" : "https://yourshop.api.urn/orders/a9b7303f-8571-4fe0-bd1b-87c9f84b673d/processes"
                   },
                   "events" : {
-                    "href" : "https://yourshop.api.urn/orders/43e6d520-d666-4651-9316-abcdc773287e/events"
+                    "href" : "https://yourshop.api.urn/orders/a9b7303f-8571-4fe0-bd1b-87c9f84b673d/events"
                   },
                   "cancel" : {
-                    "href" : "https://yourshop.api.urn/orders/43e6d520-d666-4651-9316-abcdc773287e/cancel"
+                    "href" : "https://yourshop.api.urn/orders/a9b7303f-8571-4fe0-bd1b-87c9f84b673d/cancel"
                   },
                   "create-invoice" : {
-                    "href" : "https://yourshop.api.urn/orders/43e6d520-d666-4651-9316-abcdc773287e/create-invoice"
-                  },
-                  "right-of-withdrawal-pdf" : {
-                    "href" : "https://yourshop.api.urn/pdf-storage/attachments/right-of-withdrawal.pdf?hash=647563475863487"
+                    "href" : "https://yourshop.api.urn/orders/a9b7303f-8571-4fe0-bd1b-87c9f84b673d/create-invoice"
                   },
                   "terms-and-conditions-pdf" : {
                     "href" : "https://yourshop.api.urn/pdf-storage/attachments/terms-and-conditions.pdf?hash=238734684735643875634578213"
+                  },
+                  "right-of-withdrawal-pdf" : {
+                    "href" : "https://yourshop.api.urn/pdf-storage/attachments/right-of-withdrawal.pdf?hash=647563475863487"
                   }
                 }
               }
@@ -9168,13 +9170,13 @@ paths:
                     },
                     "status" : "VOIDED",
                     "completed" : true,
-                    "_id" : "b5c9588d-4618-44a4-849a-e1aeef348a11",
+                    "_id" : "724e6bf5-e539-4a11-94d5-b3b959593ef7",
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/orders/2a495502-0e7f-47ba-bd4a-e84df1570e4c/processes/refunds/b5c9588d-4618-44a4-849a-e1aeef348a11"
+                        "href" : "https://yourshop.api.urn/orders/33abba59-7ed9-4fd6-a4a6-162d64be6160/processes/refunds/724e6bf5-e539-4a11-94d5-b3b959593ef7"
                       },
                       "refund-process" : {
-                        "href" : "https://yourshop.api.urn/orders/2a495502-0e7f-47ba-bd4a-e84df1570e4c/processes/refunds/b5c9588d-4618-44a4-849a-e1aeef348a11"
+                        "href" : "https://yourshop.api.urn/orders/33abba59-7ed9-4fd6-a4a6-162d64be6160/processes/refunds/724e6bf5-e539-4a11-94d5-b3b959593ef7"
                       }
                     }
                   }, {
@@ -9184,31 +9186,31 @@ paths:
                     },
                     "status" : "PENDING",
                     "completed" : false,
-                    "_id" : "84551ccf-e8c3-4917-a9c9-efc863493fcb",
+                    "_id" : "3307184d-0921-4666-8436-8736737dcc33",
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/orders/2a495502-0e7f-47ba-bd4a-e84df1570e4c/processes/refunds/84551ccf-e8c3-4917-a9c9-efc863493fcb"
+                        "href" : "https://yourshop.api.urn/orders/33abba59-7ed9-4fd6-a4a6-162d64be6160/processes/refunds/3307184d-0921-4666-8436-8736737dcc33"
                       },
                       "refund-process" : {
-                        "href" : "https://yourshop.api.urn/orders/2a495502-0e7f-47ba-bd4a-e84df1570e4c/processes/refunds/84551ccf-e8c3-4917-a9c9-efc863493fcb"
+                        "href" : "https://yourshop.api.urn/orders/33abba59-7ed9-4fd6-a4a6-162d64be6160/processes/refunds/3307184d-0921-4666-8436-8736737dcc33"
                       },
                       "mark-paid" : {
-                        "href" : "https://yourshop.api.urn/orders/2a495502-0e7f-47ba-bd4a-e84df1570e4c/processes/refunds/84551ccf-e8c3-4917-a9c9-efc863493fcb/mark-paid"
+                        "href" : "https://yourshop.api.urn/orders/33abba59-7ed9-4fd6-a4a6-162d64be6160/processes/refunds/3307184d-0921-4666-8436-8736737dcc33/mark-paid"
                       }
                     }
                   } ],
                   "cancel-processes" : [ {
                     "lineItems" : [ {
-                      "productLineItemId" : "7d064efe-bf00-40b7-9509-6b25870041ab",
+                      "productLineItemId" : "e91a1243-6b16-4480-a3c8-80c2667f6fb4",
                       "quantity" : 2
                     } ],
-                    "_id" : "02260026-9e07-43e6-a8d7-6b40bf8c8b19",
+                    "_id" : "bfaad959-46f4-4bb4-b9c4-21e39f2fac6e",
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/orders/2a495502-0e7f-47ba-bd4a-e84df1570e4c/processes/cancelations/02260026-9e07-43e6-a8d7-6b40bf8c8b19"
+                        "href" : "https://yourshop.api.urn/orders/33abba59-7ed9-4fd6-a4a6-162d64be6160/processes/cancelations/bfaad959-46f4-4bb4-b9c4-21e39f2fac6e"
                       },
                       "cancel-process" : {
-                        "href" : "https://yourshop.api.urn/orders/2a495502-0e7f-47ba-bd4a-e84df1570e4c/processes/cancelations/02260026-9e07-43e6-a8d7-6b40bf8c8b19"
+                        "href" : "https://yourshop.api.urn/orders/33abba59-7ed9-4fd6-a4a6-162d64be6160/processes/cancelations/bfaad959-46f4-4bb4-b9c4-21e39f2fac6e"
                       }
                     }
                   } ],
@@ -9217,19 +9219,19 @@ paths:
                     "trackingCode" : "LZ101003859US",
                     "trackingLink" : "http://example.com/track?code=LZ101003859US",
                     "lineItems" : [ {
-                      "productLineItemId" : "7d064efe-bf00-40b7-9509-6b25870041ab",
+                      "productLineItemId" : "e91a1243-6b16-4480-a3c8-80c2667f6fb4",
                       "quantity" : 3
                     } ],
-                    "_id" : "d5578a5a-4a73-4360-8a59-640b7086a953",
+                    "_id" : "741e31d6-d49f-4aff-9c70-97dea8dcc8f0",
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/orders/2a495502-0e7f-47ba-bd4a-e84df1570e4c/processes/shippings/d5578a5a-4a73-4360-8a59-640b7086a953"
+                        "href" : "https://yourshop.api.urn/orders/33abba59-7ed9-4fd6-a4a6-162d64be6160/processes/shippings/741e31d6-d49f-4aff-9c70-97dea8dcc8f0"
                       },
                       "shipping-process" : {
-                        "href" : "https://yourshop.api.urn/orders/2a495502-0e7f-47ba-bd4a-e84df1570e4c/processes/shippings/d5578a5a-4a73-4360-8a59-640b7086a953"
+                        "href" : "https://yourshop.api.urn/orders/33abba59-7ed9-4fd6-a4a6-162d64be6160/processes/shippings/741e31d6-d49f-4aff-9c70-97dea8dcc8f0"
                       },
                       "mark-delivered" : {
-                        "href" : "https://yourshop.api.urn/orders/2a495502-0e7f-47ba-bd4a-e84df1570e4c/processes/shippings/d5578a5a-4a73-4360-8a59-640b7086a953/mark-delivered"
+                        "href" : "https://yourshop.api.urn/orders/33abba59-7ed9-4fd6-a4a6-162d64be6160/processes/shippings/741e31d6-d49f-4aff-9c70-97dea8dcc8f0/mark-delivered"
                       }
                     }
                   } ],
@@ -9242,55 +9244,55 @@ paths:
                     "paymentId" : null,
                     "captureWorkflow" : null,
                     "completed" : true,
-                    "_id" : "b2331719-55ea-455e-a6bb-7a1aa28b427c",
+                    "_id" : "208541e6-5346-412e-beea-c289fc9cc684",
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/orders/2a495502-0e7f-47ba-bd4a-e84df1570e4c/processes/payments/b2331719-55ea-455e-a6bb-7a1aa28b427c"
+                        "href" : "https://yourshop.api.urn/orders/33abba59-7ed9-4fd6-a4a6-162d64be6160/processes/payments/208541e6-5346-412e-beea-c289fc9cc684"
                       },
                       "payment-process" : {
-                        "href" : "https://yourshop.api.urn/orders/2a495502-0e7f-47ba-bd4a-e84df1570e4c/processes/payments/b2331719-55ea-455e-a6bb-7a1aa28b427c"
+                        "href" : "https://yourshop.api.urn/orders/33abba59-7ed9-4fd6-a4a6-162d64be6160/processes/payments/208541e6-5346-412e-beea-c289fc9cc684"
                       }
                     }
                   } ],
                   "return-processes" : [ {
                     "lineItems" : [ {
-                      "productLineItemId" : "7d064efe-bf00-40b7-9509-6b25870041ab",
+                      "productLineItemId" : "e91a1243-6b16-4480-a3c8-80c2667f6fb4",
                       "quantity" : 2,
                       "status" : "RETURNED"
                     } ],
                     "shippingPriceRefund" : null,
-                    "_id" : "1cfe77f2-ea8a-467c-85e4-a90a10b865fd",
+                    "_id" : "ec2148fe-7d72-48d6-9450-d5b9c6073176",
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/orders/2a495502-0e7f-47ba-bd4a-e84df1570e4c/processes/returns/1cfe77f2-ea8a-467c-85e4-a90a10b865fd"
+                        "href" : "https://yourshop.api.urn/orders/33abba59-7ed9-4fd6-a4a6-162d64be6160/processes/returns/ec2148fe-7d72-48d6-9450-d5b9c6073176"
                       },
                       "return-process" : {
-                        "href" : "https://yourshop.api.urn/orders/2a495502-0e7f-47ba-bd4a-e84df1570e4c/processes/returns/1cfe77f2-ea8a-467c-85e4-a90a10b865fd"
+                        "href" : "https://yourshop.api.urn/orders/33abba59-7ed9-4fd6-a4a6-162d64be6160/processes/returns/ec2148fe-7d72-48d6-9450-d5b9c6073176"
                       }
                     }
                   } ]
                 },
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/orders/2a495502-0e7f-47ba-bd4a-e84df1570e4c/processes"
+                    "href" : "https://yourshop.api.urn/orders/33abba59-7ed9-4fd6-a4a6-162d64be6160/processes"
                   },
                   "processes" : {
-                    "href" : "https://yourshop.api.urn/orders/2a495502-0e7f-47ba-bd4a-e84df1570e4c/processes"
+                    "href" : "https://yourshop.api.urn/orders/33abba59-7ed9-4fd6-a4a6-162d64be6160/processes"
                   },
                   "payment-processes" : {
-                    "href" : "https://yourshop.api.urn/orders/2a495502-0e7f-47ba-bd4a-e84df1570e4c/processes/payments"
+                    "href" : "https://yourshop.api.urn/orders/33abba59-7ed9-4fd6-a4a6-162d64be6160/processes/payments"
                   },
                   "shipping-processes" : {
-                    "href" : "https://yourshop.api.urn/orders/2a495502-0e7f-47ba-bd4a-e84df1570e4c/processes/shippings"
+                    "href" : "https://yourshop.api.urn/orders/33abba59-7ed9-4fd6-a4a6-162d64be6160/processes/shippings"
                   },
                   "return-processes" : {
-                    "href" : "https://yourshop.api.urn/orders/2a495502-0e7f-47ba-bd4a-e84df1570e4c/processes/returns"
+                    "href" : "https://yourshop.api.urn/orders/33abba59-7ed9-4fd6-a4a6-162d64be6160/processes/returns"
                   },
                   "cancel-processes" : {
-                    "href" : "https://yourshop.api.urn/orders/2a495502-0e7f-47ba-bd4a-e84df1570e4c/processes/cancelations"
+                    "href" : "https://yourshop.api.urn/orders/33abba59-7ed9-4fd6-a4a6-162d64be6160/processes/cancelations"
                   },
                   "refund-processes" : {
-                    "href" : "https://yourshop.api.urn/orders/2a495502-0e7f-47ba-bd4a-e84df1570e4c/processes/refunds"
+                    "href" : "https://yourshop.api.urn/orders/33abba59-7ed9-4fd6-a4a6-162d64be6160/processes/refunds"
                   }
                 }
               }
@@ -9356,18 +9358,18 @@ paths:
           examples:
             application/hal+json: |-
               {
-                "_id" : "7c37593a-760e-4bd3-9c21-b2343678ee9f",
-                "createdAt" : "2020-05-15T09:55:14.494",
-                "cartId" : "040228ed-60e8-49c8-8e25-75688bcaa9b8",
+                "_id" : "8ea4c3b9-83cd-43de-b37a-92fccbfd60d8",
+                "createdAt" : "2020-05-18T12:08:39.718",
+                "cartId" : "4fa4ea42-cbe3-4851-9fbb-be85ae3bf88e",
                 "currency" : "EUR",
                 "taxModel" : "GROSS",
                 "taxable" : false,
                 "testOrder" : false,
                 "termsAndConditionsExplicitlyAccepted" : false,
                 "productLineItems" : [ {
-                  "_id" : "615c9c8f-e9cf-45af-9582-312e1331a7ed",
+                  "_id" : "667eca44-f952-491f-9a3e-6d13e1eb5fbd",
                   "product" : {
-                    "_id" : "b7182d97-6ac8-43ea-b3ef-5d8a5d572977",
+                    "_id" : "0ce1b909-6d5c-43dd-bd7f-a7d6da65cad0",
                     "sku" : "EB001",
                     "name" : "High Protein Power Bar (Pack of 5)",
                     "essentialFeatures" : "Preservative-free. No added sweeteners. Vegan.",
@@ -9382,7 +9384,7 @@ paths:
                         "href" : "https://yourshop.api.urn/http:/your.image.hoster.com/randomimage.png"
                       },
                       "variation-product" : {
-                        "href" : "https://yourshop.api.urn/api/products/5346b9c6-d92b-47d7-bc00-beb508e0b6a2"
+                        "href" : "https://yourshop.api.urn/api/products/57f5552c-4ba8-4f5f-a053-80c863069106"
                       }
                     }
                   },
@@ -9444,9 +9446,9 @@ paths:
                     }
                   }
                 }, {
-                  "_id" : "818c299b-0bf5-4da7-8f00-9cba36b3bcfd",
+                  "_id" : "c8e3eb75-b3d5-4c07-9926-68e7de7edf4e",
                   "product" : {
-                    "_id" : "6049c295-38cc-47f1-abc0-a5a714a93bda",
+                    "_id" : "a0017cd7-bcdd-43f0-b574-3417f9ec6ea4",
                     "sku" : "sh-001",
                     "name" : "Soft Walk Ultra - Nibok Men's",
                     "essentialFeatures" : "Inner Material: Synthetic. Sole: Rubber. Upper Material: Leather.",
@@ -9461,7 +9463,7 @@ paths:
                         "href" : "https://yourshop.api.urn/http:/your.image.hoster.com/randomimage.png"
                       },
                       "variation-product" : {
-                        "href" : "https://yourshop.api.urn/api/products/d637be75-0cdf-4ba2-9fb8-2f7aa94fb2b8"
+                        "href" : "https://yourshop.api.urn/api/products/43d873ed-f762-4fdd-8128-f089d852ab71"
                       }
                     }
                   },
@@ -9537,7 +9539,7 @@ paths:
                   },
                   "taxClass" : "REGULAR",
                   "shippingMethod" : {
-                    "id" : "897ea10c-355b-4905-998b-840b8fc5061b",
+                    "id" : "4e7bfff5-d105-498e-9a05-d0a9f907e8b0",
                     "name" : "Standard",
                     "description" : "Standard shipping. Delivery within 3-4 days.",
                     "freeShippingValue" : {
@@ -9571,7 +9573,7 @@ paths:
                   },
                   "taxClass" : "REGULAR",
                   "paymentMethod" : {
-                    "id" : "b2c382d1-c48f-4448-b8d8-c07e21f7de26",
+                    "id" : "6118f5d5-50e6-4333-ba9d-0e9bf66e53f8",
                     "name" : "PayPal",
                     "description" : "Pay by PayPal.",
                     "discountOrFee" : {
@@ -9697,7 +9699,7 @@ paths:
                 "paymentNote" : "Reference EDB85BEA2DAE436E90C1E2027A0F012A",
                 "externalPaymentId" : "6b2d2fg1-05c9-4159-146c-5fy2fe596z26",
                 "externalPaymentUri" : "https://example.com/referral",
-                "entryDate" : "2020-05-15T09:55:14.485",
+                "entryDate" : "2020-05-18T12:08:39.711",
                 "totalReceived" : {
                   "currency" : "EUR",
                   "amount" : 0
@@ -9716,31 +9718,31 @@ paths:
                 "backgroundJobs" : [ ],
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/orders/7c37593a-760e-4bd3-9c21-b2343678ee9f"
+                    "href" : "https://yourshop.api.urn/orders/8ea4c3b9-83cd-43de-b37a-92fccbfd60d8"
                   },
                   "order" : {
-                    "href" : "https://yourshop.api.urn/orders/7c37593a-760e-4bd3-9c21-b2343678ee9f"
+                    "href" : "https://yourshop.api.urn/orders/8ea4c3b9-83cd-43de-b37a-92fccbfd60d8"
                   },
                   "order-note" : {
-                    "href" : "https://yourshop.api.urn/orders/7c37593a-760e-4bd3-9c21-b2343678ee9f/order-note"
+                    "href" : "https://yourshop.api.urn/orders/8ea4c3b9-83cd-43de-b37a-92fccbfd60d8/order-note"
                   },
                   "processes" : {
-                    "href" : "https://yourshop.api.urn/orders/7c37593a-760e-4bd3-9c21-b2343678ee9f/processes"
+                    "href" : "https://yourshop.api.urn/orders/8ea4c3b9-83cd-43de-b37a-92fccbfd60d8/processes"
                   },
                   "events" : {
-                    "href" : "https://yourshop.api.urn/orders/7c37593a-760e-4bd3-9c21-b2343678ee9f/events"
+                    "href" : "https://yourshop.api.urn/orders/8ea4c3b9-83cd-43de-b37a-92fccbfd60d8/events"
                   },
                   "cancel" : {
-                    "href" : "https://yourshop.api.urn/orders/7c37593a-760e-4bd3-9c21-b2343678ee9f/cancel"
+                    "href" : "https://yourshop.api.urn/orders/8ea4c3b9-83cd-43de-b37a-92fccbfd60d8/cancel"
                   },
                   "create-invoice" : {
-                    "href" : "https://yourshop.api.urn/orders/7c37593a-760e-4bd3-9c21-b2343678ee9f/create-invoice"
-                  },
-                  "terms-and-conditions-pdf" : {
-                    "href" : "https://yourshop.api.urn/pdf-storage/attachments/terms-and-conditions.pdf?hash=238734684735643875634578213"
+                    "href" : "https://yourshop.api.urn/orders/8ea4c3b9-83cd-43de-b37a-92fccbfd60d8/create-invoice"
                   },
                   "right-of-withdrawal-pdf" : {
                     "href" : "https://yourshop.api.urn/pdf-storage/attachments/right-of-withdrawal.pdf?hash=647563475863487"
+                  },
+                  "terms-and-conditions-pdf" : {
+                    "href" : "https://yourshop.api.urn/pdf-storage/attachments/terms-and-conditions.pdf?hash=238734684735643875634578213"
                   }
                 }
               }
@@ -9772,26 +9774,26 @@ paths:
                 "_embedded" : {
                   "cancel-processes" : [ {
                     "lineItems" : [ {
-                      "productLineItemId" : "8ceb6f3d-3526-4595-9153-614e4ed78855",
+                      "productLineItemId" : "a5889c48-2943-47f8-8902-23f0808d936a",
                       "quantity" : 3
                     } ],
-                    "_id" : "7007da07-b3b6-477d-8268-82adb1e85149",
+                    "_id" : "3d7f1bcd-aed0-480c-acd9-6900e857c938",
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/orders/e0e32a2f-fd0d-4f7c-893f-f20d971b506c/processes/cancelations/7007da07-b3b6-477d-8268-82adb1e85149"
+                        "href" : "https://yourshop.api.urn/orders/a79327bc-bbbe-439a-b051-c3c54a1ee0b1/processes/cancelations/3d7f1bcd-aed0-480c-acd9-6900e857c938"
                       },
                       "cancel-process" : {
-                        "href" : "https://yourshop.api.urn/orders/e0e32a2f-fd0d-4f7c-893f-f20d971b506c/processes/cancelations/7007da07-b3b6-477d-8268-82adb1e85149"
+                        "href" : "https://yourshop.api.urn/orders/a79327bc-bbbe-439a-b051-c3c54a1ee0b1/processes/cancelations/3d7f1bcd-aed0-480c-acd9-6900e857c938"
                       }
                     }
                   } ]
                 },
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/orders/e0e32a2f-fd0d-4f7c-893f-f20d971b506c/processes/cancelations?page=0&size=20"
+                    "href" : "https://yourshop.api.urn/orders/a79327bc-bbbe-439a-b051-c3c54a1ee0b1/processes/cancelations?page=0&size=20"
                   },
                   "cancel-processes" : {
-                    "href" : "https://yourshop.api.urn/orders/e0e32a2f-fd0d-4f7c-893f-f20d971b506c/processes/cancelations"
+                    "href" : "https://yourshop.api.urn/orders/a79327bc-bbbe-439a-b051-c3c54a1ee0b1/processes/cancelations"
                   }
                 },
                 "page" : {
@@ -9827,9 +9829,9 @@ paths:
         name: ""
         required: false
         schema:
-          $ref: '#/definitions/orders_orderId_processes_cancelations-439179599'
+          $ref: '#/definitions/orders_orderId_processes_cancelations-1159782079'
         x-examples:
-          application/json: '{"comment":"This needs to be done fast!","lineItems":[{"quantity":3,"productLineItemId":"0f9a725f-3bae-4843-a5dd-567c2772b285"}]}'
+          application/json: '{"comment":"This needs to be done fast!","lineItems":[{"quantity":3,"productLineItemId":"d18348dc-fa5a-4758-8692-dcc27bd9c4fd"}]}'
       responses:
         201:
           description: ""
@@ -9837,16 +9839,16 @@ paths:
             application/hal+json: |-
               {
                 "lineItems" : [ {
-                  "productLineItemId" : "0f9a725f-3bae-4843-a5dd-567c2772b285",
+                  "productLineItemId" : "d18348dc-fa5a-4758-8692-dcc27bd9c4fd",
                   "quantity" : 3
                 } ],
-                "_id" : "722184b5-93dc-45ad-9007-b9857456ef06",
+                "_id" : "087efaa0-5064-4fea-a4ab-856185b32245",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/orders/75a51962-0b0d-43cb-9345-8790e532dd62/processes/cancelations/722184b5-93dc-45ad-9007-b9857456ef06"
+                    "href" : "https://yourshop.api.urn/orders/6ee1ee31-87b4-4ac8-93a3-ed94a5f4318b/processes/cancelations/087efaa0-5064-4fea-a4ab-856185b32245"
                   },
                   "cancel-process" : {
-                    "href" : "https://yourshop.api.urn/orders/75a51962-0b0d-43cb-9345-8790e532dd62/processes/cancelations/722184b5-93dc-45ad-9007-b9857456ef06"
+                    "href" : "https://yourshop.api.urn/orders/6ee1ee31-87b4-4ac8-93a3-ed94a5f4318b/processes/cancelations/087efaa0-5064-4fea-a4ab-856185b32245"
                   }
                 }
               }
@@ -9885,32 +9887,32 @@ paths:
                     "paymentId" : null,
                     "captureWorkflow" : null,
                     "completed" : false,
-                    "_id" : "ad13d34c-11cd-4d40-ba80-15c70bf687a4",
+                    "_id" : "7c01d39c-c895-4a16-bf84-a344b2ca7686",
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/orders/c56db6ce-d6c5-4f13-97e1-e7695f5d8d34/processes/payments/ad13d34c-11cd-4d40-ba80-15c70bf687a4"
+                        "href" : "https://yourshop.api.urn/orders/973e9aa3-d756-48ed-8439-64d85b2825d0/processes/payments/7c01d39c-c895-4a16-bf84-a344b2ca7686"
                       },
                       "payment-process" : {
-                        "href" : "https://yourshop.api.urn/orders/c56db6ce-d6c5-4f13-97e1-e7695f5d8d34/processes/payments/ad13d34c-11cd-4d40-ba80-15c70bf687a4"
+                        "href" : "https://yourshop.api.urn/orders/973e9aa3-d756-48ed-8439-64d85b2825d0/processes/payments/7c01d39c-c895-4a16-bf84-a344b2ca7686"
                       },
                       "mark-voided" : {
-                        "href" : "https://yourshop.api.urn/orders/c56db6ce-d6c5-4f13-97e1-e7695f5d8d34/processes/payments/ad13d34c-11cd-4d40-ba80-15c70bf687a4/mark-voided"
+                        "href" : "https://yourshop.api.urn/orders/973e9aa3-d756-48ed-8439-64d85b2825d0/processes/payments/7c01d39c-c895-4a16-bf84-a344b2ca7686/mark-voided"
                       },
                       "mark-paid" : {
-                        "href" : "https://yourshop.api.urn/orders/c56db6ce-d6c5-4f13-97e1-e7695f5d8d34/processes/payments/ad13d34c-11cd-4d40-ba80-15c70bf687a4/mark-paid"
+                        "href" : "https://yourshop.api.urn/orders/973e9aa3-d756-48ed-8439-64d85b2825d0/processes/payments/7c01d39c-c895-4a16-bf84-a344b2ca7686/mark-paid"
                       }
                     }
                   } ]
                 },
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/orders/c56db6ce-d6c5-4f13-97e1-e7695f5d8d34/processes/payments?page=0&size=20"
+                    "href" : "https://yourshop.api.urn/orders/973e9aa3-d756-48ed-8439-64d85b2825d0/processes/payments?page=0&size=20"
                   },
                   "payment-processes" : {
-                    "href" : "https://yourshop.api.urn/orders/c56db6ce-d6c5-4f13-97e1-e7695f5d8d34/processes/payments"
+                    "href" : "https://yourshop.api.urn/orders/973e9aa3-d756-48ed-8439-64d85b2825d0/processes/payments"
                   },
                   "active" : {
-                    "href" : "https://yourshop.api.urn/orders/c56db6ce-d6c5-4f13-97e1-e7695f5d8d34/processes/payments/active"
+                    "href" : "https://yourshop.api.urn/orders/973e9aa3-d756-48ed-8439-64d85b2825d0/processes/payments/active"
                   }
                 },
                 "page" : {
@@ -9957,29 +9959,29 @@ paths:
                     },
                     "status" : "PENDING",
                     "completed" : false,
-                    "_id" : "20d00823-5bdc-4d3c-abb1-8e9a69e49d41",
+                    "_id" : "673bfae3-f3dc-4aa8-b880-4505cda5b55a",
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/orders/309cae8c-771e-4680-80f1-2b301f0d1a00/processes/refunds/20d00823-5bdc-4d3c-abb1-8e9a69e49d41"
+                        "href" : "https://yourshop.api.urn/orders/94044cf1-695a-4199-9d30-61154e676303/processes/refunds/673bfae3-f3dc-4aa8-b880-4505cda5b55a"
                       },
                       "refund-process" : {
-                        "href" : "https://yourshop.api.urn/orders/309cae8c-771e-4680-80f1-2b301f0d1a00/processes/refunds/20d00823-5bdc-4d3c-abb1-8e9a69e49d41"
+                        "href" : "https://yourshop.api.urn/orders/94044cf1-695a-4199-9d30-61154e676303/processes/refunds/673bfae3-f3dc-4aa8-b880-4505cda5b55a"
                       },
                       "mark-paid" : {
-                        "href" : "https://yourshop.api.urn/orders/309cae8c-771e-4680-80f1-2b301f0d1a00/processes/refunds/20d00823-5bdc-4d3c-abb1-8e9a69e49d41/mark-paid"
+                        "href" : "https://yourshop.api.urn/orders/94044cf1-695a-4199-9d30-61154e676303/processes/refunds/673bfae3-f3dc-4aa8-b880-4505cda5b55a/mark-paid"
                       }
                     }
                   } ]
                 },
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/orders/309cae8c-771e-4680-80f1-2b301f0d1a00/processes/refunds?page=0&size=20"
+                    "href" : "https://yourshop.api.urn/orders/94044cf1-695a-4199-9d30-61154e676303/processes/refunds?page=0&size=20"
                   },
                   "refund-processes" : {
-                    "href" : "https://yourshop.api.urn/orders/309cae8c-771e-4680-80f1-2b301f0d1a00/processes/refunds"
+                    "href" : "https://yourshop.api.urn/orders/94044cf1-695a-4199-9d30-61154e676303/processes/refunds"
                   },
                   "active" : {
-                    "href" : "https://yourshop.api.urn/orders/309cae8c-771e-4680-80f1-2b301f0d1a00/processes/refunds/active"
+                    "href" : "https://yourshop.api.urn/orders/94044cf1-695a-4199-9d30-61154e676303/processes/refunds/active"
                   }
                 },
                 "page" : {
@@ -10019,7 +10021,7 @@ paths:
                 "_embedded" : {
                   "return-processes" : [ {
                     "lineItems" : [ {
-                      "productLineItemId" : "4196aea9-3075-42c9-89f8-60b4b04f2d91",
+                      "productLineItemId" : "6d7c8e2f-45ef-499e-a282-ff7b4cc05c8e",
                       "quantity" : 3,
                       "status" : "RETURNED"
                     } ],
@@ -10027,23 +10029,23 @@ paths:
                       "currency" : "EUR",
                       "amount" : 19.99
                     },
-                    "_id" : "907e9db4-9bd6-4cbf-a5fa-1246303c986d",
+                    "_id" : "a40aed38-a1f6-4c3d-ac29-16cb858bcdff",
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/orders/104beab5-378b-4ada-960e-8b9918efeca7/processes/returns/907e9db4-9bd6-4cbf-a5fa-1246303c986d"
+                        "href" : "https://yourshop.api.urn/orders/2ef95fed-d089-4110-8bd7-321c050cf7db/processes/returns/a40aed38-a1f6-4c3d-ac29-16cb858bcdff"
                       },
                       "return-process" : {
-                        "href" : "https://yourshop.api.urn/orders/104beab5-378b-4ada-960e-8b9918efeca7/processes/returns/907e9db4-9bd6-4cbf-a5fa-1246303c986d"
+                        "href" : "https://yourshop.api.urn/orders/2ef95fed-d089-4110-8bd7-321c050cf7db/processes/returns/a40aed38-a1f6-4c3d-ac29-16cb858bcdff"
                       }
                     }
                   } ]
                 },
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/orders/104beab5-378b-4ada-960e-8b9918efeca7/processes/returns?page=0&size=20"
+                    "href" : "https://yourshop.api.urn/orders/2ef95fed-d089-4110-8bd7-321c050cf7db/processes/returns?page=0&size=20"
                   },
                   "return-processes" : {
-                    "href" : "https://yourshop.api.urn/orders/104beab5-378b-4ada-960e-8b9918efeca7/processes/returns"
+                    "href" : "https://yourshop.api.urn/orders/2ef95fed-d089-4110-8bd7-321c050cf7db/processes/returns"
                   }
                 },
                 "page" : {
@@ -10079,7 +10081,7 @@ paths:
         name: ""
         required: false
         schema:
-          $ref: '#/definitions/orders_orderId_processes_returns-1018014970'
+          $ref: '#/definitions/orders_orderId_processes_returns-210436955'
         x-examples:
           application/json: |-
             {
@@ -10087,7 +10089,7 @@ paths:
               "sendMail" : true,
               "lineItems" : [ {
                 "quantity" : 3,
-                "productLineItemId" : "830232cd-7071-4bfb-ab1d-8854f38593bb",
+                "productLineItemId" : "a1782dba-816b-4d58-9621-352cc3f2fe22",
                 "status" : "RETURNED"
               } ],
               "shippingPriceRefund" : {
@@ -10102,7 +10104,7 @@ paths:
             application/hal+json: |-
               {
                 "lineItems" : [ {
-                  "productLineItemId" : "830232cd-7071-4bfb-ab1d-8854f38593bb",
+                  "productLineItemId" : "a1782dba-816b-4d58-9621-352cc3f2fe22",
                   "quantity" : 3,
                   "status" : "RETURNED"
                 } ],
@@ -10110,13 +10112,13 @@ paths:
                   "currency" : "EUR",
                   "amount" : 19.99
                 },
-                "_id" : "336c9ce3-d9a4-4df5-88cd-6e33e42a920c",
+                "_id" : "a316a70c-e8bb-4a97-856b-cd1b19d84f34",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/orders/46d45c8f-7db1-48d6-a4cf-389c560b9806/processes/returns/336c9ce3-d9a4-4df5-88cd-6e33e42a920c"
+                    "href" : "https://yourshop.api.urn/orders/7b4af5b6-8bce-47d3-abec-17e87c43f624/processes/returns/a316a70c-e8bb-4a97-856b-cd1b19d84f34"
                   },
                   "return-process" : {
-                    "href" : "https://yourshop.api.urn/orders/46d45c8f-7db1-48d6-a4cf-389c560b9806/processes/returns/336c9ce3-d9a4-4df5-88cd-6e33e42a920c"
+                    "href" : "https://yourshop.api.urn/orders/7b4af5b6-8bce-47d3-abec-17e87c43f624/processes/returns/a316a70c-e8bb-4a97-856b-cd1b19d84f34"
                   }
                 }
               }
@@ -10151,32 +10153,32 @@ paths:
                     "trackingCode" : "LZ101003859US",
                     "trackingLink" : "http://example.com/track?code=LZ101003859US",
                     "lineItems" : [ {
-                      "productLineItemId" : "e1a0b1de-8dcc-4e82-804c-0d78c60fadf8",
+                      "productLineItemId" : "32a7d776-9200-4075-971c-8475448ed288",
                       "quantity" : 3
                     } ],
-                    "_id" : "9e304567-8a40-4bf1-9992-020a3547e232",
+                    "_id" : "d0123076-3782-41a9-b445-0aac0929ff16",
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/orders/7d3ea1fd-d8a3-4bba-a039-095f2de2384c/processes/shippings/9e304567-8a40-4bf1-9992-020a3547e232"
+                        "href" : "https://yourshop.api.urn/orders/3c099347-4647-4d78-a86f-399372014c34/processes/shippings/d0123076-3782-41a9-b445-0aac0929ff16"
                       },
                       "shipping-process" : {
-                        "href" : "https://yourshop.api.urn/orders/7d3ea1fd-d8a3-4bba-a039-095f2de2384c/processes/shippings/9e304567-8a40-4bf1-9992-020a3547e232"
+                        "href" : "https://yourshop.api.urn/orders/3c099347-4647-4d78-a86f-399372014c34/processes/shippings/d0123076-3782-41a9-b445-0aac0929ff16"
                       },
                       "mark-shipped" : {
-                        "href" : "https://yourshop.api.urn/orders/7d3ea1fd-d8a3-4bba-a039-095f2de2384c/processes/shippings/9e304567-8a40-4bf1-9992-020a3547e232/mark-shipped"
+                        "href" : "https://yourshop.api.urn/orders/3c099347-4647-4d78-a86f-399372014c34/processes/shippings/d0123076-3782-41a9-b445-0aac0929ff16/mark-shipped"
                       },
                       "mark-delivered" : {
-                        "href" : "https://yourshop.api.urn/orders/7d3ea1fd-d8a3-4bba-a039-095f2de2384c/processes/shippings/9e304567-8a40-4bf1-9992-020a3547e232/mark-delivered"
+                        "href" : "https://yourshop.api.urn/orders/3c099347-4647-4d78-a86f-399372014c34/processes/shippings/d0123076-3782-41a9-b445-0aac0929ff16/mark-delivered"
                       }
                     }
                   } ]
                 },
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/orders/7d3ea1fd-d8a3-4bba-a039-095f2de2384c/processes/shippings?page=0&size=20"
+                    "href" : "https://yourshop.api.urn/orders/3c099347-4647-4d78-a86f-399372014c34/processes/shippings?page=0&size=20"
                   },
                   "shipping-processes" : {
-                    "href" : "https://yourshop.api.urn/orders/7d3ea1fd-d8a3-4bba-a039-095f2de2384c/processes/shippings"
+                    "href" : "https://yourshop.api.urn/orders/3c099347-4647-4d78-a86f-399372014c34/processes/shippings"
                   }
                 },
                 "page" : {
@@ -10211,7 +10213,7 @@ paths:
         name: ""
         required: false
         schema:
-          $ref: '#/definitions/orders_orderId_processes_shippings1514389282'
+          $ref: '#/definitions/orders_orderId_processes_shippings-1127603872'
         x-examples:
           application/json: |-
             {
@@ -10222,7 +10224,7 @@ paths:
               "trackingLink" : "http://example.com/track?code=LZ101003859US",
               "lineItems" : [ {
                 "quantity" : 3,
-                "productLineItemId" : "245ae605-f5c0-4707-b42e-80bb31723efe"
+                "productLineItemId" : "b772d988-8882-40a6-bd67-4c7948cf9702"
               } ]
             }
       responses:
@@ -10235,22 +10237,22 @@ paths:
                 "trackingCode" : "LZ101003859US",
                 "trackingLink" : "http://example.com/track?code=LZ101003859US",
                 "lineItems" : [ {
-                  "productLineItemId" : "245ae605-f5c0-4707-b42e-80bb31723efe",
+                  "productLineItemId" : "b772d988-8882-40a6-bd67-4c7948cf9702",
                   "quantity" : 3
                 } ],
-                "_id" : "1db076a8-122b-4eba-82e6-9eb2e0cf4e75",
+                "_id" : "d3e0541a-8441-4c72-8af2-b01f0c068fe5",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/orders/c8d69e45-16a6-445e-a3f6-d9100d9a58e8/processes/shippings/1db076a8-122b-4eba-82e6-9eb2e0cf4e75"
+                    "href" : "https://yourshop.api.urn/orders/9a9d51da-7dd8-4955-a2b2-71160f653183/processes/shippings/d3e0541a-8441-4c72-8af2-b01f0c068fe5"
                   },
                   "shipping-process" : {
-                    "href" : "https://yourshop.api.urn/orders/c8d69e45-16a6-445e-a3f6-d9100d9a58e8/processes/shippings/1db076a8-122b-4eba-82e6-9eb2e0cf4e75"
+                    "href" : "https://yourshop.api.urn/orders/9a9d51da-7dd8-4955-a2b2-71160f653183/processes/shippings/d3e0541a-8441-4c72-8af2-b01f0c068fe5"
                   },
                   "mark-shipped" : {
-                    "href" : "https://yourshop.api.urn/orders/c8d69e45-16a6-445e-a3f6-d9100d9a58e8/processes/shippings/1db076a8-122b-4eba-82e6-9eb2e0cf4e75/mark-shipped"
+                    "href" : "https://yourshop.api.urn/orders/9a9d51da-7dd8-4955-a2b2-71160f653183/processes/shippings/d3e0541a-8441-4c72-8af2-b01f0c068fe5/mark-shipped"
                   },
                   "mark-delivered" : {
-                    "href" : "https://yourshop.api.urn/orders/c8d69e45-16a6-445e-a3f6-d9100d9a58e8/processes/shippings/1db076a8-122b-4eba-82e6-9eb2e0cf4e75/mark-delivered"
+                    "href" : "https://yourshop.api.urn/orders/9a9d51da-7dd8-4955-a2b2-71160f653183/processes/shippings/d3e0541a-8441-4c72-8af2-b01f0c068fe5/mark-delivered"
                   }
                 }
               }
@@ -10285,16 +10287,16 @@ paths:
             application/hal+json: |-
               {
                 "lineItems" : [ {
-                  "productLineItemId" : "0a9c7d5c-873b-41ba-957f-117489dbcec5",
+                  "productLineItemId" : "cbff0ef2-df29-42e0-b57c-7f6e7bb69e07",
                   "quantity" : 3
                 } ],
-                "_id" : "6a72e17f-7893-4086-a1b4-8b5fd6ebb78c",
+                "_id" : "258987c4-10bd-4acc-a6b5-7d5f7095f287",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/orders/2ede116e-1688-4f19-bed0-d63cddc556fb/processes/cancelations/6a72e17f-7893-4086-a1b4-8b5fd6ebb78c"
+                    "href" : "https://yourshop.api.urn/orders/1dcb2645-3960-4365-80d2-f1ac4e0420b8/processes/cancelations/258987c4-10bd-4acc-a6b5-7d5f7095f287"
                   },
                   "cancel-process" : {
-                    "href" : "https://yourshop.api.urn/orders/2ede116e-1688-4f19-bed0-d63cddc556fb/processes/cancelations/6a72e17f-7893-4086-a1b4-8b5fd6ebb78c"
+                    "href" : "https://yourshop.api.urn/orders/1dcb2645-3960-4365-80d2-f1ac4e0420b8/processes/cancelations/258987c4-10bd-4acc-a6b5-7d5f7095f287"
                   }
                 }
               }
@@ -10334,19 +10336,19 @@ paths:
                 "paymentId" : null,
                 "captureWorkflow" : null,
                 "completed" : false,
-                "_id" : "50f46c38-1433-47f4-bd2a-1eaefb5cbab6",
+                "_id" : "3094c2f3-3ed0-40ce-877b-da2dc2427bd1",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/orders/092c0a02-b588-4a71-a672-8befd4a345d7/processes/payments/50f46c38-1433-47f4-bd2a-1eaefb5cbab6"
+                    "href" : "https://yourshop.api.urn/orders/e2a54ab4-e56b-4ec9-9bc8-934d13c86723/processes/payments/3094c2f3-3ed0-40ce-877b-da2dc2427bd1"
                   },
                   "payment-process" : {
-                    "href" : "https://yourshop.api.urn/orders/092c0a02-b588-4a71-a672-8befd4a345d7/processes/payments/50f46c38-1433-47f4-bd2a-1eaefb5cbab6"
+                    "href" : "https://yourshop.api.urn/orders/e2a54ab4-e56b-4ec9-9bc8-934d13c86723/processes/payments/3094c2f3-3ed0-40ce-877b-da2dc2427bd1"
                   },
                   "mark-voided" : {
-                    "href" : "https://yourshop.api.urn/orders/092c0a02-b588-4a71-a672-8befd4a345d7/processes/payments/50f46c38-1433-47f4-bd2a-1eaefb5cbab6/mark-voided"
+                    "href" : "https://yourshop.api.urn/orders/e2a54ab4-e56b-4ec9-9bc8-934d13c86723/processes/payments/3094c2f3-3ed0-40ce-877b-da2dc2427bd1/mark-voided"
                   },
                   "mark-paid" : {
-                    "href" : "https://yourshop.api.urn/orders/092c0a02-b588-4a71-a672-8befd4a345d7/processes/payments/50f46c38-1433-47f4-bd2a-1eaefb5cbab6/mark-paid"
+                    "href" : "https://yourshop.api.urn/orders/e2a54ab4-e56b-4ec9-9bc8-934d13c86723/processes/payments/3094c2f3-3ed0-40ce-877b-da2dc2427bd1/mark-paid"
                   }
                 }
               }
@@ -10388,19 +10390,19 @@ paths:
                 "paymentId" : null,
                 "captureWorkflow" : null,
                 "completed" : false,
-                "_id" : "804c4965-d970-460d-9944-b422b54f7d88",
+                "_id" : "8d9cc424-a80b-4b24-ae2e-3ea71456b231",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/orders/76c0fc53-fc3a-4718-8428-4cebfb505808/processes/payments/804c4965-d970-460d-9944-b422b54f7d88"
+                    "href" : "https://yourshop.api.urn/orders/6685e899-2bbc-4cef-9daf-880ac8c9672c/processes/payments/8d9cc424-a80b-4b24-ae2e-3ea71456b231"
                   },
                   "payment-process" : {
-                    "href" : "https://yourshop.api.urn/orders/76c0fc53-fc3a-4718-8428-4cebfb505808/processes/payments/804c4965-d970-460d-9944-b422b54f7d88"
+                    "href" : "https://yourshop.api.urn/orders/6685e899-2bbc-4cef-9daf-880ac8c9672c/processes/payments/8d9cc424-a80b-4b24-ae2e-3ea71456b231"
                   },
                   "mark-voided" : {
-                    "href" : "https://yourshop.api.urn/orders/76c0fc53-fc3a-4718-8428-4cebfb505808/processes/payments/804c4965-d970-460d-9944-b422b54f7d88/mark-voided"
+                    "href" : "https://yourshop.api.urn/orders/6685e899-2bbc-4cef-9daf-880ac8c9672c/processes/payments/8d9cc424-a80b-4b24-ae2e-3ea71456b231/mark-voided"
                   },
                   "mark-paid" : {
-                    "href" : "https://yourshop.api.urn/orders/76c0fc53-fc3a-4718-8428-4cebfb505808/processes/payments/804c4965-d970-460d-9944-b422b54f7d88/mark-paid"
+                    "href" : "https://yourshop.api.urn/orders/6685e899-2bbc-4cef-9daf-880ac8c9672c/processes/payments/8d9cc424-a80b-4b24-ae2e-3ea71456b231/mark-paid"
                   }
                 }
               }
@@ -10438,16 +10440,16 @@ paths:
                 },
                 "status" : "PENDING",
                 "completed" : false,
-                "_id" : "51fe4bec-9b9b-44e4-a710-387aba1341b3",
+                "_id" : "a9a7696b-2152-456e-815d-9f3bf360ac93",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/orders/8211041f-011b-4143-be98-bf8520473f04/processes/refunds/51fe4bec-9b9b-44e4-a710-387aba1341b3"
+                    "href" : "https://yourshop.api.urn/orders/5c15ed00-75db-45ab-ae21-a0cf14371542/processes/refunds/a9a7696b-2152-456e-815d-9f3bf360ac93"
                   },
                   "refund-process" : {
-                    "href" : "https://yourshop.api.urn/orders/8211041f-011b-4143-be98-bf8520473f04/processes/refunds/51fe4bec-9b9b-44e4-a710-387aba1341b3"
+                    "href" : "https://yourshop.api.urn/orders/5c15ed00-75db-45ab-ae21-a0cf14371542/processes/refunds/a9a7696b-2152-456e-815d-9f3bf360ac93"
                   },
                   "mark-paid" : {
-                    "href" : "https://yourshop.api.urn/orders/8211041f-011b-4143-be98-bf8520473f04/processes/refunds/51fe4bec-9b9b-44e4-a710-387aba1341b3/mark-paid"
+                    "href" : "https://yourshop.api.urn/orders/5c15ed00-75db-45ab-ae21-a0cf14371542/processes/refunds/a9a7696b-2152-456e-815d-9f3bf360ac93/mark-paid"
                   }
                 }
               }
@@ -10486,16 +10488,16 @@ paths:
                 },
                 "status" : "PENDING",
                 "completed" : false,
-                "_id" : "8dc871ce-e12b-4b8e-8f70-e48adebb65c2",
+                "_id" : "bf74ba99-9c2d-41ec-a1d0-bf2eaa6c9053",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/orders/1ae99c03-7ee8-41e8-826d-6613d56ad5c4/processes/refunds/8dc871ce-e12b-4b8e-8f70-e48adebb65c2"
+                    "href" : "https://yourshop.api.urn/orders/38d3a46d-06a9-4e0a-a2d7-06581277ce6a/processes/refunds/bf74ba99-9c2d-41ec-a1d0-bf2eaa6c9053"
                   },
                   "refund-process" : {
-                    "href" : "https://yourshop.api.urn/orders/1ae99c03-7ee8-41e8-826d-6613d56ad5c4/processes/refunds/8dc871ce-e12b-4b8e-8f70-e48adebb65c2"
+                    "href" : "https://yourshop.api.urn/orders/38d3a46d-06a9-4e0a-a2d7-06581277ce6a/processes/refunds/bf74ba99-9c2d-41ec-a1d0-bf2eaa6c9053"
                   },
                   "mark-paid" : {
-                    "href" : "https://yourshop.api.urn/orders/1ae99c03-7ee8-41e8-826d-6613d56ad5c4/processes/refunds/8dc871ce-e12b-4b8e-8f70-e48adebb65c2/mark-paid"
+                    "href" : "https://yourshop.api.urn/orders/38d3a46d-06a9-4e0a-a2d7-06581277ce6a/processes/refunds/bf74ba99-9c2d-41ec-a1d0-bf2eaa6c9053/mark-paid"
                   }
                 }
               }
@@ -10532,7 +10534,7 @@ paths:
             application/hal+json: |-
               {
                 "lineItems" : [ {
-                  "productLineItemId" : "9a75c7c8-4c5b-44df-92db-1e3e50625db6",
+                  "productLineItemId" : "e521e16e-57c1-44fd-881c-87d52aca2f31",
                   "quantity" : 3,
                   "status" : "RETURNED"
                 } ],
@@ -10540,13 +10542,13 @@ paths:
                   "currency" : "EUR",
                   "amount" : 19.99
                 },
-                "_id" : "70ad9713-8dcf-46c4-acf5-ff6b5f7f1f57",
+                "_id" : "bfa98b1b-d195-41d0-ae34-8c2b096ff510",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/orders/a1a6ec9a-5b2e-4d78-b941-0c3e825c1540/processes/returns/70ad9713-8dcf-46c4-acf5-ff6b5f7f1f57"
+                    "href" : "https://yourshop.api.urn/orders/7570e0e9-e897-4d2d-9080-51c53172f23a/processes/returns/bfa98b1b-d195-41d0-ae34-8c2b096ff510"
                   },
                   "return-process" : {
-                    "href" : "https://yourshop.api.urn/orders/a1a6ec9a-5b2e-4d78-b941-0c3e825c1540/processes/returns/70ad9713-8dcf-46c4-acf5-ff6b5f7f1f57"
+                    "href" : "https://yourshop.api.urn/orders/7570e0e9-e897-4d2d-9080-51c53172f23a/processes/returns/bfa98b1b-d195-41d0-ae34-8c2b096ff510"
                   }
                 }
               }
@@ -10586,22 +10588,22 @@ paths:
                 "trackingCode" : "LZ101003859US",
                 "trackingLink" : "http://example.com/track?code=LZ101003859US",
                 "lineItems" : [ {
-                  "productLineItemId" : "47b96484-2dd4-49e4-be03-41b8ac39b9c6",
+                  "productLineItemId" : "4d7920bf-61f9-4c6a-b95b-b7ee3100f2ef",
                   "quantity" : 3
                 } ],
-                "_id" : "28d1c376-0bd0-4f06-a141-5688dcb3f814",
+                "_id" : "42189378-c23f-48a7-bf34-78ae9d8494a9",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/orders/f067625b-fa67-49e2-b87b-fdbe99ef84fb/processes/shippings/28d1c376-0bd0-4f06-a141-5688dcb3f814"
+                    "href" : "https://yourshop.api.urn/orders/9be9eceb-549c-4752-9c1c-318f0467c551/processes/shippings/42189378-c23f-48a7-bf34-78ae9d8494a9"
                   },
                   "shipping-process" : {
-                    "href" : "https://yourshop.api.urn/orders/f067625b-fa67-49e2-b87b-fdbe99ef84fb/processes/shippings/28d1c376-0bd0-4f06-a141-5688dcb3f814"
+                    "href" : "https://yourshop.api.urn/orders/9be9eceb-549c-4752-9c1c-318f0467c551/processes/shippings/42189378-c23f-48a7-bf34-78ae9d8494a9"
                   },
                   "mark-shipped" : {
-                    "href" : "https://yourshop.api.urn/orders/f067625b-fa67-49e2-b87b-fdbe99ef84fb/processes/shippings/28d1c376-0bd0-4f06-a141-5688dcb3f814/mark-shipped"
+                    "href" : "https://yourshop.api.urn/orders/9be9eceb-549c-4752-9c1c-318f0467c551/processes/shippings/42189378-c23f-48a7-bf34-78ae9d8494a9/mark-shipped"
                   },
                   "mark-delivered" : {
-                    "href" : "https://yourshop.api.urn/orders/f067625b-fa67-49e2-b87b-fdbe99ef84fb/processes/shippings/28d1c376-0bd0-4f06-a141-5688dcb3f814/mark-delivered"
+                    "href" : "https://yourshop.api.urn/orders/9be9eceb-549c-4752-9c1c-318f0467c551/processes/shippings/42189378-c23f-48a7-bf34-78ae9d8494a9/mark-delivered"
                   }
                 }
               }
@@ -10657,13 +10659,13 @@ paths:
                 "paymentId" : null,
                 "captureWorkflow" : null,
                 "completed" : true,
-                "_id" : "59a49ea5-51e6-44c5-b61f-1e5aed146478",
+                "_id" : "e60eb6af-1718-42ee-9603-406e3399a324",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/orders/9fc9b766-9754-49cf-9413-ae5d8ee27a27/processes/payments/59a49ea5-51e6-44c5-b61f-1e5aed146478"
+                    "href" : "https://yourshop.api.urn/orders/f6c6091d-6b80-41c0-ab96-76b7d8489991/processes/payments/e60eb6af-1718-42ee-9603-406e3399a324"
                   },
                   "payment-process" : {
-                    "href" : "https://yourshop.api.urn/orders/9fc9b766-9754-49cf-9413-ae5d8ee27a27/processes/payments/59a49ea5-51e6-44c5-b61f-1e5aed146478"
+                    "href" : "https://yourshop.api.urn/orders/f6c6091d-6b80-41c0-ab96-76b7d8489991/processes/payments/e60eb6af-1718-42ee-9603-406e3399a324"
                   }
                 }
               }
@@ -10711,13 +10713,13 @@ paths:
                 "paymentId" : null,
                 "captureWorkflow" : null,
                 "completed" : true,
-                "_id" : "c149addb-fee7-4e7b-90cc-a91f78e5ac4e",
+                "_id" : "c0369152-1635-4605-ba14-5f7110835fb8",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/orders/397a2bf8-693d-4fbb-bda6-d01a90a23078/processes/payments/c149addb-fee7-4e7b-90cc-a91f78e5ac4e"
+                    "href" : "https://yourshop.api.urn/orders/0bedd3ee-87f8-478f-84c9-eedcd3615e2b/processes/payments/c0369152-1635-4605-ba14-5f7110835fb8"
                   },
                   "payment-process" : {
-                    "href" : "https://yourshop.api.urn/orders/397a2bf8-693d-4fbb-bda6-d01a90a23078/processes/payments/c149addb-fee7-4e7b-90cc-a91f78e5ac4e"
+                    "href" : "https://yourshop.api.urn/orders/0bedd3ee-87f8-478f-84c9-eedcd3615e2b/processes/payments/c0369152-1635-4605-ba14-5f7110835fb8"
                   }
                 }
               }
@@ -10756,16 +10758,16 @@ paths:
                   "amount" : 77.44
                 },
                 "status" : "PAID",
-                "paymentId" : "da09a94d-6ef1-4cca-8def-2a4262f13de6",
+                "paymentId" : "9161b861-95fc-483d-81b9-c92a15c87112",
                 "captureWorkflow" : "CAPTURE_ON_DEMAND",
                 "completed" : true,
-                "_id" : "7d84b795-e8a8-4403-a468-f56e11384d64",
+                "_id" : "d5113199-fea0-432a-b4ca-99df3a107218",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/orders/6457ceea-cf30-489d-83ae-5f108bdaed89/processes/payments/7d84b795-e8a8-4403-a468-f56e11384d64"
+                    "href" : "https://yourshop.api.urn/orders/76f2c34b-c078-438b-98d8-8c16e028a39f/processes/payments/d5113199-fea0-432a-b4ca-99df3a107218"
                   },
                   "payment-process" : {
-                    "href" : "https://yourshop.api.urn/orders/6457ceea-cf30-489d-83ae-5f108bdaed89/processes/payments/7d84b795-e8a8-4403-a468-f56e11384d64"
+                    "href" : "https://yourshop.api.urn/orders/76f2c34b-c078-438b-98d8-8c16e028a39f/processes/payments/d5113199-fea0-432a-b4ca-99df3a107218"
                   }
                 }
               }
@@ -10826,13 +10828,13 @@ paths:
                 "paymentId" : null,
                 "captureWorkflow" : null,
                 "completed" : true,
-                "_id" : "dc0e1115-b0f9-4109-90f2-04280e73b762",
+                "_id" : "461b3abb-b347-415c-924b-1450b97f6617",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/orders/de72342a-c05c-4f2e-acc2-731b14e15752/processes/payments/dc0e1115-b0f9-4109-90f2-04280e73b762"
+                    "href" : "https://yourshop.api.urn/orders/e6954561-f9d5-4888-9b6b-57a60e0dbf1c/processes/payments/461b3abb-b347-415c-924b-1450b97f6617"
                   },
                   "payment-process" : {
-                    "href" : "https://yourshop.api.urn/orders/de72342a-c05c-4f2e-acc2-731b14e15752/processes/payments/dc0e1115-b0f9-4109-90f2-04280e73b762"
+                    "href" : "https://yourshop.api.urn/orders/e6954561-f9d5-4888-9b6b-57a60e0dbf1c/processes/payments/461b3abb-b347-415c-924b-1450b97f6617"
                   }
                 }
               }
@@ -10885,13 +10887,13 @@ paths:
                 "paymentId" : null,
                 "captureWorkflow" : null,
                 "completed" : true,
-                "_id" : "ab05d39e-64ad-4d27-aba4-e55046e976fa",
+                "_id" : "b1bec8bc-6cae-4c8d-9ebf-2ec4b217afee",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/orders/12948c7d-8e9f-434a-891e-0265dbca4f90/processes/payments/ab05d39e-64ad-4d27-aba4-e55046e976fa"
+                    "href" : "https://yourshop.api.urn/orders/b72f0120-5b74-4fa4-9f20-3bf426a9f111/processes/payments/b1bec8bc-6cae-4c8d-9ebf-2ec4b217afee"
                   },
                   "payment-process" : {
-                    "href" : "https://yourshop.api.urn/orders/12948c7d-8e9f-434a-891e-0265dbca4f90/processes/payments/ab05d39e-64ad-4d27-aba4-e55046e976fa"
+                    "href" : "https://yourshop.api.urn/orders/b72f0120-5b74-4fa4-9f20-3bf426a9f111/processes/payments/b1bec8bc-6cae-4c8d-9ebf-2ec4b217afee"
                   }
                 }
               }
@@ -10944,13 +10946,13 @@ paths:
                 },
                 "status" : "PAID",
                 "completed" : true,
-                "_id" : "d858302d-1e2f-40a4-a54e-4c61b2cc042c",
+                "_id" : "9a4dd12c-13e9-4bc0-9de3-88401b858978",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/orders/d9e62201-9e4d-4913-a4de-9130ba933ca7/processes/refunds/d858302d-1e2f-40a4-a54e-4c61b2cc042c"
+                    "href" : "https://yourshop.api.urn/orders/8248b983-0868-412f-9d3d-0d50276523c1/processes/refunds/9a4dd12c-13e9-4bc0-9de3-88401b858978"
                   },
                   "refund-process" : {
-                    "href" : "https://yourshop.api.urn/orders/d9e62201-9e4d-4913-a4de-9130ba933ca7/processes/refunds/d858302d-1e2f-40a4-a54e-4c61b2cc042c"
+                    "href" : "https://yourshop.api.urn/orders/8248b983-0868-412f-9d3d-0d50276523c1/processes/refunds/9a4dd12c-13e9-4bc0-9de3-88401b858978"
                   }
                 }
               }
@@ -11000,16 +11002,16 @@ paths:
                 "trackingCode" : "LZ101003859US",
                 "trackingLink" : "http://example.com/track?code=LZ101003859US",
                 "lineItems" : [ {
-                  "productLineItemId" : "9e9f4549-2305-46c4-9e5b-977f4f4b266c",
+                  "productLineItemId" : "e52336d2-aee0-4b0a-9bdf-f8b8d9a23182",
                   "quantity" : 3
                 } ],
-                "_id" : "5b7e4581-cfc1-4e87-a54f-4483e13ee6bb",
+                "_id" : "b6b214d5-6621-4fe4-a312-9f6c49bebe10",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/orders/459acfe1-6a7b-4628-9c0c-e38ba7becceb/processes/shippings/5b7e4581-cfc1-4e87-a54f-4483e13ee6bb"
+                    "href" : "https://yourshop.api.urn/orders/bab01a63-4c25-48d3-855e-cc9b8518ec24/processes/shippings/b6b214d5-6621-4fe4-a312-9f6c49bebe10"
                   },
                   "shipping-process" : {
-                    "href" : "https://yourshop.api.urn/orders/459acfe1-6a7b-4628-9c0c-e38ba7becceb/processes/shippings/5b7e4581-cfc1-4e87-a54f-4483e13ee6bb"
+                    "href" : "https://yourshop.api.urn/orders/bab01a63-4c25-48d3-855e-cc9b8518ec24/processes/shippings/b6b214d5-6621-4fe4-a312-9f6c49bebe10"
                   }
                 }
               }
@@ -11064,19 +11066,19 @@ paths:
                 "trackingCode" : "LZ101003859US",
                 "trackingLink" : "http://example.com/track?code=LZ101003859US",
                 "lineItems" : [ {
-                  "productLineItemId" : "acdc487d-9417-4141-af60-9f125d998f39",
+                  "productLineItemId" : "3063a5f9-0e15-446d-8bf8-54450c5228c3",
                   "quantity" : 3
                 } ],
-                "_id" : "3e7867c2-cb0a-4124-b16e-4972c5c076b4",
+                "_id" : "0367cfe9-9868-4ade-a1c0-37ae12272448",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/orders/6dde84ab-e216-4878-b918-4989b1c72773/processes/shippings/3e7867c2-cb0a-4124-b16e-4972c5c076b4"
+                    "href" : "https://yourshop.api.urn/orders/075138b9-65a7-4bf2-a8dd-fada5c1f42d6/processes/shippings/0367cfe9-9868-4ade-a1c0-37ae12272448"
                   },
                   "shipping-process" : {
-                    "href" : "https://yourshop.api.urn/orders/6dde84ab-e216-4878-b918-4989b1c72773/processes/shippings/3e7867c2-cb0a-4124-b16e-4972c5c076b4"
+                    "href" : "https://yourshop.api.urn/orders/075138b9-65a7-4bf2-a8dd-fada5c1f42d6/processes/shippings/0367cfe9-9868-4ade-a1c0-37ae12272448"
                   },
                   "mark-delivered" : {
-                    "href" : "https://yourshop.api.urn/orders/6dde84ab-e216-4878-b918-4989b1c72773/processes/shippings/3e7867c2-cb0a-4124-b16e-4972c5c076b4/mark-delivered"
+                    "href" : "https://yourshop.api.urn/orders/075138b9-65a7-4bf2-a8dd-fada5c1f42d6/processes/shippings/0367cfe9-9868-4ade-a1c0-37ae12272448/mark-delivered"
                   }
                 }
               }
@@ -27306,6 +27308,8 @@ definitions:
         type: object
         description: See https://developer.epages.com/beyond-docs/#pagination[Pagination]
         properties: {}
+  users_userId_roles65873324:
+    example: https://yourshop.api.urn/roles/89278347-4424-4b19-a995-3575d70fb21e
   orders_orderId_processes-547997417:
     type: object
     properties:
@@ -27336,8 +27340,6 @@ definitions:
             type: array
             description: All return processes of the order.
             items: {}
-  users_userId_roles65873324:
-    example: https://yourshop.api.urn/roles/89278347-4424-4b19-a995-3575d70fb21e
   users_support-585946287:
     type: object
     properties:
@@ -27450,55 +27452,6 @@ definitions:
         description: List of currencies that are supported by this shop. Defaults
           to `defaultCurrency`. The `defaultCurrency` is always included in this list.
         items: {}
-  orders_orderId_processes_returns-1018014970:
-    type: object
-    properties:
-      lineItems:
-        type: array
-        items:
-          type: object
-          properties:
-            quantity:
-              type: number
-              description: The quantity of the product line item in this return process.
-            productLineItemId:
-              type: string
-              description: The ID of a specified product line item in this return
-                process.
-            status:
-              type: string
-              description: The status of the product line item in this return process.
-                Can be one of `RETURNED` or `BROKEN`.
-      shippingPriceRefund:
-        type: object
-        properties:
-          amount:
-            type: number
-            description: The price for the shipping line item to be refunded.
-          currency:
-            type: string
-            description: The currency of the price for the shipping line item.
-      sendMail:
-        type: boolean
-        description: Indicates if an email has to be sent out to notify the customer
-          that the merchant received the returned items. Can be `true` or `false`.
-      comment:
-        type: string
-        description: The comment to this status change.
-    example: |-
-      {
-        "comment" : "This needs to be done fast!",
-        "sendMail" : true,
-        "lineItems" : [ {
-          "quantity" : 3,
-          "productLineItemId" : "830232cd-7071-4bfb-ab1d-8854f38593bb",
-          "status" : "RETURNED"
-        } ],
-        "shippingPriceRefund" : {
-          "currency" : "EUR",
-          "amount" : 19.99
-        }
-      }
   carts_cartId_shipping-address-782974206:
     type: object
     required:
@@ -27658,6 +27611,136 @@ definitions:
       https://yourshop.api.urn/payment-methods/82ed51c0-16b3-43a2-82d4-9ea23af239aa
       https://yourshop.api.urn/payment-methods/de90ac5f-d6f0-4474-a148-2ec16702adb4
       https://yourshop.api.urn/payment-methods/955653cd-0f5b-40b0-a2f1-6936862e2912
+  order-settings1556746920:
+    type: object
+    properties:
+      defaultDeliveryDateNote:
+        type: string
+        description: The default delivery date note to be printed on the invoice.
+        minLength: 0
+        maxLength: 500
+      customOrderCanceledMailText:
+        type: string
+        description: A customizable text body for the email that is sent to the customer
+          when an order has been canceled. Merchants can adapt the email body to their
+          needs in case the default text does not meet their requirements.
+        minLength: 0
+        maxLength: 2047
+      defaultInvoiceNote:
+        type: string
+        description: The default invoice note to be printed on the invoice.
+        minLength: 0
+        maxLength: 500
+      customOrderOpenMailText:
+        type: string
+        description: A customizable text body for the email that is sent to the customer
+          when an order has been placed in a shop. Merchants can adapt the email body
+          to their needs in case the default text does not meet their requirements.
+        minLength: 0
+        maxLength: 2047
+      customOrderReturnedMailText:
+        type: string
+        description: A customizable text body for the email that is sent to inform
+          the customer that the merchant has received the returned items for an order.
+          Merchants can adapt the email body to their needs in case the default text
+          does not meet their requirements.
+        minLength: 0
+        maxLength: 2047
+      customOrderShippedMailText:
+        type: string
+        description: A customizable text body for the email that is sent to inform
+          the customer that items have been shipped. Merchants can adapt the email
+          body to their needs in case the default text does not meet their requirements.
+        minLength: 0
+        maxLength: 2047
+      customInvoiceCanceledMailText:
+        type: string
+        description: Deprecated in favor of `customInvoiceCorrectionMailText`. A customizable
+          text body for the email that is sent to the customer with the invoice cancellation
+          pdf attached. Merchants can adapt the email body to their needs in case
+          the default text does not meet their requirements.
+      customOrderPendingMailText:
+        type: string
+        description: A customizable text body for the email that is sent to inform
+          the customer that the shipping process has been started. Merchants can adapt
+          the email body to their needs in case the default text does not meet their
+          requirements.
+        minLength: 0
+        maxLength: 2047
+      customInvoiceCustomerMailText:
+        type: string
+        description: A customizable text body for the email that is sent to the customer
+          with the invoice pdf attached. Merchants can adapt the email body to their
+          needs in case the default text does not meet their requirements.
+        minLength: 0
+        maxLength: 2047
+      orderNumberConfiguration:
+        type: object
+        properties:
+          nextNumericSuffix:
+            type: number
+            description: The next numeric suffix used for the upcoming order. This
+              value is increased each time an order is created.
+          stringPrefix:
+            type: string
+            description: A customizable prefix that can be attached to all order numbers.
+              Not mandatory.
+          numericSuffixLength:
+            type: number
+            description: The length of the numeric part of the order number. Has 5
+              digits by default. If the numeric value is shorter, the value is padded
+              with zeros to the left, e.g. `01000`. If the value is longer, the numericSuffixLength
+              is extended, e.g. `100000`.
+        required:
+        - stringPrefix
+      invoiceCancelationNote:
+        type: string
+        description: The invoice cancelation note to be printed on invoice cancelation
+          documents.
+        minLength: 0
+        maxLength: 500
+      invoiceNumberConfiguration:
+        type: object
+        properties:
+          nextNumericSuffix:
+            type: number
+            description: The next numeric suffix used for the upcoming invoice. This
+              value is increased each time an invoice is created.
+          stringPrefix:
+            type: string
+            description: A customizable prefix that can be attached to all invoice
+              numbers. Not mandatory.
+          numericSuffixLength:
+            type: number
+            description: The length of the numeric part of the invoice number. Has
+              5 digits by default. If the numeric value is shorter, the value is padded
+              with zeros to the left, e.g. `01000`. If the value is longer, the numericSuffixLength
+              is extended, e.g. `100000`.
+        required:
+        - stringPrefix
+    example: |-
+      {
+        "invoiceCancelationNote" : "This is an invoice cancelation note",
+        "defaultDeliveryDateNote" : "This is the default delivery date note",
+        "defaultInvoiceNote" : "This is the default invoice note",
+        "orderNumberConfiguration" : {
+          "stringPrefix" : "2017-shop-",
+          "nextNumericSuffix" : 1000,
+          "numericSuffixLength" : 4
+        },
+        "invoiceNumberConfiguration" : {
+          "stringPrefix" : "2017-invoice-",
+          "nextNumericSuffix" : 1000,
+          "numericSuffixLength" : 4
+        },
+        "customOrderOpenMailText" : " Your <br /> 1",
+        "customOrderCanceledMailText" : " Your <br /> 2",
+        "customInvoiceCustomerMailText" : " Your <br /> 3",
+        "customInvoiceCanceledMailText" : " Your <br /> 4",
+        "customOrderShippedMailText" : " Your <br /> 5",
+        "customOrderPendingMailText" : " Your <br /> 6",
+        "customOrderReturnedMailText" : " Your <br /> 7"
+      }
   carts_cartId_create-payment-and-order-1433757970:
     type: object
     properties:
@@ -28886,6 +28969,16 @@ definitions:
       ����u���)�����\x7ff߀~&���'��\"�\x16���\0\x1e��S����:_\x0fX�k\x7f\x11u�2=\x17\
       U����\x11�w\x17�/�x�J��%��j�i�K#y�ie����j��t��\x12��|\x19�o�[|\x06�y�\rY�>\x12\
       ���\x1f��\\��m?�\"6:}�����,�pb��D5\x05�T\b5( ��\x03��"
+  carts_cartId_customer1603977706:
+    type: object
+    properties:
+      initialPassword:
+        type: string
+        description: The customer initial password.
+      email:
+        type: string
+        description: The email address of the customer.
+    example: '{"initialPassword":"1589529898","email":"a.alsterh@example.com"}'
   orders_id_send-order-document-1238497698:
     type: object
     required:
@@ -28898,16 +28991,6 @@ definitions:
       {
         "orderDocumentUri" : "https://myshop.com/api/pdf-storage/attachments/invoice_10003.pdf?hash=9e5e2631c6f5877d64cb3d40db46ec6eb48a3a92"
       }
-  carts_cartId_customer1603977706:
-    type: object
-    properties:
-      initialPassword:
-        type: string
-        description: The customer initial password.
-      email:
-        type: string
-        description: The email address of the customer.
-    example: '{"initialPassword":"1589529898","email":"a.alsterh@example.com"}'
   users_userId_change-email-request560265492:
     type: object
     properties:
@@ -30398,137 +30481,6 @@ definitions:
         type: string
         description: The URI to which the app will redirect the customer after the
           approval, cancelation or failure of the payment.
-  order-settings586335844:
-    type: object
-    properties:
-      defaultDeliveryDateNote:
-        type: string
-        description: The default delivery date note to be printed on the invoice.
-        minLength: 0
-        maxLength: 500
-      customOrderCanceledMailText:
-        type: string
-        description: A customizable text body for the email that is sent to the customer
-          when an order has been canceled. Merchants can adapt the email body to their
-          needs in case the default text does not meet their requirements.
-        minLength: 0
-        maxLength: 2047
-      defaultInvoiceNote:
-        type: string
-        description: The default invoice note to be printed on the invoice.
-        minLength: 0
-        maxLength: 500
-      customOrderOpenMailText:
-        type: string
-        description: A customizable text body for the email that is sent to the customer
-          when an order has been placed in a shop. Merchants can adapt the email body
-          to their needs in case the default text does not meet their requirements.
-        minLength: 0
-        maxLength: 2047
-      customOrderReturnedMailText:
-        type: string
-        description: A customizable text body for the email that is sent to inform
-          the customer that the merchant has received the returned items for an order.
-          Merchants can adapt the email body to their needs in case the default text
-          does not meet their requirements.
-        minLength: 0
-        maxLength: 2047
-      customOrderShippedMailText:
-        type: string
-        description: A customizable text body for the email that is sent to inform
-          the customer that items have been shipped. Merchants can adapt the email
-          body to their needs in case the default text does not meet their requirements.
-        minLength: 0
-        maxLength: 2047
-      customInvoiceCanceledMailText:
-        type: string
-        description: A customizable text body for the email that is sent to the customer
-          with the invoice cancellation pdf attached. Merchants can adapt the email
-          body to their needs in case the default text does not meet their requirements.
-        minLength: 0
-        maxLength: 2047
-      customOrderPendingMailText:
-        type: string
-        description: A customizable text body for the email that is sent to inform
-          the customer that the shipping process has been started. Merchants can adapt
-          the email body to their needs in case the default text does not meet their
-          requirements.
-        minLength: 0
-        maxLength: 2047
-      customInvoiceCustomerMailText:
-        type: string
-        description: A customizable text body for the email that is sent to the customer
-          with the invoice pdf attached. Merchants can adapt the email body to their
-          needs in case the default text does not meet their requirements.
-        minLength: 0
-        maxLength: 2047
-      orderNumberConfiguration:
-        type: object
-        properties:
-          nextNumericSuffix:
-            type: number
-            description: The next numeric suffix used for the upcoming order. This
-              value is increased each time an order is created.
-          stringPrefix:
-            type: string
-            description: A customizable prefix that can be attached to all order numbers.
-              Not mandatory.
-          numericSuffixLength:
-            type: number
-            description: The length of the numeric part of the order number. Has 5
-              digits by default. If the numeric value is shorter, the value is padded
-              with zeros to the left, e.g. `01000`. If the value is longer, the numericSuffixLength
-              is extended, e.g. `100000`.
-        required:
-        - stringPrefix
-      invoiceCancelationNote:
-        type: string
-        description: The invoice cancelation note to be printed on invoice cancelation
-          documents.
-        minLength: 0
-        maxLength: 500
-      invoiceNumberConfiguration:
-        type: object
-        properties:
-          nextNumericSuffix:
-            type: number
-            description: The next numeric suffix used for the upcoming invoice. This
-              value is increased each time an invoice is created.
-          stringPrefix:
-            type: string
-            description: A customizable prefix that can be attached to all invoice
-              numbers. Not mandatory.
-          numericSuffixLength:
-            type: number
-            description: The length of the numeric part of the invoice number. Has
-              5 digits by default. If the numeric value is shorter, the value is padded
-              with zeros to the left, e.g. `01000`. If the value is longer, the numericSuffixLength
-              is extended, e.g. `100000`.
-        required:
-        - stringPrefix
-    example: |-
-      {
-        "invoiceCancelationNote" : "This is an invoice cancelation note",
-        "defaultDeliveryDateNote" : "This is the default delivery date note",
-        "defaultInvoiceNote" : "This is the default invoice note",
-        "orderNumberConfiguration" : {
-          "stringPrefix" : "2017-shop-",
-          "nextNumericSuffix" : 1000,
-          "numericSuffixLength" : 4
-        },
-        "invoiceNumberConfiguration" : {
-          "stringPrefix" : "2017-invoice-",
-          "nextNumericSuffix" : 1000,
-          "numericSuffixLength" : 4
-        },
-        "customOrderOpenMailText" : " Your <br /> 1",
-        "customOrderCanceledMailText" : " Your <br /> 2",
-        "customInvoiceCustomerMailText" : " Your <br /> 3",
-        "customInvoiceCanceledMailText" : " Your <br /> 4",
-        "customOrderShippedMailText" : " Your <br /> 5",
-        "customOrderPendingMailText" : " Your <br /> 6",
-        "customOrderReturnedMailText" : " Your <br /> 7"
-      }
   products_productId_variations_variationId_images-555068804:
     type: object
     properties:
@@ -33248,6 +33200,125 @@ definitions:
       type:
         type: string
         description: The type of the category. Can be one of `SMART` or `MANUAL`.
+  order-settings-596857524:
+    type: object
+    properties:
+      customOrderCanceledMailText:
+        type: string
+        description: A customizable text body for the email that is sent to the customer
+          when an order has been canceled. Merchants can adapt the email body to their
+          needs in case the default text does not meet their requirements.
+        minLength: 0
+        maxLength: 2047
+      _links:
+        type: object
+        description: See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+        properties: {}
+      customOrderOpenMailText:
+        type: string
+        description: A customizable text body for the email that is sent to the customer
+          when an order has been placed in a shop. Merchants can adapt the email body
+          to their needs in case the default text does not meet their requirements.
+        minLength: 0
+        maxLength: 2047
+      customInvoiceCanceledMailText:
+        type: string
+        description: Deprecated in favor of `customInvoiceCorrectionMailText`. A customizable
+          text body for the email that is sent to the customer with the invoice cancellation
+          pdf attached. Merchants can adapt the email body to their needs in case
+          the default text does not meet their requirements.
+      customOrderPendingMailText:
+        type: string
+        description: A customizable text body for the email that is sent to inform
+          the customer that the shipping process has been started. Merchants can adapt
+          the email body to their needs in case the default text does not meet their
+          requirements.
+        minLength: 0
+        maxLength: 2047
+      customInvoiceCustomerMailText:
+        type: string
+        description: A customizable text body for the email that is sent to the customer
+          with the invoice pdf attached. Merchants can adapt the email body to their
+          needs in case the default text does not meet their requirements.
+        minLength: 0
+        maxLength: 2047
+      orderNumberConfiguration:
+        type: object
+        properties:
+          nextNumericSuffix:
+            type: number
+            description: The next numeric suffix used for the upcoming order. This
+              value is increased each time an order is created.
+          stringPrefix:
+            type: string
+            description: A customizable prefix that can be attached to all order numbers.
+              Not mandatory.
+          numericSuffixLength:
+            type: number
+            description: The length of the numeric part of the order number. Has 5
+              digits by default. If the numeric value is shorter, the value is padded
+              with zeros to the left, e.g. `01000`. If the value is longer, the numericSuffixLength
+              is extended, e.g. `100000`.
+        required:
+        - stringPrefix
+      invoiceCancelationNote:
+        type: string
+        description: The invoice cancelation note to be printed on invoice cancelation
+          documents.
+        minLength: 0
+        maxLength: 500
+      defaultDeliveryDateNote:
+        type: string
+        description: The default delivery date note to be printed on the invoice.
+        minLength: 0
+        maxLength: 500
+      defaultInvoiceNote:
+        type: string
+        description: The default invoice note to be printed on the invoice.
+        minLength: 0
+        maxLength: 500
+      customOrderReturnedMailText:
+        type: string
+        description: A customizable text body for the email that is sent to inform
+          the customer that the merchant has received the returned items for an order.
+          Merchants can adapt the email body to their needs in case the default text
+          does not meet their requirements.
+        minLength: 0
+        maxLength: 2047
+      customOrderShippedMailText:
+        type: string
+        description: A customizable text body for the email that is sent to inform
+          the customer that items have been shipped. Merchants can adapt the email
+          body to their needs in case the default text does not meet their requirements.
+        minLength: 0
+        maxLength: 2047
+      customInvoiceCorrectionMailText:
+        type: string
+        description: A customizable text body for the email that is sent to the customer
+          with the invoice correction or cancellation pdf attached. Merchants can
+          adapt the email body to their needs in case the default text does not meet
+          their requirements.
+        minLength: 0
+        maxLength: 2047
+      invoiceNumberConfiguration:
+        type: object
+        properties:
+          nextNumericSuffix:
+            type: number
+            description: The next numeric suffix used for the upcoming invoice. This
+              value is increased each time an invoice is created.
+          stringPrefix:
+            type: string
+            description: A customizable prefix that can be attached to all invoice
+              numbers. Not mandatory.
+          numericSuffixLength:
+            type: number
+            description: The length of the numeric part of the invoice number. Has
+              5 digits by default. If the numeric value is shorter, the value is padded
+              with zeros to the left, e.g. `01000`. If the value is longer, the numericSuffixLength
+              is extended, e.g. `100000`.
+        required:
+        - stringPrefix
   shop_attributes_name-849535362:
     type: object
     required:
@@ -34298,6 +34369,13 @@ definitions:
           "callbackUri":"http://example.com/test",
           "eventTypes": ["order.created", "product.created"]
       }
+  orders_orderId_cancel-1778072258:
+    type: object
+    properties:
+      comment:
+        type: string
+        description: The comment to this status change.
+    example: '{"comment":"This needs to be done fast!"}'
   categories_categoryId-1361638931:
     type: object
     required:
@@ -34362,13 +34440,6 @@ definitions:
       username:
         type: string
         description: The username that identifies the user the token was issued for.
-  orders_orderId_cancel-1778072258:
-    type: object
-    properties:
-      comment:
-        type: string
-        description: The comment to this status change.
-    example: '{"comment":"This needs to be done fast!"}'
   products_productId_external-images1733515368:
     type: object
     required:
@@ -35098,51 +35169,6 @@ definitions:
         type: object
         description: See https://developer.epages.com/beyond-docs/#pagination[Pagination]
         properties: {}
-  orders_orderId_processes_shippings1514389282:
-    type: object
-    properties:
-      lineItems:
-        type: array
-        items:
-          type: object
-          properties:
-            quantity:
-              type: number
-              description: The quantity of a product line item that is marked with
-                a new status.
-            productLineItemId:
-              type: string
-              description: The ID of a product line item that is marked with a new
-                status.
-      trackingLink:
-        type: string
-        description: The tracking link for this shipping process.
-      createPackingSlip:
-        type: boolean
-        description: Indicates if a packing slip pdf is created as a part of the shipping
-          process.
-      sendMail:
-        type: boolean
-        description: Indicates if an email has to be sent out to notify the customer
-          that the shipping process has been started.
-      trackingCode:
-        type: string
-        description: The tracking code for this shipping process.
-      comment:
-        type: string
-        description: The comment to this status change.
-    example: |-
-      {
-        "comment" : "This needs to be done fast!",
-        "sendMail" : true,
-        "createPackingSlip" : true,
-        "trackingCode" : "LZ101003859US",
-        "trackingLink" : "http://example.com/track?code=LZ101003859US",
-        "lineItems" : [ {
-          "quantity" : 3,
-          "productLineItemId" : "245ae605-f5c0-4707-b42e-80bb31723efe"
-        } ]
-      }
   shop_attributes_name1957320136:
     type: object
     properties:
@@ -35165,26 +35191,6 @@ definitions:
         type: string
         description: The value of the shop attribute. Assuming the attribute name
           to be `default-sorting-products`, the value can be e.g. `asc`.
-  orders_orderId_processes_cancelations-439179599:
-    type: object
-    properties:
-      lineItems:
-        type: array
-        items:
-          type: object
-          properties:
-            quantity:
-              type: number
-              description: The quantity of the product line item in this cancelation
-                process.
-            productLineItemId:
-              type: string
-              description: The ID of a specified product line item in this cancelation
-                process.
-      comment:
-        type: string
-        description: The comment to this status change.
-    example: '{"comment":"This needs to be done fast!","lineItems":[{"quantity":3,"productLineItemId":"0f9a725f-3bae-4843-a5dd-567c2772b285"}]}'
   products_productId_cross-sells625579564:
     type: object
     required:
@@ -35544,6 +35550,18 @@ definitions:
         },
         "sku" : "1002"
       }
+  products_productId_variation-attributes_variationAttributeId_values1324546929:
+    type: object
+    properties:
+      values:
+        type: array
+        description: The values for a variation attribute defined by the merchant,
+          e.g. the detailed sizes such as S, M, L, XL.
+        items: {}
+    example: |-
+      {
+        "values" : [ "xl", "s", "l", "xs", "m" ]
+      }
   orders_orderId_processes_refunds_active_mark-paid-1098495227:
     type: object
     properties:
@@ -35571,18 +35589,6 @@ definitions:
             "amount" : 19.98
           }
         }
-      }
-  products_productId_variation-attributes_variationAttributeId_values1324546929:
-    type: object
-    properties:
-      values:
-        type: array
-        description: The values for a variation attribute defined by the merchant,
-          e.g. the detailed sizes such as S, M, L, XL.
-        items: {}
-    example: |-
-      {
-        "values" : [ "xl", "s", "l", "xs", "m" ]
       }
   products_productId_external-images-1803154683:
     example: |-
@@ -35865,6 +35871,26 @@ definitions:
           "strategy" : "any-tags-match"
         } ]
       }
+  orders_orderId_processes_cancelations-1159782079:
+    type: object
+    properties:
+      lineItems:
+        type: array
+        items:
+          type: object
+          properties:
+            quantity:
+              type: number
+              description: The quantity of the product line item in this cancelation
+                process.
+            productLineItemId:
+              type: string
+              description: The ID of a specified product line item in this cancelation
+                process.
+      comment:
+        type: string
+        description: The comment to this status change.
+    example: '{"comment":"This needs to be done fast!","lineItems":[{"quantity":3,"productLineItemId":"d18348dc-fa5a-4758-8692-dcc27bd9c4fd"}]}'
   products_productId_cross-sells1649184211:
     type: object
     properties:
@@ -36103,118 +36129,51 @@ definitions:
       height:
         type: number
         description: The height of the image.
-  order-settings1986587076:
+  orders_orderId_processes_shippings-1127603872:
     type: object
     properties:
-      customOrderCanceledMailText:
+      lineItems:
+        type: array
+        items:
+          type: object
+          properties:
+            quantity:
+              type: number
+              description: The quantity of a product line item that is marked with
+                a new status.
+            productLineItemId:
+              type: string
+              description: The ID of a product line item that is marked with a new
+                status.
+      trackingLink:
         type: string
-        description: A customizable text body for the email that is sent to the customer
-          when an order has been canceled. Merchants can adapt the email body to their
-          needs in case the default text does not meet their requirements.
-        minLength: 0
-        maxLength: 2047
-      _links:
-        type: object
-        description: See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-        properties: {}
-      customOrderOpenMailText:
+        description: The tracking link for this shipping process.
+      createPackingSlip:
+        type: boolean
+        description: Indicates if a packing slip pdf is created as a part of the shipping
+          process.
+      sendMail:
+        type: boolean
+        description: Indicates if an email has to be sent out to notify the customer
+          that the shipping process has been started.
+      trackingCode:
         type: string
-        description: A customizable text body for the email that is sent to the customer
-          when an order has been placed in a shop. Merchants can adapt the email body
-          to their needs in case the default text does not meet their requirements.
-        minLength: 0
-        maxLength: 2047
-      customInvoiceCanceledMailText:
+        description: The tracking code for this shipping process.
+      comment:
         type: string
-        description: A customizable text body for the email that is sent to the customer
-          with the invoice cancellation pdf attached. Merchants can adapt the email
-          body to their needs in case the default text does not meet their requirements.
-        minLength: 0
-        maxLength: 2047
-      customOrderPendingMailText:
-        type: string
-        description: A customizable text body for the email that is sent to inform
-          the customer that the shipping process has been started. Merchants can adapt
-          the email body to their needs in case the default text does not meet their
-          requirements.
-        minLength: 0
-        maxLength: 2047
-      customInvoiceCustomerMailText:
-        type: string
-        description: A customizable text body for the email that is sent to the customer
-          with the invoice pdf attached. Merchants can adapt the email body to their
-          needs in case the default text does not meet their requirements.
-        minLength: 0
-        maxLength: 2047
-      orderNumberConfiguration:
-        type: object
-        properties:
-          nextNumericSuffix:
-            type: number
-            description: The next numeric suffix used for the upcoming order. This
-              value is increased each time an order is created.
-          stringPrefix:
-            type: string
-            description: A customizable prefix that can be attached to all order numbers.
-              Not mandatory.
-          numericSuffixLength:
-            type: number
-            description: The length of the numeric part of the order number. Has 5
-              digits by default. If the numeric value is shorter, the value is padded
-              with zeros to the left, e.g. `01000`. If the value is longer, the numericSuffixLength
-              is extended, e.g. `100000`.
-        required:
-        - stringPrefix
-      invoiceCancelationNote:
-        type: string
-        description: The invoice cancelation note to be printed on invoice cancelation
-          documents.
-        minLength: 0
-        maxLength: 500
-      defaultDeliveryDateNote:
-        type: string
-        description: The default delivery date note to be printed on the invoice.
-        minLength: 0
-        maxLength: 500
-      defaultInvoiceNote:
-        type: string
-        description: The default invoice note to be printed on the invoice.
-        minLength: 0
-        maxLength: 500
-      customOrderReturnedMailText:
-        type: string
-        description: A customizable text body for the email that is sent to inform
-          the customer that the merchant has received the returned items for an order.
-          Merchants can adapt the email body to their needs in case the default text
-          does not meet their requirements.
-        minLength: 0
-        maxLength: 2047
-      customOrderShippedMailText:
-        type: string
-        description: A customizable text body for the email that is sent to inform
-          the customer that items have been shipped. Merchants can adapt the email
-          body to their needs in case the default text does not meet their requirements.
-        minLength: 0
-        maxLength: 2047
-      invoiceNumberConfiguration:
-        type: object
-        properties:
-          nextNumericSuffix:
-            type: number
-            description: The next numeric suffix used for the upcoming invoice. This
-              value is increased each time an invoice is created.
-          stringPrefix:
-            type: string
-            description: A customizable prefix that can be attached to all invoice
-              numbers. Not mandatory.
-          numericSuffixLength:
-            type: number
-            description: The length of the numeric part of the invoice number. Has
-              5 digits by default. If the numeric value is shorter, the value is padded
-              with zeros to the left, e.g. `01000`. If the value is longer, the numericSuffixLength
-              is extended, e.g. `100000`.
-        required:
-        - stringPrefix
+        description: The comment to this status change.
+    example: |-
+      {
+        "comment" : "This needs to be done fast!",
+        "sendMail" : true,
+        "createPackingSlip" : true,
+        "trackingCode" : "LZ101003859US",
+        "trackingLink" : "http://example.com/track?code=LZ101003859US",
+        "lineItems" : [ {
+          "quantity" : 3,
+          "productLineItemId" : "b772d988-8882-40a6-bd67-4c7948cf9702"
+        } ]
+      }
   products_productId_variation-attributes-597212201:
     type: object
     properties:
@@ -36729,6 +36688,55 @@ definitions:
       height:
         type: number
         description: The height of the variation image.
+  orders_orderId_processes_returns-210436955:
+    type: object
+    properties:
+      lineItems:
+        type: array
+        items:
+          type: object
+          properties:
+            quantity:
+              type: number
+              description: The quantity of the product line item in this return process.
+            productLineItemId:
+              type: string
+              description: The ID of a specified product line item in this return
+                process.
+            status:
+              type: string
+              description: The status of the product line item in this return process.
+                Can be one of `RETURNED` or `BROKEN`.
+      shippingPriceRefund:
+        type: object
+        properties:
+          amount:
+            type: number
+            description: The price for the shipping line item to be refunded.
+          currency:
+            type: string
+            description: The currency of the price for the shipping line item.
+      sendMail:
+        type: boolean
+        description: Indicates if an email has to be sent out to notify the customer
+          that the merchant received the returned items. Can be `true` or `false`.
+      comment:
+        type: string
+        description: The comment to this status change.
+    example: |-
+      {
+        "comment" : "This needs to be done fast!",
+        "sendMail" : true,
+        "lineItems" : [ {
+          "quantity" : 3,
+          "productLineItemId" : "a1782dba-816b-4d58-9621-352cc3f2fe22",
+          "status" : "RETURNED"
+        } ],
+        "shippingPriceRefund" : {
+          "currency" : "EUR",
+          "amount" : 19.99
+        }
+      }
   products_productId_variations555199174:
     type: object
     properties:
