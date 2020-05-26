@@ -1,5 +1,29 @@
 # Beyond API Changelog
 
+## 2020-05-26
+
+-XX:InitialHeapSize=526996096 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `GET` /order-settings List order settings  
+    Return Type
+
+        Delete customInvoiceCanceledMailText //Deprecated in favor of `customInvoiceCorrectionMailText`. A customizable text body for the email that is sent to the customer with the invoice cancellation pdf attached. Merchants can adapt the email body to their needs in case the default text does not meet their requirements.
+* `PUT` /order-settings Update order settings  
+    Parameter
+
+        Add .customInvoiceCorrectionMailText //A customizable text body for the email that is sent to the customer with the invoice correction or cancellation pdf attached. Merchants can adapt the email body to their needs in case the default text does not meet their requirements.
+        Delete .customInvoiceCanceledMailText //Deprecated in favor of `customInvoiceCorrectionMailText`. A customizable text body for the email that is sent to the customer with the invoice cancellation pdf attached. Merchants can adapt the email body to their needs in case the default text does not meet their requirements.
+    Return Type
+
+        Delete customInvoiceCanceledMailText //Deprecated in favor of `customInvoiceCorrectionMailText`. A customizable text body for the email that is sent to the customer with the invoice cancellation pdf attached. Merchants can adapt the email body to their needs in case the default text does not meet their requirements.
+
 ## 2020-05-25
 
 -XX:InitialHeapSize=526996160 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
