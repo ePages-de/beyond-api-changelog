@@ -1,5 +1,26 @@
 # Beyond API Changelog
 
+## 2020-06-09
+
+-XX:InitialHeapSize=526996096 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+* `PUT` /coupon-campaigns/{couponCampaignId}/status Update coupon campaign status
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `POST` /coupon-campaigns Create coupon campaign  
+    Parameter
+
+        Delete .status //The automatically calculated coupon campaign status (see <<resources-coupon-campaign-update>>). Can be `DRAFT`, `PLANNED`, `ACTIVE`, `PAUSED`, `EXPIRED`, or `ARCHIVED`. By default, a campaign is a `DRAFT` upon creation.
+* `PUT` /coupon-campaigns/{couponCampaignId} Update coupon campaign  
+    Parameter
+
+        Delete .status //The automatically calculated coupon campaign status (see <<resources-coupon-campaign-update>>). Can be `DRAFT`, `PLANNED`, `ACTIVE`, `PAUSED`, `EXPIRED`, or `ARCHIVED`. By default, a campaign is a `DRAFT` upon creation.
+
 ## 2020-05-26
 
 -XX:InitialHeapSize=526996096 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
