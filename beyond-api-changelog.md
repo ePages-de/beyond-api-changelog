@@ -2,39 +2,25 @@
 
 ## 2020-06-12
 
--XX:InitialHeapSize=526996096 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
 ### What's New
 ---
 * `POST` /products/search Search for products including variation products
 
-### What's Deprecated
----
 
-### What's Changed
----
 
 ## 2020-06-11
 
--XX:InitialHeapSize=526996096 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
 ### What's New
 ---
 * `PUT` /products/{productId}/variations-import Import variations
 
-### What's Deprecated
----
-
-### What's Changed
----
 
 ## 2020-06-09
 
--XX:InitialHeapSize=526996096 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
 ### What's New
 ---
 * `PUT` /coupon-campaigns/{couponCampaignId}/status Update coupon campaign status
 
-### What's Deprecated
----
 
 ### What's Changed
 ---
@@ -48,13 +34,6 @@
         Delete .status //The automatically calculated coupon campaign status (see <<resources-coupon-campaign-update>>). Can be `DRAFT`, `PLANNED`, `ACTIVE`, `PAUSED`, `EXPIRED`, or `ARCHIVED`. By default, a campaign is a `DRAFT` upon creation.
 
 ## 2020-05-26
-
--XX:InitialHeapSize=526996096 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
-### What's New
----
-
-### What's Deprecated
----
 
 ### What's Changed
 ---
