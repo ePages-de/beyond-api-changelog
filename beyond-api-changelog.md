@@ -2,38 +2,24 @@
 
 ## 2020-06-17
 
--XX:InitialHeapSize=526996096 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
 ### What's New
 ---
 * `POST` /products/product-import Import product
 * `PUT` /products/{productId}/variations/images Sort variation images for multiple variations
 
-### What's Deprecated
----
-
-### What's Changed
----
 
 ## 2020-06-15
 
--XX:InitialHeapSize=526996096 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
 ### What's New
 ---
 * `GET` /products/filters List available filters
 * `GET` /products/filters/{filterKey} Show filters details
-
-### What's Deprecated
----
-
-### What's Changed
----
 
 ## 2020-06-12
 
 ### What's New
 ---
 * `POST` /products/search Search for products including variation products
-
 
 
 ## 2020-06-11
