@@ -2,16 +2,10 @@
 
 ## 2020-06-18
 
--XX:InitialHeapSize=526996096 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
 ### What's New
 ---
 * `DELETE` /products/{productId}/variations/images Delete variation images for multiple variations
 
-### What's Deprecated
----
-
-### What's Changed
----
 
 ## 2020-06-17
 
