@@ -1,5 +1,25 @@
 # Beyond API Changelog
 
+## 2020-06-25
+
+-XX:InitialHeapSize=526996096 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `PUT` /shop/attributes/{name} Update shop attribute  
+    Return Type
+
+        Add owner //The id of the client that owns the attribute.
+* `GET` /shop/attributes/{name} Show shop attribute details  
+    Return Type
+
+        Add owner //The id of the client that owns the attribute.
+
 ## 2020-06-18
 
 ### What's New
