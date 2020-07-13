@@ -1,5 +1,25 @@
 # Beyond API Changelog
 
+## 2020-07-13
+
+-XX:InitialHeapSize=526996096 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `POST` /orders/{orderId}/processes/returns Create return process  
+    Parameter
+
+        Add .shippingProcessId //The ID of the shipping process.
+* `GET` /orders/{orderId}/processes/returns/{return-process-id} Show return process details  
+    Return Type
+
+        Add _embedded
+
 ## 2020-06-25
 
 -XX:InitialHeapSize=526996096 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
