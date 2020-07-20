@@ -1,5 +1,18 @@
 # Beyond API Changelog
 
+## 2020-07-20
+
+-XX:InitialHeapSize=526996096 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+* `GET` /orders/filters Show order filters with amount order range
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+
 ## 2020-07-13
 
 ### What's Changed
