@@ -1,5 +1,28 @@
 # Beyond API Changelog
 
+## 2020-07-22
+
+-XX:InitialHeapSize=64573248 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+* `POST` /system/migrate/products/clone Clone index to the temp index
+* `POST` /system/migrate/products/reindex Replace the index with a new one and copy all aliases
+* `POST` /system/migrate/products/replace Replace the index with a new one
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `POST` /categories Create category  
+    Parameter
+
+        Add .defaultSort //The default sort for the collection. SMART collections have be one of `NEWEST_FIRST`, `LOWEST_PRICE_FIRST`, `HIGHEST_PRICE_FIRST`, `ON_SALE_FIRST`, or `OUT_OF_STOCK_LAST` and MANUAL collections keep the same order as the products were added..
+* `GET` /categories/{categoryId} Show category details  
+    Return Type
+
+        Add defaultSort //The default sort for the collection. SMART collections have be one of `NEWEST_FIRST`, `LOWEST_PRICE_FIRST`, `HIGHEST_PRICE_FIRST`, `ON_SALE_FIRST`, or `OUT_OF_STOCK_LAST` and MANUAL collections keep the same order as the products were added..
+
 ## 2020-07-20
 
 -XX:InitialHeapSize=526996096 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
