@@ -126,13 +126,6 @@
 
 ## 2020-05-25
 
--XX:InitialHeapSize=526996160 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
-### What's New
----
-
-### What's Deprecated
----
-
 ### What's Changed
 ---
 * `GET` /orders List orders  
