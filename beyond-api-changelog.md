@@ -2,15 +2,11 @@
 
 ## 2020-07-22
 
--XX:InitialHeapSize=64573248 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
 ### What's New
 ---
 * `POST` /system/migrate/products/clone Clone index to the temp index
 * `POST` /system/migrate/products/reindex Replace the index with a new one and copy all aliases
 * `POST` /system/migrate/products/replace Replace the index with a new one
-
-### What's Deprecated
----
 
 ### What's Changed
 ---
@@ -30,11 +26,6 @@
 ---
 * `GET` /orders/filters Show order filters with amount order range
 
-### What's Deprecated
----
-
-### What's Changed
----
 
 ## 2020-07-13
 
