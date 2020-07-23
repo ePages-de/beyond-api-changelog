@@ -1,5 +1,25 @@
 # Beyond API Changelog
 
+## 2020-07-23
+
+-XX:InitialHeapSize=64573248 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+* `POST` /system/migrate/products/clone Clone index to the temp index
+* `POST` /system/migrate/products/reindex Replace the index with a new one and copy all aliases
+* `POST` /system/migrate/products/replace Replace the index with a new one
+
+### What's Changed
+---
+* `GET` /orders/filters List order filter categories  
+    Return Type
+
+        Add allPaymentMethods
+        Delete paymentMethods
+
 ## 2020-07-22
 
 ### What's New
