@@ -1,5 +1,29 @@
 # Beyond API Changelog
 
+## 2020-07-27
+
+-XX:InitialHeapSize=64573248 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `GET` /product-view/categories/{categoryId} Show category details  
+    Return Type
+
+        Add defaultSort //The default sort of the category. Can be one of `NEWEST_FIRST`, `LOWEST_PRICE_FIRST`, `HIGHEST_PRICE_FIRST`, `ON_SALE_FIRST`, or `OUT_OF_STOCK_LAST`.
+* `GET` /product-view/categories/search/find-by-label Find product category by label  
+    Return Type
+
+        Add defaultSort //The default sort of the category. Can be one of `NEWEST_FIRST`, `LOWEST_PRICE_FIRST`, `HIGHEST_PRICE_FIRST`, `ON_SALE_FIRST`, or `OUT_OF_STOCK_LAST`.
+* `POST` /products/search Search for products including variation products  
+    Parameter
+
+        Add .filters //The list of filters.
+
 ## 2020-07-23
 
 -XX:InitialHeapSize=64573248 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
