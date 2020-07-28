@@ -1,5 +1,26 @@
 # Beyond API Changelog
 
+## 2020-07-28
+
+-XX:InitialHeapSize=64573248 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `GET` /orders List orders  
+    Parameter
+
+        Add updatedAfter //Filters by the date/time of orders last updated after this timestamp. Expressed according to ISO 8601. Example&#58; `2020-11-29T11:32:00`.
+        Add updatedBefore //Filters by the date/time of orders last updated before this timestamp. Expressed according to ISO 8601. Example&#58; `2020-11-29T11:32:00`.
+* `GET` /orders/{orderId} Show order details  
+    Return Type
+
+        Add updatedAt //The date and time the order was last updated. According to ISO 8601.
+
 ## 2020-07-27
 
 -XX:InitialHeapSize=64573248 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
