@@ -1,5 +1,59 @@
 # Beyond API Changelog
 
+## 2020-08-03
+
+-XX:InitialHeapSize=64573248 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+* `GET` /products/{productId}/variations/images List variation images across all variations
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `POST` /oauth/token Create a JSON Web Token with an authorization code  
+    Return Type
+
+        Delete userId //The unique identifier of the user the token was issued for.
+        Delete username //The username that identifies the user the token was issued for.
+* `GET` /orders/{orderId}/processes/payments/{payment-process-id} Show online payment process details  
+    Return Type
+
+        Add captureWorkflow //Indicates how and when to capture an authorized payment. Can be one of `CAPTURE_ON_ORDER` or `CAPTURE_ON_DEMAND`.
+        Add paymentId //The ID of the payment created by the payment gateway.
+* `GET` /payment-methods/{paymentMethodId} Show payment method details  
+    Return Type
+
+        Add taxClass //The tax class. Can be one of `REGULAR`, `REDUCED`, or `EXEMPT`.
+        Add onlinePayment //Indicates if the payment method is an online payment, i.e. the payment is processed by an external electronic payment system. Can be `true` or `false`.
+        Add workflow //The payment workflow for the current payment. Can be one of `PAYMENT_ON_SELECTION`, `EMBEDDED_ON_SELECTION`, `PAYMENT_ON_BUY`, or `EMBEDDED_ON_BUY`.
+        Add description //The description of the payment method that is used during checkout.
+        Add activeLogoSet //The name of the currently selected logo set. Can be one of `TILE`, `DETAILS`, `LIST`, or `STOREFRONT`. (`official` is always the fallback).
+        Add officialName //The official name of the payment method chosen by the merchant during setup.
+        Add serviceableCountries //The list of target countries this payment method can be used in.
+        Add minimumOrderValue //The minimum value of the cart so that this payment method can be used.
+        Add discountOrFee //The details about the fee to be payed or discount to be granted for this payment method.
+        Add name //The name of the payment method that is used during checkout.
+        Add officialDescription //The official description of the payment method chosen by the merchant during setup.
+        Add position //The sorting position of the payment method in the merchant's cockpit in relation to other payment methods.
+        Add _id //The immutable, unique identifier of the requested resource.
+        Add activated //Indicates if a payment method is active. Can be `true` or `false`.
+* `POST` /products/{productId}/images Upload product image  
+    Parameter
+
+        fileName Notes The file name of the image. Must be provided for each image to be uploaded. change into The file name of the image.
+        Content-Type Notes The content type of the request. Must be `multipart/form-data`. change into The content type of the image. Can be one of `image/png`, `image/jpeg`, or `image/gif`.
+* `POST` /products/{productId}/variations/images Upload multiple variation images to multiple variations  
+    Parameter
+
+        variation Notes The immutable, unique identifier of the variation. change into The unique identifier of the variations to which the images are to be uploaded.
+* `POST` /products/{productId}/variations/{variationId}/images Upload multiple variation images  
+    Parameter
+
+        fileName Notes The file name of the image. change into The file name of the image. Must be provided for each image to be uploaded.
+        Content-Type Notes The content type of the image. Can be one of `image/png`, `image/jpeg`, or `image/gif`. change into The content type of the request. Must be `multipart/form-data`.
+
 ## 2020-07-28
 
 ### What's Changed
