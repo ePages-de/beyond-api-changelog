@@ -1,5 +1,28 @@
 # Beyond API Changelog
 
+## 2020-08-12
+
+-XX:InitialHeapSize=64573248 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+* `GET` /shop/locations List locations
+* `POST` /shop/locations Create location
+* `GET` /shop/locations/{locationId} Show location details
+* `PUT` /shop/locations/{locationId} Update location
+* `DELETE` /shop/locations/{locationId} Delete location
+
+### What's Deprecated
+---
+* `POST` /products/product-import Import product
+* `PUT` /products/{productId}/variations-import Import variations
+
+### What's Changed
+---
+* `GET` /product-view/categories/{categoryId}/products List products by category  
+    Parameter
+
+        Add sortBy //The sorting applied to the products included in the product category. Can be one of `NEWEST_FIRST`, `LOWEST_PRICE_FIRST`, `HIGHEST_PRICE_FIRST`, `ON_SALE_FIRST`, or `OUT_OF_STOCK_LAST`.
+
 ## 2020-08-03
 
 ### What's New
