@@ -2,7 +2,6 @@
 
 ## 2020-08-12
 
--XX:InitialHeapSize=64573248 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
 ### What's New
 ---
 * `GET` /shop/locations List locations
@@ -10,11 +9,6 @@
 * `GET` /shop/locations/{locationId} Show location details
 * `PUT` /shop/locations/{locationId} Update location
 * `DELETE` /shop/locations/{locationId} Delete location
-
-### What's Deprecated
----
-* `POST` /products/product-import Import product
-* `PUT` /products/{productId}/variations-import Import variations
 
 ### What's Changed
 ---
