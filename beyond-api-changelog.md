@@ -2,16 +2,10 @@
 
 ## 2020-08-13
 
--XX:InitialHeapSize=64573248 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
 ### What's New
 ---
 * `POST` /product-view/products/search/find-by-ids Show product details
 
-### What's Deprecated
----
-
-### What's Changed
----
 
 ## 2020-08-12
 
