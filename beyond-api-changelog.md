@@ -1,5 +1,40 @@
 # Beyond API Changelog
 
+## 2020-08-19
+
+-XX:InitialHeapSize=64573248 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `GET` /product-view/categories/{categoryId}/products List products by category  
+    Parameter
+
+        sortBy Notes The sorting applied to the products included in the product category. Can be one of `NEWEST_FIRST`, `LOWEST_PRICE_FIRST`, `HIGHEST_PRICE_FIRST`, `ON_SALE_FIRST`, or `OUT_OF_STOCK_LAST`. change into The sorting applied to the list of products included in the product category. Can be one of `NEWEST_FIRST`, `LOWEST_PRICE_FIRST`, `HIGHEST_PRICE_FIRST`, `ON_SALE_FIRST`, or `OUT_OF_STOCK_LAST`.
+* `POST` /shop/locations Create location  
+    Parameter
+
+        Add .googleStatus //The status of the location.
+        Add .googleAdditionalCategories //The list of additional categories of the location.
+* `PUT` /shop/locations/{locationId} Update location  
+    Parameter
+
+        Add .googleStatus //The status of the location.
+        Add .googleAdditionalCategories //The list of additional categories of the location.
+    Return Type
+
+        Add googleStatus //The status of the location.
+        Add googleAdditionalCategories //The list of additional categories of the location.
+* `GET` /shop/locations/{locationId} Show location details  
+    Return Type
+
+        Add googleStatus //The status of the location.
+        Add googleAdditionalCategories //The list of additional categories of the location.
+
 ## 2020-08-13
 
 ### What's New
