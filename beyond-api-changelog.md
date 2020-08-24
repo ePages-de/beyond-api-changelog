@@ -1,5 +1,23 @@
 # Beyond API Changelog
 
+## 2020-08-24
+
+-XX:InitialHeapSize=64573248 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `PATCH` /shop Update shop partially  
+    Parameter
+
+        Delete .defaultLocale //The default locale of the shop (cannot be changed).
+        Delete .primaryHostname //The primary hostname of the shop.
+        Delete .fallbackHostname //The unchangeable, fallback hostname of the shop.
+
 ## 2020-08-19
 
 -XX:InitialHeapSize=64573248 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
