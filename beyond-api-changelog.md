@@ -1,5 +1,25 @@
 # Beyond API Changelog
 
+## 2020-08-26
+
+-XX:InitialHeapSize=64573248 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `PUT` /shop/locations/{locationId} Update location  
+    Return Type
+
+        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+* `GET` /shop/locations/{locationId} Show location details  
+    Return Type
+
+        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+
 ## 2020-08-24
 
 -XX:InitialHeapSize=64573248 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
