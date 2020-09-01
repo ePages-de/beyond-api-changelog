@@ -1,5 +1,21 @@
 # Beyond API Changelog
 
+## 2020-09-01
+
+-XX:InitialHeapSize=64573248 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `POST` /shop/images Upload shop image  
+    Parameter
+
+        Content-Type Notes The content type of the image. Can be one of `image/png`, `image/jpeg`, or `image/gif`. change into The content type of the request. Must be `multipart/form-data`.
+
 ## 2020-08-26
 
 -XX:InitialHeapSize=64573248 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
