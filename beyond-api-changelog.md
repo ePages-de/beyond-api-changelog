@@ -1,5 +1,18 @@
 # Beyond API Changelog
 
+## 2020-09-02
+
+-XX:InitialHeapSize=64573248 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+* `POST` /product-view/categories/preview Find products by filter criteria
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+
 ## 2020-09-01
 
 -XX:InitialHeapSize=64573248 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
