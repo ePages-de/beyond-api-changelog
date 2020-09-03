@@ -2,25 +2,11 @@
 
 ## 2020-09-02
 
--XX:InitialHeapSize=64573248 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
 ### What's New
 ---
 * `POST` /product-view/categories/preview Find products by filter criteria
 
-### What's Deprecated
----
-
-### What's Changed
----
-
 ## 2020-09-01
-
--XX:InitialHeapSize=64573248 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
-### What's New
----
-
-### What's Deprecated
----
 
 ### What's Changed
 ---
@@ -30,13 +16,6 @@
         Content-Type Notes The content type of the image. Can be one of `image/png`, `image/jpeg`, or `image/gif`. change into The content type of the request. Must be `multipart/form-data`.
 
 ## 2020-08-26
-
--XX:InitialHeapSize=64573248 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
-### What's New
----
-
-### What's Deprecated
----
 
 ### What's Changed
 ---
@@ -51,13 +30,6 @@
 
 ## 2020-08-24
 
--XX:InitialHeapSize=64573248 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
-### What's New
----
-
-### What's Deprecated
----
-
 ### What's Changed
 ---
 * `PATCH` /shop Update shop partially  
@@ -68,13 +40,6 @@
         Delete .fallbackHostname //The unchangeable, fallback hostname of the shop.
 
 ## 2020-08-19
-
--XX:InitialHeapSize=64573248 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
-### What's New
----
-
-### What's Deprecated
----
 
 ### What's Changed
 ---
@@ -131,9 +96,6 @@
 ### What's New
 ---
 * `GET` /products/{productId}/variations/images List variation images across all variations
-
-### What's Deprecated
----
 
 ### What's Changed
 ---
@@ -209,7 +171,6 @@
 
 ## 2020-07-20
 
--XX:InitialHeapSize=526996096 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
 ### What's New
 ---
 * `GET` /orders/filters Show order filters with amount order range
