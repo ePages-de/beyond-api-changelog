@@ -1,5 +1,18 @@
 # Beyond API Changelog
 
+## 2020-09-08
+
+-XX:InitialHeapSize=64573248 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+* `GET` /orders/{id}/documents Get the invoice details
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+
 ## 2020-09-02
 
 ### What's New
