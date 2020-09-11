@@ -2,16 +2,9 @@
 
 ## 2020-09-10
 
--XX:InitialHeapSize=64573248 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
 ### What's New
 ---
 * `POST` /system/categories-update Trigger resend of category updated events
-
-### What's Deprecated
----
-
-### What's Changed
----
 
 ## 2020-09-08
 
