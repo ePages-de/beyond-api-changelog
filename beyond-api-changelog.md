@@ -1,5 +1,21 @@
 # Beyond API Changelog
 
+## 2020-09-11
+
+-XX:InitialHeapSize=64573248 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+* `POST` /system/categories-update Trigger resend of category updated events
+* `POST` /system/images-update Trigger resend of image updated events
+* `POST` /system/products-update Trigger resend of product and availability updated events
+* `POST` /system/synchronize Trigger resend of product created events
+
+### What's Changed
+---
+
 ## 2020-09-10
 
 ### What's New
