@@ -1,5 +1,41 @@
 # Beyond API Changelog
 
+## 2020-10-02
+
+-XX:InitialHeapSize=64572864 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `GET` /carts/{cartId}/shipping-methods Show applicable cart shipping method details  
+    Return Type
+
+        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+* `GET` /checkout-settings List checkout settings  
+    Return Type
+
+        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+* `PUT` /checkout-settings Update checkout settings  
+    Return Type
+
+        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+* `GET` /payment-methods/{paymentMethodId} Show payment method details  
+    Return Type
+
+        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+* `POST` /payment-methods/{paymentMethodId}/activate Activate payment method  
+    Return Type
+
+        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+* `POST` /payment-methods/{paymentMethodId}/deactivate Deactivate payment method  
+    Return Type
+
+        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+
 ## 2020-09-30
 
 -XX:InitialHeapSize=64572864 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
