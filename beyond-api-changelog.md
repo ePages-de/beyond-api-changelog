@@ -1,5 +1,21 @@
 # Beyond API Changelog
 
+## 2020-10-05
+
+-XX:InitialHeapSize=64572864 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+* `POST` /product-view/products/search/find-by-query List products by query
+* `DELETE` /payment-methods/{paymentMethodId} Delete payment method
+* `POST` /users/support Enable support access
+* `DELETE` /users/support Disable support access
+
+### What's Changed
+---
+
 ## 2020-10-02
 
 -XX:InitialHeapSize=64572864 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
