@@ -2,16 +2,10 @@
 
 ## 2020-10-09
 
--XX:InitialHeapSize=64572864 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
 ### What's New
 ---
 * `GET` /orders/{id}/documents/{documentId} Get order document details
 
-### What's Deprecated
----
-
-### What's Changed
----
 
 ## 2020-10-05
 
