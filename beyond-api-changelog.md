@@ -1,5 +1,51 @@
 # Beyond API Changelog
 
+## 2020-10-22
+
+-XX:InitialHeapSize=64572864 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+* `GET` /users List users
+* `POST` /users Create user
+* `GET` /users/search List user searches
+* `GET` /users/{userId} Show user details
+* `GET` /users/search/find-by-username Find user by username
+* `GET` /users/{userId}/roles List user roles
+* `PUT` /users/{userId}/roles Set user roles
+* `POST` /users/{userId}/roles Add user roles
+
+### What's Changed
+---
+* `PUT` /categories/{categoryId} Update all product category properties  
+    Parameter
+
+        Add .defaultSort //The default sorting applied to the products included in the product category. Products of `MANUAL` categories will be sorted in the order in which they were added to the category.
+    Return Type
+
+        Add defaultSort //The default sorting applied to the products included in the product category. Products of `MANUAL` categories will be sorted in the order in which they were added to the category.
+* `PATCH` /categories/{categoryId} Update product category partially  
+    Return Type
+
+        Add defaultSort //The default sorting applied to the products included in the product category. Products of `MANUAL` categories will be sorted in the order in which they were added to the category.
+* `GET` /orders/{orderId} Show order details  
+    Return Type
+
+        Add customerId //The ID of the customer who placed the order.
+* `GET` /orders/{orderId}/processes/shippings/{shipping-process-id} Show shipping process details  
+    Return Type
+
+        Add packingSlipPdfUri //The URI of the packing slip PDF generated as a part of the shipping process.
+* `POST` /payments/{paymentId}/status Set payment status  
+    Parameter
+
+        Add .message //Further information for the merchant regarding this payment (e.g. Terms and Conditions).
+    Return Type
+
+        Add message //Further information for the merchant regarding this payment (e.g. Terms and Conditions).
+
 ## 2020-10-20
 
 -XX:InitialHeapSize=64572864 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
