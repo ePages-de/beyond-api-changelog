@@ -2,21 +2,6 @@
 
 ## 2020-10-22
 
--XX:InitialHeapSize=64572864 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
-### What's New
----
-
-### What's Deprecated
----
-* `GET` /users List users
-* `POST` /users Create user
-* `GET` /users/search List user searches
-* `GET` /users/{userId} Show user details
-* `GET` /users/search/find-by-username Find user by username
-* `GET` /users/{userId}/roles List user roles
-* `PUT` /users/{userId}/roles Set user roles
-* `POST` /users/{userId}/roles Add user roles
-
 ### What's Changed
 ---
 * `PUT` /categories/{categoryId} Update all product category properties  
@@ -46,85 +31,6 @@
 
         Add message //Further information for the merchant regarding this payment (e.g. Terms and Conditions).
 
-## 2020-10-20
-
--XX:InitialHeapSize=64572864 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
-### What's New
----
-
-### What's Deprecated
----
-
-### What's Changed
----
-* `GET` /carts/{cartId} Show cart details  
-    Return Type
-
-        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `GET` /coupon-campaigns List coupon campaigns  
-    Return Type
-
-        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `GET` /coupon-campaigns/{couponCampaignId} Show details of coupon campaign  
-    Return Type
-
-        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `PUT` /coupon-campaigns/{couponCampaignId} Update coupon campaign  
-    Return Type
-
-        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `GET` /coupon-campaigns/{couponCampaignId}/coupons List coupon codes  
-    Return Type
-
-        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `PUT` /coupon-campaigns/{couponCampaignId}/coupons Update coupon codes  
-    Return Type
-
-        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `GET` /payment-methods/{paymentMethodId} Show payment method details  
-    Return Type
-
-        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `POST` /payment-methods/{paymentMethodId}/activate Activate payment method  
-    Return Type
-
-        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `POST` /payment-methods/{paymentMethodId}/deactivate Deactivate payment method  
-    Return Type
-
-        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `GET` /shipping-zones List shipping zones  
-    Return Type
-
-        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `GET` /shipping-zones/{shippingZoneId} Show shipping zone details  
-    Return Type
-
-        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `GET` /shipping-zones/search/find-all-serviceable-countries Find serviceable countries  
-    Return Type
-
-        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `GET` /shipping-zones/{shippingZoneId}/shipping-methods List shipping methods of shipping zone  
-    Return Type
-
-        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `GET` /shipping-zones/{shippingZoneId}/shipping-methods/{shippingMethodId} Show details of shipping method in shipping zone  
-    Return Type
-
-        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `GET` /shop/legal Show legal details  
-    Return Type
-
-        Add customLegalData //The custom legal data of the shop.
-* `PATCH` /shop/legal Update legal resource partially  
-    Return Type
-
-        Add customLegalData //The custom legal data of the shop.
-* `GET` /shop/images/search/find-by-label Find shop images by label  
-    Parameter
-
-        label Notes The label to use in order to find specific images. change into The label to use in order to find specific images, e.g. `logo`, `invoice logo`, or `fav-icon`.
 
 ## 2020-10-09
 
