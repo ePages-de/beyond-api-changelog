@@ -1,5 +1,18 @@
 # Beyond API Changelog
 
+## 2020-10-29
+
+-XX:InitialHeapSize=64572864 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+* `DELETE` /products/{productId}/variation-attributes/values Delete multiple variation attribute values
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+
 ## 2020-10-28
 
 -XX:InitialHeapSize=64572864 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
