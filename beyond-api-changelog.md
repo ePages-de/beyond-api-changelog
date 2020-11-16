@@ -1,5 +1,29 @@
 # Beyond API Changelog
 
+## 2020-11-16
+
+-XX:InitialHeapSize=64572864 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `GET` /payment-methods/{paymentMethodId} Show payment method details  
+    Return Type
+
+        Add defaultPaymentNote //Legal information about the payment method which will be added to invoice documents.
+* `POST` /payment-methods/{paymentMethodId}/activate Activate payment method  
+    Return Type
+
+        Add defaultPaymentNote //Legal information about the payment method which will be added to invoice documents.
+* `POST` /payment-methods/{paymentMethodId}/deactivate Deactivate payment method  
+    Return Type
+
+        Add defaultPaymentNote //Legal information about the payment method which will be added to invoice documents.
+
 ## 2020-10-29
 
 ### What's New
