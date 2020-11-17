@@ -2,13 +2,6 @@
 
 ## 2020-11-16
 
--XX:InitialHeapSize=64572864 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
-### What's New
----
-
-### What's Deprecated
----
-
 ### What's Changed
 ---
 * `GET` /payment-methods/{paymentMethodId} Show payment method details  
