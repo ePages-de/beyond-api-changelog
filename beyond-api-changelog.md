@@ -1,5 +1,25 @@
 # Beyond API Changelog
 
+## 2020-11-19
+
+-XX:InitialHeapSize=64572864 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `POST` /customers Create customer  
+    Parameter
+
+        Add .customerOrigin //The customer origin. During sign up, a customer can be created with different conditions. Can be one of `STOREFRONT` or `COCKPIT`. The default value is `STOREFRONT`.
+* `GET` /customers/{id} Show customer details  
+    Return Type
+
+        Add customerOrigin //The customer origin. During sign up, a customer can be created with different conditions. Can be one of {{values}}. The default value is `STOREFRONT`.
+
 ## 2020-11-16
 
 ### What's Changed
