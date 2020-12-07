@@ -1,5 +1,25 @@
 # Beyond API Changelog
 
+## 2020-12-07
+
+-XX:InitialHeapSize=64572864 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `GET` /orders List orders  
+    Parameter
+
+        Add customerNumber //Filters by the customer number of the customer that placed in the order.
+* `GET` /orders/{orderId} Show order details  
+    Return Type
+
+        Add customerNumber //The number of the customer who placed the order.
+
 ## 2020-11-19
 
 ### What's Changed
