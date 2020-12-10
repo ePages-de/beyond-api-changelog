@@ -1,5 +1,24 @@
 # Beyond API Changelog
 
+## 2020-12-10
+
+-XX:InitialHeapSize=64572864 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `PUT` /products/{productId}/cross-sells/{crossSellId} Modify product cross-sell  
+    Parameter
+
+        Add .defaultSort //The default sorting applied to the products included in the cross-sell.
+    Return Type
+
+        Add defaultSort //The default sorting applied to the products included in the cross-sell.
+
 ## 2020-12-09
 
 ### What's Changed
