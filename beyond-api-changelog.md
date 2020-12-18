@@ -1,5 +1,45 @@
 # Beyond API Changelog
 
+## 2020-12-18
+
+-XX:InitialHeapSize=64572928 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `GET` /coupon-campaigns List coupon campaigns  
+    Return Type
+
+        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+* `PUT` /coupon-campaigns/{couponCampaignId} Update coupon campaign  
+    Return Type
+
+        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+* `GET` /coupon-campaigns/{couponCampaignId} Show details of coupon campaign  
+    Return Type
+
+        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+* `PUT` /coupon-campaigns/{couponCampaignId}/coupons Update coupon codes  
+    Return Type
+
+        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+* `GET` /coupon-campaigns/{couponCampaignId}/coupons List coupon codes  
+    Return Type
+
+        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+* `POST` /products/{productId}/cross-sells Create product cross-sell  
+    Parameter
+
+        Add .defaultSort //The default sorting applied to the products included in the cross-sell resource. Products in `MANUAL` cross-sell resources will be sorted in the order in which they were added to the cross-sell resource.
+* `GET` /products/{productId}/cross-sells/{crossSellId} Show product cross-sell details  
+    Return Type
+
+        Add defaultSort //The default sorting applied to the products included in the cross-sell resource. Products in `MANUAL` cross-sell resources will be sorted in the order in which they were added to the cross-sell resource.
+
 ## 2020-12-10
 
 ### What's Changed
