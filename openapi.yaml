@@ -4783,11 +4783,11 @@ paths:
                           "currency" : "EUR",
                           "amount" : 57.5
                         },
-                        "lastOrderDate" : "2020-12-10T14:52:20.521152",
-                        "lastOrder" : "b59d9fbe-6298-4a7e-a81f-6bfb5a038dc3"
+                        "lastOrderDate" : "2020-12-21T16:11:31.998655",
+                        "lastOrder" : "b03c3815-4537-40d6-a240-cfaaeef5ad7a"
                       }
                     },
-                    "email" : "02c717eb-b379-4f62-9257-537dc72bfd1f@epages.com",
+                    "email" : "f2de8b5b-92ed-4ecb-9e21-97dfe200b396@epages.com",
                     "customerNumber" : "1000",
                     "customerOrigin" : "STOREFRONT",
                     "defaultShippingAddress" : {
@@ -4836,17 +4836,17 @@ paths:
                       "taxNumber" : "HRE 987654/32123/864516",
                       "birthDate" : "1985-05-11"
                     },
-                    "defaultShippingMethodId" : "ab8abb62-e9da-4f9c-856e-892590854dd8",
-                    "defaultPaymentMethodId" : "a30a2d17-bb4b-44e8-a83d-cceebee9cd41",
+                    "defaultShippingMethodId" : "9e7aaf2b-ffa6-46b5-9fb4-81fa47fcbf47",
+                    "defaultPaymentMethodId" : "7ab23a7e-35d0-4ad5-8515-57f42fcee38b",
                     "_links" : {
                       "self" : {
-                        "href" : "https://yourshop.api.urn/customers/a289aeb9-08af-4fc0-8cca-5d4fa7f22318"
+                        "href" : "https://yourshop.api.urn/customers/59381f46-d81e-4e81-b8e8-fc778cf79fa1"
                       },
                       "customer" : {
-                        "href" : "https://yourshop.api.urn/customers/a289aeb9-08af-4fc0-8cca-5d4fa7f22318"
+                        "href" : "https://yourshop.api.urn/customers/59381f46-d81e-4e81-b8e8-fc778cf79fa1"
                       }
                     },
-                    "_id" : "a289aeb9-08af-4fc0-8cca-5d4fa7f22318"
+                    "_id" : "59381f46-d81e-4e81-b8e8-fc778cf79fa1"
                   } ]
                 },
                 "_links" : {
@@ -4881,12 +4881,12 @@ paths:
         name: ""
         required: false
         schema:
-          $ref: '#/definitions/customers-1253677890'
+          $ref: '#/definitions/customers-1545237223'
         x-examples:
           application/json: |-
             {
-              "defaultPaymentMethodId" : "f44c4180-be6e-4940-a5af-57f6073356be",
-              "defaultShippingMethodId" : "8f2a0c46-1af6-446d-b20d-5653a26a9cf3",
+              "defaultPaymentMethodId" : "ecc57d68-4864-4444-863d-09c9d14ca804",
+              "defaultShippingMethodId" : "d1f9c37a-7ccd-4e4a-9ced-42371733873b",
               "shippingAddress" : {
                 "salutation" : "Mrs",
                 "gender" : "FEMALE",
@@ -4936,7 +4936,7 @@ paths:
                 "vatId" : "DE123456789",
                 "taxNumber" : "HRE 987654/32123/864516",
                 "birthDate" : "1985-05-11",
-                "_id" : "cbc8ca0d-0de2-416c-9600-3179e747f8a7"
+                "_id" : "797644d8-9c20-4895-b038-6473683a34d4"
               }
             }
       responses:
@@ -4994,17 +4994,17 @@ paths:
                   "taxNumber" : "HRE 987654/32123/864516",
                   "birthDate" : "1985-05-11"
                 },
-                "defaultShippingMethodId" : "8f2a0c46-1af6-446d-b20d-5653a26a9cf3",
-                "defaultPaymentMethodId" : "f44c4180-be6e-4940-a5af-57f6073356be",
+                "defaultShippingMethodId" : "d1f9c37a-7ccd-4e4a-9ced-42371733873b",
+                "defaultPaymentMethodId" : "ecc57d68-4864-4444-863d-09c9d14ca804",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/customers/9528bc3a-de23-45ce-bab1-303fb5c11ab5"
+                    "href" : "https://yourshop.api.urn/customers/40eca88a-66d3-4618-b898-887770d6b848"
                   },
                   "customer" : {
-                    "href" : "https://yourshop.api.urn/customers/9528bc3a-de23-45ce-bab1-303fb5c11ab5"
+                    "href" : "https://yourshop.api.urn/customers/40eca88a-66d3-4618-b898-887770d6b848"
                   }
                 },
-                "_id" : "9528bc3a-de23-45ce-bab1-303fb5c11ab5"
+                "_id" : "40eca88a-66d3-4618-b898-887770d6b848"
               }
       security:
       - oauth2_application:
@@ -5030,12 +5030,12 @@ paths:
         name: ""
         required: false
         schema:
-          $ref: '#/definitions/customers_customerId1783795945'
+          $ref: '#/definitions/customers_customerId933401884'
         x-examples:
           application/json: |-
             {
-              "defaultPaymentMethodId" : "040b8e74-73bb-4be9-bb1d-67d61b38d99c",
-              "defaultShippingMethodId" : "82f4d9b6-5c05-4b07-ba97-889397fd2eb1",
+              "defaultPaymentMethodId" : "b714649f-4d2c-46a9-9221-b6c3488dbc3f",
+              "defaultShippingMethodId" : "dd326511-6cb6-44c4-844d-cace20467306",
               "shippingAddress" : {
                 "salutation" : "Mrs",
                 "gender" : "FEMALE",
@@ -5057,7 +5057,7 @@ paths:
                 "phone" : "(800) 555-0102",
                 "mobile" : "(800) 555-0103",
                 "doorCode" : "456",
-                "_id" : "33f1d2be-d18d-4c3b-8750-7b993cca1182"
+                "_id" : "b4fec619-480a-40d7-9767-a44be29a2edf"
               },
               "billingAddress" : {
                 "salutation" : "Mrs",
@@ -5082,7 +5082,7 @@ paths:
                 "vatId" : "DE123456789",
                 "taxNumber" : "HRE 987654/32123/864516",
                 "birthDate" : "1985-05-11",
-                "_id" : "12a35ba8-1b2a-4a90-9fb9-4d596760589c"
+                "_id" : "0b8fef9c-3ad9-43d8-a765-4da5517f705f"
               }
             }
       responses:
@@ -5091,7 +5091,17 @@ paths:
           examples:
             application/hal+json: |-
               {
-                "email" : "17ce6a5d-9b46-40c6-9f18-ef5f7d70022f@epages.com",
+                "_embedded" : {
+                  "recentOrders" : [ ],
+                  "orderSummary" : {
+                    "total" : 0,
+                    "grandTotal" : null,
+                    "average" : null,
+                    "lastOrderDate" : null,
+                    "lastOrder" : null
+                  }
+                },
+                "email" : "9da2ab69-f1a1-4d2d-9cb9-328bda97f9ce@epages.com",
                 "customerNumber" : "1000",
                 "customerOrigin" : "STOREFRONT",
                 "defaultShippingAddress" : {
@@ -5140,17 +5150,17 @@ paths:
                   "taxNumber" : "HRE 987654/32123/864516",
                   "birthDate" : "1985-05-11"
                 },
-                "defaultShippingMethodId" : "82f4d9b6-5c05-4b07-ba97-889397fd2eb1",
-                "defaultPaymentMethodId" : "040b8e74-73bb-4be9-bb1d-67d61b38d99c",
+                "defaultShippingMethodId" : "dd326511-6cb6-44c4-844d-cace20467306",
+                "defaultPaymentMethodId" : "b714649f-4d2c-46a9-9221-b6c3488dbc3f",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/customers/26834753-078e-43ce-be3a-1f455eec90f1"
+                    "href" : "https://yourshop.api.urn/customers/a2a4861c-d2b5-47fe-a346-60fb7942e02f"
                   },
                   "customer" : {
-                    "href" : "https://yourshop.api.urn/customers/26834753-078e-43ce-be3a-1f455eec90f1"
+                    "href" : "https://yourshop.api.urn/customers/a2a4861c-d2b5-47fe-a346-60fb7942e02f"
                   }
                 },
-                "_id" : "26834753-078e-43ce-be3a-1f455eec90f1"
+                "_id" : "a2a4861c-d2b5-47fe-a346-60fb7942e02f"
               }
       security:
       - oauth2_application:
@@ -5176,7 +5186,41 @@ paths:
           examples:
             application/hal+json: |-
               {
-                "email" : "82c1bbeb-ddf9-482d-8766-815072776737@epages.com",
+                "_embedded" : {
+                  "recentOrders" : [ {
+                    "orderDate" : "2020-12-21T16:11:27.574504",
+                    "orderNumber" : "edc28b29-0a91-45df-8bd7-37b093d5dbec",
+                    "paymentStatus" : "PAID",
+                    "deliveryStatus" : "DELIVERED",
+                    "grandTotal" : {
+                      "currency" : "EUR",
+                      "amount" : 105
+                    }
+                  }, {
+                    "orderDate" : "2020-12-21T16:11:27.574219",
+                    "orderNumber" : "94199c51-57ec-4df1-acfc-6a1b44d40726",
+                    "paymentStatus" : "PAID",
+                    "deliveryStatus" : "DELIVERED",
+                    "grandTotal" : {
+                      "currency" : "EUR",
+                      "amount" : 10
+                    }
+                  } ],
+                  "orderSummary" : {
+                    "total" : 2,
+                    "grandTotal" : {
+                      "currency" : "EUR",
+                      "amount" : 115
+                    },
+                    "average" : {
+                      "currency" : "EUR",
+                      "amount" : 57.5
+                    },
+                    "lastOrderDate" : "2020-12-21T16:11:27.574504",
+                    "lastOrder" : "3e960148-7d67-4c0f-a077-30380eb9775c"
+                  }
+                },
+                "email" : "b9896698-240c-44e8-9649-c60e8d113890@epages.com",
                 "customerNumber" : "1000",
                 "customerOrigin" : "STOREFRONT",
                 "defaultShippingAddress" : {
@@ -5225,20 +5269,20 @@ paths:
                   "taxNumber" : "HRE 987654/32123/864516",
                   "birthDate" : "1985-05-11"
                 },
-                "defaultShippingMethodId" : "9c2ec425-5240-405d-a82e-01cc013cc1e1",
-                "defaultPaymentMethodId" : "dab3eeaf-dd6c-43c6-a184-14ae5535eba6",
+                "defaultShippingMethodId" : "06cd71eb-a5b5-4787-b89e-d0bdfa8bc60b",
+                "defaultPaymentMethodId" : "55687bf0-211f-48af-9213-81b5117c39d7",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/customers/99f1dd66-bb80-46f9-9b72-5dafaee41d8e"
+                    "href" : "https://yourshop.api.urn/customers/5f231f9c-acf3-4319-9e94-03b2b2ac6205"
                   },
                   "customer" : {
-                    "href" : "https://yourshop.api.urn/customers/99f1dd66-bb80-46f9-9b72-5dafaee41d8e"
+                    "href" : "https://yourshop.api.urn/customers/5f231f9c-acf3-4319-9e94-03b2b2ac6205"
                   }
                 },
-                "_id" : "99f1dd66-bb80-46f9-9b72-5dafaee41d8e"
+                "_id" : "5f231f9c-acf3-4319-9e94-03b2b2ac6205"
               }
           schema:
-            $ref: '#/definitions/customers_id591254536'
+            $ref: '#/definitions/customers_id-1701938965'
       security:
       - oauth2_application:
         - cust:r
@@ -30852,6 +30896,112 @@ definitions:
         "testOrder" : false,
         "termsAndConditionsExplicitlyAccepted" : false
       }
+  customers_id-1701938965:
+    type: object
+    properties:
+      customerOrigin:
+        type: string
+        description: Indicates how the customer has been created. Can be one of `STOREFRONT`,
+          `COCKPIT`, or `GUEST`. The default value is `STOREFRONT` which is thus automatically
+          applied to all customers that placed an order in the shop. Customers with
+          the origin `COCKPIT` can be stored without an email address and with a billing
+          address that only includes first name and last name. It can e.g. be used
+          for customers that are manually created by the merchant.
+      defaultPaymentMethodId:
+        type: string
+        description: The identifier of the default payment method.
+      _links:
+        type: object
+        description: See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+        properties: {}
+      _embedded:
+        type: object
+        properties:
+          recentOrders:
+            type: array
+            items:
+              type: object
+              properties:
+                orderNumber:
+                  type: string
+                  description: The number of the order for which the invoice was created.
+                grandTotal:
+                  type: object
+                  properties:
+                    amount:
+                      type: number
+                      description: The total amount of the order.
+                    currency:
+                      type: string
+                      description: The currency of the grand total amount.
+                orderDate:
+                  type: string
+                  description: The date and time the order was technically created
+                    in the system.
+                deliveryStatus:
+                  type: string
+                  description: The current status of the delivery associated with
+                    the order.
+                paymentStatus:
+                  type: string
+                  description: The current status of the payment associated with the
+                    order.
+          orderSummary:
+            type: object
+            properties:
+              average:
+                type: object
+                properties:
+                  amount:
+                    type: number
+                    description: The average amount of all orders placed by the customer.
+                      This also includes canceled and test orders.
+                  currency:
+                    type: string
+                    description: The currency of the average amount.
+              total:
+                type: number
+                description: The total number of orders placed by the customer. This
+                  also includes canceled and test orders.
+              grandTotal:
+                type: object
+                properties:
+                  amount:
+                    type: number
+                    description: The grand total amount of all orders placed by the
+                      customer. This also includes canceled and test orders.
+                  currency:
+                    type: string
+                    description: The currency of the grand total amount.
+              lastOrder:
+                type: string
+                description: The ID of the most recent order placed by the customer.
+              lastOrderDate:
+                type: string
+                description: The date of the most recent order placed by the customer.
+      defaultShippingAddress:
+        type: object
+        description: The shipping address of the customer. Refer to <<resources-cart-set-shipping-address,Set
+          cart shipping address>> for item documentation.
+        properties: {}
+      defaultShippingMethodId:
+        type: string
+        description: The identifier of the default shipping method.
+      _id:
+        type: string
+        description: The immutable, unique identifier for the customer.
+      customerNumber:
+        type: string
+        description: The unique customer number.
+      defaultBillingAddress:
+        type: object
+        description: The billing address of the customer. Defaults to shipping address
+          if no billing address is set. Refer to <<resources-cart-set-billing-address,Set
+          cart billing address>> for item documentation.
+        properties: {}
+      email:
+        type: string
+        description: The unique email address of the customer.
   shop_locations_locationId-1360492926:
     type: object
     properties:
@@ -35696,7 +35846,7 @@ definitions:
       type:
         type: string
         description: The video provider.
-  customers_customerId1783795945:
+  customers_customerId933401884:
     type: object
     properties:
       defaultPaymentMethodId:
@@ -35718,8 +35868,8 @@ definitions:
         properties: {}
     example: |-
       {
-        "defaultPaymentMethodId" : "040b8e74-73bb-4be9-bb1d-67d61b38d99c",
-        "defaultShippingMethodId" : "82f4d9b6-5c05-4b07-ba97-889397fd2eb1",
+        "defaultPaymentMethodId" : "b714649f-4d2c-46a9-9221-b6c3488dbc3f",
+        "defaultShippingMethodId" : "dd326511-6cb6-44c4-844d-cace20467306",
         "shippingAddress" : {
           "salutation" : "Mrs",
           "gender" : "FEMALE",
@@ -35741,7 +35891,7 @@ definitions:
           "phone" : "(800) 555-0102",
           "mobile" : "(800) 555-0103",
           "doorCode" : "456",
-          "_id" : "33f1d2be-d18d-4c3b-8750-7b993cca1182"
+          "_id" : "b4fec619-480a-40d7-9767-a44be29a2edf"
         },
         "billingAddress" : {
           "salutation" : "Mrs",
@@ -35766,7 +35916,7 @@ definitions:
           "vatId" : "DE123456789",
           "taxNumber" : "HRE 987654/32123/864516",
           "birthDate" : "1985-05-11",
-          "_id" : "12a35ba8-1b2a-4a90-9fb9-4d596760589c"
+          "_id" : "0b8fef9c-3ad9-43d8-a765-4da5517f705f"
         }
       }
   webhook-subscriptions_subscriptionId-870933290:
@@ -36552,6 +36702,96 @@ definitions:
       _id:
         type: string
         description: The unique identifier of the script tag.
+  customers-1545237223:
+    type: object
+    properties:
+      customerOrigin:
+        type: string
+        description: Indicates how the customer has been created. Can be one of `STOREFRONT`,
+          `COCKPIT`, or `GUEST`. The default value is `STOREFRONT` which is thus automatically
+          applied to all customers that placed an order in the shop. Customers with
+          the origin `COCKPIT` can be stored without an email address and with a billing
+          address that only includes first name and last name. It can e.g. be used
+          for customers that are manually created by the merchant.
+      defaultPaymentMethodId:
+        type: string
+        description: The identifier of the default payment method.
+      initialPassword:
+        type: string
+        description: The customer's password for login.
+      defaultShippingMethodId:
+        type: string
+        description: The identifier of the default shipping method.
+      shippingAddress:
+        type: object
+        description: The shipping address of the customer. Refer to <<resources-cart-set-shipping-address,Set
+          cart shipping address>> for item documentation.
+        properties: {}
+      billingAddress:
+        type: object
+        description: The billing address of the customer. Defaults to shipping address
+          if no billing address is set. Refer to <<resources-cart-set-billing-address,Set
+          cart billing address>> for item documentation.
+        properties: {}
+      email:
+        type: string
+        description: The unique email address of the customer.
+    example: |-
+      {
+        "defaultPaymentMethodId" : "ecc57d68-4864-4444-863d-09c9d14ca804",
+        "defaultShippingMethodId" : "d1f9c37a-7ccd-4e4a-9ced-42371733873b",
+        "shippingAddress" : {
+          "salutation" : "Mrs",
+          "gender" : "FEMALE",
+          "company" : "Astrid Alster GmbH",
+          "title" : "",
+          "firstName" : "Astrid",
+          "middleName" : "Agnes",
+          "lastName" : "Alster",
+          "street" : "Alsterwasserweg",
+          "houseNumber" : "2",
+          "street2" : "Erdgeschoss",
+          "addressExtension" : "Hinterhof",
+          "postalCode" : "20999",
+          "dependentLocality" : "Seevetal",
+          "city" : "Alsterwasser",
+          "country" : "DE",
+          "state" : "Hamburg",
+          "email" : "a.alsterh@example.com",
+          "phone" : "(800) 555-0102",
+          "mobile" : "(800) 555-0103",
+          "doorCode" : "456",
+          "_id" : null
+        },
+        "email" : "a.alsterh@example.com",
+        "initialPassword" : "MyVeryStrongPassword",
+        "customerOrigin" : "STOREFRONT",
+        "billingAddress" : {
+          "salutation" : "Mrs",
+          "gender" : "FEMALE",
+          "company" : "Astrid Alster GmbH",
+          "title" : "",
+          "firstName" : "Astrid",
+          "middleName" : "Agnes",
+          "lastName" : "Alster",
+          "street" : "Alsterwasserweg",
+          "houseNumber" : "2",
+          "street2" : "Erdgeschoss",
+          "addressExtension" : "Hinterhof",
+          "postalCode" : "20999",
+          "dependentLocality" : "Seevetal",
+          "city" : "Alsterwasser",
+          "country" : "DE",
+          "state" : "Hamburg",
+          "email" : "a.alsterh@example.com",
+          "phone" : "(800) 555-0102",
+          "mobile" : "(800) 555-0103",
+          "vatId" : "DE123456789",
+          "taxNumber" : "HRE 987654/32123/864516",
+          "birthDate" : "1985-05-11",
+          "_id" : "797644d8-9c20-4895-b038-6473683a34d4"
+        }
+      }
   carts_cartId_line-items184310785:
     type: object
     properties:
@@ -37211,47 +37451,6 @@ definitions:
           }
         }
       }
-  customers_id591254536:
-    type: object
-    properties:
-      customerOrigin:
-        type: string
-        description: Indicates how the customer has been created. Can be one of `STOREFRONT`
-          or `COCKPIT`. The default value is `STOREFRONT` which is thus automatically
-          applied to all customers that placed an order in the shop. Customers with
-          the origin `COCKPIT` can be stored without an email address and with a billing
-          address that only includes first name and last name. It can e.g. be used
-          for customers that are manually created by the merchant.
-      defaultPaymentMethodId:
-        type: string
-        description: The identifier of the default payment method.
-      _links:
-        type: object
-        description: See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-        properties: {}
-      defaultShippingAddress:
-        type: object
-        description: The shipping address of the customer. Refer to <<resources-cart-set-shipping-address,Set
-          cart shipping address>> for item documentation.
-        properties: {}
-      defaultShippingMethodId:
-        type: string
-        description: The identifier of the default shipping method.
-      _id:
-        type: string
-        description: The immutable, unique identifier for the customer.
-      customerNumber:
-        type: string
-        description: The unique customer number.
-      defaultBillingAddress:
-        type: object
-        description: The billing address of the customer. Defaults to shipping address
-          if no billing address is set. Refer to <<resources-cart-set-billing-address,Set
-          cart billing address>> for item documentation.
-        properties: {}
-      email:
-        type: string
-        description: The unique email address of the customer.
   legal-content_name-2071737419:
     type: object
     properties:
@@ -41334,96 +41533,6 @@ definitions:
       }
   products_productId_default-image783680321:
     example: http://localhost/products/images/57823322-d411-40f8-b574-68256fc7aba3
-  customers-1253677890:
-    type: object
-    properties:
-      customerOrigin:
-        type: string
-        description: Indicates how the customer has been created. Can be one of `STOREFRONT`
-          or `COCKPIT`. The default value is `STOREFRONT` which is thus automatically
-          applied to all customers that placed an order in the shop. Customers with
-          the origin `COCKPIT` can be stored without an email address and with a billing
-          address that only includes first name and last name. It can e.g. be used
-          for customers that are manually created by the merchant.
-      defaultPaymentMethodId:
-        type: string
-        description: The identifier of the default payment method.
-      initialPassword:
-        type: string
-        description: The customer's password for login.
-      defaultShippingMethodId:
-        type: string
-        description: The identifier of the default shipping method.
-      shippingAddress:
-        type: object
-        description: The shipping address of the customer. Refer to <<resources-cart-set-shipping-address,Set
-          cart shipping address>> for item documentation.
-        properties: {}
-      billingAddress:
-        type: object
-        description: The billing address of the customer. Defaults to shipping address
-          if no billing address is set. Refer to <<resources-cart-set-billing-address,Set
-          cart billing address>> for item documentation.
-        properties: {}
-      email:
-        type: string
-        description: The unique email address of the customer.
-    example: |-
-      {
-        "defaultPaymentMethodId" : "f44c4180-be6e-4940-a5af-57f6073356be",
-        "defaultShippingMethodId" : "8f2a0c46-1af6-446d-b20d-5653a26a9cf3",
-        "shippingAddress" : {
-          "salutation" : "Mrs",
-          "gender" : "FEMALE",
-          "company" : "Astrid Alster GmbH",
-          "title" : "",
-          "firstName" : "Astrid",
-          "middleName" : "Agnes",
-          "lastName" : "Alster",
-          "street" : "Alsterwasserweg",
-          "houseNumber" : "2",
-          "street2" : "Erdgeschoss",
-          "addressExtension" : "Hinterhof",
-          "postalCode" : "20999",
-          "dependentLocality" : "Seevetal",
-          "city" : "Alsterwasser",
-          "country" : "DE",
-          "state" : "Hamburg",
-          "email" : "a.alsterh@example.com",
-          "phone" : "(800) 555-0102",
-          "mobile" : "(800) 555-0103",
-          "doorCode" : "456",
-          "_id" : null
-        },
-        "email" : "a.alsterh@example.com",
-        "initialPassword" : "MyVeryStrongPassword",
-        "customerOrigin" : "STOREFRONT",
-        "billingAddress" : {
-          "salutation" : "Mrs",
-          "gender" : "FEMALE",
-          "company" : "Astrid Alster GmbH",
-          "title" : "",
-          "firstName" : "Astrid",
-          "middleName" : "Agnes",
-          "lastName" : "Alster",
-          "street" : "Alsterwasserweg",
-          "houseNumber" : "2",
-          "street2" : "Erdgeschoss",
-          "addressExtension" : "Hinterhof",
-          "postalCode" : "20999",
-          "dependentLocality" : "Seevetal",
-          "city" : "Alsterwasser",
-          "country" : "DE",
-          "state" : "Hamburg",
-          "email" : "a.alsterh@example.com",
-          "phone" : "(800) 555-0102",
-          "mobile" : "(800) 555-0103",
-          "vatId" : "DE123456789",
-          "taxNumber" : "HRE 987654/32123/864516",
-          "birthDate" : "1985-05-11",
-          "_id" : "cbc8ca0d-0de2-416c-9600-3179e747f8a7"
-        }
-      }
   product-view_products_productId_media-1376823786:
     type: object
     properties:
