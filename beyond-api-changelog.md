@@ -2,13 +2,6 @@
 
 ## 2020-12-21
 
--XX:InitialHeapSize=64572928 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
-### What's New
----
-
-### What's Deprecated
----
-
 ### What's Changed
 ---
 * `GET` /customers/{id} Show customer details  
@@ -27,24 +20,6 @@
 
 ### What's Changed
 ---
-* `GET` /coupon-campaigns List coupon campaigns  
-    Return Type
-
-        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `PUT` /coupon-campaigns/{couponCampaignId} Update coupon campaign  
-    Return Type
-
-        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `GET` /coupon-campaigns/{couponCampaignId} Show details of coupon campaign  
-    Return Type
-
-        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `PUT` /coupon-campaigns/{couponCampaignId}/coupons Update coupon codes  
-    Return Type
-
-        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `GET` /coupon-campaigns/{couponCampaignId}/coupons List coupon codes  
-    Return Type
 
         Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
 * `POST` /products/{productId}/cross-sells Create product cross-sell  
