@@ -7,9 +7,6 @@
 * `GET` /orders/export Export orders (Not publicly documented, yet)
 
 
-## 2021-01-06
-
-
 ## 2020-12-21
 
 ### What's Changed
