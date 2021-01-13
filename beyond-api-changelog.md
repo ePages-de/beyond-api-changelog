@@ -1,5 +1,32 @@
 # Beyond API Changelog
 
+## 2021-01-13
+
+-XX:InitialHeapSize=64572928 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `PUT` /customers/{customerId} Update customer  
+    Return Type
+
+        Add customerOrigin //Indicates how the customer has been created. Defaults to `STOREFRONT` which is also applied to all customers who registered during checkout. The origin `COCKPIT` can e.g. be used for customers that are manually created by the merchant. Customers with the origin `COCKPIT` can be stored without an email address and with a billing address that only includes first name and last name.
+        Add defaultPaymentMethodId //The identifier of the default payment method.
+        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+        Add _embedded
+        Add defaultShippingAddress //The shipping address of the customer. Defaults to the billing address if no shipping address is set. Refer to <<resources-cart-set-shipping-address,Set cart shipping address>> for item documentation.
+        Add testCustomer //The field determines if this customer has *any* test orders.
+        Add defaultShippingMethodId //The identifier of the default shipping method.
+        Add _id //The immutable, unique identifier for the customer.
+        Add creationDate //The date the customer was registered or created.
+        Add customerNumber //The unique customer number.
+        Add defaultBillingAddress //The billing address of the customer. Refer to <<resources-cart-set-billing-address,Set cart billing address>> for item documentation.
+        Add email //The unique email address of the customer.
+
 ## 2021-01-12
 
 ### What's Changed
