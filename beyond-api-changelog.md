@@ -1,5 +1,23 @@
 # Beyond API Changelog
 
+## 2021-01-15
+
+-XX:InitialHeapSize=64572928 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `GET` /product-view/categories/search/find-by-product List categories assigned to product  
+    Return Type
+
+        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+        Add _embedded
+        Add page //See https://developer.epages.com/beyond-docs/#pagination[Pagination]
+
 
 ## 2021-01-13
 
