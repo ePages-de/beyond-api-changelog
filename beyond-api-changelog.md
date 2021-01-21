@@ -1,5 +1,18 @@
 # Beyond API Changelog
 
+## 2021-01-21
+
+-XX:InitialHeapSize=64572928 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+* `GET` /customers/{id}/events List customer events
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+
 ## 2021-01-20
 
 -XX:InitialHeapSize=64572928 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
