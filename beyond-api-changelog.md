@@ -1,5 +1,24 @@
 # Beyond API Changelog
 
+## 2021-01-28
+
+-XX:InitialHeapSize=64572928 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+* `GET` /orders/export Export orders
+* `POST` /orders/exports Create order export
+* `GET` /orders/exports/{orderExportId} Show order export status
+
+### What's Changed
+---
+* `POST` /orders Create order  
+    Parameter
+
+        Add .orderNumber //The order number of the order. Is automatically generated according to the https://developer.epages.com/beyond-docs/#list_order_settings[order number configuration] unless explicitly provided during order creation.
+
 ## 2021-01-26
 
 -XX:InitialHeapSize=64572928 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
