@@ -1,5 +1,25 @@
 # Beyond API Changelog
 
+## 2021-02-03
+
+-XX:InitialHeapSize=64572928 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `GET` /carts/{cartId} Show cart details  
+    Return Type
+
+        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+* `GET` /carts/{cartId}/shipping-methods Show applicable cart shipping method details  
+    Return Type
+
+        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+
 ## 2021-01-28
 
 -XX:InitialHeapSize=64572928 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
