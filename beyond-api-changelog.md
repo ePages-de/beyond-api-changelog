@@ -1,5 +1,57 @@
 # Beyond API Changelog
 
+## 2021-02-18
+
+-XX:InitialHeapSize=64572928 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `GET` /carts/{cartId} Show cart details  
+    Return Type
+
+        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+* `GET` /coupon-campaigns List coupon campaigns  
+    Return Type
+
+        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+* `PUT` /coupon-campaigns/{couponCampaignId} Update coupon campaign  
+    Return Type
+
+        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+* `GET` /coupon-campaigns/{couponCampaignId} Show details of coupon campaign  
+    Return Type
+
+        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+* `PUT` /coupon-campaigns/{couponCampaignId}/coupons Update coupon codes  
+    Return Type
+
+        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+* `GET` /coupon-campaigns/{couponCampaignId}/coupons List coupon codes  
+    Return Type
+
+        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+* `POST` /webhook-subscriptions/{subscriptionId}/activate Activate webhook subscription  
+    Return Type
+
+        Add _links //See <<hypermedia,Hypermedia>>
+        Add callbackUri //The callback URI of the webhook.
+        Add active //Indicates if this subscription is active. Can be `true` or `false`.
+        Add _id //The immutable, unique identifier of the requested resource.
+        Add eventTypes //The event type names the webhook listens to.
+* `POST` /webhook-subscriptions/{subscriptionId}/deactivate Deactivate webhook subscription  
+    Return Type
+
+        Add _links //See <<hypermedia,Hypermedia>>
+        Add callbackUri //The callback URI of the webhook.
+        Add active //Indicates if this subscription is active. Can be `true` or `false`.
+        Add _id //The immutable, unique identifier of the requested resource.
+        Add eventTypes //The event type names the webhook listens to.
+
 ## ?????
 
 ### What's Changed
