@@ -1,5 +1,113 @@
 # Beyond API Changelog
 
+## 2021-02-23
+
+-XX:InitialHeapSize=64572928 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `GET` /carts/{cartId} Show cart details  
+    Return Type
+
+        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+* `PUT` /carts/{cardId}/customer Assign customer to cart  
+    Return Type
+
+        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+* `PUT` /carts/{cartId}/line-items Add line items  
+    Return Type
+
+        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+* `POST` /carts/{cartId}/line-items Invalid tax class  
+    Return Type
+
+        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+* `GET` /carts/{cartId}/shipping-methods Show applicable cart shipping method details  
+    Return Type
+
+        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+* `PUT` /carts/{cartId}/line-items/{lineItemId} Replace single line item  
+    Return Type
+
+        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+* `PUT` /carts/{cartId}/shipping-methods/current Set current cart shipping method  
+    Return Type
+
+        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+* `GET` /carts/{cartId}/shipping-methods/current Show current cart shipping method details  
+    Return Type
+
+        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+* `PUT` /carts/{cartId}/shipping-methods/default Set cart shipping method to current default  
+    Return Type
+
+        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+* `PUT` /checkout-settings Update checkout settings  
+    Return Type
+
+        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+* `GET` /checkout-settings List checkout settings  
+    Return Type
+
+        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+* `GET` /payment-methods List payment methods  
+    Return Type
+
+        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+* `PUT` /payment-methods/{paymentMethodId} Update payment method  
+    Return Type
+
+        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+* `GET` /payment-methods/{paymentMethodId} Show payment method details  
+    Return Type
+
+        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+* `POST` /payment-methods/{paymentMethodId}/activate Activate payment method  
+    Return Type
+
+        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+* `POST` /payment-methods/{paymentMethodId}/deactivate Deactivate payment method  
+    Return Type
+
+        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+* `GET` /shipping-zones List shipping zones  
+    Return Type
+
+        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+* `PUT` /shipping-zones/{shippingZoneId} Update shipping zone  
+    Return Type
+
+        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+* `GET` /shipping-zones/{shippingZoneId} Show shipping zone details  
+    Return Type
+
+        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+* `GET` /shipping-zones/search/find-all-serviceable-countries Find serviceable countries  
+    Return Type
+
+        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+* `PUT` /shipping-zones/{shippingZoneId}/shipping-methods Sort shipping methods in shipping zone  
+    Return Type
+
+        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+* `GET` /shipping-zones/{shippingZoneId}/shipping-methods List shipping methods of shipping zone  
+    Return Type
+
+        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+* `PUT` /shipping-zones/{shippingZoneId}/shipping-methods/{shippingMethodId} Modify shipping method  
+    Return Type
+
+        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+* `GET` /shipping-zones/{shippingZoneId}/shipping-methods/{shippingMethodId} Show details of shipping method in shipping zone  
+    Return Type
+
+        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+
 ## 2021-02-19
 
 -XX:InitialHeapSize=64572928 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
