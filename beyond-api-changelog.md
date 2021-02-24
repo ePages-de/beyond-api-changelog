@@ -1,5 +1,26 @@
 # Beyond API Changelog
 
+## 2021-02-24
+
+-XX:InitialHeapSize=64572928 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+* `PUT` /customers/{customerId}/master-data Update customer master data
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `PUT` /customers/{customerId} Update customer  
+    Return Type
+
+        Add masterData //The master date of the customer.
+* `GET` /customers/{id} Show customer details  
+    Return Type
+
+        Add masterData //The master date of the customer.
+
 
 
 ## ?????
