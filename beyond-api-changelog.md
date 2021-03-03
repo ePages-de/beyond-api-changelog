@@ -1,63 +1,12 @@
 # Beyond API Changelog
 
-## 2021-03-02
-
--XX:InitialHeapSize=64572928 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
-### What's New
----
-
-### What's Deprecated
----
-
-### What's Changed
----
-* `PUT` /carts/{cartId}/billing-address Set cart billing address  
-    Return Type
-
-        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `POST` /carts/{cartId}/coupon Redeem coupon  
-    Return Type
-
-        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `PUT` /carts/{cartId}/shipping-address Set current cart shipping address  
-    Return Type
-
-        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `GET` /coupon-campaigns List coupon campaigns  
-    Return Type
-
-        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `GET` /coupon-campaigns/{couponCampaignId} Show details of coupon campaign  
-    Return Type
-
-        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `PUT` /coupon-campaigns/{couponCampaignId} Update coupon campaign  
-    Return Type
-
-        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `GET` /coupon-campaigns/{couponCampaignId}/coupons List coupon codes  
-    Return Type
-
-        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `PUT` /coupon-campaigns/{couponCampaignId}/coupons Update coupon codes  
-    Return Type
-
-        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `PUT` /coupon-campaigns/{couponCampaignId}/status Update coupon campaign status  
-    Return Type
-
-        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-
 
 ## 2021-02-24
 
--XX:InitialHeapSize=64572928 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
 ### What's New
 ---
 * `PUT` /customers/{customerId}/master-data Update customer master data
 
-### What's Deprecated
----
 
 ### What's Changed
 ---
@@ -69,8 +18,6 @@
     Return Type
 
         Add masterData //The master date of the customer.
-
-
 
 ## ?????
 
