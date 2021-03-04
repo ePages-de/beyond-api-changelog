@@ -1,5 +1,25 @@
 # Beyond API Changelog
 
+## 2021-03-04
+
+-XX:InitialHeapSize=64572928 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `PUT` /products/{productId}/attributes/{productAttributeName} Update product attribute  
+    Return Type
+
+        Delete value //The value of the product attribute.
+* `GET` /products/{productId}/attributes/{productAttributeName} Show product attribute details  
+    Return Type
+
+        Delete value //The value of the product attribute.
+
 ## 2021-03-03
 
 -XX:InitialHeapSize=64572928 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
