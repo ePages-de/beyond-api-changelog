@@ -1,5 +1,25 @@
 # Beyond API Changelog
 
+## 2021-03-08
+
+-XX:InitialHeapSize=64572928 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `PUT` /script-tags/{scriptTagId} Update script tag  
+    Return Type
+
+        Add categories //The identifiers for the areas in which the script tag can be included in the storefront. Can be one or more of `SHIPPING`, `LEGAL`, `MARKETING`, `STOREFRONT`, `PRODUCT_IMAGE`, `PAYMENT`, `ORDER`, `EMBEDDED_IN_NAVIGATION`, `NO_COOKIE_CONSENT_REQUIRED`, or `ENABLE_SCRIPTING_IN_CHECKOUT`.
+* `GET` /script-tags/{scriptTagId} Show script tag details  
+    Return Type
+
+        Add categories //The identifiers for the areas in which the script tag can be included in the storefront. Can be one or more of `SHIPPING`, `LEGAL`, `MARKETING`, `STOREFRONT`, `PRODUCT_IMAGE`, `PAYMENT`, `ORDER`, `EMBEDDED_IN_NAVIGATION`, `NO_COOKIE_CONSENT_REQUIRED`, or `ENABLE_SCRIPTING_IN_CHECKOUT`.
+
 ## 2021-03-04
 
 ### What's Changed
