@@ -2,13 +2,6 @@
 
 ## 2021-03-04
 
--XX:InitialHeapSize=64572928 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
-### What's New
----
-
-### What's Deprecated
----
-
 ### What's Changed
 ---
 * `PUT` /products/{productId}/attributes/{productAttributeName} Update product attribute  
@@ -19,42 +12,6 @@
     Return Type
 
         Delete value //The value of the product attribute.
-
-## 2021-03-03
-
--XX:InitialHeapSize=64572928 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
-### What's New
----
-
-### What's Deprecated
----
-
-### What's Changed
----
-* `GET` /carts/{cartId} Show cart details  
-    Return Type
-
-        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `PUT` /carts/{cartId}/billing-address Set cart billing address  
-    Return Type
-
-        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `PUT` /carts/{cartId}/line-items Add line items  
-    Return Type
-
-        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `POST` /carts/{cartId}/line-items Invalid tax class  
-    Return Type
-
-        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `PUT` /carts/{cartId}/shipping-address Set current cart shipping address  
-    Return Type
-
-        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `PUT` /carts/{cartId}/line-items/{lineItemId} Replace single line item  
-    Return Type
-
-        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
 
 
 ## 2021-02-24
