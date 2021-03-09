@@ -1,5 +1,105 @@
 # Beyond API Changelog
 
+## 2021-03-09
+
+-XX:InitialHeapSize=64572928 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `PATCH` /products/{productId} Update variation product partially  
+    Return Type
+
+        Add taxClass //The tax class of the product.
+        Add lastModifiedAt //The date and time the product was modified.
+        Add visible //Indicates if the product is visible in the online shop.
+        Add essentialFeatures //The essential product properties of the product. Shown in the cart and checkout. In Germany mandatory field in online shops according to §312j Abs. 2 BGB (German Civil Code).
+        Add salesPrice //The price of the product.
+        Add description //The description of the product.
+        Add shippingPeriod
+        Add tags //The tags assigned to the product.
+        Add manufacturer //The manufacturer of the product.
+        Add refPrice //The reference price of the product.
+        Add productIdentifiers //The list of product identifiers.
+        Add _embedded
+        Add shippingWeight //The weight of the product including packaging in g.
+        Add name //The name of the product.
+        Add variationAttributes //The variation attributes with their values.
+        Add manufacturerPrice //The manufacturer's suggested retail price of the product.
+        Add _id //The immutable, unique identifier of the requested resource.
+        Add sku //The stock keeping unit (SKU) corresponding to the product.
+        Add shippingDimension
+        Add maxOrderQuantity //Displays how often the product can be ordered at maximum in one order.
+        Add listPrice //The previous price of a product that is currently on offer.
+* `POST` /products/{productId}/availability/adjust-available-stock Adjust stock level of product  
+    Parameter
+
+        Add .relativeAmount //The relative amount to change the number of products available in stock by.
+    Return Type
+
+        Add purchasable //Indicates if the product is available for purchase. Can be `true` or `false`. If the product is not available for purchase, its availability state is `NOT_AVAILABLE`.
+        Add availabilityState //The current availability state of the product. Can be one of `IN_STOCK`, `LOW_STOCK`, `NOT_AVAILABLE`, or `OUT_OF_STOCK`.
+        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+        Add availableStock //The number of products available in stock.
+        Add stockThreshold //The inventory level that indicates that the product needs to be reordered. If the stock level of the product is equal to or lower than this value but higher than 0, the availability state for the product is `LOW_STOCK`.
+* `POST` /products/{productId}/availability/disable-purchasability Disable purchasability for product  
+    Return Type
+
+        Add purchasable //Indicates if the product is available for purchase. Can be `true` or `false`. If the product is not available for purchase, its availability state is `NOT_AVAILABLE`.
+        Add availabilityState //The current availability state of the product. Can be one of `IN_STOCK`, `LOW_STOCK`, `NOT_AVAILABLE`, or `OUT_OF_STOCK`.
+        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+* `POST` /products/{productId}/availability/disable-stock-management Disable stock management for product  
+    Return Type
+
+        Add purchasable //Indicates if the product is available for purchase. Can be `true` or `false`. If the product is not available for purchase, its availability state is `NOT_AVAILABLE`.
+        Add availabilityState //The current availability state of the product. Can be one of `IN_STOCK`, `LOW_STOCK`, `NOT_AVAILABLE`, or `OUT_OF_STOCK`.
+        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+* `POST` /products/{productId}/availability/enable-purchasability Enable purchasability for product  
+    Return Type
+
+        Add purchasable //Indicates if the product is available for purchase. Can be `true` or `false`. If the product is not available for purchase, its availability state is `NOT_AVAILABLE`.
+        Add availabilityState //The current availability state of the product. Can be one of `IN_STOCK`, `LOW_STOCK`, `NOT_AVAILABLE`, or `OUT_OF_STOCK`.
+        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+* `POST` /products/{productId}/availability/enable-stock-management Enable stock management for product  
+    Parameter
+
+        Add .initialAvailableStock //The number of products available in stock.
+        Add .stockThreshold //The inventory level that indicates that the product needs to be reordered. If the stock level of the product is equal to or lower than this value but higher than 0, the availability state for the product is `LOW_STOCK`.
+    Return Type
+
+        Add purchasable //Indicates if the product is available for purchase. Can be `true` or `false`. If the product is not available for purchase, its availability state is `NOT_AVAILABLE`.
+        Add availabilityState //The current availability state of the product. Can be one of `IN_STOCK`, `LOW_STOCK`, `NOT_AVAILABLE`, or `OUT_OF_STOCK`.
+        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+        Add availableStock //The number of products available in stock.
+        Add stockThreshold //The inventory level that indicates that the product needs to be reordered. If the stock level of the product is equal to or lower than this value but higher than 0, the availability state for the product is `LOW_STOCK`.
+* `PUT` /products/{productId}/availability/update-stock-threshold Update reserve stock of product  
+    Parameter
+
+        Add .stockThreshold //The inventory level that indicates that the product needs to be reordered. If the stock level of the product is equal to or lower than this value but higher than 0, the availability state for the product is `LOW_STOCK`.
+    Return Type
+
+        Add purchasable //Indicates if the product is available for purchase. Can be `true` or `false`. If the product is not available for purchase, its availability state is `NOT_AVAILABLE`.
+        Add availabilityState //The current availability state of the product. Can be one of `IN_STOCK`, `LOW_STOCK`, `NOT_AVAILABLE`, or `OUT_OF_STOCK`.
+        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+        Add availableStock //The number of products available in stock.
+        Add stockThreshold //The inventory level that indicates that the product needs to be reordered. If the stock level of the product is equal to or lower than this value but higher than 0, the availability state for the product is `LOW_STOCK`.
+* `POST` /products/{productId}/variation-attributes/{variationAttributeId}/values Create variation attribute value  
+    Return Type
+
+        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+        Add displayName //The name of the variation attribute defined by the merchant, e.g. name, size, or color.
+        Add values //The variation attribute values defined by the merchant, e.g. the detailed sizes such as S, M, L, and XL.
+        Add _id //The immutable, unique identifier of the requested resource.
+        Add variationImagesDifferentiator //The name of the variation attribute the variation images are assigned for.
+* `POST` /products/{productId}/variations/{variationId}/availability/adjust-available-stock Adjust stock level of variation  
+    Parameter
+
+        Add .relativeAmount //The relative amount to change the number of variations available in stock by.
+
 ## 2021-03-08
 
 -XX:InitialHeapSize=64572928 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
