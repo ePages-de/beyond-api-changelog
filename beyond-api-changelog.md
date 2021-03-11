@@ -1,5 +1,60 @@
 # Beyond API Changelog
 
+## 2021-03-11
+
+-XX:InitialHeapSize=64572928 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `GET` /carts/{cartId} Show cart details  
+    Return Type
+
+        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+* `PUT` /carts/{cartId}/billing-address Set cart billing address  
+    Return Type
+
+        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+* `PUT` /carts/{cartId}/line-items Add line items  
+    Return Type
+
+        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+* `POST` /carts/{cartId}/line-items Invalid tax class  
+    Return Type
+
+        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+* `PUT` /carts/{cartId}/shipping-address Set current cart shipping address  
+    Return Type
+
+        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+* `PUT` /carts/{cartId}/line-items/{lineItemId} Replace single line item  
+    Return Type
+
+        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+* `POST` /coupon-campaigns Create coupon campaign  
+    Parameter
+
+        Delete .active //(Deprecated) Indicates whether a coupon campaign is active or not. Can be `true` or `false`. The value of this property impacts the status of the coupon campaign (see <<resources-coupon-campaign-update>>).
+* `PUT` /coupon-campaigns/{couponCampaignId} Update coupon campaign  
+    Parameter
+
+        Delete .active //(Deprecated) Indicates whether a coupon campaign is active or not. Can be `true` or `false`. The value of this property impacts the status of the coupon campaign (see <<resources-coupon-campaign-update>>).
+    Return Type
+
+        Delete active //(Deprecated) Indicates whether a coupon campaign is active or not. Can be `true` or `false`. The value of this property impacts the status of the coupon campaign (see <<resources-coupon-campaign-update>>).
+* `GET` /coupon-campaigns/{couponCampaignId} Show details of coupon campaign  
+    Return Type
+
+        Delete active //(Deprecated) Indicates whether a coupon campaign is active or not. Can be `true` or `false`. The value of this property impacts the status of the coupon campaign (see <<resources-coupon-campaign-update>>).
+* `PUT` /coupon-campaigns/{couponCampaignId}/status Update coupon campaign status  
+    Return Type
+
+        Delete active //(Deprecated) Indicates whether a coupon campaign is active or not. Can be `true` or `false`. The value of this property impacts the status of the coupon campaign (see <<resources-coupon-campaign-update>>).
+
 ## 2021-03-09
 
 ### What's Changed
