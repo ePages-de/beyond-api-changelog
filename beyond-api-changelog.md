@@ -1,5 +1,103 @@
 # Beyond API Changelog
 
+## 2021-03-16
+
+-XX:InitialHeapSize=64572928 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `GET` /carts/{cartId} Show cart details  
+    Return Type
+
+        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+* `PUT` /carts/{cartId}/line-items Add line items  
+    Return Type
+
+        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+* `POST` /carts/{cartId}/line-items Invalid tax class  
+    Return Type
+
+        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+* `PUT` /carts/{cartId}/line-items/{lineItemId} Replace single line item  
+    Return Type
+
+        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+* `GET` /payment-methods List payment methods  
+    Return Type
+
+        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+* `PUT` /payment-methods/{paymentMethodId} Update payment method  
+    Return Type
+
+        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+* `GET` /payment-methods/{paymentMethodId} Show payment method details  
+    Return Type
+
+        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+* `POST` /payment-methods/{paymentMethodId}/activate Activate payment method  
+    Return Type
+
+        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+* `POST` /payment-methods/{paymentMethodId}/deactivate Deactivate payment method  
+    Return Type
+
+        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+* `POST` /products/{productId}/availability/disable-purchasability Disable purchasability for product  
+    Return Type
+
+        Add availableStock //The number of products available in stock.
+        Add stockThreshold //The inventory level that indicates that the product needs to be reordered. If the stock level of the product is equal to or lower than this value but higher than 0, the availability state for the product is `LOW_STOCK`.
+* `POST` /products/{productId}/availability/disable-stock-management Disable stock management for product  
+    Return Type
+
+        Add availableStock //The number of products available in stock.
+        Add stockThreshold //The inventory level that indicates that the product needs to be reordered. If the stock level of the product is equal to or lower than this value but higher than 0, the availability state for the product is `LOW_STOCK`.
+* `POST` /products/{productId}/availability/enable-purchasability Enable purchasability for product  
+    Return Type
+
+        Add availableStock //The number of products available in stock.
+        Add stockThreshold //The inventory level that indicates that the product needs to be reordered. If the stock level of the product is equal to or lower than this value but higher than 0, the availability state for the product is `LOW_STOCK`.
+* `GET` /shipping-zones List shipping zones  
+    Return Type
+
+        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+* `PUT` /shipping-zones/{shippingZoneId} Update shipping zone  
+    Return Type
+
+        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+* `GET` /shipping-zones/{shippingZoneId} Show shipping zone details  
+    Return Type
+
+        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+* `GET` /shipping-zones/search/find-all-serviceable-countries Find serviceable countries  
+    Return Type
+
+        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+* `PUT` /shipping-zones/{shippingZoneId}/shipping-methods Sort shipping methods in shipping zone  
+    Return Type
+
+        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+* `GET` /shipping-zones/{shippingZoneId}/shipping-methods List shipping methods of shipping zone  
+    Return Type
+
+        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+* `PUT` /shipping-zones/{shippingZoneId}/shipping-methods/{shippingMethodId} Modify shipping method  
+    Parameter
+
+        Add .weightBasedPrice //The price depending on the package weight (optional).
+    Return Type
+
+        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+* `GET` /shipping-zones/{shippingZoneId}/shipping-methods/{shippingMethodId} Show details of shipping method in shipping zone  
+    Return Type
+
+        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+
 
 
 
