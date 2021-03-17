@@ -1,5 +1,18 @@
 # Beyond API Changelog
 
+## 2021-03-17
+
+-XX:InitialHeapSize=64572928 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+* `POST` /products/{productId}/variation-attributes/{variationAttributeId}/make-differentiator Assign variation images differentiator
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+
 ## 2021-03-16
 
 -XX:InitialHeapSize=64572928 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
