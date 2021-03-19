@@ -1,5 +1,37 @@
 # Beyond API Changelog
 
+## 2021-03-19
+
+-XX:InitialHeapSize=64572928 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+* `DELETE` /products/{productId}/variation-attributes/{variationAttributeId}/values Delete variation attribute values
+
+### What's Changed
+---
+* `PUT` /legal-content/{name} Update legal content  
+    Parameter
+
+        Add .content //The content the legal content page is supposed to show.
+* `PATCH` /shop Update shop partially  
+    Return Type
+
+        Add defaultLocale //The default locale of the shop (cannot be changed).
+        Add locales //A list of the locales that are supported by the shop. Defaults to `defaultLocale`. The `defaultLocale` is always included in the list.
+        Add closedByMerchant //Indicates if the shop is closed by its owner. Can be `true` or `false`.
+        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+        Add resellerName //The name of the reseller that provisioned the shop.
+        Add defaultCurrency //The default currency of the shop.
+        Add primaryHostname //The primary hostname of the shop (cannot be updated).
+        Add name //The name of the shop.
+        Add tax
+        Add fallbackHostname //The unchangeable, fallback hostname of the shop.
+        Add _id //The unique identifier of the shop (cannot be changed).
+        Add currencies //A list of the currencies that are supported by the shop. Defaults to `defaultCurrency`. The `defaultCurrency` is always included in the list.
+
 
 ## 2021-03-17
 
