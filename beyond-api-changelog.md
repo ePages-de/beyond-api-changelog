@@ -1,5 +1,19 @@
 # Beyond API Changelog
 
+## 2021-03-22
+
+-XX:InitialHeapSize=64572928 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+* `POST` /support-agents Create support agent
+
+### What's Deprecated
+---
+* `POST` /products/{productId}/duplicate (Deprecated) Duplicate product
+
+### What's Changed
+---
+
 ## 2021-03-19
 
 -XX:InitialHeapSize=64572928 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
