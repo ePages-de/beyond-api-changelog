@@ -12,10 +12,10 @@ paths:
     post:
       tags:
       - callback
-      summary: Order webhook request against callback URI
+      summary: App webhook request against callback URI
       description: Example for a request which is executed against the `callbackUri`
-        of the webhook subscription when an order event takes place.
-      operationId: callback-order-created
+        of the webhook subscription when an app event takes place.
+      operationId: callback-app-uninstalled
       consumes:
       - application/json
       parameters:
@@ -39,16 +39,9 @@ paths:
         name: ""
         required: false
         schema:
-          $ref: '#/definitions/callback1399100261'
+          $ref: '#/definitions/callback1173613549'
         x-examples:
-          application/json: |-
-            {
-              "_payloadType" : "app",
-              "_id" : "93d068f4-3a2b-4a8e-95cc-2a2ed4822240",
-              "clientId" : "clientId",
-              "feature" : "app.test-app",
-              "name" : { }
-            }
+          application/json: <payload>
       responses:
         404:
           description: ""
@@ -12985,12 +12978,10 @@ paths:
     post:
       tags:
       - orders
-      summary: Partial return not allowed
-      description: If the order was paid with an online payment method with the refund
-        capability `FULL_REFUND_ONLY`, the return process has to include all product
-        line items of the order and refund the shipping costs. Otherwise, a `409 Conflict`
-        error will be returned.
-      operationId: return-process-partial-refund-not-allowed
+      summary: Create return process
+      description: Creates a new return process for the order identified by {orderId}.
+        Return processes trigger a refund process.
+      operationId: create-return-process
       consumes:
       - application/json
       produces:
@@ -13005,7 +12996,7 @@ paths:
         name: ""
         required: false
         schema:
-          $ref: '#/definitions/orders_orderId_processes_returns633557683'
+          $ref: '#/definitions/orders_orderId_processes_returns-1627832017'
         x-examples:
           application/json: |-
             {
@@ -13013,26 +13004,16 @@ paths:
               "sendMail" : true,
               "lineItems" : [ {
                 "quantity" : 3,
-                "productLineItemId" : "731652c8-917a-4ca7-aa6f-61e4b3ead0a7",
+                "productLineItemId" : "f6a69eed-82c7-40c5-a389-e560ec29fa8f",
                 "status" : "RETURNED"
               } ],
               "shippingPriceRefund" : {
                 "currency" : "EUR",
                 "amount" : 4.99
               },
-              "shippingProcessId" : "af972d9d-8262-462d-ad2c-69c2cda6617c"
+              "shippingProcessId" : "ccacdcfc-06ab-49ba-9eae-deba8e88b4fc"
             }
       responses:
-        409:
-          description: ""
-          examples:
-            application/hal+json: |-
-              {
-                "errorId" : "return-process-partial-refund-not-allowed",
-                "details" : { },
-                "message" : "The order was paid with a payment method that doesn't allow partial refunds. Thus, the request has to include all product line items of the order.",
-                "traceId" : null
-              }
         201:
           description: ""
           examples:
@@ -13065,6 +13046,19 @@ paths:
               }
           schema:
             $ref: '#/definitions/orders_orderId_processes_returns-245600782'
+        409:
+          description: ""
+          examples:
+            application/hal+json: |-
+              {
+                "errorId" : "no-such-product-line-item",
+                "details" : { },
+                "message" : "The specified product line item is not included in the order.",
+                "traceId" : null
+              }
+      security:
+      - oauth2_application:
+        - rtpr:c
   /orders/{orderId}/processes/shippings:
     get:
       tags:
@@ -13305,10 +13299,10 @@ paths:
     get:
       tags:
       - orders
-      summary: Show online payment process details
-      description: Returns the details of an online payment process for the order
-        identified by {orderId}.
-      operationId: get-online-payment-process
+      summary: Show payment process details
+      description: Returns the details of a payment process for the order identified
+        by {orderId}.
+      operationId: get-payment-process
       produces:
       - application/hal+json
       parameters:
@@ -13332,20 +13326,23 @@ paths:
                   "currency" : "EUR",
                   "amount" : 62.44
                 },
-                "status" : "APPROVED",
-                "paymentId" : "c50d91c8-81ac-4d8b-b6e1-10f1b70560fd",
-                "captureWorkflow" : "CAPTURE_ON_DEMAND",
+                "status" : "PENDING",
+                "paymentId" : null,
+                "captureWorkflow" : null,
                 "completed" : false,
-                "_id" : "c4989b6e-05df-4245-a9e7-a19059a7a005",
+                "_id" : "74452ed2-806c-480b-957b-550fc9fb5fa3",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/orders/47b5b6b4-ddc3-40cf-a832-2f9480207af8/processes/payments/c4989b6e-05df-4245-a9e7-a19059a7a005"
+                    "href" : "https://yourshop.api.urn/orders/88722819-83dd-4297-a94e-d6fee72bd6a1/processes/payments/74452ed2-806c-480b-957b-550fc9fb5fa3"
                   },
                   "payment-process" : {
-                    "href" : "https://yourshop.api.urn/orders/47b5b6b4-ddc3-40cf-a832-2f9480207af8/processes/payments/c4989b6e-05df-4245-a9e7-a19059a7a005"
+                    "href" : "https://yourshop.api.urn/orders/88722819-83dd-4297-a94e-d6fee72bd6a1/processes/payments/74452ed2-806c-480b-957b-550fc9fb5fa3"
                   },
-                  "capture" : {
-                    "href" : "https://yourshop.api.urn/orders/47b5b6b4-ddc3-40cf-a832-2f9480207af8/processes/payments/c4989b6e-05df-4245-a9e7-a19059a7a005/capture"
+                  "mark-voided" : {
+                    "href" : "https://yourshop.api.urn/orders/88722819-83dd-4297-a94e-d6fee72bd6a1/processes/payments/74452ed2-806c-480b-957b-550fc9fb5fa3/mark-voided"
+                  },
+                  "mark-paid" : {
+                    "href" : "https://yourshop.api.urn/orders/88722819-83dd-4297-a94e-d6fee72bd6a1/processes/payments/74452ed2-806c-480b-957b-550fc9fb5fa3/mark-paid"
                   }
                 }
               }
@@ -14225,10 +14222,11 @@ paths:
     get:
       tags:
       - payment-method-definitions
-      summary: Show payment method definition details on system level
+      summary: Show payment method definition details on shop level
       description: Returns the details of the payment method definition identified
-        by {paymentMethodDefinitionId}.
-      operationId: get-payment-method-definition
+        by {paymentMethodDefinitionId}. Gives information if a shop has a payment
+        method derived from the payment method definition.
+      operationId: get-payment-method-definition-shop-context
       produces:
       - application/hal+json
       parameters:
@@ -14243,8 +14241,8 @@ paths:
           examples:
             application/hal+json: |-
               {
-                "_id" : "credit-card",
-                "name" : "credit-card",
+                "_id" : "testPMD",
+                "name" : "testPMD",
                 "referralUriTemplate" : "https://example.com/merchants",
                 "statusUriTemplate" : "https://example.com/merchants/{shopId}/status",
                 "disconnectUriTemplate" : "https://example.com/merchants/{shopId}/disconnect",
@@ -14278,7 +14276,10 @@ paths:
                 },
                 "_links" : {
                   "self" : {
-                    "href" : "https://system.api.urn/payment-method-definitions/credit-card"
+                    "href" : "https://yourshop.api.urn/payment-method-definitions/testPMD"
+                  },
+                  "create-payment-method" : {
+                    "href" : "https://yourshop.api.urn/payment-method-definitions/testPMD/payment-method"
                   }
                 }
               }
@@ -15752,9 +15753,9 @@ paths:
     get:
       tags:
       - product-view
-      summary: Show variation product details
-      description: Returns the details of the variation product identified by {productId}.
-      operationId: find-variation-product-by-id
+      summary: Show variation details
+      description: Returns the details of the variation identified by {productId}.
+      operationId: find-variation-by-id
       produces:
       - application/hal+json
       parameters:
@@ -15769,7 +15770,8 @@ paths:
           examples:
             application/hal+json: |-
               {
-                "_id" : "9367e17d-0489-49a4-92a3-e0c2dec6a5dc",
+                "_id" : "b702bc9b-75af-47c5-9518-96b8aad7a545",
+                "sku" : "e61eace3-0b64-426b-bc8d-db16745d4215",
                 "name" : "Rioja Castillo de Puerto (2013)",
                 "manufacturer" : "Grape Vineyard",
                 "salesPrice" : {
@@ -15807,7 +15809,7 @@ paths:
                     "taxModel" : "GROSS"
                   }
                 },
-                "availabilityState" : "NOT_AVAILABLE",
+                "availabilityState" : "IN_STOCK",
                 "shippingWeight" : 100,
                 "shippingDimension" : {
                   "length" : 1500,
@@ -15815,37 +15817,32 @@ paths:
                   "height" : 2000
                 },
                 "variations" : [ {
-                  "_id" : "588d5576-1e35-44bf-bf41-6d390dfb1500",
+                  "_id" : "b702bc9b-75af-47c5-9518-96b8aad7a545",
                   "variationAttributeValues" : [ {
                     "displayName" : "Volume",
                     "value" : "0.2l"
                   } ],
-                  "_indexedAt" : "2021-03-18T09:49:15"
+                  "_indexedAt" : "2021-03-18T09:49:26"
                 }, {
-                  "_id" : "785ff0ad-c4a3-4cc8-ab17-26ecb6c61d6e",
+                  "_id" : "1dd31a7f-949d-4e56-8729-5a6ed7588a4e",
                   "variationAttributeValues" : [ {
                     "displayName" : "Volume",
                     "value" : "1.5l"
                   } ],
-                  "_indexedAt" : "2021-03-18T09:49:15"
+                  "_indexedAt" : "2021-03-18T09:49:26"
                 }, {
-                  "_id" : "7d074e67-28d9-4051-bf7c-a39b0a8d605e",
+                  "_id" : "801a6654-262e-4f7b-a4e2-c4447bc1e730",
                   "variationAttributeValues" : [ {
                     "displayName" : "Volume",
                     "value" : "0.7l"
                   } ],
-                  "_indexedAt" : "2021-03-18T09:49:15"
+                  "_indexedAt" : "2021-03-18T09:49:26"
                 } ],
                 "variationAttributes" : [ {
                   "displayName" : "Volume",
                   "values" : [ "0.2l", "0.7l", "1.5l" ]
                 } ],
                 "_embedded" : {
-                  "stockLevel" : {
-                    "min" : 5,
-                    "max" : 5,
-                    "stockThreshold" : 1
-                  },
                   "defaultImage" : {
                     "dataUri" : "https://yourshop.api.urn/storage-api/images/rioja-01.jpg?hash=e9a1ce5c0c6abfebec8fb1f6faf77dca7e6e7777{&width,height,upscale}",
                     "width" : 200,
@@ -15855,7 +15852,7 @@ paths:
                     "stockThreshold" : 1,
                     "availableStock" : 5,
                     "availabilityState" : "IN_STOCK",
-                    "purchasable" : false
+                    "purchasable" : true
                   }
                 },
                 "productIdentifiers" : [ {
@@ -15892,30 +15889,34 @@ paths:
                   "maxDays" : 10,
                   "displayUnit" : "days"
                 },
+                "variationAttributeValues" : [ {
+                  "displayName" : "Volume",
+                  "value" : "0.2l"
+                } ],
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/product-view/products/9367e17d-0489-49a4-92a3-e0c2dec6a5dc"
+                    "href" : "https://yourshop.api.urn/product-view/products/b702bc9b-75af-47c5-9518-96b8aad7a545"
                   },
                   "product" : {
-                    "href" : "https://yourshop.api.urn/product-view/products/9367e17d-0489-49a4-92a3-e0c2dec6a5dc"
+                    "href" : "https://yourshop.api.urn/product-view/products/b702bc9b-75af-47c5-9518-96b8aad7a545"
+                  },
+                  "variation-product" : {
+                    "href" : "https://yourshop.api.urn/product-view/products/857d91cd-3ca1-4b4b-92ed-b7b69031aa51"
                   },
                   "media" : {
-                    "href" : "https://yourshop.api.urn/product-view/products/9367e17d-0489-49a4-92a3-e0c2dec6a5dc/media"
+                    "href" : "https://yourshop.api.urn/product-view/products/b702bc9b-75af-47c5-9518-96b8aad7a545/media"
                   },
                   "images" : {
-                    "href" : "https://yourshop.api.urn/product-view/products/9367e17d-0489-49a4-92a3-e0c2dec6a5dc/images"
-                  },
-                  "videos" : {
-                    "href" : "https://yourshop.api.urn/product-view/products/9367e17d-0489-49a4-92a3-e0c2dec6a5dc/videos"
+                    "href" : "https://yourshop.api.urn/product-view/products/b702bc9b-75af-47c5-9518-96b8aad7a545/images"
                   },
                   "cross-sells" : {
-                    "href" : "https://yourshop.api.urn/product-view/products/9367e17d-0489-49a4-92a3-e0c2dec6a5dc/cross-sells"
+                    "href" : "https://yourshop.api.urn/product-view/products/b702bc9b-75af-47c5-9518-96b8aad7a545/cross-sells"
                   }
                 },
-                "_indexedAt" : "2021-03-18T09:49:15"
+                "_indexedAt" : "2021-03-18T09:49:26"
               }
           schema:
-            $ref: '#/definitions/product-view_products_productId-1261400178'
+            $ref: '#/definitions/product-view_products_productId-96491771'
   /product-view/categories/search/find-by-label:
     get:
       tags:
@@ -19425,13 +19426,12 @@ paths:
     post:
       tags:
       - products
-      summary: Upload product image
-      description: Uploads an image, and adds it to the product identified by {productId}.
-        The body of the request must contain the content of the image.
-      operationId: product-images-upload
+      summary: Add product image
+      description: Creates an image, and adds it to the product identified by {productId}.
+      operationId: product-images-create
       consumes:
-      - image/jpeg
       - application/hal+json
+      - image/jpeg
       produces:
       - application/hal+json
       parameters:
@@ -19457,6 +19457,12 @@ paths:
         schema:
           $ref: '#/definitions/products_productId_images755977584'
         x-examples:
+          application/hal+json: |-
+            {
+              "width" : 600,
+              "height" : 300,
+              "dataUri" : "photostore-2.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225998"
+            }
           image/jpeg: "����\0\x10JFIF\0\x01\x01\x01\0`\0`\0\0��\0C\0\x01\x01\x01\x01\
             \x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\
             \x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\
@@ -20692,12 +20698,6 @@ paths:
             '��\"�\x16���\0\x1e��S����:_\x0fX�k\x7f\x11u�2=\x17U����\x11�w\x17�/�\
             x�J��%��j�i�K#y�ie����j��t��\x12��|\x19�o�[|\x06�y�\rY�>\x12���\x1f��\\\
             ��m?�\"6:}�����,�pb��D5\x05�T\b5( ��\x03��"
-          application/hal+json: |-
-            {
-              "width" : 600,
-              "height" : 300,
-              "dataUri" : "photostore-2.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225998"
-            }
       responses:
         201:
           description: ""
@@ -20705,27 +20705,27 @@ paths:
             application/hal+json: |-
               {
                 "position" : 0,
-                "width" : 474,
-                "height" : 453,
-                "_id" : "9aef7483-c761-4545-bd29-883c91734767",
+                "width" : 600,
+                "height" : 300,
+                "_id" : "6fa27f4c-3274-461f-9bbf-b1649f7310bf",
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/products/adf64ab7-57bd-4ed5-a0d3-5e1a3a610596/images/9aef7483-c761-4545-bd29-883c91734767"
+                    "href" : "https://yourshop.api.urn/products/9f8d0e92-c2e3-4b0e-b8cc-0881b646991b/images/6fa27f4c-3274-461f-9bbf-b1649f7310bf"
                   },
                   "data" : {
-                    "href" : "https://yourshop.api.urn/api/core-storage/images/sample.png?hash=a40aac8e2e8846eaa4b51ab40b2df392{&width,height,upscale}",
+                    "href" : "https://yourshop.api.urn/api/core-storage/images/photostore-2.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225998{&width,height,upscale}",
                     "templated" : true
                   },
                   "metadata" : {
-                    "href" : "https://yourshop.api.urn/api/core-storage/images/sample.png?hash=a40aac8e2e8846eaa4b51ab40b2df392&download=no"
+                    "href" : "https://yourshop.api.urn/api/core-storage/images/photostore-2.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225998&download=no"
                   },
                   "image" : {
-                    "href" : "https://yourshop.api.urn/products/adf64ab7-57bd-4ed5-a0d3-5e1a3a610596/images/9aef7483-c761-4545-bd29-883c91734767"
+                    "href" : "https://yourshop.api.urn/products/9f8d0e92-c2e3-4b0e-b8cc-0881b646991b/images/6fa27f4c-3274-461f-9bbf-b1649f7310bf"
                   }
                 }
               }
           schema:
-            $ref: '#/definitions/products_productId_external-images1733515368'
+            $ref: '#/definitions/products_productId_images_imageId-1180979928'
       security:
       - oauth2_application:
         - prod:u
@@ -23381,11 +23381,10 @@ paths:
     post:
       tags:
       - products
-      summary: Upload multiple variation images to multiple variations
-      description: Uploads up to 10 images, and adds them to the variations identified
-        by {variationId} of the variation product identified by {productId}. The body
-        of the request must contain the contents of the images.
-      operationId: variation-images-upload-multiple_for_variations
+      summary: Add multiple variation images to multiple variations
+      description: Creates multiple images, and adds them to multiple variations identified
+        by {variationId} of the variation product identified by {productId}.
+      operationId: variations-images-create
       consumes:
       - application/hal+json
       parameters:
@@ -23394,16 +23393,15 @@ paths:
         description: ""
         required: true
         type: string
+      - name: variation
+        in: query
+        description: The immutable, unique identifier of the variation.
+        required: true
+        type: string
       - name: fileName
         in: query
         description: The file name of the image. Must be provided for each image to
           be uploaded.
-        required: true
-        type: string
-      - name: variation
-        in: query
-        description: The unique identifier of the variations to which the images are
-          to be uploaded.
         required: true
         type: string
       - name: Content-Type
@@ -23415,7 +23413,7 @@ paths:
         name: ""
         required: false
         schema:
-          $ref: '#/definitions/products_productId_variations_variationId_multiple-images41820512'
+          $ref: '#/definitions/products_productId_variations_images41820512'
         x-examples:
           application/hal+json: |-
             [ {
@@ -24295,8 +24293,8 @@ paths:
         of the request must contain the contents of the images.
       operationId: variation-images-upload-multiple
       consumes:
-      - image/jpeg
       - application/hal+json
+      - image/jpeg
       produces:
       - application/hal+json
       parameters:
@@ -24327,6 +24325,12 @@ paths:
         schema:
           $ref: '#/definitions/products_productId_variations_variationId_images-624560470'
         x-examples:
+          application/hal+json: |-
+            {
+              "width" : 600,
+              "height" : 300,
+              "dataUri" : "photostore-2.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225998"
+            }
           image/jpeg: "����\0\x10JFIF\0\x01\x01\x01\0`\0`\0\0��\0C\0\x01\x01\x01\x01\
             \x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\
             \x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\
@@ -25562,12 +25566,6 @@ paths:
             '��\"�\x16���\0\x1e��S����:_\x0fX�k\x7f\x11u�2=\x17U����\x11�w\x17�/�\
             x�J��%��j�i�K#y�ie����j��t��\x12��|\x19�o�[|\x06�y�\rY�>\x12���\x1f��\\\
             ��m?�\"6:}�����,�pb��D5\x05�T\b5( ��\x03��"
-          application/hal+json: |-
-            {
-              "width" : 600,
-              "height" : 300,
-              "dataUri" : "photostore-2.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225998"
-            }
       responses:
         201:
           description: ""
@@ -25639,7 +25637,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/products_productId_variations_variationId_multiple-images864955436'
+            $ref: '#/definitions/products_productId_variations_variationId_images864955436'
       security:
       - oauth2_application:
         - prod:u
@@ -25708,7 +25706,7 @@ paths:
         name: ""
         required: false
         schema:
-          $ref: '#/definitions/products_productId_variations_variationId_multiple-images41820512'
+          $ref: '#/definitions/products_productId_variations_images41820512'
         x-examples:
           application/hal+json: |-
             [ {
@@ -25795,7 +25793,7 @@ paths:
                 }
               }
           schema:
-            $ref: '#/definitions/products_productId_variations_variationId_multiple-images864955436'
+            $ref: '#/definitions/products_productId_variations_variationId_images864955436'
       security:
       - oauth2_application:
         - prod:u
@@ -26969,10 +26967,11 @@ paths:
     get:
       tags:
       - shipping-zones
-      summary: Show details of shipping method in shipping zone
-      description: Returns the details of the shipping method identified by {shippingMethodId}
-        in the shipping zone identified by {shippingZoneId}.
-      operationId: shipping-zones-shipping-method-get
+      summary: Show details of shipping method with weight-based price in shipping
+        zone
+      description: Returns the details of the shipping method with weight-based price
+        identified by {shippingMethodId} in the shipping zone identified by {shippingZoneId}.
+      operationId: shipping-zones-shipping-method-get-with-weight-based-price
       produces:
       - application/hal+json
       parameters:
@@ -26992,29 +26991,46 @@ paths:
           examples:
             application/hal+json: |-
               {
-                "_id" : "ae32081c-4deb-4368-9f98-df4d09a5e9b0",
-                "name" : "Standard",
-                "description" : "Standard shipping. Delivery within 3-4 days.",
+                "_id" : "67d4c268-bcab-4fbf-bdff-bb8428bb9e98",
+                "name" : "Weight-based",
+                "description" : "Standard shipping based on the shipping weight. Delivery within 4-5 days.",
                 "taxClass" : "REGULAR",
                 "position" : 0,
                 "freeShippingValue" : {
                   "currency" : "EUR",
-                  "amount" : 400
+                  "amount" : 1200
                 },
-                "fixedPrice" : {
-                  "taxModel" : "GROSS",
-                  "currency" : "EUR",
-                  "amount" : 4.99
+                "fixedPrice" : null,
+                "weightBasedPrice" : {
+                  "weightPriceThresholds" : [ {
+                    "maxWeight" : 1000,
+                    "price" : {
+                      "taxModel" : "GROSS",
+                      "currency" : "EUR",
+                      "amount" : 9.9
+                    }
+                  }, {
+                    "maxWeight" : 5000,
+                    "price" : {
+                      "taxModel" : "GROSS",
+                      "currency" : "EUR",
+                      "amount" : 14.9
+                    }
+                  } ],
+                  "unlimitedWeightPrice" : {
+                    "taxModel" : "GROSS",
+                    "currency" : "EUR",
+                    "amount" : 34.9
+                  }
                 },
-                "weightBasedPrice" : null,
                 "_links" : {
                   "self" : {
-                    "href" : "https://yourshop.api.urn/shipping-zones/6f475f17-ebb3-4336-bf1f-ebc356a5b547/shipping-methods/ae32081c-4deb-4368-9f98-df4d09a5e9b0"
+                    "href" : "https://yourshop.api.urn/shipping-zones/6b5b4408-0d43-4982-b814-6671498adf47/shipping-methods/67d4c268-bcab-4fbf-bdff-bb8428bb9e98"
                   }
                 }
               }
           schema:
-            $ref: '#/definitions/shipping-zones_shippingZoneId_shipping-methods_shippingMethodId757632631'
+            $ref: '#/definitions/shipping-zones_shippingZoneId_shipping-methods_shippingMethodId-1858817032'
       security:
       - oauth2_application:
         - shpz:r
@@ -28608,9 +28624,10 @@ paths:
     post:
       tags:
       - support-agents
-      summary: Create support agent
-      description: Creates a login for a support agent for the shop.
-      operationId: support-agent-create
+      summary: Support access disabled error on create support agent
+      description: Cannot create support agent if the support access is not enabled
+        by the merchant.
+      operationId: support-agent-create-disabled-error
       consumes:
       - application/json
       produces:
@@ -28628,19 +28645,6 @@ paths:
               "password" : "1aOf7Ah9k7kH5fidOux6DtTg0Y"
             }
       responses:
-        200:
-          description: ""
-          examples: {}
-        400:
-          description: ""
-          examples:
-            application/json: |-
-              {
-                "errorId" : "auth.user.password-not-conforming-to-policy",
-                "details" : { },
-                "message" : "Password should be at least 8 characters long and fulfill at least three of following security requirements: should contain at least one lower case letter, should contain at least one upper case letter, should contain at least one digit, should contain at least one special character.",
-                "traceId" : null
-              }
         403:
           description: ""
           examples:
@@ -28651,9 +28655,19 @@ paths:
                 "message" : "The merchant doesn't allow support access for this shop.",
                 "traceId" : null
               }
-      security:
-      - oauth2_application:
-        - supp:c
+        400:
+          description: ""
+          examples:
+            application/json: |-
+              {
+                "errorId" : "auth.user.password-not-conforming-to-policy",
+                "details" : { },
+                "message" : "Password should be at least 8 characters long and fulfill at least three of following security requirements: should contain at least one lower case letter, should contain at least one upper case letter, should contain at least one digit, should contain at least one special character.",
+                "traceId" : null
+              }
+        200:
+          description: ""
+          examples: {}
   /users/reset-password-request:
     post:
       tags:
@@ -29199,6 +29213,7 @@ securityDefinitions:
       pypr:r: No description
       rfpr:r: No description
       rtpr:r: No description
+      rtpr:c: No description
       shpr:r: No description
       shpr:c: No description
       pypr:u: No description
@@ -29245,20 +29260,10 @@ securityDefinitions:
       shim:d: No description
       loca:u: No description
       loca:d: No description
-      supp:c: No description
       user:r: No description
   basic:
     type: basic
 definitions:
-  callback1399100261:
-    example: |-
-      {
-        "_payloadType" : "app",
-        "_id" : "93d068f4-3a2b-4a8e-95cc-2a2ed4822240",
-        "clientId" : "clientId",
-        "feature" : "app.test-app",
-        "name" : { }
-      }
   orders_orderId_processes_cancelations-65587184:
     type: object
     properties:
@@ -29848,6 +29853,8 @@ definitions:
                   type: boolean
                   description: Indicates if a payment method is active. Can be `true`
                     or `false`.
+  callback1173613549:
+    example: <payload>
   orders_orderId_processes_payments_payment-process-id_mark-paid-835878899:
     type: object
     properties:
@@ -38786,6 +38793,60 @@ definitions:
                     type: boolean
                     description: Indicates if a payment method is active. Can be `true`
                       or `false`.
+  shipping-zones_shippingZoneId_shipping-methods_shippingMethodId-1858817032:
+    type: object
+    properties:
+      taxClass:
+        type: string
+        description: The tax class. Can be one of `REGULAR`, `REDUCED`, or `EXEMPT`.
+      freeShippingValue:
+        type: object
+        description: Once a customer reaches this amount (excluding payment fee),
+          this shipping method is free of charge.
+        properties: {}
+      name:
+        type: string
+        description: The name of the shipping method.
+      description:
+        type: string
+        description: The description of the shipping method.
+      weightBasedPrice:
+        type: object
+        description: The price depending on the package weight (optional).
+        properties:
+          weightPriceThresholds:
+            type: array
+            description: A list of package prices that are valid up to the respective
+              maximum weight.
+            items:
+              type: object
+              properties:
+                price:
+                  type: object
+                  description: The price for this weight range.
+                  properties: {}
+                maxWeight:
+                  type: number
+                  description: The maximum weight in gram that applies to this weight
+                    range.
+          unlimitedWeightPrice:
+            type: object
+            description: The price for the package if its weight exceeds the highest
+              weight limit. If this value is not available, the shipping method is
+              not applicable.
+            properties: {}
+      position:
+        type: number
+        description: The sorting position of the shipping method in the merchant's
+          cockpit in relation to other shipping methods.
+      _id:
+        type: string
+        description: The immutable, unique identifier of the requested resource.
+      fixedPrice:
+        type: object
+        description: The fixed price for the shipping method irrespective of weight,
+          dimensions, etc.
+        properties: {}
   products_productId_variations_images-579966557:
     type: object
     properties:
@@ -41810,7 +41871,7 @@ definitions:
         type: object
         description: See https://developer.epages.com/beyond-docs/#pagination[Pagination]
         properties: {}
-  products_productId_variations_variationId_multiple-images41820512:
+  products_productId_variations_images41820512:
     type: array
     items:
       type: object
@@ -42788,6 +42849,215 @@ definitions:
           "callbackUri":"http://example.com/test",
           "eventTypes": ["order.created", "product.created"]
       }
+  product-view_products_productId-96491771:
+    type: object
+    properties:
+      essentialFeatures:
+        type: string
+        description: The essential features of the product. Shown in the cart and
+          checkout. In Germany mandatory field in online shops according to §312j
+          Abs. 2 BGB (German Civil Code).
+      _links:
+        type: object
+        description: See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
+        properties: {}
+      salesPrice:
+        type: object
+        description: The price of the product.
+        properties: {}
+      description:
+        type: string
+        description: The description of the product.
+      variationAttributeValues:
+        type: array
+        description: The specific variation attributes for the selected variation.
+        items:
+          type: object
+          properties:
+            displayName:
+              type: string
+              description: The name of the variation attribute.
+            value:
+              type: string
+              description: The value of the variation attribute.
+      manufacturer:
+        type: string
+        description: The manufacturer of the product.
+      productIdentifiers:
+        type: array
+        items:
+          type: object
+          properties:
+            type:
+              type: string
+              description: The product code to identify and classify the product.
+            value:
+              type: string
+              description: The actual value of the product identifier.
+      _embedded:
+        type: object
+        properties:
+          availability:
+            type: object
+            properties:
+              purchasable:
+                type: boolean
+                description: Indicates if the product is available for purchase. Can
+                  be `true` or `false`. If the product is not available for purchase,
+                  its availability state is `NOT_AVAILABLE`.
+              availabilityState:
+                type: string
+                description: The current availability state for the product. Can be
+                  one of `IN_STOCK`, `LOW_STOCK`, `OUT_OF_STOCK`, or `NOT_AVAILABLE`.
+              availableStock:
+                type: number
+                description: The number of products available in stock.
+              stockThreshold:
+                type: number
+                description: The inventory level that indicates that the product needs
+                  to be reordered. If the stock level of the product is equal to or
+                  lower than this value but higher than 0, the availability state
+                  for the product is `LOW_STOCK`.
+          defaultImage:
+            type: object
+            properties:
+              dataUri:
+                type: string
+                description: The templated relative download URL of the default product
+                  image.
+              width:
+                type: number
+                description: The width of the default product image.
+              height:
+                type: number
+                description: The height of the default product image.
+      shippingWeight:
+        type: number
+        description: The weight of the product including packaging in g.
+      variations:
+        type: array
+        description: The variations of the variation product.
+        items:
+          type: object
+          properties:
+            _id:
+              type: string
+              description: The unique identifier of the variation.
+            variationAttributeValues:
+              type: array
+              description: The concrete variation attributes for the variation.
+              items:
+                type: object
+                properties:
+                  displayName:
+                    type: string
+                    description: The name of the variation attribute.
+                  value:
+                    type: string
+                    description: The value of the variation attribute.
+      maxSalesPrice:
+        type: object
+        description: The maximum price of the product.
+        properties: {}
+      minSalesPrice:
+        type: object
+        description: The minimum price of the product.
+        properties: {}
+      sku:
+        type: string
+        description: The stock keeping unit (SKU) corresponding to the variation.
+      shippingDimension:
+        type: object
+        description: The shipping dimensions of the product displayed in mm.
+        properties:
+          width:
+            type: number
+            description: The width of the product including packaging in mm.
+          length:
+            type: number
+            description: The length of the product including packaging in mm.
+          height:
+            type: number
+            description: The height of the product including packaging in mm.
+      _indexedAt:
+        type: string
+        description: The time of storing the document in the search index.
+      shippingPeriod:
+        type: object
+        description: The shipping period for the product.
+        properties: {}
+      tags:
+        type: array
+        description: The tags assigned to the product.
+        items: {}
+      refPrice:
+        type: object
+        description: The price information scaled to a standardised base unit.
+        properties:
+          unit:
+            type: string
+            description: The unit corresponding to the quantity.
+          quantity:
+            type: number
+            description: The actual quantity in the product.
+          price:
+            type: object
+            description: The actual reference price.
+            properties: {}
+          refQuantity:
+            type: number
+            description: The reference quantity the product's reference price is calculated
+              on.
+      availabilityState:
+        type: string
+        description: (Deprecated) The current availability state for the product.
+          Can be one of `IN_STOCK`, `LOW_STOCK`, `OUT_OF_STOCK`, or `NOT_AVAILABLE`.
+      name:
+        type: string
+        description: The name of the product.
+      variationAttributes:
+        type: array
+        description: The variation attributes with its values.
+        items:
+          type: object
+          properties:
+            displayName:
+              type: string
+              description: The name of the variation attribute.
+            values:
+              type: array
+              description: The values of the variation attribute.
+              items: {}
+      manufacturerPrice:
+        type: object
+        description: The manufacturer's suggested retail price of the product.
+        properties: {}
+      attributes:
+        type: array
+        description: The product properties.
+        items:
+          type: object
+          properties:
+            displayName:
+              type: string
+              description: The displayed name of the product property.
+            format:
+              type: string
+              description: The format of the attribute value.
+            formattedValue:
+              description: The formatted value of the product property.
+            value:
+              description: The value of the product property.
+            key:
+              type: string
+              description: The unique identifier of the product property.
+      _id:
+        type: string
+        description: The unique identifier of the product.
+      listPrice:
+        type: object
+        description: The previous price of the product that is currently on offer.
+        properties: {}
   products_productId_external-images1733515368:
     type: object
     required:
@@ -43519,252 +43789,6 @@ definitions:
                     method cannot be ordered.
   carts_cartId_shipping-methods_current1209818951:
     example: https://yourshop.api.urn/shipping-zones/27635346-e87b-489f-a47d-84e19823fc75/shipping-methods/5912daa5-2527-431b-9720-a20bcfa8a6f4
-  product-view_products_productId-1261400178:
-    type: object
-    properties:
-      _indexedAt:
-        type: string
-        description: The time of storing the document in the search index.
-      essentialFeatures:
-        type: string
-        description: The essential features of the product. Shown in the cart and
-          checkout. In Germany mandatory field in online shops according to §312j
-          Abs. 2 BGB (German Civil Code).
-      _links:
-        type: object
-        description: See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-        properties: {}
-      salesPrice:
-        type: object
-        description: The price of the product.
-        properties: {}
-      description:
-        type: string
-        description: The description of the product.
-      shippingPeriod:
-        type: object
-        description: The shipping period for the product.
-        properties: {}
-      tags:
-        type: array
-        description: The tags assigned to the product.
-        items: {}
-      manufacturer:
-        type: string
-        description: The manufacturer of the product.
-      refPrice:
-        type: object
-        description: The price information scaled to a standardised base unit.
-        properties:
-          unit:
-            type: string
-            description: The unit corresponding to the quantity.
-          quantity:
-            type: number
-            description: The actual quantity in the product.
-          price:
-            type: object
-            description: The actual reference price.
-            properties: {}
-          refQuantity:
-            type: number
-            description: The reference quantity the product's reference price is calculated
-              on.
-      productIdentifiers:
-        type: array
-        items:
-          type: object
-          properties:
-            type:
-              type: string
-              description: The product code to identify and classify the product.
-            value:
-              type: string
-              description: The actual value of the product identifier.
-      availabilityState:
-        type: string
-        description: (Deprecated) The current availability state for the product.
-          Always `NOT_AVAILABLE` for variation products.
-      _embedded:
-        type: object
-        properties:
-          availability:
-            type: object
-            properties:
-              purchasable:
-                type: boolean
-                description: Indicates if the product is available for purchase. Can
-                  be `true` or `false`. If the product is not available for purchase,
-                  its availability state is `NOT_AVAILABLE`.
-              availabilityState:
-                type: string
-                description: The current availability state for the product. Can be
-                  one of `IN_STOCK`, `LOW_STOCK`, `OUT_OF_STOCK`, or `NOT_AVAILABLE`.
-              availableStock:
-                type: number
-                description: The number of products available in stock.
-              stockThreshold:
-                type: number
-                description: The inventory level that indicates that the product needs
-                  to be reordered. If the stock level of the product is equal to or
-                  lower than this value but higher than 0, the availability state
-                  for the product is `LOW_STOCK`.
-          stockLevel:
-            type: object
-            description: The stock level range of the variations of the variation
-              product.
-            properties:
-              min:
-                type: number
-                description: The lowest stock level across all variations of the variation
-                  product.
-              max:
-                type: number
-                description: The highest stock level across all variations of the
-                  variation product.
-              stockThreshold:
-                type: number
-                description: The inventory level that indicates that a variation of
-                  the variation product needs to be reordered. If the stock level
-                  of a variation is equal to or lower than this value but higher than
-                  0, the availability state for the variation is `LOW_STOCK`.
-          defaultImage:
-            type: object
-            properties:
-              dataUri:
-                type: string
-                description: The templated relative download URL of the default product
-                  image.
-              width:
-                type: number
-                description: The width of the default product image.
-              height:
-                type: number
-                description: The height of the default product image.
-      shippingWeight:
-        type: number
-        description: The weight of the product including packaging in g.
-      variations:
-        type: array
-        description: The variations of the variation product.
-        items:
-          type: object
-          properties:
-            _id:
-              type: string
-              description: The unique identifier of the variation.
-            variationAttributeValues:
-              type: array
-              description: The concrete variation attributes for the variation.
-              items:
-                type: object
-                properties:
-                  displayName:
-                    type: string
-                    description: The name of the variation attribute.
-                  value:
-                    type: string
-                    description: The value of the variation attribute.
-      maxSalesPrice:
-        type: object
-        description: The maximum price of the product.
-        properties: {}
-      minSalesPrice:
-        type: object
-        description: The minimum price of the product.
-        properties: {}
-      name:
-        type: string
-        description: The name of the product.
-      variationAttributes:
-        type: array
-        description: The variation attributes with its values.
-        items:
-          type: object
-          properties:
-            displayName:
-              type: string
-              description: The name of the variation attribute.
-            values:
-              type: array
-              description: The values of the variation attribute.
-              items: {}
-      manufacturerPrice:
-        type: object
-        description: The manufacturer's suggested retail price of the product.
-        properties: {}
-      attributes:
-        type: array
-        description: The product properties.
-        items:
-          type: object
-          properties:
-            displayName:
-              type: string
-              description: The displayed name of the product property.
-            format:
-              type: string
-              description: The format of the attribute value.
-            formattedValue:
-              description: The formatted value of the product property.
-            value:
-              description: The value of the product property.
-            key:
-              type: string
-              description: The unique identifier of the product property.
-      _id:
-        type: string
-        description: The unique identifier of the product.
-      shippingDimension:
-        type: object
-        description: The shipping dimensions of the product displayed in mm.
-        properties:
-          width:
-            type: number
-            description: The width of the product including packaging in mm.
-          length:
-            type: number
-            description: The length of the product including packaging in mm.
-          height:
-            type: number
-            description: The height of the product including packaging in mm.
-      listPrice:
-        type: object
-        description: The previous price of the product that is currently on offer.
-        properties: {}
-  shipping-zones_shippingZoneId_shipping-methods_shippingMethodId757632631:
-    type: object
-    properties:
-      taxClass:
-        type: string
-        description: The tax class. Can be one of `REGULAR`, `REDUCED`, or `EXEMPT`.
-      freeShippingValue:
-        type: object
-        description: Once a customer reaches this amount (excluding payment fee),
-          this shipping method is free of charge.
-        properties: {}
-      name:
-        type: string
-        description: The name of the shipping method.
-      description:
-        type: string
-        description: The description of the shipping method.
-      weightBasedPrice:
-        type: object
-        description: The price depending on the package weight (optional).
-        properties: {}
-      position:
-        type: number
-        description: The sorting position of the shipping method in the merchant's
-          cockpit in relation to other shipping methods.
-      _id:
-        type: string
-        description: The immutable, unique identifier of the requested resource.
-      fixedPrice:
-        type: object
-        description: The fixed price for the shipping method irrespective of weight,
-          dimensions, etc.
-        properties: {}
   product-view_products_productId_images_imageId-2799947:
     type: object
     properties:
@@ -44070,58 +44094,6 @@ definitions:
         type: object
         description: See https://developer.epages.com/beyond-docs/#pagination[Pagination]
         properties: {}
-  orders_orderId_processes_returns633557683:
-    type: object
-    properties:
-      lineItems:
-        type: array
-        items:
-          type: object
-          properties:
-            quantity:
-              type: number
-              description: The quantity of the product line item in the return process.
-            productLineItemId:
-              type: string
-              description: The ID of a specified product line item in the return process.
-            status:
-              type: string
-              description: The status of the product line item in the return process.
-                Can be one of `RETURNED` or `BROKEN`.
-      shippingProcessId:
-        type: string
-        description: The ID of the shipping process.
-      shippingPriceRefund:
-        type: object
-        properties:
-          amount:
-            type: number
-            description: The price for the shipping line item to be refunded.
-          currency:
-            type: string
-            description: The currency of the price for the shipping line item.
-      sendMail:
-        type: boolean
-        description: Indicates if an email has to be sent out to notify the customer
-          that the merchant received the returned items. Can be `true` or `false`.
-      comment:
-        type: string
-        description: The comment to the status change.
-    example: |-
-      {
-        "comment" : "The screen has cracks.",
-        "sendMail" : true,
-        "lineItems" : [ {
-          "quantity" : 3,
-          "productLineItemId" : "731652c8-917a-4ca7-aa6f-61e4b3ead0a7",
-          "status" : "RETURNED"
-        } ],
-        "shippingPriceRefund" : {
-          "currency" : "EUR",
-          "amount" : 4.99
-        },
-        "shippingProcessId" : "af972d9d-8262-462d-ad2c-69c2cda6617c"
-      }
   products_productId_variations_images-411469813:
     type: object
     properties:
@@ -46310,7 +46282,7 @@ definitions:
             type: string
             description: The bank identifier code (BIC) of the bank holding the bank
               account of the shop.
-  products_productId_variations_variationId_multiple-images864955436:
+  products_productId_variations_variationId_images864955436:
     type: object
     properties:
       _embedded:
@@ -47076,6 +47048,58 @@ definitions:
         description: The code of the coupon which the customer can enter in the checkout
           process to receive a discount on their purchase.
     example: '{"code":"FIRST-ORDER"}'
+  orders_orderId_processes_returns-1627832017:
+    type: object
+    properties:
+      lineItems:
+        type: array
+        items:
+          type: object
+          properties:
+            quantity:
+              type: number
+              description: The quantity of the product line item in the return process.
+            productLineItemId:
+              type: string
+              description: The ID of a specified product line item in the return process.
+            status:
+              type: string
+              description: The status of the product line item in the return process.
+                Can be one of `RETURNED` or `BROKEN`.
+      shippingProcessId:
+        type: string
+        description: The ID of the shipping process.
+      shippingPriceRefund:
+        type: object
+        properties:
+          amount:
+            type: number
+            description: The price for the shipping line item to be refunded.
+          currency:
+            type: string
+            description: The currency of the price for the shipping line item.
+      sendMail:
+        type: boolean
+        description: Indicates if an email has to be sent out to notify the customer
+          that the merchant received the returned items. Can be `true` or `false`.
+      comment:
+        type: string
+        description: The comment to the status change.
+    example: |-
+      {
+        "comment" : "The screen has cracks.",
+        "sendMail" : true,
+        "lineItems" : [ {
+          "quantity" : 3,
+          "productLineItemId" : "f6a69eed-82c7-40c5-a389-e560ec29fa8f",
+          "status" : "RETURNED"
+        } ],
+        "shippingPriceRefund" : {
+          "currency" : "EUR",
+          "amount" : 4.99
+        },
+        "shippingProcessId" : "ccacdcfc-06ab-49ba-9eae-deba8e88b4fc"
+      }
   orders_orderId_events-1682224541:
     type: object
     properties:

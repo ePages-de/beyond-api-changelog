@@ -1,5 +1,26 @@
 # Beyond API Changelog
 
+## 2021-03-26
+
+-XX:InitialHeapSize=130717952 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `GET` /product-view/products/{productId} Show variation details  
+    Return Type
+
+        Add variationAttributeValues //The specific variation attributes for the selected variation.
+        Add sku //The stock keeping unit (SKU) corresponding to the variation.
+* `POST` /products/{productId}/variations/images Add multiple variation images to multiple variations  
+    Parameter
+
+        variation Notes The unique identifier of the variations to which the images are to be uploaded. change into The immutable, unique identifier of the variation.
+
 ## 2021-03-25
 
 -XX:InitialHeapSize=64572928 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
