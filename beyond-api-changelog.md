@@ -2,51 +2,9 @@
 
 ## 2021-03-29
 
--XX:InitialHeapSize=130717952 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
-### What's New
----
-
-### What's Deprecated
----
-
 ### What's Changed
 ---
-* `GET` /carts/{cartId} Show cart details  
-    Return Type
 
-        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `POST` /carts/{cartId}/line-items Invalid tax class  
-    Return Type
-
-        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `PUT` /carts/{cartId}/line-items Add line items  
-    Return Type
-
-        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `PUT` /carts/{cartId}/line-items/{lineItemId} Replace single line item  
-    Return Type
-
-        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `GET` /payment-methods List payment methods  
-    Return Type
-
-        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `GET` /payment-methods/{paymentMethodId} Show payment method details  
-    Return Type
-
-        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `PUT` /payment-methods/{paymentMethodId} Update payment method  
-    Return Type
-
-        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `POST` /payment-methods/{paymentMethodId}/activate Activate payment method  
-    Return Type
-
-        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `POST` /payment-methods/{paymentMethodId}/deactivate Deactivate payment method  
-    Return Type
-
-        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
 * `GET` /product-view/products/{productId} Show variation product details  
     Return Type
 
@@ -56,38 +14,7 @@
     Parameter
 
         variation Notes The immutable, unique identifier of the variation. change into The unique identifier of the variations to which the images are to be uploaded.
-* `GET` /shipping-zones List shipping zones  
-    Return Type
 
-        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `GET` /shipping-zones/{shippingZoneId} Show shipping zone details  
-    Return Type
-
-        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `PUT` /shipping-zones/{shippingZoneId} Update shipping zone  
-    Return Type
-
-        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `GET` /shipping-zones/search/find-all-serviceable-countries Find serviceable countries  
-    Return Type
-
-        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `GET` /shipping-zones/{shippingZoneId}/shipping-methods List shipping methods of shipping zone  
-    Return Type
-
-        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `PUT` /shipping-zones/{shippingZoneId}/shipping-methods Sort shipping methods in shipping zone  
-    Return Type
-
-        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `GET` /shipping-zones/{shippingZoneId}/shipping-methods/{shippingMethodId} Show details of shipping method in shipping zone  
-    Return Type
-
-        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `PUT` /shipping-zones/{shippingZoneId}/shipping-methods/{shippingMethodId} Modify shipping method  
-    Return Type
-
-        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
 
 ## 2021-03-26
 
