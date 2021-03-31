@@ -1,5 +1,29 @@
 # Beyond API Changelog
 
+## 2021-03-31
+
+-XX:InitialHeapSize=130717952 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `POST` /customers Create customer  
+    Parameter
+
+        Add .customerComment //The merchant comment or note on the customer.
+* `GET` /customers/{id} Show customer details  
+    Return Type
+
+        Add customerComment //The merchant comment or note on the customer.
+* `PUT` /customers/{customerId}/master-data Update customer master data  
+    Return Type
+
+        Add customerComment //The merchant comment or note on the customer.
+
 ## 2021-03-30
 
 -XX:InitialHeapSize=130717952 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
