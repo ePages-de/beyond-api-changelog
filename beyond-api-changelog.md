@@ -1,5 +1,49 @@
 # Beyond API Changelog
 
+## 2021-04-06
+
+-XX:InitialHeapSize=130717952 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `GET` /orders/{orderId} Show order details  
+    Return Type
+
+        Delete backgroundJobs //(Deprecated) Pending processes initiated via the cockpit or the API that run in the background, e.g. rendering an invoice document. Instead, please refer to the links section of the respective order resource to get an indication whether the rendering of an order document is completed.
+* `GET` /orders/search/find-by-cart-id Show order by cart ID  
+    Return Type
+
+        Delete backgroundJobs //(Deprecated) Pending processes initiated via the cockpit or the API that run in the background, e.g. rendering an invoice document. Instead, please refer to the links section of the respective order resource to get an indication whether the rendering of an order document is completed.
+* `POST` /orders/{id}/send-order-document Send order document  
+    Return Type
+
+        Delete backgroundJobs //(Deprecated) Pending processes initiated via the cockpit or the API that run in the background, e.g. rendering an invoice document. Instead, please refer to the links section of the respective order resource to get an indication whether the rendering of an order document is completed.
+* `PUT` /orders/{orderId}/billing-address Update billing address  
+    Return Type
+
+        Delete backgroundJobs //(Deprecated) Pending processes initiated via the cockpit or the API that run in the background, e.g. rendering an invoice document. Instead, please refer to the links section of the respective order resource to get an indication whether the rendering of an order document is completed.
+* `POST` /orders/{orderId}/cancel Cancel order  
+    Return Type
+
+        Delete backgroundJobs //(Deprecated) Pending processes initiated via the cockpit or the API that run in the background, e.g. rendering an invoice document. Instead, please refer to the links section of the respective order resource to get an indication whether the rendering of an order document is completed.
+* `POST` /orders/{orderId}/create-invoice Create invoice  
+    Return Type
+
+        Delete backgroundJobs //(Deprecated) Pending processes initiated via the cockpit or the API that run in the background, e.g. rendering an invoice document. Instead, please refer to the links section of the respective order resource to get an indication whether the rendering of an order document is completed.
+* `PUT` /orders/{orderId}/order-note Update order note  
+    Return Type
+
+        Delete backgroundJobs //(Deprecated) Pending processes initiated via the cockpit or the API that run in the background, e.g. rendering an invoice document. Instead, please refer to the links section of the respective order resource to get an indication whether the rendering of an order document is completed.
+* `PUT` /orders/{orderId}/shipping-address Update shipping address  
+    Return Type
+
+        Delete backgroundJobs //(Deprecated) Pending processes initiated via the cockpit or the API that run in the background, e.g. rendering an invoice document. Instead, please refer to the links section of the respective order resource to get an indication whether the rendering of an order document is completed.
+
 ## 2021-03-31
 
 -XX:InitialHeapSize=130717952 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
