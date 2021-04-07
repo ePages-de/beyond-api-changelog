@@ -1,5 +1,112 @@
 # Beyond API Changelog
 
+## 2021-04-07
+
+-XX:InitialHeapSize=64663872 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `GET` /carts/{cartId} Show cart details  
+    Return Type
+
+        Delete balanceDue //(Deprecated - use the property `grandTotal` instead.) The outstanding balance of the amount to be paid.
+* `PUT` /carts/{cardId}/customer Assign customer to cart  
+    Return Type
+
+        Delete balanceDue //(Deprecated - use the property `grandTotal` instead.) The outstanding balance of the amount to be paid.
+* `PUT` /carts/{cartId}/billing-address Set cart billing address  
+    Return Type
+
+        Delete balanceDue //(Deprecated - use the property `grandTotal` instead.) The outstanding balance of the amount to be paid.
+* `POST` /carts/{cartId}/coupon Redeem coupon  
+    Return Type
+
+        Delete balanceDue //(Deprecated - use the property `grandTotal` instead.) The outstanding balance of the amount to be paid.
+* `POST` /carts/{cartId}/line-items Invalid tax class  
+    Return Type
+
+        Delete balanceDue //(Deprecated - use the property `grandTotal` instead.) The outstanding balance of the amount to be paid.
+* `PUT` /carts/{cartId}/line-items Add line items  
+    Return Type
+
+        Delete balanceDue //(Deprecated - use the property `grandTotal` instead.) The outstanding balance of the amount to be paid.
+* `PUT` /carts/{cartId}/shipping-address Set current cart shipping address  
+    Return Type
+
+        Delete balanceDue //(Deprecated - use the property `grandTotal` instead.) The outstanding balance of the amount to be paid.
+* `PUT` /carts/{cartId}/line-items/{lineItemId} Replace single line item  
+    Return Type
+
+        Delete balanceDue //(Deprecated - use the property `grandTotal` instead.) The outstanding balance of the amount to be paid.
+* `PUT` /carts/{cartId}/payment-methods/current Set current cart payment method  
+    Return Type
+
+        Delete balanceDue //(Deprecated - use the property `grandTotal` instead.) The outstanding balance of the amount to be paid.
+* `PUT` /carts/{cartId}/payment-methods/default Set cart payment method to current default  
+    Return Type
+
+        Delete balanceDue //(Deprecated - use the property `grandTotal` instead.) The outstanding balance of the amount to be paid.
+* `PUT` /carts/{cartId}/shipping-methods/current Set current cart shipping method  
+    Return Type
+
+        Delete balanceDue //(Deprecated - use the property `grandTotal` instead.) The outstanding balance of the amount to be paid.
+* `PUT` /carts/{cartId}/shipping-methods/default Set cart shipping method to current default  
+    Return Type
+
+        Delete balanceDue //(Deprecated - use the property `grandTotal` instead.) The outstanding balance of the amount to be paid.
+* `PUT` /customers/{customerId} Update customer  
+    Parameter
+
+        Add .customerComment //The merchant comment or note on the customer.
+    Return Type
+
+        Add customerComment //The merchant comment or note on the customer.
+* `GET` /orders/{orderId} Show order details  
+    Return Type
+
+        Delete initialBalanceDue
+        Delete balanceDue
+* `GET` /orders/search/find-by-cart-id Show order by cart ID  
+    Return Type
+
+        Delete initialBalanceDue
+        Delete balanceDue
+* `POST` /orders/{id}/send-order-document Send order document  
+    Return Type
+
+        Delete initialBalanceDue
+        Delete balanceDue
+* `PUT` /orders/{orderId}/billing-address Update billing address  
+    Return Type
+
+        Delete initialBalanceDue
+        Delete balanceDue
+* `POST` /orders/{orderId}/cancel Cancel order  
+    Return Type
+
+        Delete initialBalanceDue
+        Delete balanceDue
+* `POST` /orders/{orderId}/create-invoice Create invoice  
+    Return Type
+
+        Delete initialBalanceDue
+        Delete balanceDue
+* `PUT` /orders/{orderId}/order-note Update order note  
+    Return Type
+
+        Delete initialBalanceDue
+        Delete balanceDue
+* `PUT` /orders/{orderId}/shipping-address Update shipping address  
+    Return Type
+
+        Delete initialBalanceDue
+        Delete balanceDue
+
 ## 2021-04-06
 
 -XX:InitialHeapSize=130717952 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
