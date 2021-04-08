@@ -1,5 +1,23 @@
 # Beyond API Changelog
 
+## 2021-04-08
+
+-XX:InitialHeapSize=130717952 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `POST` /callback Order events callback  
+    Parameter
+
+        X-EPAGES-SIGNATURE Notes The cyrptographic digital signature calculated from the request URI, payload, and the mutually known signer secret (see http://docs.beyondshop.cloud/#_signers[docs.beyondshop.cloud]). change into The cryptographic digital signature to verify that the request is originating from ePages (see https://developer.epages.com/beyond-docs/#signers[Signers]).
+        X-EPAGES-WEBHOOK-EVENT-TYPE Notes One of the subscription event type names. change into The name of the webhook subscription event type.
+        Content-Type Notes The content type of the callback request. It is always `application/json`. change into The content type of the callback request. Is always `application/json`.
+
 ## 2021-04-07
 
 -XX:InitialHeapSize=64663872 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
