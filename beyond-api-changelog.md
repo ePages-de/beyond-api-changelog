@@ -1,5 +1,19 @@
 # Beyond API Changelog
 
+## 2021-04-13
+
+-XX:InitialHeapSize=130717952 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+* `POST` /orders/{orderId}/mark-as-viewed Marks the order as viewed
+
+### What's Deprecated
+---
+* `POST` /support-agents Create support agent
+
+### What's Changed
+---
+
 ## 2021-04-12
 
 
