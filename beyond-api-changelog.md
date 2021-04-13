@@ -2,59 +2,10 @@
 
 ## 2021-04-12
 
--XX:InitialHeapSize=130717952 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
-### What's New
----
-
-### What's Deprecated
----
 
 ### What's Changed
 ---
-* `GET` /carts/{cartId} Show cart details  
-    Return Type
 
-        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `POST` /carts/{cartId}/coupon Redemption limit reached  
-    Return Type
-
-        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `POST` /carts/{cartId}/line-items Invalid tax class  
-    Return Type
-
-        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `PUT` /carts/{cartId}/line-items Add line items  
-    Return Type
-
-        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `PUT` /carts/{cartId}/line-items/{lineItemId} Replace single line item  
-    Return Type
-
-        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `GET` /coupon-campaigns List coupon campaigns  
-    Return Type
-
-        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `PUT` /coupon-campaigns/{couponCampaignId} Update coupon campaign  
-    Return Type
-
-        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `GET` /coupon-campaigns/{couponCampaignId} Show details of coupon campaign  
-    Return Type
-
-        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `PUT` /coupon-campaigns/{couponCampaignId}/coupons Update coupon codes  
-    Return Type
-
-        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `GET` /coupon-campaigns/{couponCampaignId}/coupons List coupon codes  
-    Return Type
-
-        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `PUT` /coupon-campaigns/{couponCampaignId}/status Invalid status transition  
-    Return Type
-
-        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
 * `GET` /orders/{orderId} Show order details  
     Return Type
 
