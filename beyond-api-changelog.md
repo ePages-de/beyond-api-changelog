@@ -1,5 +1,36 @@
 # Beyond API Changelog
 
+## 2021-04-15
+
+-XX:InitialHeapSize=130717952 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+
+### What's Deprecated
+---
+
+### What's Changed
+---
+* `POST` /categories Create product category  
+    Parameter
+
+        Add .filters //The list of category filters.
+* `PATCH` /categories/{categoryId} Update product category partially  
+    Return Type
+
+        Add filters //The list of category filters.
+* `GET` /categories/{categoryId} Show product category details  
+    Return Type
+
+        Add filters //The list of category filters.
+* `PUT` /categories/{categoryId} Update all product category properties  
+    Parameter
+
+        Add .filters //The list of category filters.
+    Return Type
+
+        Add filters //The list of category filters.
+
 ## 2021-04-13
 
 -XX:InitialHeapSize=130717952 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
