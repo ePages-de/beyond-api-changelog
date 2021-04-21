@@ -1,5 +1,20 @@
 # Beyond API Changelog
 
+## 2021-04-21
+
+-XX:InitialHeapSize=130717952 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
+### What's New
+---
+* `POST` /pickup-options Create pickup option
+* `GET` /pickup-options/{pickupOptionId} Show pickup option details
+
+### What's Deprecated
+---
+* `PUT` /products/{productId}/variation-images-differentiator (Deprecated) Assign variation images differentiator
+
+### What's Changed
+---
+
 ## 2021-04-20
 
 -XX:InitialHeapSize=64663872 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
