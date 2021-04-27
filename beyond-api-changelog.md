@@ -8,83 +8,7 @@
 * `PUT` /pickup-options/{currentPickupVersionId} Update pickup option
 * `GET` /pickup-options List pickup options
 
-### What's Deprecated
----
 
-### What's Changed
----
-* `GET` /carts/{cartId}/shipping-methods Show applicable cart shipping method details  
-    Return Type
-
-        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `GET` /carts/{cartId}/shipping-methods/current Show current cart shipping method details  
-    Return Type
-
-        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `PUT` /carts/{cartId}/shipping-methods/current Set current cart shipping method  
-    Return Type
-
-        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `PUT` /carts/{cartId}/shipping-methods/default Set cart shipping method to current default  
-    Return Type
-
-        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `GET` /payment-methods List payment methods  
-    Return Type
-
-        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `GET` /payment-methods/{paymentMethodId} Show payment method details  
-    Return Type
-
-        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `PUT` /payment-methods/{paymentMethodId} Update payment method  
-    Return Type
-
-        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `POST` /payment-methods/{paymentMethodId}/activate Activate payment method  
-    Return Type
-
-        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `POST` /payment-methods/{paymentMethodId}/deactivate Deactivate payment method  
-    Return Type
-
-        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `GET` /pickup-options/{pickupOptionId} Show pickup option details  
-    Return Type
-
-        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `GET` /shipping-zones List shipping zones  
-    Return Type
-
-        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `GET` /shipping-zones/{shippingZoneId} Show shipping zone details  
-    Return Type
-
-        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `PUT` /shipping-zones/{shippingZoneId} Update shipping zone  
-    Return Type
-
-        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `GET` /shipping-zones/search/find-all-serviceable-countries Find serviceable countries  
-    Return Type
-
-        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `GET` /shipping-zones/{shippingZoneId}/shipping-methods List shipping methods of shipping zone  
-    Return Type
-
-        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `PUT` /shipping-zones/{shippingZoneId}/shipping-methods Sort shipping methods in shipping zone  
-    Return Type
-
-        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `GET` /shipping-zones/{shippingZoneId}/shipping-methods/{shippingMethodId} Show details of shipping method in shipping zone  
-    Return Type
-
-        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `PUT` /shipping-zones/{shippingZoneId}/shipping-methods/{shippingMethodId} Modify shipping method  
-    Return Type
-
-        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
 
 ## 2021-04-21
 
@@ -98,88 +22,11 @@
 ---
 * `PUT` /products/{productId}/variation-images-differentiator (Deprecated) Assign variation images differentiator
 
-### What's Changed
----
 
 ## 2021-04-20
 
--XX:InitialHeapSize=64663872 -XX:MaxHeapSize=1073741824 -XX:+PrintCommandLineFlags -XX:+UseCompressedClassPointers -XX:+UseCompressedOops -XX:+UseParallelGC 
-### What's New
----
-
-### What's Deprecated
----
-
 ### What's Changed
 ---
-* `GET` /carts/{cartId}/shipping-methods Show applicable cart shipping method details  
-    Return Type
-
-        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `GET` /carts/{cartId}/shipping-methods/current Show current cart shipping method details  
-    Return Type
-
-        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `PUT` /carts/{cartId}/shipping-methods/current Set current cart shipping method  
-    Return Type
-
-        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `PUT` /carts/{cartId}/shipping-methods/default Set cart shipping method to current default  
-    Return Type
-
-        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `GET` /payment-methods List payment methods  
-    Return Type
-
-        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `GET` /payment-methods/{paymentMethodId} Show payment method details  
-    Return Type
-
-        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `PUT` /payment-methods/{paymentMethodId} Update payment method  
-    Return Type
-
-        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `POST` /payment-methods/{paymentMethodId}/activate Activate payment method  
-    Return Type
-
-        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `POST` /payment-methods/{paymentMethodId}/deactivate Deactivate payment method  
-    Return Type
-
-        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `GET` /shipping-zones List shipping zones  
-    Return Type
-
-        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `GET` /shipping-zones/{shippingZoneId} Show shipping zone details  
-    Return Type
-
-        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `PUT` /shipping-zones/{shippingZoneId} Update shipping zone  
-    Return Type
-
-        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `GET` /shipping-zones/search/find-all-serviceable-countries Find serviceable countries  
-    Return Type
-
-        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `GET` /shipping-zones/{shippingZoneId}/shipping-methods List shipping methods of shipping zone  
-    Return Type
-
-        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `PUT` /shipping-zones/{shippingZoneId}/shipping-methods Sort shipping methods in shipping zone  
-    Return Type
-
-        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `GET` /shipping-zones/{shippingZoneId}/shipping-methods/{shippingMethodId} Show details of shipping method in shipping zone  
-    Return Type
-
-        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-* `PUT` /shipping-zones/{shippingZoneId}/shipping-methods/{shippingMethodId} Modify shipping method  
-    Return Type
-
-        Add _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
 * `POST` /users/verify-password Verify password  
     Parameter
 
