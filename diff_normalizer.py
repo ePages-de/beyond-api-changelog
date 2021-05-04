@@ -6,7 +6,7 @@ import sys
 sections = []
 
 currentSection = None
-currentChangeText = None
+currentChangeLines = None
 
 for line in sys.stdin:
 
@@ -17,20 +17,27 @@ for line in sys.stdin:
         sections.append(currentSection)
         continue
 
-    if (line.startswith("*")):
-        currentChangeText = line
-        currentSection["changes"].append(currentChangeText)
+    if (line.startswith("---")):
         continue
 
-    if (currentChangeText):
-        currentChangeText += line
+    if (line.startswith("*")):
+        currentChangeLines = []
+        currentChangeLines.append(line)
+        currentSection["changes"].append(currentChangeLines)
+        continue
 
+    if (currentChangeLines):
+        currentChangeLines.append(line)
 
 #######
 # Print normalized diff
 #######
 
-# for section in sections:
-#     print(section["headline"])
-#     for change in section["changes"]:
-#         print(change)
+for section in sections:
+    print(section["headline"])
+    for changeLines in section["changes"]:
+        changeText = ""
+        for line in changeLines:
+            changeText += line
+        if (not (("Add _links" in changeText) or ("Remove _links" in changeText))):
+            print(changeText)
