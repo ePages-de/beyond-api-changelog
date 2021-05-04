@@ -1,157 +1,9 @@
 # Beyond API Changelog
 
-## 2021-05-04
-
-### What's New
-
-### What's Deprecated
-
-### What's Changed
-
-* `PUT` /carts/{cardId}/customer Assign customer to cart  
-    Return Type
-
-        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-
-* `POST` /carts/{cartId}/coupon Redemption limit reached  
-    Return Type
-
-        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-
-* `GET` /checkout-settings List checkout settings  
-    Return Type
-
-        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-
-* `PUT` /checkout-settings Update checkout settings  
-    Return Type
-
-        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-
-* `GET` /coupon-campaigns List coupon campaigns  
-    Return Type
-
-        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-
-* `GET` /coupon-campaigns/{couponCampaignId} Show details of coupon campaign  
-    Return Type
-
-        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-
-* `PUT` /coupon-campaigns/{couponCampaignId} Update coupon campaign  
-    Return Type
-
-        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-
-* `GET` /coupon-campaigns/{couponCampaignId}/coupons List coupon codes  
-    Return Type
-
-        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-
-* `PUT` /coupon-campaigns/{couponCampaignId}/coupons Update coupon codes  
-    Return Type
-
-        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-
-* `PUT` /coupon-campaigns/{couponCampaignId}/status Invalid status transition  
-    Return Type
-
-        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-
-* `GET` /payment-methods List payment methods  
-    Return Type
-
-        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-
-* `GET` /payment-methods/{paymentMethodId} Show payment method details  
-    Return Type
-
-        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-
-* `PUT` /payment-methods/{paymentMethodId} Invalid DiscountOrFee  
-    Return Type
-
-        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-
-* `POST` /payment-methods/{paymentMethodId}/activate Activate payment method  
-    Return Type
-
-        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-
-* `POST` /payment-methods/{paymentMethodId}/deactivate Deactivate payment method  
-    Return Type
-
-        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-
-* `GET` /pickup-options List pickup options  
-    Return Type
-
-        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-
-* `POST` /pickup-options Create pickup option  
-    Parameter
-
-        Add .locationId //The unique identifier of the location.
-
-* `PUT` /pickup-options/{id} Update pickup option  
-    Parameter
-
-        Add .locationId //The unique identifier of the location.
-    Return Type
-
-        Add _embedded
-        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-
-* `GET` /pickup-options/{pickupOptionId} Show pickup option details  
-    Return Type
-
-        Add _embedded
-        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-
-* `GET` /shipping-zones List shipping zones  
-    Return Type
-
-        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-
-* `GET` /shipping-zones/{shippingZoneId} Show shipping zone details  
-    Return Type
-
-        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-
-* `PUT` /shipping-zones/{shippingZoneId} Update shipping zone  
-    Return Type
-
-        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-
-* `GET` /shipping-zones/search/find-all-serviceable-countries Find serviceable countries  
-    Return Type
-
-        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-
-* `GET` /shipping-zones/{shippingZoneId}/shipping-methods List shipping methods of shipping zone  
-    Return Type
-
-        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-
-* `PUT` /shipping-zones/{shippingZoneId}/shipping-methods Sort shipping methods in shipping zone  
-    Return Type
-
-        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-
-* `GET` /shipping-zones/{shippingZoneId}/shipping-methods/{shippingMethodId} Show details of shipping method in shipping zone  
-    Return Type
-
-        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-
-* `PUT` /shipping-zones/{shippingZoneId}/shipping-methods/{shippingMethodId} Modify shipping method  
-    Return Type
-
-        Delete _links //See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]
-
 ## 2021-05-03
 
 ### What's New
----
+
 * `GET` /carts/{cartId}/pickup-options List pickup options for the cart
 * `PUT` /pickup-options Sort pickup options
 
@@ -159,13 +11,13 @@
 ## 2021-04-30
 
 ### What's New
----
+
 * `GET` /orders/unviewed Lists amount of unviewed orders.
 * `PUT` /pickup-options/{id} Update pickup option
 * `DELETE` /pickup-options/{id} Delete pickup option
 
 ### What's Deprecated
----
+
 * `PUT` /pickup-options/{currentPickupVersionId} Update pickup option
 * `DELETE` /pickup-options/{currentPickupVersionId} Delete pickup option
 
