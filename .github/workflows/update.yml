@@ -1,15 +1,10 @@
 name: Update changelog
 on:
-  push:
-    branches: [ master ]
+  schedule:
+  - cron: "38 20 * * *"
 jobs:
   update_changelog:
     runs-on: ubuntu-latest
-    env:
-      SENDER_EMAIL: noreply@epages.com
-      RECIPIENT_EMAIL: jan.mewes@epages.com
-      MAILGUN_API_TOKEN: ${{ secrets.MAILGUN_API_TOKEN }}
-      MAILGUN_MAILBOX: ${{ secrets.MAILGUN_MAILBOX }}
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2
