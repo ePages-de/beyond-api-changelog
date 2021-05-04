@@ -1,0 +1,21 @@
+name: Update changelog
+on:
+  schedule:
+  - cron: "38 20 * * *"
+jobs:
+  update_changelog:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+      - run: git config --global user.email "blackhole@epages.com" && git config --global user.name "ePages CI Bot"
+      - run: ./update.sh && git push origin master

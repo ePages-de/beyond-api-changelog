@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+SCRIPT_DIR="$(cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
 set -e
 
 usage () {
@@ -47,4 +49,6 @@ if [[ ! -s ${SPEC_FILE_2} ]]; then
     exit 1
 fi
 
-java -jar swagger-diff.jar -old "${SPEC_FILE_1}" -new "${SPEC_FILE_2}" -v 2.0 -output-mode markdown
+RAW_DIFF=$(java -jar swagger-diff.jar -old "${SPEC_FILE_1}" -new "${SPEC_FILE_2}" -v 2.0 -output-mode markdown)
+
+echo "${RAW_DIFF}" | python ${SCRIPT_DIR}/diff_normalizer.py
