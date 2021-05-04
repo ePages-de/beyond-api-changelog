@@ -39,5 +39,5 @@ for section in sections:
         changeText = ""
         for line in changeLines:
             changeText += line
-        if (not (("Add _links" in changeText) or ("Remove _links" in changeText))):
+        if (not (("Add _links" in changeText) or ("Delete _links" in changeText))):
             print(changeText)
