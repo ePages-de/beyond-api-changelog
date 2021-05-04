@@ -13,14 +13,12 @@
 
 ### What's New
 ---
-
 * `GET` /orders/unviewed Lists amount of unviewed orders.
 * `PUT` /pickup-options/{id} Update pickup option
 * `DELETE` /pickup-options/{id} Delete pickup option
 
 ### What's Deprecated
 ---
-
 * `PUT` /pickup-options/{currentPickupVersionId} Update pickup option
 * `DELETE` /pickup-options/{currentPickupVersionId} Delete pickup option
 
