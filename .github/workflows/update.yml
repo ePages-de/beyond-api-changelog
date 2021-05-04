@@ -3,19 +3,18 @@ on:
   push:
     branches: [ master ]
 jobs:
-  tech_writer_notify:
-    runs-on: ubuntu-latest
-    env:
-      SENDER_EMAIL: noreply@epages.com
-      RECIPIENT_EMAIL: jan.mewes@epages.com
-      MAILGUN_API_TOKEN: ${{ secrets.MAILGUN_API_TOKEN }}
-      MAILGUN_MAILBOX: ${{ secrets.MAILGUN_MAILBOX }}
-    steps:
-      - name: Checkout repo
-        uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
-      - uses: actions/setup-python@v2
-        with:
-          python-version: '3.x'
-      - run: python my_script.py
+  runs-on: ubuntu-latest
+  env:
+    SENDER_EMAIL: noreply@epages.com
+    RECIPIENT_EMAIL: jan.mewes@epages.com
+    MAILGUN_API_TOKEN: ${{ secrets.MAILGUN_API_TOKEN }}
+    MAILGUN_MAILBOX: ${{ secrets.MAILGUN_MAILBOX }}
+  steps:
+    - name: Checkout repo
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+    - uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+    - run: python my_script.py
