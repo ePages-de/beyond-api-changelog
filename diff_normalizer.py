@@ -1,8 +1,8 @@
 import sys
 
-#######
+########
 # Parse raw diff
-#######
+########
 sections = []
 
 currentSection = None
@@ -29,9 +29,9 @@ for line in sys.stdin:
     if (currentChangeLines):
         currentChangeLines.append(line)
 
-#######
+########
 # Print normalized diff
-#######
+########
 
 for section in sections:
     print(section["headline"])
