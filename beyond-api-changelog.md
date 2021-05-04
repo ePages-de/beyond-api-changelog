@@ -4,7 +4,6 @@
 
 ### What's New
 ---
-
 * `GET` /carts/{cartId}/pickup-options List pickup options for the cart
 * `PUT` /pickup-options Sort pickup options
 
