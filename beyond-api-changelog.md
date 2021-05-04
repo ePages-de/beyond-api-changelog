@@ -1,5 +1,23 @@
 # Beyond API Changelog
 
+## 2021-05-04
+
+### What's New
+
+### What's Deprecated
+
+### What's Changed
+
+* `GET` /orders List orders  
+    Parameter
+
+        Add viewed //Filters by whether or not the order was viewed. Can be `true` or `false`.
+
+* `POST` /pickup-options Create pickup option  
+    Parameter
+
+        Add .locationId //The unique identifier of the location.
+
 ## 2021-05-03
 
 ### What's New
