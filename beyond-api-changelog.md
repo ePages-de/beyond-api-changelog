@@ -1,5 +1,18 @@
 # Beyond API Changelog
 
+## 2021-05-05
+
+### What's New
+
+### What's Deprecated
+
+### What's Changed
+
+* `GET` /orders List orders  
+    Parameter
+
+        viewed Notes Filters by whether or not the order was viewed. Can be `true` or `false`. change into Filters by whether or not the order was marked as viewed. Can be `true` or `false`.
+
 ## 2021-05-04
 
 ### What's New
