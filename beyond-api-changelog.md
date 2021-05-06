@@ -1,5 +1,26 @@
 # Beyond API Changelog
 
+## 2021-05-06
+
+### What's New
+
+### What's Deprecated
+
+* `PUT` /customers/{customerId}/master-data Update customer master data
+
+
+### What's Changed
+
+* `PUT` /customers/{customerId} Update customer  
+    Return Type
+
+        Delete masterData //The master data of the customer.
+
+* `GET` /customers/{id} Show customer details  
+    Return Type
+
+        Delete masterData //The master data of the customer.
+
 ## 2021-05-05
 
 ### What's New
