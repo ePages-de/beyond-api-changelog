@@ -1,5 +1,62 @@
 # Beyond API Changelog
 
+## 2021-05-10
+
+### What's New
+
+* `PUT` /carts/{cartId}/pickup-options/current Set current cart pickup option
+
+
+
+### What's Deprecated
+
+### What's Changed
+
+* `GET` /carts/{cartId} Show cart details  
+    Return Type
+
+        Add pickupLineItem //The details about the pickup line item of the cart.
+
+* `PUT` /carts/{cardId}/customer Assign customer to cart  
+    Return Type
+
+        Add pickupLineItem //The details about the pickup line item of the cart.
+
+* `PUT` /carts/{cartId}/billing-address Set cart billing address  
+    Return Type
+
+        Add pickupLineItem //The details about the pickup line item of the cart.
+
+* `POST` /carts/{cartId}/line-items Invalid tax class  
+    Return Type
+
+        Add pickupLineItem //The details about the pickup line item of the cart.
+
+* `PUT` /carts/{cartId}/line-items Add line items  
+    Return Type
+
+        Add pickupLineItem //The details about the pickup line item of the cart.
+
+* `PUT` /carts/{cartId}/shipping-address Set current cart shipping address  
+    Return Type
+
+        Add pickupLineItem //The details about the pickup line item of the cart.
+
+* `PUT` /carts/{cartId}/line-items/{lineItemId} Replace single line item  
+    Return Type
+
+        Add pickupLineItem //The details about the pickup line item of the cart.
+
+* `PUT` /carts/{cartId}/payment-methods/current Set current cart payment method  
+    Return Type
+
+        Add pickupLineItem //The details about the pickup line item of the cart.
+
+* `PUT` /carts/{cartId}/payment-methods/default Set cart payment method to current default  
+    Return Type
+
+        Add pickupLineItem //The details about the pickup line item of the cart.
+
 ## 2021-05-06
 
 ### What's New
