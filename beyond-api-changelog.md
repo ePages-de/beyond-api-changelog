@@ -1,5 +1,17 @@
 # Beyond API Changelog
 
+## 2021-05-14
+
+### What's New
+
+* `GET` /carts/{cartId}/pickup-options/current Get current cart pickup option
+
+
+
+### What's Deprecated
+
+### What's Changed
+
 ## 2021-05-10
 
 ### What's New
