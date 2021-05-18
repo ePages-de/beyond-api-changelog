@@ -1,5 +1,19 @@
 # Beyond API Changelog
 
+## 2021-05-18
+
+### What's New
+
+* `PATCH` /products/batch Batch publish products
+
+* `GET` /products/search/{productId}/variations Invalid product type
+
+
+
+### What's Deprecated
+
+### What's Changed
+
 ## 2021-05-14
 
 ### What's New
