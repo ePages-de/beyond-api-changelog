@@ -1,5 +1,17 @@
 # Beyond API Changelog
 
+## 2021-05-19
+
+### What's New
+
+* `DELETE` /products/batch Batch delete products
+
+
+
+### What's Deprecated
+
+### What's Changed
+
 ## 2021-05-18
 
 ### What's New
