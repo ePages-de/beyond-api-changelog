@@ -1,5 +1,33 @@
 # Beyond API Changelog
 
+## 2021-05-20
+
+### What's New
+
+### What's Deprecated
+
+### What's Changed
+
+* `POST` /products Product limit reached  
+    Parameter
+
+        Add .pickupPeriod
+
+* `GET` /products/{productId} Show variation product details  
+    Return Type
+
+        Add pickupPeriod
+
+* `PATCH` /products/{productId} Update variation product partially  
+    Return Type
+
+        Add pickupPeriod
+
+* `GET` /products/search/find-by-sku Find product by SKU  
+    Return Type
+
+        Add pickupPeriod
+
 ## 2021-05-19
 
 ### What's New
