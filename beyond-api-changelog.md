@@ -1,5 +1,30 @@
 # Beyond API Changelog
 
+## 2021-05-25
+
+### What's New
+
+* `GET` /orders/{orderId}/processes/pickups List pickup processes
+
+* `POST` /orders/{orderId}/processes/pickups Invalid product line item quantity
+
+* `GET` /orders/{orderId}/processes/pickups/{pickup-process-id} Show pickup process details
+
+* `POST` /orders/{orderId}/processes/pickups/{pickup-process-id}/mark-picked-up Mark pickup process as picked up.
+
+* `POST` /orders/{orderId}/processes/pickups/{pickup-process-id}/mark-ready-for-pickup Mark pickup process as ready to pickup.
+
+
+
+### What's Deprecated
+
+### What's Changed
+
+* `GET` /product-view/products/{productId} Show variation product details  
+    Return Type
+
+        Add pickupPeriod //The pickup period for the product.
+
 ## 2021-05-20
 
 ### What's New
