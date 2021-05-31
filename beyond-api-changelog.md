@@ -1,5 +1,26 @@
 # Beyond API Changelog
 
+## 2021-05-31
+
+### What's New
+
+### What's Deprecated
+
+* `POST` /orders/{orderId}/processes/pickups/{pickup-process-id}/mark-ready-for-pickup Mark pickup process as ready to pickup.
+
+
+### What's Changed
+
+* `GET` /orders List orders  
+    Parameter
+
+        Add pickupOptionId //Filters by the ID of the pickup option used for the order.
+
+* `GET` /orders/filters List order filter categories  
+    Return Type
+
+        Add allPickupOptions
+
 ## 2021-05-25
 
 ### What's New
