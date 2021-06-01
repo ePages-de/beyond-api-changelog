@@ -1,5 +1,18 @@
 # Beyond API Changelog
 
+## 2021-06-01
+
+### What's New
+
+### What's Deprecated
+
+### What's Changed
+
+* `POST` /orders/{orderId}/processes/pickups/{pickup-process-id}/mark-picked-up Mark pickup process as picked up.  
+    Parameter
+
+        Add .sendMail //Indicates if an email has to be sent out to notify the customer that the pickup process has been completed. Can be `true` or `false`.
+
 ## 2021-05-31
 
 ### What's New
