@@ -1,5 +1,19 @@
 # Beyond API Changelog
 
+## 2021-06-03
+
+### What's New
+
+### What's Deprecated
+
+### What's Changed
+
+* `GET` /orders/{orderId} Show order details  
+    Return Type
+
+        Add pickupLineItem //The pickup line item.
+        Delete shippingLineItem
+
 ## 2021-06-01
 
 ### What's New
