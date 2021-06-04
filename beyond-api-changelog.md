@@ -1,5 +1,29 @@
 # Beyond API Changelog
 
+## 2021-06-04
+
+### What's New
+
+### What's Deprecated
+
+### What's Changed
+
+* `PUT` /order-settings Update order settings  
+    Parameter
+
+        Add .customOrderReadyForPickupText //The customizable text body for the email that is sent to inform the customer that package is ready for pickup
+        Add .customOrderPickedUpText //The customizable text body for the email that is sent to inform the customer that package was picked up.
+    Return Type
+
+        Add customOrderReadyForPickupText //The customizable text body for the email that is sent to inform the customer that package is ready for pickup
+        Add customOrderPickedUpText //The customizable text body for the email that is sent to inform the customer that package was picked up.
+
+* `GET` /order-settings List order settings  
+    Return Type
+
+        Add customOrderReadyForPickupText //The customizable text body for the email that is sent to inform the customer that package is ready for pickup
+        Add customOrderPickedUpText //The customizable text body for the email that is sent to inform the customer that package was picked up.
+
 ## 2021-06-03
 
 ### What's New
