@@ -1,5 +1,23 @@
 # Beyond API Changelog
 
+## 2021-06-10
+
+### What's New
+
+### What's Deprecated
+
+### What's Changed
+
+* `GET` /customers List customers  
+    Parameter
+
+        sort Notes The sorting applied to the list of customers. The sort can be one of the `customerName`, `customerLocation`, `customerOrigin`, `customerLastOrder`, or `customerGrandTotal` change into The sorting applied to the list of customers. Can be one of `customerName`, `customerLocation`, `customerOrigin`, `customerLastOrder`, or `customerGrandTotal`.
+
+* `GET` /orders/{orderId} Show order details  
+    Return Type
+
+        Add shippingLineItem //The shipping line item.
+
 ## 2021-06-07
 
 ### What's New
