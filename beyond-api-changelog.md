@@ -20,13 +20,6 @@
 
 ## 2021-06-07
 
-### What's New
-
-### What's Deprecated
-
-* `GET` /users/support Retrieve support access status (Endpoint is still available but not publicly documented)
-
-
 ### What's Changed
 
 * `GET` /customers List customers  
