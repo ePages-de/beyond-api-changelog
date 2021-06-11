@@ -24,7 +24,7 @@
 
 ### What's Deprecated
 
-* `GET` /users/support Retrieve support access status
+* `GET` /users/support Retrieve support access status (Endpoint is still available but not publicly documented)
 
 
 ### What's Changed
