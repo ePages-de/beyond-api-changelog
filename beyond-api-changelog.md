@@ -1,5 +1,18 @@
 # Beyond API Changelog
 
+## 2021-06-14
+
+### What's New
+
+### What's Deprecated
+
+### What's Changed
+
+* `GET` /product-view/products/{productId} Show variation product details  
+    Return Type
+
+        Delete availabilityState //(Deprecated) The current availability state for the product. Always `NOT_AVAILABLE` for variation products.
+
 ## 2021-06-10
 
 ### What's New
