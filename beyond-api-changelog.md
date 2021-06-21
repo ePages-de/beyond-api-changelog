@@ -1,5 +1,53 @@
 # Beyond API Changelog
 
+## 2021-06-21
+
+### What's New
+
+### What's Deprecated
+
+### What's Changed
+
+* `GET` /orders/search/find-by-cart-id Show order by cart ID  
+    Return Type
+
+        Add pickupLineItem //The pickup line item.
+
+* `POST` /orders/{id}/send-order-document Send order document  
+    Return Type
+
+        Add pickupLineItem //The pickup line item.
+
+* `PUT` /orders/{orderId}/billing-address Update billing address  
+    Return Type
+
+        Add pickupLineItem //The pickup line item.
+
+* `POST` /orders/{orderId}/cancel Cancel order  
+    Return Type
+
+        Add pickupLineItem //The pickup line item.
+
+* `POST` /orders/{orderId}/create-invoice Create invoice  
+    Return Type
+
+        Add pickupLineItem //The pickup line item.
+
+* `POST` /orders/{orderId}/mark-as-viewed Mark order as viewed  
+    Return Type
+
+        Add pickupLineItem //The pickup line item.
+
+* `PUT` /orders/{orderId}/order-note Update order note  
+    Return Type
+
+        Add pickupLineItem //The pickup line item.
+
+* `PUT` /orders/{orderId}/shipping-address Update shipping address  
+    Return Type
+
+        Add pickupLineItem //The pickup line item.
+
 ## 2021-06-14
 
 ### What's New
