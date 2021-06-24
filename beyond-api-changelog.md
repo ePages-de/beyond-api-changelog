@@ -1,5 +1,36 @@
 # Beyond API Changelog
 
+## 2021-06-24
+
+### What's New
+
+### What's Deprecated
+
+### What's Changed
+
+* `POST` /categories Product category already exists  
+    Parameter
+
+        Delete .query //(Deprecated - Use product category filters instead.) The JSON query to retrieve products according to https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl.html[Elasticsearch Query DSL]. Will be ignored in create/update requests if provided along with category filters.
+
+* `PATCH` /categories/{categoryId} Update product category partially  
+    Return Type
+
+        Delete query //(Deprecated - Use product category filters instead.) The JSON query to retrieve products according to https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl.html[Elasticsearch Query DSL]. Will be ignored in create/update requests if provided along with category filters.
+
+* `GET` /categories/{categoryId} Show product category details  
+    Return Type
+
+        Delete query //(Deprecated - Use product category filters instead.) The JSON query to retrieve products according to https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl.html[Elasticsearch Query DSL]. Will be ignored in create/update requests if provided along with category filters.
+
+* `PUT` /categories/{categoryId} Update all product category properties  
+    Parameter
+
+        Delete .query //(Deprecated - Use product category filters instead.) The JSON query to retrieve products according to https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl.html[Elasticsearch Query DSL]. Will be ignored in create/update requests if provided along with category filters.
+    Return Type
+
+        Delete query //(Deprecated - Use product category filters instead.) The JSON query to retrieve products according to https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl.html[Elasticsearch Query DSL]. Will be ignored in create/update requests if provided along with category filters.
+
 ## 2021-06-21
 
 ### What's New
