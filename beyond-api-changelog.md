@@ -1,5 +1,18 @@
 # Beyond API Changelog
 
+## 2021-06-28
+
+### What's New
+
+### What's Deprecated
+
+### What's Changed
+
+* `POST` /coupon-campaigns Create coupon campaign  
+    Parameter
+
+        Add .minimumOrderValue //Allows to restrict the redemption of coupon codes in the given campaign to carts with a minimum subtotal.
+
 ## 2021-06-24
 
 ### What's New
