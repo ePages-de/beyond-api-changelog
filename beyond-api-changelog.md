@@ -1,5 +1,33 @@
 # Beyond API Changelog
 
+## 2021-06-29
+
+### What's New
+
+### What's Deprecated
+
+### What's Changed
+
+* `POST` /customers Create customer  
+    Parameter
+
+        Add .defaultPickupOptionId //The identifier of the default pickup option.
+
+* `PUT` /customers/{customerId} Update customer  
+    Parameter
+
+        Add .defaultPickupOptionId //The identifier of the default pickup option.
+    Return Type
+
+        Add defaultPickupOptionId //The identifier of the default pickup option.
+        Delete defaultShippingMethodId //The identifier of the default shipping method.
+        Delete defaultPaymentMethodId //The identifier of the default payment method.
+
+* `GET` /customers/{id} Show customer details  
+    Return Type
+
+        Add defaultPickupOptionId //The identifier of the default pickup option.
+
 ## 2021-06-28
 
 ### What's New
