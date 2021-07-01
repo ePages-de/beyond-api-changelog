@@ -1,5 +1,23 @@
 # Beyond API Changelog
 
+## 2021-07-01
+
+### What's New
+
+### What's Deprecated
+
+### What's Changed
+
+* `PUT` /carts/{cartId}/billing-address Set cart billing address  
+    Parameter
+
+        Add .company //The name of the customer's company.
+
+* `PUT` /carts/{cartId}/shipping-address Shipping address not allowed  
+    Parameter
+
+        Add .company //The name of the customer's company.
+
 ## 2021-06-29
 
 ### What's New
