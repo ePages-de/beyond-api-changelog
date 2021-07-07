@@ -1,5 +1,17 @@
 # Beyond API Changelog
 
+## 2021-07-07
+
+### What's New
+
+* `POST` /customers/registration Registers customer
+
+
+
+### What's Deprecated
+
+### What's Changed
+
 ## 2021-07-01
 
 ### What's New
