@@ -1,5 +1,22 @@
 # Beyond API Changelog
 
+## 2021-07-13
+
+### What's New
+
+### What's Deprecated
+
+* `POST` /customers/registration Registers customer
+
+
+### What's Changed
+
+* `PUT` /customers/{customerId} Update customer  
+    Return Type
+
+        Add defaultShippingMethodId //The identifier of the default shipping method.
+        Add defaultPaymentMethodId //The identifier of the default payment method.
+
 ## 2021-07-07
 
 ### What's New
