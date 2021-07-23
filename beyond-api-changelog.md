@@ -1,5 +1,19 @@
 # Beyond API Changelog
 
+## 2021-07-23
+
+### What's New
+
+* `POST` /product-view/categories/check-query-syntax Category query invalid
+
+* `PUT` /resellers/epages/shops/{id}/attributes/{name} Duplicated shop attribute name
+
+
+
+### What's Deprecated
+
+### What's Changed
+
 ## 2021-07-13
 
 ### What's New
