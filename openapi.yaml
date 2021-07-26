@@ -3446,7 +3446,7 @@ paths:
               \ \"page\" : {\n    \"size\" : 20,\n    \"totalElements\" : 6,\n   \
               \ \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}"
           schema:
-            $ref: '#/definitions/legal-content-1671536177'
+            $ref: '#/definitions/legal-content26819765'
   /legal-content/{name}:
     get:
       tags:
@@ -9463,7 +9463,7 @@ paths:
           description: ""
           examples:
             application/hal+json: "{\n  \"ready\" : true,\n  \"details\" : {\n   \
-              \ \"accountId\" : \"06ca7a8b-2ef3-4ef2-b7ba-71fe9da5fd48\"\n  },\n \
+              \ \"accountId\" : \"dcf0b87f-8335-4622-9a57-1c134da82990\"\n  },\n \
               \ \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/payment-signup/merchant-accounts/credit-card\"\
               \n    },\n    \"generate-referral-uri\" : {\n      \"href\" : \"https://yourshop.api.urn/payment-signup/referrals/credit-card\"\
               \n    },\n    \"disconnect\" : {\n      \"href\" : \"https://yourshop.api.urn/payment-signup/merchant-accounts/credit-card\"\
@@ -9643,11 +9643,11 @@ paths:
         name: ""
         required: false
         schema:
-          $ref: '#/definitions/payments_paymentId_status124715503'
+          $ref: '#/definitions/payments_paymentId_status-1570714827'
         x-examples:
           application/json: "{\"paymentStatus\":\"APPROVED\",\"externalPaymentId\"\
-            :\"transaction987DE58B833F4760BB474EB81188F367\",\"externalPaymentUri\"\
-            :\"https://example.com/transactions/transaction987DE58B833F4760BB474EB81188F367\"\
+            :\"transactionECCB9E32957549F09971DEBA68F2FBA2\",\"externalPaymentUri\"\
+            :\"https://example.com/transactions/transactionECCB9E32957549F09971DEBA68F2FBA2\"\
             ,\"message\":\"For some transactions that are only preauthorized (to be\
             \ captured later) there is a timeframe until the authorization expires.\"\
             }"
@@ -9656,8 +9656,8 @@ paths:
           description: ""
           examples:
             application/hal+json: "{\n  \"paymentStatus\" : \"APPROVED\",\n  \"externalPaymentId\"\
-              \ : \"transaction987DE58B833F4760BB474EB81188F367\",\n  \"externalPaymentUri\"\
-              \ : \"https://example.com/transactions/transaction987DE58B833F4760BB474EB81188F367\"\
+              \ : \"transactionECCB9E32957549F09971DEBA68F2FBA2\",\n  \"externalPaymentUri\"\
+              \ : \"https://example.com/transactions/transactionECCB9E32957549F09971DEBA68F2FBA2\"\
               ,\n  \"message\" : \"For some transactions that are only preauthorized\
               \ (to be captured later) there is a timeframe until the authorization\
               \ expires.\"\n}"
@@ -10131,21 +10131,21 @@ paths:
           description: ""
           examples:
             application/hal+json: "{\n  \"_embedded\" : {\n    \"categories\" : [\
-              \ {\n      \"_id\" : \"4c02fab2-36be-418b-a034-63b6489fe1f9\",\n   \
-              \   \"type\" : \"SMART\",\n      \"name\" : \"Power Bars\",\n      \"\
-              label\" : \"power-bar\",\n      \"defaultSort\" : \"NEWEST_FIRST\",\n\
-              \      \"_indexedAt\" : \"2021-07-23T11:11:38\",\n      \"_links\" :\
-              \ {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/categories/4c02fab2-36be-418b-a034-63b6489fe1f9\"\
-              \n        },\n        \"category\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/categories/4c02fab2-36be-418b-a034-63b6489fe1f9\"\
-              \n        },\n        \"products\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/categories/4c02fab2-36be-418b-a034-63b6489fe1f9/products{?sortBy}\"\
+              \ {\n      \"_id\" : \"3aace562-0101-411c-8ff4-80e7a8524186\",\n   \
+              \   \"type\" : \"SMART\",\n      \"name\" : \"Books\",\n      \"label\"\
+              \ : \"books\",\n      \"defaultSort\" : \"NEWEST_FIRST\",\n      \"\
+              _indexedAt\" : \"2021-07-26T11:10:59\",\n      \"_links\" : {\n    \
+              \    \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/categories/3aace562-0101-411c-8ff4-80e7a8524186\"\
+              \n        },\n        \"category\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/categories/3aace562-0101-411c-8ff4-80e7a8524186\"\
+              \n        },\n        \"products\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/categories/3aace562-0101-411c-8ff4-80e7a8524186/products{?sortBy}\"\
               ,\n          \"templated\" : true\n        }\n      }\n    }, {\n  \
-              \    \"_id\" : \"a3b80933-2815-4a8e-b03a-80a07935876b\",\n      \"type\"\
-              \ : \"SMART\",\n      \"name\" : \"Books\",\n      \"label\" : \"books\"\
-              ,\n      \"defaultSort\" : \"NEWEST_FIRST\",\n      \"_indexedAt\" :\
-              \ \"2021-07-23T11:11:38\",\n      \"_links\" : {\n        \"self\" :\
-              \ {\n          \"href\" : \"https://yourshop.api.urn/product-view/categories/a3b80933-2815-4a8e-b03a-80a07935876b\"\
-              \n        },\n        \"category\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/categories/a3b80933-2815-4a8e-b03a-80a07935876b\"\
-              \n        },\n        \"products\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/categories/a3b80933-2815-4a8e-b03a-80a07935876b/products{?sortBy}\"\
+              \    \"_id\" : \"7b233e96-4767-4d20-9b28-60eecf449433\",\n      \"type\"\
+              \ : \"SMART\",\n      \"name\" : \"Power Bars\",\n      \"label\" :\
+              \ \"power-bar\",\n      \"defaultSort\" : \"NEWEST_FIRST\",\n      \"\
+              _indexedAt\" : \"2021-07-26T11:10:59\",\n      \"_links\" : {\n    \
+              \    \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/categories/7b233e96-4767-4d20-9b28-60eecf449433\"\
+              \n        },\n        \"category\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/categories/7b233e96-4767-4d20-9b28-60eecf449433\"\
+              \n        },\n        \"products\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/categories/7b233e96-4767-4d20-9b28-60eecf449433/products{?sortBy}\"\
               ,\n          \"templated\" : true\n        }\n      }\n    } ]\n  },\n\
               \  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/product-view/categories?page=0&size=40\"\
               \n    }\n  },\n  \"page\" : {\n    \"size\" : 40,\n    \"totalElements\"\
@@ -10166,7 +10166,7 @@ paths:
           description: ""
           examples:
             application/hal+json: "{\n  \"_embedded\" : {\n    \"products\" : [ {\n\
-              \      \"_id\" : \"2ad030fc-b862-44cb-a752-4a4c17463ac8\",\n      \"\
+              \      \"_id\" : \"1f657be6-2056-43bd-b4aa-2dac440f3b16\",\n      \"\
               sku\" : \"EB001\",\n      \"name\" : \"High Protein Power Bar (Pack\
               \ of 5)\",\n      \"manufacturer\" : \"Protein Bar Makers\",\n     \
               \ \"salesPrice\" : {\n        \"amount\" : 4.95,\n        \"currency\"\
@@ -10179,11 +10179,31 @@ paths:
               \ : 5,\n          \"availabilityState\" : \"LOW_STOCK\",\n         \
               \ \"purchasable\" : true\n        }\n      },\n      \"productIdentifiers\"\
               \ : [ ],\n      \"_links\" : {\n        \"self\" : {\n          \"href\"\
-              \ : \"https://yourshop.api.urn/product-view/products/2ad030fc-b862-44cb-a752-4a4c17463ac8\"\
-              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/2ad030fc-b862-44cb-a752-4a4c17463ac8\"\
-              \n        },\n        \"cross-sells\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/2ad030fc-b862-44cb-a752-4a4c17463ac8/cross-sells\"\
-              \n        }\n      },\n      \"_indexedAt\" : \"2021-07-23T11:10:14\"\
-              \n    }, {\n      \"_id\" : \"34aa4a03-f342-4a82-a8d0-cf528e7a227e\"\
+              \ : \"https://yourshop.api.urn/product-view/products/1f657be6-2056-43bd-b4aa-2dac440f3b16\"\
+              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/1f657be6-2056-43bd-b4aa-2dac440f3b16\"\
+              \n        },\n        \"cross-sells\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/1f657be6-2056-43bd-b4aa-2dac440f3b16/cross-sells\"\
+              \n        }\n      },\n      \"_indexedAt\" : \"2021-07-26T11:16:30\"\
+              \n    }, {\n      \"_id\" : \"4816f0b9-f01a-46f2-b39a-05d4e85636b5\"\
+              ,\n      \"sku\" : \"sh-001\",\n      \"name\" : \"Soft Walk Ultra -\
+              \ Nibok Men's\",\n      \"manufacturer\" : \"Nibok\",\n      \"salesPrice\"\
+              \ : {\n        \"amount\" : 89.0,\n        \"currency\" : \"EUR\",\n\
+              \        \"taxModel\" : \"NET\"\n      },\n      \"listPrice\" : {\n\
+              \        \"amount\" : 99.99,\n        \"currency\" : \"EUR\",\n    \
+              \    \"taxModel\" : \"NET\"\n      },\n      \"manufacturerPrice\" :\
+              \ null,\n      \"refPrice\" : null,\n      \"shippingWeight\" : 190,\n\
+              \      \"shippingDimension\" : {\n        \"length\" : 80,\n       \
+              \ \"width\" : 80,\n        \"height\" : 40\n      },\n      \"_embedded\"\
+              \ : {\n        \"defaultImage\" : {\n          \"dataUri\" : \"https://yourshop.api.urn/storage-api/images/nibok-men.jpg?hash=e9a1ce5c0c6abfebec8fb1f6faf77dca7e699999{&width,height,upscale}\"\
+              ,\n          \"width\" : 100,\n          \"height\" : 200\n        },\n\
+              \        \"availability\" : {\n          \"stockThreshold\" : null,\n\
+              \          \"availableStock\" : null,\n          \"availabilityState\"\
+              \ : \"IN_STOCK\",\n          \"purchasable\" : true\n        }\n   \
+              \   },\n      \"productIdentifiers\" : [ ],\n      \"_links\" : {\n\
+              \        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/4816f0b9-f01a-46f2-b39a-05d4e85636b5\"\
+              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/4816f0b9-f01a-46f2-b39a-05d4e85636b5\"\
+              \n        },\n        \"cross-sells\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/4816f0b9-f01a-46f2-b39a-05d4e85636b5/cross-sells\"\
+              \n        }\n      },\n      \"_indexedAt\" : \"2021-07-26T11:16:30\"\
+              \n    }, {\n      \"_id\" : \"6e928ba0-20c3-4d29-bd6c-01af18ad980e\"\
               ,\n      \"sku\" : \"vino020\",\n      \"name\" : \"Rioja Castillo de\
               \ Puerto (2013)\",\n      \"manufacturer\" : \"Grape Vineyard\",\n \
               \     \"salesPrice\" : {\n        \"amount\" : 8.7,\n        \"currency\"\
@@ -10207,36 +10227,16 @@ paths:
               \ },\n      \"productIdentifiers\" : [ {\n        \"type\" : \"EAN\"\
               ,\n        \"value\" : \"501234567890\"\n      }, {\n        \"type\"\
               \ : \"UPC\",\n        \"value\" : \"425261\"\n      } ],\n      \"_links\"\
-              \ : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/34aa4a03-f342-4a82-a8d0-cf528e7a227e\"\
-              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/34aa4a03-f342-4a82-a8d0-cf528e7a227e\"\
-              \n        },\n        \"cross-sells\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/34aa4a03-f342-4a82-a8d0-cf528e7a227e/cross-sells\"\
-              \n        }\n      },\n      \"_indexedAt\" : \"2021-07-23T11:10:14\"\
-              \n    }, {\n      \"_id\" : \"47980624-43bf-4209-a5c4-30a8c33f70a7\"\
-              ,\n      \"sku\" : \"sh-001\",\n      \"name\" : \"Soft Walk Ultra -\
-              \ Nibok Men's\",\n      \"manufacturer\" : \"Nibok\",\n      \"salesPrice\"\
-              \ : {\n        \"amount\" : 89.0,\n        \"currency\" : \"EUR\",\n\
-              \        \"taxModel\" : \"NET\"\n      },\n      \"listPrice\" : {\n\
-              \        \"amount\" : 99.99,\n        \"currency\" : \"EUR\",\n    \
-              \    \"taxModel\" : \"NET\"\n      },\n      \"manufacturerPrice\" :\
-              \ null,\n      \"refPrice\" : null,\n      \"shippingWeight\" : 190,\n\
-              \      \"shippingDimension\" : {\n        \"length\" : 80,\n       \
-              \ \"width\" : 80,\n        \"height\" : 40\n      },\n      \"_embedded\"\
-              \ : {\n        \"defaultImage\" : {\n          \"dataUri\" : \"https://yourshop.api.urn/storage-api/images/nibok-men.jpg?hash=e9a1ce5c0c6abfebec8fb1f6faf77dca7e699999{&width,height,upscale}\"\
-              ,\n          \"width\" : 100,\n          \"height\" : 200\n        },\n\
-              \        \"availability\" : {\n          \"stockThreshold\" : null,\n\
-              \          \"availableStock\" : null,\n          \"availabilityState\"\
-              \ : \"IN_STOCK\",\n          \"purchasable\" : true\n        }\n   \
-              \   },\n      \"productIdentifiers\" : [ ],\n      \"_links\" : {\n\
-              \        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/47980624-43bf-4209-a5c4-30a8c33f70a7\"\
-              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/47980624-43bf-4209-a5c4-30a8c33f70a7\"\
-              \n        },\n        \"cross-sells\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/47980624-43bf-4209-a5c4-30a8c33f70a7/cross-sells\"\
-              \n        }\n      },\n      \"_indexedAt\" : \"2021-07-23T11:10:14\"\
+              \ : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/6e928ba0-20c3-4d29-bd6c-01af18ad980e\"\
+              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/6e928ba0-20c3-4d29-bd6c-01af18ad980e\"\
+              \n        },\n        \"cross-sells\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/6e928ba0-20c3-4d29-bd6c-01af18ad980e/cross-sells\"\
+              \n        }\n      },\n      \"_indexedAt\" : \"2021-07-26T11:16:30\"\
               \n    } ]\n  },\n  \"_links\" : {\n    \"self\" : {\n      \"href\"\
               \ : \"https://yourshop.api.urn/product-view/products?page=0&size=40\"\
               \n    }\n  },\n  \"page\" : {\n    \"size\" : 40,\n    \"totalElements\"\
               \ : 3,\n    \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}"
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-ids-270782029'
+            $ref: '#/definitions/product-view_products-270782029'
   /product-view/categories/check-query-syntax:
     post:
       tags:
@@ -10314,7 +10314,7 @@ paths:
           description: ""
           examples:
             application/hal+json: "{\n  \"_embedded\" : {\n    \"products\" : [ {\n\
-              \      \"_id\" : \"f463dbae-b39c-45ed-ab57-3af964bf7426\",\n      \"\
+              \      \"_id\" : \"2bbddcc9-4c41-46e2-8146-14e233718e34\",\n      \"\
               sku\" : \"vino020\",\n      \"name\" : \"Rioja Castillo de Puerto (2013)\"\
               ,\n      \"manufacturer\" : \"Grape Vineyard\",\n      \"salesPrice\"\
               \ : {\n        \"amount\" : 8.7,\n        \"currency\" : \"EUR\",\n\
@@ -10339,10 +10339,10 @@ paths:
               ,\n        \"value\" : \"501234567890\"\n      }, {\n        \"type\"\
               \ : \"UPC\",\n        \"value\" : \"425261\"\n      } ],\n      \"visible\"\
               \ : true,\n      \"_links\" : {\n        \"self\" : {\n          \"\
-              href\" : \"https://yourshop.api.urn/product-view/products/f463dbae-b39c-45ed-ab57-3af964bf7426\"\
-              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/f463dbae-b39c-45ed-ab57-3af964bf7426\"\
-              \n        },\n        \"cross-sells\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/f463dbae-b39c-45ed-ab57-3af964bf7426/cross-sells\"\
-              \n        }\n      },\n      \"_indexedAt\" : \"2021-07-23T11:11:27\"\
+              href\" : \"https://yourshop.api.urn/product-view/products/2bbddcc9-4c41-46e2-8146-14e233718e34\"\
+              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/2bbddcc9-4c41-46e2-8146-14e233718e34\"\
+              \n        },\n        \"cross-sells\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/2bbddcc9-4c41-46e2-8146-14e233718e34/cross-sells\"\
+              \n        }\n      },\n      \"_indexedAt\" : \"2021-07-26T11:10:34\"\
               \n    } ]\n  },\n  \"_links\" : {\n    \"self\" : {\n      \"href\"\
               \ : \"https://yourshop.api.urn/product-view/categories/preview?sortBy=NEWEST_FIRST&page=0&size=10&sort=createdAt,desc\"\
               \n    }\n  },\n  \"page\" : {\n    \"size\" : 10,\n    \"totalElements\"\
@@ -10369,16 +10369,16 @@ paths:
         "200":
           description: ""
           examples:
-            application/hal+json: "{\n  \"_id\" : \"31ee40d2-75b2-441f-934e-14eec48098cf\"\
+            application/hal+json: "{\n  \"_id\" : \"2c6475ab-f6db-4902-a597-d8076215f7c8\"\
               ,\n  \"type\" : \"SMART\",\n  \"name\" : \"Power Bars\",\n  \"label\"\
               \ : \"power-bar\",\n  \"defaultSort\" : \"NEWEST_FIRST\",\n  \"_indexedAt\"\
-              \ : \"2021-07-23T11:11:17\",\n  \"_links\" : {\n    \"self\" : {\n \
-              \     \"href\" : \"https://yourshop.api.urn/product-view/categories/31ee40d2-75b2-441f-934e-14eec48098cf\"\
-              \n    },\n    \"category\" : {\n      \"href\" : \"https://yourshop.api.urn/product-view/categories/31ee40d2-75b2-441f-934e-14eec48098cf\"\
-              \n    },\n    \"products\" : {\n      \"href\" : \"https://yourshop.api.urn/product-view/categories/31ee40d2-75b2-441f-934e-14eec48098cf/products{?sortBy}\"\
+              \ : \"2021-07-26T11:10:10\",\n  \"_links\" : {\n    \"self\" : {\n \
+              \     \"href\" : \"https://yourshop.api.urn/product-view/categories/2c6475ab-f6db-4902-a597-d8076215f7c8\"\
+              \n    },\n    \"category\" : {\n      \"href\" : \"https://yourshop.api.urn/product-view/categories/2c6475ab-f6db-4902-a597-d8076215f7c8\"\
+              \n    },\n    \"products\" : {\n      \"href\" : \"https://yourshop.api.urn/product-view/categories/2c6475ab-f6db-4902-a597-d8076215f7c8/products{?sortBy}\"\
               ,\n      \"templated\" : true\n    }\n  }\n}"
           schema:
-            $ref: '#/definitions/product-view_categories_search_find-by-label-1408985286'
+            $ref: '#/definitions/product-view_categories_categoryId-1408985286'
   /product-view/products/{productId}:
     get:
       tags:
@@ -10398,7 +10398,7 @@ paths:
         "200":
           description: ""
           examples:
-            application/hal+json: "{\n  \"_id\" : \"f7bd6db0-8b57-41ee-8b96-418c117f0a7c\"\
+            application/hal+json: "{\n  \"_id\" : \"acb9b394-d534-4e4b-a3af-59b5c05f6980\"\
               ,\n  \"name\" : \"Rioja Castillo de Puerto (2013)\",\n  \"manufacturer\"\
               \ : \"Grape Vineyard\",\n  \"salesPrice\" : {\n    \"amount\" : 8.7,\n\
               \    \"currency\" : \"EUR\",\n    \"taxModel\" : \"GROSS\"\n  },\n \
@@ -10414,15 +10414,15 @@ paths:
               ,\n      \"taxModel\" : \"GROSS\"\n    }\n  },\n  \"shippingWeight\"\
               \ : 100,\n  \"shippingDimension\" : {\n    \"length\" : 1500,\n    \"\
               width\" : 1000,\n    \"height\" : 2000\n  },\n  \"variations\" : [ {\n\
-              \    \"_id\" : \"0d0d6bfe-65d3-401d-976e-e603ae1862bc\",\n    \"variationAttributeValues\"\
+              \    \"_id\" : \"b737eb52-4f0b-4399-b225-6e309be66de2\",\n    \"variationAttributeValues\"\
               \ : [ {\n      \"displayName\" : \"Volume\",\n      \"value\" : \"0.7l\"\
-              \n    } ],\n    \"_indexedAt\" : \"2021-07-23T11:08:36\"\n  }, {\n \
-              \   \"_id\" : \"24d19f9c-4c8d-49e5-9207-4008dfd032dc\",\n    \"variationAttributeValues\"\
-              \ : [ {\n      \"displayName\" : \"Volume\",\n      \"value\" : \"0.2l\"\
-              \n    } ],\n    \"_indexedAt\" : \"2021-07-23T11:08:36\"\n  }, {\n \
-              \   \"_id\" : \"4cfca637-8c55-4606-8d6f-3b3923292754\",\n    \"variationAttributeValues\"\
+              \n    } ],\n    \"_indexedAt\" : \"2021-07-26T11:18:50\"\n  }, {\n \
+              \   \"_id\" : \"de116b36-8fb4-4e5d-992e-a7fd8b24cf62\",\n    \"variationAttributeValues\"\
               \ : [ {\n      \"displayName\" : \"Volume\",\n      \"value\" : \"1.5l\"\
-              \n    } ],\n    \"_indexedAt\" : \"2021-07-23T11:08:36\"\n  } ],\n \
+              \n    } ],\n    \"_indexedAt\" : \"2021-07-26T11:18:50\"\n  }, {\n \
+              \   \"_id\" : \"fc42747a-dd0a-4eca-bc43-f06cb7ad4078\",\n    \"variationAttributeValues\"\
+              \ : [ {\n      \"displayName\" : \"Volume\",\n      \"value\" : \"0.2l\"\
+              \n    } ],\n    \"_indexedAt\" : \"2021-07-26T11:18:50\"\n  } ],\n \
               \ \"variationAttributes\" : [ {\n    \"displayName\" : \"Volume\",\n\
               \    \"values\" : [ \"0.2l\", \"0.7l\", \"1.5l\" ]\n  } ],\n  \"_embedded\"\
               \ : {\n    \"stockLevel\" : {\n      \"min\" : 5,\n      \"max\" : 5,\n\
@@ -10443,17 +10443,17 @@ paths:
               ,\n    \"displayName\" : \"type\",\n    \"format\" : null,\n    \"formattedValue\"\
               \ : \"red\"\n  }, {\n    \"key\" : \"year\",\n    \"value\" : 2013.0,\n\
               \    \"displayName\" : \"year\",\n    \"format\" : null,\n    \"formattedValue\"\
-              \ : 2013.0\n  } ],\n  \"shippingPeriod\" : {\n    \"minDays\" : 2,\n\
-              \    \"maxDays\" : 10,\n    \"displayUnit\" : \"days\"\n  },\n  \"pickupPeriod\"\
-              \ : {\n    \"min\" : 1,\n    \"max\" : 2,\n    \"displayUnit\" : \"\
-              DAYS\"\n  },\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"\
-              https://yourshop.api.urn/product-view/products/f7bd6db0-8b57-41ee-8b96-418c117f0a7c\"\
-              \n    },\n    \"product\" : {\n      \"href\" : \"https://yourshop.api.urn/product-view/products/f7bd6db0-8b57-41ee-8b96-418c117f0a7c\"\
-              \n    },\n    \"media\" : {\n      \"href\" : \"https://yourshop.api.urn/product-view/products/f7bd6db0-8b57-41ee-8b96-418c117f0a7c/media\"\
-              \n    },\n    \"images\" : {\n      \"href\" : \"https://yourshop.api.urn/product-view/products/f7bd6db0-8b57-41ee-8b96-418c117f0a7c/images\"\
-              \n    },\n    \"videos\" : {\n      \"href\" : \"https://yourshop.api.urn/product-view/products/f7bd6db0-8b57-41ee-8b96-418c117f0a7c/videos\"\
-              \n    },\n    \"cross-sells\" : {\n      \"href\" : \"https://yourshop.api.urn/product-view/products/f7bd6db0-8b57-41ee-8b96-418c117f0a7c/cross-sells\"\
-              \n    }\n  },\n  \"_indexedAt\" : \"2021-07-23T11:08:36\"\n}"
+              \ : 2013.0\n  } ],\n  \"shippingPeriod\" : {\n    \"min\" : 2,\n   \
+              \ \"max\" : 10,\n    \"displayUnit\" : \"days\",\n    \"maxDays\" :\
+              \ 10,\n    \"minDays\" : 2\n  },\n  \"pickupPeriod\" : {\n    \"min\"\
+              \ : 1,\n    \"max\" : 2,\n    \"displayUnit\" : \"DAYS\"\n  },\n  \"\
+              _links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/product-view/products/acb9b394-d534-4e4b-a3af-59b5c05f6980\"\
+              \n    },\n    \"product\" : {\n      \"href\" : \"https://yourshop.api.urn/product-view/products/acb9b394-d534-4e4b-a3af-59b5c05f6980\"\
+              \n    },\n    \"media\" : {\n      \"href\" : \"https://yourshop.api.urn/product-view/products/acb9b394-d534-4e4b-a3af-59b5c05f6980/media\"\
+              \n    },\n    \"images\" : {\n      \"href\" : \"https://yourshop.api.urn/product-view/products/acb9b394-d534-4e4b-a3af-59b5c05f6980/images\"\
+              \n    },\n    \"videos\" : {\n      \"href\" : \"https://yourshop.api.urn/product-view/products/acb9b394-d534-4e4b-a3af-59b5c05f6980/videos\"\
+              \n    },\n    \"cross-sells\" : {\n      \"href\" : \"https://yourshop.api.urn/product-view/products/acb9b394-d534-4e4b-a3af-59b5c05f6980/cross-sells\"\
+              \n    }\n  },\n  \"_indexedAt\" : \"2021-07-26T11:18:50\"\n}"
           schema:
             $ref: '#/definitions/product-view_products_productId214696743'
   /product-view/categories/search/find-by-label:
@@ -10477,16 +10477,16 @@ paths:
         "200":
           description: ""
           examples:
-            application/hal+json: "{\n  \"_id\" : \"cb160fed-0a17-49d2-8ea4-82ce799ae5dc\"\
+            application/hal+json: "{\n  \"_id\" : \"8a3833c7-ae14-40f9-993e-2c0c63c6dd1d\"\
               ,\n  \"type\" : \"SMART\",\n  \"name\" : \"Power Bars\",\n  \"label\"\
               \ : \"power-bar\",\n  \"defaultSort\" : \"NEWEST_FIRST\",\n  \"_indexedAt\"\
-              \ : \"2021-07-23T11:12:03\",\n  \"_links\" : {\n    \"self\" : {\n \
-              \     \"href\" : \"https://yourshop.api.urn/product-view/categories/cb160fed-0a17-49d2-8ea4-82ce799ae5dc\"\
-              \n    },\n    \"category\" : {\n      \"href\" : \"https://yourshop.api.urn/product-view/categories/cb160fed-0a17-49d2-8ea4-82ce799ae5dc\"\
-              \n    },\n    \"products\" : {\n      \"href\" : \"https://yourshop.api.urn/product-view/categories/cb160fed-0a17-49d2-8ea4-82ce799ae5dc/products{?sortBy}\"\
+              \ : \"2021-07-26T11:11:55\",\n  \"_links\" : {\n    \"self\" : {\n \
+              \     \"href\" : \"https://yourshop.api.urn/product-view/categories/8a3833c7-ae14-40f9-993e-2c0c63c6dd1d\"\
+              \n    },\n    \"category\" : {\n      \"href\" : \"https://yourshop.api.urn/product-view/categories/8a3833c7-ae14-40f9-993e-2c0c63c6dd1d\"\
+              \n    },\n    \"products\" : {\n      \"href\" : \"https://yourshop.api.urn/product-view/categories/8a3833c7-ae14-40f9-993e-2c0c63c6dd1d/products{?sortBy}\"\
               ,\n      \"templated\" : true\n    }\n  }\n}"
           schema:
-            $ref: '#/definitions/product-view_categories_search_find-by-label-1408985286'
+            $ref: '#/definitions/product-view_categories_categoryId-1408985286'
   /product-view/categories/search/find-by-product:
     get:
       tags:
@@ -10509,21 +10509,21 @@ paths:
           description: ""
           examples:
             application/hal+json: "{\n  \"_embedded\" : {\n    \"categories\" : [\
-              \ {\n      \"_id\" : \"d966cd4c-6e5a-4db6-9c37-32da441e74bb\",\n   \
+              \ {\n      \"_id\" : \"c0e1be8f-f78b-49b0-9361-9e4350cddde5\",\n   \
               \   \"type\" : \"SMART\",\n      \"name\" : \"Power Bars\",\n      \"\
               label\" : null,\n      \"defaultSort\" : null,\n      \"_indexedAt\"\
-              \ : \"2021-07-23T11:10:22\",\n      \"_links\" : {\n        \"self\"\
-              \ : {\n          \"href\" : \"https://yourshop.api.urn/product-view/categories/d966cd4c-6e5a-4db6-9c37-32da441e74bb\"\
-              \n        },\n        \"category\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/categories/d966cd4c-6e5a-4db6-9c37-32da441e74bb\"\
-              \n        },\n        \"products\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/categories/d966cd4c-6e5a-4db6-9c37-32da441e74bb/products{?sortBy}\"\
+              \ : \"2021-07-26T11:16:44\",\n      \"_links\" : {\n        \"self\"\
+              \ : {\n          \"href\" : \"https://yourshop.api.urn/product-view/categories/c0e1be8f-f78b-49b0-9361-9e4350cddde5\"\
+              \n        },\n        \"category\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/categories/c0e1be8f-f78b-49b0-9361-9e4350cddde5\"\
+              \n        },\n        \"products\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/categories/c0e1be8f-f78b-49b0-9361-9e4350cddde5/products{?sortBy}\"\
               ,\n          \"templated\" : true\n        }\n      }\n    }, {\n  \
-              \    \"_id\" : \"6a38b60d-10de-40d4-a04e-e6a6d432dbea\",\n      \"type\"\
+              \    \"_id\" : \"cd781c9c-65ed-4907-acfe-b9e5c1e794cc\",\n      \"type\"\
               \ : \"MANUAL\",\n      \"name\" : \"Books\",\n      \"label\" : null,\n\
-              \      \"defaultSort\" : null,\n      \"_indexedAt\" : \"2021-07-23T11:10:22\"\
+              \      \"defaultSort\" : null,\n      \"_indexedAt\" : \"2021-07-26T11:16:44\"\
               ,\n      \"_links\" : {\n        \"self\" : {\n          \"href\" :\
-              \ \"https://yourshop.api.urn/product-view/categories/6a38b60d-10de-40d4-a04e-e6a6d432dbea\"\
-              \n        },\n        \"category\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/categories/6a38b60d-10de-40d4-a04e-e6a6d432dbea\"\
-              \n        },\n        \"products\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/categories/6a38b60d-10de-40d4-a04e-e6a6d432dbea/products{?sortBy}\"\
+              \ \"https://yourshop.api.urn/product-view/categories/cd781c9c-65ed-4907-acfe-b9e5c1e794cc\"\
+              \n        },\n        \"category\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/categories/cd781c9c-65ed-4907-acfe-b9e5c1e794cc\"\
+              \n        },\n        \"products\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/categories/cd781c9c-65ed-4907-acfe-b9e5c1e794cc/products{?sortBy}\"\
               ,\n          \"templated\" : true\n        }\n      }\n    } ]\n  },\n\
               \  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/product-view/categories/search/find-by-product?page=0&size=40\"\
               \n    }\n  },\n  \"page\" : {\n    \"size\" : 40,\n    \"totalElements\"\
@@ -10559,13 +10559,13 @@ paths:
           description: ""
           examples:
             application/hal+json: "{\n  \"_embedded\" : {\n    \"categories\" : [\
-              \ {\n      \"_id\" : \"527ae236-ab85-4e14-a78f-3b8120659949\",\n   \
+              \ {\n      \"_id\" : \"cb173d54-381c-4821-a728-6f3994180925\",\n   \
               \   \"type\" : \"SMART\",\n      \"name\" : \"Books\",\n      \"label\"\
               \ : \"books\",\n      \"defaultSort\" : \"NEWEST_FIRST\",\n      \"\
-              _indexedAt\" : \"2021-07-23T11:12:00\",\n      \"_links\" : {\n    \
-              \    \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/categories/527ae236-ab85-4e14-a78f-3b8120659949\"\
-              \n        },\n        \"category\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/categories/527ae236-ab85-4e14-a78f-3b8120659949\"\
-              \n        },\n        \"products\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/categories/527ae236-ab85-4e14-a78f-3b8120659949/products{?sortBy}\"\
+              _indexedAt\" : \"2021-07-26T11:11:49\",\n      \"_links\" : {\n    \
+              \    \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/categories/cb173d54-381c-4821-a728-6f3994180925\"\
+              \n        },\n        \"category\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/categories/cb173d54-381c-4821-a728-6f3994180925\"\
+              \n        },\n        \"products\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/categories/cb173d54-381c-4821-a728-6f3994180925/products{?sortBy}\"\
               ,\n          \"templated\" : true\n        }\n      }\n    } ]\n  },\n\
               \  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/product-view/categories/search/find-by-product?page=0&size=40\"\
               \n    }\n  },\n  \"page\" : {\n    \"size\" : 40,\n    \"totalElements\"\
@@ -10601,7 +10601,7 @@ paths:
           description: ""
           examples:
             application/hal+json: "{\n  \"_embedded\" : {\n    \"products\" : [ {\n\
-              \      \"_id\" : \"9718f140-f127-4f82-84b2-3b843853f10c\",\n      \"\
+              \      \"_id\" : \"ad5d75df-5156-4cd2-b15c-34c19113e223\",\n      \"\
               sku\" : \"EB001\",\n      \"name\" : \"High Protein Power Bar (Pack\
               \ of 5)\",\n      \"manufacturer\" : \"Protein Bar Makers\",\n     \
               \ \"salesPrice\" : {\n        \"amount\" : 4.95,\n        \"currency\"\
@@ -10614,11 +10614,11 @@ paths:
               \ : 5,\n          \"availabilityState\" : \"LOW_STOCK\",\n         \
               \ \"purchasable\" : true\n        }\n      },\n      \"productIdentifiers\"\
               \ : [ ],\n      \"_links\" : {\n        \"self\" : {\n          \"href\"\
-              \ : \"https://yourshop.api.urn/product-view/products/9718f140-f127-4f82-84b2-3b843853f10c\"\
-              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/9718f140-f127-4f82-84b2-3b843853f10c\"\
-              \n        },\n        \"cross-sells\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/9718f140-f127-4f82-84b2-3b843853f10c/cross-sells\"\
-              \n        }\n      },\n      \"_indexedAt\" : \"2021-07-23T11:11:39\"\
-              \n    }, {\n      \"_id\" : \"14e49062-50d9-4f50-a545-799179074b08\"\
+              \ : \"https://yourshop.api.urn/product-view/products/ad5d75df-5156-4cd2-b15c-34c19113e223\"\
+              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/ad5d75df-5156-4cd2-b15c-34c19113e223\"\
+              \n        },\n        \"cross-sells\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/ad5d75df-5156-4cd2-b15c-34c19113e223/cross-sells\"\
+              \n        }\n      },\n      \"_indexedAt\" : \"2021-07-26T11:11:02\"\
+              \n    }, {\n      \"_id\" : \"bb3186d5-adae-47c0-bc88-d69f98ed8151\"\
               ,\n      \"name\" : \"Rioja Castillo de Puerto (2013)\",\n      \"manufacturer\"\
               \ : \"Grape Vineyard\",\n      \"salesPrice\" : {\n        \"amount\"\
               \ : 8.7,\n        \"currency\" : \"EUR\",\n        \"taxModel\" : \"\
@@ -10649,12 +10649,12 @@ paths:
               \  },\n      \"productIdentifiers\" : [ {\n        \"type\" : \"EAN\"\
               ,\n        \"value\" : \"501234567890\"\n      }, {\n        \"type\"\
               \ : \"UPC\",\n        \"value\" : \"425261\"\n      } ],\n      \"_links\"\
-              \ : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/14e49062-50d9-4f50-a545-799179074b08\"\
-              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/14e49062-50d9-4f50-a545-799179074b08\"\
-              \n        },\n        \"cross-sells\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/14e49062-50d9-4f50-a545-799179074b08/cross-sells\"\
-              \n        }\n      },\n      \"_indexedAt\" : \"2021-07-23T11:11:39\"\
+              \ : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/bb3186d5-adae-47c0-bc88-d69f98ed8151\"\
+              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/bb3186d5-adae-47c0-bc88-d69f98ed8151\"\
+              \n        },\n        \"cross-sells\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/bb3186d5-adae-47c0-bc88-d69f98ed8151/cross-sells\"\
+              \n        }\n      },\n      \"_indexedAt\" : \"2021-07-26T11:11:02\"\
               \n    } ]\n  },\n  \"_links\" : {\n    \"self\" : {\n      \"href\"\
-              \ : \"https://yourshop.api.urn/product-view/categories/ed4ab62a-6877-414b-8a0b-dd9fe645e254/products?sortBy=NEWEST_FIRST&page=0&size=40&sort=createdAt,desc\"\
+              \ : \"https://yourshop.api.urn/product-view/categories/0990dc1a-0ddc-44a1-b6c6-4d3094c7d824/products?sortBy=NEWEST_FIRST&page=0&size=40&sort=createdAt,desc\"\
               \n    }\n  },\n  \"page\" : {\n    \"size\" : 40,\n    \"totalElements\"\
               \ : 2,\n    \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}"
           schema:
@@ -10703,17 +10703,17 @@ paths:
         name: ""
         required: false
         schema:
-          $ref: '#/definitions/product-view_products_search_find-by-ids269522246'
+          $ref: '#/definitions/product-view_products_search_find-by-ids-1073541306'
         x-examples:
-          application/json;charset=utf-8: "{\"ids\":[\"c8719211-bce8-40ca-a47b-e86fe633ff77\"\
-            ,\"c924149e-4f9d-49ce-bdb0-080a1bf2658d\",\"0bf14631-0f0e-41c5-989a-f044fea617fb\"\
+          application/json;charset=utf-8: "{\"ids\":[\"b255486d-21ad-4dae-aaab-f06b0ae0b7ca\"\
+            ,\"2d244f18-59e0-4e26-8ee1-91744bb5593e\",\"94889dd4-ddf9-4342-888a-dd67cdc5b14d\"\
             ]}"
       responses:
         "200":
           description: ""
           examples:
             application/hal+json: "{\n  \"_embedded\" : {\n    \"products\" : [ {\n\
-              \      \"_id\" : \"c8719211-bce8-40ca-a47b-e86fe633ff77\",\n      \"\
+              \      \"_id\" : \"b255486d-21ad-4dae-aaab-f06b0ae0b7ca\",\n      \"\
               sku\" : \"vino020\",\n      \"name\" : \"Rioja Castillo de Puerto (2013)\"\
               ,\n      \"manufacturer\" : \"Grape Vineyard\",\n      \"salesPrice\"\
               \ : {\n        \"amount\" : 8.7,\n        \"currency\" : \"EUR\",\n\
@@ -10737,11 +10737,11 @@ paths:
               \ },\n      \"productIdentifiers\" : [ {\n        \"type\" : \"EAN\"\
               ,\n        \"value\" : \"501234567890\"\n      }, {\n        \"type\"\
               \ : \"UPC\",\n        \"value\" : \"425261\"\n      } ],\n      \"_links\"\
-              \ : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/c8719211-bce8-40ca-a47b-e86fe633ff77\"\
-              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/c8719211-bce8-40ca-a47b-e86fe633ff77\"\
-              \n        },\n        \"cross-sells\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/c8719211-bce8-40ca-a47b-e86fe633ff77/cross-sells\"\
-              \n        }\n      },\n      \"_indexedAt\" : \"2021-07-23T11:10:34\"\
-              \n    }, {\n      \"_id\" : \"c924149e-4f9d-49ce-bdb0-080a1bf2658d\"\
+              \ : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/b255486d-21ad-4dae-aaab-f06b0ae0b7ca\"\
+              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/b255486d-21ad-4dae-aaab-f06b0ae0b7ca\"\
+              \n        },\n        \"cross-sells\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/b255486d-21ad-4dae-aaab-f06b0ae0b7ca/cross-sells\"\
+              \n        }\n      },\n      \"_indexedAt\" : \"2021-07-26T11:17:04\"\
+              \n    }, {\n      \"_id\" : \"2d244f18-59e0-4e26-8ee1-91744bb5593e\"\
               ,\n      \"sku\" : \"EB001\",\n      \"name\" : \"High Protein Power\
               \ Bar (Pack of 5)\",\n      \"manufacturer\" : \"Protein Bar Makers\"\
               ,\n      \"salesPrice\" : {\n        \"amount\" : 4.95,\n        \"\
@@ -10754,11 +10754,11 @@ paths:
               \         \"availableStock\" : 5,\n          \"availabilityState\" :\
               \ \"LOW_STOCK\",\n          \"purchasable\" : true\n        }\n    \
               \  },\n      \"productIdentifiers\" : [ ],\n      \"_links\" : {\n \
-              \       \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/c924149e-4f9d-49ce-bdb0-080a1bf2658d\"\
-              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/c924149e-4f9d-49ce-bdb0-080a1bf2658d\"\
-              \n        },\n        \"cross-sells\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/c924149e-4f9d-49ce-bdb0-080a1bf2658d/cross-sells\"\
-              \n        }\n      },\n      \"_indexedAt\" : \"2021-07-23T11:10:34\"\
-              \n    }, {\n      \"_id\" : \"0bf14631-0f0e-41c5-989a-f044fea617fb\"\
+              \       \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/2d244f18-59e0-4e26-8ee1-91744bb5593e\"\
+              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/2d244f18-59e0-4e26-8ee1-91744bb5593e\"\
+              \n        },\n        \"cross-sells\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/2d244f18-59e0-4e26-8ee1-91744bb5593e/cross-sells\"\
+              \n        }\n      },\n      \"_indexedAt\" : \"2021-07-26T11:17:04\"\
+              \n    }, {\n      \"_id\" : \"94889dd4-ddf9-4342-888a-dd67cdc5b14d\"\
               ,\n      \"sku\" : \"sh-001\",\n      \"name\" : \"Soft Walk Ultra -\
               \ Nibok Men's\",\n      \"manufacturer\" : \"Nibok\",\n      \"salesPrice\"\
               \ : {\n        \"amount\" : 89.0,\n        \"currency\" : \"EUR\",\n\
@@ -10774,16 +10774,16 @@ paths:
               \          \"availableStock\" : null,\n          \"availabilityState\"\
               \ : \"IN_STOCK\",\n          \"purchasable\" : true\n        }\n   \
               \   },\n      \"productIdentifiers\" : [ ],\n      \"_links\" : {\n\
-              \        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/0bf14631-0f0e-41c5-989a-f044fea617fb\"\
-              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/0bf14631-0f0e-41c5-989a-f044fea617fb\"\
-              \n        },\n        \"cross-sells\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/0bf14631-0f0e-41c5-989a-f044fea617fb/cross-sells\"\
-              \n        }\n      },\n      \"_indexedAt\" : \"2021-07-23T11:10:34\"\
+              \        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/94889dd4-ddf9-4342-888a-dd67cdc5b14d\"\
+              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/94889dd4-ddf9-4342-888a-dd67cdc5b14d\"\
+              \n        },\n        \"cross-sells\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/94889dd4-ddf9-4342-888a-dd67cdc5b14d/cross-sells\"\
+              \n        }\n      },\n      \"_indexedAt\" : \"2021-07-26T11:17:04\"\
               \n    } ]\n  },\n  \"_links\" : {\n    \"self\" : {\n      \"href\"\
               \ : \"https://yourshop.api.urn/product-view/products/search/find-by-ids?page=0&size=40\"\
               \n    }\n  },\n  \"page\" : {\n    \"size\" : 40,\n    \"totalElements\"\
               \ : 3,\n    \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}"
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-ids-270782029'
+            $ref: '#/definitions/product-view_products-270782029'
   /product-view/products/search/find-by-search-term:
     get:
       tags:
@@ -10806,7 +10806,7 @@ paths:
           description: ""
           examples:
             application/hal+json: "{\n  \"_embedded\" : {\n    \"products\" : [ {\n\
-              \      \"_id\" : \"4ae5f62e-d8d2-4f93-8a2a-d6dbbe70576f\",\n      \"\
+              \      \"_id\" : \"b5a6d7ae-40a5-4c8b-a14b-c87f793be4bb\",\n      \"\
               sku\" : \"vino020\",\n      \"name\" : \"Rioja Castillo de Puerto (2013)\"\
               ,\n      \"manufacturer\" : \"Grape Vineyard\",\n      \"salesPrice\"\
               \ : {\n        \"amount\" : 8.7,\n        \"currency\" : \"EUR\",\n\
@@ -10830,11 +10830,11 @@ paths:
               \ },\n      \"productIdentifiers\" : [ {\n        \"type\" : \"EAN\"\
               ,\n        \"value\" : \"501234567890\"\n      }, {\n        \"type\"\
               \ : \"UPC\",\n        \"value\" : \"425261\"\n      } ],\n      \"_links\"\
-              \ : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/4ae5f62e-d8d2-4f93-8a2a-d6dbbe70576f\"\
-              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/4ae5f62e-d8d2-4f93-8a2a-d6dbbe70576f\"\
-              \n        },\n        \"cross-sells\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/4ae5f62e-d8d2-4f93-8a2a-d6dbbe70576f/cross-sells\"\
-              \n        }\n      },\n      \"_indexedAt\" : \"2021-07-23T11:10:30\"\
-              \n    }, {\n      \"_id\" : \"39271213-b07a-4231-8ce6-10c2bfc8cf28\"\
+              \ : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/b5a6d7ae-40a5-4c8b-a14b-c87f793be4bb\"\
+              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/b5a6d7ae-40a5-4c8b-a14b-c87f793be4bb\"\
+              \n        },\n        \"cross-sells\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/b5a6d7ae-40a5-4c8b-a14b-c87f793be4bb/cross-sells\"\
+              \n        }\n      },\n      \"_indexedAt\" : \"2021-07-26T11:16:57\"\
+              \n    }, {\n      \"_id\" : \"9896fd0f-a9ba-4320-89bf-47c8829d4450\"\
               ,\n      \"sku\" : \"sh-001\",\n      \"name\" : \"Soft Walk Ultra -\
               \ Nibok Men's\",\n      \"manufacturer\" : \"Nibok\",\n      \"salesPrice\"\
               \ : {\n        \"amount\" : 89.0,\n        \"currency\" : \"EUR\",\n\
@@ -10850,16 +10850,16 @@ paths:
               \          \"availableStock\" : null,\n          \"availabilityState\"\
               \ : \"IN_STOCK\",\n          \"purchasable\" : true\n        }\n   \
               \   },\n      \"productIdentifiers\" : [ ],\n      \"_links\" : {\n\
-              \        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/39271213-b07a-4231-8ce6-10c2bfc8cf28\"\
-              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/39271213-b07a-4231-8ce6-10c2bfc8cf28\"\
-              \n        },\n        \"cross-sells\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/39271213-b07a-4231-8ce6-10c2bfc8cf28/cross-sells\"\
-              \n        }\n      },\n      \"_indexedAt\" : \"2021-07-23T11:10:30\"\
+              \        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/9896fd0f-a9ba-4320-89bf-47c8829d4450\"\
+              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/9896fd0f-a9ba-4320-89bf-47c8829d4450\"\
+              \n        },\n        \"cross-sells\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/9896fd0f-a9ba-4320-89bf-47c8829d4450/cross-sells\"\
+              \n        }\n      },\n      \"_indexedAt\" : \"2021-07-26T11:16:57\"\
               \n    } ]\n  },\n  \"_links\" : {\n    \"self\" : {\n      \"href\"\
               \ : \"https://yourshop.api.urn/product-view/products/search/find-by-search-term?page=0&size=40\"\
               \n    }\n  },\n  \"page\" : {\n    \"size\" : 40,\n    \"totalElements\"\
               \ : 2,\n    \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}"
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-ids-270782029'
+            $ref: '#/definitions/product-view_products-270782029'
   /product-view/products/search/find-by-tags:
     get:
       tags:
@@ -10882,7 +10882,7 @@ paths:
           description: ""
           examples:
             application/hal+json: "{\n  \"_embedded\" : {\n    \"products\" : [ {\n\
-              \      \"_id\" : \"aad89994-f919-40ea-b2d5-2dd4241348f9\",\n      \"\
+              \      \"_id\" : \"23c60e9c-9942-4895-af40-cf97230615a4\",\n      \"\
               sku\" : \"vino020\",\n      \"name\" : \"Rioja Castillo de Puerto (2013)\"\
               ,\n      \"manufacturer\" : \"Grape Vineyard\",\n      \"salesPrice\"\
               \ : {\n        \"amount\" : 8.7,\n        \"currency\" : \"EUR\",\n\
@@ -10906,16 +10906,16 @@ paths:
               \ },\n      \"productIdentifiers\" : [ {\n        \"type\" : \"EAN\"\
               ,\n        \"value\" : \"501234567890\"\n      }, {\n        \"type\"\
               \ : \"UPC\",\n        \"value\" : \"425261\"\n      } ],\n      \"_links\"\
-              \ : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/aad89994-f919-40ea-b2d5-2dd4241348f9\"\
-              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/aad89994-f919-40ea-b2d5-2dd4241348f9\"\
-              \n        },\n        \"cross-sells\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/aad89994-f919-40ea-b2d5-2dd4241348f9/cross-sells\"\
-              \n        }\n      },\n      \"_indexedAt\" : \"2021-07-23T11:10:18\"\
+              \ : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/23c60e9c-9942-4895-af40-cf97230615a4\"\
+              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/23c60e9c-9942-4895-af40-cf97230615a4\"\
+              \n        },\n        \"cross-sells\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/23c60e9c-9942-4895-af40-cf97230615a4/cross-sells\"\
+              \n        }\n      },\n      \"_indexedAt\" : \"2021-07-26T11:16:36\"\
               \n    } ]\n  },\n  \"_links\" : {\n    \"self\" : {\n      \"href\"\
               \ : \"https://yourshop.api.urn/product-view/products/search/find-by-tags?page=0&size=40&sort=createdAt,desc\"\
               \n    }\n  },\n  \"page\" : {\n    \"size\" : 40,\n    \"totalElements\"\
               \ : 1,\n    \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}"
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-ids-270782029'
+            $ref: '#/definitions/product-view_products-270782029'
   /product-view/products/{productId}/cross-sells:
     get:
       tags:
@@ -10937,11 +10937,11 @@ paths:
           description: ""
           examples:
             application/hal+json: "{\n  \"_embedded\" : {\n    \"cross-sells\" : [\
-              \ {\n      \"_id\" : \"eac647f4-424a-4271-8427-c66130bd824e\",\n   \
+              \ {\n      \"_id\" : \"805b1130-ae26-4d33-bc3c-b951e024fa4f\",\n   \
               \   \"name\" : \"Sale white wine cross-selling\",\n      \"_links\"\
-              \ : {\n        \"products\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/c8d3545f-e044-4cfb-b1ec-ae198b80ae34/cross-sells/eac647f4-424a-4271-8427-c66130bd824e\"\
+              \ : {\n        \"products\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/4e301d91-0d02-4823-b273-82d84ee2d4c1/cross-sells/805b1130-ae26-4d33-bc3c-b951e024fa4f\"\
               \n        }\n      }\n    } ]\n  },\n  \"_links\" : {\n    \"self\"\
-              \ : {\n      \"href\" : \"https://yourshop.api.urn/product-view/products/c8d3545f-e044-4cfb-b1ec-ae198b80ae34/cross-sells\"\
+              \ : {\n      \"href\" : \"https://yourshop.api.urn/product-view/products/4e301d91-0d02-4823-b273-82d84ee2d4c1/cross-sells\"\
               \n    }\n  }\n}"
           schema:
             $ref: '#/definitions/product-view_products_productId_cross-sells503413907'
@@ -10965,21 +10965,21 @@ paths:
           description: ""
           examples:
             application/hal+json: "{\n  \"_embedded\" : {\n    \"images\" : [ {\n\
-              \      \"_id\" : \"2940e9bf-3f92-4696-aca0-4d3fda580f07\",\n      \"\
+              \      \"_id\" : \"a9ebb526-df7e-4099-b2fc-5e3d418d797c\",\n      \"\
               dataUri\" : \"https://yourshop.api.urn/storage-api/images/rioja-02.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225998{&width,height,upscale}\"\
               ,\n      \"width\" : 500,\n      \"height\" : 200,\n      \"_links\"\
-              \ : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/aa72defc-7819-4353-874f-3d113e1ff244/images/2940e9bf-3f92-4696-aca0-4d3fda580f07\"\
-              \n        }\n      },\n      \"_indexedAt\" : \"2021-07-23T11:11:16\"\
-              \n    }, {\n      \"_id\" : \"660d60fa-52b6-4724-b188-d9988e501c41\"\
+              \ : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/a3a9ff59-e680-47d5-93de-1ca10d1649e9/images/a9ebb526-df7e-4099-b2fc-5e3d418d797c\"\
+              \n        }\n      },\n      \"_indexedAt\" : \"2021-07-26T11:19:56\"\
+              \n    }, {\n      \"_id\" : \"c4ad2f32-28b9-4ce6-bffa-50965f380832\"\
               ,\n      \"dataUri\" : \"https://yourshop.api.urn/storage-api/images/rioja-03.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225999{&width,height,upscale}\"\
               ,\n      \"width\" : 500,\n      \"height\" : 200,\n      \"_links\"\
-              \ : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/aa72defc-7819-4353-874f-3d113e1ff244/images/660d60fa-52b6-4724-b188-d9988e501c41\"\
-              \n        }\n      },\n      \"_indexedAt\" : \"2021-07-23T11:11:16\"\
-              \n    }, {\n      \"_id\" : \"77902e64-3432-4a61-bc9b-794045f099ee\"\
+              \ : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/a3a9ff59-e680-47d5-93de-1ca10d1649e9/images/c4ad2f32-28b9-4ce6-bffa-50965f380832\"\
+              \n        }\n      },\n      \"_indexedAt\" : \"2021-07-26T11:19:56\"\
+              \n    }, {\n      \"_id\" : \"353bcf30-daaa-44c4-baa9-cceb2b4a2f86\"\
               ,\n      \"dataUri\" : \"https://yourshop.api.urn/storage-api/images/rioja-04.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281226000{&width,height,upscale}\"\
               ,\n      \"width\" : 500,\n      \"height\" : 200,\n      \"_links\"\
-              \ : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/aa72defc-7819-4353-874f-3d113e1ff244/images/77902e64-3432-4a61-bc9b-794045f099ee\"\
-              \n        }\n      },\n      \"_indexedAt\" : \"2021-07-23T11:11:16\"\
+              \ : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/a3a9ff59-e680-47d5-93de-1ca10d1649e9/images/353bcf30-daaa-44c4-baa9-cceb2b4a2f86\"\
+              \n        }\n      },\n      \"_indexedAt\" : \"2021-07-26T11:19:57\"\
               \n    } ]\n  }\n}"
           schema:
             $ref: '#/definitions/product-view_products_productId_images-1449753857'
@@ -11004,36 +11004,36 @@ paths:
         "200":
           description: ""
           examples:
-            application/hal+json: "{\n  \"images\" : [ {\n    \"_id\" : \"4c86f2ff-f7de-4c86-b15d-0c10f70e8b0c\"\
+            application/hal+json: "{\n  \"images\" : [ {\n    \"_id\" : \"fcaae91c-c150-4113-bab6-c59d36d47aeb\"\
               ,\n    \"dataUri\" : \"https://yourshop.api.urn/storage-api/images/rioja-02.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225998{&width,height,upscale}\"\
               ,\n    \"width\" : 500,\n    \"height\" : 200,\n    \"_links\" : {\n\
-              \      \"self\" : {\n        \"href\" : \"https://yourshop.api.urn/product-view/products/5d9b4735-c974-4130-b778-ad37978852a5/images/4c86f2ff-f7de-4c86-b15d-0c10f70e8b0c\"\
-              \n      }\n    },\n    \"_indexedAt\" : \"2021-07-23T11:08:27\"\n  },\
-              \ {\n    \"_id\" : \"21978a94-d5fe-4b7f-8954-8a13d0b7bb35\",\n    \"\
+              \      \"self\" : {\n        \"href\" : \"https://yourshop.api.urn/product-view/products/7dbdf8d0-6d5a-41f2-8c93-e7350817d77f/images/fcaae91c-c150-4113-bab6-c59d36d47aeb\"\
+              \n      }\n    },\n    \"_indexedAt\" : \"2021-07-26T11:12:55\"\n  },\
+              \ {\n    \"_id\" : \"c5438ca5-0884-4203-b12a-e3fc7ad3b64d\",\n    \"\
               dataUri\" : \"https://yourshop.api.urn/storage-api/images/rioja-03.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281225999{&width,height,upscale}\"\
               ,\n    \"width\" : 500,\n    \"height\" : 200,\n    \"_links\" : {\n\
-              \      \"self\" : {\n        \"href\" : \"https://yourshop.api.urn/product-view/products/5d9b4735-c974-4130-b778-ad37978852a5/images/21978a94-d5fe-4b7f-8954-8a13d0b7bb35\"\
-              \n      }\n    },\n    \"_indexedAt\" : \"2021-07-23T11:08:27\"\n  },\
-              \ {\n    \"_id\" : \"f00cd24c-d903-4a83-b2c6-e89a83870d90\",\n    \"\
+              \      \"self\" : {\n        \"href\" : \"https://yourshop.api.urn/product-view/products/7dbdf8d0-6d5a-41f2-8c93-e7350817d77f/images/c5438ca5-0884-4203-b12a-e3fc7ad3b64d\"\
+              \n      }\n    },\n    \"_indexedAt\" : \"2021-07-26T11:12:55\"\n  },\
+              \ {\n    \"_id\" : \"74ec7415-9e92-4b68-9b66-6ee3759a15f7\",\n    \"\
               dataUri\" : \"https://yourshop.api.urn/storage-api/images/rioja-04.JPG?hash=8a627f655c68f56dfbbf217ab7d5563281226000{&width,height,upscale}\"\
               ,\n    \"width\" : 500,\n    \"height\" : 200,\n    \"_links\" : {\n\
-              \      \"self\" : {\n        \"href\" : \"https://yourshop.api.urn/product-view/products/5d9b4735-c974-4130-b778-ad37978852a5/images/f00cd24c-d903-4a83-b2c6-e89a83870d90\"\
-              \n      }\n    },\n    \"_indexedAt\" : \"2021-07-23T11:08:27\"\n  }\
-              \ ],\n  \"videos\" : [ {\n    \"source\" : \"frU0NZfAl9M\",\n    \"\
+              \      \"self\" : {\n        \"href\" : \"https://yourshop.api.urn/product-view/products/7dbdf8d0-6d5a-41f2-8c93-e7350817d77f/images/74ec7415-9e92-4b68-9b66-6ee3759a15f7\"\
+              \n      }\n    },\n    \"_indexedAt\" : \"2021-07-26T11:12:55\"\n  }\
+              \ ],\n  \"videos\" : [ {\n    \"source\" : \"X9yMzNffUiE\",\n    \"\
               type\" : \"YOUTUBE\",\n    \"_links\" : {\n      \"self\" : {\n    \
-              \    \"href\" : \"https://yourshop.api.urn/product-view/products/5d9b4735-c974-4130-b778-ad37978852a5/videos/4bee6aa2-5f15-4bc1-aa30-0aa943c51e6e\"\
-              \n      }\n    },\n    \"_id\" : \"4bee6aa2-5f15-4bc1-aa30-0aa943c51e6e\"\
-              ,\n    \"_indexedAt\" : \"2021-07-23T11:08:27\"\n  }, {\n    \"source\"\
-              \ : \"X9yMzNffUiE\",\n    \"type\" : \"YOUTUBE\",\n    \"_links\" :\
-              \ {\n      \"self\" : {\n        \"href\" : \"https://yourshop.api.urn/product-view/products/5d9b4735-c974-4130-b778-ad37978852a5/videos/85d053ad-247b-41a3-9fbd-c6756f7b881c\"\
-              \n      }\n    },\n    \"_id\" : \"85d053ad-247b-41a3-9fbd-c6756f7b881c\"\
-              ,\n    \"_indexedAt\" : \"2021-07-23T11:08:27\"\n  }, {\n    \"source\"\
+              \    \"href\" : \"https://yourshop.api.urn/product-view/products/7dbdf8d0-6d5a-41f2-8c93-e7350817d77f/videos/0c3dfb76-0dac-4963-8d9c-69ad75d6ff88\"\
+              \n      }\n    },\n    \"_id\" : \"0c3dfb76-0dac-4963-8d9c-69ad75d6ff88\"\
+              ,\n    \"_indexedAt\" : \"2021-07-26T11:12:55\"\n  }, {\n    \"source\"\
+              \ : \"frU0NZfAl9M\",\n    \"type\" : \"YOUTUBE\",\n    \"_links\" :\
+              \ {\n      \"self\" : {\n        \"href\" : \"https://yourshop.api.urn/product-view/products/7dbdf8d0-6d5a-41f2-8c93-e7350817d77f/videos/759e72b4-5b1d-49b8-84c7-224bf497e754\"\
+              \n      }\n    },\n    \"_id\" : \"759e72b4-5b1d-49b8-84c7-224bf497e754\"\
+              ,\n    \"_indexedAt\" : \"2021-07-26T11:12:55\"\n  }, {\n    \"source\"\
               \ : \"ietvKQuPR-A\",\n    \"type\" : \"YOUTUBE\",\n    \"_links\" :\
-              \ {\n      \"self\" : {\n        \"href\" : \"https://yourshop.api.urn/product-view/products/5d9b4735-c974-4130-b778-ad37978852a5/videos/f451a5ef-ca75-47b1-bb2f-f9e89b0b9b1f\"\
-              \n      }\n    },\n    \"_id\" : \"f451a5ef-ca75-47b1-bb2f-f9e89b0b9b1f\"\
-              ,\n    \"_indexedAt\" : \"2021-07-23T11:08:27\"\n  } ],\n  \"_links\"\
-              \ : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/product-view/products/5d9b4735-c974-4130-b778-ad37978852a5/media\"\
-              \n    },\n    \"product\" : {\n      \"href\" : \"https://yourshop.api.urn/product-view/products/5d9b4735-c974-4130-b778-ad37978852a5\"\
+              \ {\n      \"self\" : {\n        \"href\" : \"https://yourshop.api.urn/product-view/products/7dbdf8d0-6d5a-41f2-8c93-e7350817d77f/videos/caaa3992-8ec9-4b7b-a940-a45915b218c9\"\
+              \n      }\n    },\n    \"_id\" : \"caaa3992-8ec9-4b7b-a940-a45915b218c9\"\
+              ,\n    \"_indexedAt\" : \"2021-07-26T11:12:55\"\n  } ],\n  \"_links\"\
+              \ : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/product-view/products/7dbdf8d0-6d5a-41f2-8c93-e7350817d77f/media\"\
+              \n    },\n    \"product\" : {\n      \"href\" : \"https://yourshop.api.urn/product-view/products/7dbdf8d0-6d5a-41f2-8c93-e7350817d77f\"\
               \n    }\n  }\n}"
           schema:
             $ref: '#/definitions/product-view_products_productId_media-1376823786'
@@ -11059,17 +11059,17 @@ paths:
             application/hal+json: "{\n  \"_embedded\" : {\n    \"videos\" : [ {\n\
               \      \"source\" : \"X9yMzNffUiE\",\n      \"type\" : \"YOUTUBE\",\n\
               \      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"\
-              https://yourshop.api.urn/product-view/products/7b2ffa63-374f-43cb-b859-547d4d75b18a/videos/0accc4ce-3e70-456c-aa9e-2e975eaabdfc\"\
-              \n        }\n      },\n      \"_id\" : \"0accc4ce-3e70-456c-aa9e-2e975eaabdfc\"\
-              ,\n      \"_indexedAt\" : \"2021-07-23T11:05:59\"\n    }, {\n      \"\
+              https://yourshop.api.urn/product-view/products/7f39b0da-ec0f-43f9-8028-9cc1924421ea/videos/239ec7a5-9b01-45c9-9a7e-dcae8fe38641\"\
+              \n        }\n      },\n      \"_id\" : \"239ec7a5-9b01-45c9-9a7e-dcae8fe38641\"\
+              ,\n      \"_indexedAt\" : \"2021-07-26T11:21:31\"\n    }, {\n      \"\
               source\" : \"frU0NZfAl9M\",\n      \"type\" : \"YOUTUBE\",\n      \"\
-              _links\" : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/7b2ffa63-374f-43cb-b859-547d4d75b18a/videos/76a02f01-7372-415e-bf26-1e41ecc918fd\"\
-              \n        }\n      },\n      \"_id\" : \"76a02f01-7372-415e-bf26-1e41ecc918fd\"\
-              ,\n      \"_indexedAt\" : \"2021-07-23T11:05:59\"\n    }, {\n      \"\
+              _links\" : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/7f39b0da-ec0f-43f9-8028-9cc1924421ea/videos/4e640040-4fae-41c5-8caf-9812e668391e\"\
+              \n        }\n      },\n      \"_id\" : \"4e640040-4fae-41c5-8caf-9812e668391e\"\
+              ,\n      \"_indexedAt\" : \"2021-07-26T11:21:31\"\n    }, {\n      \"\
               source\" : \"ietvKQuPR-A\",\n      \"type\" : \"YOUTUBE\",\n      \"\
-              _links\" : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/7b2ffa63-374f-43cb-b859-547d4d75b18a/videos/d7d073db-295e-407a-9e97-1b2b66b3001c\"\
-              \n        }\n      },\n      \"_id\" : \"d7d073db-295e-407a-9e97-1b2b66b3001c\"\
-              ,\n      \"_indexedAt\" : \"2021-07-23T11:05:59\"\n    } ]\n  }\n}"
+              _links\" : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/7f39b0da-ec0f-43f9-8028-9cc1924421ea/videos/79f138ce-3b4d-446d-a28f-d10b2f2fed6f\"\
+              \n        }\n      },\n      \"_id\" : \"79f138ce-3b4d-446d-a28f-d10b2f2fed6f\"\
+              ,\n      \"_indexedAt\" : \"2021-07-26T11:21:31\"\n    } ]\n  }\n}"
           schema:
             $ref: '#/definitions/product-view_products_productId_videos1895959366'
   /product-view/products/{productId}/cross-sells/{crossSellId}:
@@ -11097,7 +11097,7 @@ paths:
           description: ""
           examples:
             application/hal+json: "{\n  \"_embedded\" : {\n    \"products\" : [ {\n\
-              \      \"_id\" : \"158be1d0-5ab4-474d-8e74-b60c28d51c19\",\n      \"\
+              \      \"_id\" : \"bd8d8ce5-41ac-4a39-8269-60ef7ec31e3d\",\n      \"\
               sku\" : \"vino020\",\n      \"name\" : \"Rioja Castillo de Puerto (2013)\"\
               ,\n      \"manufacturer\" : \"Grape Vineyard\",\n      \"salesPrice\"\
               \ : {\n        \"amount\" : 8.7,\n        \"currency\" : \"EUR\",\n\
@@ -11121,11 +11121,11 @@ paths:
               \ },\n      \"productIdentifiers\" : [ {\n        \"type\" : \"EAN\"\
               ,\n        \"value\" : \"501234567890\"\n      }, {\n        \"type\"\
               \ : \"UPC\",\n        \"value\" : \"425261\"\n      } ],\n      \"_links\"\
-              \ : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/158be1d0-5ab4-474d-8e74-b60c28d51c19\"\
-              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/158be1d0-5ab4-474d-8e74-b60c28d51c19\"\
-              \n        },\n        \"cross-sells\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/158be1d0-5ab4-474d-8e74-b60c28d51c19/cross-sells\"\
-              \n        }\n      },\n      \"_indexedAt\" : \"2021-07-23T11:09:28\"\
-              \n    }, {\n      \"_id\" : \"0dd9f193-05e2-46ca-a927-aa20a43ea861\"\
+              \ : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/bd8d8ce5-41ac-4a39-8269-60ef7ec31e3d\"\
+              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/bd8d8ce5-41ac-4a39-8269-60ef7ec31e3d\"\
+              \n        },\n        \"cross-sells\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/bd8d8ce5-41ac-4a39-8269-60ef7ec31e3d/cross-sells\"\
+              \n        }\n      },\n      \"_indexedAt\" : \"2021-07-26T11:17:39\"\
+              \n    }, {\n      \"_id\" : \"3c0d832f-1bd6-4e52-a42f-5cc1ce2866bb\"\
               ,\n      \"sku\" : \"vino020\",\n      \"name\" : \"Rioja Castillo de\
               \ Puerto (2013)\",\n      \"manufacturer\" : \"Grape Vineyard\",\n \
               \     \"salesPrice\" : {\n        \"amount\" : 8.7,\n        \"currency\"\
@@ -11149,11 +11149,11 @@ paths:
               \ },\n      \"productIdentifiers\" : [ {\n        \"type\" : \"EAN\"\
               ,\n        \"value\" : \"501234567890\"\n      }, {\n        \"type\"\
               \ : \"UPC\",\n        \"value\" : \"425261\"\n      } ],\n      \"_links\"\
-              \ : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/0dd9f193-05e2-46ca-a927-aa20a43ea861\"\
-              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/0dd9f193-05e2-46ca-a927-aa20a43ea861\"\
-              \n        },\n        \"cross-sells\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/0dd9f193-05e2-46ca-a927-aa20a43ea861/cross-sells\"\
-              \n        }\n      },\n      \"_indexedAt\" : \"2021-07-23T11:09:28\"\
-              \n    }, {\n      \"_id\" : \"2517cf3b-e964-465b-b52a-95612e97ea3d\"\
+              \ : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/3c0d832f-1bd6-4e52-a42f-5cc1ce2866bb\"\
+              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/3c0d832f-1bd6-4e52-a42f-5cc1ce2866bb\"\
+              \n        },\n        \"cross-sells\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/3c0d832f-1bd6-4e52-a42f-5cc1ce2866bb/cross-sells\"\
+              \n        }\n      },\n      \"_indexedAt\" : \"2021-07-26T11:17:39\"\
+              \n    }, {\n      \"_id\" : \"815354c2-51b6-4e9d-bfd4-b672912e361f\"\
               ,\n      \"sku\" : \"vino020\",\n      \"name\" : \"Rioja Castillo de\
               \ Puerto (2013)\",\n      \"manufacturer\" : \"Grape Vineyard\",\n \
               \     \"salesPrice\" : {\n        \"amount\" : 8.7,\n        \"currency\"\
@@ -11177,11 +11177,11 @@ paths:
               \ },\n      \"productIdentifiers\" : [ {\n        \"type\" : \"EAN\"\
               ,\n        \"value\" : \"501234567890\"\n      }, {\n        \"type\"\
               \ : \"UPC\",\n        \"value\" : \"425261\"\n      } ],\n      \"_links\"\
-              \ : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/2517cf3b-e964-465b-b52a-95612e97ea3d\"\
-              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/2517cf3b-e964-465b-b52a-95612e97ea3d\"\
-              \n        },\n        \"cross-sells\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/2517cf3b-e964-465b-b52a-95612e97ea3d/cross-sells\"\
-              \n        }\n      },\n      \"_indexedAt\" : \"2021-07-23T11:09:28\"\
-              \n    }, {\n      \"_id\" : \"766ab503-8d3c-406b-9c1e-17ced9d25c48\"\
+              \ : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/815354c2-51b6-4e9d-bfd4-b672912e361f\"\
+              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/815354c2-51b6-4e9d-bfd4-b672912e361f\"\
+              \n        },\n        \"cross-sells\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/815354c2-51b6-4e9d-bfd4-b672912e361f/cross-sells\"\
+              \n        }\n      },\n      \"_indexedAt\" : \"2021-07-26T11:17:40\"\
+              \n    }, {\n      \"_id\" : \"b92c9e6b-8396-4796-8760-e98c8b96c27f\"\
               ,\n      \"sku\" : \"vino020\",\n      \"name\" : \"Rioja Castillo de\
               \ Puerto (2013)\",\n      \"manufacturer\" : \"Grape Vineyard\",\n \
               \     \"salesPrice\" : {\n        \"amount\" : 8.7,\n        \"currency\"\
@@ -11205,11 +11205,11 @@ paths:
               \ },\n      \"productIdentifiers\" : [ {\n        \"type\" : \"EAN\"\
               ,\n        \"value\" : \"501234567890\"\n      }, {\n        \"type\"\
               \ : \"UPC\",\n        \"value\" : \"425261\"\n      } ],\n      \"_links\"\
-              \ : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/766ab503-8d3c-406b-9c1e-17ced9d25c48\"\
-              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/766ab503-8d3c-406b-9c1e-17ced9d25c48\"\
-              \n        },\n        \"cross-sells\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/766ab503-8d3c-406b-9c1e-17ced9d25c48/cross-sells\"\
-              \n        }\n      },\n      \"_indexedAt\" : \"2021-07-23T11:09:28\"\
-              \n    }, {\n      \"_id\" : \"2d2edf83-31e5-4cc4-8788-eb1826160eb6\"\
+              \ : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/b92c9e6b-8396-4796-8760-e98c8b96c27f\"\
+              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/b92c9e6b-8396-4796-8760-e98c8b96c27f\"\
+              \n        },\n        \"cross-sells\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/b92c9e6b-8396-4796-8760-e98c8b96c27f/cross-sells\"\
+              \n        }\n      },\n      \"_indexedAt\" : \"2021-07-26T11:17:40\"\
+              \n    }, {\n      \"_id\" : \"935fe166-d40b-4c88-8f74-c7be32e9c1cb\"\
               ,\n      \"sku\" : \"vino020\",\n      \"name\" : \"Rioja Castillo de\
               \ Puerto (2013)\",\n      \"manufacturer\" : \"Grape Vineyard\",\n \
               \     \"salesPrice\" : {\n        \"amount\" : 8.7,\n        \"currency\"\
@@ -11233,17 +11233,17 @@ paths:
               \ },\n      \"productIdentifiers\" : [ {\n        \"type\" : \"EAN\"\
               ,\n        \"value\" : \"501234567890\"\n      }, {\n        \"type\"\
               \ : \"UPC\",\n        \"value\" : \"425261\"\n      } ],\n      \"_links\"\
-              \ : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/2d2edf83-31e5-4cc4-8788-eb1826160eb6\"\
-              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/2d2edf83-31e5-4cc4-8788-eb1826160eb6\"\
-              \n        },\n        \"cross-sells\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/2d2edf83-31e5-4cc4-8788-eb1826160eb6/cross-sells\"\
-              \n        }\n      },\n      \"_indexedAt\" : \"2021-07-23T11:09:28\"\
+              \ : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/935fe166-d40b-4c88-8f74-c7be32e9c1cb\"\
+              \n        },\n        \"product\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/935fe166-d40b-4c88-8f74-c7be32e9c1cb\"\
+              \n        },\n        \"cross-sells\" : {\n          \"href\" : \"https://yourshop.api.urn/product-view/products/935fe166-d40b-4c88-8f74-c7be32e9c1cb/cross-sells\"\
+              \n        }\n      },\n      \"_indexedAt\" : \"2021-07-26T11:17:40\"\
               \n    } ]\n  },\n  \"_links\" : {\n    \"self\" : {\n      \"href\"\
-              \ : \"https://yourshop.api.urn/product-view/products/490245bd-7c35-4944-96d6-bf019acba4f4/cross-sells/faee8e32-6346-4722-9436-741121dcae27?page=0&size=40\"\
-              \n    },\n    \"cross-sells\" : {\n      \"href\" : \"https://yourshop.api.urn/product-view/products/490245bd-7c35-4944-96d6-bf019acba4f4/cross-sells\"\
+              \ : \"https://yourshop.api.urn/product-view/products/fa9d224e-020c-410b-9188-272afb066090/cross-sells/35e324d4-8918-4d33-9425-fb4cc47f9cdf?page=0&size=40\"\
+              \n    },\n    \"cross-sells\" : {\n      \"href\" : \"https://yourshop.api.urn/product-view/products/fa9d224e-020c-410b-9188-272afb066090/cross-sells\"\
               \n    }\n  },\n  \"page\" : {\n    \"size\" : 40,\n    \"totalElements\"\
               \ : 5,\n    \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}"
           schema:
-            $ref: '#/definitions/product-view_products_search_find-by-ids-270782029'
+            $ref: '#/definitions/product-view_products-270782029'
   /product-view/products/{productId}/images/{imageId}:
     get:
       tags:
@@ -11269,12 +11269,12 @@ paths:
         "200":
           description: ""
           examples:
-            application/hal+json: "{\n  \"_id\" : \"c49cdfb3-f0f8-4bd9-923a-6a09db9ac919\"\
+            application/hal+json: "{\n  \"_id\" : \"e05b1f7e-6c4f-4630-add1-74fdf21a3ef6\"\
               ,\n  \"dataUri\" : \"https://yourshop.api.urn/random.img?hash=213213213213\"\
               ,\n  \"width\" : 500,\n  \"height\" : 200,\n  \"_links\" : {\n    \"\
-              self\" : {\n      \"href\" : \"https://yourshop.api.urn/product-view/products/1ae395c1-42c7-46b4-a242-988ca4f08c22/images/c49cdfb3-f0f8-4bd9-923a-6a09db9ac919\"\
-              \n    },\n    \"image\" : {\n      \"href\" : \"https://yourshop.api.urn/product-view/products/1ae395c1-42c7-46b4-a242-988ca4f08c22/images/c49cdfb3-f0f8-4bd9-923a-6a09db9ac919\"\
-              \n    }\n  },\n  \"_indexedAt\" : \"2021-07-23T11:11:15\"\n}"
+              self\" : {\n      \"href\" : \"https://yourshop.api.urn/product-view/products/81109328-b279-403f-969c-f8d2b976fefc/images/e05b1f7e-6c4f-4630-add1-74fdf21a3ef6\"\
+              \n    },\n    \"image\" : {\n      \"href\" : \"https://yourshop.api.urn/product-view/products/81109328-b279-403f-969c-f8d2b976fefc/images/e05b1f7e-6c4f-4630-add1-74fdf21a3ef6\"\
+              \n    }\n  },\n  \"_indexedAt\" : \"2021-07-26T11:19:54\"\n}"
           schema:
             $ref: '#/definitions/product-view_products_productId_images_imageId-2799947'
   /product-view/products/{productId}/videos/{videoId}:
@@ -11304,10 +11304,10 @@ paths:
           examples:
             application/hal+json: "{\n  \"source\" : \"j-bj3nC7qss\",\n  \"type\"\
               \ : \"YOUTUBE\",\n  \"_links\" : {\n    \"self\" : {\n      \"href\"\
-              \ : \"https://yourshop.api.urn/product-view/products/8433fbf6-b62b-42da-9386-91b4120933a8/videos/a2f661b6-b02a-41bb-90f4-3c2415668164\"\
-              \n    },\n    \"video\" : {\n      \"href\" : \"https://yourshop.api.urn/product-view/products/8433fbf6-b62b-42da-9386-91b4120933a8/videos/a2f661b6-b02a-41bb-90f4-3c2415668164\"\
-              \n    }\n  },\n  \"_id\" : \"a2f661b6-b02a-41bb-90f4-3c2415668164\"\
-              ,\n  \"_indexedAt\" : \"2021-07-23T11:05:52\"\n}"
+              \ : \"https://yourshop.api.urn/product-view/products/b19e51ca-cda7-4acb-97e1-3eabacbe74bb/videos/7ee79a82-4198-4a04-85e9-87c5fd632e60\"\
+              \n    },\n    \"video\" : {\n      \"href\" : \"https://yourshop.api.urn/product-view/products/b19e51ca-cda7-4acb-97e1-3eabacbe74bb/videos/7ee79a82-4198-4a04-85e9-87c5fd632e60\"\
+              \n    }\n  },\n  \"_id\" : \"7ee79a82-4198-4a04-85e9-87c5fd632e60\"\
+              ,\n  \"_indexedAt\" : \"2021-07-26T11:21:26\"\n}"
           schema:
             $ref: '#/definitions/product-view_products_productId_videos_videoId585715194'
   /products:
@@ -16488,45 +16488,29 @@ paths:
       security:
       - oauth2_application:
         - prod:u
-  /resellers/epages/shops/{id}/attributes/{name}:
-    put:
+  /resellers/epages/shops/{shopId}/open:
+    post:
       tags:
       - resellers
-      summary: Duplicated shop attribute name
-      description: "When the shop attribute is created with an already taken `name`\
-        \ property, a `409 Conflict` error will be returned."
-      operationId: shop-attribute-name-already-used
-      consumes:
-      - application/json
+      summary: Shop address is missing
+      description: "When the shop is opened without an address, a `400 Bad Request`\
+        \ error will be returned."
+      operationId: missing-shop-address
       produces:
       - application/json
       parameters:
-      - name: id
+      - name: shopId
         in: path
         description: ""
         required: true
         type: string
-      - name: name
-        in: path
-        description: ""
-        required: true
-        type: string
-      - in: body
-        name: ""
-        required: false
-        schema:
-          $ref: '#/definitions/resellers_epages_shops_id_attributes_name351859999'
-        x-examples:
-          application/json: "{\n  \"value\" : \"manuallyCreateSku\",\n  \"public\"\
-            \ : true\n}"
       responses:
-        "409":
+        "400":
           description: ""
           examples:
-            application/json: "{\n  \"errorId\" : \"attribute-name-already-used\"\
-              ,\n  \"details\" : { },\n  \"message\" : \"A public attribute with name\
-              \ createSku already exists under a different owner\",\n  \"traceId\"\
-              \ : null\n}"
+            application/json: "{\n  \"errorId\" : \"shop-open-conditions-not-fulfilled\"\
+              ,\n  \"details\" : { },\n  \"message\" : \"Cannot open shop: Address\
+              \ is missing\",\n  \"traceId\" : null\n}"
   /script-tags:
     get:
       tags:
@@ -17257,12 +17241,12 @@ paths:
         "200":
           description: ""
           examples:
-            application/hal+json: "{\n  \"_id\" : \"b7a28275-966b-451c-800a-830fefb8052e\"\
+            application/hal+json: "{\n  \"_id\" : \"92bd17f8-2a5f-4c48-84ac-a4da2203f3d1\"\
               ,\n  \"resellerName\" : \"epages\",\n  \"primaryHostname\" : \"cornershop.amazingdiscounts.xyz\"\
               ,\n  \"fallbackHostname\" : \"cornershop.beyondshop.cloud\",\n  \"name\"\
               \ : \"My little Cornershop\",\n  \"tax\" : {\n    \"taxModel\" : \"\
               GROSS\",\n    \"country\" : \"GB\",\n    \"supportedTaxClasses\" : [\
-              \ \"REDUCED\", \"EXEMPT\", \"REGULAR\" ],\n    \"vatExempted\" : false\n\
+              \ \"EXEMPT\", \"REGULAR\", \"REDUCED\" ],\n    \"vatExempted\" : false\n\
               \  },\n  \"defaultCurrency\" : \"EUR\",\n  \"currencies\" : [ \"EUR\"\
               , \"GBP\" ],\n  \"locales\" : [ \"de-DE\", \"en-GB\" ],\n  \"defaultLocale\"\
               \ : \"en-GB\",\n  \"closedByMerchant\" : false,\n  \"_links\" : {\n\
@@ -17292,11 +17276,11 @@ paths:
         name: ""
         required: false
         schema:
-          $ref: '#/definitions/shop265410809'
+          $ref: '#/definitions/shop542312093'
         x-examples:
           application/json;charset=UTF-8: "{\n  \"name\" : \"anotherName\",\n  \"\
-            tax\" : {\n    \"vatExempted\" : true\n  },\n  \"locales\" : [ \"de-DE\"\
-            , \"en-GB\" ],\n  \"closedByMerchant\" : false\n}"
+            tax\" : {\n    \"vatExempted\" : true\n  },\n  \"locales\" : [ \"en-GB\"\
+            , \"de-DE\" ],\n  \"closedByMerchant\" : false\n}"
       responses:
         "200":
           description: ""
@@ -17305,10 +17289,10 @@ paths:
               \ : \"cornershop.amazingdiscounts.xyz\",\n  \"fallbackHostname\" : \"\
               cornershop.beyondshop.cloud\",\n  \"tax\" : {\n    \"taxModel\" : \"\
               GROSS\",\n    \"vatExempted\" : true,\n    \"country\" : \"GB\"\n  },\n\
-              \  \"currencies\" : [ \"EUR\", \"GBP\" ],\n  \"defaultCurrency\" : \"\
-              EUR\",\n  \"locales\" : [ \"de-DE\", \"en-GB\" ],\n  \"defaultLocale\"\
+              \  \"currencies\" : [ \"GBP\", \"EUR\" ],\n  \"defaultCurrency\" : \"\
+              EUR\",\n  \"locales\" : [ \"en-GB\", \"de-DE\" ],\n  \"defaultLocale\"\
               \ : \"en-GB\",\n  \"resellerName\" : \"epages\",\n  \"closedByMerchant\"\
-              \ : false,\n  \"_id\" : \"2b60a651-c5b8-42e9-b816-1fd22d178fc1\",\n\
+              \ : false,\n  \"_id\" : \"2b7ca5be-7e27-40ca-b1ac-5340ad75366a\",\n\
               \  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/shop\"\
               \n    },\n    \"shop\" : {\n      \"href\" : \"https://yourshop.api.urn/shop\"\
               \n    },\n    \"address\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/address\"\
@@ -17347,7 +17331,7 @@ paths:
               \n    },\n    \"owner\" : {\n      \"href\" : \"https://yourshop.api.urn/shop\"\
               \n    }\n  }\n}"
           schema:
-            $ref: '#/definitions/shop_address-1944096438'
+            $ref: '#/definitions/shop_address458837816'
     patch:
       tags:
       - shop
@@ -17389,7 +17373,7 @@ paths:
               \n    },\n    \"owner\" : {\n      \"href\" : \"https://yourshop.api.urn/shop\"\
               \n    }\n  }\n}"
           schema:
-            $ref: '#/definitions/shop_address-1944096438'
+            $ref: '#/definitions/shop_address458837816'
       security:
       - oauth2_application:
         - shad:u
@@ -17451,7 +17435,7 @@ paths:
               \n    },\n    \"owner\" : {\n      \"href\" : \"https://yourshop.api.urn/shop\"\
               \n    }\n  }\n}"
           schema:
-            $ref: '#/definitions/shop_attributes_name-1539550587'
+            $ref: '#/definitions/shop_attributes-1539550587'
       security:
       - oauth2_application:
         - shat:c
@@ -17528,10 +17512,10 @@ paths:
           examples:
             application/hal+json: "{\n  \"_embedded\" : {\n    \"images\" : [ {\n\
               \      \"label\" : \"logo\",\n      \"width\" : 250,\n      \"height\"\
-              \ : 300,\n      \"_id\" : \"d2ff0721-ff2d-42c4-8bb8-951586447878\",\n\
+              \ : 300,\n      \"_id\" : \"a175bf57-d773-4c26-b633-f64a33a3200d\",\n\
               \      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"\
-              https://yourshop.api.urn/shop/images/d2ff0721-ff2d-42c4-8bb8-951586447878\"\
-              \n        },\n        \"image\" : {\n          \"href\" : \"https://yourshop.api.urn/shop/images/d2ff0721-ff2d-42c4-8bb8-951586447878\"\
+              https://yourshop.api.urn/shop/images/a175bf57-d773-4c26-b633-f64a33a3200d\"\
+              \n        },\n        \"image\" : {\n          \"href\" : \"https://yourshop.api.urn/shop/images/a175bf57-d773-4c26-b633-f64a33a3200d\"\
               \n        },\n        \"data\" : {\n          \"href\" : \"https://yourshop.api.urn/api/core-storage/images/file.png?hash=212-2323-4343{&width,height,upscale}\"\
               ,\n          \"templated\" : true\n        },\n        \"metadata\"\
               \ : {\n          \"href\" : \"https://yourshop.api.urn/api/core-storage/images/file.png?hash=212-2323-4343&download=no\"\
@@ -17540,7 +17524,7 @@ paths:
               \n    }\n  },\n  \"page\" : {\n    \"size\" : 20,\n    \"totalElements\"\
               \ : 1,\n    \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}"
           schema:
-            $ref: '#/definitions/shop_images_search_find-by-label184519405'
+            $ref: '#/definitions/shop_images184519405'
     post:
       tags:
       - shop
@@ -17588,9 +17572,9 @@ paths:
           description: ""
           examples:
             application/hal+json: "{\n  \"label\" : \"Shop Logo 1\",\n  \"width\"\
-              \ : 1140,\n  \"height\" : 420,\n  \"_id\" : \"c1592c3e-5aa4-453b-ac79-3966e7238642\"\
-              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/images/c1592c3e-5aa4-453b-ac79-3966e7238642\"\
-              \n    },\n    \"image\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/images/c1592c3e-5aa4-453b-ac79-3966e7238642\"\
+              \ : 1140,\n  \"height\" : 420,\n  \"_id\" : \"e61342c1-3c94-41b0-bf2b-28bae9b6d8dc\"\
+              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/images/e61342c1-3c94-41b0-bf2b-28bae9b6d8dc\"\
+              \n    },\n    \"image\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/images/e61342c1-3c94-41b0-bf2b-28bae9b6d8dc\"\
               \n    },\n    \"data\" : {\n      \"href\" : \"https://yourshop.api.urn/api/core-storage/images/sample.png?hash=80d4ab42cfd7823b34e4ad406d9bc470d5d13298{&width,height,upscale}\"\
               ,\n      \"templated\" : true\n    },\n    \"metadata\" : {\n      \"\
               href\" : \"https://yourshop.api.urn/api/core-storage/images/sample.png?hash=80d4ab42cfd7823b34e4ad406d9bc470d5d13298&download=no\"\
@@ -17701,14 +17685,14 @@ paths:
               \n        }, {\n          \"openDay\" : \"SATURDAY\",\n          \"\
               openTime\" : \"10:00\",\n          \"closeDay\" : \"SATURDAY\",\n  \
               \        \"closeTime\" : \"16:00\"\n        } ]\n      },\n      \"\
-              _id\" : \"4e318679-d4dd-4235-bfd5-bda25fec829f\",\n      \"_links\"\
-              \ : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/shop/locations/4e318679-d4dd-4235-bfd5-bda25fec829f\"\
+              _id\" : \"24eff6e0-ed48-475d-a8ce-de9d60ad3481\",\n      \"_links\"\
+              \ : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/shop/locations/24eff6e0-ed48-475d-a8ce-de9d60ad3481\"\
               \n        }\n      }\n    } ]\n  },\n  \"_links\" : {\n    \"self\"\
               \ : {\n      \"href\" : \"https://yourshop.api.urn/shop/locations?page=0&size=20\"\
               \n    }\n  },\n  \"page\" : {\n    \"size\" : 20,\n    \"totalElements\"\
               \ : 1,\n    \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}"
           schema:
-            $ref: '#/definitions/shop_locations-839345339'
+            $ref: '#/definitions/shop_locations-1087442974'
       security:
       - oauth2_application:
         - loca:r
@@ -17727,23 +17711,23 @@ paths:
         name: ""
         required: false
         schema:
-          $ref: '#/definitions/shop_locations651335760'
+          $ref: '#/definitions/shop_locations448907403'
         x-examples:
           application/json: "{\n  \"languageCode\" : \"en\",\n  \"storeCode\" : \"\
             MLC-St-Ives\",\n  \"locationName\" : \"My little Cornershop - St.Ives\"\
             ,\n  \"primaryPhone\" : \"(800) 555-0102\",\n  \"address\" : {\n    \"\
             locality\" : \"\",\n    \"postalCode\" : \"90999\",\n    \"regionCode\"\
             \ : \"GB\",\n    \"addressLines\" : [ \"My little Cornershop\", \"27 Hudson\
-            \ Way\", \"St.Ives\" ]\n  },\n  \"googleStatus\" : \"ACTIVE\",\n  \"googleAdditionalCategories\"\
-            \ : [ {\n    \"displayName\" : \"Drinks\",\n    \"categoryId\" : \"gcid:storedrinks\"\
-            \n  } ],\n  \"googlePrimaryCategory\" : {\n    \"categoryId\" : \"gcid:storefood\"\
-            ,\n    \"displayName\" : \"Food\"\n  },\n  \"regularHours\" : {\n    \"\
-            periods\" : [ {\n      \"openDay\" : \"MONDAY\",\n      \"openTime\" :\
-            \ \"08:00\",\n      \"closeDay\" : \"MONDAY\",\n      \"closeTime\" :\
-            \ \"17:00\"\n    }, {\n      \"openDay\" : \"SATURDAY\",\n      \"openTime\"\
-            \ : \"10:00\",\n      \"closeDay\" : \"SATURDAY\",\n      \"closeTime\"\
-            \ : \"16:00\"\n    } ]\n  },\n  \"latLng\" : {\n    \"latitude\" : 53.5847424,\n\
-            \    \"longitude\" : 9.968901\n  }\n}"
+            \ Way\", \"St.Ives\" ]\n  },\n  \"googleStatus\" : \"ACTIVE\",\n  \"googlePrimaryCategory\"\
+            \ : {\n    \"categoryId\" : \"gcid:storefood\",\n    \"displayName\" :\
+            \ \"Food\"\n  },\n  \"googleAdditionalCategories\" : [ {\n    \"displayName\"\
+            \ : \"Drinks\",\n    \"categoryId\" : \"gcid:storedrinks\"\n  } ],\n \
+            \ \"regularHours\" : {\n    \"periods\" : [ {\n      \"openDay\" : \"\
+            MONDAY\",\n      \"openTime\" : \"08:00\",\n      \"closeDay\" : \"MONDAY\"\
+            ,\n      \"closeTime\" : \"17:00\"\n    }, {\n      \"openDay\" : \"SATURDAY\"\
+            ,\n      \"openTime\" : \"10:00\",\n      \"closeDay\" : \"SATURDAY\"\
+            ,\n      \"closeTime\" : \"16:00\"\n    } ]\n  },\n  \"latLng\" : {\n\
+            \    \"latitude\" : 53.5847424,\n    \"longitude\" : 9.968901\n  }\n}"
       responses:
         "201":
           description: ""
@@ -17763,11 +17747,11 @@ paths:
               \ : \"08:00\",\n      \"closeDay\" : \"MONDAY\",\n      \"closeTime\"\
               \ : \"17:00\"\n    }, {\n      \"openDay\" : \"SATURDAY\",\n      \"\
               openTime\" : \"10:00\",\n      \"closeDay\" : \"SATURDAY\",\n      \"\
-              closeTime\" : \"16:00\"\n    } ]\n  },\n  \"_id\" : \"f2190b2d-196d-4f81-89f6-dad19882b63c\"\
-              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/locations/f2190b2d-196d-4f81-89f6-dad19882b63c\"\
+              closeTime\" : \"16:00\"\n    } ]\n  },\n  \"_id\" : \"907b5f1e-5094-4008-8ac6-a9ff6f9eaad4\"\
+              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/locations/907b5f1e-5094-4008-8ac6-a9ff6f9eaad4\"\
               \n    }\n  }\n}"
           schema:
-            $ref: '#/definitions/shop_locations_locationId1100045992'
+            $ref: '#/definitions/shop_locations_locationId-600540345'
       security:
       - oauth2_application:
         - loca:c
@@ -17775,22 +17759,16 @@ paths:
     post:
       tags:
       - shop
-      summary: Shop address is missing
-      description: "When the shop is opened without an address, a `400 Bad Request`\
-        \ error will be returned."
-      operationId: missing-shop-address
-      produces:
-      - application/json
+      summary: Open shop
+      description: Opens the current shop.
+      operationId: merchant-shop-open
       responses:
-        "400":
-          description: ""
-          examples:
-            application/json: "{\n  \"errorId\" : \"shop-open-conditions-not-fulfilled\"\
-              ,\n  \"details\" : { },\n  \"message\" : \"Cannot open shop: Address\
-              \ is missing\",\n  \"traceId\" : null\n}"
         "204":
           description: ""
           examples: {}
+      security:
+      - oauth2_application:
+        - shcl:c
   /shop/attributes/{name}:
     get:
       tags:
@@ -17817,7 +17795,7 @@ paths:
               \n    },\n    \"owner\" : {\n      \"href\" : \"https://yourshop.api.urn/shop\"\
               \n    }\n  }\n}"
           schema:
-            $ref: '#/definitions/shop_attributes_name-1539550587'
+            $ref: '#/definitions/shop_attributes-1539550587'
       security:
       - oauth2_application:
         - shat:r
@@ -17832,6 +17810,7 @@ paths:
       - application/json
       produces:
       - application/hal+json
+      - application/json
       parameters:
       - name: name
         in: path
@@ -17842,10 +17821,10 @@ paths:
         name: ""
         required: false
         schema:
-          $ref: '#/definitions/shop_attributes_name-1450305496'
+          $ref: '#/definitions/shop_attributes_name923666861'
         x-examples:
           application/json: "{\n  \"value\" : \"manuallyCreateSku\",\n  \"public\"\
-            \ : false\n}"
+            \ : true\n}"
       responses:
         "200":
           description: ""
@@ -17857,7 +17836,14 @@ paths:
               \n    },\n    \"owner\" : {\n      \"href\" : \"https://yourshop.api.urn/shop\"\
               \n    }\n  }\n}"
           schema:
-            $ref: '#/definitions/shop_attributes_name-1539550587'
+            $ref: '#/definitions/shop_attributes-1539550587'
+        "409":
+          description: ""
+          examples:
+            application/json: "{\n  \"errorId\" : \"attribute-name-already-used\"\
+              ,\n  \"details\" : { },\n  \"message\" : \"A public attribute with name\
+              \ createSku already exists under a different owner\",\n  \"traceId\"\
+              \ : null\n}"
       security:
       - oauth2_application:
         - shat:u
@@ -17931,9 +17917,9 @@ paths:
           description: ""
           examples:
             application/hal+json: "{\n  \"label\" : \"logo\",\n  \"width\" : 250,\n\
-              \  \"height\" : 300,\n  \"_id\" : \"4b5a3a45-fe38-48f3-bbcd-467336ac47aa\"\
-              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/images/4b5a3a45-fe38-48f3-bbcd-467336ac47aa\"\
-              \n    },\n    \"image\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/images/4b5a3a45-fe38-48f3-bbcd-467336ac47aa\"\
+              \  \"height\" : 300,\n  \"_id\" : \"66eb60e0-c803-445e-8584-c46a89e5a573\"\
+              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/images/66eb60e0-c803-445e-8584-c46a89e5a573\"\
+              \n    },\n    \"image\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/images/66eb60e0-c803-445e-8584-c46a89e5a573\"\
               \n    },\n    \"data\" : {\n      \"href\" : \"https://yourshop.api.urn/api/core-storage/images/file.png?hash=212-2323-4343{&width,height,upscale}\"\
               ,\n      \"templated\" : true\n    },\n    \"metadata\" : {\n      \"\
               href\" : \"https://yourshop.api.urn/api/core-storage/images/file.png?hash=212-2323-4343&download=no\"\
@@ -17994,11 +17980,11 @@ paths:
               \ : \"08:00\",\n      \"closeDay\" : \"MONDAY\",\n      \"closeTime\"\
               \ : \"17:00\"\n    }, {\n      \"openDay\" : \"SATURDAY\",\n      \"\
               openTime\" : \"10:00\",\n      \"closeDay\" : \"SATURDAY\",\n      \"\
-              closeTime\" : \"16:00\"\n    } ]\n  },\n  \"_id\" : \"8d551df6-7407-47f2-9016-51ad88f3a6de\"\
-              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/locations/8d551df6-7407-47f2-9016-51ad88f3a6de\"\
+              closeTime\" : \"16:00\"\n    } ]\n  },\n  \"_id\" : \"6360d0dc-4bef-4542-b378-3b5d24dd3095\"\
+              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/locations/6360d0dc-4bef-4542-b378-3b5d24dd3095\"\
               \n    }\n  }\n}"
           schema:
-            $ref: '#/definitions/shop_locations_locationId1100045992'
+            $ref: '#/definitions/shop_locations_locationId-600540345'
       security:
       - oauth2_application:
         - loca:r
@@ -18022,7 +18008,7 @@ paths:
         name: ""
         required: false
         schema:
-          $ref: '#/definitions/shop_locations_locationId-1786130820'
+          $ref: '#/definitions/shop_locations_locationId-515233609'
         x-examples:
           application/json: "{\n  \"languageCode\" : \"en\",\n  \"storeCode\" : \"\
             MLC Carnivaly\",\n  \"locationName\" : \"My little Cornershop - Carnivaly\"\
@@ -18030,16 +18016,16 @@ paths:
             locality\" : \"\",\n    \"postalCode\" : \"2XJ90\",\n    \"regionCode\"\
             \ : \"GB\",\n    \"addressLines\" : [ \"My little Cornershop - Carnivaly\"\
             , \"18 Taranulla Drive\", \"Carnivaly\" ]\n  },\n  \"googleStatus\" :\
-            \ \"VERIFIED\",\n  \"googleAdditionalCategories\" : [ {\n    \"displayName\"\
-            \ : \"Drinks\",\n    \"categoryId\" : \"gcid:storedrinks\"\n  } ],\n \
-            \ \"googlePrimaryCategory\" : {\n    \"categoryId\" : \"gcid:storefood\"\
-            ,\n    \"displayName\" : \"Food\"\n  },\n  \"regularHours\" : {\n    \"\
-            periods\" : [ {\n      \"openDay\" : \"WEDNESDAY\",\n      \"openTime\"\
-            \ : \"09:30\",\n      \"closeDay\" : \"WEDNESDAY\",\n      \"closeTime\"\
-            \ : \"19:00\"\n    }, {\n      \"openDay\" : \"FRIDAY\",\n      \"openTime\"\
-            \ : \"10:00\",\n      \"closeDay\" : \"FRIDAY\",\n      \"closeTime\"\
-            \ : \"20:00\"\n    } ]\n  },\n  \"latLng\" : {\n    \"latitude\" : 51.5072,\n\
-            \    \"longitude\" : -0.1353\n  }\n}"
+            \ \"VERIFIED\",\n  \"googlePrimaryCategory\" : {\n    \"categoryId\" :\
+            \ \"gcid:storefood\",\n    \"displayName\" : \"Food\"\n  },\n  \"googleAdditionalCategories\"\
+            \ : [ {\n    \"displayName\" : \"Drinks\",\n    \"categoryId\" : \"gcid:storedrinks\"\
+            \n  } ],\n  \"regularHours\" : {\n    \"periods\" : [ {\n      \"openDay\"\
+            \ : \"WEDNESDAY\",\n      \"openTime\" : \"09:30\",\n      \"closeDay\"\
+            \ : \"WEDNESDAY\",\n      \"closeTime\" : \"19:00\"\n    }, {\n      \"\
+            openDay\" : \"FRIDAY\",\n      \"openTime\" : \"10:00\",\n      \"closeDay\"\
+            \ : \"FRIDAY\",\n      \"closeTime\" : \"20:00\"\n    } ]\n  },\n  \"\
+            latLng\" : {\n    \"latitude\" : 51.5072,\n    \"longitude\" : -0.1353\n\
+            \  }\n}"
       responses:
         "200":
           description: ""
@@ -18059,11 +18045,11 @@ paths:
               09:30\",\n      \"closeDay\" : \"WEDNESDAY\",\n      \"closeTime\" :\
               \ \"19:00\"\n    }, {\n      \"openDay\" : \"FRIDAY\",\n      \"openTime\"\
               \ : \"10:00\",\n      \"closeDay\" : \"FRIDAY\",\n      \"closeTime\"\
-              \ : \"20:00\"\n    } ]\n  },\n  \"_id\" : \"b3ebcff1-0a7b-448b-bc60-9d0872840eb5\"\
-              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/locations/b3ebcff1-0a7b-448b-bc60-9d0872840eb5\"\
+              \ : \"20:00\"\n    } ]\n  },\n  \"_id\" : \"b620d87f-c0c4-4224-9d68-d9f4056c8b22\"\
+              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/locations/b620d87f-c0c4-4224-9d68-d9f4056c8b22\"\
               \n    }\n  }\n}"
           schema:
-            $ref: '#/definitions/shop_locations_locationId1100045992'
+            $ref: '#/definitions/shop_locations_locationId-600540345'
       security:
       - oauth2_application:
         - loca:u
@@ -18108,10 +18094,10 @@ paths:
           examples:
             application/hal+json: "{\n  \"_embedded\" : {\n    \"images\" : [ {\n\
               \      \"label\" : \"logo\",\n      \"width\" : 250,\n      \"height\"\
-              \ : 300,\n      \"_id\" : \"efce8557-b279-48c5-b47a-acfe377f6e52\",\n\
+              \ : 300,\n      \"_id\" : \"19b2905a-6479-46b0-a2e8-1fadf0b881f5\",\n\
               \      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"\
-              https://yourshop.api.urn/shop/images/efce8557-b279-48c5-b47a-acfe377f6e52\"\
-              \n        },\n        \"image\" : {\n          \"href\" : \"https://yourshop.api.urn/shop/images/efce8557-b279-48c5-b47a-acfe377f6e52\"\
+              https://yourshop.api.urn/shop/images/19b2905a-6479-46b0-a2e8-1fadf0b881f5\"\
+              \n        },\n        \"image\" : {\n          \"href\" : \"https://yourshop.api.urn/shop/images/19b2905a-6479-46b0-a2e8-1fadf0b881f5\"\
               \n        },\n        \"data\" : {\n          \"href\" : \"https://yourshop.api.urn/api/core-storage/images/file.png?hash=212-2323-4343{&width,height,upscale}\"\
               ,\n          \"templated\" : true\n        },\n        \"metadata\"\
               \ : {\n          \"href\" : \"https://yourshop.api.urn/api/core-storage/images/file.png?hash=212-2323-4343&download=no\"\
@@ -18120,7 +18106,7 @@ paths:
               \n    }\n  },\n  \"page\" : {\n    \"size\" : 20,\n    \"totalElements\"\
               \ : 1,\n    \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}"
           schema:
-            $ref: '#/definitions/shop_images_search_find-by-label184519405'
+            $ref: '#/definitions/shop_images184519405'
   /shop-id:
     get:
       tags:
@@ -18134,7 +18120,7 @@ paths:
         "200":
           description: ""
           examples:
-            application/hal+json: "{\n  \"shopId\" : \"420d66c9-b231-42d8-8c05-85de0fe9f296\"\
+            application/hal+json: "{\n  \"shopId\" : \"5de6cb20-2ca6-4706-b72c-8d0c900c4f26\"\
               \n}"
           schema:
             $ref: '#/definitions/shop-id927029385'
@@ -19777,17 +19763,17 @@ definitions:
         type: object
         description: "See https://developer.epages.com/beyond-docs/#pagination[Pagination]"
         properties: {}
-  shop_images_search_find-by-label184519405:
+  shop_images184519405:
     type: object
     properties:
+      _links:
+        type: object
+        description: "See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]"
+        properties: {}
       _embedded:
         type: object
         description: "A list of https://developer.epages.com/beyond-docs/#show_shop_image_details[shop\
           \ images]."
-        properties: {}
-      _links:
-        type: object
-        description: "See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]"
         properties: {}
       page:
         type: object
@@ -21338,6 +21324,156 @@ definitions:
                     type: boolean
                     description: Indicates if a payment method is active. Can be `true`
                       or `false`.
+  shop_locations448907403:
+    type: object
+    required:
+    - address
+    - languageCode
+    - storeCode
+    properties:
+      googlePrimaryCategory:
+        type: object
+        description: The Google category that best describes the core business of
+          the location.
+        properties:
+          displayName:
+            type: string
+            description: The name of the Google primary category.
+            minLength: 0
+            maxLength: 50
+          categoryId:
+            type: string
+            description: The unique identifier of the Google primary category.
+            minLength: 0
+            maxLength: 50
+      googleStatus:
+        type: string
+        description: "The status of the location on Google. Indicates if the location\
+          \ is e.g. active, verified, published, duplicated, or pending action."
+        minLength: 0
+        maxLength: 50
+      primaryPhone:
+        type: string
+        description: The phone number of the location.
+        minLength: 0
+        maxLength: 50
+      address:
+        type: object
+        description: The address of the location.
+        properties:
+          regionCode:
+            type: string
+            description: "The region code for the country/region of the location.\
+              \ Expressed according to ISO 3166-1 alpha-2, e.g. `DE`."
+          postalCode:
+            type: string
+            description: The postal code of the location.
+            minLength: 0
+            maxLength: 20
+          locality:
+            type: string
+            description: "Additional locality information such as a village or suburb\
+              \ name, giving a more specific address of the location."
+            minLength: 0
+            maxLength: 50
+          addressLines:
+            type: array
+            description: The address lines of the address of the location. Can also
+              include the postal code and locality information if not set in the respective
+              property. Must be provided in the typical order of addresses in the
+              corresponding region.
+            items: {}
+        required:
+        - postalCode
+        - regionCode
+      locationName:
+        type: string
+        description: The name of the company related to the location.
+        minLength: 0
+        maxLength: 255
+      regularHours:
+        type: object
+        properties:
+          periods:
+            type: array
+            description: The list of time periods during which the location is open
+              throughout the week.
+            items:
+              type: object
+              properties:
+                closeDay:
+                  type: string
+                  description: "The day of the week at which the time period ends.\
+                    \ Can be one of `MONDAY`, `TUESDAY`, `WEDNESDAY`, `THURSDAY`,\
+                    \ `FRIDAY`, `SATURDAY`, or `SUNDAY`."
+                openDay:
+                  type: string
+                  description: "The day of the week at which the time period starts.\
+                    \ Can be one of `MONDAY`, `TUESDAY`, `WEDNESDAY`, `THURSDAY`,\
+                    \ `FRIDAY`, `SATURDAY`, or `SUNDAY`."
+                closeTime:
+                  type: string
+                  description: "The time at which the period ends. Expressed according\
+                    \ to ISO 8601, 24-hour extended format (hh:mm), e.g. `19:00`."
+                openTime:
+                  type: string
+                  description: "The time at which the period starts. Expressed according\
+                    \ to ISO 8601, 24-hour extended format (hh:mm), e.g. `08:15`."
+              required:
+              - closeDay
+              - closeTime
+              - openDay
+              - openTime
+      googleAdditionalCategories:
+        type: array
+        description: The list of additional Google categories that describe the business
+          of the location.
+        items:
+          type: object
+          properties:
+            displayName:
+              type: string
+              description: The name of the Google additional category.
+              minLength: 0
+              maxLength: 50
+            categoryId:
+              type: string
+              description: The unique identifier of the Google additional category.
+              minLength: 0
+              maxLength: 50
+      languageCode:
+        type: string
+        description: "The language code for the language spoken at the location. Expressed\
+          \ according to ISO 639-1, e.g. `de`."
+      latLng:
+        type: object
+        properties:
+          latitude:
+            type: number
+            description: The latitude in degrees.
+          longitude:
+            type: number
+            description: The longitude in degrees.
+      storeCode:
+        type: string
+        description: "The name of the location, e.g. to differentiate between several\
+          \ locations of the same company."
+        minLength: 1
+        maxLength: 255
+    example: "{\n  \"languageCode\" : \"en\",\n  \"storeCode\" : \"MLC-St-Ives\",\n\
+      \  \"locationName\" : \"My little Cornershop - St.Ives\",\n  \"primaryPhone\"\
+      \ : \"(800) 555-0102\",\n  \"address\" : {\n    \"locality\" : \"\",\n    \"\
+      postalCode\" : \"90999\",\n    \"regionCode\" : \"GB\",\n    \"addressLines\"\
+      \ : [ \"My little Cornershop\", \"27 Hudson Way\", \"St.Ives\" ]\n  },\n  \"\
+      googleStatus\" : \"ACTIVE\",\n  \"googlePrimaryCategory\" : {\n    \"categoryId\"\
+      \ : \"gcid:storefood\",\n    \"displayName\" : \"Food\"\n  },\n  \"googleAdditionalCategories\"\
+      \ : [ {\n    \"displayName\" : \"Drinks\",\n    \"categoryId\" : \"gcid:storedrinks\"\
+      \n  } ],\n  \"regularHours\" : {\n    \"periods\" : [ {\n      \"openDay\" :\
+      \ \"MONDAY\",\n      \"openTime\" : \"08:00\",\n      \"closeDay\" : \"MONDAY\"\
+      ,\n      \"closeTime\" : \"17:00\"\n    }, {\n      \"openDay\" : \"SATURDAY\"\
+      ,\n      \"openTime\" : \"10:00\",\n      \"closeDay\" : \"SATURDAY\",\n   \
+      \   \"closeTime\" : \"16:00\"\n    } ]\n  },\n  \"latLng\" : {\n    \"latitude\"\
+      \ : 53.5847424,\n    \"longitude\" : 9.968901\n  }\n}"
   products_productId_attachments2106629087:
     type: object
     required:
@@ -21404,6 +21540,30 @@ definitions:
     example: "{\n  \"comment\" : \"Refunded via PayPal\",\n  \"details\" : {\n   \
       \ \"amount\" : {\n      \"currency\" : \"EUR\",\n      \"amount\" : 19.98\n\
       \    }\n  }\n}"
+  product-view_categories_search_find-by-product-1840208378:
+    type: object
+    properties:
+      salesPrice:
+        type: object
+        description: The price of the product.
+        properties:
+          amount:
+            type: number
+            description: The amount of the offer price.
+          currency:
+            type: string
+            description: The currency of the offer price.
+      manufacturer:
+        type: string
+        description: The manufacturer of the product.
+      tags:
+        type: array
+        description: The tags assigned to the product.
+        items: {}
+    example: "{\n  \"tags\" : [ \"Bestseller\", \"Books\", \"Poetry\", \"Sale\" ],\n\
+      \  \"manufacturer\" : \"Tristan Press\",\n  \"salesPrice\" : {\n    \"amount\"\
+      \ : 19.95,\n    \"currency\" : \"EUR\",\n    \"taxModel\" : \"GROSS\"\n  }\n\
+      }"
   carts_cartId_payment-methods_current453068631:
     type: object
     properties:
@@ -21479,30 +21639,6 @@ definitions:
       activated:
         type: boolean
         description: Indicates if a payment method is active. Can be `true` or `false`.
-  product-view_categories_search_find-by-product-1840208378:
-    type: object
-    properties:
-      salesPrice:
-        type: object
-        description: The price of the product.
-        properties:
-          amount:
-            type: number
-            description: The amount of the offer price.
-          currency:
-            type: string
-            description: The currency of the offer price.
-      manufacturer:
-        type: string
-        description: The manufacturer of the product.
-      tags:
-        type: array
-        description: The tags assigned to the product.
-        items: {}
-    example: "{\n  \"tags\" : [ \"Bestseller\", \"Books\", \"Poetry\", \"Sale\" ],\n\
-      \  \"manufacturer\" : \"Tristan Press\",\n  \"salesPrice\" : {\n    \"amount\"\
-      \ : 19.95,\n    \"currency\" : \"EUR\",\n    \"taxModel\" : \"GROSS\"\n  }\n\
-      }"
   orders_orderId_processes_payments_payment-process-id_capture-354738557:
     type: object
     properties:
@@ -21626,6 +21762,85 @@ definitions:
           \ or `CONSUMED`. After the creation of a campaign, the status is `DRAFT`.\
           \ Also see https://developer.epages.com/beyond-docs/#update_coupon_campaign_status[Update\
           \ coupon campaign status]."
+  shop_address458837816:
+    type: object
+    required:
+    - city
+    - company
+    - email
+    - firstName
+    - lastName
+    - postalCode
+    - street
+    properties:
+      country:
+        type: string
+        description: The country of the shop address (cannot be changed).
+      lastName:
+        type: string
+        description: The last name of the shop owner.
+        minLength: 1
+        maxLength: 50
+      _links:
+        type: object
+        description: "See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]"
+        properties: {}
+      city:
+        type: string
+        description: The city of the shop address.
+        minLength: 1
+        maxLength: 60
+      postalCode:
+        type: string
+        description: The postal code of the shop address.
+        minLength: 1
+        maxLength: 25
+      dependentLocality:
+        type: string
+        description: "Additional locality information such as a village or suburb\
+          \ name, giving a more specific location."
+        minLength: 0
+        maxLength: 60
+      firstName:
+        type: string
+        description: The first name of the shop owner.
+        minLength: 1
+        maxLength: 50
+      phone:
+        type: string
+        description: The phone number of the shop owner.
+        minLength: 0
+        maxLength: 40
+      street:
+        type: string
+        description: The street of the shop address.
+        minLength: 1
+        maxLength: 200
+      company:
+        type: string
+        description: The company name related to the shop.
+        minLength: 1
+        maxLength: 255
+      state:
+        type: string
+        description: The state of the shop address.
+        minLength: 0
+        maxLength: 100
+      street2:
+        type: string
+        description: Additional street field for the shop address.
+        minLength: 0
+        maxLength: 200
+      fax:
+        type: string
+        description: The fax number of the shop owner.
+        minLength: 0
+        maxLength: 40
+      email:
+        type: string
+        description: The email address of the shop owner.
+        minLength: 1
+        maxLength: 150
   carts_cartId_shipping-methods_default1150227182:
     type: object
     properties:
@@ -21994,7 +22209,7 @@ definitions:
         type: string
         description: The comment to the status change.
     example: "{\n  \"comment\" : \"Picked up by wife.\",\n  \"sendMail\" : true\n}"
-  product-view_products_search_find-by-ids-270782029:
+  product-view_products-270782029:
     type: object
     properties:
       _links:
@@ -23366,29 +23581,6 @@ definitions:
         type: string
         description: The URL stating where to submit the newsletter form to.
         minLength: 1
-  payments_paymentId_status124715503:
-    type: object
-    properties:
-      externalPaymentUri:
-        type: string
-        description: A link to the payment in the payment provider's back-office.
-      externalPaymentId:
-        type: string
-        description: An external payment reference generated by the payment provider.
-      message:
-        type: string
-        description: Further information for the merchant regarding the payment (e.g.
-          a time frame to capture the payment). Needs to be provided in the respective
-          shop locale.
-      paymentStatus:
-        type: string
-        description: "The status of the payment. Can be one of `PENDING`, `APPROVED`,\
-          \ `CANCELED`, `CAPTURED`, `CAPTURE_PENDING`, `PAID`, or `FAILED`, depending\
-          \ on the former status of the payment."
-    example: "{\"paymentStatus\":\"APPROVED\",\"externalPaymentId\":\"transaction987DE58B833F4760BB474EB81188F367\"\
-      ,\"externalPaymentUri\":\"https://example.com/transactions/transaction987DE58B833F4760BB474EB81188F367\"\
-      ,\"message\":\"For some transactions that are only preauthorized (to be captured\
-      \ later) there is a timeframe until the authorization expires.\"}"
   products_productId_variation-properties397223725:
     type: array
     items:
@@ -23558,155 +23750,6 @@ definitions:
         items: {}
     example: "{\n  \"name\" : \"BE-NL-LU-DE\",\n  \"serviceableCountries\" : [ \"\
       NL\", \"LU\", \"BE\", \"DE\" ]\n}"
-  shop_locations651335760:
-    type: object
-    required:
-    - address
-    - languageCode
-    - storeCode
-    properties:
-      googlePrimaryCategory:
-        type: object
-        description: The Google category that best describes the core business of
-          the location.
-        properties:
-          displayName:
-            type: string
-            description: The name of the Google primary category.
-            minLength: 0
-            maxLength: 50
-          categoryId:
-            type: string
-            description: The unique identifier of the Google primary category.
-            minLength: 0
-            maxLength: 50
-      googleStatus:
-        type: string
-        description: "The status of the location on Google. Indicates if the location\
-          \ is e.g. active, verified, published, duplicated, or pending action."
-        minLength: 0
-        maxLength: 50
-      primaryPhone:
-        type: string
-        description: The phone number of the location.
-        minLength: 0
-        maxLength: 50
-      address:
-        type: object
-        description: The address of the location.
-        properties:
-          regionCode:
-            type: string
-            description: "The region code for the country/region of the location.\
-              \ Expressed according to ISO 3166-1 alpha-2, e.g. `DE`."
-          postalCode:
-            type: string
-            description: The postal code of the location.
-            minLength: 0
-            maxLength: 20
-          locality:
-            type: string
-            description: "Additional locality information such as a village or suburb\
-              \ name, giving a more specific address of the location."
-            minLength: 0
-            maxLength: 50
-          addressLines:
-            type: array
-            description: The address lines of the address of the location. Can also
-              include the postal code and locality information if not set in the respective
-              property. Must be provided in the typical order of addresses in the
-              corresponding region.
-            items: {}
-        required:
-        - postalCode
-        - regionCode
-      locationName:
-        type: string
-        description: The name of the company related to the location.
-        minLength: 0
-        maxLength: 255
-      regularHours:
-        type: object
-        properties:
-          periods:
-            type: array
-            items:
-              type: object
-              properties:
-                closeDay:
-                  type: string
-                  description: "The day of the week at which the time period ends.\
-                    \ Can be one of `MONDAY`, `TUESDAY`, `WEDNESDAY`, `THURSDAY`,\
-                    \ `FRIDAY`, `SATURDAY`, or `SUNDAY`."
-                openDay:
-                  type: string
-                  description: "The day of the week at which the time period starts.\
-                    \ Can be one of `MONDAY`, `TUESDAY`, `WEDNESDAY`, `THURSDAY`,\
-                    \ `FRIDAY`, `SATURDAY`, or `SUNDAY`."
-                closeTime:
-                  type: string
-                  description: "The time at which the period ends. Expressed according\
-                    \ to ISO 8601, 24-hour extended format (hh:mm), e.g. `19:00`."
-                openTime:
-                  type: string
-                  description: "The time at which the period starts. Expressed according\
-                    \ to ISO 8601, 24-hour extended format (hh:mm), e.g. `08:15`."
-              required:
-              - closeDay
-              - closeTime
-              - openDay
-              - openTime
-      googleAdditionalCategories:
-        type: array
-        description: The list of additional Google categories that describe the business
-          of the location.
-        items:
-          type: object
-          properties:
-            displayName:
-              type: string
-              description: The name of the Google additional category.
-              minLength: 0
-              maxLength: 50
-            categoryId:
-              type: string
-              description: The unique identifier of the Google additional category.
-              minLength: 0
-              maxLength: 50
-      languageCode:
-        type: string
-        description: "The language code for the language spoken at the location. Expressed\
-          \ according to ISO 639-1, e.g. `de`."
-      latLng:
-        type: object
-        properties:
-          latitude:
-            type: number
-            description: The latitude in degrees.
-          longitude:
-            type: number
-            description: The longitude in degrees.
-      storeCode:
-        type: string
-        description: "The name of the location, e.g. to differentiate between several\
-          \ locations of the same company."
-        minLength: 1
-        maxLength: 255
-    example: "{\n  \"languageCode\" : \"en\",\n  \"storeCode\" : \"MLC-St-Ives\",\n\
-      \  \"locationName\" : \"My little Cornershop - St.Ives\",\n  \"primaryPhone\"\
-      \ : \"(800) 555-0102\",\n  \"address\" : {\n    \"locality\" : \"\",\n    \"\
-      postalCode\" : \"90999\",\n    \"regionCode\" : \"GB\",\n    \"addressLines\"\
-      \ : [ \"My little Cornershop\", \"27 Hudson Way\", \"St.Ives\" ]\n  },\n  \"\
-      googleStatus\" : \"ACTIVE\",\n  \"googleAdditionalCategories\" : [ {\n    \"\
-      displayName\" : \"Drinks\",\n    \"categoryId\" : \"gcid:storedrinks\"\n  }\
-      \ ],\n  \"googlePrimaryCategory\" : {\n    \"categoryId\" : \"gcid:storefood\"\
-      ,\n    \"displayName\" : \"Food\"\n  },\n  \"regularHours\" : {\n    \"periods\"\
-      \ : [ {\n      \"openDay\" : \"MONDAY\",\n      \"openTime\" : \"08:00\",\n\
-      \      \"closeDay\" : \"MONDAY\",\n      \"closeTime\" : \"17:00\"\n    }, {\n\
-      \      \"openDay\" : \"SATURDAY\",\n      \"openTime\" : \"10:00\",\n      \"\
-      closeDay\" : \"SATURDAY\",\n      \"closeTime\" : \"16:00\"\n    } ]\n  },\n\
-      \  \"latLng\" : {\n    \"latitude\" : 53.5847424,\n    \"longitude\" : 9.968901\n\
-      \  }\n}"
   product-view_categories_search_find-by-product790561179:
     type: object
     properties:
@@ -24540,6 +24583,13 @@ definitions:
                     type: boolean
                     description: Indicates if a payment method is active. Can be `true`
                       or `false`.
+  payments_paymentId_fail1598422999:
+    type: object
+    properties:
+      returnUri:
+        type: string
+        description: "The URI to which the app will redirect the customer after the\
+          \ approval, cancelation or failure of the payment."
   product-view_products_productId_cross-sells503413907:
     type: object
     properties:
@@ -24561,13 +24611,6 @@ definitions:
         type: object
         description: "See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]"
         properties: {}
-  payments_paymentId_fail1598422999:
-    type: object
-    properties:
-      returnUri:
-        type: string
-        description: "The URI to which the app will redirect the customer after the\
-          \ approval, cancelation or failure of the payment."
   shipping-zones_shippingZoneId_shipping-methods-1549508303:
     example: |-
       https://yourshop.api.urn/shipping-zones/a63ee32e-9e1f-4036-9679-b54c23e55610/shipping-methods/175d1d40-58f9-4ed8-b815-78fbc4a93592
@@ -25126,6 +25169,22 @@ definitions:
       \ : [ \"grape\" ]\n  }, {\n    \"key\" : \"all_tags\",\n    \"values\" : [ \"\
       Bestseller\", \"Red Wine\", \"Sale\" ]\n  }, {\n    \"key\" : \"price_range\"\
       ,\n    \"min\" : 3.7,\n    \"max\" : 13.7\n  } ]\n}"
+  shop_attributes_name923666861:
+    type: object
+    required:
+    - value
+    properties:
+      public:
+        type: boolean
+        description: Indicates if the attribute can be read by other clients. Can
+          be `true` or `false`. Defaults to `false`.
+      value:
+        type: string
+        description: "The value of the shop attribute. Assuming the attribute name\
+          \ to be `default-sorting-products`, the value can be e.g. `asc`."
+        minLength: 1
+        maxLength: 4095
+    example: "{\n  \"value\" : \"manuallyCreateSku\",\n  \"public\" : true\n}"
   shipping-zones_shippingZoneId_shipping-methods273839354:
     type: object
     properties:
@@ -26351,7 +26410,7 @@ definitions:
         type: object
         description: "See https://developer.epages.com/beyond-docs/#pagination[Pagination]"
         properties: {}
-  shop_attributes_name-1539550587:
+  shop_attributes-1539550587:
     type: object
     properties:
       owner:
@@ -26475,135 +26534,6 @@ definitions:
         type: string
         description: "Gives information about the refund capabilities of the payment\
           \ method. Can be one of `NO_REFUND`, `FULL_REFUND_ONLY`, or `PARTIAL_REFUND`."
-  shop_locations-839345339:
-    type: object
-    properties:
-      _links:
-        type: object
-        description: "See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]"
-        properties: {}
-      _embedded:
-        type: object
-        properties:
-          locations:
-            type: array
-            items:
-              type: object
-              properties:
-                googlePrimaryCategory:
-                  type: object
-                  description: The Google category that best describes the core business
-                    of the location.
-                  properties:
-                    displayName:
-                      type: string
-                      description: The name of the Google primary category.
-                    categoryId:
-                      type: string
-                      description: The unique identifier of the Google primary category.
-                googleStatus:
-                  type: string
-                  description: "The status of the location on Google. Indicates if\
-                    \ the location is e.g. active, verified, published, duplicated,\
-                    \ or pending action."
-                primaryPhone:
-                  type: string
-                  description: The phone number of the location.
-                address:
-                  type: object
-                  properties:
-                    regionCode:
-                      type: string
-                      description: "The region code for the country/region of the\
-                        \ location. Expressed according to ISO 3166-1 alpha-2, e.g.\
-                        \ `DE`."
-                    postalCode:
-                      type: string
-                      description: The postal code of the location.
-                    locality:
-                      type: string
-                      description: "Additional locality information such as a village\
-                        \ or suburb name, giving a more specific address of the location."
-                    addressLines:
-                      type: array
-                      description: The address lines of the address of the location.
-                        Can also include the postal code and locality information
-                        if not set in the respective property. Must be provided in
-                        the typical order of addresses in the corresponding region.
-                      items: {}
-                locationName:
-                  type: string
-                  description: The name of the company related to the location.
-                _links:
-                  type: object
-                  description: "See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]"
-                  properties: {}
-                _id:
-                  type: string
-                  description: The unique identifier of the location.
-                regularHours:
-                  type: object
-                  properties:
-                    periods:
-                      type: array
-                      items:
-                        type: object
-                        properties:
-                          closeDay:
-                            type: string
-                            description: "The day of the week at which the time period\
-                              \ ends. Can be one of `MONDAY`, `TUESDAY`, `WEDNESDAY`,\
-                              \ `THURSDAY`, `FRIDAY`, `SATURDAY`, or `SUNDAY`."
-                          openDay:
-                            type: string
-                            description: "The day of the week at which the time period\
-                              \ starts. Can be one of `MONDAY`, `TUESDAY`, `WEDNESDAY`,\
-                              \ `THURSDAY`, `FRIDAY`, `SATURDAY`, or `SUNDAY`."
-                          closeTime:
-                            type: string
-                            description: "The time at which the period ends. Expressed\
-                              \ according to ISO 8601, 24-hour extended format (hh:mm),\
-                              \ e.g. `19:00`."
-                          openTime:
-                            type: string
-                            description: "The time at which the period starts. Expressed\
-                              \ according to ISO 8601, 24-hour extended format (hh:mm),\
-                              \ e.g. `08:15`."
-                googleAdditionalCategories:
-                  type: array
-                  description: The list of additional Google categories that describe
-                    the business of the location.
-                  items:
-                    type: object
-                    properties:
-                      displayName:
-                        type: string
-                        description: The name of the Google additional category.
-                      categoryId:
-                        type: string
-                        description: The unique identifier of the Google additional
-                          category.
-                languageCode:
-                  type: string
-                  description: "The language code for the language spoken at the location.\
-                    \ Expressed according to ISO 639-1, e.g. `de`."
-                latLng:
-                  type: object
-                  properties:
-                    latitude:
-                      type: number
-                      description: The latitude in degrees.
-                    longitude:
-                      type: number
-                      description: The longitude in degrees.
-                storeCode:
-                  type: string
-                  description: "The name of the location, e.g. to differentiate between\
-                    \ several locations of the same company."
-      page:
-        type: object
-        description: "See https://developer.epages.com/beyond-docs/#pagination[Pagination]"
-        properties: {}
   webhook-subscriptions_subscriptionId-870933290:
     type: object
     required:
@@ -26662,6 +26592,138 @@ definitions:
       \ : {\n    \"currency\" : \"EUR\",\n    \"amount\" : 4.99\n  },\n  \"pickupPriceRefund\"\
       \ : null,\n  \"shippingProcessId\" : \"bdc62228-9474-4e03-b7de-f77ecea31595\"\
       ,\n  \"pickupProcessId\" : null\n}"
+  shop_locations-1087442974:
+    type: object
+    properties:
+      _links:
+        type: object
+        description: "See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]"
+        properties: {}
+      _embedded:
+        type: object
+        properties:
+          locations:
+            type: array
+            items:
+              type: object
+              properties:
+                googlePrimaryCategory:
+                  type: object
+                  description: The Google category that best describes the core business
+                    of the location.
+                  properties:
+                    displayName:
+                      type: string
+                      description: The name of the Google primary category.
+                    categoryId:
+                      type: string
+                      description: The unique identifier of the Google primary category.
+                googleStatus:
+                  type: string
+                  description: "The status of the location on Google. Indicates if\
+                    \ the location is e.g. active, verified, published, duplicated,\
+                    \ or pending action."
+                primaryPhone:
+                  type: string
+                  description: The phone number of the location.
+                locationName:
+                  type: string
+                  description: The name of the company related to the location.
+                address:
+                  type: object
+                  description: The address of the location.
+                  properties:
+                    regionCode:
+                      type: string
+                      description: "The region code for the country/region of the\
+                        \ location. Expressed according to ISO 3166-1 alpha-2, e.g.\
+                        \ `DE`."
+                    postalCode:
+                      type: string
+                      description: The postal code of the location.
+                    locality:
+                      type: string
+                      description: "Additional locality information such as a village\
+                        \ or suburb name, giving a more specific address of the location."
+                    addressLines:
+                      type: array
+                      description: The address lines of the address of the location.
+                        Can also include the postal code and locality information
+                        if not set in the respective property. Must be provided in
+                        the typical order of addresses in the corresponding region.
+                      items: {}
+                _links:
+                  type: object
+                  description: "See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]"
+                  properties: {}
+                _id:
+                  type: string
+                  description: The unique identifier of the location.
+                regularHours:
+                  type: object
+                  properties:
+                    periods:
+                      type: array
+                      description: The list of time periods during which the location
+                        is open throughout the week.
+                      items:
+                        type: object
+                        properties:
+                          closeDay:
+                            type: string
+                            description: "The day of the week at which the time period\
+                              \ ends. Can be one of `MONDAY`, `TUESDAY`, `WEDNESDAY`,\
+                              \ `THURSDAY`, `FRIDAY`, `SATURDAY`, or `SUNDAY`."
+                          openDay:
+                            type: string
+                            description: "The day of the week at which the time period\
+                              \ starts. Can be one of `MONDAY`, `TUESDAY`, `WEDNESDAY`,\
+                              \ `THURSDAY`, `FRIDAY`, `SATURDAY`, or `SUNDAY`."
+                          closeTime:
+                            type: string
+                            description: "The time at which the period ends. Expressed\
+                              \ according to ISO 8601, 24-hour extended format (hh:mm),\
+                              \ e.g. `19:00`."
+                          openTime:
+                            type: string
+                            description: "The time at which the period starts. Expressed\
+                              \ according to ISO 8601, 24-hour extended format (hh:mm),\
+                              \ e.g. `08:15`."
+                googleAdditionalCategories:
+                  type: array
+                  description: The list of additional Google categories that describe
+                    the business of the location.
+                  items:
+                    type: object
+                    properties:
+                      displayName:
+                        type: string
+                        description: The name of the Google additional category.
+                      categoryId:
+                        type: string
+                        description: The unique identifier of the Google additional
+                          category.
+                languageCode:
+                  type: string
+                  description: "The language code for the language spoken at the location.\
+                    \ Expressed according to ISO 639-1, e.g. `de`."
+                latLng:
+                  type: object
+                  properties:
+                    latitude:
+                      type: number
+                      description: The latitude in degrees.
+                    longitude:
+                      type: number
+                      description: The longitude in degrees.
+                storeCode:
+                  type: string
+                  description: "The name of the location, e.g. to differentiate between\
+                    \ several locations of the same company."
+      page:
+        type: object
+        description: "See https://developer.epages.com/beyond-docs/#pagination[Pagination]"
+        properties: {}
   products_productId_variations_images-579966557:
     type: object
     properties:
@@ -26760,6 +26822,36 @@ definitions:
                 key:
                   type: string
                   description: The product filter category.
+  shop542312093:
+    type: object
+    required:
+    - locales
+    - name
+    properties:
+      locales:
+        type: array
+        description: A list of the locales that are supported by the shop. Defaults
+          to `defaultLocale`. The `defaultLocale` is always included in the list.
+        items: {}
+      closedByMerchant:
+        type: boolean
+        description: Indicates if the shop is closed by its owner. Can be `true` or
+          `false`.
+      name:
+        type: string
+        description: The name of the shop.
+        minLength: 1
+        maxLength: 255
+      tax:
+        type: object
+        properties:
+          vatExempted:
+            type: boolean
+            description: Indicates if the merchant is exempted to declare VAT. Can
+              be `true` or `false`. Defaults to `false`.
+    example: "{\n  \"name\" : \"anotherName\",\n  \"tax\" : {\n    \"vatExempted\"\
+      \ : true\n  },\n  \"locales\" : [ \"en-GB\", \"de-DE\" ],\n  \"closedByMerchant\"\
+      \ : false\n}"
   script-tags_scriptTagId-1957624959:
     type: object
     required:
@@ -30862,36 +30954,6 @@ definitions:
         maxLength: 1024
     example: "{\n  \"scriptUrl\": \"https://example.com/scripts/updatedExampleScript.js\"\
       \n}"
-  shop265410809:
-    type: object
-    required:
-    - locales
-    - name
-    properties:
-      locales:
-        type: array
-        description: A list of the locales that are supported by the shop. Defaults
-          to `defaultLocale`. The `defaultLocale` is always included in the list.
-        items: {}
-      closedByMerchant:
-        type: boolean
-        description: Indicates if the shop is closed by its owner. Can be `true` or
-          `false`.
-      name:
-        type: string
-        description: The name of the shop.
-        minLength: 1
-        maxLength: 255
-      tax:
-        type: object
-        properties:
-          vatExempted:
-            type: boolean
-            description: Indicates if the merchant is exempted to declare VAT. Can
-              be `true` or `false`. Defaults to `false`.
-    example: "{\n  \"name\" : \"anotherName\",\n  \"tax\" : {\n    \"vatExempted\"\
-      \ : true\n  },\n  \"locales\" : [ \"de-DE\", \"en-GB\" ],\n  \"closedByMerchant\"\
-      \ : false\n}"
   products_filters_filterKey-2058465178:
     type: object
     properties:
@@ -30927,6 +30989,33 @@ definitions:
           items).
     example: "{\"_type\":\"PRODUCT\",\"_ref\":\"754a4716-5202-48ce-9b60-aabc46b2299b\"\
       ,\"quantity\":2}"
+  legal-content26819765:
+    type: object
+    properties:
+      _links:
+        type: object
+        description: "See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]"
+        properties: {}
+      _embedded:
+        type: object
+        properties:
+          legal-content:
+            type: array
+            description: A list of legal content excluding the content itself.
+            items:
+              type: object
+              properties:
+                type:
+                  type: string
+                  description: The type of the legal content (cannot be changed).
+                mandatory:
+                  type: boolean
+                  description: Indicates if legal content is necessary for the legal
+                    country (cannot be changed). Can be `true` or `false`.
+      page:
+        type: object
+        description: "See https://developer.epages.com/beyond-docs/#pagination[Pagination]"
+        properties: {}
   newsletter-target1700824141:
     type: object
     required:
@@ -31569,114 +31658,6 @@ definitions:
     example: "{\n  \"_payloadType\" : \"app\",\n  \"_id\" : \"635545b4-fd7b-4ca2-8b19-814a3ca58766\"\
       ,\n  \"clientId\" : \"clientId\",\n  \"feature\" : \"app.test-app\",\n  \"name\"\
       \ : { }\n}"
-  shop_locations_locationId1100045992:
-    type: object
-    properties:
-      googlePrimaryCategory:
-        type: object
-        description: The Google category that best describes the core business of
-          the location.
-        properties:
-          displayName:
-            type: string
-            description: The name of the Google primary category.
-          categoryId:
-            type: string
-            description: The unique identifier of the Google primary category.
-      googleStatus:
-        type: string
-        description: "The status of the location on Google. Indicates if the location\
-          \ is e.g. active, verified, published, duplicated, or pending action."
-      primaryPhone:
-        type: string
-        description: The phone number of the location.
-      address:
-        type: object
-        properties:
-          regionCode:
-            type: string
-            description: "The region code for the country/region of the location.\
-              \ Expressed according to ISO 3166-1 alpha-2, e.g. `DE`."
-          postalCode:
-            type: string
-            description: The postal code of the location.
-          locality:
-            type: string
-            description: "Additional locality information such as a village or suburb\
-              \ name, giving a more specific address of the location."
-          addressLines:
-            type: array
-            description: The address lines of the address of the location. Can also
-              include the postal code and locality information if not set in the respective
-              property. Must be provided in the typical order of addresses in the
-              corresponding region.
-            items: {}
-      locationName:
-        type: string
-        description: The name of the company related to the location.
-      _links:
-        type: object
-        description: "See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]"
-        properties: {}
-      _id:
-        type: string
-        description: The unique identifier of the location.
-      regularHours:
-        type: object
-        properties:
-          periods:
-            type: array
-            items:
-              type: object
-              properties:
-                closeDay:
-                  type: string
-                  description: "The day of the week at which the time period ends.\
-                    \ Can be one of `MONDAY`, `TUESDAY`, `WEDNESDAY`, `THURSDAY`,\
-                    \ `FRIDAY`, `SATURDAY`, or `SUNDAY`."
-                openDay:
-                  type: string
-                  description: "The day of the week at which the time period starts.\
-                    \ Can be one of `MONDAY`, `TUESDAY`, `WEDNESDAY`, `THURSDAY`,\
-                    \ `FRIDAY`, `SATURDAY`, or `SUNDAY`."
-                closeTime:
-                  type: string
-                  description: "The time at which the period ends. Expressed according\
-                    \ to ISO 8601, 24-hour extended format (hh:mm), e.g. `19:00`."
-                openTime:
-                  type: string
-                  description: "The time at which the period starts. Expressed according\
-                    \ to ISO 8601, 24-hour extended format (hh:mm), e.g. `08:15`."
-      googleAdditionalCategories:
-        type: array
-        description: The list of additional Google categories that describe the business
-          of the location.
-        items:
-          type: object
-          properties:
-            displayName:
-              type: string
-              description: The name of the Google additional category.
-            categoryId:
-              type: string
-              description: The unique identifier of the Google additional category.
-      languageCode:
-        type: string
-        description: "The language code for the language spoken at the location. Expressed\
-          \ according to ISO 639-1, e.g. `de`."
-      latLng:
-        type: object
-        properties:
-          latitude:
-            type: number
-            description: The latitude in degrees.
-          longitude:
-            type: number
-            description: The longitude in degrees.
-      storeCode:
-        type: string
-        description: "The name of the location, e.g. to differentiate between several\
-          \ locations of the same company."
   webhook-subscriptions1499914335:
     type: object
     required:
@@ -31738,6 +31719,35 @@ definitions:
     example: "{\n  \"name\" : \"High Protein Power Bars\",\n  \"defaultSort\" : null,\n\
       \  \"filters\" : [ {\n    \"values\" : [ \"a242a5ff-0cac-4e73-8343-73e0af2013d8\"\
       \ ],\n    \"key\" : \"ids\"\n  } ],\n  \"type\" : \"MANUAL\"\n}"
+  product-view_categories_categoryId-1408985286:
+    type: object
+    properties:
+      _indexedAt:
+        type: string
+        description: The time of storing the document in the search index.
+      _links:
+        type: object
+        description: "See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]"
+        properties: {}
+      name:
+        type: string
+        description: The name of the product category.
+      defaultSort:
+        type: string
+        description: "The default sorting applied to the products included in the\
+          \ product category. For `SMART` product categories the sorting can be one\
+          \ of `NEWEST_FIRST`, `LOWEST_PRICE_FIRST`, `HIGHEST_PRICE_FIRST`, `ON_SALE_FIRST`,\
+          \ or `OUT_OF_STOCK_LAST`. Products of `MANUAL` product categories will be\
+          \ sorted in the order in which they were added to the product category."
+      label:
+        type: string
+        description: The label of the product category.
+      _id:
+        type: string
+        description: The unique identifier of the product category.
+      type:
+        type: string
+        description: The type of the product category. Can be one of `SMART` or `MANUAL`.
   orders_orderId_events-1282907978:
     type: object
     properties:
@@ -31832,35 +31842,6 @@ definitions:
         maxLength: 4095
     example: "{\n  \"name\" : \"createSku\",\n  \"value\" : \"autogenerateSku\",\n\
       \  \"public\" : true\n}"
-  product-view_categories_search_find-by-label-1408985286:
-    type: object
-    properties:
-      _indexedAt:
-        type: string
-        description: The time of storing the document in the search index.
-      _links:
-        type: object
-        description: "See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]"
-        properties: {}
-      name:
-        type: string
-        description: The name of the product category.
-      defaultSort:
-        type: string
-        description: "The default sorting applied to the products included in the\
-          \ product category. For `SMART` product categories the sorting can be one\
-          \ of `NEWEST_FIRST`, `LOWEST_PRICE_FIRST`, `HIGHEST_PRICE_FIRST`, `ON_SALE_FIRST`,\
-          \ or `OUT_OF_STOCK_LAST`. Products of `MANUAL` product categories will be\
-          \ sorted in the order in which they were added to the product category."
-      label:
-        type: string
-        description: The label of the product category.
-      _id:
-        type: string
-        description: The unique identifier of the product category.
-      type:
-        type: string
-        description: The type of the product category. Can be one of `SMART` or `MANUAL`.
   orders_orderId_processes_shippings699563763:
     type: object
     properties:
@@ -31901,6 +31882,15 @@ definitions:
         type: object
         description: "See https://developer.epages.com/beyond-docs/#pagination[Pagination]"
         properties: {}
+  product-view_products_search_find-by-ids-1073541306:
+    type: object
+    properties:
+      ids:
+        type: array
+        description: The list of product IDs.
+        items: {}
+    example: "{\"ids\":[\"b255486d-21ad-4dae-aaab-f06b0ae0b7ca\",\"2d244f18-59e0-4e26-8ee1-91744bb5593e\"\
+      ,\"94889dd4-ddf9-4342-888a-dd67cdc5b14d\"]}"
   product-view_products_search_find-available-tags-721680966:
     type: object
     properties:
@@ -32028,94 +32018,29 @@ definitions:
       \ GmbH\", \"Astrid Agnes Alster\", \"Alsterwasserweg 2\", \"Erdgeschoss\", \"\
       Seevetal\", \"20999 Alsterwasser\", \"Germany\" ],\n    \"_id\" : null\n  },\n\
       \  \"comment\" : \"Street name was misspelled\"\n}"
-  shop_address-1944096438:
-    type: object
-    required:
-    - city
-    - company
-    - email
-    - firstName
-    - lastName
-    - postalCode
-    - street
-    properties:
-      country:
-        type: string
-        description: The country of the shop address (cannot be changed).
-      lastName:
-        type: string
-        description: The last name of the shop owner.
-        minLength: 1
-        maxLength: 50
-      _links:
-        type: object
-        description: "See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]"
-        properties: {}
-      city:
-        type: string
-        description: The city of the shop address.
-        minLength: 1
-        maxLength: 60
-      postalCode:
-        type: string
-        description: The postal code of the shop address.
-        minLength: 1
-        maxLength: 25
-      dependentLocality:
-        type: string
-        description: "Additional locality information such as a village or suburb\
-          \ name, giving a more specific location."
-        minLength: 0
-        maxLength: 60
-      firstName:
-        type: string
-        description: The first name of the shop owner.
-        minLength: 1
-        maxLength: 50
-      phone:
-        type: string
-        description: The phone number of the shop owner.
-        minLength: 0
-        maxLength: 40
-      street:
-        type: string
-        description: The street of the shop address.
-        minLength: 1
-        maxLength: 200
-      company:
-        type: string
-        description: The company name related to the shop.
-        minLength: 1
-        maxLength: 255
-      state:
-        type: string
-        description: The state of the shop address.
-        minLength: 0
-        maxLength: 100
-      street2:
-        type: string
-        description: Additional street field for the shop address.
-        minLength: 0
-        maxLength: 200
-      fax:
-        type: string
-        description: The fax number of the shop owner.
-        minLength: 0
-        maxLength: 40
-      email:
-        type: string
-        description: The email address of the shop owner.
-        minLength: 1
-        maxLength: 150
-  product-view_products_search_find-by-ids269522246:
+  payments_paymentId_status-1570714827:
     type: object
     properties:
-      ids:
-        type: array
-        description: The list of product IDs.
-        items: {}
-    example: "{\"ids\":[\"c8719211-bce8-40ca-a47b-e86fe633ff77\",\"c924149e-4f9d-49ce-bdb0-080a1bf2658d\"\
-      ,\"0bf14631-0f0e-41c5-989a-f044fea617fb\"]}"
+      externalPaymentUri:
+        type: string
+        description: A link to the payment in the payment provider's back-office.
+      externalPaymentId:
+        type: string
+        description: An external payment reference generated by the payment provider.
+      message:
+        type: string
+        description: Further information for the merchant regarding the payment (e.g.
+          a time frame to capture the payment). Needs to be provided in the respective
+          shop locale.
+      paymentStatus:
+        type: string
+        description: "The status of the payment. Can be one of `PENDING`, `APPROVED`,\
+          \ `CANCELED`, `CAPTURED`, `CAPTURE_PENDING`, `PAID`, or `FAILED`, depending\
+          \ on the former status of the payment."
+    example: "{\"paymentStatus\":\"APPROVED\",\"externalPaymentId\":\"transactionECCB9E32957549F09971DEBA68F2FBA2\"\
+      ,\"externalPaymentUri\":\"https://example.com/transactions/transactionECCB9E32957549F09971DEBA68F2FBA2\"\
+      ,\"message\":\"For some transactions that are only preauthorized (to be captured\
+      \ later) there is a timeframe until the authorization expires.\"}"
   carts_cartId_payment-methods-1244492662:
     type: object
     properties:
@@ -32488,6 +32413,117 @@ definitions:
       \ : {\n    \"taxModel\" : \"GROSS\",\n    \"currency\" : \"EUR\",\n    \"amount\"\
       \ : 1\n  },\n  \"phoneNumberRequired\" : true,\n  \"locationId\" : \"146d64ab-0575-4962-8451-7f2a36f6c9cd\"\
       \n}"
+  shop_locations_locationId-600540345:
+    type: object
+    properties:
+      googlePrimaryCategory:
+        type: object
+        description: The Google category that best describes the core business of
+          the location.
+        properties:
+          displayName:
+            type: string
+            description: The name of the Google primary category.
+          categoryId:
+            type: string
+            description: The unique identifier of the Google primary category.
+      googleStatus:
+        type: string
+        description: "The status of the location on Google. Indicates if the location\
+          \ is e.g. active, verified, published, duplicated, or pending action."
+      primaryPhone:
+        type: string
+        description: The phone number of the location.
+      locationName:
+        type: string
+        description: The name of the company related to the location.
+      address:
+        type: object
+        description: The address of the location.
+        properties:
+          regionCode:
+            type: string
+            description: "The region code for the country/region of the location.\
+              \ Expressed according to ISO 3166-1 alpha-2, e.g. `DE`."
+          postalCode:
+            type: string
+            description: The postal code of the location.
+          locality:
+            type: string
+            description: "Additional locality information such as a village or suburb\
+              \ name, giving a more specific address of the location."
+          addressLines:
+            type: array
+            description: The address lines of the address of the location. Can also
+              include the postal code and locality information if not set in the respective
+              property. Must be provided in the typical order of addresses in the
+              corresponding region.
+            items: {}
+      _links:
+        type: object
+        description: "See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]"
+        properties: {}
+      _id:
+        type: string
+        description: The unique identifier of the location.
+      regularHours:
+        type: object
+        properties:
+          periods:
+            type: array
+            description: The list of time periods during which the location is open
+              throughout the week.
+            items:
+              type: object
+              properties:
+                closeDay:
+                  type: string
+                  description: "The day of the week at which the time period ends.\
+                    \ Can be one of `MONDAY`, `TUESDAY`, `WEDNESDAY`, `THURSDAY`,\
+                    \ `FRIDAY`, `SATURDAY`, or `SUNDAY`."
+                openDay:
+                  type: string
+                  description: "The day of the week at which the time period starts.\
+                    \ Can be one of `MONDAY`, `TUESDAY`, `WEDNESDAY`, `THURSDAY`,\
+                    \ `FRIDAY`, `SATURDAY`, or `SUNDAY`."
+                closeTime:
+                  type: string
+                  description: "The time at which the period ends. Expressed according\
+                    \ to ISO 8601, 24-hour extended format (hh:mm), e.g. `19:00`."
+                openTime:
+                  type: string
+                  description: "The time at which the period starts. Expressed according\
+                    \ to ISO 8601, 24-hour extended format (hh:mm), e.g. `08:15`."
+      googleAdditionalCategories:
+        type: array
+        description: The list of additional Google categories that describe the business
+          of the location.
+        items:
+          type: object
+          properties:
+            displayName:
+              type: string
+              description: The name of the Google additional category.
+            categoryId:
+              type: string
+              description: The unique identifier of the Google additional category.
+      languageCode:
+        type: string
+        description: "The language code for the language spoken at the location. Expressed\
+          \ according to ISO 639-1, e.g. `de`."
+      latLng:
+        type: object
+        properties:
+          latitude:
+            type: number
+            description: The latitude in degrees.
+          longitude:
+            type: number
+            description: The longitude in degrees.
+      storeCode:
+        type: string
+        description: "The name of the location, e.g. to differentiate between several\
+          \ locations of the same company."
   products_productId_cross-sells_crossSellId-1768716825:
     type: object
     required:
@@ -34475,21 +34511,6 @@ definitions:
       ,\"email\":\"a.alsterh@example.com\",\"phone\":\"(800) 555-0102\",\"mobile\"\
       :\"(800) 555-0103\",\"vatId\":\"123456789\",\"taxNumber\":\"123-34-6789\",\"\
       birthDate\":\"1985-03-20\"}"
-  legal-content-1671536177:
-    type: object
-    properties:
-      _links:
-        type: object
-        description: "See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]"
-        properties: {}
-      _embedded:
-        type: object
-        description: A list of legal content excluding the content itself.
-        properties: {}
-      page:
-        type: object
-        description: "See https://developer.epages.com/beyond-docs/#pagination[Pagination]"
-        properties: {}
   payment-method-definitions-322699429:
     type: object
     properties:
@@ -34851,22 +34872,6 @@ definitions:
         type: object
         description: "See https://developer.epages.com/beyond-docs/#pagination[Pagination]"
         properties: {}
-  shop_attributes_name-1450305496:
-    type: object
-    required:
-    - value
-    properties:
-      public:
-        type: boolean
-        description: Indicates if the attribute can be read by other clients. Can
-          be `true` or `false`. Defaults to `false`.
-      value:
-        type: string
-        description: "The value of the shop attribute. Assuming the attribute name\
-          \ to be `default-sorting-products`, the value can be e.g. `asc`."
-        minLength: 1
-        maxLength: 4095
-    example: "{\n  \"value\" : \"manuallyCreateSku\",\n  \"public\" : false\n}"
   products_productId_attributes80622441:
     type: object
     required:
@@ -37197,8 +37202,6 @@ definitions:
         items: {}
     example: "{\n  \"displayName\" : \"Size (US)\",\n  \"values\" : [ \"2\", \"4\"\
       , \"6\", \"8\", \"10\", \"additional_value\" ]\n}"
-  resellers_epages_shops_id_attributes_name351859999:
-    example: "{\n  \"value\" : \"manuallyCreateSku\",\n  \"public\" : true\n}"
   script-tags1066105441:
     type: object
     properties:
@@ -37667,155 +37670,6 @@ definitions:
         type: object
         description: "See https://developer.epages.com/beyond-docs/#pagination[Pagination]"
         properties: {}
-  shop_locations_locationId-1786130820:
-    type: object
-    required:
-    - address
-    - languageCode
-    - storeCode
-    properties:
-      googlePrimaryCategory:
-        type: object
-        description: The Google category that best describes the core business of
-          the location.
-        properties:
-          displayName:
-            type: string
-            description: The name of the Google primary category.
-            minLength: 0
-            maxLength: 50
-          categoryId:
-            type: string
-            description: The unique identifier of the Google primary category.
-            minLength: 0
-            maxLength: 50
-      googleStatus:
-        type: string
-        description: "The status of the location on Google. Indicates if the location\
-          \ is e.g. active, verified, published, duplicated, or pending action."
-        minLength: 0
-        maxLength: 50
-      primaryPhone:
-        type: string
-        description: The phone number of the location.
-        minLength: 0
-        maxLength: 50
-      address:
-        type: object
-        description: The address of the location.
-        properties:
-          regionCode:
-            type: string
-            description: "The region code for the country/region of the location.\
-              \ Expressed according to ISO 3166-1 alpha-2, e.g. `DE`."
-          postalCode:
-            type: string
-            description: The postal code of the location.
-            minLength: 0
-            maxLength: 20
-          locality:
-            type: string
-            description: "Additional locality information such as a village or suburb\
-              \ name, giving a more specific address of the location."
-            minLength: 0
-            maxLength: 50
-          addressLines:
-            type: array
-            description: The address lines of the address of the location. Can also
-              include the postal code and locality information if not set in the respective
-              property. Must be provided in the typical order of addresses in the
-              corresponding region.
-            items: {}
-        required:
-        - postalCode
-        - regionCode
-      locationName:
-        type: string
-        description: The name of the company related to the location.
-        minLength: 0
-        maxLength: 255
-      regularHours:
-        type: object
-        properties:
-          periods:
-            type: array
-            items:
-              type: object
-              properties:
-                closeDay:
-                  type: string
-                  description: "The day of the week at which the time period ends.\
-                    \ Can be one of `MONDAY`, `TUESDAY`, `WEDNESDAY`, `THURSDAY`,\
-                    \ `FRIDAY`, `SATURDAY`, or `SUNDAY`."
-                openDay:
-                  type: string
-                  description: "The day of the week at which the time period starts.\
-                    \ Can be one of `MONDAY`, `TUESDAY`, `WEDNESDAY`, `THURSDAY`,\
-                    \ `FRIDAY`, `SATURDAY`, or `SUNDAY`."
-                closeTime:
-                  type: string
-                  description: "The time at which the period ends. Expressed according\
-                    \ to ISO 8601, 24-hour extended format (hh:mm), e.g. `19:00`."
-                openTime:
-                  type: string
-                  description: "The time at which the period starts. Expressed according\
-                    \ to ISO 8601, 24-hour extended format (hh:mm), e.g. `08:15`."
-              required:
-              - closeDay
-              - closeTime
-              - openDay
-              - openTime
-      googleAdditionalCategories:
-        type: array
-        description: The list of additional Google categories that describe the business
-          of the location.
-        items:
-          type: object
-          properties:
-            displayName:
-              type: string
-              description: The name of the Google additional category.
-              minLength: 0
-              maxLength: 50
-            categoryId:
-              type: string
-              description: The unique identifier of the Google additional category.
-              minLength: 0
-              maxLength: 50
-      languageCode:
-        type: string
-        description: "The language code for the language spoken at the location. Expressed\
-          \ according to ISO 639-1, e.g. `de`."
-      latLng:
-        type: object
-        properties:
-          latitude:
-            type: number
-            description: The latitude in degrees.
-          longitude:
-            type: number
-            description: The longitude in degrees.
-      storeCode:
-        type: string
-        description: "The name of the location, e.g. to differentiate between several\
-          \ locations of the same company."
-        minLength: 1
-        maxLength: 255
-    example: "{\n  \"languageCode\" : \"en\",\n  \"storeCode\" : \"MLC Carnivaly\"\
-      ,\n  \"locationName\" : \"My little Cornershop - Carnivaly\",\n  \"primaryPhone\"\
-      \ : \"(800) 555-0111\",\n  \"address\" : {\n    \"locality\" : \"\",\n    \"\
-      postalCode\" : \"2XJ90\",\n    \"regionCode\" : \"GB\",\n    \"addressLines\"\
-      \ : [ \"My little Cornershop - Carnivaly\", \"18 Taranulla Drive\", \"Carnivaly\"\
-      \ ]\n  },\n  \"googleStatus\" : \"VERIFIED\",\n  \"googleAdditionalCategories\"\
-      \ : [ {\n    \"displayName\" : \"Drinks\",\n    \"categoryId\" : \"gcid:storedrinks\"\
-      \n  } ],\n  \"googlePrimaryCategory\" : {\n    \"categoryId\" : \"gcid:storefood\"\
-      ,\n    \"displayName\" : \"Food\"\n  },\n  \"regularHours\" : {\n    \"periods\"\
-      \ : [ {\n      \"openDay\" : \"WEDNESDAY\",\n      \"openTime\" : \"09:30\"\
-      ,\n      \"closeDay\" : \"WEDNESDAY\",\n      \"closeTime\" : \"19:00\"\n  \
-      \  }, {\n      \"openDay\" : \"FRIDAY\",\n      \"openTime\" : \"10:00\",\n\
-      \      \"closeDay\" : \"FRIDAY\",\n      \"closeTime\" : \"20:00\"\n    } ]\n\
-      \  },\n  \"latLng\" : {\n    \"latitude\" : 51.5072,\n    \"longitude\" : -0.1353\n\
-      \  }\n}"
   payment-methods_paymentMethodId-1078619072:
     type: object
     required:
@@ -37982,3 +37836,154 @@ definitions:
         minLength: 1
     example: "{\"currentPassword\":\"GoodPassword01!;)\",\"newUsername\":\"new username\"\
       }"
+  shop_locations_locationId-515233609:
+    type: object
+    required:
+    - address
+    - languageCode
+    - storeCode
+    properties:
+      googlePrimaryCategory:
+        type: object
+        description: The Google category that best describes the core business of
+          the location.
+        properties:
+          displayName:
+            type: string
+            description: The name of the Google primary category.
+            minLength: 0
+            maxLength: 50
+          categoryId:
+            type: string
+            description: The unique identifier of the Google primary category.
+            minLength: 0
+            maxLength: 50
+      googleStatus:
+        type: string
+        description: "The status of the location on Google. Indicates if the location\
+          \ is e.g. active, verified, published, duplicated, or pending action."
+        minLength: 0
+        maxLength: 50
+      primaryPhone:
+        type: string
+        description: The phone number of the location.
+        minLength: 0
+        maxLength: 50
+      address:
+        type: object
+        description: The address of the location.
+        properties:
+          regionCode:
+            type: string
+            description: "The region code for the country/region of the location.\
+              \ Expressed according to ISO 3166-1 alpha-2, e.g. `DE`."
+          postalCode:
+            type: string
+            description: The postal code of the location.
+            minLength: 0
+            maxLength: 20
+          locality:
+            type: string
+            description: "Additional locality information such as a village or suburb\
+              \ name, giving a more specific address of the location."
+            minLength: 0
+            maxLength: 50
+          addressLines:
+            type: array
+            description: The address lines of the address of the location. Can also
+              include the postal code and locality information if not set in the respective
+              property. Must be provided in the typical order of addresses in the
+              corresponding region.
+            items: {}
+        required:
+        - postalCode
+        - regionCode
+      locationName:
+        type: string
+        description: The name of the company related to the location.
+        minLength: 0
+        maxLength: 255
+      regularHours:
+        type: object
+        properties:
+          periods:
+            type: array
+            description: The list of time periods during which the location is open
+              throughout the week.
+            items:
+              type: object
+              properties:
+                closeDay:
+                  type: string
+                  description: "The day of the week at which the time period ends.\
+                    \ Can be one of `MONDAY`, `TUESDAY`, `WEDNESDAY`, `THURSDAY`,\
+                    \ `FRIDAY`, `SATURDAY`, or `SUNDAY`."
+                openDay:
+                  type: string
+                  description: "The day of the week at which the time period starts.\
+                    \ Can be one of `MONDAY`, `TUESDAY`, `WEDNESDAY`, `THURSDAY`,\
+                    \ `FRIDAY`, `SATURDAY`, or `SUNDAY`."
+                closeTime:
+                  type: string
+                  description: "The time at which the period ends. Expressed according\
+                    \ to ISO 8601, 24-hour extended format (hh:mm), e.g. `19:00`."
+                openTime:
+                  type: string
+                  description: "The time at which the period starts. Expressed according\
+                    \ to ISO 8601, 24-hour extended format (hh:mm), e.g. `08:15`."
+              required:
+              - closeDay
+              - closeTime
+              - openDay
+              - openTime
+      googleAdditionalCategories:
+        type: array
+        description: The list of additional Google categories that describe the business
+          of the location.
+        items:
+          type: object
+          properties:
+            displayName:
+              type: string
+              description: The name of the Google additional category.
+              minLength: 0
+              maxLength: 50
+            categoryId:
+              type: string
+              description: The unique identifier of the Google additional category.
+              minLength: 0
+              maxLength: 50
+      languageCode:
+        type: string
+        description: "The language code for the language spoken at the location. Expressed\
+          \ according to ISO 639-1, e.g. `de`."
+      latLng:
+        type: object
+        properties:
+          latitude:
+            type: number
+            description: The latitude in degrees.
+          longitude:
+            type: number
+            description: The longitude in degrees.
+      storeCode:
+        type: string
+        description: "The name of the location, e.g. to differentiate between several\
+          \ locations of the same company."
+        minLength: 1
+        maxLength: 255
+    example: "{\n  \"languageCode\" : \"en\",\n  \"storeCode\" : \"MLC Carnivaly\"\
+      ,\n  \"locationName\" : \"My little Cornershop - Carnivaly\",\n  \"primaryPhone\"\
+      \ : \"(800) 555-0111\",\n  \"address\" : {\n    \"locality\" : \"\",\n    \"\
+      postalCode\" : \"2XJ90\",\n    \"regionCode\" : \"GB\",\n    \"addressLines\"\
+      \ : [ \"My little Cornershop - Carnivaly\", \"18 Taranulla Drive\", \"Carnivaly\"\
+      \ ]\n  },\n  \"googleStatus\" : \"VERIFIED\",\n  \"googlePrimaryCategory\" :\
+      \ {\n    \"categoryId\" : \"gcid:storefood\",\n    \"displayName\" : \"Food\"\
+      \n  },\n  \"googleAdditionalCategories\" : [ {\n    \"displayName\" : \"Drinks\"\
+      ,\n    \"categoryId\" : \"gcid:storedrinks\"\n  } ],\n  \"regularHours\" : {\n\
+      \    \"periods\" : [ {\n      \"openDay\" : \"WEDNESDAY\",\n      \"openTime\"\
+      \ : \"09:30\",\n      \"closeDay\" : \"WEDNESDAY\",\n      \"closeTime\" : \"\
+      19:00\"\n    }, {\n      \"openDay\" : \"FRIDAY\",\n      \"openTime\" : \"\
+      10:00\",\n      \"closeDay\" : \"FRIDAY\",\n      \"closeTime\" : \"20:00\"\n\
+      \    } ]\n  },\n  \"latLng\" : {\n    \"latitude\" : 51.5072,\n    \"longitude\"\
+      \ : -0.1353\n  }\n}"
