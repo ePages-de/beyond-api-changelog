@@ -1,5 +1,19 @@
 # Beyond API Changelog
 
+## 2021-08-04
+
+### What's New
+
+* `GET` /products/search/manufacturers Find product manufacturers
+
+* `PUT` /resellers/epages/shops/{id}/attributes/{name} Duplicated shop attribute name
+
+
+
+### What's Deprecated
+
+### What's Changed
+
 ## 2021-08-02
 
 ### What's New
