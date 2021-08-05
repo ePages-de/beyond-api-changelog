@@ -1,5 +1,28 @@
 # Beyond API Changelog
 
+## 2021-08-05
+
+### What's New
+
+### What's Deprecated
+
+### What's Changed
+
+* `PUT` /coupon-campaigns/{couponCampaignId}/status Invalid status transition  
+    Return Type
+
+        Delete end //The end date and time of the coupon campaign. Coupons of the coupon campaign cannot be redeemed afterwards. Expressed according to ISO 8601, e.g. `2020-12-31T12:00:00`.
+
+* `GET` /products/search/manufacturers Find manufacturers  
+    Parameter
+
+        startsWith Notes The search for manufacturers starting with this string. change into The starting string to search for within the manufacturers specified for products of the shop.
+
+* `GET` /products/search/tags Find used tags  
+    Parameter
+
+        startsWith Notes The search tags starting with this string. change into The starting string to search for within the tags added to products of the shop.
+
 ## 2021-08-04
 
 ### What's New
