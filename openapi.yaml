@@ -16532,67 +16532,6 @@ paths:
       security:
       - oauth2_application:
         - prod:u
-  /resellers/epages/shops/{shopId}/open:
-    post:
-      tags:
-      - resellers
-      summary: Shop address is missing
-      description: "A shop can only be opened if a shop address is set. Otherwise,\
-        \ a `400 Bad Request` error will be returned."
-      operationId: missing-shop-address
-      produces:
-      - application/json
-      parameters:
-      - name: shopId
-        in: path
-        description: ""
-        required: true
-        type: string
-      responses:
-        "400":
-          description: ""
-          examples:
-            application/json: "{\n  \"errorId\" : \"shop-open-conditions-not-fulfilled\"\
-              ,\n  \"details\" : { },\n  \"message\" : \"Cannot open shop: Address\
-              \ is missing\",\n  \"traceId\" : null\n}"
-  /resellers/epages/shops/{id}/attributes/{name}:
-    put:
-      tags:
-      - resellers
-      summary: Duplicated shop attribute name
-      description: "When the shop attribute is created with an already taken `name`\
-        \ property, a `409 Conflict` error will be returned."
-      operationId: shop-attribute-name-already-used
-      consumes:
-      - application/json
-      produces:
-      - application/json
-      parameters:
-      - name: id
-        in: path
-        description: ""
-        required: true
-        type: string
-      - name: name
-        in: path
-        description: ""
-        required: true
-        type: string
-      - in: body
-        name: ""
-        required: false
-        schema:
-          $ref: '#/definitions/resellers_epages_shops_id_attributes_name351859999'
-        x-examples:
-          application/json: "{\n  \"value\" : \"manuallyCreateSku\",\n  \"public\"\
-            \ : true\n}"
-      responses:
-        "409":
-          description: ""
-          examples:
-            application/json: "{\n  \"errorId\" : \"attribute-name-already-used\"\
-              ,\n  \"details\" : { },\n  \"message\" : \"A public attribute with the\
-              \ name createSku was already created.\",\n  \"traceId\" : null\n}"
   /script-tags:
     get:
       tags:
@@ -17323,12 +17262,12 @@ paths:
         "200":
           description: ""
           examples:
-            application/hal+json: "{\n  \"_id\" : \"b728e7a2-8ccd-4851-bbfa-46b682960127\"\
+            application/hal+json: "{\n  \"_id\" : \"adbf9cf1-c9fc-4a70-8bf5-b6044b5c19fb\"\
               ,\n  \"resellerName\" : \"epages\",\n  \"primaryHostname\" : \"cornershop.amazingdiscounts.xyz\"\
               ,\n  \"fallbackHostname\" : \"cornershop.beyondshop.cloud\",\n  \"name\"\
               \ : \"My little Cornershop\",\n  \"tax\" : {\n    \"taxModel\" : \"\
               GROSS\",\n    \"country\" : \"GB\",\n    \"supportedTaxClasses\" : [\
-              \ \"REGULAR\", \"REDUCED\", \"EXEMPT\" ],\n    \"vatExempted\" : false\n\
+              \ \"REGULAR\", \"EXEMPT\", \"REDUCED\" ],\n    \"vatExempted\" : false\n\
               \  },\n  \"defaultCurrency\" : \"EUR\",\n  \"currencies\" : [ \"EUR\"\
               , \"GBP\" ],\n  \"locales\" : [ \"de-DE\", \"en-GB\" ],\n  \"defaultLocale\"\
               \ : \"en-GB\",\n  \"closedByMerchant\" : false,\n  \"_links\" : {\n\
@@ -17371,10 +17310,10 @@ paths:
               \ : \"cornershop.amazingdiscounts.xyz\",\n  \"fallbackHostname\" : \"\
               cornershop.beyondshop.cloud\",\n  \"tax\" : {\n    \"taxModel\" : \"\
               GROSS\",\n    \"vatExempted\" : true,\n    \"country\" : \"GB\"\n  },\n\
-              \  \"currencies\" : [ \"GBP\", \"EUR\" ],\n  \"defaultCurrency\" : \"\
+              \  \"currencies\" : [ \"EUR\", \"GBP\" ],\n  \"defaultCurrency\" : \"\
               EUR\",\n  \"locales\" : [ \"en-GB\", \"de-DE\" ],\n  \"defaultLocale\"\
               \ : \"en-GB\",\n  \"closedByMerchant\" : false,\n  \"resellerName\"\
-              \ : \"epages\",\n  \"_id\" : \"cdc952b2-7098-480f-bc87-2756471a9274\"\
+              \ : \"epages\",\n  \"_id\" : \"d084875b-551e-4fab-b7f5-6cab43e041b7\"\
               ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/shop\"\
               \n    },\n    \"shop\" : {\n      \"href\" : \"https://yourshop.api.urn/shop\"\
               \n    },\n    \"address\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/address\"\
@@ -17549,13 +17488,12 @@ paths:
           description: ""
           examples:
             application/hal+json: "{\n  \"_embedded\" : {\n    \"features\" : [ {\n\
-              \      \"name\" : \"domain-management.custom-domains\",\n      \"details\"\
-              \ : {\n        \"maxValue\" : 10,\n        \"currentValue\" : 1\n  \
-              \    },\n      \"type\" : \"COUNTER\",\n      \"_links\" : {\n     \
-              \   \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/shop/features/domain-management.custom-domains\"\
+              \      \"name\" : \"add-on.custom-apps\",\n      \"details\" : { },\n\
+              \      \"type\" : \"TOGGLE\",\n      \"_links\" : {\n        \"self\"\
+              \ : {\n          \"href\" : \"https://yourshop.api.urn/shop/features/add-on.custom-apps\"\
               \n        },\n        \"owner\" : {\n          \"href\" : \"https://yourshop.api.urn/shop\"\
               \n        },\n        \"feature-definition\" : {\n          \"href\"\
-              \ : \"https://yourshop.api.urn/feature-definitions/domain-management.custom-domains\"\
+              \ : \"https://yourshop.api.urn/feature-definitions/add-on.custom-apps\"\
               \n        }\n      }\n    }, {\n      \"name\" : \"app.paypal-express\"\
               ,\n      \"details\" : {\n        \"preInstalled\" : true,\n       \
               \ \"uninstallable\" : true\n      },\n      \"type\" : \"APP\",\n  \
@@ -17563,12 +17501,13 @@ paths:
               \n        },\n        \"owner\" : {\n          \"href\" : \"https://yourshop.api.urn/shop\"\
               \n        },\n        \"feature-definition\" : {\n          \"href\"\
               \ : \"https://yourshop.api.urn/feature-definitions/app.paypal-express\"\
-              \n        }\n      }\n    }, {\n      \"name\" : \"add-on.custom-apps\"\
-              ,\n      \"details\" : { },\n      \"type\" : \"TOGGLE\",\n      \"\
-              _links\" : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/shop/features/add-on.custom-apps\"\
+              \n        }\n      }\n    }, {\n      \"name\" : \"domain-management.custom-domains\"\
+              ,\n      \"details\" : {\n        \"maxValue\" : 10,\n        \"currentValue\"\
+              \ : 1\n      },\n      \"type\" : \"COUNTER\",\n      \"_links\" : {\n\
+              \        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/shop/features/domain-management.custom-domains\"\
               \n        },\n        \"owner\" : {\n          \"href\" : \"https://yourshop.api.urn/shop\"\
               \n        },\n        \"feature-definition\" : {\n          \"href\"\
-              \ : \"https://yourshop.api.urn/feature-definitions/add-on.custom-apps\"\
+              \ : \"https://yourshop.api.urn/feature-definitions/domain-management.custom-domains\"\
               \n        }\n      }\n    } ]\n  },\n  \"_links\" : {\n    \"self\"\
               \ : {\n      \"href\" : \"https://yourshop.api.urn/shop/features?page=0&size=20\"\
               \n    },\n    \"owner\" : {\n      \"href\" : \"https://yourshop.api.urn/shop\"\
@@ -17594,10 +17533,10 @@ paths:
           examples:
             application/hal+json: "{\n  \"_embedded\" : {\n    \"images\" : [ {\n\
               \      \"label\" : \"logo\",\n      \"width\" : 250,\n      \"height\"\
-              \ : 300,\n      \"_id\" : \"891bed45-ba81-4a03-bafa-5170eb58fc19\",\n\
+              \ : 300,\n      \"_id\" : \"93a3353c-797f-4f52-b151-57a71d472604\",\n\
               \      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"\
-              https://yourshop.api.urn/shop/images/891bed45-ba81-4a03-bafa-5170eb58fc19\"\
-              \n        },\n        \"image\" : {\n          \"href\" : \"https://yourshop.api.urn/shop/images/891bed45-ba81-4a03-bafa-5170eb58fc19\"\
+              https://yourshop.api.urn/shop/images/93a3353c-797f-4f52-b151-57a71d472604\"\
+              \n        },\n        \"image\" : {\n          \"href\" : \"https://yourshop.api.urn/shop/images/93a3353c-797f-4f52-b151-57a71d472604\"\
               \n        },\n        \"data\" : {\n          \"href\" : \"https://yourshop.api.urn/api/core-storage/images/file.png?hash=212-2323-4343{&width,height,upscale}\"\
               ,\n          \"templated\" : true\n        },\n        \"metadata\"\
               \ : {\n          \"href\" : \"https://yourshop.api.urn/api/core-storage/images/file.png?hash=212-2323-4343&download=no\"\
@@ -17654,9 +17593,9 @@ paths:
           description: ""
           examples:
             application/hal+json: "{\n  \"label\" : \"Shop Logo 1\",\n  \"width\"\
-              \ : 1140,\n  \"height\" : 420,\n  \"_id\" : \"382a56dd-571f-4f72-92b4-51aab10db8f9\"\
-              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/images/382a56dd-571f-4f72-92b4-51aab10db8f9\"\
-              \n    },\n    \"image\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/images/382a56dd-571f-4f72-92b4-51aab10db8f9\"\
+              \ : 1140,\n  \"height\" : 420,\n  \"_id\" : \"a44a9998-4231-4721-9d95-a5392c825feb\"\
+              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/images/a44a9998-4231-4721-9d95-a5392c825feb\"\
+              \n    },\n    \"image\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/images/a44a9998-4231-4721-9d95-a5392c825feb\"\
               \n    },\n    \"data\" : {\n      \"href\" : \"https://yourshop.api.urn/api/core-storage/images/sample.png?hash=80d4ab42cfd7823b34e4ad406d9bc470d5d13298{&width,height,upscale}\"\
               ,\n      \"templated\" : true\n    },\n    \"metadata\" : {\n      \"\
               href\" : \"https://yourshop.api.urn/api/core-storage/images/sample.png?hash=80d4ab42cfd7823b34e4ad406d9bc470d5d13298&download=no\"\
@@ -17767,8 +17706,8 @@ paths:
               \n        }, {\n          \"openDay\" : \"SATURDAY\",\n          \"\
               openTime\" : \"10:00\",\n          \"closeDay\" : \"SATURDAY\",\n  \
               \        \"closeTime\" : \"16:00\"\n        } ]\n      },\n      \"\
-              _id\" : \"bb387e7b-9bf0-40d5-b72a-8b964e611d43\",\n      \"_links\"\
-              \ : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/shop/locations/bb387e7b-9bf0-40d5-b72a-8b964e611d43\"\
+              _id\" : \"e1995b92-8037-492b-b22f-8b6406c04a35\",\n      \"_links\"\
+              \ : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/shop/locations/e1995b92-8037-492b-b22f-8b6406c04a35\"\
               \n        }\n      }\n    } ]\n  },\n  \"_links\" : {\n    \"self\"\
               \ : {\n      \"href\" : \"https://yourshop.api.urn/shop/locations?page=0&size=20\"\
               \n    }\n  },\n  \"page\" : {\n    \"size\" : 20,\n    \"totalElements\"\
@@ -17829,8 +17768,8 @@ paths:
               \ : \"08:00\",\n      \"closeDay\" : \"MONDAY\",\n      \"closeTime\"\
               \ : \"17:00\"\n    }, {\n      \"openDay\" : \"SATURDAY\",\n      \"\
               openTime\" : \"10:00\",\n      \"closeDay\" : \"SATURDAY\",\n      \"\
-              closeTime\" : \"16:00\"\n    } ]\n  },\n  \"_id\" : \"3dfbdbd7-393b-4ccb-afec-257c2c98f80e\"\
-              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/locations/3dfbdbd7-393b-4ccb-afec-257c2c98f80e\"\
+              closeTime\" : \"16:00\"\n    } ]\n  },\n  \"_id\" : \"10809a57-118a-4cb8-a6cb-5e65b03545d8\"\
+              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/locations/10809a57-118a-4cb8-a6cb-5e65b03545d8\"\
               \n    }\n  }\n}"
           schema:
             $ref: '#/definitions/shop_locations_locationId-600540345'
@@ -17841,16 +17780,22 @@ paths:
     post:
       tags:
       - shop
-      summary: Open shop
-      description: Opens the current shop.
-      operationId: merchant-shop-open
+      summary: Shop address is missing
+      description: "A shop can only be opened if a shop address is set. Otherwise,\
+        \ a `400 Bad Request` error will be returned."
+      operationId: missing-shop-address
+      produces:
+      - application/json
       responses:
+        "400":
+          description: ""
+          examples:
+            application/json: "{\n  \"errorId\" : \"shop-open-conditions-not-fulfilled\"\
+              ,\n  \"details\" : { },\n  \"message\" : \"Cannot open shop: Address\
+              \ is missing\",\n  \"traceId\" : null\n}"
         "204":
           description: ""
           examples: {}
-      security:
-      - oauth2_application:
-        - shcl:c
   /shop/attributes/{name}:
     get:
       tags:
@@ -17892,6 +17837,7 @@ paths:
       - application/json
       produces:
       - application/hal+json
+      - application/json
       parameters:
       - name: name
         in: path
@@ -17902,10 +17848,10 @@ paths:
         name: ""
         required: false
         schema:
-          $ref: '#/definitions/shop_attributes_name-1450305496'
+          $ref: '#/definitions/shop_attributes_name923666861'
         x-examples:
           application/json: "{\n  \"value\" : \"manuallyCreateSku\",\n  \"public\"\
-            \ : false\n}"
+            \ : true\n}"
       responses:
         "200":
           description: ""
@@ -17918,6 +17864,12 @@ paths:
               \n    }\n  }\n}"
           schema:
             $ref: '#/definitions/shop_attributes_name-1539550587'
+        "409":
+          description: ""
+          examples:
+            application/json: "{\n  \"errorId\" : \"attribute-name-already-used\"\
+              ,\n  \"details\" : { },\n  \"message\" : \"A public attribute with the\
+              \ name createSku was already created.\",\n  \"traceId\" : null\n}"
       security:
       - oauth2_application:
         - shat:u
@@ -17991,9 +17943,9 @@ paths:
           description: ""
           examples:
             application/hal+json: "{\n  \"label\" : \"logo\",\n  \"width\" : 250,\n\
-              \  \"height\" : 300,\n  \"_id\" : \"339b455a-f0a9-4fdb-aec8-4cb9ccac286f\"\
-              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/images/339b455a-f0a9-4fdb-aec8-4cb9ccac286f\"\
-              \n    },\n    \"image\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/images/339b455a-f0a9-4fdb-aec8-4cb9ccac286f\"\
+              \  \"height\" : 300,\n  \"_id\" : \"449e450e-b326-4076-9366-3955657ca179\"\
+              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/images/449e450e-b326-4076-9366-3955657ca179\"\
+              \n    },\n    \"image\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/images/449e450e-b326-4076-9366-3955657ca179\"\
               \n    },\n    \"data\" : {\n      \"href\" : \"https://yourshop.api.urn/api/core-storage/images/file.png?hash=212-2323-4343{&width,height,upscale}\"\
               ,\n      \"templated\" : true\n    },\n    \"metadata\" : {\n      \"\
               href\" : \"https://yourshop.api.urn/api/core-storage/images/file.png?hash=212-2323-4343&download=no\"\
@@ -18054,8 +18006,8 @@ paths:
               \ : \"08:00\",\n      \"closeDay\" : \"MONDAY\",\n      \"closeTime\"\
               \ : \"17:00\"\n    }, {\n      \"openDay\" : \"SATURDAY\",\n      \"\
               openTime\" : \"10:00\",\n      \"closeDay\" : \"SATURDAY\",\n      \"\
-              closeTime\" : \"16:00\"\n    } ]\n  },\n  \"_id\" : \"644c397c-240b-4fd2-b6c5-4fe056aa254f\"\
-              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/locations/644c397c-240b-4fd2-b6c5-4fe056aa254f\"\
+              closeTime\" : \"16:00\"\n    } ]\n  },\n  \"_id\" : \"571fd404-91a7-4fe7-8e20-c3ccfdd20c6b\"\
+              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/locations/571fd404-91a7-4fe7-8e20-c3ccfdd20c6b\"\
               \n    }\n  }\n}"
           schema:
             $ref: '#/definitions/shop_locations_locationId-600540345'
@@ -18119,8 +18071,8 @@ paths:
               09:30\",\n      \"closeDay\" : \"WEDNESDAY\",\n      \"closeTime\" :\
               \ \"19:00\"\n    }, {\n      \"openDay\" : \"FRIDAY\",\n      \"openTime\"\
               \ : \"10:00\",\n      \"closeDay\" : \"FRIDAY\",\n      \"closeTime\"\
-              \ : \"20:00\"\n    } ]\n  },\n  \"_id\" : \"5d7976bd-29be-4761-86ed-3e6436ae1350\"\
-              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/locations/5d7976bd-29be-4761-86ed-3e6436ae1350\"\
+              \ : \"20:00\"\n    } ]\n  },\n  \"_id\" : \"adda2566-4d85-4dee-b14a-9ad5431d35c5\"\
+              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/locations/adda2566-4d85-4dee-b14a-9ad5431d35c5\"\
               \n    }\n  }\n}"
           schema:
             $ref: '#/definitions/shop_locations_locationId-600540345'
@@ -18168,10 +18120,10 @@ paths:
           examples:
             application/hal+json: "{\n  \"_embedded\" : {\n    \"images\" : [ {\n\
               \      \"label\" : \"logo\",\n      \"width\" : 250,\n      \"height\"\
-              \ : 300,\n      \"_id\" : \"eedd1bba-8387-4496-a19f-34c08f093fc5\",\n\
+              \ : 300,\n      \"_id\" : \"ccea8a42-e317-4d3d-8fc9-504da93f8f6f\",\n\
               \      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"\
-              https://yourshop.api.urn/shop/images/eedd1bba-8387-4496-a19f-34c08f093fc5\"\
-              \n        },\n        \"image\" : {\n          \"href\" : \"https://yourshop.api.urn/shop/images/eedd1bba-8387-4496-a19f-34c08f093fc5\"\
+              https://yourshop.api.urn/shop/images/ccea8a42-e317-4d3d-8fc9-504da93f8f6f\"\
+              \n        },\n        \"image\" : {\n          \"href\" : \"https://yourshop.api.urn/shop/images/ccea8a42-e317-4d3d-8fc9-504da93f8f6f\"\
               \n        },\n        \"data\" : {\n          \"href\" : \"https://yourshop.api.urn/api/core-storage/images/file.png?hash=212-2323-4343{&width,height,upscale}\"\
               ,\n          \"templated\" : true\n        },\n        \"metadata\"\
               \ : {\n          \"href\" : \"https://yourshop.api.urn/api/core-storage/images/file.png?hash=212-2323-4343&download=no\"\
@@ -24979,6 +24931,22 @@ definitions:
       \ 50\n  },\n  \"fixedPrice\" : {\n    \"taxModel\" : \"GROSS\",\n    \"currency\"\
       \ : \"EUR\",\n    \"amount\" : 1\n  },\n  \"phoneNumberRequired\" : true,\n\
       \  \"locationId\" : \"ee3a6d0d-6a04-4d57-80b3-dd9d850d2a9a\"\n}"
+  shop_attributes_name923666861:
+    type: object
+    required:
+    - value
+    properties:
+      public:
+        type: boolean
+        description: Indicates if the attribute can be read by other clients. Can
+          be `true` or `false`. Defaults to `false`.
+      value:
+        type: string
+        description: "The value of the shop attribute. Assuming the attribute name\
+          \ to be `default-sorting-products`, the value can be e.g. `asc`."
+        minLength: 1
+        maxLength: 4095
+    example: "{\n  \"value\" : \"manuallyCreateSku\",\n  \"public\" : true\n}"
   product-view_categories_preview364650783:
     type: object
     properties:
@@ -30271,26 +30239,6 @@ definitions:
       _id:
         type: string
         description: The ID of the return process.
-  products_search_manufacturers-385463777:
-    type: object
-    properties:
-      _links:
-        type: object
-        description: "See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]"
-        properties: {}
-      _embedded:
-        type: object
-        properties:
-          manufacturers:
-            type: array
-            description: "The list of manufacturers that match the starting string,\
-              \ including their number of appearance. The results are sorted by usage,\
-              \ starting with the most frequently specified manufacturer."
-            items: {}
-      page:
-        type: object
-        description: "See https://developer.epages.com/beyond-docs/#pagination[Pagination]"
-        properties: {}
   shop_images_imageId1714052403:
     type: object
     required:
@@ -30319,6 +30267,26 @@ definitions:
       height:
         type: number
         description: The height of the image.
+  products_search_manufacturers-385463777:
+    type: object
+    properties:
+      _links:
+        type: object
+        description: "See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]"
+        properties: {}
+      _embedded:
+        type: object
+        properties:
+          manufacturers:
+            type: array
+            description: "The list of manufacturers that match the starting string,\
+              \ including their number of appearance. The results are sorted by usage,\
+              \ starting with the most frequently specified manufacturer."
+            items: {}
+      page:
+        type: object
+        description: "See https://developer.epages.com/beyond-docs/#pagination[Pagination]"
+        properties: {}
   oauth_token202876172:
     type: object
     properties:
@@ -34824,22 +34792,6 @@ definitions:
         type: object
         description: "See https://developer.epages.com/beyond-docs/#pagination[Pagination]"
         properties: {}
-  shop_attributes_name-1450305496:
-    type: object
-    required:
-    - value
-    properties:
-      public:
-        type: boolean
-        description: Indicates if the attribute can be read by other clients. Can
-          be `true` or `false`. Defaults to `false`.
-      value:
-        type: string
-        description: "The value of the shop attribute. Assuming the attribute name\
-          \ to be `default-sorting-products`, the value can be e.g. `asc`."
-        minLength: 1
-        maxLength: 4095
-    example: "{\n  \"value\" : \"manuallyCreateSku\",\n  \"public\" : false\n}"
   shipping-zones_shippingZoneId_shipping-methods-481846560:
     type: object
     properties:
@@ -36509,8 +36461,6 @@ definitions:
         items: {}
     example: "{\n  \"displayName\" : \"Size (US)\",\n  \"values\" : [ \"2\", \"4\"\
       , \"6\", \"8\", \"10\", \"additional_value\" ]\n}"
-  resellers_epages_shops_id_attributes_name351859999:
-    example: "{\n  \"value\" : \"manuallyCreateSku\",\n  \"public\" : true\n}"
   script-tags1066105441:
     type: object
     properties:
