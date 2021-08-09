@@ -1,5 +1,18 @@
 # Beyond API Changelog
 
+## 2021-08-09
+
+### What's New
+
+### What's Deprecated
+
+### What's Changed
+
+* `GET` /carts/{cartId}/pickup-options List pickup options for current cart  
+    Return Type
+
+        Delete page //See https://developer.epages.com/beyond-docs/#pagination[Pagination]
+
 ## 2021-08-06
 
 ### What's New
