@@ -1,5 +1,25 @@
 # Beyond API Changelog
 
+## 2021-08-16
+
+### What's New
+
+### What's Deprecated
+
+### What's Changed
+
+* `GET` /products/search/manufacturers Too many parameters provided  
+    Parameter
+
+        Add contains //The string to search for within the manufacturers specified for products of the shop.
+        startsWith change into not required Notes The starting string to search for within the manufacturers specified for products of the shop. change into (Deprecated) The starting string to search for within the manufacturers specified for products of the shop.
+
+* `GET` /products/search/tags Too many parameters provided  
+    Parameter
+
+        Add contains //The string to search for within the tags added to products of the shop.
+        startsWith change into not required Notes The starting string to search for within the tags added to products of the shop. change into (Deprecated) The starting string to search for within the tags added to products of the shop.
+
 ## 2021-08-09
 
 ### What's New
