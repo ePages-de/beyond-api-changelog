@@ -1,5 +1,17 @@
 # Beyond API Changelog
 
+## 2021-08-30
+
+### What's New
+
+* `GET` /customer-account/orders List orders of one customer
+
+
+
+### What's Deprecated
+
+### What's Changed
+
 ## 2021-08-17
 
 ### What's New
