@@ -1,5 +1,17 @@
 # Beyond API Changelog
 
+## 2021-09-06
+
+### What's New
+
+* `DELETE` /customer-account Delete customer account
+
+
+
+### What's Deprecated
+
+### What's Changed
+
 ## 2021-08-30
 
 ### What's New
