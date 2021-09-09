@@ -1,5 +1,16 @@
 # Beyond API Changelog
 
+## 2021-09-09
+
+### What's New
+
+### What's Deprecated
+
+* `GET` /products/search/{productId}/variations Invalid product type
+
+
+### What's Changed
+
 ## 2021-09-06
 
 ### What's New
