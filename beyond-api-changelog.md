@@ -1,5 +1,20 @@
 # Beyond API Changelog
 
+## 2021-09-23
+
+### What's New
+
+### What's Deprecated
+
+### What's Changed
+
+* `GET` /customer-account/orders/{orderId} Show details of one order  
+    Return Type
+
+        Add initialGrandTotal
+        Add totalRefunded
+        Add openAmount
+
 ## 2021-09-15
 
 ### What's New
