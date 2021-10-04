@@ -1,5 +1,17 @@
 # Beyond API Changelog
 
+## 2021-10-04
+
+### What's New
+
+* `POST` /products/batch/tags Add tags to multiple products
+
+
+
+### What's Deprecated
+
+### What's Changed
+
 ## 2021-09-23
 
 ### What's New
