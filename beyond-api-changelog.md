@@ -1,5 +1,19 @@
 # Beyond API Changelog
 
+## 2021-10-06
+
+### What's New
+
+* `DELETE` /products/batch/tags Remove tags from multiple products
+
+
+### What's Deprecated
+
+* `POST` /resellers/epages/shops/{shopId}/open Shop address is missing
+
+
+### What's Changed
+
 ## 2021-10-04
 
 ### What's New
