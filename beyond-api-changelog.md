@@ -1,5 +1,19 @@
 # Beyond API Changelog
 
+## 2021-10-11
+
+### What's New
+
+* `PUT` /customer-account/billing-address Updates customer account billing address
+
+* `PUT` /customer-account/shipping-address Updates customer account shipping address
+
+
+
+### What's Deprecated
+
+### What's Changed
+
 ## 2021-10-06
 
 ### What's New
