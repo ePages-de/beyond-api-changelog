@@ -1,5 +1,21 @@
 # Beyond API Changelog
 
+## 2021-10-13
+
+### What's New
+
+* `POST` /categories/batch/products Add products to multiple categories
+
+* `POST` /products/search/tags Find used tags
+
+
+### What's Deprecated
+
+* `PUT` /resellers/epages/shops/{id}/attributes/{name} Duplicated shop attribute name
+
+
+### What's Changed
+
 ## 2021-10-11
 
 ### What's New
