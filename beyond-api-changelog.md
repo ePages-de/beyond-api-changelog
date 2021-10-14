@@ -1,5 +1,17 @@
 # Beyond API Changelog
 
+## 2021-10-14
+
+### What's New
+
+* `DELETE` /categories/batch/products Remove products from multiple categories
+
+
+
+### What's Deprecated
+
+### What's Changed
+
 ## 2021-10-13
 
 ### What's New
