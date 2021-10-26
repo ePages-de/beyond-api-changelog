@@ -1,5 +1,29 @@
 # Beyond API Changelog
 
+## 2021-10-26
+
+### What's New
+
+* `GET` /customer-account/billing-address Returns customer account billing address
+
+* `GET` /customer-account/shipping-address Returns customer account shipping address
+
+
+
+### What's Deprecated
+
+### What's Changed
+
+* `GET` /products/search/manufacturers Find manufacturers  
+    Parameter
+
+        Delete startsWith //(Deprecated) The starting string to search for within the manufacturers specified for products of the shop.
+
+* `GET` /products/search/tags (Deprecated) Find used tags  
+    Parameter
+
+        Delete startsWith //(Deprecated) The starting string to search for within the tags added to products of the shop.
+
 ## 2021-10-14
 
 ### What's New
