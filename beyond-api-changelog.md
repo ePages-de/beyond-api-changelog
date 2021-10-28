@@ -1,5 +1,17 @@
 # Beyond API Changelog
 
+## 2021-10-28
+
+### What's New
+
+* `PUT` /resellers/epages/shops/{id}/attributes/{name} Duplicated shop attribute name
+
+
+
+### What's Deprecated
+
+### What's Changed
+
 ## 2021-10-26
 
 ### What's New
