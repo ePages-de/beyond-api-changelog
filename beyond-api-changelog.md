@@ -1,5 +1,19 @@
 # Beyond API Changelog
 
+## 2021-11-08
+
+### What's New
+
+* `GET` /carts/search/find-latest Find latest open cart of registered customer
+
+
+### What's Deprecated
+
+* `PUT` /resellers/epages/shops/{id}/attributes/{name} Duplicated shop attribute name
+
+
+### What's Changed
+
 ## 2021-10-28
 
 ### What's New
