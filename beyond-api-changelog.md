@@ -1,5 +1,18 @@
 # Beyond API Changelog
 
+## 2021-11-09
+
+### What's New
+
+### What's Deprecated
+
+### What's Changed
+
+* `POST` /users/{userId}/change-email-request Duplicated email address  
+    Parameter
+
+        locale Notes The required `locale` to generate the confirmation email to change the email address. Represents the language code according to ISO 639-1 and the country code according to ISO 3166-1. If not provided, the shop's default language is used. change into The required `locale` to generate the confirmation email to change the email address. Represents the language code according to ISO 639-1 and the country code according to ISO 3166-1.
+
 ## 2021-11-08
 
 ### What's New

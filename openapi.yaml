@@ -4136,10 +4136,10 @@ paths:
         "200":
           description: ""
           examples:
-            application/json;charset=UTF-8: "{\n  \"access_token\" : \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjEifQ.eyJzY29wZSI6WyJ1c2VyOnIiXSwidGVuYW50SWQiOjE1NCwiZXhwIjoxNjMyMjM2OTI0LCJpYXQiOjE2MzIxOTM3MjQsImp0aSI6Ikl4NElUSmIyTEdHcGZjOWorZ3ZLQlAzdS9OYz0iLCJjbGllbnRfaWQiOiI0MTE3Nzg4OC0xNjczLTRjMzktYTQ0OS1lYjgxNzYxYTZjMWUifQ.accgjEh2SjpIFIYHlqCowJO-6_txSDtoDBgUOQXJjOrG71SzO9Zc2Ycl-D1waYefIR_UZ7AGsUgNYUa_RFV9VILz9jyBwOFzkM9XADZYtnXxy-kjBjxnl5gYYJtbLSXB9Gufq43nym9sb4xVaKxUsnU1R2UhWeEsf6Rq_zWrzUr-qqDGixHrq6fq7b2x3aw2XBDtiPCI1QEFn8VSN9drzIOBfaB8OnGx4IX66G8_bIKL4Oi89XchBdWKfHOckmcQRWnEroeDIF16iiAuBhzjSa8k6vHSO28Ad4f0bzIk-gko9jYqF6FA8aJPJvAjbi69BXyU9zPuqgqWpWNn3yF23w\"\
-              ,\n  \"token_type\" : \"bearer\",\n  \"refresh_token\" : \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjEifQ.eyJzY29wZSI6WyJ1c2VyOnIiXSwiYXRpIjoiSXg0SVRKYjJMR0dwZmM5aitndktCUDN1L05jPSIsInRlbmFudElkIjoxNTQsImlhdCI6MTYzMjE5MzcyNCwianRpIjoiNFVyZGVlZkt6TVZyWU1uRGwyTEc0aTNHOHBNPSIsImNsaWVudF9pZCI6IjQxMTc3ODg4LTE2NzMtNGMzOS1hNDQ5LWViODE3NjFhNmMxZSJ9.LW_3M_jubQ_2nIFpwyVKfAZEO4gy8X5JujCTKdwbS1HrXdrf3p04nNCa36YT41Y_Ag7Sd5bggh_Yi7dBzeYIjiaY6XM9VuI3u6F4ITexSVbu-7LQ8Fqr1Ves_Dx2w9s5ZGlxfSv_D_t5ZwgKPVv9Ootj-f0HOfvj3NSQPFQFvFNsJxK4qojnJAXBmR_iQ4gOLM3nFbIkqZkFqgWFMSBCLd4UG2mjB6fROZ2ppeTLW7BJSu2_1KvcEJ7M2YDiSISEJH0f3wRe177KNDb3I11pwvIZ-I_h055Hv8WQQ7zVOqW_LN_cZ0nE_2JR4ZhOoGSFb-YeJu_p_kpHudNQWY4b9A\"\
+            application/json;charset=UTF-8: "{\n  \"access_token\" : \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjEifQ.eyJzY29wZSI6WyJ1c2VyOnIiXSwidGVuYW50SWQiOjE0MzgsImV4cCI6MTYzNjQ5NTQ2NSwiaWF0IjoxNjM2NDUyMjY1LCJqdGkiOiJyVzFzUXI2OS84eHREeXlpSk84cUxzOGV6cXc9IiwiY2xpZW50X2lkIjoiMzJlYWJlNDUtMmU4Ny00ZjcxLWJjODUtOGZjMWM0OWMzNDBiIn0.TehMrSHD9aSFLeDnJofMM_dYFU1q4_9vqeXCDBb5iEYNubW3PljY_6T0zTywmSfZh8w7kzPR_Z0LobcDy3X3EpcHDuV7IJdtVr7YUj7REyG_DiW2lSz0zmE3rZf2Iz5sW5bdIzNGMDyWmRHwqAx9NjppWmgMQyen0V8cycDg3auAajI_VXkKxGAECzI8h_wOHCXUlV0dRlOT_asdfqFeIEGORQ5Ieutf-rqvtoJJ14AtvitGXxeIz8JjZ5nUUPUDbC9sn_gFHZ_rajSv47WBB02TZKbsqeOE8H-a3td74_8m18c4WFO7iFLI013jp3z8167d1W4d1MKFwUs6dNafBA\"\
+              ,\n  \"token_type\" : \"bearer\",\n  \"refresh_token\" : \"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IjEifQ.eyJzY29wZSI6WyJ1c2VyOnIiXSwiYXRpIjoiclcxc1FyNjkvOHh0RHl5aUpPOHFMczhlenF3PSIsInRlbmFudElkIjoxNDM4LCJpYXQiOjE2MzY0NTIyNjUsImp0aSI6IllRQ0J5eFFOSldjZzVRY1BZZHZTRHVYNUNKUT0iLCJjbGllbnRfaWQiOiIzMmVhYmU0NS0yZTg3LTRmNzEtYmM4NS04ZmMxYzQ5YzM0MGIifQ.fvbBpdweHu66Hwcb-qSgIKlhVd6DyVspyeRpnkJQLVzNNf2a47wrD6cUkrG__yH6i7_eIdEf_BSTwrpiCVGIcJfBZzRUfgcfTIX4oI2FJVh7NFTBHUfMM1AkoOGJeKwwZWxr51a-9f-GtVb1mciRYZmhbBDWtXt2Jpm_H9g3FclHEjLIqnLFhsZcCKAcEYPLQW0GCgVmvzxXPnyLeKM0MSboHkSecv81gsal3MuilYWtD_Qc4-QsO5FFOawId9rwZHEefXIP6f4XHg67zmNx4tXELOhpiJoM9JhkHwb6dbq62mOOxH-vnO23hjwvK_cURmttBfb-JLJHiA0iqT2Odg\"\
               ,\n  \"expires_in\" : 43199,\n  \"scope\" : \"user:r\",\n  \"tenantId\"\
-              \ : 154,\n  \"iat\" : 1632193724,\n  \"jti\" : \"Ix4ITJb2LGGpfc9j+gvKBP3u/Nc=\"\
+              \ : 1438,\n  \"iat\" : 1636452265,\n  \"jti\" : \"rW1sQr69/8xtDyyiJO8qLs8ezqw=\"\
               \n}"
           schema:
             $ref: '#/definitions/oauth_token202876172'
@@ -18840,12 +18840,12 @@ paths:
           description: ""
           examples:
             application/hal+json: "{\n  \"_embedded\" : {\n    \"signers\" : [ {\n\
-              \      \"_id\" : \"b223df8f-58d4-4104-a8bc-e763fd896b2e\",\n      \"\
-              createdAt\" : \"2021-09-21T05:07:49.918\",\n      \"_links\" : {\n \
-              \       \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/signers/b223df8f-58d4-4104-a8bc-e763fd896b2e\"\
-              \n        }\n      }\n    }, {\n      \"_id\" : \"fdb6808c-2d96-400b-b41e-91218e5b4e74\"\
-              ,\n      \"createdAt\" : \"2021-09-21T05:07:49.895\",\n      \"_links\"\
-              \ : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/signers/fdb6808c-2d96-400b-b41e-91218e5b4e74\"\
+              \      \"_id\" : \"a5f6671f-2a24-4cc3-8b75-993488553c9a\",\n      \"\
+              createdAt\" : \"2021-11-09T11:06:40.753\",\n      \"_links\" : {\n \
+              \       \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/signers/a5f6671f-2a24-4cc3-8b75-993488553c9a\"\
+              \n        }\n      }\n    }, {\n      \"_id\" : \"efec51b3-9e2a-49f8-87d1-926046347b0e\"\
+              ,\n      \"createdAt\" : \"2021-11-09T11:06:40.731\",\n      \"_links\"\
+              \ : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/signers/efec51b3-9e2a-49f8-87d1-926046347b0e\"\
               \n        }\n      }\n    } ]\n  }\n}"
           schema:
             $ref: '#/definitions/signers1616017329'
@@ -18861,9 +18861,9 @@ paths:
         "200":
           description: ""
           examples:
-            application/hal+json: "{\n  \"_id\" : \"6cc144b4-2258-4efa-a873-119530737612\"\
-              ,\n  \"sharedSecret\" : \"bdj1cjtlj3t1eidfgjkuesatl5\",\n  \"_links\"\
-              \ : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/signers/6cc144b4-2258-4efa-a873-119530737612\"\
+            application/hal+json: "{\n  \"_id\" : \"dcb1beb3-8a8d-42c2-9bbd-7b52570578b2\"\
+              ,\n  \"sharedSecret\" : \"hpgov7ntlo5qvc0so8e9ugc0fe\",\n  \"_links\"\
+              \ : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/signers/dcb1beb3-8a8d-42c2-9bbd-7b52570578b2\"\
               \n    }\n  }\n}"
           schema:
             $ref: '#/definitions/signers779084725'
@@ -18962,10 +18962,9 @@ paths:
         type: string
       - name: locale
         in: query
-        description: "The required `locale` to generate the confirmation email to\
-          \ change the email address. Represents the language code according to ISO\
-          \ 639-1 and the country code according to ISO 3166-1. If not provided, the\
-          \ shop's default language is used."
+        description: The required `locale` to generate the confirmation email to change
+          the email address. Represents the language code according to ISO 639-1 and
+          the country code according to ISO 3166-1.
         required: true
         type: string
       - in: body
@@ -19018,10 +19017,10 @@ paths:
           description: ""
           examples:
             application/json: "{\n  \"username\" : \"user\",\n  \"email\" : \"baxter@example.org\"\
-              ,\n  \"enabled\" : true,\n  \"_id\" : \"cee76b1a-079b-41b6-ae88-4e68c327a752\"\
-              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/users/cee76b1a-079b-41b6-ae88-4e68c327a752\"\
-              \n    },\n    \"user\" : {\n      \"href\" : \"https://yourshop.api.urn/users/cee76b1a-079b-41b6-ae88-4e68c327a752\"\
-              \n    },\n    \"roles\" : {\n      \"href\" : \"https://yourshop.api.urn/users/cee76b1a-079b-41b6-ae88-4e68c327a752/roles\"\
+              ,\n  \"enabled\" : true,\n  \"_id\" : \"45ca375a-ec24-48e6-bf85-8824b32795d0\"\
+              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/users/45ca375a-ec24-48e6-bf85-8824b32795d0\"\
+              \n    },\n    \"user\" : {\n      \"href\" : \"https://yourshop.api.urn/users/45ca375a-ec24-48e6-bf85-8824b32795d0\"\
+              \n    },\n    \"roles\" : {\n      \"href\" : \"https://yourshop.api.urn/users/45ca375a-ec24-48e6-bf85-8824b32795d0/roles\"\
               \n    }\n  }\n}"
           schema:
             $ref: '#/definitions/users_userId_change-username521071173'
@@ -19055,12 +19054,12 @@ paths:
           description: ""
           examples:
             application/json: "{\n  \"username\" : \"new username\",\n  \"email\"\
-              \ : \"baxter@example.org\",\n  \"enabled\" : true,\n  \"_id\" : \"da83074d-4f61-460d-b9e9-fcae92aab70e\"\
-              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/users/da83074d-4f61-460d-b9e9-fcae92aab70e\"\
-              \n    },\n    \"user\" : {\n      \"href\" : \"https://yourshop.api.urn/users/da83074d-4f61-460d-b9e9-fcae92aab70e\"\
-              \n    },\n    \"change-password\" : {\n      \"href\" : \"https://yourshop.api.urn/users/da83074d-4f61-460d-b9e9-fcae92aab70e/change-password\"\
-              \n    },\n    \"change-email-request\" : {\n      \"href\" : \"https://yourshop.api.urn/users/da83074d-4f61-460d-b9e9-fcae92aab70e/change-email-request\"\
-              \n    },\n    \"roles\" : {\n      \"href\" : \"https://yourshop.api.urn/users/da83074d-4f61-460d-b9e9-fcae92aab70e/roles\"\
+              \ : \"baxter@example.org\",\n  \"enabled\" : true,\n  \"_id\" : \"9149bc43-be8e-40b5-9f72-668935447785\"\
+              ,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/users/9149bc43-be8e-40b5-9f72-668935447785\"\
+              \n    },\n    \"user\" : {\n      \"href\" : \"https://yourshop.api.urn/users/9149bc43-be8e-40b5-9f72-668935447785\"\
+              \n    },\n    \"change-password\" : {\n      \"href\" : \"https://yourshop.api.urn/users/9149bc43-be8e-40b5-9f72-668935447785/change-password\"\
+              \n    },\n    \"change-email-request\" : {\n      \"href\" : \"https://yourshop.api.urn/users/9149bc43-be8e-40b5-9f72-668935447785/change-email-request\"\
+              \n    },\n    \"roles\" : {\n      \"href\" : \"https://yourshop.api.urn/users/9149bc43-be8e-40b5-9f72-668935447785/roles\"\
               \n    }\n  }\n}"
           schema:
             $ref: '#/definitions/users_userId_change-username521071173'
@@ -26742,6 +26741,17 @@ definitions:
         description: The link of the order document to send.
     example: "{\n  \"orderDocumentUri\" : \"https://myshop.com/api/pdf-storage/attachments/invoice_10003.pdf?hash=9e5e2631c6f5877d64cb3d40db46ec6eb48a3a92\"\
       \n}"
+  users_userId_change-email-request560265492:
+    type: object
+    properties:
+      newEmail:
+        type: string
+        description: The new email address for the user to set.
+      currentPassword:
+        type: string
+        description: The current password of the user account.
+    example: "{\n  \"currentPassword\" : \"GoodPassword01!;)\",\n  \"newEmail\" :\
+      \ \"new.email@epages.com\"\n}"
   shop_images_imageId-1838861291:
     type: object
     required:
@@ -26770,17 +26780,6 @@ definitions:
       height:
         type: number
         description: The height of the image.
-  users_userId_change-email-request560265492:
-    type: object
-    properties:
-      newEmail:
-        type: string
-        description: The new email address for the user to set.
-      currentPassword:
-        type: string
-        description: The current password of the user account.
-    example: "{\n  \"currentPassword\" : \"GoodPassword01!;)\",\n  \"newEmail\" :\
-      \ \"new.email@epages.com\"\n}"
   products_search-1360947567:
     type: object
     properties:
