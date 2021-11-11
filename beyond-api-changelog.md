@@ -1,5 +1,17 @@
 # Beyond API Changelog
 
+## 2021-11-11
+
+### What's New
+
+* `POST` /categories/search Search product categories
+
+
+
+### What's Deprecated
+
+### What's Changed
+
 ## 2021-11-09
 
 ### What's New
