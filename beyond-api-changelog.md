@@ -1,5 +1,23 @@
 # Beyond API Changelog
 
+## 2021-11-15
+
+### What's New
+
+### What's Deprecated
+
+### What's Changed
+
+* `POST` /users/reset-password-request Trigger password reset email  
+    Parameter
+
+        locale Notes The required `locale` to generate the password reset email. Represents the language code according to ISO 639-1 and the country code according to ISO 3166-1. If not provided, the shop's default language is used. change into Defines in which language the password reset email is to be sent. Represents the language code according to ISO 639-1 combined with the country code according to ISO 3166-1, e.g. en-US. If not provided, the shop's default language is used.
+
+* `POST` /users/{userId}/change-email-request Duplicated email address  
+    Parameter
+
+        locale Notes The required `locale` to generate the confirmation email to change the email address. Represents the language code according to ISO 639-1 and the country code according to ISO 3166-1. change into Defines in which language the confirmation email to change the email address is to be sent. Represents the language code according to ISO 639-1 combined with the country code according to ISO 3166-1, e.g. en-US.
+
 ## 2021-11-11
 
 ### What's New
