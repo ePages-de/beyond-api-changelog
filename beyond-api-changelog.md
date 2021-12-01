@@ -1,5 +1,29 @@
 # Beyond API Changelog
 
+## 2021-12-01
+
+### What's New
+
+* `PUT` /resellers/epages/shops/{id}/attributes/{name} Duplicated shop attribute name
+
+
+### What's Deprecated
+
+* `POST` /resellers/epages/shops/{shopId}/open Shop address is missing
+
+
+### What's Changed
+
+* `GET` /customer-account/billing-address Show billing address in customer account  
+    Return Type
+
+        Add displayAddressLines //The applicable billing address of the customer to be displayed.
+
+* `GET` /customer-account/shipping-address Show shipping address in customer account  
+    Return Type
+
+        Add displayAddressLines //The applicable shipping address of the customer to be displayed.
+
 ## 2021-11-24
 
 ### What's New
