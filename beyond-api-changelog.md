@@ -1,5 +1,16 @@
 # Beyond API Changelog
 
+## 2021-12-13
+
+### What's New
+
+### What's Deprecated
+
+* `GET` /products/search/tags (Deprecated) Find used tags
+
+
+### What's Changed
+
 ## 2021-12-09
 
 ### What's New
