@@ -1,5 +1,16 @@
 # Beyond API Changelog
 
+## 2022-01-31
+
+### What's New
+
+### What's Deprecated
+
+* `POST` /resellers/epages/shops/{shopId}/open Shop address is missing
+
+
+### What's Changed
+
 ## 2022-01-25
 
 ### What's New
