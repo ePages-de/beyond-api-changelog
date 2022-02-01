@@ -1,5 +1,19 @@
 # Beyond API Changelog
 
+## 2022-02-01
+
+### What's New
+
+* `POST` /resellers/epages/shops/{shopId}/open Shop address is missing
+
+* `PUT` /resellers/epages/shops/{id}/attributes/{name} Duplicated shop attribute name
+
+
+
+### What's Deprecated
+
+### What's Changed
+
 ## 2022-01-31
 
 ### What's New

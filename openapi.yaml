@@ -17213,6 +17213,67 @@ paths:
       security:
       - oauth2_application:
         - prod:u
+  /resellers/epages/shops/{shopId}/open:
+    post:
+      tags:
+      - resellers
+      summary: Shop address is missing
+      description: "A shop can only be opened if a shop address is set. Otherwise,\
+        \ a `400 Bad Request` error will be returned."
+      operationId: missing-shop-address
+      produces:
+      - application/json
+      parameters:
+      - name: shopId
+        in: path
+        description: ""
+        required: true
+        type: string
+      responses:
+        "400":
+          description: ""
+          examples:
+            application/json: "{\n  \"errorId\" : \"shop-open-conditions-not-fulfilled\"\
+              ,\n  \"details\" : { },\n  \"message\" : \"Cannot open shop: Address\
+              \ is missing\",\n  \"traceId\" : null\n}"
+  /resellers/epages/shops/{id}/attributes/{name}:
+    put:
+      tags:
+      - resellers
+      summary: Duplicated shop attribute name
+      description: "When the shop attribute is created with an already taken `name`\
+        \ property, a `409 Conflict` error will be returned."
+      operationId: shop-attribute-name-already-used
+      consumes:
+      - application/json
+      produces:
+      - application/json
+      parameters:
+      - name: id
+        in: path
+        description: ""
+        required: true
+        type: string
+      - name: name
+        in: path
+        description: ""
+        required: true
+        type: string
+      - in: body
+        name: ""
+        required: false
+        schema:
+          $ref: '#/definitions/resellers_epages_shops_id_attributes_name351859999'
+        x-examples:
+          application/json: "{\n  \"value\" : \"manuallyCreateSku\",\n  \"public\"\
+            \ : true\n}"
+      responses:
+        "409":
+          description: ""
+          examples:
+            application/json: "{\n  \"errorId\" : \"attribute-name-already-used\"\
+              ,\n  \"details\" : { },\n  \"message\" : \"A public attribute with the\
+              \ name createSku was already created.\",\n  \"traceId\" : null\n}"
   /script-tags:
     get:
       tags:
@@ -17944,13 +18005,13 @@ paths:
         "200":
           description: ""
           examples:
-            application/hal+json: "{\n  \"_id\" : \"adf2b8e8-8c32-4f52-81b2-fbad6d4af32c\"\
+            application/hal+json: "{\n  \"_id\" : \"2d951342-cbe0-4dbd-a5e0-88580ee84b51\"\
               ,\n  \"name\" : \"My little Cornershop\",\n  \"resellerName\" : \"epages\"\
               ,\n  \"primaryHostname\" : \"cornershop.amazingdiscounts.xyz\",\n  \"\
               fallbackHostname\" : \"cornershop.beyondshop.cloud\",\n  \"tax\" : {\n\
               \    \"taxModel\" : \"GROSS\",\n    \"vatExempted\" : false,\n    \"\
               country\" : \"GB\",\n    \"supportedTaxClasses\" : [ \"REGULAR\", \"\
-              EXEMPT\", \"REDUCED\" ]\n  },\n  \"currencies\" : [ \"EUR\", \"GBP\"\
+              REDUCED\", \"EXEMPT\" ]\n  },\n  \"currencies\" : [ \"EUR\", \"GBP\"\
               \ ],\n  \"defaultCurrency\" : \"EUR\",\n  \"locales\" : [ \"de-DE\"\
               , \"en-GB\" ],\n  \"defaultLocale\" : \"en-GB\",\n  \"closedByMerchant\"\
               \ : false,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"\
@@ -17989,7 +18050,7 @@ paths:
         "200":
           description: ""
           examples:
-            application/hal+json: "{\n  \"_id\" : \"568773fc-1b2b-4f5f-be20-f5b64baa0c1e\"\
+            application/hal+json: "{\n  \"_id\" : \"8030a291-39b5-4853-83ea-383fab5513ec\"\
               ,\n  \"name\" : \"anotherName\",\n  \"resellerName\" : \"epages\",\n\
               \  \"primaryHostname\" : \"cornershop.amazingdiscounts.xyz\",\n  \"\
               fallbackHostname\" : \"cornershop.beyondshop.cloud\",\n  \"tax\" : {\n\
@@ -18035,7 +18096,7 @@ paths:
               \n    },\n    \"owner\" : {\n      \"href\" : \"https://yourshop.api.urn/shop\"\
               \n    }\n  }\n}"
           schema:
-            $ref: '#/definitions/shop_address458837816'
+            $ref: '#/definitions/shop_address-846081155'
     patch:
       tags:
       - shop
@@ -18052,7 +18113,7 @@ paths:
         name: ""
         required: false
         schema:
-          $ref: '#/definitions/shop_address1434000070'
+          $ref: '#/definitions/shop_address-994432553'
         x-examples:
           application/json: "{\n  \"company\" : \"Mixed products Inc.\",\n  \"firstName\"\
             \ : \"Beryl\",\n  \"lastName\" : \"Mannar\",\n  \"email\" : \"bm@example.com\"\
@@ -18077,7 +18138,7 @@ paths:
               \n    },\n    \"owner\" : {\n      \"href\" : \"https://yourshop.api.urn/shop\"\
               \n    }\n  }\n}"
           schema:
-            $ref: '#/definitions/shop_address458837816'
+            $ref: '#/definitions/shop_address-846081155'
       security:
       - oauth2_application:
         - shad:u
@@ -18171,9 +18232,16 @@ paths:
           description: ""
           examples:
             application/hal+json: "{\n  \"_embedded\" : {\n    \"features\" : [ {\n\
-              \      \"name\" : \"add-on.custom-apps\",\n      \"details\" : { },\n\
-              \      \"type\" : \"TOGGLE\",\n      \"_links\" : {\n        \"self\"\
-              \ : {\n          \"href\" : \"https://yourshop.api.urn/shop/features/add-on.custom-apps\"\
+              \      \"name\" : \"app.paypal-express\",\n      \"details\" : {\n \
+              \       \"preInstalled\" : true,\n        \"uninstallable\" : true\n\
+              \      },\n      \"type\" : \"APP\",\n      \"_links\" : {\n       \
+              \ \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/shop/features/app.paypal-express\"\
+              \n        },\n        \"owner\" : {\n          \"href\" : \"https://yourshop.api.urn/shop\"\
+              \n        },\n        \"feature-definition\" : {\n          \"href\"\
+              \ : \"https://yourshop.api.urn/feature-definitions/app.paypal-express\"\
+              \n        }\n      }\n    }, {\n      \"name\" : \"add-on.custom-apps\"\
+              ,\n      \"details\" : { },\n      \"type\" : \"TOGGLE\",\n      \"\
+              _links\" : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/shop/features/add-on.custom-apps\"\
               \n        },\n        \"owner\" : {\n          \"href\" : \"https://yourshop.api.urn/shop\"\
               \n        },\n        \"feature-definition\" : {\n          \"href\"\
               \ : \"https://yourshop.api.urn/feature-definitions/add-on.custom-apps\"\
@@ -18184,13 +18252,6 @@ paths:
               \n        },\n        \"owner\" : {\n          \"href\" : \"https://yourshop.api.urn/shop\"\
               \n        },\n        \"feature-definition\" : {\n          \"href\"\
               \ : \"https://yourshop.api.urn/feature-definitions/domain-management.custom-domains\"\
-              \n        }\n      }\n    }, {\n      \"name\" : \"app.paypal-express\"\
-              ,\n      \"details\" : {\n        \"preInstalled\" : true,\n       \
-              \ \"uninstallable\" : true\n      },\n      \"type\" : \"APP\",\n  \
-              \    \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/shop/features/app.paypal-express\"\
-              \n        },\n        \"owner\" : {\n          \"href\" : \"https://yourshop.api.urn/shop\"\
-              \n        },\n        \"feature-definition\" : {\n          \"href\"\
-              \ : \"https://yourshop.api.urn/feature-definitions/app.paypal-express\"\
               \n        }\n      }\n    } ]\n  },\n  \"_links\" : {\n    \"self\"\
               \ : {\n      \"href\" : \"https://yourshop.api.urn/shop/features?page=0&size=20\"\
               \n    },\n    \"owner\" : {\n      \"href\" : \"https://yourshop.api.urn/shop\"\
@@ -18215,11 +18276,11 @@ paths:
           description: ""
           examples:
             application/hal+json: "{\n  \"_embedded\" : {\n    \"images\" : [ {\n\
-              \      \"_id\" : \"c0b3dd9a-30e1-4351-9cc1-fe948aaaa19e\",\n      \"\
+              \      \"_id\" : \"e4d0b423-be5e-4c35-a123-2458d482cdb3\",\n      \"\
               label\" : \"logo\",\n      \"width\" : 250,\n      \"height\" : 300,\n\
               \      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"\
-              https://yourshop.api.urn/shop/images/c0b3dd9a-30e1-4351-9cc1-fe948aaaa19e\"\
-              \n        },\n        \"image\" : {\n          \"href\" : \"https://yourshop.api.urn/shop/images/c0b3dd9a-30e1-4351-9cc1-fe948aaaa19e\"\
+              https://yourshop.api.urn/shop/images/e4d0b423-be5e-4c35-a123-2458d482cdb3\"\
+              \n        },\n        \"image\" : {\n          \"href\" : \"https://yourshop.api.urn/shop/images/e4d0b423-be5e-4c35-a123-2458d482cdb3\"\
               \n        },\n        \"data\" : {\n          \"href\" : \"https://yourshop.api.urn/api/core-storage/images/file.png?hash=212-2323-4343{&width,height,upscale}\"\
               ,\n          \"templated\" : true\n        },\n        \"metadata\"\
               \ : {\n          \"href\" : \"https://yourshop.api.urn/api/core-storage/images/file.png?hash=212-2323-4343&download=no\"\
@@ -18228,7 +18289,7 @@ paths:
               \n    }\n  },\n  \"page\" : {\n    \"size\" : 20,\n    \"totalElements\"\
               \ : 1,\n    \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}"
           schema:
-            $ref: '#/definitions/shop_images_search_find-by-label184519405'
+            $ref: '#/definitions/shop_images184519405'
     post:
       tags:
       - shop
@@ -18275,10 +18336,10 @@ paths:
         "201":
           description: ""
           examples:
-            application/hal+json: "{\n  \"_id\" : \"4735f8d9-322e-4849-9960-60e9ff5c7fce\"\
+            application/hal+json: "{\n  \"_id\" : \"bd25a659-d60d-4864-8b72-1dffaddb2f43\"\
               ,\n  \"label\" : \"Shop Logo 1\",\n  \"width\" : 1140,\n  \"height\"\
-              \ : 420,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/images/4735f8d9-322e-4849-9960-60e9ff5c7fce\"\
-              \n    },\n    \"image\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/images/4735f8d9-322e-4849-9960-60e9ff5c7fce\"\
+              \ : 420,\n  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/images/bd25a659-d60d-4864-8b72-1dffaddb2f43\"\
+              \n    },\n    \"image\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/images/bd25a659-d60d-4864-8b72-1dffaddb2f43\"\
               \n    },\n    \"data\" : {\n      \"href\" : \"https://yourshop.api.urn/api/core-storage/images/sample.png?hash=80d4ab42cfd7823b34e4ad406d9bc470d5d13298{&width,height,upscale}\"\
               ,\n      \"templated\" : true\n    },\n    \"metadata\" : {\n      \"\
               href\" : \"https://yourshop.api.urn/api/core-storage/images/sample.png?hash=80d4ab42cfd7823b34e4ad406d9bc470d5d13298&download=no\"\
@@ -18371,7 +18432,7 @@ paths:
           description: ""
           examples:
             application/hal+json: "{\n  \"_embedded\" : {\n    \"locations\" : [ {\n\
-              \      \"_id\" : \"c1efa008-85b9-4f3f-b934-ed8b93fecd12\",\n      \"\
+              \      \"_id\" : \"0de9c2f9-8691-402f-9e10-567531d79dd8\",\n      \"\
               storeCode\" : \"MLC-St-Ives\",\n      \"languageCode\" : \"en\",\n \
               \     \"address\" : {\n        \"street\" : \"Hudson Way\",\n      \
               \  \"houseNumber\" : \"27\",\n        \"postalCode\" : \"90999\",\n\
@@ -18391,7 +18452,7 @@ paths:
               17:00\"\n        }, {\n          \"openDay\" : \"SATURDAY\",\n     \
               \     \"openTime\" : \"10:00\",\n          \"closeDay\" : \"SATURDAY\"\
               ,\n          \"closeTime\" : \"16:00\"\n        } ]\n      },\n    \
-              \  \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/shop/locations/c1efa008-85b9-4f3f-b934-ed8b93fecd12\"\
+              \  \"_links\" : {\n        \"self\" : {\n          \"href\" : \"https://yourshop.api.urn/shop/locations/0de9c2f9-8691-402f-9e10-567531d79dd8\"\
               \n        }\n      }\n    } ]\n  },\n  \"_links\" : {\n    \"self\"\
               \ : {\n      \"href\" : \"https://yourshop.api.urn/shop/locations?page=0&size=20&sort=createdAt,asc\"\
               \n    }\n  },\n  \"page\" : {\n    \"size\" : 20,\n    \"totalElements\"\
@@ -18438,7 +18499,7 @@ paths:
         "201":
           description: ""
           examples:
-            application/hal+json: "{\n  \"_id\" : \"58396ad2-75c2-4c6a-9f42-13adaf088d91\"\
+            application/hal+json: "{\n  \"_id\" : \"d092238e-7492-4247-b242-6ce6b7e18657\"\
               ,\n  \"storeCode\" : \"MLC-St-Ives\",\n  \"languageCode\" : \"en\",\n\
               \  \"address\" : {\n    \"street\" : \"Hudson Way\",\n    \"houseNumber\"\
               \ : \"27\",\n    \"postalCode\" : \"90999\",\n    \"city\" : \"St.Ives\"\
@@ -18457,7 +18518,7 @@ paths:
               \    }, {\n      \"openDay\" : \"SATURDAY\",\n      \"openTime\" : \"\
               10:00\",\n      \"closeDay\" : \"SATURDAY\",\n      \"closeTime\" :\
               \ \"16:00\"\n    } ]\n  },\n  \"_links\" : {\n    \"self\" : {\n   \
-              \   \"href\" : \"https://yourshop.api.urn/shop/locations/58396ad2-75c2-4c6a-9f42-13adaf088d91\"\
+              \   \"href\" : \"https://yourshop.api.urn/shop/locations/d092238e-7492-4247-b242-6ce6b7e18657\"\
               \n    }\n  }\n}"
           schema:
             $ref: '#/definitions/shop_locations_locationId-1383620246'
@@ -18468,22 +18529,16 @@ paths:
     post:
       tags:
       - shop
-      summary: Shop address is missing
-      description: "A shop can only be opened if a shop address is set. Otherwise,\
-        \ a `400 Bad Request` error will be returned."
-      operationId: missing-shop-address
-      produces:
-      - application/json
+      summary: Open shop
+      description: Opens the current shop.
+      operationId: merchant-shop-open
       responses:
-        "400":
-          description: ""
-          examples:
-            application/json: "{\n  \"errorId\" : \"shop-open-conditions-not-fulfilled\"\
-              ,\n  \"details\" : { },\n  \"message\" : \"Cannot open shop: Address\
-              \ is missing\",\n  \"traceId\" : null\n}"
         "204":
           description: ""
           examples: {}
+      security:
+      - oauth2_application:
+        - shcl:c
   /shop/attributes/{name}:
     get:
       tags:
@@ -18525,7 +18580,6 @@ paths:
       - application/json
       produces:
       - application/hal+json
-      - application/json
       parameters:
       - name: name
         in: path
@@ -18536,10 +18590,10 @@ paths:
         name: ""
         required: false
         schema:
-          $ref: '#/definitions/shop_attributes_name923666861'
+          $ref: '#/definitions/shop_attributes_name-1450305496'
         x-examples:
           application/json: "{\n  \"value\" : \"manuallyCreateSku\",\n  \"public\"\
-            \ : true\n}"
+            \ : false\n}"
       responses:
         "200":
           description: ""
@@ -18552,12 +18606,6 @@ paths:
               \n    }\n  }\n}"
           schema:
             $ref: '#/definitions/shop_attributes_name-1539550587'
-        "409":
-          description: ""
-          examples:
-            application/json: "{\n  \"errorId\" : \"attribute-name-already-used\"\
-              ,\n  \"details\" : { },\n  \"message\" : \"A public attribute with the\
-              \ name createSku was already created.\",\n  \"traceId\" : null\n}"
       security:
       - oauth2_application:
         - shat:u
@@ -18630,10 +18678,10 @@ paths:
         "200":
           description: ""
           examples:
-            application/hal+json: "{\n  \"_id\" : \"0e9dbc58-c158-4135-93c0-d401809fbc1f\"\
+            application/hal+json: "{\n  \"_id\" : \"b80a95e6-71bc-44c7-a9c6-11ab6ada5d6c\"\
               ,\n  \"label\" : \"logo\",\n  \"width\" : 250,\n  \"height\" : 300,\n\
-              \  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/images/0e9dbc58-c158-4135-93c0-d401809fbc1f\"\
-              \n    },\n    \"image\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/images/0e9dbc58-c158-4135-93c0-d401809fbc1f\"\
+              \  \"_links\" : {\n    \"self\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/images/b80a95e6-71bc-44c7-a9c6-11ab6ada5d6c\"\
+              \n    },\n    \"image\" : {\n      \"href\" : \"https://yourshop.api.urn/shop/images/b80a95e6-71bc-44c7-a9c6-11ab6ada5d6c\"\
               \n    },\n    \"data\" : {\n      \"href\" : \"https://yourshop.api.urn/api/core-storage/images/file.png?hash=212-2323-4343{&width,height,upscale}\"\
               ,\n      \"templated\" : true\n    },\n    \"metadata\" : {\n      \"\
               href\" : \"https://yourshop.api.urn/api/core-storage/images/file.png?hash=212-2323-4343&download=no\"\
@@ -18679,7 +18727,7 @@ paths:
         "200":
           description: ""
           examples:
-            application/hal+json: "{\n  \"_id\" : \"a02bd1fd-2cda-4d3b-8786-1f032fd5cab3\"\
+            application/hal+json: "{\n  \"_id\" : \"a28f5c29-2772-485f-a2db-04f42b983179\"\
               ,\n  \"storeCode\" : \"MLC-St-Ives\",\n  \"languageCode\" : \"en\",\n\
               \  \"address\" : {\n    \"street\" : \"Hudson Way\",\n    \"houseNumber\"\
               \ : \"27\",\n    \"postalCode\" : \"90999\",\n    \"city\" : \"St.Ives\"\
@@ -18698,7 +18746,7 @@ paths:
               \    }, {\n      \"openDay\" : \"SATURDAY\",\n      \"openTime\" : \"\
               10:00\",\n      \"closeDay\" : \"SATURDAY\",\n      \"closeTime\" :\
               \ \"16:00\"\n    } ]\n  },\n  \"_links\" : {\n    \"self\" : {\n   \
-              \   \"href\" : \"https://yourshop.api.urn/shop/locations/a02bd1fd-2cda-4d3b-8786-1f032fd5cab3\"\
+              \   \"href\" : \"https://yourshop.api.urn/shop/locations/a28f5c29-2772-485f-a2db-04f42b983179\"\
               \n    }\n  }\n}"
           schema:
             $ref: '#/definitions/shop_locations_locationId-1383620246'
@@ -18748,7 +18796,7 @@ paths:
         "200":
           description: ""
           examples:
-            application/hal+json: "{\n  \"_id\" : \"b88312a9-e2bf-4646-91d3-eb9aeb775323\"\
+            application/hal+json: "{\n  \"_id\" : \"85ded274-1e13-4141-b1e0-14640539861c\"\
               ,\n  \"storeCode\" : \"MLC Carnivaly\",\n  \"languageCode\" : \"en\"\
               ,\n  \"address\" : {\n    \"street\" : \"Taranulla Drive\",\n    \"\
               houseNumber\" : \"18\",\n    \"postalCode\" : \"2XJ90\",\n    \"city\"\
@@ -18767,7 +18815,7 @@ paths:
               \ \"19:00\"\n    }, {\n      \"openDay\" : \"FRIDAY\",\n      \"openTime\"\
               \ : \"10:00\",\n      \"closeDay\" : \"FRIDAY\",\n      \"closeTime\"\
               \ : \"20:00\"\n    } ]\n  },\n  \"_links\" : {\n    \"self\" : {\n \
-              \     \"href\" : \"https://yourshop.api.urn/shop/locations/b88312a9-e2bf-4646-91d3-eb9aeb775323\"\
+              \     \"href\" : \"https://yourshop.api.urn/shop/locations/85ded274-1e13-4141-b1e0-14640539861c\"\
               \n    }\n  }\n}"
           schema:
             $ref: '#/definitions/shop_locations_locationId-1383620246'
@@ -18814,11 +18862,11 @@ paths:
           description: ""
           examples:
             application/hal+json: "{\n  \"_embedded\" : {\n    \"images\" : [ {\n\
-              \      \"_id\" : \"cb15214d-c70c-4785-88cc-04d78848b354\",\n      \"\
+              \      \"_id\" : \"7a2823d7-13b8-4b81-a7cb-f9b13ab8fd0a\",\n      \"\
               label\" : \"logo\",\n      \"width\" : 250,\n      \"height\" : 300,\n\
               \      \"_links\" : {\n        \"self\" : {\n          \"href\" : \"\
-              https://yourshop.api.urn/shop/images/cb15214d-c70c-4785-88cc-04d78848b354\"\
-              \n        },\n        \"image\" : {\n          \"href\" : \"https://yourshop.api.urn/shop/images/cb15214d-c70c-4785-88cc-04d78848b354\"\
+              https://yourshop.api.urn/shop/images/7a2823d7-13b8-4b81-a7cb-f9b13ab8fd0a\"\
+              \n        },\n        \"image\" : {\n          \"href\" : \"https://yourshop.api.urn/shop/images/7a2823d7-13b8-4b81-a7cb-f9b13ab8fd0a\"\
               \n        },\n        \"data\" : {\n          \"href\" : \"https://yourshop.api.urn/api/core-storage/images/file.png?hash=212-2323-4343{&width,height,upscale}\"\
               ,\n          \"templated\" : true\n        },\n        \"metadata\"\
               \ : {\n          \"href\" : \"https://yourshop.api.urn/api/core-storage/images/file.png?hash=212-2323-4343&download=no\"\
@@ -18827,7 +18875,7 @@ paths:
               \n    }\n  },\n  \"page\" : {\n    \"size\" : 20,\n    \"totalElements\"\
               \ : 1,\n    \"totalPages\" : 1,\n    \"number\" : 0\n  }\n}"
           schema:
-            $ref: '#/definitions/shop_images_search_find-by-label184519405'
+            $ref: '#/definitions/shop_images184519405'
   /shop-id:
     get:
       tags:
@@ -19451,6 +19499,12 @@ definitions:
       \ Alster GmbH\", \"Astrid Agnes Alster\", \"Alsterwasserweg 2\", \"Erdgeschoss\"\
       , \"Seevetal\", \"20999 Alsterwasser\", \"Germany\" ],\n    \"_id\" : null\n\
       \  },\n  \"comment\" : \"House number was missing\"\n}"
+  products_productId_variations_variationId-413536422:
+    example: "{\n  \"salesPrice\" : {\n    \"taxModel\" : \"GROSS\",\n    \"amount\"\
+      \ : 29.99,\n    \"currency\" : \"EUR\"\n  },\n  \"listPrice\" : {\n    \"taxModel\"\
+      \ : \"GROSS\",\n    \"amount\" : 39.99,\n    \"currency\" : \"EUR\"\n  },\n\
+      \  \"manufacturerPrice\" : {\n    \"taxModel\" : \"GROSS\",\n    \"amount\"\
+      \ : 40.99,\n    \"currency\" : \"EUR\"\n  },\n  \"sku\" : \"1005\"\n}"
   shop1343562262:
     type: object
     required:
@@ -19525,12 +19579,6 @@ definitions:
         description: A list of the currencies that are supported by the shop. Defaults
           to `defaultCurrency`. The `defaultCurrency` is always included in the list.
         items: {}
-  products_productId_variations_variationId-413536422:
-    example: "{\n  \"salesPrice\" : {\n    \"taxModel\" : \"GROSS\",\n    \"amount\"\
-      \ : 29.99,\n    \"currency\" : \"EUR\"\n  },\n  \"listPrice\" : {\n    \"taxModel\"\
-      \ : \"GROSS\",\n    \"amount\" : 39.99,\n    \"currency\" : \"EUR\"\n  },\n\
-      \  \"manufacturerPrice\" : {\n    \"taxModel\" : \"GROSS\",\n    \"amount\"\
-      \ : 40.99,\n    \"currency\" : \"EUR\"\n  },\n  \"sku\" : \"1005\"\n}"
   coupon-campaigns_couponCampaignId_status-1175739421:
     type: object
     required:
@@ -19759,7 +19807,7 @@ definitions:
         type: object
         description: "See https://developer.epages.com/beyond-docs/#pagination[Pagination]"
         properties: {}
-  shop_images_search_find-by-label184519405:
+  shop_images184519405:
     type: object
     properties:
       _links:
@@ -23596,85 +23644,6 @@ definitions:
         description: "The current status of the payment process associated with the\
           \ order. Can be one of `PARTIALLY_PAID`, `REFUNDED`, `PENDING`, `APPROVED`,\
           \ `CAPTURE_PENDING`, `PAID`, `VOIDED`, `FAILED`, or `EXECUTED`."
-  shop_address458837816:
-    type: object
-    required:
-    - city
-    - company
-    - email
-    - firstName
-    - lastName
-    - postalCode
-    - street
-    properties:
-      country:
-        type: string
-        description: The country of the shop address (cannot be changed).
-      lastName:
-        type: string
-        description: The last name of the shop owner.
-        minLength: 1
-        maxLength: 50
-      _links:
-        type: object
-        description: "See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]"
-        properties: {}
-      city:
-        type: string
-        description: The city of the shop address.
-        minLength: 1
-        maxLength: 60
-      postalCode:
-        type: string
-        description: The postal code of the shop address.
-        minLength: 1
-        maxLength: 25
-      dependentLocality:
-        type: string
-        description: "Additional locality information such as a village or suburb\
-          \ name, giving a more specific location."
-        minLength: 0
-        maxLength: 60
-      firstName:
-        type: string
-        description: The first name of the shop owner.
-        minLength: 1
-        maxLength: 50
-      phone:
-        type: string
-        description: The phone number of the shop owner.
-        minLength: 0
-        maxLength: 40
-      street:
-        type: string
-        description: The street of the shop address.
-        minLength: 1
-        maxLength: 200
-      company:
-        type: string
-        description: The company name related to the shop.
-        minLength: 1
-        maxLength: 255
-      state:
-        type: string
-        description: The state of the shop address.
-        minLength: 0
-        maxLength: 100
-      street2:
-        type: string
-        description: Additional street field for the shop address.
-        minLength: 0
-        maxLength: 200
-      fax:
-        type: string
-        description: The fax number of the shop owner.
-        minLength: 0
-        maxLength: 40
-      email:
-        type: string
-        description: The email address of the shop owner.
-        minLength: 1
-        maxLength: 150
   products_batch_tags-2084674593:
     type: object
     required:
@@ -27414,22 +27383,6 @@ definitions:
         type: boolean
         description: Indicates if a phone number is required for the pickup option.
           Can be `true` or `false`.
-  shop_attributes_name923666861:
-    type: object
-    required:
-    - value
-    properties:
-      public:
-        type: boolean
-        description: Indicates if the attribute can be read by other clients. Can
-          be `true` or `false`. Defaults to `false`.
-      value:
-        type: string
-        description: "The value of the shop attribute. Assuming the attribute name\
-          \ to be `default-sorting-products`, the value can be e.g. `asc`."
-        minLength: 1
-        maxLength: 4095
-    example: "{\n  \"value\" : \"manuallyCreateSku\",\n  \"public\" : true\n}"
   coupon-campaigns_couponCampaignId428562222:
     type: object
     required:
@@ -28661,31 +28614,6 @@ definitions:
         type: object
         description: "See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]"
         properties: {}
-  shop_attributes_name-1539550587:
-    type: object
-    properties:
-      owner:
-        type: string
-        description: The ID of the client that created and thus owns the attribute.
-      public:
-        type: boolean
-        description: Indicates if the attribute can be read by other clients. Can
-          be `true` or `false`. Defaults to `false`.
-      _links:
-        type: object
-        description: "See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]"
-        properties: {}
-      name:
-        type: string
-        description: "The name of the shop attribute, e.g. `default-sorting-products`."
-      readOnly:
-        type: boolean
-        description: Indicates if the client interacting with the endpoint is allowed
-          to modify the attribute. Can be `true` or `false`.
-      value:
-        type: string
-        description: "The value of the shop attribute. Assuming the attribute name\
-          \ to be `default-sorting-products`, the value can be e.g. `asc`."
   orders_orderId_processes_refunds-1260120995:
     type: object
     properties:
@@ -28725,6 +28653,31 @@ definitions:
         type: object
         description: "See https://developer.epages.com/beyond-docs/#pagination[Pagination]"
         properties: {}
+  shop_attributes_name-1539550587:
+    type: object
+    properties:
+      owner:
+        type: string
+        description: The ID of the client that created and thus owns the attribute.
+      public:
+        type: boolean
+        description: Indicates if the attribute can be read by other clients. Can
+          be `true` or `false`. Defaults to `false`.
+      _links:
+        type: object
+        description: "See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]"
+        properties: {}
+      name:
+        type: string
+        description: "The name of the shop attribute, e.g. `default-sorting-products`."
+      readOnly:
+        type: boolean
+        description: Indicates if the client interacting with the endpoint is allowed
+          to modify the attribute. Can be `true` or `false`.
+      value:
+        type: string
+        description: "The value of the shop attribute. Assuming the attribute name\
+          \ to be `default-sorting-products`, the value can be e.g. `asc`."
   payment-method-definitions-1377525922:
     type: object
     properties:
@@ -31058,6 +31011,84 @@ definitions:
           process.
     example: "{ \"referralReturnUri\": \"https://cornershop.beyondshop.cloud/cockpit\"\
       \ }"
+  shop_address-846081155:
+    type: object
+    required:
+    - city
+    - email
+    - firstName
+    - lastName
+    - postalCode
+    - street
+    properties:
+      country:
+        type: string
+        description: The country of the shop address (cannot be changed).
+      lastName:
+        type: string
+        description: The last name of the shop owner.
+        minLength: 1
+        maxLength: 50
+      _links:
+        type: object
+        description: "See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]"
+        properties: {}
+      city:
+        type: string
+        description: The city of the shop address.
+        minLength: 1
+        maxLength: 60
+      postalCode:
+        type: string
+        description: The postal code of the shop address.
+        minLength: 1
+        maxLength: 25
+      dependentLocality:
+        type: string
+        description: "Additional locality information such as a village or suburb\
+          \ name, giving a more specific location."
+        minLength: 0
+        maxLength: 60
+      firstName:
+        type: string
+        description: The first name of the shop owner.
+        minLength: 1
+        maxLength: 50
+      phone:
+        type: string
+        description: The phone number of the shop owner.
+        minLength: 0
+        maxLength: 40
+      street:
+        type: string
+        description: The street of the shop address.
+        minLength: 1
+        maxLength: 200
+      company:
+        type: string
+        description: The company name related to the shop.
+        minLength: 0
+        maxLength: 255
+      state:
+        type: string
+        description: The state of the shop address.
+        minLength: 0
+        maxLength: 100
+      street2:
+        type: string
+        description: Additional street field for the shop address.
+        minLength: 0
+        maxLength: 200
+      fax:
+        type: string
+        description: The fax number of the shop owner.
+        minLength: 0
+        maxLength: 40
+      email:
+        type: string
+        description: The email address of the shop owner.
+        minLength: 1
+        maxLength: 150
   shop_locations_locationId-1383620246:
     type: object
     properties:
@@ -32581,6 +32612,24 @@ definitions:
         maxLength: 1024
     example: "{\n  \"scriptUrl\": \"https://example.com/scripts/updatedExampleScript.js\"\
       \n}"
+  products_filters_filterKey-2058465178:
+    type: object
+    properties:
+      _links:
+        type: object
+        description: "See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]"
+        properties: {}
+      values:
+        type: array
+        description: The filters available in the product filter category.
+        items: {}
+      page:
+        type: object
+        description: "See https://developer.epages.com/beyond-docs/#pagination[Pagination]"
+        properties: {}
+      key:
+        type: string
+        description: The product filter category.
   shop265410809:
     type: object
     required:
@@ -32611,24 +32660,6 @@ definitions:
     example: "{\n  \"name\" : \"anotherName\",\n  \"tax\" : {\n    \"vatExempted\"\
       \ : true\n  },\n  \"locales\" : [ \"de-DE\", \"en-GB\" ],\n  \"closedByMerchant\"\
       \ : false\n}"
-  products_filters_filterKey-2058465178:
-    type: object
-    properties:
-      _links:
-        type: object
-        description: "See https://developer.epages.com/beyond-docs/#hypermedia[Hypermedia]"
-        properties: {}
-      values:
-        type: array
-        description: The filters available in the product filter category.
-        items: {}
-      page:
-        type: object
-        description: "See https://developer.epages.com/beyond-docs/#pagination[Pagination]"
-        properties: {}
-      key:
-        type: string
-        description: The product filter category.
   categories_categoryId-2125443973:
     example: "{\n  \"name\" : \"High Protein Power Bars\",\n  \"filters\" : [ {\n\
       \    \"values\" : [ \"51935a74-c9a1-49aa-96df-ec5b3952af5d\" ],\n    \"key\"\
@@ -34231,6 +34262,86 @@ definitions:
         type: object
         description: "See https://developer.epages.com/beyond-docs/#pagination[Pagination]"
         properties: {}
+  shop_address-994432553:
+    type: object
+    required:
+    - city
+    - email
+    - firstName
+    - lastName
+    - postalCode
+    - street
+    properties:
+      country:
+        type: string
+        description: The country of the shop address (cannot be changed).
+      lastName:
+        type: string
+        description: The last name of the shop owner.
+        minLength: 1
+        maxLength: 50
+      city:
+        type: string
+        description: The city of the shop address.
+        minLength: 1
+        maxLength: 60
+      postalCode:
+        type: string
+        description: The postal code of the shop address.
+        minLength: 1
+        maxLength: 25
+      dependentLocality:
+        type: string
+        description: "Additional locality information such as a village or suburb\
+          \ name, giving a more specific location."
+        minLength: 0
+        maxLength: 60
+      firstName:
+        type: string
+        description: The first name of the shop owner.
+        minLength: 1
+        maxLength: 50
+      phone:
+        type: string
+        description: The phone number of the shop owner.
+        minLength: 0
+        maxLength: 40
+      street:
+        type: string
+        description: The street of the shop address.
+        minLength: 1
+        maxLength: 200
+      company:
+        type: string
+        description: The company name related to the shop.
+        minLength: 0
+        maxLength: 255
+      state:
+        type: string
+        description: The state of the shop address.
+        minLength: 0
+        maxLength: 100
+      street2:
+        type: string
+        description: Additional street field for the shop address.
+        minLength: 0
+        maxLength: 200
+      fax:
+        type: string
+        description: The fax number of the shop owner.
+        minLength: 0
+        maxLength: 40
+      email:
+        type: string
+        description: The email address of the shop owner.
+        minLength: 1
+        maxLength: 150
+    example: "{\n  \"company\" : \"Mixed products Inc.\",\n  \"firstName\" : \"Beryl\"\
+      ,\n  \"lastName\" : \"Mannar\",\n  \"email\" : \"bm@example.com\",\n  \"street\"\
+      \ : \"Malevo Drive\",\n  \"street2\" : \"c/o Mr Ceming\",\n  \"dependentLocality\"\
+      \ : \"Bethnal Green\",\n  \"city\" : \"Minessace\",\n  \"postalCode\" : \"WC1D\
+      \ 8DU\",\n  \"country\" : \"GB\",\n  \"state\" : \"Essence\",\n  \"phone\" :\
+      \ \"+441632960166\",\n  \"fax\" : \"+441632960830\"\n}"
   carts_cartId_customer1293879405:
     type: object
     properties:
@@ -35391,6 +35502,22 @@ definitions:
         type: object
         description: "See https://developer.epages.com/beyond-docs/#pagination[Pagination]"
         properties: {}
+  shop_attributes_name-1450305496:
+    type: object
+    required:
+    - value
+    properties:
+      public:
+        type: boolean
+        description: Indicates if the attribute can be read by other clients. Can
+          be `true` or `false`. Defaults to `false`.
+      value:
+        type: string
+        description: "The value of the shop attribute. Assuming the attribute name\
+          \ to be `default-sorting-products`, the value can be e.g. `asc`."
+        minLength: 1
+        maxLength: 4095
+    example: "{\n  \"value\" : \"manuallyCreateSku\",\n  \"public\" : false\n}"
   shipping-zones_shippingZoneId_shipping-methods-481846560:
     type: object
     properties:
@@ -36968,87 +37095,6 @@ definitions:
         type: array
         description: The shipping methods assigned to this shipping zone.
         items: {}
-  shop_address1434000070:
-    type: object
-    required:
-    - city
-    - company
-    - email
-    - firstName
-    - lastName
-    - postalCode
-    - street
-    properties:
-      country:
-        type: string
-        description: The country of the shop address (cannot be changed).
-      lastName:
-        type: string
-        description: The last name of the shop owner.
-        minLength: 1
-        maxLength: 50
-      city:
-        type: string
-        description: The city of the shop address.
-        minLength: 1
-        maxLength: 60
-      postalCode:
-        type: string
-        description: The postal code of the shop address.
-        minLength: 1
-        maxLength: 25
-      dependentLocality:
-        type: string
-        description: "Additional locality information such as a village or suburb\
-          \ name, giving a more specific location."
-        minLength: 0
-        maxLength: 60
-      firstName:
-        type: string
-        description: The first name of the shop owner.
-        minLength: 1
-        maxLength: 50
-      phone:
-        type: string
-        description: The phone number of the shop owner.
-        minLength: 0
-        maxLength: 40
-      street:
-        type: string
-        description: The street of the shop address.
-        minLength: 1
-        maxLength: 200
-      company:
-        type: string
-        description: The company name related to the shop.
-        minLength: 1
-        maxLength: 255
-      state:
-        type: string
-        description: The state of the shop address.
-        minLength: 0
-        maxLength: 100
-      street2:
-        type: string
-        description: Additional street field for the shop address.
-        minLength: 0
-        maxLength: 200
-      fax:
-        type: string
-        description: The fax number of the shop owner.
-        minLength: 0
-        maxLength: 40
-      email:
-        type: string
-        description: The email address of the shop owner.
-        minLength: 1
-        maxLength: 150
-    example: "{\n  \"company\" : \"Mixed products Inc.\",\n  \"firstName\" : \"Beryl\"\
-      ,\n  \"lastName\" : \"Mannar\",\n  \"email\" : \"bm@example.com\",\n  \"street\"\
-      \ : \"Malevo Drive\",\n  \"street2\" : \"c/o Mr Ceming\",\n  \"dependentLocality\"\
-      \ : \"Bethnal Green\",\n  \"city\" : \"Minessace\",\n  \"postalCode\" : \"WC1D\
-      \ 8DU\",\n  \"country\" : \"GB\",\n  \"state\" : \"Essence\",\n  \"phone\" :\
-      \ \"+441632960166\",\n  \"fax\" : \"+441632960830\"\n}"
   pickup-options853575970:
     type: object
     properties:
@@ -38030,6 +38076,8 @@ definitions:
                     \ resource."
   products_productId_external-images1631932576:
     example: "{\n  \"dataUri\" : \"http://localhost:41271/external-image.jpg\"\n}"
+  resellers_epages_shops_id_attributes_name351859999:
+    example: "{\n  \"value\" : \"manuallyCreateSku\",\n  \"public\" : true\n}"
   products_productId_variation-attributes_variationAttributeId-290503864:
     type: object
     properties:
@@ -38065,171 +38113,6 @@ definitions:
             type: array
             description: The list of all script tags.
             items: {}
-  shop_locations_locationId-1344580560:
-    type: object
-    required:
-    - address
-    - languageCode
-    - storeCode
-    properties:
-      googlePrimaryCategory:
-        type: object
-        description: The Google category that best describes the core business of
-          the location.
-        properties:
-          displayName:
-            type: string
-            description: The name of the Google primary category.
-            minLength: 0
-            maxLength: 50
-          categoryId:
-            type: string
-            description: The unique identifier of the Google primary category.
-            minLength: 0
-            maxLength: 50
-      googleStatus:
-        type: string
-        description: "The status of the location on Google. Indicates if the location\
-          \ is e.g. active, verified, published, duplicated, or pending action."
-        minLength: 0
-        maxLength: 50
-      primaryPhone:
-        type: string
-        description: The phone number of the location.
-        minLength: 0
-        maxLength: 50
-      address:
-        type: object
-        description: The address of the location.
-        properties:
-          country:
-            type: string
-            description: The country of the location address.
-          city:
-            type: string
-            description: The city of the location address.
-            minLength: 0
-            maxLength: 60
-          street:
-            type: string
-            description: The street of the location address.
-            minLength: 0
-            maxLength: 200
-          postalCode:
-            type: string
-            description: The postal code of the location.
-            minLength: 0
-            maxLength: 20
-          houseNumber:
-            type: string
-            description: The house number of the location address.
-            minLength: 0
-            maxLength: 25
-          state:
-            type: string
-            description: The state of the location address.
-            minLength: 0
-            maxLength: 100
-          dependentLocality:
-            type: string
-            description: "Additional locality information such as a village or suburb\
-              \ name, giving a more specific location address."
-            minLength: 0
-            maxLength: 60
-        required:
-        - city
-        - country
-        - postalCode
-        - street
-      locationName:
-        type: string
-        description: The name of the company related to the location.
-        minLength: 0
-        maxLength: 255
-      regularHours:
-        type: object
-        properties:
-          periods:
-            type: array
-            description: The list of time periods during which the location is open
-              throughout the week.
-            items:
-              type: object
-              properties:
-                closeDay:
-                  type: string
-                  description: "The day of the week at which the time period ends.\
-                    \ Can be one of `MONDAY`, `TUESDAY`, `WEDNESDAY`, `THURSDAY`,\
-                    \ `FRIDAY`, `SATURDAY`, or `SUNDAY`."
-                openDay:
-                  type: string
-                  description: "The day of the week at which the time period starts.\
-                    \ Can be one of `MONDAY`, `TUESDAY`, `WEDNESDAY`, `THURSDAY`,\
-                    \ `FRIDAY`, `SATURDAY`, or `SUNDAY`."
-                closeTime:
-                  type: string
-                  description: "The time at which the period ends. Expressed according\
-                    \ to ISO 8601, 24-hour extended format (hh:mm), e.g. `19:00`."
-                openTime:
-                  type: string
-                  description: "The time at which the period starts. Expressed according\
-                    \ to ISO 8601, 24-hour extended format (hh:mm), e.g. `08:15`."
-              required:
-              - closeDay
-              - closeTime
-              - openDay
-              - openTime
-      googleAdditionalCategories:
-        type: array
-        description: The list of additional Google categories that describe the business
-          of the location.
-        items:
-          type: object
-          properties:
-            displayName:
-              type: string
-              description: The name of the Google additional category.
-              minLength: 0
-              maxLength: 50
-            categoryId:
-              type: string
-              description: The unique identifier of the Google additional category.
-              minLength: 0
-              maxLength: 50
-      languageCode:
-        type: string
-        description: "The language code for the language spoken at the location. Expressed\
-          \ according to ISO 639-1, e.g. `de`."
-      latLng:
-        type: object
-        properties:
-          latitude:
-            type: number
-            description: The latitude in degrees.
-          longitude:
-            type: number
-            description: The longitude in degrees.
-      storeCode:
-        type: string
-        description: "The name of the location, e.g. to differentiate between several\
-          \ locations of the same company."
-        minLength: 1
-        maxLength: 255
-    example: "{\n  \"languageCode\" : \"en\",\n  \"storeCode\" : \"MLC Carnivaly\"\
-      ,\n  \"locationName\" : \"My little Cornershop - Carnivaly\",\n  \"primaryPhone\"\
-      \ : \"(800) 555-0111\",\n  \"address\" : {\n    \"postalCode\" : \"2XJ90\",\n\
-      \    \"street\" : \"Taranulla Drive\",\n    \"houseNumber\" : \"18\",\n    \"\
-      city\" : \"Carnivaly\",\n    \"country\" : \"GB\",\n    \"dependentLocality\"\
-      \ : \"\",\n    \"state\" : \"Southampton\"\n  },\n  \"googleStatus\" : \"VERIFIED\"\
-      ,\n  \"googlePrimaryCategory\" : {\n    \"categoryId\" : \"gcid:storefood\"\
-      ,\n    \"displayName\" : \"Food\"\n  },\n  \"googleAdditionalCategories\" :\
-      \ [ {\n    \"displayName\" : \"Drinks\",\n    \"categoryId\" : \"gcid:storedrinks\"\
-      \n  } ],\n  \"regularHours\" : {\n    \"periods\" : [ {\n      \"openDay\" :\
-      \ \"WEDNESDAY\",\n      \"openTime\" : \"09:30\",\n      \"closeDay\" : \"WEDNESDAY\"\
-      ,\n      \"closeTime\" : \"19:00\"\n    }, {\n      \"openDay\" : \"FRIDAY\"\
-      ,\n      \"openTime\" : \"10:00\",\n      \"closeDay\" : \"FRIDAY\",\n     \
-      \ \"closeTime\" : \"20:00\"\n    } ]\n  },\n  \"latLng\" : {\n    \"latitude\"\
-      \ : 51.5072,\n    \"longitude\" : -0.1353\n  }\n}"
   orders_orderId-2101830829:
     type: object
     properties:
@@ -39150,6 +39033,171 @@ definitions:
           currency:
             type: string
             description: The currency of the initial total tax amount.
+  shop_locations_locationId-1344580560:
+    type: object
+    required:
+    - address
+    - languageCode
+    - storeCode
+    properties:
+      googlePrimaryCategory:
+        type: object
+        description: The Google category that best describes the core business of
+          the location.
+        properties:
+          displayName:
+            type: string
+            description: The name of the Google primary category.
+            minLength: 0
+            maxLength: 50
+          categoryId:
+            type: string
+            description: The unique identifier of the Google primary category.
+            minLength: 0
+            maxLength: 50
+      googleStatus:
+        type: string
+        description: "The status of the location on Google. Indicates if the location\
+          \ is e.g. active, verified, published, duplicated, or pending action."
+        minLength: 0
+        maxLength: 50
+      primaryPhone:
+        type: string
+        description: The phone number of the location.
+        minLength: 0
+        maxLength: 50
+      address:
+        type: object
+        description: The address of the location.
+        properties:
+          country:
+            type: string
+            description: The country of the location address.
+          city:
+            type: string
+            description: The city of the location address.
+            minLength: 0
+            maxLength: 60
+          street:
+            type: string
+            description: The street of the location address.
+            minLength: 0
+            maxLength: 200
+          postalCode:
+            type: string
+            description: The postal code of the location.
+            minLength: 0
+            maxLength: 20
+          houseNumber:
+            type: string
+            description: The house number of the location address.
+            minLength: 0
+            maxLength: 25
+          state:
+            type: string
+            description: The state of the location address.
+            minLength: 0
+            maxLength: 100
+          dependentLocality:
+            type: string
+            description: "Additional locality information such as a village or suburb\
+              \ name, giving a more specific location address."
+            minLength: 0
+            maxLength: 60
+        required:
+        - city
+        - country
+        - postalCode
+        - street
+      locationName:
+        type: string
+        description: The name of the company related to the location.
+        minLength: 0
+        maxLength: 255
+      regularHours:
+        type: object
+        properties:
+          periods:
+            type: array
+            description: The list of time periods during which the location is open
+              throughout the week.
+            items:
+              type: object
+              properties:
+                closeDay:
+                  type: string
+                  description: "The day of the week at which the time period ends.\
+                    \ Can be one of `MONDAY`, `TUESDAY`, `WEDNESDAY`, `THURSDAY`,\
+                    \ `FRIDAY`, `SATURDAY`, or `SUNDAY`."
+                openDay:
+                  type: string
+                  description: "The day of the week at which the time period starts.\
+                    \ Can be one of `MONDAY`, `TUESDAY`, `WEDNESDAY`, `THURSDAY`,\
+                    \ `FRIDAY`, `SATURDAY`, or `SUNDAY`."
+                closeTime:
+                  type: string
+                  description: "The time at which the period ends. Expressed according\
+                    \ to ISO 8601, 24-hour extended format (hh:mm), e.g. `19:00`."
+                openTime:
+                  type: string
+                  description: "The time at which the period starts. Expressed according\
+                    \ to ISO 8601, 24-hour extended format (hh:mm), e.g. `08:15`."
+              required:
+              - closeDay
+              - closeTime
+              - openDay
+              - openTime
+      googleAdditionalCategories:
+        type: array
+        description: The list of additional Google categories that describe the business
+          of the location.
+        items:
+          type: object
+          properties:
+            displayName:
+              type: string
+              description: The name of the Google additional category.
+              minLength: 0
+              maxLength: 50
+            categoryId:
+              type: string
+              description: The unique identifier of the Google additional category.
+              minLength: 0
+              maxLength: 50
+      languageCode:
+        type: string
+        description: "The language code for the language spoken at the location. Expressed\
+          \ according to ISO 639-1, e.g. `de`."
+      latLng:
+        type: object
+        properties:
+          latitude:
+            type: number
+            description: The latitude in degrees.
+          longitude:
+            type: number
+            description: The longitude in degrees.
+      storeCode:
+        type: string
+        description: "The name of the location, e.g. to differentiate between several\
+          \ locations of the same company."
+        minLength: 1
+        maxLength: 255
+    example: "{\n  \"languageCode\" : \"en\",\n  \"storeCode\" : \"MLC Carnivaly\"\
+      ,\n  \"locationName\" : \"My little Cornershop - Carnivaly\",\n  \"primaryPhone\"\
+      \ : \"(800) 555-0111\",\n  \"address\" : {\n    \"postalCode\" : \"2XJ90\",\n\
+      \    \"street\" : \"Taranulla Drive\",\n    \"houseNumber\" : \"18\",\n    \"\
+      city\" : \"Carnivaly\",\n    \"country\" : \"GB\",\n    \"dependentLocality\"\
+      \ : \"\",\n    \"state\" : \"Southampton\"\n  },\n  \"googleStatus\" : \"VERIFIED\"\
+      ,\n  \"googlePrimaryCategory\" : {\n    \"categoryId\" : \"gcid:storefood\"\
+      ,\n    \"displayName\" : \"Food\"\n  },\n  \"googleAdditionalCategories\" :\
+      \ [ {\n    \"displayName\" : \"Drinks\",\n    \"categoryId\" : \"gcid:storedrinks\"\
+      \n  } ],\n  \"regularHours\" : {\n    \"periods\" : [ {\n      \"openDay\" :\
+      \ \"WEDNESDAY\",\n      \"openTime\" : \"09:30\",\n      \"closeDay\" : \"WEDNESDAY\"\
+      ,\n      \"closeTime\" : \"19:00\"\n    }, {\n      \"openDay\" : \"FRIDAY\"\
+      ,\n      \"openTime\" : \"10:00\",\n      \"closeDay\" : \"FRIDAY\",\n     \
+      \ \"closeTime\" : \"20:00\"\n    } ]\n  },\n  \"latLng\" : {\n    \"latitude\"\
+      \ : 51.5072,\n    \"longitude\" : -0.1353\n  }\n}"
   orders_orderId_processes_pickups_pickup-process-id_mark-picked-up541628837:
     type: object
     properties:
