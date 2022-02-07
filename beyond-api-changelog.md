@@ -1,5 +1,33 @@
 # Beyond API Changelog
 
+## 2022-02-07
+
+### What's New
+
+### What's Deprecated
+
+### What's Changed
+
+* `POST` /products Product limit reached  
+    Parameter
+
+        Add .specifiedShippingWeight
+
+* `GET` /products/{productId} Show variation product details  
+    Return Type
+
+        Add specifiedShippingWeight
+
+* `PATCH` /products/{productId} Update variation product partially  
+    Return Type
+
+        Add specifiedShippingWeight
+
+* `GET` /products/search/find-by-sku Find product by SKU  
+    Return Type
+
+        Add specifiedShippingWeight
+
 ## 2022-02-01
 
 ### What's New
