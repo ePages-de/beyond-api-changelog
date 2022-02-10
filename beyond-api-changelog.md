@@ -1,5 +1,36 @@
 # Beyond API Changelog
 
+## 2022-02-10
+
+### What's New
+
+### What's Deprecated
+
+* `POST` /resellers/epages/shops/{shopId}/open Shop address is missing
+
+* `PUT` /resellers/epages/shops/{id}/attributes/{name} Duplicated shop attribute name
+
+
+### What's Changed
+
+* `POST` /shop/locations Create location  
+    Parameter
+
+        Add .companyName //The name of the company related to the location.
+
+* `GET` /shop/locations/{locationId} Show location details  
+    Return Type
+
+        Add companyName //The name of the company related to the location.
+
+* `PUT` /shop/locations/{locationId} Update location  
+    Parameter
+
+        Add .companyName //The name of the company related to the location.
+    Return Type
+
+        Add companyName //The name of the company related to the location.
+
 ## 2022-02-07
 
 ### What's New
