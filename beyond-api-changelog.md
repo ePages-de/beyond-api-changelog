@@ -1,5 +1,17 @@
 # Beyond API Changelog
 
+## 2022-02-11
+
+### What's New
+
+* `DELETE` /carts/{cartId}/pickup-options/current Delete current cart pickup option
+
+
+
+### What's Deprecated
+
+### What's Changed
+
 ## 2022-02-10
 
 ### What's New
