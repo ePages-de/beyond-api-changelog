@@ -1,5 +1,33 @@
 # Beyond API Changelog
 
+## 2022-02-14
+
+### What's New
+
+### What's Deprecated
+
+### What's Changed
+
+* `GET` /product-view/products/{productId} Show variation product details  
+    Return Type
+
+        Add type //The type of the product. Can be one of `PRODUCT`, `VARIATION_PRODUCT`, or `VARIATION`.
+
+* `PATCH` /products/{productId} Update variation product partially  
+    Return Type
+
+        Add isVariationProduct //Indicates if the product is a variation product or not.
+
+* `GET` /products/{productId} Show variation product details  
+    Return Type
+
+        Add isVariationProduct //Indicates if the product is a variation product or not.
+
+* `GET` /products/search/find-by-sku Find product by SKU  
+    Return Type
+
+        Add isVariationProduct //Indicates if the product is a variation product or not.
+
 ## 2022-02-11
 
 ### What's New
