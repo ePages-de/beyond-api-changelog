@@ -1,5 +1,19 @@
 # Beyond API Changelog
 
+## 2022-02-21
+
+### What's New
+
+* `GET` /orders/search/find-order-confirmation Show order confirmation details by cart ID
+
+* `POST` /products/search/manufacturers Find manufacturers
+
+
+
+### What's Deprecated
+
+### What's Changed
+
 ## 2022-02-16
 
 ### What's New
