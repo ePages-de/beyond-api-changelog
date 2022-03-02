@@ -1,5 +1,18 @@
 # Beyond API Changelog
 
+## 2022-03-02
+
+### What's New
+
+### What's Deprecated
+
+* `GET` /products/filters (Deprecated) List product filter categories
+
+* `GET` /products/filters/{filterKey} (Deprecated) Show product filter category details
+
+
+### What's Changed
+
 ## 2022-02-24
 
 ### What's New
