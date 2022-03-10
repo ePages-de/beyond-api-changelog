@@ -1,5 +1,18 @@
 # Beyond API Changelog
 
+## 2022-03-10
+
+### What's New
+
+### What's Deprecated
+
+* `POST` /shop/close Close shop
+
+* `POST` /shop/open Shop address is missing
+
+
+### What's Changed
+
 ## 2022-03-02
 
 ### What's New
