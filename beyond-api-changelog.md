@@ -1,5 +1,44 @@
 # Beyond API Changelog
 
+## 2022-03-15
+
+### What's New
+
+### What's Deprecated
+
+* `GET` /product-view/categories/search/find-by-label (Deprecated) Find product category by label
+
+
+### What's Changed
+
+* `POST` /categories Product category already exists  
+    Parameter
+
+        Delete .label //(Deprecated) The label of the product category.
+
+* `GET` /categories/{categoryId} Show product category details  
+    Return Type
+
+        Delete label //(Deprecated) The label of the product category.
+
+* `PUT` /categories/{categoryId} Update all product category properties  
+    Parameter
+
+        Delete .label //(Deprecated) The label of the product category.
+    Return Type
+
+        Delete label //(Deprecated) The label of the product category.
+
+* `PATCH` /categories/{categoryId} Update product category partially  
+    Return Type
+
+        Delete label //(Deprecated) The label of the product category.
+
+* `GET` /product-view/categories/{categoryId} Show category details  
+    Return Type
+
+        Delete label //The label of the product category.
+
 ## 2022-03-10
 
 ### What's New
