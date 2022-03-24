@@ -1,5 +1,24 @@
 # Beyond API Changelog
 
+## 2022-03-24
+
+### What's New
+
+### What's Deprecated
+
+### What's Changed
+
+* `GET` /customers List customers  
+    Parameter
+
+        Add customerName //Filters by a partial match with the customer name (first name, middle name, last name, and/or company name) used in the billing or shipping address.
+
+* `POST` /customers Create customer  
+    Parameter
+
+        Delete .customerOrigin //Indicates how the customer has been created. Can be one of `STOREFRONT`, `COCKPIT`, or `GUEST`. Defaults to `STOREFRONT` which is also applied to all customers who registered during checkout. The origin `COCKPIT` can e.g. be used for customers that are manually created by the merchant. Customers with the origin `COCKPIT` can be stored without an email address and with a billing address that only includes first name and last name.
+        Delete .initialPassword //The customer's password for login.
+
 ## 2022-03-15
 
 ### What's New
