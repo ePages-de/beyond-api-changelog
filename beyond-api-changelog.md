@@ -1,5 +1,18 @@
 # Beyond API Changelog
 
+## 2022-03-28
+
+### What's New
+
+### What's Deprecated
+
+### What's Changed
+
+* `GET` /customers List customers  
+    Parameter
+
+        Add customerEmail //Filters by a partial match with the customer email used as the email on the billing address or the customer resource itself.
+
 ## 2022-03-24
 
 ### What's New
