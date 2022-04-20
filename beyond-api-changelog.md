@@ -1,5 +1,18 @@
 # Beyond API Changelog
 
+## 2022-04-20
+
+### What's New
+
+### What's Deprecated
+
+### What's Changed
+
+* `GET` /customers List customers  
+    Parameter
+
+        customerName Notes Filters by a partial match with the customer name (first name, middle name, last name, and/or company name) used in the billing or shipping address. change into Filters by a partial match with the customer name (first name, middle name, last name, and/or company name) used in the billing address.
+
 ## 2022-04-06
 
 ### What's New
