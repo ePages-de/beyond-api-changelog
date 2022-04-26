@@ -1,5 +1,16 @@
 # Beyond API Changelog
 
+## 2022-04-26
+
+### What's New
+
+### What's Deprecated
+
+* `GET` /products/search/manufacturers (Deprecated) Find manufacturers
+
+
+### What's Changed
+
 ## 2022-04-20
 
 ### What's New
