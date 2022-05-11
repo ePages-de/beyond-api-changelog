@@ -1,5 +1,18 @@
 # Beyond API Changelog
 
+## 2022-05-11
+
+### What's New
+
+### What's Deprecated
+
+### What's Changed
+
+* `GET` /shop Show shop details  
+    Return Type
+
+        Add _embedded
+
 ## 2022-04-26
 
 ### What's New
