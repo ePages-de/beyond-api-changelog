@@ -1,5 +1,31 @@
 # Beyond API Changelog
 
+## 2022-07-04
+
+### What's New
+
+### What's Deprecated
+
+### What's Changed
+
+* `POST` /shop/locations Create location  
+    Parameter
+
+        Delete .locationName //(Deprecated) The name of the company related to the location.
+
+* `PUT` /shop/locations/{locationId} Update location  
+    Parameter
+
+        Delete .locationName //(Deprecated) The name of the company related to the location.
+    Return Type
+
+        Delete locationName //(Deprecated) The name of the company related to the location.
+
+* `GET` /shop/locations/{locationId} Show location details  
+    Return Type
+
+        Delete locationName //(Deprecated) The name of the company related to the location.
+
 ## 2022-05-11
 
 ### What's New
