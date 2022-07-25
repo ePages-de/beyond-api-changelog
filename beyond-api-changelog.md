@@ -1,5 +1,23 @@
 # Beyond API Changelog
 
+## 2022-07-25
+
+### What's New
+
+### What's Deprecated
+
+### What's Changed
+
+* `PATCH` /shop Update shop partially  
+    Return Type
+
+        Add emailConfirmed //Indicates if the email is confirmed by its owner. Can be `true` or `false`.
+
+* `GET` /shop Show shop details  
+    Return Type
+
+        Add emailConfirmed //Indicates if the email is confirmed by its owner. Can be `true` or `false`.
+
 ## 2022-07-06
 
 ### What's New
