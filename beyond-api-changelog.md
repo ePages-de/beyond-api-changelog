@@ -1,5 +1,33 @@
 # Beyond API Changelog
 
+## 2022-07-26
+
+### What's New
+
+### What's Deprecated
+
+### What's Changed
+
+* `POST` /products Product limit reached  
+    Parameter
+
+        Delete .specifiedShippingWeight //(Deprecated) The weight of the product including packaging.
+
+* `GET` /products/{productId} Show variation product details  
+    Return Type
+
+        Delete specifiedShippingWeight //(Deprecated) The weight of the product including packaging.
+
+* `PATCH` /products/{productId} Update variation product partially  
+    Return Type
+
+        Delete specifiedShippingWeight //(Deprecated) The weight of the product including packaging.
+
+* `GET` /products/search/find-by-sku Find product by SKU  
+    Return Type
+
+        Delete specifiedShippingWeight //(Deprecated) The weight of the product including packaging.
+
 ## 2022-07-25
 
 ### What's New
