@@ -1,5 +1,18 @@
 # Beyond API Changelog
 
+## 2022-09-12
+
+### What's New
+
+### What's Deprecated
+
+### What's Changed
+
+* `GET` /product-view/products/{productId} Show variation product details  
+    Return Type
+
+        Delete specifiedShippingWeight //(Deprecated) The weight of the product including packaging.
+
 ## 2022-08-18
 
 ### What's New
