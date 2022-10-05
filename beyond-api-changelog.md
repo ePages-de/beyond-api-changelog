@@ -1,5 +1,19 @@
 # Beyond API Changelog
 
+## 2022-10-05
+
+### What's New
+
+* `GET` /categories/search/manufacturers Find category manufacturers
+
+* `GET` /categories/search/tags Find used category tags
+
+
+
+### What's Deprecated
+
+### What's Changed
+
 ## 2022-09-12
 
 ### What's New
