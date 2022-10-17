@@ -1,5 +1,33 @@
 # Beyond API Changelog
 
+## 2022-10-17
+
+### What's New
+
+### What's Deprecated
+
+### What's Changed
+
+* `POST` /products Product limit reached  
+    Parameter
+
+        Add .productLabels //Product labels
+
+* `GET` /products/{productId} Show variation product details  
+    Return Type
+
+        Add productLabels //Product labels
+
+* `PATCH` /products/{productId} Update variation product partially  
+    Return Type
+
+        Add productLabels //Product labels
+
+* `GET` /products/search/find-by-sku Find product by SKU  
+    Return Type
+
+        Add productLabels //Product labels
+
 ## 2022-10-05
 
 ### What's New
