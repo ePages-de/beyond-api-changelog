@@ -1,5 +1,23 @@
 # Beyond API Changelog
 
+## 2022-10-21
+
+### What's New
+
+* `POST` /core/123/images/my-file.png Upload a multipart image
+
+* `POST` /order-documents-for-internal-use/{groupName}/attachments/{fileName} Upload an document file via binary body
+
+* `DELETE` /{folderName}/{groupName} Deletes all epagesui/content images
+
+* `POST` /{folderName}/{groupName}/images/{fileName} Upload an image file via binary body
+
+
+
+### What's Deprecated
+
+### What's Changed
+
 ## 2022-10-17
 
 ### What's New
