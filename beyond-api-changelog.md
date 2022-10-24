@@ -1,5 +1,18 @@
 # Beyond API Changelog
 
+## 2022-10-24
+
+### What's New
+
+### What's Deprecated
+
+### What's Changed
+
+* `GET` /product-view/products/{productId} Show variation product details  
+    Return Type
+
+        Add productLabels //This object contains the assigned product labels of the product.
+
 ## 2022-10-21
 
 ### What's New
