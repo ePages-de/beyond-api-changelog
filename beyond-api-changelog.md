@@ -1,5 +1,17 @@
 # Beyond API Changelog
 
+## 2022-10-26
+
+### What's New
+
+* `GET` /webhook-subscriptions/{subscriptionId}/failures List subscription failures
+
+
+
+### What's Deprecated
+
+### What's Changed
+
 ## 2022-10-24
 
 ### What's New
