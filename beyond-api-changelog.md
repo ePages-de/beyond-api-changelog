@@ -1,5 +1,16 @@
 # Beyond API Changelog
 
+## 2022-11-01
+
+### What's New
+
+### What's Deprecated
+
+* `POST` /carts/{cartId}/customer (Deprecated) Create customer
+
+
+### What's Changed
+
 ## 2022-10-26
 
 ### What's New
