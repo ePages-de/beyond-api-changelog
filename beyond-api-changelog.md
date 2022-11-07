@@ -1,5 +1,19 @@
 # Beyond API Changelog
 
+## 2022-11-07
+
+### What's New
+
+* `DELETE` /webhook-subscriptions/{subscriptionId}/failures/{failureId} Delete subscription failure
+
+* `POST` /webhook-subscriptions/{subscriptionId}/failures/{failureId}/retry Retry subscription failure
+
+
+
+### What's Deprecated
+
+### What's Changed
+
 ## 2022-11-01
 
 ### What's New
