@@ -1,5 +1,25 @@
 # Beyond API Changelog
 
+## 2022-11-21
+
+### What's New
+
+* `POST` /core/123/images-for-internal-use/my-file.png Upload a multipart image
+
+* `POST` /order-documents/{groupName}/attachments/{fileName} Upload an document file via binary body
+
+* `POST` /product-attachments/{groupName}/attachments/{fileName} Upload a product attachment file via binary body
+
+
+### What's Deprecated
+
+* `POST` /core/123/images/my-file.png Upload a multipart image
+
+* `POST` /order-documents-for-internal-use/{groupName}/attachments/{fileName} Upload an document file via binary body
+
+
+### What's Changed
+
 ## 2022-11-07
 
 ### What's New
