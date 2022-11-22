@@ -1,5 +1,29 @@
 # Beyond API Changelog
 
+## 2022-11-22
+
+### What's New
+
+* `POST` /orders/batch/mark-as-unviewed Mark orders as unviewed
+
+* `POST` /orders/batch/mark-as-viewed Mark orders as viewed
+
+* `POST` /orders/batch/documents/invoices Create and send invoices
+
+* `POST` /orders/batch/documents/packing-slips Create shipping/pickup processes and packing slips
+
+* `GET` /orders/batch/jobs/{jobExecutionId} Get batch action status
+
+* `POST` /orders/batch/documents/invoices/merge Merges invoices
+
+* `POST` /orders/batch/documents/packing-slips/merge Merges packing slips
+
+
+
+### What's Deprecated
+
+### What's Changed
+
 ## 2022-11-21
 
 ### What's New
