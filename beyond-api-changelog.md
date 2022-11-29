@@ -1,5 +1,16 @@
 # Beyond API Changelog
 
+## 2022-11-29
+
+### What's New
+
+### What's Deprecated
+
+* `POST` /core/123/images-for-internal-use/my-file.png Upload a multipart image
+
+
+### What's Changed
+
 ## 2022-11-22
 
 ### What's New
