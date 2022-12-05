@@ -1,5 +1,18 @@
 # Beyond API Changelog
 
+## 2022-12-05
+
+### What's New
+
+### What's Deprecated
+
+### What's Changed
+
+* `GET` /script-tags List script tags  
+    Parameter
+
+        Add clientId //Filters script-tags by the owning clientId.
+
 ## 2022-11-29
 
 ### What's New
