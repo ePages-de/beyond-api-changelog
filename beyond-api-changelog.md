@@ -1,5 +1,24 @@
 # Beyond API Changelog
 
+## 2022-12-08
+
+### What's New
+
+* `GET` /product-view/products/{productId}/attachments List product attachments
+
+* `GET` /product-view/products/{productId}/attachments/{attachmentId} Show product attachment details
+
+
+
+### What's Deprecated
+
+### What's Changed
+
+* `GET` /product-view/products/{productId}/media List product media  
+    Return Type
+
+        Add attachments
+
 ## 2022-12-05
 
 ### What's New
