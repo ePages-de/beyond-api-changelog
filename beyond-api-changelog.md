@@ -1,5 +1,17 @@
 # Beyond API Changelog
 
+## 2023-01-24
+
+### What's New
+
+* `DELETE` /temp-documents-for-internal-use/transient-files Delete the transient files
+
+
+
+### What's Deprecated
+
+### What's Changed
+
 ## 2022-12-08
 
 ### What's New
