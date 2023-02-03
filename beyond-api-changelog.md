@@ -1,5 +1,21 @@
 # Beyond API Changelog
 
+## 2023-02-03
+
+### What's New
+
+* `DELETE` /transient-files-for-internal-use/expired-files Delete the transient files
+
+* `POST` /transient-files-for-internal-use/{groupName}/attachments/{fileName} Upload an transient file via binary body
+
+
+### What's Deprecated
+
+* `DELETE` /temp-documents-for-internal-use/transient-files Delete the transient files
+
+
+### What's Changed
+
 ## 2023-01-24
 
 ### What's New
