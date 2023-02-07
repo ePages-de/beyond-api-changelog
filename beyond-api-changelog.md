@@ -1,5 +1,16 @@
 # Beyond API Changelog
 
+## 2023-02-07
+
+### What's New
+
+### What's Deprecated
+
+* `GET` /orders/downloads/{id}/{name} Download transient file
+
+
+### What's Changed
+
 ## 2023-02-03
 
 ### What's New
