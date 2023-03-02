@@ -1,5 +1,18 @@
 # Beyond API Changelog
 
+## 2023-03-02
+
+### What's New
+
+### What's Deprecated
+
+### What's Changed
+
+* `GET` /product-view/products/{productId} Show variation product details  
+    Return Type
+
+        Add customText //Definition of a custom text that can be set on the product by a customer.
+
 ## 2023-02-22
 
 ### What's New
