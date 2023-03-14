@@ -1,5 +1,23 @@
 # Beyond API Changelog
 
+## 2023-03-14
+
+### What's New
+
+### What's Deprecated
+
+### What's Changed
+
+* `POST` /carts/{cartId}/line-items Invalid tax class  
+    Parameter
+
+        Add .customText //The custom text for a product that is provided by the customer.
+
+* `PUT` /carts/{cartId}/line-items/{lineItemId} Replace single line item  
+    Parameter
+
+        Add .customText //The custom text for a product that is provided by the customer.
+
 ## 2023-03-02
 
 ### What's New
