@@ -1,5 +1,17 @@
 # Beyond API Changelog
 
+## 2023-05-03
+
+### What's New
+
+* `GET` /products/{productId}/additional-descriptions List additional product descriptions
+
+
+
+### What's Deprecated
+
+### What's Changed
+
 ## 2023-03-14
 
 ### What's New
