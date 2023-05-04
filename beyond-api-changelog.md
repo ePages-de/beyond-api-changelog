@@ -1,5 +1,22 @@
 # Beyond API Changelog
 
+## 2023-05-04
+
+### What's New
+
+* `POST` /products/{productId}/additional-descriptions Add additional product description
+
+
+
+### What's Deprecated
+
+### What's Changed
+
+* `POST` /customers Create customer  
+    Parameter
+
+        Add .customerOrigin //Indicates how the customer has been created. Can be one of `COCKPIT` or `IMPORT`.
+
 ## 2023-05-03
 
 ### What's New
