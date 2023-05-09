@@ -1,5 +1,24 @@
 # Beyond API Changelog
 
+## 2023-05-09
+
+### What's New
+
+* `PUT` /products/{productId}/additional-descriptions/{additionalDescriptionId} Update additional product description
+
+* `DELETE` /products/{productId}/additional-descriptions/{additionalDescriptionId} Delete additional product description
+
+
+
+### What's Deprecated
+
+### What's Changed
+
+* `GET` /orders/filters List order filter categories  
+    Return Type
+
+        Add usedChannels //The list of all sales and marketing channels of orders in the shop.
+
 ## 2023-05-04
 
 ### What's New
