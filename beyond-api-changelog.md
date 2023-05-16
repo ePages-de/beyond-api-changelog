@@ -1,5 +1,18 @@
 # Beyond API Changelog
 
+## 2023-05-16
+
+### What's New
+
+### What's Deprecated
+
+### What's Changed
+
+* `GET` /orders List orders  
+    Parameter
+
+        Add channel //Filters by the sales or marketing channel used for the order.
+
 ## 2023-05-09
 
 ### What's New
