@@ -1,5 +1,17 @@
 # Beyond API Changelog
 
+## 2023-05-25
+
+### What's New
+
+* `PUT` /products/{productId}/additional-descriptions Missing additional product descriptions
+
+
+
+### What's Deprecated
+
+### What's Changed
+
 ## 2023-05-16
 
 ### What's New
