@@ -1,5 +1,18 @@
 # Beyond API Changelog
 
+## 2023-06-19
+
+### What's New
+
+### What's Deprecated
+
+### What's Changed
+
+* `GET` /product-view/products/{productId} Show variation product details  
+    Return Type
+
+        Add additionalDescriptions //Additional product descriptions of the product.
+
 ## 2023-05-25
 
 ### What's New
