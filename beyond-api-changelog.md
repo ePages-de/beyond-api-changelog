@@ -1,5 +1,16 @@
 # Beyond API Changelog
 
+## 2023-08-01
+
+### What's New
+
+### What's Deprecated
+
+* `GET` /orders/search/find-by-cart-id (Deprecated) Show order by cart ID
+
+
+### What's Changed
+
 ## 2023-06-19
 
 ### What's New
