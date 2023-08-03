@@ -1,5 +1,41 @@
 # Beyond API Changelog
 
+## 2023-08-03
+
+### What's New
+
+### What's Deprecated
+
+### What's Changed
+
+* `GET` /carts/{cartId}/payment-methods/current Show current cart payment method details  
+    Return Type
+
+        Delete serviceableCountries //(Deprecated) The list of target countries this payment method can be used in.
+
+* `GET` /payment-methods/{paymentMethodId} Show payment method details  
+    Return Type
+
+        Delete serviceableCountries //(Deprecated) The list of target countries this payment method can be used in.
+
+* `PUT` /payment-methods/{paymentMethodId} Invalid `discountOrFee` type  
+    Parameter
+
+        Delete .serviceableCountries //(Deprecated) The list of target countries this payment method can be used in.
+    Return Type
+
+        Delete serviceableCountries //(Deprecated) The list of target countries this payment method can be used in.
+
+* `POST` /payment-methods/{paymentMethodId}/activate Activate payment method  
+    Return Type
+
+        Delete serviceableCountries //(Deprecated) The list of target countries this payment method can be used in.
+
+* `POST` /payment-methods/{paymentMethodId}/deactivate Deactivate payment method  
+    Return Type
+
+        Delete serviceableCountries //(Deprecated) The list of target countries this payment method can be used in.
+
 ## 2023-08-01
 
 ### What's New
