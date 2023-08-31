@@ -1,5 +1,26 @@
 # Beyond API Changelog
 
+## 2023-08-31
+
+### What's New
+
+### What's Deprecated
+
+### What's Changed
+
+* `GET` /shop Show shop details  
+    Return Type
+
+        Add socialSharingEnabled //Indicates if the social sharing is enabled for the shop. Can be `true` or `false`. Defaults to `true`.
+
+* `PATCH` /shop Update shop partially  
+    Parameter
+
+        Add .socialSharingEnabled //Indicates if the social sharing is enabled for the shop. Can be `true` or `false`. Defaults to `true`.
+    Return Type
+
+        Add socialSharingEnabled //Indicates if the social sharing is enabled for the shop. Can be `true` or `false`. Defaults to `true`.
+
 ## 2023-08-03
 
 ### What's New
