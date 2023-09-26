@@ -1,5 +1,24 @@
 # Beyond API Changelog
 
+## 2023-09-26
+
+### What's New
+
+### What's Deprecated
+
+### What's Changed
+
+* `POST` /orders/{orderId}/processes/returns Partial return not allowed  
+    Parameter
+
+        Add .pickupProcessId //The ID of the pickup process.
+        Add .pickupPriceRefund //The price for the pickup line item to be refunded.
+
+* `GET` /orders/{orderId}/processes/returns/{return-process-id} Show return process details  
+    Return Type
+
+        Add pickupPriceRefund //The price for the pickup line item to be refunded.
+
 ## 2023-08-31
 
 ### What's New
