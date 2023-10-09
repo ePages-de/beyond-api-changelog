@@ -1,5 +1,19 @@
 # Beyond API Changelog
 
+## 2023-10-09
+
+### What's New
+
+* `POST` /order-documents-for-internal-use/{groupName}/attachments/{fileName} Order document exceeds the limit
+
+* `POST` /{folderName}/{groupName}/images-for-internal-use/{fileName} Upload an image file via binary body using the internal access
+
+
+
+### What's Deprecated
+
+### What's Changed
+
 ## 2023-09-26
 
 ### What's New
